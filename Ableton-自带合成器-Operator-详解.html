@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="混音档案,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="Ableton 自带的 Operator 合成器是一款集 FM 调频概念与经典加、减法合成概念为一体的多样化的先进合成器。它包含四只独立的多波形振荡器，每只振荡器既可以独立输出，也可以用来对其他振荡器进行调制。今天我们来详细解析一下这款功能强大的合成器吧。 概览 在 Operator 界面左边是 4 只振荡器。界面右边由上至下依次为 LFO 单元、滤波器单元、音高单元以及全局参数单元。中间为显示屏">
+<meta name="keywords" content="混音档案">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ableton 自带合成器 Operator 详解">
+<meta property="og:url" content="https://youbanzhishi.github.io/Ableton-自带合成器-Operator-详解.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="Ableton 自带的 Operator 合成器是一款集 FM 调频概念与经典加、减法合成概念为一体的多样化的先进合成器。它包含四只独立的多波形振荡器，每只振荡器既可以独立输出，也可以用来对其他振荡器进行调制。今天我们来详细解析一下这款功能强大的合成器吧。 概览 在 Operator 界面左边是 4 只振荡器。界面右边由上至下依次为 LFO 单元、滤波器单元、音高单元以及全局参数单元。中间为显示屏">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181235.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181248.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181312.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181402.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181419.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181446.png">
+<meta property="og:updated_time" content="2020-06-10T10:54:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ableton 自带合成器 Operator 详解">
+<meta name="twitter:description" content="Ableton 自带的 Operator 合成器是一款集 FM 调频概念与经典加、减法合成概念为一体的多样化的先进合成器。它包含四只独立的多波形振荡器，每只振荡器既可以独立输出，也可以用来对其他振荡器进行调制。今天我们来详细解析一下这款功能强大的合成器吧。 概览 在 Operator 界面左边是 4 只振荡器。界面右边由上至下依次为 LFO 单元、滤波器单元、音高单元以及全局参数单元。中间为显示屏">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181235.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://youbanzhishi.github.io/Ableton-自带合成器-Operator-详解.html">
+
+
+
+
+
+  <title>Ableton 自带合成器 Operator 详解 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://youbanzhishi.github.io">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Ableton 自带合成器 Operator 详解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T18:09:04+08:00">
+                2020-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Ableton 自带的 Operator 合成器是一款集 FM 调频概念与经典加、减法合成概念为一体的多样化的先进合成器。它包含四只独立的多波形振荡器，每只振荡器既可以独立输出，也可以用来对其他振荡器进行调制。今天我们来详细解析一下这款功能强大的合成器吧。</p>
+<h4 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181235.png" alt></p>
+<p>在 Operator 界面左边是 4 只振荡器。界面右边由上至下依次为 LFO 单元、滤波器单元、音高单元以及全局参数单元。中间为显示屏界面，当我们对某一参数进行设置时，显示界面将会自动显示相对应的参数细节。</p>
+<p>当不需要对 Operator 进行细调时，左上方的三角形按钮可以将显示屏界面折叠起来以节省空间。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181248.png" alt></p>
+<p><em>折叠后的 Operator</em></p>
+<p>Operator 的 4 只振荡器可以分别独立输出信号，也可以互为载体进行调制。调制的方式取决于不同的算法。Operator 为我们提供了 11 种不同的算法来联结或叠加 4 只振荡器。选取全局参数单元后，可在显示屏顶端进行算法切换。值得注意的是，像所有其他参数一样，算法的切换可以映射到 MIDI 控制器上或写入自动化曲线中。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181312.png" alt></p>
+<p><em>Operator 的全局参数单元</em></p>
+<h4 id="振荡器单元"><a href="#振荡器单元" class="headerlink" title="振荡器单元"></a>振荡器单元</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181402.png" alt></p>
+<p><em>振荡器 A 的显示及参数</em></p>
+<h5 id="内置波形"><a href="#内置波形" class="headerlink" title="内置波形"></a>内置波形</h5><p>一般来说，FM 合成器的振荡器都是制造纯 sine 波，再通过调制来得到更复杂的波形。然而为简化合成过程并制造出更多可能的音色，Operator 的振荡器发生的不仅有多种 sine 波，还有多种 saw 波、square 波、triangle 波以及 noise 波。其中 Sine 4 Bit 波以及 Sine 8 Bit 波适用于制造 80 后喜闻乐见的红白机音色，而 Saw D 波和 Square D 波则尤其适合制造电子乐中的贝斯音色。Operator 中的 square 波、 sawtooth 波及 triangle 波都是以理论上的完美波形为模型进行近似取值得到的。名称中的数字（如「Square 6」）对应其合成时谐波的使用数量。数字较小的音色更醇厚，更不容易在高音域出现失真。两种 noise 波中，Noise Looped 波为循环播放的噪音采样，Noise White 波为随机噪音。</p>
+<h5 id="自定义波形"><a href="#自定义波形" class="headerlink" title="自定义波形"></a>自定义波形</h5><p>在 Wave 下拉框中选择 User，可以自定义波形。自定义波形也可以通过直接编辑内置波形得到。</p>
+<p>当鼠标移动到振荡器的显示界面，鼠标指针会变成一支铅笔。按住鼠标并滑动，会更改不同频率的谐波的振幅，Ableton 软件界面的最下方的状态栏将会实时显示出正在更改的谐波的频率及振幅参数。按住 Shift 将锁定鼠标只进行上下移动，即只改变特定频率的谐波的振幅。</p>
+<p>选择显示屏右侧的 16、32 或 64 按钮，即可对前 16、前 32 或前 64 个谐波进行编辑。超过部分的频率的谐波则可通过 Repeat 下拉菜单中的选项进行调制。Repeat 的不同选项会对超出部分的谐波根据我们画出的形状进行淡出处理，取值越低音色越明亮，取值越高音色的精度就越高，当 Repeat 选择 off，高于 16、32 或 64 的谐波将被削减。</p>
+<p>在谐波显示部分右键，可选择仅更改奇数（odd）或偶数（even）的谐波。右键菜单还提供音量标准化（Normalize）选择项。当选择启用音量标准化，振荡器输出电平将在我们画谐波图时始终保持一定。应注意，若关闭音量标准化选项，调整谐波图样可能会使音量过大！</p>
+<p>当我们调试出喜欢的波形后，可以通过右键菜单中的导出 Ams 格式将波形文件保存。Ams 文件可通过拖拽到显示屏区域的方式导回到 Operator 里。Ams 文件同样可以被 Ableton 的 Simpler 和 Sampler 合成器调用。</p>
+<p>不管是内置波形还是自定义波形，都可以通过显示屏区域右键菜单将其参数直接复制到其他的振荡器中。</p>
+<h5 id="其他振荡器参数"><a href="#其他振荡器参数" class="headerlink" title="其他振荡器参数"></a>其他振荡器参数</h5><p>振荡器的频率可以通过 Coarse 和 Fine 参数进行调整。正常情况下，振荡器的频率随着音符高低的不同而改变，但也有很多情况下，我们需要让振荡器发出的声音固定在某个特定频率，这就需要我们选择 Fixed 模式。在 Fixed 模式下，当我们弹奏不同的音符，振荡器发出的声音只有音质发生改变，而音高始终保持不变。在制作打击乐音色时，Fixed 模式尤其有效。在 Fixed 模式下，我们甚至可以制造出频率低至 0.1Hz 的声音。在 Fixed 模式下，振荡器的频率是由振荡器的 Freq 和 Multi 两个参数来控制的。</p>
+<p>Operator 还为每只振荡器提供了一个特别的 Osc&lt;Vel 控制功能，即通过键盘力度改变振荡器频率，这个功能在通过自动化参数触发快速琶音音色时非常有用。当 Q（量化）按钮被按下时，振荡器频率将以基波频率的整数倍改变，其效果相当于手动调节 Coarse 旋钮。如果 Q（量化）按钮不选，则振荡器频率将以非量化方式移变，产生类似失谐效果，有时候能产生意料之外的有趣效果。</p>
+<p>振荡器的振幅取决于振荡器的音量及其包络设置。在 Envelope 模式下可对包络进行编辑。设置 Envelope 显示区的 Vel 和 Key 的数值，可以使包络可以根据键盘力度及音高的改变而改变。<br>每只振荡器的初始相位可通过 Phase 选项进行调节。当 R（再触发）被选取时，每按一个新音符，波形都将回到初始相位。</p>
+<p>如前所述，振荡器可以运用不同的算法互相调制。当两只振荡器互相调制时，两个因素起关键作用：调制方振荡器的振幅、两只振荡器的频率比值。若振荡器若不被其他振荡器调制，则通过 Feedback 参数可使其自调制。</p>
+<h5 id="混叠失真"><a href="#混叠失真" class="headerlink" title="混叠失真"></a>混叠失真</h5><p>由于数字系统的采样率和精度是有限定的，混叠失真现象在数字合成器中很常见，而且大部分出现在高频率的情况下。FM 合成器尤其容易出现这种失真现象，因为 FM 合成就是运用大量高频率 sine 波谐波来制造不同音色的。这也就意味着例如 Saw 32 这样的复杂震荡波形比纯 sine 波形更加容易产生混叠失真。混叠失真并不是完全有害的，适当的一点点失真可以让音色更有有趣，但多了的话高音音符会突然失准。Operator 在全局参数显示界面有一个 Antialias 选项，可以最大限度地减少混叠失真，系统默认勾选。全局参数单元的 Tone 旋钮可对音色的高频部分进行控制，Tone 值越高，音色的高频内容越多，越容易产生混叠失真，Tone 值越低，音色更不容易失真但会变得不那么明亮。</p>
+<h4 id="LFO-单元"><a href="#LFO-单元" class="headerlink" title="LFO 单元"></a>LFO 单元</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181419.png" alt></p>
+<p><em>Operator 的 LFO 参数</em></p>
+<p>Operator 的 LFO 可以被看作是另一种形式的振荡器，它用来进一步调制其他振荡器的频率。在 LFO 显示区的 Dest. A 选项下可选择对特定的振荡器或滤波器使用或关闭 LFO。LFO 对目标的频率的调制力度可通过 Dest. A 的百分比推子来调节。当不需要时，LFO 也可以被完全关闭。</p>
+<p>Dest. B 下拉框可以让 LFO 调制额外的一个参数。调制力度由 Dest. B 的百分比推子决定。</p>
+<p>Operator 的 LFO 提供了 LFO 波形、采样和保持（S&amp;H）及噪音三种调制方式。采样和保持调制方式以 LFO 频率为频率随机输出频率值以调制振荡器频率或其他目标参数，这种方式能制造出随机的步序式音色，非常适合科幻色彩的音色的制作。噪音调制方式的 LFO 波形为简单的带通噪音。使用噪音波形的 LFO 进行调制，能很轻松地获得强大的电子镲片及军鼓音色。</p>
+<p>LFO 的频率是由 LFO Rate 参数以及下拉框的 Low/High/Sync 选项来共同调节的。LFO 的频率可以选择固定或随音高改变,：当 LFO 显示界面中的 Rate&lt;Key 参数为 0，LFO 频率固定；当参数为 100% 时，LFO 频率完全跟随音高改变；当参数介于 0-100 间时，效果为两者混合。</p>
+<p>LFO 的调制强度可通过 LFO Amount 来调节，这个参数同时作用于 Dest. A 和 Dest. B。LFO 调制强度还可以通过 Amt&lt;Vel 参数设置为跟随键盘力度。调制强度同样受到 LFO包络的影响。</p>
+<h4 id="包络"><a href="#包络" class="headerlink" title="包络"></a>包络</h4><p>Operator 有 7 条包络：4 条振荡器音量包络，1 条滤波器包络，1 条音高包络以及 1 条 LFO 包络。所有包络都具有特殊的循环模式。额外的，滤波器和音高的包络还有坡度调节。</p>
+<p>用鼠标拖拽振荡器音量包络的节点可调节振荡器的 ADSR 参数，鼠标放开后节点仍处于选取状态，可以用键盘的方向键进行后续调节。包络的形状可以在振荡器之间复制粘贴。</p>
+<p>滤波器和音高包络有可调的坡度参数。坡度值为正时，包络在起始阶段移动迅速，在后半段逐渐放缓；相反地，坡度值为负时，包络起始阶段移动平缓，后半段逐渐加快。坡度值为 0 时，坡度曲线为直线，包络的移动速度在这一区段保持不变。</p>
+<p>FM 合成能够合成出无穷无尽变幻莫测的音色的关键在于包络的可循环性。包络的循环模式可在左下角的显示区域开启。当包络处于循环模式，按下的音符在达到 Sustain 阶段后其包络将重新触发，重新触发的速率由 Loop Time 参数决定。</p>
+<p>循环模式还提供 Beat 和 Sync 模式，非常适合于创造富有质感的前卫音色，这两种模式比起 Loop 模式操作性更强。当选择 Beat 模式或 Sync 模式时，包络将在特定的节拍数后循环，如 16/1 拍、4/1 拍等，两者不同之处在于 Sync 模式的节拍参照系为整体音乐速度，当某个音符不在准确的拍子上时，包络重复起点仍会对齐到整体音乐节拍上，相对的，在 Beat 模式下，某一未经量化的音符的包络触发时间会与该音符的触发时间对齐而不是与音乐节拍对齐。注意，Sync 模式只有在歌曲播放时才会生效，如果歌曲没有播放，包络循环将遵从 Beat 模式。</p>
+<p>还有一种包络循环模式是 Trigger 模式，这种模式很适合在打击音效的音色中采用。在此模式下，音符停止不会停止包络循环，即音符长度对音色无影响。</p>
+<p>Operator 中所有包络的速率可以在全局参数单元的 Time 旋钮上进行整体调整（但 Beat 模式和 Sync 模式不受 Time 值影响）。除 Time 旋钮的参数外，全局参数单元的 Time&lt;Key 参数也可以进一步改变包络的整体速率。某一特定的包络也可以被 Time&lt;Vel 参数所影响。把以上的各种包络控制方式结合在一起，就能制作出非常、非常复杂的音色。</p>
+<p>音高包络可以通过其显示界面的 Dest. A 下的 A-D 按钮及 LFO 按钮来开启或关闭。音高包络的强度可以通过 Dest. A 的百分比推子来调节。注意，如果音高包络仅仅作用于 LFO 并且处于循环模式，它就相当于一个调节 LFO 频率的 LFO，而 Operator 自带 LFO 自身的包络又是可循环的，我们就相当于拥有三个互相调制 LFO 了。</p>
+<p>音高和滤波器的包络各自有一个附加参数叫 End，它控制在音色的 Release 阶段包络的运动，运动速度取决于包络的 Release 时间。</p>
+<h4 id="滤波器单元"><a href="#滤波器单元" class="headerlink" title="滤波器单元"></a>滤波器单元</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513181446.png" alt></p>
+<p><em>Operator 的滤波器单元</em></p>
+<p>Operator 的滤波器在对振荡器输出的音色进行润色方面非常强大。由于 Operator 的振荡器自带许多种模拟合成器的经典波形，我们可以很轻松地调出减法合成器的经典声音。<br>Operator 的提供了种类齐全的滤波器：低通滤波器（Lowpass）、高通滤波器（Highpass）、带通滤波器（Bandpass）、陷波滤波器（Notch）以及比较不常见的转化滤波器（Morph）。每个滤波器可以在坡度值 12db 和 24db 之间切换。（链接关于 12/24 坡度介绍，链接）</p>
+<p>滤波器单元里还提供了 Clean、OSR、MS2、SMP、PRD 等不同的电路设置，在使用低通、高通或带通滤波器时，除了 Clean 模式外，其他模式提供一个 Drive 控制旋钮可以用来在波形进入滤波器前增加波形的增益和失真。不过，最重要的滤波器参数还是最经典的 Frequency（频率）和 Resonance（共鸣）。Frequency 值决定滤波器作用的频率段，而 Resonance 值表示在滤波分界点附近频率增强的幅度。可通过在滤波器单元中改变 frequency 和 resonance 这两个旋钮的值进行调节，也可以直接在频率反馈视图上拖动节点来调节。</p>
+<p>转化滤波器有一个 Morph 控制选项，可以控制滤波器以从低通到高通到带通到陷波再回到低通的方式不断转化。</p>
+<p>滤波器界面的 Envelope 和 Filter 按钮用于在滤波器包络视图和频率反馈视图之间切换。滤波器滤波分界点和谐振可以通过滤波器单元的相应旋钮调节，也可以通过鼠标拖拽滤波器频率反馈视图中的相应节点来调节。滤波器的效果还可以由以下参数调节：</p>
+<p>按键力度，通过滤波器显示界面的 Freq&lt;Vel 调节；</p>
+<p>按键音高，通过滤波器显示界面的 Freq&lt;Key 调节；</p>
+<p>滤波器包络，通过滤波器显示界面的包络进行调节；</p>
+<p>LFO，通过在 LFO 显示界面将 Dest. A 的 FIL 开关打开，或将 Dest. B 设置为 Filter Freq。</p>
+<p>在 Frequency 旋钮上的右键菜单包含一项叫做 Play by Key 的选项，其作用是对滤波器进行最优的按键跟随设置，即自动将 Freq&lt;Key 值设置为 100%、cutoff 设置为 466Hz。</p>
+<p>滤波器的输出信号上可以挂上一个叫 waveshaper 的波形塑形器，波形塑形器的调制波形可以在 Shaper 下拉菜单中选择。 Shp. Drive 推子可以控制增大或衰减进入塑形器的信号强度，而原信号与塑形后的信号之间的比例通过 Dry/Wet 推子来控制。 当Dry/Wet 设置为 0%，塑形器处于旁通状态。</p>
+<h4 id="全局参数"><a href="#全局参数" class="headerlink" title="全局参数"></a>全局参数</h4><p>全局参数单元是 Operator 的总控单元。</p>
+<p>全局参数显示界面中的 Voices 参数可以调节 Operator 的最大发声数。一般来说，为了节省 CPU，最大发声数设置在 6-12 之间为佳。</p>
+<p>一些音色本质上就是单音的，比如笛子等。在这种情况下，我们可以把 Voices 设置为 1。当最大发声数为1时，重叠的音符将会变成滑音，其音量包络不会在连续弹奏的新音符处重新激活，改变的只有音高而已。</p>
+<p>可以通过全局参数单元的 Volume 控制 Operator 的总输出音量。可以通过全局参数显示界面的 Pan 参数来控制声相。声相还可以通过 Pan&lt;Key 值设置为跟随按键音高，也可以通过 Pan&lt;Rnd 值设置为随机声相。</p>
+<p>全局参数的显示界面可以进行多样的 MIDI 映射设置。MIDI 控制器的力度、音高、触后、弯音轮及调制轮分别可以映射到两个目标参数，映射的量可通过 Amount 推子进行调节。注意，音高和弯音轮分别有一项是系统默认映射（分别映射到包络速率和音高），无法改变。</p>
+<h4 id="滑音（Glide）和立体声扩散（Spread）"><a href="#滑音（Glide）和立体声扩散（Spread）" class="headerlink" title="滑音（Glide）和立体声扩散（Spread）"></a>滑音（Glide）和立体声扩散（Spread）</h4><p>Operator 提供了单音旋律用滑音演奏的功能。当这个功能启用时，新的音符将由上一个音符的音高逐渐滑动到自身的音高。滑音功能可以通过音高显示界面的 Glide 按钮打开或关闭，滑音时间可以通过旁边的 Time 值调整。</p>
+<p>Operator 还提供了一个特别的 Spread 参数，这个参数把每个音符的声音分成左声相和右声相两份，制造出立体声效果。左右两个声音相互解谐，解谐程度取决于音高单元的 Spread 值。注意，Spread 是一个很耗 CPU 的功能。</p>
+<h4 id="节省-CPU-的一些策略"><a href="#节省-CPU-的一些策略" class="headerlink" title="节省 CPU 的一些策略"></a>节省 CPU 的一些策略</h4><p>如果想要节省 CPU 运算能力，我们可以关掉一些不要的功能，或减少最大发声数。在 LFO 或滤波器对音色没有实质改变时，也建议关闭之。最大发声数最好在 6-12 之间。Spread 功能尽可能地慎用。值得注意的是，关掉振荡器，并不能节省 CPU 运算能力。</p>
+<h6 id="本文由-SOUNDMONO-编译自-ABLETON"><a href="#本文由-SOUNDMONO-编译自-ABLETON" class="headerlink" title="本文由 SOUNDMONO 编译自 ABLETON"></a>本文由 SOUNDMONO 编译自 <a href="https://www.ableton.com/en/manual/live-instrument-reference/#operator" target="_blank" rel="noopener">ABLETON</a></h6><p>固定链接: <a href="https://soundmono.com/ableton-operator-tuts-chinese.html" target="_blank" rel="noopener">https://soundmono.com/ableton-operator-tuts-chinese.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/混音档案/" rel="tag"># 混音档案</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="音量包络自动化插件：VolumeShaper-4.html" rel="next" title="音量包络自动化插件：VolumeShaper 4">
+                <i class="fa fa-chevron-left"></i> 音量包络自动化插件：VolumeShaper 4
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="音乐备忘录、Garage-Band-和-Logic-Pro-X-10-2-1.html" rel="prev" title="音乐备忘录、Garage Band 和 Logic Pro X 10.2.1">
+                音乐备忘录、Garage Band 和 Logic Pro X 10.2.1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">56</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#概览"><span class="nav-number">1.</span> <span class="nav-text">概览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#振荡器单元"><span class="nav-number">2.</span> <span class="nav-text">振荡器单元</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#内置波形"><span class="nav-number">2.1.</span> <span class="nav-text">内置波形</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#自定义波形"><span class="nav-number">2.2.</span> <span class="nav-text">自定义波形</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他振荡器参数"><span class="nav-number">2.3.</span> <span class="nav-text">其他振荡器参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#混叠失真"><span class="nav-number">2.4.</span> <span class="nav-text">混叠失真</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LFO-单元"><span class="nav-number">3.</span> <span class="nav-text">LFO 单元</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包络"><span class="nav-number">4.</span> <span class="nav-text">包络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#滤波器单元"><span class="nav-number">5.</span> <span class="nav-text">滤波器单元</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#全局参数"><span class="nav-number">6.</span> <span class="nav-text">全局参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#滑音（Glide）和立体声扩散（Spread）"><span class="nav-number">7.</span> <span class="nav-text">滑音（Glide）和立体声扩散（Spread）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#节省-CPU-的一些策略"><span class="nav-number">8.</span> <span class="nav-text">节省 CPU 的一些策略</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本文由-SOUNDMONO-编译自-ABLETON"><span class="nav-number">8.0.1.</span> <span class="nav-text">本文由 SOUNDMONO 编译自 ABLETON</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="编曲宝典,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="图片作者 Michael Tapp 对于刚刚接触音频制作领域的你，充满希望、前景美好、有潜力又有干劲。六个月之后你变得苦恼愁闷，却只能对两只音箱吐苦水。 好吧，也许这有点夸张了，但你能理解大概意思了。涉足音频工程时，你也许会想「这有何难？」最后的结果却是「还真挺难的。」你的混音作品似乎总是哪里不足，你的客户似乎也都是人类和怪物的结合体。这甚至会逐渐使你难以继续工作。 你究竟做错了什么？本文列举了">
+<meta name="keywords" content="编曲宝典">
+<meta property="og:type" content="article">
+<meta property="og:title" content="警惕 6 大音频工作中的陷阱">
+<meta property="og:url" content="https://youbanzhishi.github.io/警惕-6-大音频工作中的陷阱.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="图片作者 Michael Tapp 对于刚刚接触音频制作领域的你，充满希望、前景美好、有潜力又有干劲。六个月之后你变得苦恼愁闷，却只能对两只音箱吐苦水。 好吧，也许这有点夸张了，但你能理解大概意思了。涉足音频工程时，你也许会想「这有何难？」最后的结果却是「还真挺难的。」你的混音作品似乎总是哪里不足，你的客户似乎也都是人类和怪物的结合体。这甚至会逐渐使你难以继续工作。 你究竟做错了什么？本文列举了">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515193914.png">
+<meta property="og:updated_time" content="2020-06-10T10:54:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="警惕 6 大音频工作中的陷阱">
+<meta name="twitter:description" content="图片作者 Michael Tapp 对于刚刚接触音频制作领域的你，充满希望、前景美好、有潜力又有干劲。六个月之后你变得苦恼愁闷，却只能对两只音箱吐苦水。 好吧，也许这有点夸张了，但你能理解大概意思了。涉足音频工程时，你也许会想「这有何难？」最后的结果却是「还真挺难的。」你的混音作品似乎总是哪里不足，你的客户似乎也都是人类和怪物的结合体。这甚至会逐渐使你难以继续工作。 你究竟做错了什么？本文列举了">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515193914.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://youbanzhishi.github.io/警惕-6-大音频工作中的陷阱.html">
+
+
+
+
+
+  <title>警惕 6 大音频工作中的陷阱 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://youbanzhishi.github.io">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">警惕 6 大音频工作中的陷阱</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T19:38:39+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="http://soundmono.com/wp-content/uploads/2014/09/Unprotected1.jpg" target="_blank" rel="noopener"><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515193914.png" alt></a></p>
+<p><em>图片作者 <a href="https://www.flickr.com/photos/59949757@N06/7059401857" target="_blank" rel="noopener">Michael Tapp</a></em></p>
+<p>对于刚刚接触音频制作领域的你，充满希望、前景美好、有潜力又有干劲。<br>六个月之后你变得苦恼愁闷，却只能对两只音箱吐苦水。</p>
+<p>好吧，也许这有点夸张了，但你能理解大概意思了。涉足音频工程时，你也许会想「这有何难？」最后的结果却是「还真挺难的。」你的混音作品似乎总是哪里不足，你的客户似乎也都是人类和怪物的结合体。这甚至会逐渐使你难以继续工作。</p>
+<p>你究竟做错了什么？本文列举了一些常见的陷阱（我差不多每一个都中过），是渴望进步的音频工程师最容易遇见的：包括混音技术当中的，以及职业日常事务中的。</p>
+<h4 id="混音技术"><a href="#混音技术" class="headerlink" title="混音技术"></a>混音技术</h4><h5 id="1、过犹不及"><a href="#1、过犹不及" class="headerlink" title="1、过犹不及"></a>1、过犹不及</h5><p>「混音的目标是为了让一首歌定型，而不是为了做一些事情而去做。」这句话看上去老生常谈了吧？但也许你和我一样，也曾经每一轨都挂着一个 EQ、一个压缩，甚至后边再来一个 EQ。为什么？因为你竭尽全力想要用这些很酷的事情打动客户（以及打动自己）。</p>
+<p>你会想要拥有自己的招牌声音，并接受音频技术的访谈：「其实在我的混音里使用了 X、Y，并将它们的效果加入一点 Z，得到非常宏大的压缩效果和有冲击力的 EQ 效果。」</p>
+<p>但遗憾的是，自己的混音作品似乎与那些大牌录音师的相比根本没有竞争力。原因在哪里？是忘了给军鼓加上多段激励器？还要加上这个那个？其实不是，因为听起来还是平平淡淡。</p>
+<p>那些出名的混音工程师总是在他们的作品里做各种怪异灵巧的事情。然而，直白地说，我曾经在做这些事时，只是在胡乱尝试。九成时间我都在玩一些奇特的花样，或用上一大堆效果器，原因只是我觉得应该胡乱尝试，做一些看似「实验性」的东西。</p>
+<p>其实，往往最基础和最少量的处理就可以得到我需要的混音。除非偶尔我想要找点乐子。</p>
+<p>这个观点同样适用于接下来的内容。</p>
+<h5 id="2、缺乏音乐性的思考"><a href="#2、缺乏音乐性的思考" class="headerlink" title="2、缺乏音乐性的思考"></a>2、缺乏音乐性的思考</h5><p>混音新手可能总会尝试凑齐一套「声音的统一概念」，认为存在某种通用的正确声音，只要按照固定格式做好频率均衡就可以像还原一个魔方似的完成作品了。然而，事实也不是这样。</p>
+<p>混音说到底是一种制作：它从音乐人的作品出发，职责是确保通过扬声器传出来的声音符合音乐人的预期。因此，当你准备在底鼓上放一个 EQ 之前要先问自己这个问题：为什么我要给底鼓加 EQ？如果你回答不了，那么请暂时不要操作，再仔细思考一下。如果能够回答，也请考虑一下自己的回答是不是这样开头的：「这样做可以让这段录音…」</p>
+<p>比如：这样做可以让这段录音更加干脆，底鼓低频不那么拖泥带水。</p>
+<p>这样做的话，在接下来的作品中你也许就能这样回答：</p>
+<p>这样做可以让这段录音更加圆润，底鼓的中低频都更有冲击力。</p>
+<p>聪明的 EQ 策略能让你的底鼓更加贴合整个录音，使作品的品质得到提升。</p>
+<h5 id="3、忽视自动化的威力"><a href="#3、忽视自动化的威力" class="headerlink" title="3、忽视自动化的威力"></a>3、忽视自动化的威力</h5><p>若你非常想要用你的音频技术打动客户，那么就从电平自动化做起吧。</p>
+<p>制造对比，维持能量的流动，寻找歌词中突出的字句，在人声薄弱处激发出主音声部的力量，强化强拍，让歌曲的强弱各部产生明显的对比，改变混响和延迟的量寻找最有力的点。</p>
+<p>电平自动化的路可以走很远，但终究都是围绕「这首歌要做什么」来决定方向的。</p>
+<h4 id="职业事务"><a href="#职业事务" class="headerlink" title="职业事务"></a>职业事务</h4><h5 id="1、不能将资源专注于监听"><a href="#1、不能将资源专注于监听" class="headerlink" title="1、不能将资源专注于监听"></a>1、不能将资源专注于监听</h5><p>这句依然是老生常谈：如果听不见，根本就没法混音！我再深入探讨一下这句话的内含。</p>
+<p>目前我没有在网站上公开我的设备清单。我考虑过这样做，但还是决定暂时不。我的个人工作室里大约有加起来 3 万美元的设备，不少是模拟信号处理器。但为什么不公开呢？因为，这真心没什么帮助。</p>
+<p>重要的是我拿这些设备来做什么，并最终能够得到什么。光知道有什么设备没有帮助，而更要知道我怎样用这些家伙来混音。用一台 EQ 就做 EQ 该做的事，如果我做错了，那么再好的 EQ 设备也是白搭。如果都听不到那个声音，怎么混？</p>
+<p>甚至可以这么说，有时用次好的设备做出正确的决定，也比错误地使用世界顶级的设备要好。假设我的工作室预算只有不到 5000 美元（不包括电脑），我将会把投资尽量用在监听设备上，并使用软件自带的效果器来混音。</p>
+<p>这也是我在混音中真正专注的事。如果我的注意力在制作上，事情当然会不一样，我需要买能制作音乐的设备。但眼下我只要最好的功放来提升我的音箱，因为我要最好的监听品质！</p>
+<h5 id="2、过低的报价、自卑地宣传"><a href="#2、过低的报价、自卑地宣传" class="headerlink" title="2、过低的报价、自卑地宣传"></a>2、过低的报价、自卑地宣传</h5><p>在音频工程领域里，存在着巨大的分水岭，使这个领域中的价值参差不齐。首当其冲的问题就是「工作室老手」们，他们甚至不应该掺和到这个事情中来，因为他们往往过高报价、过分表现自己的服务。要专门论述这一点，又可以写一篇很长的文章。在这里我只提及硬币的另一面：新人们往往对自己估值过低。</p>
+<p>虽然你是新人，但这不代表你的价值就低！我明白，说起来容易做起来难。让我们开诚布公一些，音频工程行业极具竞争性，音乐工业存活在剑锋利刃之上。无论是客户还是刚才提到的「工作室老手」都会压低你的身价。别信他们就是了。</p>
+<p>你是极其重要的。专注于本职工作就行，正如我的本职工作就是让 Andrew Dawsons、Chris Athens 和 Dave Pensados 专注于他们自己的本职工作一样。并为新来的音乐人提供他们所需要的录音资源。</p>
+<p>那么，我提到上边的事情是因为小本经营的影响。如果一个老资历的人报价 X，威信次之的人就只能往下报价。最大牌的报价往往就是标准。最新入行的新人的报价则是底线。而我们的职业价值就是在这对封顶和底线之间的某个均值。</p>
+<p>永远别把自己当成死守底线报价的最新手。实际上，你给这个行业带来的是新的生命、能量、前所未有的思想和勇往直前。我们这样的「老家伙」必须时刻清醒地训练自己才能保持这些品质。总之，别过分低估你自己！清醒认识到自己需要改进的地方固然没错，但也要清楚地了解自己的独特之处。</p>
+<h5 id="3、责怪音乐人"><a href="#3、责怪音乐人" class="headerlink" title="3、责怪音乐人"></a>3、责怪音乐人</h5><p>有时处理一大堆录音时，无论如何也做不对。你和音乐人奋战多时，仍然无法确认下满意的声音。这时，重要的一点是不要责怪音乐人、录音师或编曲，即使问题真的出在那里。</p>
+<p>作为音频工程师，你会接触到各种难以对付的艺人、糟糕的录音或草率的编曲。这就是行业的常态。而顶尖的音频工程师能够成为他们今天的样子，就在于能够处理好每一个类似的情况。</p>
+<p>如果说，一首歌的某个环节真的有些欠锤，也尽量用谨慎的建议来解决，如抛弃或加入某些元素，让艺人不再执著于自己的小样，重新编排一些东西等等。如果他们仍然说「不」，那么就请自己扛住。试着把功夫用在如何理顺工作上，而不是指出他们哪里不对。如果你真的是有思想的，那么就试着化腐朽为神奇吧：把错乱的编曲做成新颖而激动人心的，或把艺人的胡思乱想真的做成天马行空。</p>
+<p>总而言之，对录音保持乐观，总是挑毛病没有用。况且多数情况下，问题棘手的真正原因并不在于那些行业中的毛病，真正的原因是我们对这些毛病束手无力。如果能克服这些障碍，也就离成为更优秀的音频工程师不远了。</p>
+<h6 id="本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES"><a href="#本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES" class="headerlink" title="本文由 SOUNDMONO 编译自 THE PRO AUDIO FILES"></a>本文由 SOUNDMONO 编译自 <a href="http://theproaudiofiles.com/6-common-traps-aspiring-audio-engineers-fall-into/" target="_blank" rel="noopener">THE PRO AUDIO FILES</a></h6><p>固定链接: <a href="https://soundmono.com/beware-of-6-common-traps-of-audio-engineering.html" target="_blank" rel="noopener">https://soundmono.com/beware-of-6-common-traps-of-audio-engineering.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/编曲宝典/" rel="tag"># 编曲宝典</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="如何用-Logic-修正音准.html" rel="next" title="如何用 Logic 修正音准">
+                <i class="fa fa-chevron-left"></i> 如何用 Logic 修正音准
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">56</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#混音技术"><span class="nav-number">1.</span> <span class="nav-text">混音技术</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、过犹不及"><span class="nav-number">1.1.</span> <span class="nav-text">1、过犹不及</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、缺乏音乐性的思考"><span class="nav-number">1.2.</span> <span class="nav-text">2、缺乏音乐性的思考</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、忽视自动化的威力"><span class="nav-number">1.3.</span> <span class="nav-text">3、忽视自动化的威力</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#职业事务"><span class="nav-number">2.</span> <span class="nav-text">职业事务</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、不能将资源专注于监听"><span class="nav-number">2.1.</span> <span class="nav-text">1、不能将资源专注于监听</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、过低的报价、自卑地宣传"><span class="nav-number">2.2.</span> <span class="nav-text">2、过低的报价、自卑地宣传</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、责怪音乐人"><span class="nav-number">2.3.</span> <span class="nav-text">3、责怪音乐人</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES"><span class="nav-number">2.3.1.</span> <span class="nav-text">本文由 SOUNDMONO 编译自 THE PRO AUDIO FILES</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
