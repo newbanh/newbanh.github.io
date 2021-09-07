@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="编曲宝典,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="Logic Pro X 内置了许多实用的 MIDI 效果器插件，例如琶音器 Arpeggiator、力度处理器 Velocity Processor 等。本文 Mark Cousins 将带你掌握这类 MIDI 效果器插件。  相信有不少读者已经接触甚至大量应用 Arpeggiator（下为琶音器）了，Logic Pro X 的其他 MIDI 效果器插件同样值得挖掘。MIDI 插件可以说是现场演">
+<meta name="keywords" content="编曲宝典">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Logic Pro X 系列教程 4：MIDI 效果器">
+<meta property="og:url" content="https://audio.newban.cn/51.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="Logic Pro X 内置了许多实用的 MIDI 效果器插件，例如琶音器 Arpeggiator、力度处理器 Velocity Processor 等。本文 Mark Cousins 将带你掌握这类 MIDI 效果器插件。  相信有不少读者已经接触甚至大量应用 Arpeggiator（下为琶音器）了，Logic Pro X 的其他 MIDI 效果器插件同样值得挖掘。MIDI 插件可以说是现场演">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174153.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174205.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174227.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174239.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174248.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174257.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174306.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174315.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174344.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174353.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174400.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174414.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174421.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174431.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174441.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174450.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174458.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174511.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174521.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174530.png">
+<meta property="og:updated_time" content="2020-06-10T10:54:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Logic Pro X 系列教程 4：MIDI 效果器">
+<meta name="twitter:description" content="Logic Pro X 内置了许多实用的 MIDI 效果器插件，例如琶音器 Arpeggiator、力度处理器 Velocity Processor 等。本文 Mark Cousins 将带你掌握这类 MIDI 效果器插件。  相信有不少读者已经接触甚至大量应用 Arpeggiator（下为琶音器）了，Logic Pro X 的其他 MIDI 效果器插件同样值得挖掘。MIDI 插件可以说是现场演">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174153.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/51.html">
+
+
+
+
+
+  <title>Logic Pro X 系列教程 4：MIDI 效果器 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="http://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Logic Pro X 系列教程 4：MIDI 效果器</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T17:31:08+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174153.png" alt></p>
+<p><strong>Logic Pro X 内置了许多实用的 MIDI 效果器插件，例如琶音器 Arpeggiator、力度处理器 Velocity Processor 等。本文 Mark Cousins 将带你掌握这类 MIDI 效果器插件。</strong></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174205.png" alt></p>
+<p>相信有不少读者已经接触甚至大量应用 Arpeggiator（下为琶音器）了，Logic Pro X 的其他 MIDI 效果器插件同样值得挖掘。MIDI 插件可以说是现场演出、编曲制作和创意音乐三个方向当中的居间者。它对音乐创作的激励作用不可小觑，配上同样是新发布的插件 Drum Kit Designer 和 Retro Synth 曾更能显示出其威力。</p>
+<p>本文将重点讨论三种 MIDI 效果器的应用实例。第一种是关于 MIDI 效果器的一个重要概念：实时演奏调整。</p>
+<p>大家或许对钢琴卷帘并不陌生，会经常用它来编辑 MIDI 数据。但还有一种方法，就是利用 MIDI 效果器来实时调整 MIDI 数据，例如比较常见的力度处理器（Velocity Processor）。在接下来的讲解中，你会了解到 MIDI 将不单单是一种序列化的音符数据了。</p>
+<p>从创作的角度来看，MIDI 效果器插件对于舞曲制作人来说就像是梦幻中的工具。他们可以使用琶音器（Arpeggiator）、和弦触发器（Chord Trigger）以及音符重复器（Note Repeater）来制作音乐片段，从而改变一切由零开始，一个音符一个音符地录制或编辑的制作方式。你可以只弹奏一个音符，并立刻得到一串复杂的和弦分解，或者和弦内的随机音符序列。你会发现，如何处理弹奏的内容甚至比原始内容还要重要！</p>
+<p>尽管这篇教程针对 MIDI 效果器进行了较为全面的介绍，但这仍然只是冰山一角，对于脚本编辑器（Scripter）插件来说更是如此。Logic Pro X 的 MIDI 效果器是它最吸引人的新特性之一，几乎所有风格的音乐都可以从中获得一些益处。</p>
+<h4 id="使用-MIDI-效果器插件"><a href="#使用-MIDI-效果器插件" class="headerlink" title="使用 MIDI 效果器插件"></a>使用 MIDI 效果器插件</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174227.png" alt></p>
+<p>1、我们先用第一个例子来介绍单个 MIDI 效果器插件对音乐演奏产生的效果。基本素材是一段鼓组节拍，音源采用 Drum Kit Designer。首先在通道条上边的 MIDI FX 插槽里激活一个力度处理器（Velocity Processor）。MIDI 效果器插件的插槽颜色是绿色的。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174239.png" alt></p>
+<p>2、所有 MIDI 效果器都能实时改变 MIDI 数据流，就像音频插件实时处理音频信号一样。我们选用的力度处理器（Velocity Processor）就是专门处理力度的工具，可以理解为对 MIDI 数据流进行的「压缩」处理。你会发现鼓组的力度动态马上发生了改变。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174248.png" alt></p>
+<p>3、现在我们来了解一下各个参数的意义。增加 Ratio（比率）可以提升处理强度，也就是超过 Threshold（阈值）的音符力度要衰减多少。增大这个参数时，你会发现鼓组演奏马上变得安静了些，而且力度动态范围也减小了。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174257.png" alt></p>
+<p>4、现在试试调节 Threshold（阈值），听一下前后的区别。阈值越低，演奏声就越小，力度也趋向扁平化。提高阈值则能够使声音变大，也就是让处理器只处理力度较大的音符。最后，提升一下 Make Up（增益），整体提升所有音符的力度，这样可以使力度过小的音符恢复音量。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174306.png" alt></p>
+<p>5、这个例子是用力度处理器实现扩展器（Expander）的做法。首先把 Ratio（比率）调整为 0.125，Make Up（增益）调整为 -110，然后慢慢尝试不同的 Threshold（阈值）。调节过程中你会发现，部分演奏内容好像完全消失了，使得节拍更加简洁。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174315.png" alt></p>
+<p>6、Comp/Exp（压缩/扩展）模式一般来说效果都很不错，而另外两个模式也很值得一试。Add/Scale 更为简单，直接增减一定比例的力度值。比如将 Scale（比例）设为 69% 使得演奏更加突出，较重的和较轻的力度都会得到一定的增强。</p>
+<h4 id="多个-MIDI-效果器叠加使用"><a href="#多个-MIDI-效果器叠加使用" class="headerlink" title="多个 MIDI 效果器叠加使用"></a>多个 MIDI 效果器叠加使用</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174344.png" alt></p>
+<p>1、如同音频插件一样，我们可以叠加多个 MIDI 效果器来使用，得到复合的处理效果。每一个插件都会在前一个插件处理的基础之上增加一些自己的处理。叠加使用 MIDI 效果器后，你才会看到 MIDI 效果器系统的真实潜力。在这个例子中，我们先新建一个轨道，加载 Retro Synth 乐器，然后激活一个和弦触发器（Chord Trigger）。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174353.png" alt></p>
+<p>2、和弦触发器插件和 Logic Pro 9 Environment 中的 Chord Memorizer 对象类似。按下 Learn（学习）按钮，就可以定义一个和弦并映射到某个音符上。你可以在下边的橙色键盘上点按所需音符，或者直接在键盘上弹出和弦。现在，弹奏不同的音将触发相应的和弦。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174400.png" alt></p>
+<p>3、在和弦触发器之后，插入一个音符重复器（Note Repeater）。你可以把它理解为一个 MIDI 序列的延迟效果器，弹奏一个音符将按节拍发出相同的若干次声音。在这个例子里，我们将 Repeat（重复次数）设为 3 次，Delay（延迟时间）设为 1/8d。现在，只需弹奏一个音符，你就可以听到三个构造完美的和弦了。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174414.png" alt></p>
+<p>4、音符重复器有两个十分有趣的参数，Transpose（移调）和 Velocity Ramp（力度坡度）。移调将对每个延迟声音进行一定的整体移调，例如设置为 +12 就会把每次延迟都提升一个八度。力度坡度功能会让延迟声音逐渐变大或变小，例如设置为 85%，回馈声会越来越小。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174421.png" alt></p>
+<p>5、接下来，你可以再添加一个 Modulator（调制器）到插件序列中。调制器比较特别，它并非简单的对已有数据进行处理，而是会添加 MIDI CC 信息，比如 LFO（低频振荡器）和 ENV（包络）会以音符为触发条件进行处理。在这个例子中，默认设置会制造一个和曲速同步的 LFO 效果。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174431.png" alt></p>
+<p>6、当然，和所有 MIDI 效果器一样，你需要熟知你使用的虚拟乐器音源是否能够响应 MIDI 效果器做出的处理，比如力度数据或 MIDI CC 命令等。Retro Synth 中的力度响应是预先绑定在它的内部放大器和过滤器上的，然而你也可以添加其他调制方法，例如在 Settings（设置）面板选择调制轮等。</p>
+<h4 id="琶音器（Arpeggiator）和随机发生器（Randomizer）"><a href="#琶音器（Arpeggiator）和随机发生器（Randomizer）" class="headerlink" title="琶音器（Arpeggiator）和随机发生器（Randomizer）"></a>琶音器（Arpeggiator）和随机发生器（Randomizer）</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174441.png" alt></p>
+<p>1、这是本篇教程的最后一个例子，本例中的组合将会把 MIDI 效果器概念进行最大限度的发挥，也就是几乎完全让 MIDI 效果器来生成音乐。我们同样以 Retro Synth 作为音源，移除已有的 MIDI 效果器，然后添加一个 Arpeggiator（琶音器）到插槽中，并使用默认的 1/16 Rate 预设。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174450.png" alt></p>
+<p>2、下面是本例中的关键：Randomizer（随机发生器）插件。我们将在 MIDI 信号处理序列中使用两次随机插件。将随机发生器添加到琶音器后面，使用默认设置即可。它会将琶音器传出的平直力度数据随机打乱，范围是 0-127 也就是全部力度值。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174458.png" alt></p>
+<p>3、接下来再添加一个随机发生器插件，这一次把 Event Type（事件类型）改成 Note Number（音符数量）。你会发现每一步都会产生巨大的音调偏移。下面把 Random（随机）参数设为 30 左右（基本上是 3 个八度），并把 Weight（侧重）稍稍偏向高音区。听听现在的随机效果吧！</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174511.png" alt></p>
+<p>4、随机音符纵然很有趣，但并不十分具有音乐性！要解决这个问题，可以在两个随机发生器后面添加一个 Transposer（移调器）。移调器不仅会处理 MIDI 数据，还有一个十分有用的特性：音阶纠正。尝试一下「Can’t Go Wrong」预设，或者你自己喜爱的音阶种类。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174521.png" alt></p>
+<p>5、现在，你可以回到琶音器插件中，尝试使用一些其他的 Input Type（输入类型）。选择 Grid 模式，创建一个类似随机的旋律，你听到的将不再是单纯的 16 分音符重复了。你还可以使用 Chord（和弦）模式，按住多个音符产生一个序列。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515174530.png" alt></p>
+<p>6、使用 MIDI 效果器最终是为了处理出适合于当前乐曲的效果。在第二个例子中，需要确保 Retro Synth 能够响应你发出的控制信息，比如通过力度来触发滤波器的变化，或在音序中创造空间感等内容。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/01/logic-power-4/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-4.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-4.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/编曲宝典/" rel="tag"># 编曲宝典</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="52.html" rel="next" title="Logic Pro X 系列教程 5：Flex Time">
+                <i class="fa fa-chevron-left"></i> Logic Pro X 系列教程 5：Flex Time
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="50.html" rel="prev" title="Logic Pro X 系列教程 3：素材切片创意">
+                Logic Pro X 系列教程 3：素材切片创意 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="http://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-MIDI-效果器插件"><span class="nav-number">1.</span> <span class="nav-text">使用 MIDI 效果器插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多个-MIDI-效果器叠加使用"><span class="nav-number">2.</span> <span class="nav-text">多个 MIDI 效果器叠加使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#琶音器（Arpeggiator）和随机发生器（Randomizer）"><span class="nav-number">3.</span> <span class="nav-text">琶音器（Arpeggiator）和随机发生器（Randomizer）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本文由-SOUNDMONO-编译自-MUSIC-TECH"><span class="nav-number">3.0.1.</span> <span class="nav-text">本文由 SOUNDMONO 编译自 MUSIC TECH</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

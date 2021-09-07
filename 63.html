@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="词曲圣经,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="前言前面我们说过, 音乐主要有音高和音长两大元素构成 从音长方面, 我们可以延伸出节奏 节拍和演奏速度等相关概念 而从音高方面, 我们可以延伸出调性概念 什么是调性调性主要包含调和调式两个概念, 我们在分析一首歌的调性时, 也是从这两个方面入手:  调: 一首歌的主音, 比如C调 A调分别是以C和A为主音 调式: 若干个音按照一定的音程关系排列所构成的一种结构  调式结构比如Ionian调式, 也">
+<meta name="keywords" content="词曲圣经">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于歌曲的调性">
+<meta property="og:url" content="https://audio.newban.cn/63.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="前言前面我们说过, 音乐主要有音高和音长两大元素构成 从音长方面, 我们可以延伸出节奏 节拍和演奏速度等相关概念 而从音高方面, 我们可以延伸出调性概念 什么是调性调性主要包含调和调式两个概念, 我们在分析一首歌的调性时, 也是从这两个方面入手:  调: 一首歌的主音, 比如C调 A调分别是以C和A为主音 调式: 若干个音按照一定的音程关系排列所构成的一种结构  调式结构比如Ionian调式, 也">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2021-09-07T08:43:20.134Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于歌曲的调性">
+<meta name="twitter:description" content="前言前面我们说过, 音乐主要有音高和音长两大元素构成 从音长方面, 我们可以延伸出节奏 节拍和演奏速度等相关概念 而从音高方面, 我们可以延伸出调性概念 什么是调性调性主要包含调和调式两个概念, 我们在分析一首歌的调性时, 也是从这两个方面入手:  调: 一首歌的主音, 比如C调 A调分别是以C和A为主音 调式: 若干个音按照一定的音程关系排列所构成的一种结构  调式结构比如Ionian调式, 也">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/63.html">
+
+
+
+
+
+  <title>关于歌曲的调性 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="http://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">关于歌曲的调性</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-07T10:06:53+08:00">
+                2021-09-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面我们说过, 音乐主要有音高和音长两大元素构成</p>
+<p>从音长方面, 我们可以延伸出<strong>节奏 节拍和演奏速度</strong>等相关概念</p>
+<p>而从音高方面, 我们可以延伸出调性概念</p>
+<h3 id="什么是调性"><a href="#什么是调性" class="headerlink" title="什么是调性"></a>什么是调性</h3><p>调性主要包含<strong>调和调式</strong>两个概念, 我们在分析一首歌的调性时, 也是从这两个方面入手:</p>
+<ul>
+<li><strong>调</strong>: 一首歌的主音, 比如C调 A调分别是以C和A为主音</li>
+<li><strong>调式</strong>: 若干个音按照一定的音程关系排列所构成的一种<strong>结构</strong></li>
+</ul>
+<h5 id="调式结构"><a href="#调式结构" class="headerlink" title="调式结构"></a>调式结构</h5><p>比如Ionian调式, 也就是我们平常说的大调式, 它的调式结构为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">全全半全全全半</span><br></pre></td></tr></table></figure>
+
+<p>Aolian调式的调式结构为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">全半全全半全全</span><br></pre></td></tr></table></figure>
+
+<p>假设一首歌以C为主音, 采用Ionian调式, 那么实际音阶为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C D E F G A B</span><br></pre></td></tr></table></figure>
+
+<p>我们则说这首歌的调性为: C Ionian调 也就是C大调</p>
+<p>同样的 假设一首歌以C为主音, 采用Aolian调式, 那么实际音阶为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C D Eb F G Ab Bb</span><br></pre></td></tr></table></figure>
+
+<p>我们则说这首歌的调性为: C Aolian调 也就是C小调</p>
+<p>也就是说主音和调式可以随意排列组合, 主音确定了一首歌的起始音高, 调式则确定了在主音基础上整首歌的音高走向, 两者结合限定了歌曲的音高范围(非音区) 即音域</p>
+<p>犹如二维坐标系, 一个横向, 一个纵向, 我称之为纵横表:</p>
+<table>
+<thead>
+<tr>
+<th>调式/调(主音)</th>
+<th>C调</th>
+<th>D调</th>
+<th>E调</th>
+<th>F调</th>
+<th>G调</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ionian调式</td>
+<td>C Ionian</td>
+<td>D Ionian</td>
+<td>E Ionian</td>
+<td>F Ionian</td>
+<td>G Ionian</td>
+</tr>
+<tr>
+<td>Dorian调式</td>
+<td>C Dorian</td>
+<td>D Dorian</td>
+<td>E Dorian</td>
+<td>F Dorian</td>
+<td>G Dorian</td>
+</tr>
+<tr>
+<td>Phygian调式</td>
+<td>C Phygian</td>
+<td>D Phygian</td>
+<td>E Phygian</td>
+<td>F Phygian</td>
+<td>G Phygian</td>
+</tr>
+<tr>
+<td>Lydian调式</td>
+<td>C Lydian</td>
+<td>D Lydian</td>
+<td>E Lydian</td>
+<td>F Lydian</td>
+<td>G Lydian</td>
+</tr>
+<tr>
+<td>Mixolydian调式</td>
+<td>C Mixolydian</td>
+<td>D Mixolydian</td>
+<td>E Mixolydian</td>
+<td>F Mixolydian</td>
+<td>G Mixolydian</td>
+</tr>
+<tr>
+<td>Aolian调式</td>
+<td>C Aolian</td>
+<td>D Aolian</td>
+<td>E Aolian</td>
+<td>F Aolian</td>
+<td>G Aolian</td>
+</tr>
+<tr>
+<td>Locrian调式</td>
+<td>C Locrian</td>
+<td>D Locrian</td>
+<td>E Locrian</td>
+<td>F Locrian</td>
+<td>G Locrian</td>
+</tr>
+<tr>
+<td>宫调式</td>
+<td>C 宫调</td>
+<td>D 宫调</td>
+<td>E 宫调</td>
+<td>F 宫调</td>
+<td>G 宫调</td>
+</tr>
+<tr>
+<td>商调式</td>
+<td>C 商调</td>
+<td>D 商调</td>
+<td>E 商调</td>
+<td>F 商调</td>
+<td>G 商调</td>
+</tr>
+<tr>
+<td>角调式</td>
+<td>C 角调</td>
+<td>D 角调</td>
+<td>E 角调</td>
+<td>F 角调</td>
+<td>G 角调</td>
+</tr>
+<tr>
+<td>徵调式</td>
+<td>C 徵调</td>
+<td>D 徵调</td>
+<td>E 徵调</td>
+<td>F 徵调</td>
+<td>G 徵调</td>
+</tr>
+<tr>
+<td>羽调式</td>
+<td>C 羽调</td>
+<td>D 羽调</td>
+<td>E 羽调</td>
+<td>F 羽调</td>
+<td>G 羽调</td>
+</tr>
+</tbody></table>
+<p>其中调一共有<strong>十二个</strong>, 上面只列举了其中一部分</p>
+<p>而调式则有不少, 因为音的排列结构多种多样, 上面列举了常见的7种中古调式和5种五声民族调式, 配合上十二个主音, 那么调性一共有12x12=144 个</p>
+<p>是不是够我们玩一阵子了 哈哈</p>
+<p>不用想太多, 我们只需要记住横向的十二个主音和纵向的常用调式就行</p>
+<p>当然每个调式所对应的调式结构我们需要熟知:</p>
+<table>
+<thead>
+<tr>
+<th>调式</th>
+<th>对应调式结构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ionian调式</td>
+<td>全全半全全全半</td>
+</tr>
+<tr>
+<td>Dorian调式</td>
+<td>全半全全全半全</td>
+</tr>
+<tr>
+<td>Phygian调式</td>
+<td>半全全全半全全</td>
+</tr>
+<tr>
+<td>Lydian调式</td>
+<td>全全全半全全半</td>
+</tr>
+<tr>
+<td>Mixolydian调式</td>
+<td>全全半全全全半</td>
+</tr>
+<tr>
+<td>Aolian调式</td>
+<td>全半全全半全全</td>
+</tr>
+<tr>
+<td>Locrian调式</td>
+<td>半全全半全全全</td>
+</tr>
+<tr>
+<td>宫调式</td>
+<td>全全三全三</td>
+</tr>
+<tr>
+<td>商调式</td>
+<td>全三全三全</td>
+</tr>
+<tr>
+<td>角调式</td>
+<td>三全三全全</td>
+</tr>
+<tr>
+<td>徵调式</td>
+<td>全三全全三</td>
+</tr>
+<tr>
+<td>羽调式</td>
+<td>三全全三全</td>
+</tr>
+</tbody></table>
+<p><strong>注</strong>: 上表中的三表示小三度 全表示全音 半表示半音</p>
+<p>上表中的常见调式, <strong>凡是调式结构以全全开头的, 皆为大调式范畴,  否则属于小调式范畴</strong>, 区分根据主要看三度音是大三度还是小三度, 大三度属大调 小三度属小调</p>
+<h3 id="不同的调式蕴含不同的感觉"><a href="#不同的调式蕴含不同的感觉" class="headerlink" title="不同的调式蕴含不同的感觉"></a>不同的调式蕴含不同的感觉</h3><p>由于不同调式音高的限制排列, 导致每一种调式出来的音乐给人的感觉也不一样:</p>
+<table>
+<thead>
+<tr>
+<th>调式</th>
+<th>对应音乐色彩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ionian调式</td>
+<td>乐观阳光 积极向上 流行乐常用该调式</td>
+</tr>
+<tr>
+<td>Dorian调式</td>
+<td>幽暗中透露一丝阳光 神话的感觉 游戏配乐常用该调式</td>
+</tr>
+<tr>
+<td>Phygian调式</td>
+<td>西班牙风</td>
+</tr>
+<tr>
+<td>Lydian调式</td>
+<td>雄伟 宇宙浩瀚</td>
+</tr>
+<tr>
+<td>Mixolydian调式</td>
+<td>蓝调爵士 轻松愉悦的游戏配乐</td>
+</tr>
+<tr>
+<td>Aolian调式</td>
+<td>幽暗 诡异 邪恶 恐怖悬疑</td>
+</tr>
+<tr>
+<td>Locrian调式</td>
+<td>极度黑暗 问罪</td>
+</tr>
+<tr>
+<td>宫调式</td>
+<td>沉稳正气</td>
+</tr>
+<tr>
+<td>商调式</td>
+<td>伸张正义 不平之气</td>
+</tr>
+<tr>
+<td>角调式</td>
+<td>不平之中带有一丝希望</td>
+</tr>
+<tr>
+<td>徵调式</td>
+<td>朝气 青春 男女之恋</td>
+</tr>
+<tr>
+<td>羽调式</td>
+<td>自信 征战归来</td>
+</tr>
+</tbody></table>
+<h3 id="调式间的半音变化关系"><a href="#调式间的半音变化关系" class="headerlink" title="调式间的半音变化关系"></a>调式间的半音变化关系</h3><p>既然已经知道了调式的调式结构, 那我们从十二个音中随便选取一个主音, 来对比分析不同调式间的半音变化关系</p>
+<p>我们以C主音为例:</p>
+<table>
+<thead>
+<tr>
+<th>调式</th>
+<th>C主音音阶</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ionian调式</td>
+<td>1 2 3 4 5 6 7</td>
+</tr>
+<tr>
+<td>Dorian调式</td>
+<td>1 2 3b 4 5 6 7b</td>
+</tr>
+<tr>
+<td>Phygian调式</td>
+<td>1 2b 3b 4 5 6b 7b</td>
+</tr>
+<tr>
+<td>Lydian调式</td>
+<td>1 2 3 4# 5 6 7</td>
+</tr>
+<tr>
+<td>Mixolydian调式</td>
+<td>1 2 3 4 5 6 7b</td>
+</tr>
+<tr>
+<td>Aolian调式</td>
+<td>1 2 3b 4 5 6b 7b</td>
+</tr>
+<tr>
+<td>Locrian调式</td>
+<td>1 2b 3b 4 5b 6b 7b</td>
+</tr>
+<tr>
+<td>宫调式</td>
+<td>1 2 3 5 6</td>
+</tr>
+<tr>
+<td>商调式</td>
+<td>1 2 3# 5 6#</td>
+</tr>
+<tr>
+<td>角调式</td>
+<td>1 2# 3# 5# 6#</td>
+</tr>
+<tr>
+<td>徵调式</td>
+<td>1 2 3# 5 6</td>
+</tr>
+<tr>
+<td>羽调式</td>
+<td>1 2# 3# 5 6#</td>
+</tr>
+</tbody></table>
+<p><strong>注</strong>: 上表中的#表示升半音 b表示降半音</p>
+<p>由上表各个调式音阶对比, 我们会发现一些规律, 在七个中古调式中如果以Ionian调式为参考调式, 那么其它六个调式所需的升降音为:<br>| 调式           | 以Ionian为参考系的升降音关系  |<br>| ————– | ————- |<br>| Dorian调式     |          降三音和七音    |<br>| Phygian调式    |          降二三六七音     |<br>| Lydian调式     |           升四音    |<br>| Mixolydian调式 |         降七音    |<br>| Aolian调式     |          降三六七音     |<br>| Locrian调式    |          降二三五六七音     |</p>
+<p>同样的, 在五个五声调式中, 如果以宫调式为参考调式, 那么其它四个调式所需的升降音为:<br>| 调式           | 以宫调式为参考系的升降音关系  |<br>| ————– | ————- |<br>| 商调式         |           升三五音  |<br>| 角调式         |            升二三四五音  |<br>| 徵调式         |            升三音  |<br>| 羽调式         | 升二三五音|</p>
+<h3 id="各调式间的互相推导"><a href="#各调式间的互相推导" class="headerlink" title="各调式间的互相推导"></a>各调式间的互相推导</h3><p>根据调式间的音阶半音变化关系, 我们可以将任意一个调推到出其对应的大调, 比如我们知道A Locrian的音阶排列为:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6 7b 1 2 3b 4 5</span><br></pre></td></tr></table></figure>
+
+<p>我们可以立马推导出A Ionian的音阶排列, 只需将A Locrian的音阶逆向升二三五六七音即可, 也就是:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6 7 1# 2 3 4# 5#</span><br></pre></td></tr></table></figure>
+
+<p>这样 我们就不必死记硬背上百个调的音阶了, 只需记住调式间的升降音关系即可, 方便了我们学习</p>
+<p>另外, 不知道大家有没有注意到, C Ionian 和D Dorian 两者的调式结构虽然不一样, 但是它们使用了相同的音 如下表:</p>
+<table>
+<thead>
+<tr>
+<th>调性</th>
+<th>对应音阶</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C Ionian调</td>
+<td>1 2 3 4 5 6 7</td>
+</tr>
+<tr>
+<td>D Dorian调</td>
+<td>2 3 4 5 6 7 1</td>
+</tr>
+<tr>
+<td>E Phygian调式</td>
+<td>3 4 5 6 7 1 2</td>
+</tr>
+<tr>
+<td>F Lydian调式</td>
+<td>4 5 6 7 1 2 3</td>
+</tr>
+<tr>
+<td>G Mixolydian调式</td>
+<td>5 6 7 1 2 3 4</td>
+</tr>
+<tr>
+<td>A Aolian调式</td>
+<td>6 7 1 2 3 4 5</td>
+</tr>
+<tr>
+<td>B Locrian调式</td>
+<td>7 1 2 3 4 5 6</td>
+</tr>
+</tbody></table>
+<p>如果大家看不出其中的规律, 我们可以再举例一张表:<br>| 调性 | 对应音阶|<br>| —- | —————- |<br>| D Ionian调    | 2 3 4# 5 6 7 1#     |<br>| E Dorian调     | 3 4# 5 6 7 1# 2 |<br>| F# Phygian调式   |  4# 5 6 7 1# 2 3  |<br>| G Lydian调式     |  5 6 7 1# 2 3 4#    |<br>| A Mixolydian调式 | 6 7 1# 2  3 4# 5|<br>| B Aolian调式     |  7 1# 2 3 4# 5 6   |<br>| C# Locrian调式 |1# 2 3 4# 5 6 7   |</p>
+<p>上面两张表中所用到的音都是一样的, 而保证这种规律结果的前提是调式主音需要保持<code>全全半全全全半</code>的的关系:</p>
+<p>也就是Ionian调式的主音距离Dorian调式主音为一个全音程, Phygian调式的主音距离Lydian调式主音为一个半音程</p>
+<p>比如D Aolian往上走为E Locrian 往下走为C Mixolydian 这三者所用到的音都是一样的</p>
+<p>通过这种方法, 当我们需要找具有相同音的调时, 可以快速推导出</p>
+<p>那么我们可以借此, 将其他的调式统统转成Ionian调式, 比如F Dorian调 由于Ionian调和Dorian调主音距离为全音程, 那么F Dorian调对应Ionian调的主音为Eb 也就是Eb Ionian调(Eb大调)</p>
+<p>以上是调式推导的方法之一, 除此之外, 我们还可以借助五度圈进行快速推导, 详情参见《<a href="https://audio.newban.cn/64.html">使用五度圈进行中古调式的相互推导</a>》</p>
+<h3 id="调式体系"><a href="#调式体系" class="headerlink" title="调式体系"></a>调式体系</h3><p>我们知道了调式是若干个音按照一定音程关系排列组成的一种结构, 在中古调式体系中, 7个音由全音和半音组合排列, 如果按照数学排列组合计算, 那么一共有44种排列模式:</p>
+<table>
+<thead>
+<tr>
+<th>数量</th>
+<th>排列结构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>全全全全全全全</td>
+</tr>
+<tr>
+<td>2</td>
+<td>半半半半半半半</td>
+</tr>
+<tr>
+<td>3</td>
+<td>全半半半半半半</td>
+</tr>
+<tr>
+<td>4</td>
+<td>全全半半半半半</td>
+</tr>
+<tr>
+<td>5</td>
+<td>全全全半半半半</td>
+</tr>
+<tr>
+<td>6</td>
+<td>全全全全半半半</td>
+</tr>
+<tr>
+<td>7</td>
+<td>全全全全全半半</td>
+</tr>
+<tr>
+<td>8</td>
+<td>全全全全全全半</td>
+</tr>
+<tr>
+<td>9</td>
+<td>半全全全全全全</td>
+</tr>
+<tr>
+<td>10</td>
+<td>半半全全全全全</td>
+</tr>
+<tr>
+<td>11</td>
+<td>半半半全全全全</td>
+</tr>
+<tr>
+<td>12</td>
+<td>半半半半全全全</td>
+</tr>
+<tr>
+<td>13</td>
+<td>半半半半半全全</td>
+</tr>
+<tr>
+<td>14</td>
+<td>半半半半半半全</td>
+</tr>
+<tr>
+<td>……</td>
+<td>……</td>
+</tr>
+</tbody></table>
+<p>但实际上, 调式不可能有这么多, 因为音阶是一个循环圈,无论多少个音 总音程都是固定的只有12度 根据音程守恒 但凡所有音程加起来不等于12的都要排除掉</p>
+<p>那么就还剩下以下21种:</p>
+<table>
+<thead>
+<tr>
+<th>数量</th>
+<th>排列结构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>半半全全全全全</td>
+</tr>
+<tr>
+<td>2</td>
+<td>半全全全全全半</td>
+</tr>
+<tr>
+<td>3</td>
+<td>全全全全全半半</td>
+</tr>
+<tr>
+<td>4</td>
+<td>全全全全半半全</td>
+</tr>
+<tr>
+<td>5</td>
+<td>全全全半半全全</td>
+</tr>
+<tr>
+<td>6</td>
+<td>全全半半全全全</td>
+</tr>
+<tr>
+<td>7</td>
+<td>全半半全全全全</td>
+</tr>
+<tr>
+<td>8</td>
+<td>半全半全全全全</td>
+</tr>
+<tr>
+<td>9</td>
+<td>全半全半全全全</td>
+</tr>
+<tr>
+<td>10</td>
+<td>全全半全半全全</td>
+</tr>
+<tr>
+<td>11</td>
+<td>全全全半全半全</td>
+</tr>
+<tr>
+<td>12</td>
+<td>全全全全半全半</td>
+</tr>
+<tr>
+<td>13</td>
+<td>半全全全全半全</td>
+</tr>
+<tr>
+<td>14</td>
+<td>全半全全全全半</td>
+</tr>
+<tr>
+<td>15</td>
+<td>半全全半全全全</td>
+</tr>
+<tr>
+<td>16</td>
+<td>全半全全半全全</td>
+</tr>
+<tr>
+<td>17</td>
+<td>全全半全全半全</td>
+</tr>
+<tr>
+<td>18</td>
+<td>全全全半全全半</td>
+</tr>
+<tr>
+<td>19</td>
+<td>半全全全半全全</td>
+</tr>
+<tr>
+<td>20</td>
+<td>全半全全全半全</td>
+</tr>
+<tr>
+<td>21</td>
+<td>全全半全全全半</td>
+</tr>
+</tbody></table>
+<p>这21种全音半音调式结构中, 一共包含了三种调式体系:</p>
+<table>
+<thead>
+<tr>
+<th>调式体系</th>
+<th>调式结构序号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>调式体系1</td>
+<td>1-7 (全全全全全半半)</td>
+</tr>
+<tr>
+<td>调式体系2</td>
+<td>8-14 (全半全全全全半)</td>
+</tr>
+<tr>
+<td>中古调式体系</td>
+<td>15-21 (全全半全全全半)</td>
+</tr>
+</tbody></table>
+<p>说了这么多, 那到底什么是调式体系?</p>
+<p>构成一个调式体系需要满足以下三个条件:</p>
+<ul>
+<li><strong>确定参与排列的音的数量</strong>: 比如中古调式7个音 五声调式5个音</li>
+<li><strong>确定音程排列模式</strong>: 比如是全音和半音之间的组合排列, 还是全音和小三度之间的排列,或者是在纯四度和半音之间选择 等等 <strong>总音程必须等于12度</strong></li>
+<li><strong>选择其中一种排列模式进行音阶轮动</strong></li>
+</ul>
+<p>比如中古调式体系, 采用的是全音和半音的组合排列模式, 然后选择其中<code>全全半全全全半</code>组合进行音阶轮动, 因为是7个音, 所以该调式体系一共轮动出了7个调式, 分别为 Ionian调式 Dorian调式……Locrian调式</p>
+<p>再举例如五声民族调式, 采用的是全音和小三度音的组合排列模式, 然后选择其中<code>全全三全三</code>组合进行音阶轮动, 因为是5个音, 所以该调式体系一共轮动出了5个调式, 分别为宫商角徵羽调式</p>
+<h3 id="调式体系构建"><a href="#调式体系构建" class="headerlink" title="调式体系构建"></a>调式体系构建</h3><p>根据这上面三个条件, 我们可以构建出若干个调式体系</p>
+<p>比如以7个音结合全音半音的组合可以排列出三大类, 分别是:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">全全全全全半半</span><br><span class="line">全半全全全全半</span><br><span class="line">全全半全全全半</span><br></pre></td></tr></table></figure>
+
+<p>每一类即是一个调式体系, 每一类按照7个音轮动排列各组成7个调式结构, 一共就是21个调(上面表中已经列出)</p>
+<p>假如还是以7个音, 结合半音小三度度和全音进行组合排列, 那么一共有8个体系:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">三半半全全全半</span><br><span class="line">三半全半全全半</span><br><span class="line">三全半半全全半</span><br><span class="line">三全半全半全半</span><br><span class="line">三全全半半全半</span><br><span class="line">三半全全半全半</span><br><span class="line">三全全全半半半</span><br><span class="line">三半半半全全全</span><br></pre></td></tr></table></figure>
+
+<p>每个体系又可以各自按照7个音轮动出7个调式, 一共有8x7=56个调 </p>
+<p>以此类推</p>
+<p>从理论上, 我们可以构建出各种各样的调式体系, 但至于好不好听, 那就是另一回事了, 就目前来说, 中古调式和五声调式两大体系经过多年的沉淀已经被大众所接受</p>
+<p>所以无论是初学者还是创作者, 理应从这两大调式体系入手</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/词曲圣经/" rel="tag"># 词曲圣经</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="5.html" rel="next" title="音乐的本质">
+                <i class="fa fa-chevron-left"></i> 音乐的本质
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="64.html" rel="prev" title="使用五度圈进行中古调式的相互推导">
+                使用五度圈进行中古调式的相互推导 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="http://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是调性"><span class="nav-number">2.</span> <span class="nav-text">什么是调性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#调式结构"><span class="nav-number">2.0.1.</span> <span class="nav-text">调式结构</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#不同的调式蕴含不同的感觉"><span class="nav-number">3.</span> <span class="nav-text">不同的调式蕴含不同的感觉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调式间的半音变化关系"><span class="nav-number">4.</span> <span class="nav-text">调式间的半音变化关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#各调式间的互相推导"><span class="nav-number">5.</span> <span class="nav-text">各调式间的互相推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调式体系"><span class="nav-number">6.</span> <span class="nav-text">调式体系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调式体系构建"><span class="nav-number">7.</span> <span class="nav-text">调式体系构建</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

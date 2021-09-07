@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="编曲宝典,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="借助快速扫动伴奏（Quick Swipe Comping）的强大威力，你可以更加顺畅、快捷地组织录音了。Mark Cousins 将在这篇文章里详细介绍。  除非你特别幸运，能与技艺极其精湛的艺人录制「一遍过」的素材，往往你需要对多遍汇整录音（takes）进行拼图式的组合，并得到最终音轨。使用 Logic Pro X 的快速扫动伴奏功能能够使这一过程稍轻松些，你可以录制多个汇整录音，随后在各次之">
+<meta name="keywords" content="编曲宝典">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Logic Pro X 系列教程 2：快速扫动伴奏">
+<meta property="og:url" content="https://audio.newban.cn/49.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="借助快速扫动伴奏（Quick Swipe Comping）的强大威力，你可以更加顺畅、快捷地组织录音了。Mark Cousins 将在这篇文章里详细介绍。  除非你特别幸运，能与技艺极其精湛的艺人录制「一遍过」的素材，往往你需要对多遍汇整录音（takes）进行拼图式的组合，并得到最终音轨。使用 Logic Pro X 的快速扫动伴奏功能能够使这一过程稍轻松些，你可以录制多个汇整录音，随后在各次之">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175112.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175123.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175138.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175149.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175157.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175207.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175215.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175223.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175232.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175240.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175250.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175300.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175310.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175319.png">
+<meta property="og:updated_time" content="2020-06-10T10:54:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Logic Pro X 系列教程 2：快速扫动伴奏">
+<meta name="twitter:description" content="借助快速扫动伴奏（Quick Swipe Comping）的强大威力，你可以更加顺畅、快捷地组织录音了。Mark Cousins 将在这篇文章里详细介绍。  除非你特别幸运，能与技艺极其精湛的艺人录制「一遍过」的素材，往往你需要对多遍汇整录音（takes）进行拼图式的组合，并得到最终音轨。使用 Logic Pro X 的快速扫动伴奏功能能够使这一过程稍轻松些，你可以录制多个汇整录音，随后在各次之">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175112.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/49.html">
+
+
+
+
+
+  <title>Logic Pro X 系列教程 2：快速扫动伴奏 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="http://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Logic Pro X 系列教程 2：快速扫动伴奏</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T17:50:22+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175112.png" alt></p>
+<p><strong>借助快速扫动伴奏（Quick Swipe Comping）的强大威力，你可以更加顺畅、快捷地组织录音了。Mark Cousins 将在这篇文章里详细介绍。</strong></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175123.png" alt></p>
+<p>除非你特别幸运，能与技艺极其精湛的艺人录制「一遍过」的素材，往往你需要对多遍汇整录音（takes）进行拼图式的组合，并得到最终音轨。使用 Logic Pro X 的快速扫动伴奏功能能够使这一过程稍轻松些，你可以录制多个汇整录音，随后在各次之间轻松切换。伴奏（comping）的基本操作做起来并不难，快速扫动伴奏功能更有值得深挖的丰富功能，大大超越它的基本用法。</p>
+<p>说白了，快速扫动伴奏的作用在于轻松管理一段音乐段落里的多个汇整录音，无论它是人声还是乐器。直观看去，伴奏模式的音频块和任何录音的音频块无差，而展开汇整录音折叠夹之后就能看到一系列汇整录音，以及各个剪辑点组合出的最终伴奏。这项功能不仅简化了多次录音工作，同时能让你任意尝试不同的剪辑点位置，用同一组录音剪辑出不同的最终音轨。</p>
+<p>录制并创建伴奏只是伴奏处理的开端。当你做好剪辑点之后，就需要考虑如何将这段最终录音放在整个编曲当中了。其中一个选项是「展平」伴奏：将汇整录音渲染成一系列音频块，以便后续使用 Logic Pro X 的编辑工具进行精细加工。如果要保留剪辑点以便之后返回伴奏再次剪辑，则可以使用「将活跃汇整导出到新轨道」等选项。</p>
+<p>只需稍加练习，你就能很快掌握如何录制、剪辑和展平伴奏了，可以保持轨道的整洁，并得到「近乎完美」的演奏了。</p>
+<h5 id="使用伴奏"><a href="#使用伴奏" class="headerlink" title="使用伴奏"></a>使用伴奏</h5><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175138.png" alt></p>
+<p>1、当你在已有的内容上重复录音时，Logic Pro 会创建一个汇整折叠夹。用它就能搞定同一段上的多次录音以及创建伴奏，也就是通过剪辑点的位置将各次录音的词句组合成一个连贯的录音。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175149.png" alt></p>
+<p>2、汇整折叠夹和普通的音频块看上去不甚相同：注意在左上角多出来的几个图标。三角图标可以折叠或展开折叠夹，用来显示多次录音的各个轨道以及已有的剪辑点（用彩色和单色区域表示）。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175157.png" alt></p>
+<p>3、点按第二个图标会显示快速扫动伴奏菜单，包含审听和剪辑等功能。最上面的部分分别显示多次录音的条目，能够让你方便地选择某一次来审听。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175207.png" alt></p>
+<p>4、点选菜单中的「创建新伴奏」就可以开始剪辑新的伴奏了。标有 A 的第一个伴奏默认是你的覆盖录音结果。而你创建的新伴奏将标有 B，在各个汇整录音素材上拖移剪辑点就能看到了。最后一次录制的会在最上边显示。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175215.png" alt></p>
+<p>5、理论上，剪辑好伴奏后就可以将汇整折叠夹收起来，直接进行接下来的工作了。当然你也可以展平、导出或解开某段伴奏。当你需要精调不同汇整录音之间的交叉渐变时，展平功能尤其有用（位于快速扫动伴奏菜单中）。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175223.png" alt></p>
+<p>6、展平伴奏后，将在当前轨道上渲染一段音频块组，不同的音频块之间由默认的交叉渐变相连。多数情况下，默认交叉渐变没什么问题，而如果有需要，你也可以使用渐变工具（或在 X-Fade 编辑模式下自定义区块大小）来完成手动渐变。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175232.png" alt></p>
+<p>7、展平的唯一不足之处就是无法返回到快速扫动伴奏模式下再次编辑（不是指 Cmd – Z 撤销）。所以可以使用「将活跃伴奏导出到新轨道」，在新轨道创建展平的音频块。导出到新轨道之后，需要把伴奏剪辑的轨道静音。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175240.png" alt></p>
+<p>8、点选「解开」之后，汇整折叠夹里的内容将平铺到新的轨道，变成一个个独立的音频块。你可以通过这个功能对素材进行全新的创作和修改。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175250.png" alt></p>
+<p>9、无论是解开还是展平，最终伴奏都会用默认的交叉渐变进行渲染。默认渐变时间的选项可以在 Logic Pro 的「偏好设置 -&gt; 音频 -&gt; 通用」里进行修改。默认设置为 10ms，适用于多数剪辑。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175300.png" alt></p>
+<p>10、在多次录音当中制作伴奏已经十分简便，但如果需要取出某次录音，或某次录音的某一段应该怎么做呢？这里提供一个技巧：禁用汇整折叠夹的快速扫动伴奏。点按音频块左上角的第三个图标，将其变成剪刀图标即可。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175310.png" alt></p>
+<p>11、禁用快速扫动伴奏之后，你就可以使用 Logic Pro 的常规编辑工具了，比如剪刀工具和框选工具等。你会发现，伴奏效果仍然能够保持不变，只不过是在使用常规工具进行剪辑而已。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515175319.png" alt></p>
+<p>12、最后，如果要把伴奏转移到其他 DAW 中，就需要把它渲染成一个连续的音频文件了。点选「展平和合并」菜单项，将会展平并 bounce 出一个新的音频文件。而如果之前已经展平过，可以直接用「接合」功能来达到同样的效果。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSICTECH"><a href="#本文由-SOUNDMONO-编译自-MUSICTECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSICTECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2013/10/logic-pu-2/" target="_blank" rel="noopener">MUSICTECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-2.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-2.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/编曲宝典/" rel="tag"># 编曲宝典</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="50.html" rel="next" title="Logic Pro X 系列教程 3：素材切片创意">
+                <i class="fa fa-chevron-left"></i> Logic Pro X 系列教程 3：素材切片创意
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="48.html" rel="prev" title="Logic Pro X 系列教程 1：深入 Logic Pro X">
+                Logic Pro X 系列教程 1：深入 Logic Pro X <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="http://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用伴奏"><span class="nav-number">1.</span> <span class="nav-text">使用伴奏</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本文由-SOUNDMONO-编译自-MUSICTECH"><span class="nav-number">1.1.</span> <span class="nav-text">本文由 SOUNDMONO 编译自 MUSICTECH</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

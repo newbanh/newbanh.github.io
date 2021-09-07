@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="混音档案,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="前阵子我在 Reddit 看到一帮人讨论 Chainsmokers 的歌曲 Roses (ft. Rozes) 里用到的侧链压缩效果，听起来是这样的：    在一个教学视频中 Chainsmokers 提到他们在这个效果中用到了一款叫做 Kickstart 的插件。这个插件是 Cableguys 和 Nicky Romero 两家厂牌联合推出的。  Kickstart 插件可以通过预设的音量自动">
+<meta name="keywords" content="混音档案">
+<meta property="og:type" content="article">
+<meta property="og:title" content="音量包络自动化插件：VolumeShaper 4">
+<meta property="og:url" content="https://audio.newban.cn/31.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="前阵子我在 Reddit 看到一帮人讨论 Chainsmokers 的歌曲 Roses (ft. Rozes) 里用到的侧链压缩效果，听起来是这样的：    在一个教学视频中 Chainsmokers 提到他们在这个效果中用到了一款叫做 Kickstart 的插件。这个插件是 Cableguys 和 Nicky Romero 两家厂牌联合推出的。  Kickstart 插件可以通过预设的音量自动">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180642.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180723.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180740.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180759.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180811.png">
+<meta property="og:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180825.png">
+<meta property="og:updated_time" content="2020-06-10T10:54:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="音量包络自动化插件：VolumeShaper 4">
+<meta name="twitter:description" content="前阵子我在 Reddit 看到一帮人讨论 Chainsmokers 的歌曲 Roses (ft. Rozes) 里用到的侧链压缩效果，听起来是这样的：    在一个教学视频中 Chainsmokers 提到他们在这个效果中用到了一款叫做 Kickstart 的插件。这个插件是 Cableguys 和 Nicky Romero 两家厂牌联合推出的。  Kickstart 插件可以通过预设的音量自动">
+<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180642.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/31.html">
+
+
+
+
+
+  <title>音量包络自动化插件：VolumeShaper 4 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="http://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">音量包络自动化插件：VolumeShaper 4</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T18:05:47+08:00">
+                2020-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180642.png" alt></p>
+<p>前阵子我在 Reddit 看到一帮人讨论 Chainsmokers 的歌曲 Roses (ft. Rozes) 里用到的侧链压缩效果，听起来是这样的：</p>
+<iframe height="86" width="600" src="http://music.163.com/outchain/player?type=2&id=32639368&auto=0&height=66" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>在一个教学视频中 Chainsmokers 提到他们在这个效果中用到了一款叫做 Kickstart 的插件。这个插件是 Cableguys 和 Nicky Romero 两家厂牌联合推出的。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180723.png" alt></p>
+<p>Kickstart 插件可以通过预设的音量自动化曲线对其他乐器的音量进行自动处理，从而给底鼓的音头让出空间，让底鼓听起来更响。尽管这个插件界面做得挺不错，对于每小节 4 下底鼓的「标准」电子乐曲效果也很显著，但它与接下来我要给大家介绍的这款 VolumeShaper 插件相比，在功能上就显得有点简陋了。</p>
+<p>Cableguys 公司的产品以先进的包络功能为主打特色，比如他们的 Curve 合成器。VolumeShaper 也是基于这一概念打造的。它的核心就是一条用于制作音量自动化的包络曲线。这条包络曲线的自由度非常高，我们可以点击包络曲线将其划分成不同的区段，就像在 LFO Tool 插件或 Serum 合成器里那样。划分出的区段可以设置为呈直线形状或曲线形状，甚至呈步序器似的阶梯形状。包络曲线的区段可以设置为自动吸附到网格，从而与乐曲节拍快速同步。如果我们想要获得一些出乎预料的效果，我们甚至可以让插件自己随机处理包络曲线。<br>非常高的编辑自由度可以让我们随心所欲地制造出想要的包络形状，而大量的预设包络形状则可以让我们的选择更加高效。这样的可视化曲线选择是 VolumeShaper 比起 LFO Tool 更有优势的地方。在 LFO Tool 中，预设曲线只有选择加载之后才能看到形状。相对的，可视化曲线选择就更效率、更人性化了。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180740.png" alt></p>
+<h4 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h4><h5 id="闪避包络（Ducking）"><a href="#闪避包络（Ducking）" class="headerlink" title="闪避包络（Ducking）"></a>闪避包络（Ducking）</h5><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180759.png" alt></p>
+<p>VolumeShaper 可以制作出类似侧链压缩的闪避效果，但 VolumeShaper 并不需要任何音频作为输入源。这样做能使其他乐器为底鼓腾出空间，并制造出节奏性的泵感。我们只需要选择或画出一条音量包络曲线，并选择合适的包络循环速度就可以了。总得来说，在实现闪避效果上使用 VolumeShaper 比使用侧链压缩要快得多。选择包络时长时，我们可以选择基于节拍的 Beat（Synced）模式，也可以选择基于频率的 Hertz（Synced）模式。当歌曲的底鼓并不规则时，我们还可以选择用MIDI音符触发包络。</p>
+<h5 id="塑形包络（Trimming）"><a href="#塑形包络（Trimming）" class="headerlink" title="塑形包络（Trimming）"></a>塑形包络（Trimming）</h5><p>塑形包络主要用来重塑输入 VolumeShaper 的声音。例如，可用来延长或缩短声音的 Attack 时间、去除军鼓的长尾音等。</p>
+<h5 id="节奏包络（Rhythm）"><a href="#节奏包络（Rhythm）" class="headerlink" title="节奏包络（Rhythm）"></a>节奏包络（Rhythm）</h5><p>节奏包络下提供的包络曲线的作用类似于 Massive 合成器里的 Performer 功能。 节奏包络可以将输入的声音切成富有节奏感的形状，适当地运用可以得到包括机械故障音效、口吃音效以及颤音效果在内的各种有趣音效。</p>
+<h5 id="步序包络"><a href="#步序包络" class="headerlink" title="步序包络"></a>步序包络</h5><p>在右键菜单选择 Snap to grid 模式后，可用鼠标画出复杂的步序器样式。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180811.png" alt></p>
+<h4 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a>高级用法</h4><p>对很多制作人来说，光是 VolumeShaper 提供的各种基本包络曲线，就已经能够满足他们的各种需要。然后，对一些音频处理专家或专业音效设计者来说，还有更多更高级的应用手段等待着他们的开发。</p>
+<h5 id="采样率级的调制"><a href="#采样率级的调制" class="headerlink" title="采样率级的调制"></a>采样率级的调制</h5><p>在 VolumeShaper 中，包络的循环速度可以调高至音频采样率级别，这就使得我们可以运用 VolumeShaper 来对声波的振幅乃至整体音质进行调制。不同于一般的 LFO，VolumeShaper 可以以最高1/128 分音符或 5.24 KHz 的速率进行循环。在此最高循环速度上，假如我们将包络曲线编辑成三个三角波连在一起的样式，实质上的调制速度将达到最高循环速度的 3 倍。</p>
+<p>上述的振幅调制是一种增强音质的很好的方法，它能给我们的声音的高频部分加上带有强烈共振的嗡嗡声。这种处理在现代电子音色中很常见。我个人喜欢在 Lead 音色、Bass 音色、合成器鼓音色、声码器处理后的人声音色以及其他特殊效果中采用这种调制手法。</p>
+<h5 id="多频段处理"><a href="#多频段处理" class="headerlink" title="多频段处理"></a>多频段处理</h5><p>是的，VolumeShaper 可以分为高中低三个频段分别处理声音！在高中低每个频段，可以作用完全不同的包络曲线。系统默认的工作模式是单频段的，用于简单处理声音的情况。不过我们可以横向滑动频率分段点来增加两个频率段。点击放大镜图标可在界面全屏显示多频段视图。VolumeShaper 还提供给我们 6 db 和 12 db 两种临界坡度值。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513180825.png" alt></p>
+<h6 id="让我们来看两个-VOLUMESHAPER-在实际操作中的运用："><a href="#让我们来看两个-VOLUMESHAPER-在实际操作中的运用：" class="headerlink" title="让我们来看两个 VOLUMESHAPER 在实际操作中的运用："></a>让我们来看两个 VOLUMESHAPER 在实际操作中的运用：</h6><h6 id="多段闪避-动态EQ"><a href="#多段闪避-动态EQ" class="headerlink" title="多段闪避/动态EQ"></a>多段闪避/动态EQ</h6><p>假设我们有一轨音色饱满且富含中高频的贝斯。如果我们运用传统的侧链压缩方式来为底鼓做闪避效果，那么整个贝斯音色都会在音头处被压缩掉，贝斯的中高频音色部分也就失去了。为了让闪避效果不容易被听众注意到，我们可以用 VolumeShaper 来为贝斯的低频部分单独做闪避效果，这样贝斯和底鼓在低频部分不会打架，中高频部分也不会轻易丢失了。当然我们也可以手法再柔和点儿，在低频部分使用闪避效果明显的包络曲线，在中高频部分使用闪避效果不那么强烈的包络曲线。这种方法产生的效果和 iZotope Ozone 7 的动态 EQ 的效果很相似。</p>
+<h6 id="多段振幅调制"><a href="#多段振幅调制" class="headerlink" title="多段振幅调制"></a>多段振幅调制</h6><p>我自己在制作合成器音色时，常常想要给音色的「顶层」加上一些凶狠的质感，但音色的中低频又想要保持干净、直接的味道，这个时候我就会在 VolumeShaper 的高频部分选择一个基本包络曲线，如正弦波、三角波、方波等，再适当调节包络循环速度，就可以给音色的高频部分加上完美的质感了。</p>
+<h5 id="MIDI-触发模式"><a href="#MIDI-触发模式" class="headerlink" title="MIDI 触发模式"></a>MIDI 触发模式</h5><p>我们可以将 MIDI 轨导入 VolumeShaper 中来手动触发包络。可选择「MIDI 1-Shot」模式（包络触发后工作一次）或「MIDI Triggered」模式（包络循环工作）。还有一种「Pitch-&gt;Rate」模式，在此模式下输入的 MIDI 音符的频率会作为包络曲线的循环频率，这意味着我们可以用 VolumeShaper 来得到环形调制效果。</p>
+<p>曾获格莱美奖的音频工程师 Chris Shaw 就喜欢用鼓机的 MIDI 信号来以 MIDI 1-shot 模式触发 VolumeShaper 的包络曲线。这是一个非常好的运用实例，尤其在创作碎片式的节奏型时，可以将整个音乐的节奏切得很碎很整齐。</p>
+<h5 id="在线预设库"><a href="#在线预设库" class="headerlink" title="在线预设库"></a>在线预设库</h5><p>Cableguys 为我们提供了一个很有用的同步功能。我们可以把预设库中的预设信息同步到云端作为个人备份，也可以以公开的方式发布我们的预设供他人下载和使用。</p>
+<h6 id="本文由-SOUNDMONO-编译自-VESPERS"><a href="#本文由-SOUNDMONO-编译自-VESPERS" class="headerlink" title="本文由 SOUNDMONO 编译自 VESPERS"></a>本文由 SOUNDMONO 编译自 <a href="https://vespers.ca/cableguys-volumeshaper-4/" target="_blank" rel="noopener">VESPERS</a></h6><p>固定链接: <a href="https://soundmono.com/cableguys-volumeshaper-4-intro.html" target="_blank" rel="noopener">https://soundmono.com/cableguys-volumeshaper-4-intro.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/混音档案/" rel="tag"># 混音档案</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="15.html" rel="next" title="关于 Ableton 中的 Groove">
+                <i class="fa fa-chevron-left"></i> 关于 Ableton 中的 Groove
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="38.html" rel="prev" title="Ableton 自带合成器 Operator 详解">
+                Ableton 自带合成器 Operator 详解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="http://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">64</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本功能"><span class="nav-number">1.</span> <span class="nav-text">基本功能</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#闪避包络（Ducking）"><span class="nav-number">1.1.</span> <span class="nav-text">闪避包络（Ducking）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#塑形包络（Trimming）"><span class="nav-number">1.2.</span> <span class="nav-text">塑形包络（Trimming）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#节奏包络（Rhythm）"><span class="nav-number">1.3.</span> <span class="nav-text">节奏包络（Rhythm）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步序包络"><span class="nav-number">1.4.</span> <span class="nav-text">步序包络</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#高级用法"><span class="nav-number">2.</span> <span class="nav-text">高级用法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#采样率级的调制"><span class="nav-number">2.1.</span> <span class="nav-text">采样率级的调制</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多频段处理"><span class="nav-number">2.2.</span> <span class="nav-text">多频段处理</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#让我们来看两个-VOLUMESHAPER-在实际操作中的运用："><span class="nav-number">2.2.1.</span> <span class="nav-text">让我们来看两个 VOLUMESHAPER 在实际操作中的运用：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#多段闪避-动态EQ"><span class="nav-number">2.2.2.</span> <span class="nav-text">多段闪避/动态EQ</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#多段振幅调制"><span class="nav-number">2.2.3.</span> <span class="nav-text">多段振幅调制</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MIDI-触发模式"><span class="nav-number">2.3.</span> <span class="nav-text">MIDI 触发模式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在线预设库"><span class="nav-number">2.4.</span> <span class="nav-text">在线预设库</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本文由-SOUNDMONO-编译自-VESPERS"><span class="nav-number">2.4.1.</span> <span class="nav-text">本文由 SOUNDMONO 编译自 VESPERS</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
