@@ -93,7 +93,8 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909120047851.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112909519.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112834741.png">
-<meta property="og:updated_time" content="2021-09-15T02:46:05.498Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg">
+<meta property="og:updated_time" content="2021-09-16T03:20:32.293Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="压缩器各个参数的深入理解">
 <meta name="twitter:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
@@ -410,6 +411,8 @@
 <p>第2毫秒开始, 压缩器开始工作, 此刻的整体频段音量被往下压, 假设压了2db,(这个值取决于压缩比和启动时间), 那么整体曲线往下拉了2db, 如下:</p>
 <p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112834741.png" alt="image-20210909112834741"></p>
 <p>第三毫秒下拉的幅度更大, 如果第四毫秒开始, 压缩器开始停止工作, 那么接下来下拉的幅度逐渐减少, 直至停止下拉,此时压缩器也停止工作</p>
+<p>形象图如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
 <p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
 <p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -545,7 +548,7 @@
               
                 <a href="http://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">73</span>
+                  <span class="site-state-item-count">79</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
