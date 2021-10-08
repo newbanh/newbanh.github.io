@@ -94,7 +94,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112909519.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112834741.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg">
-<meta property="og:updated_time" content="2021-09-16T03:20:32.293Z">
+<meta property="og:updated_time" content="2021-10-08T06:38:24.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="压缩器各个参数的深入理解">
 <meta name="twitter:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
@@ -374,9 +374,9 @@
 <li><strong>第二步</strong> 拉下阈值, 使得压缩器开始正常工作</li>
 <li><strong>第三步</strong> 将启动时间和释放时间都拉到最小值, 减少释放时间所产生的效果, 方便我们接下来专注于启动时间的调节(启动时间越短 压缩效果越大, 释放时间越长 压缩效果越大 )</li>
 <li><strong>第四步</strong> 开始有小到大调节启动时间, 找到声音由混沌模糊突然变得清晰的那个临界点, 注意是<strong>临界点</strong></li>
-<li><strong>第五步</strong> 开始有小到大调借释放时间, 找到声音由活跃到沉稳的那个<strong>临界点</strong></li>
-<li><strong>第六步</strong> 开始减少压缩比, 此时效果越来越不明显, 直至压缩器的效果快要消失, 此时往回拉一点点, 找到这个<strong>临界点</strong></li>
-<li><strong>第七步</strong> 调节阈值, 操作方法和压缩比一样, 找到合适的临界值, 切忌拉得过低, 否则压缩器一直处于工作状态, 启动释放参数则失去了意义</li>
+<li><strong>第五步</strong> 开始有小到大调借释放时间, 找到声音由活跃到沉稳同时声音清晰的那个<strong>临界点</strong></li>
+<li><strong>第六步</strong> 开始减少压缩比,  压缩比越大声音越硬和窄, 反之则越软和宽, 我个人的做法是, 在<strong>包裹住所有音符的前提下, 压缩比尽可能地调小</strong>, 比如设置3:1压缩比, 但即便阈值拉很低了, 依然有部分声音不稳定往外冒, 这说明压缩比不对, 需要加大压缩比, 直到声音平稳为止, 找到这个<strong>临界点</strong></li>
+<li><strong>第七步</strong> 调节阈值,同样 需要找到合适的<strong>临界值</strong>, 我个人的做法是先将输出增益5~6分贝, 方便听效果, 然后下拉阈值找到使得声音突然具有空间感的那个点</li>
 <li><strong>最后</strong> 旁通对比压缩效果, 调整输出增益, 使得<strong>电平大小</strong>和压缩之前差不多即可</li>
 </ol>
 <p>上面这一套,我称之为临界值理论, 我们需要练习的就是如何准确找到这些个临界点, 练习的多了, 那么找寻的速度也就快了, 耳朵自然就灵敏了</p>
@@ -548,7 +548,7 @@
               
                 <a href="http://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-count">83</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

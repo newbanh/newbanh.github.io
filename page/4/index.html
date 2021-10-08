@@ -272,6 +272,576 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../42.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../42.html" itemprop="url">Flex Pitch 工具的创造性应用实例</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T19:25:54+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这篇教程将利用一段音频采样来讲解 Flex Pitch 的用法，以及如何通过 Flex 功能创造性地制作出独特的声音效果。我将不使用 Logic Pro X 和这段采样之外的任何工具，因此即便你还没有安装其他插件，也能制作出本文所介绍人声 stab 效果。</p>
+<p>最终效果试听：</p>
+<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/ReFlex" type="audio/wav" preload="none" controls="controls"> </audio></p>
+<h4 id="用-Flex-Pitch-创造人声-stab-步骤"><a href="#用-Flex-Pitch-创造人声-stab-步骤" class="headerlink" title="用 Flex Pitch 创造人声 stab 步骤"></a>用 Flex Pitch 创造人声 stab 步骤</h4><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>将工程拍速设置为 126 BPM，曲调设为 D minor。你可以根据自己的需要设置任意拍速和曲调。在乐理方面，这个小技巧能帮助你今后处理音轨时迅速地找到曲子的调性。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192730.png" alt></p>
+<p>如果我在一开始便设置好曲调，那么 Logic 将会以选定的曲调播放采样或循环片段，这一点非常神奇，尤其是在工程进行到一半时可以方便地拖进一段新的采样，并直接使用。</p>
+<p><strong>注意：</strong>应防止采样曲调被过分变化，有时可能产生糟糕的效果。</p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>下面我们打开循环浏览器，点按右上角工具栏的循环按钮，然后导入一段合适的采样。这里所说的合适是指：不要使用复调采样或完整的曲子，而要使用人声或乐器独奏的采样。采用干声最好，处理得越少越合适。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192741.png" alt></p>
+<p>那么，我就选取一段名为「Yasmin Melody 05」的采样，从循环浏览器中拖放到多轨编辑区即可。这是「Voices」采样包里的音频，如果你还没有安装这个采样包，可以在 Logic Pro X 菜单中选择「<strong>下载附加内容</strong>」，然后在「<strong>旧有及兼容性内容</strong>」下勾选「Jam Pack Voices」，下载安装即可。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192751.png" alt></p>
+<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h5><p>现在需要 Flex 工具登场了。先点按多轨编辑区左上方的「<strong>显示/隐藏 Flex</strong>」按钮，这样就可以看到当前轨道的 <strong>Flex 菜单</strong>了。我们要选择 <strong>Flex Pitch 模式</strong>，如下图。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192759.png" alt></p>
+<p>稍等几秒钟让 Logic 执行一些前置步骤。然后波形上将出现一系列长短不同的方块，它们代表着每一个音符。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192806.png" alt></p>
+<p>你可以选中距离中间线最远的那些音符，然后将它们拉到正中间，以达到完美的音准。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192815.png" alt></p>
+<h5 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h5><p>连按音频片段，打开<strong>轨道编辑器</strong>窗口。在轨道编辑器窗口的上方点按「<strong>编辑</strong>」按钮，在菜单中选择「<strong>根据 Flex Pitch 数据创建 MIDI 轨道</strong>」。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192823.png" alt></p>
+<p>Logic 将创建一个新的 MIDI 轨道，并且已经自动添加了一段 MIDI 片段，里面的音符就是刚才根据 Flex Pitch 创建的。这一步非常简单，但你可能仍需要若干细致的编辑，主要是修正音符长度和量化。连按 MIDI 片段打开钢琴卷帘窗口，完成精修。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192832.png" alt></p>
+<h5 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h5><p>选中所有音符（<strong>Command + A</strong>）然后在左侧面板「<strong>时间量化</strong>」区域选择所需的量化参数，我使用的是标准的 1/16 音符量化。接下来你可以根据喜好调整音符的长度。如图所示，我将某些音符重叠起来，这样可以创造出滑音效果。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192855.png" alt></p>
+<h5 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h5><p>接下来加载一个 ES2 合成器，并载入「<strong>Classic Techno 02</strong>」预设。我对这个预设音色做了一点自己的调整，如图所示。当然，任何你喜欢的合成器或预设都可以使用。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192902.png" alt></p>
+<h5 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h5><p>现在事情要变得有意思些了。我们从 Logic Pro X 循环库中选择一条基本的节拍拖进轨道，然后把人声采样轨如图平均切开。我所选用的节拍采样是「<strong>Tech House Pack</strong>」包中的「<strong>Technical House Beat 02</strong>」。</p>
+<p>提示一下，要在 Logic 中平均切开音频片段十分容易。例如，要将采样切成 16 分音符长度的，那么只需要将鼠标指针移动到第一个 16 分音符的分隔线处，接着按住 <strong>Option</strong> 键并裁切即可。这样整个素材就被自动均分成 16 分音符的片段了。若需要裁成其他单位长度，同理操作即可。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192911.png" alt></p>
+<h5 id="第八步"><a href="#第八步" class="headerlink" title="第八步"></a>第八步</h5><p>你可以按喜好移除或重排列这些切开的素材，就可以创造出人声 stab 效果了。最终如何实现 stab 人声取决于你的方法，如果要参考我的实现方式，请看本文的最后一张图片。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192920.png" alt></p>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>运用这个方法，你就可以为今后的制作增添些许变化和独特的个人风格了。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192928.png" alt></p>
+<p>接下来我还使用了 Logic 自带的混响和延迟等效果器，增加人声和合成器音色的宽广度。同时还把 MIDI 片段拷贝出一份，并编成简单的贝司轨。贝司音色是 Logic 自带的 ES M 合成器。</p>
+<p>这就是最终的制作效果，可以再次试听：</p>
+<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/ReFlex_02" type="audio/wav" preload="none" controls="controls"> </audio></p>
+<p>现在，尝试用同样的方法在其他素材上继续练习吧！加油！</p>
+<h6 id="本文由-SOUNDMONO-编译自-TUTS"><a href="#本文由-SOUNDMONO-编译自-TUTS" class="headerlink" title="本文由 SOUNDMONO 编译自 TUTS+"></a>本文由 SOUNDMONO 编译自 <a href="http://music.tutsplus.com/tutorials/getting-creative-with-logic-pro-xs-flex-audio-features--cms-21467" target="_blank" rel="noopener">TUTS+</a></h6><p>固定链接: <a href="https://soundmono.com/getting-creative-with-logic-pro-x-s-flex-audio-features.html" target="_blank" rel="noopener">https://soundmono.com/getting-creative-with-logic-pro-x-s-flex-audio-features.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../34.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../34.html" itemprop="url">在 Ableton Live 中用 Drum Rack 映射 NI Battery 音色</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T19:21:47+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192431.png" alt></p>
+<p>在 Ableton Live 里可以通过调用 VST 插件来载入 Native Instrument 出品的鼓采样插件 Battery，但以默认的方式直接双击载入后，你会发现面对钢琴卷帘时茫然无措，琴键和 Battery 的打击垫没有名称对应，要准确触发想要的采样比较困难，影响创作的效率。你或许不得不一直开启 Battery 的界面来对照查看。</p>
+<p>而通过本文介绍的 Drum Rack 映射技巧，花上少量时间，你就能以熟悉的方式通过 Drum Rack 来触发 Battery 了。并且钢琴卷帘上每个琴键对应的音色都一目了然，即兴创作时可以更加专注。你还可以保存自己建立的 Drum Rack，并在以后的工程中直接载入它。</p>
+<p>下图是完成映射的 Drum Rack 和钢琴卷帘显示效果。</p>
+<p>要使用 Drum Rack，你需要 Ableton Live 7 或更高版本。本文将以 Live 9 作为演示。</p>
+<h4 id="如何用-Drum-Rack-映射-NI-Battery-音色"><a href="#如何用-Drum-Rack-映射-NI-Battery-音色" class="headerlink" title="如何用 Drum Rack 映射 NI Battery 音色"></a>如何用 Drum Rack 映射 NI Battery 音色</h4><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>新建一个工程，选择或新建一条空白 MIDI 轨，然后在 Live 左侧上方的 <strong>Instruments</strong> 分类下找到 <strong>Drum Rack</strong>，将它拖放到空白 MIDI 轨的设备（Device）栏的最左。</p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>在 <strong>Plug-ins</strong> 的 <strong>VST</strong> 分类下找到 Battery 插件，将它拖放到 Drum Rack 的 C1 打击垫上。在 Battery 中载入所需音色库，我在这里以原厂音色中的 Neon Lights Kit 为例。</p>
+<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h5><p>点按 Drum Rack 左侧的 Chain 列表按钮，显示当前的 Chain 设置。然后点按左侧的 I-O 按钮，显示输入/输出分配菜单。将 Chain 列表中 Battery 的 Receive 值由 C1 改为 All Notes。这时 C1 打击垫上的 Battery 会消失，别担心，接下来我们将逐个映射要触发的采样。</p>
+<h5 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h5><p>在 Live 左侧上方的 <strong>Instruments</strong> 分类下找到 <strong>External Instrument</strong>，拖放到 C1 打击垫上。这时 Chain 列表里会出现新增的触发器项目，上下拖动 Play 值，修改为 Battery 中所需采样的对应琴键（Key Range）。例如 C1 对应 Kick Neon 1 采样。</p>
+<p>然后把 MIDI To 设置为 1-Drum Rack。此时，Drum Rack 的 C1 打击垫就可以触发 Battery 上的 C1 采样了（别混淆了这两个 C1，前者代表外接 MIDI 键盘等设备演奏键，后者是 Battery 的 Key Range）。再给 Drum Rack 的 C1 打击垫改个名字，个人推荐直接以 Battery 中的采样名称命名，这里我就改成 Kick Neon 1。</p>
+<p><strong>注意：</strong>如果你想要用 C1 触发 Battery 中「A2」格子里采样，建议把「A2」格的 Key Range 改为 C1/C1，并把「A1」格的 Key Range 改为其他不重复的键，否则可能产生重叠触发。</p>
+<h5 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h5><p>同上一步，继续拖放 External Instrument 到其他打击垫上，直到映射完所需的全部采样。我继续添加了三个采样，组成了我喜欢的一套鼓组。如图，钢琴卷帘中各个琴键对应的音色十分明确。如果仍然显示全部琴键，请点亮「Fold」按钮。</p>
+<h5 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h5><p>最后，别忘了点按 Drum Rack 右上角的保存图标，将这套鼓组存为自定义 Drum Rack 文件，以后便可以随时调用这套鼓组。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>这个方法同样适用于其他音源插件，例如 Kontakt 等。能够方便地映射不同的触发键使 Drum Rack 成为了高效率创作节拍或采样的利器。虽然逐个设置音色的过程比较考验耐心，但能够得到属于你自己的一套独特音色，并在之后随时调用，花点心思是非常值得的。</p>
+<p>固定链接: <a href="https://soundmono.com/mapping-no-battery-to-drum-rack-in-live.html" target="_blank" rel="noopener">https://soundmono.com/mapping-no-battery-to-drum-rack-in-live.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../11.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../11.html" itemprop="url">画好力度路线图来方便你的编曲</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T19:16:04+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515191628.png" alt></p>
+<p>力度是音乐制作当中的一件大事，制作人必须时刻保持对力度的把握。如果按下录音键之前能够设计好一幅力度路线图，则能省去许多后顾之忧。</p>
+<p>一旦录制完成，不饱满的力度表达将永远成为不理想的部分，再也无法找回。一件乐器的演奏力度往往是潜藏在下意识的情感表现中的，你会注意到演奏者的演奏力度对音色的改变有多么大。而这些改变想要在后期通过自动化做出来，所能表达的东西会是完全不同的。</p>
+<p>那么，什么时候来考虑歌曲的力度走向呢？当然是在制作的前期！<a href="http://theproaudiofiles.com/pre-production/" target="_blank" rel="noopener">前期可以进行的准备工作</a>其实有很多。往往在这个阶段，歌曲的某些重要元素就已经确定下来了，比如这些在后期难以改变的属性：调性、速度、段落编排、力度变化等等。</p>
+<p>一首好歌往往包含有两种以上力度路线设计。</p>
+<p>我们先来打个比方，想象你正在游乐场，要去坐过山车。就算是最柔缓的过山车也会有一个以上的下降区，而比较常见的结构是一个陡峭的大坡，以及一系列小一些的斜坡。这个比方是为了说明，一首歌中所含的对比就好似过山车的设计，你需要做出这样的对比。反过来说，若你乘坐一辆始终走平路的过山车，是否会感到无聊？</p>
+<p>当然，有人会举出反例，说所需的作品效果就是平直化的感觉。这只能说是个案，针对适当的歌曲使用才会得到良好的效果。然而说到底，平直化不也是力度路线图设计的一种吗？</p>
+<p>说到底，怎样画力度路线图呢？简单而言，这是我用来表述一首歌当中，不同段落起伏的方式。乐手可以在阅读其他图纸、乐谱时，同时参照这幅独特的图谱。</p>
+<p>你也许会问，为什么不直接用传统的力度记号呢？因为他们有时过于死板。</p>
+<p>画出的图形可比一个「fff」记号要直白得多。乐手往往会因为专注读谱，使得力度记号反而成为了一种干扰。若使用力度路线图，乐手不仅能直观看出力度走向，更重要的是，可以立刻转换为内在的感知。</p>
+<h4 id="大巴车概念"><a href="#大巴车概念" class="headerlink" title="大巴车概念"></a>大巴车概念</h4><p>当所有人都搭乘在同一辆大巴车上，就能迅速而齐整地全体移动。</p>
+<p>通常，当乐手来棚里时，我不会给他们十分精细的图示。我只会讲述需要他们演奏的大致意图。我的主要合作乐手都是我尊敬和崇拜的创意人才，因此我更加愿意为他们自己的「创造」预留一定的空间。</p>
+<p>利用图示和力度路线图，也就意味着他们能够在体会乐曲时更加节省时间。他们可以直接跳上车，并立刻随着其他人一齐行动，做出正确的力度选择。</p>
+<h4 id="技术泡沫"><a href="#技术泡沫" class="headerlink" title="技术泡沫"></a>技术泡沫</h4><p>在录音行业里，先进的技术带来了众多新鲜事物。可它也使一些工作看起来不再必要，例如前期编辑和力度规划。</p>
+<p>现今我们习惯于一手包揽式的工作，许多艺人都会独揽专辑里的几乎全部乐器演奏。这样做至少有一个坏处。有时这种拼凑式的制作，自觉不自觉地就会忽视力度的表现。要避免这一点，按下录音键之前，可以画一张力度路线图。</p>
+<p>哪怕工作室只由你一人负责，也应该做好前期准备工作。这样，从录制第一件乐器起，才能在心中对力度变化有一个清晰感受。举例来说，如果录制原声吉他轨时完全没有考虑力度起伏的编排，那么在录制后续乐器时，你将会感到越来越严重的束缚。重申一遍，力度变化能够传达丰富的情感。</p>
+<h4 id="画力度路线图"><a href="#画力度路线图" class="headerlink" title="画力度路线图"></a>画力度路线图</h4><p>说了这么多，下边就举例来谈谈如何画力度路线图。你可以注意到，图示中留下了一些阐释空间。</p>
+<p>画图的主要目的是让乐手能够齐整地行进，同时给予他们足够的自由，让他们能够自己平衡和决定如何阐释各个阶段的力度。看到图示的时候，他们就等于看到了歌曲的行进方式，知晓下一步的动向，并做出不同的有创造力的选择，而不是盲目遵循教条。优秀的乐手往往拥有，也需要一个开阔的视野。</p>
+<h5 id="例-1"><a href="#例-1" class="headerlink" title="例 1"></a>例 1</h5><p>你可以看到，直到桥段之前，歌曲是平稳上升的。桥段的力度骤减，并准备推向最后一个副歌。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515191940.png" alt></p>
+<h5 id="例-2"><a href="#例-2" class="headerlink" title="例 2"></a>例 2</h5><p>你可以看出，歌曲的前半部分在力度上交替往复，直到桥段开始上升，并在结尾达到至高点。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515192000.png" alt></p>
+<p>你还会看到我使用了不同颜色来标注不同的段落。以上只是两种最基本的力度结构，而你可以进行无穷无尽的编排和选择。</p>
+<p>看到这幅力度路线图时，你可能就会在脑海里直观「看」到将要行进的方向了。图形表述往往能够点燃创造力。最后，对于混音阶段而言，这样的图示也是很有帮助的，因为乐队在演奏时实际上已经自己进行过一些「混音」的工序了。</p>
+<h6 id="本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES"><a href="#本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES" class="headerlink" title="本文由 SOUNDMONO 编译自 THE PRO AUDIO FILES"></a>本文由 SOUNDMONO 编译自 <a href="http://theproaudiofiles.com/musical-dynamics-map/" target="_blank" rel="noopener">THE PRO AUDIO FILES</a></h6><p>固定链接: <a href="https://soundmono.com/musical-dynamics-map.html" target="_blank" rel="noopener">https://soundmono.com/musical-dynamics-map.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../48.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../48.html" itemprop="url">Logic Pro X 系列教程 1：深入 Logic Pro X</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T19:12:20+08:00">
+                2020-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515191317.png" alt></p>
+<p><strong>Logic Pro X 开创了艺术创作的一个新窗口。Mark Cousins 将在这篇文章中带你了解一些主要的新增工具。</strong></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515191327.png" alt></p>
+<p>Logic Pro X 是近年来我们所接触到的 DAW 软件中，带有最多更新特性的。除了全新设计的用户界面，Logic Pro 用户也得到了大量可供「把玩」的新功能，从虚拟贝司音箱到全新的音高修正等不一而足。面对如此丰富的更新内容，你也许需要一段时间来掌握 Logic Pro X 并学习如何利用它们完善你的作品。因此我们综合了最具有代表性的新内容：Drummer、Retro Synth、Arpeggiator 和 Flex Pitch 等，讨论关于它们的新特性和使用方法。</p>
+<p>先说 Drummer。看起来这是个类似于 GarageBand 的循环工具，但实际上它还是有些让人惊讶的强大之处，为 Logic Pro 的世界增添了不少多变性。对 Drummer 的最初印象是这个工具实在太傻瓜化了：选一个流派，选择一个鼓手，然后在 XY 垫上稍微调整一下，一条节奏轨就诞生了！然而，当你开始更换鼓组里的部件以及精调若干演奏参数之后，你会发现 Drummer 引擎是如此的富有变化和交互性。</p>
+<p>合成好基本节奏轨以后，不妨将默认的鼓组换成某一款 Producer Kits。Producer Kits 是由 Track Stack（另一项新功能）构成的，它能够让你展开鼓组的分轨，对每一个通道进行操控（甚至包括房间拾音），就像真实录制的鼓轨那样。</p>
+<p>电子乐制作人则可以从 Retro Synth 和全新的 Arpeggiator 开始探索。具体来说，Arpeggiator 是新的 MIDI 效果器当中的一个，Logic Pro X 把它内置在了通道条上。这些效果插件能实时作用在 MIDI 数据上，因此你在 MIDI 键盘上的演奏或已录制好的 MIDI 数据都可以被这些效果器加以修饰。Retro Synth 则是配合 Arpeggiator 的最佳拍档，特别是当你使用模块路由以及 Arpeggiator 的 Grid 模式时更明显。</p>
+<p>另一方面，自从 Logic Pro 9 引入了 Flex Time 之后，它就得到了工作室的广泛认可。Logic Pro X 在其中新增了 Flex Pitch 这又一修音利器，现在你可以使用内置的音准、节奏和共振峰修正了。经过 Flex Time 分析后的录音片段可以被视为音频轨道当中的一段钢琴卷帘数据。通过 Flex Pitch，不准确的音高可以立刻得到修正，你甚至可以创造性地重新编排每一个音高。</p>
+<p>尽管值得探索的新内容如此之多，但限于篇幅，我们只能介绍最具实用价值的细节。同时也请留意我们以后的文章，将会有更加深入的讨论。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515191345.png" alt></p>
+<h4 id="Retro-Synth-复兴的口味"><a href="#Retro-Synth-复兴的口味" class="headerlink" title="Retro Synth 复兴的口味"></a>Retro Synth 复兴的口味</h4><p>Retro Synth 吸引人的特性之一就是能够在四种经典合成器模式之间切换：Analog、Sync、Table 和 FM。坦白讲，前两种其实就是减法合成器的变种（Sync 模式也就是在两个振荡器之间加入一个硬性振荡器同步），但 Table 和 FM 模式是非常独特的，前者是类似于 PPG 的波表合成器，后者则是经典 FM 合成器 Yamaha DX7 的原始再现。</p>
+<p>这种设计的有趣之处就在于，大部分参数：滤波、包络以及发生器等等，都可以在四种模式之间保持不变。这给创造性的尝试增添了不少「偶遇」的机会：可能一开始某个音色是减法模式的，在切换到 FM 模式后，就出现了一种全新的音质。尝试不同的预设同样会很有趣，往往只需一个按钮就可以大幅度改变声音的特质。当你的经验丰富起来，你就会留意到不同模式之间的细微音响差别了，并对现有的预设进行自创性的更改。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSICTECH"><a href="#本文由-SOUNDMONO-编译自-MUSICTECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSICTECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2013/08/logic-x-new-1/" target="_blank" rel="noopener">MUSICTECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-1.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-1.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../49.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1212,657 +1782,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../25.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../25.html" itemprop="url">五种常见压缩类型与应用方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-15T17:10:42+08:00">
-                2020-05-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200515171120.png" alt></p>
-<p>作为音频工作者，熟用不同的动态范围压缩工具既是时代所需，更是艺术创造里不可或缺的精妙技能。本文将五种常用压缩类型进行了归纳，可供随时参考。</p>
-<h4 id="1、多段压缩-限制"><a href="#1、多段压缩-限制" class="headerlink" title="1、多段压缩/限制"></a>1、多段压缩/限制</h4><p>多段压缩是指对声音不同频率范围的动态分别进行压缩处理，各段的压缩相互独立，各取所需。例如只需处理底鼓的较高频段，而不破坏低频的动态，你可以选择合适的频段，设置针对该频段的阈值、起音以及释放值。</p>
-<p><em>实用场景</em>：通过主控总线来调整中低频中有问题的部分，或让人声 5-10k 范围的频段更加温和一些。</p>
-<p><em>推荐插件</em>：FabFilter Pro-MB，iZotope Ozone 6，Waves L3-LL Multimaximizer</p>
-<h4 id="2、先行压缩（Lookahead-Compression）"><a href="#2、先行压缩（Lookahead-Compression）" class="headerlink" title="2、先行压缩（Lookahead Compression）"></a>2、先行压缩（Lookahead Compression）</h4><p>所谓先行压缩，即分析输入声音信号，并在该信号可闻之前进行处理，从而得到一种独特的瞬变信号处理效果。常规的压缩器都可以用来进行先行压缩，你需要先将音频轨复制到新的轨道中，将新音频轨向前微微拖动，在原始轨上添加压缩器，并将新轨作为侧链（sidechain）的信号源。</p>
-<p><em>实用场景</em>：任何较为突出、瞬变较快的音轨都能适用，在处理军鼓或人声时效果尤佳。</p>
-<p><em>推荐插件</em>：Softtube FET compressor，Waves C1 Compressor 的 Sidechain 模式</p>
-<h4 id="3、砖墙限制（Brickwall-Limiting）"><a href="#3、砖墙限制（Brickwall-Limiting）" class="headerlink" title="3、砖墙限制（Brickwall Limiting）"></a>3、砖墙限制（Brickwall Limiting）</h4><p><em>声明：建议掌握较为全面的混音技能，再考虑在编混中对主轨道使用砖墙压缩。</em></p>
-<p>近十多年来的音乐已逐渐变得越来越大声，而砖墙限制手段与这场「响度之战」息息相关。但砖墙限制本来是有其实在意义的，例如在现场扩音的强化处理和广播音频处理中十分常见。简单来说，就是设定一个上限值之后，可以让音频信号永远保持在不超过这个值的范围内。再通过改变阈值，就能把动态范围中响度较弱的部分提起来。因此，无需过多专业的混音技能，也能做到相对专业的 RMS 响度处理效果。（所以请看前段声明！）</p>
-<p><em>实用场景</em>：母带或母带预处理环节，预先在辅助轨上尽量获得高 RMS 值，再进入主控总线。也可以用在单条轨道上，控制瞬变或塑造音色，和传统压缩器用法基本一致。</p>
-<p><em>推荐插件</em>：FabFilter Pro-L，Waves L2，PSP Xenon</p>
-<h4 id="4、侧链压缩（闪避）"><a href="#4、侧链压缩（闪避）" class="headerlink" title="4、侧链压缩（闪避）"></a>4、侧链压缩（闪避）</h4><p>侧链压缩对于 EDM（电子舞曲）制作人来说再熟悉不过了，经过底鼓信号侧链处理后的合成器声音也非常容易被听辨出来。简单地讲，侧链压缩就是用一个音频作为信号源，根据它的动态来对另一轨进行压缩处理。侧链的教程如今也是多不胜数，但下边的应用场景同样适合学习掌握。</p>
-<p><em>实用场景</em>：在混音中，用人声去侧链处理鼓组或吉他的动态，使人声在整段音乐中更加突显；用采样来<a href="https://www.youtube.com/watch?v=vJsHuZwS_4c" target="_blank" rel="noopener">替代或叠加录下来的镲片声</a>；用牛铃或节拍器音色来代替底鼓作为侧链信号源（充分利用节拍器音色极快的起音）。</p>
-<p><em>推荐插件</em>：Softtube CL1B 或 Valley People Dyna-mite，Waves H-Comp 或 API 2500</p>
-<h4 id="5、平行压缩（Parallel-Compression）"><a href="#5、平行压缩（Parallel-Compression）" class="headerlink" title="5、平行压缩（Parallel Compression）"></a>5、平行压缩（Parallel Compression）</h4><p>平行压缩（有时也被称为纽约式压缩）技术时下十分热门，它既能保留音频素材的原本、自然的感觉，又能带来压缩处理的各种好处。一种简单的做法是：将音频信号发送到辅助轨（强调一下：用发送，而不是输出），在辅助轨添加压缩器，并反复调节寻找你喜欢的「甜蜜点」。但是要注意延迟补偿设置，以避免出现相位问题。（说点题外话，通过采样延迟，让左右声道产生微弱的不同步，可以做出独特的相位效果）</p>
-<p><em>实用场景</em>：处理高速瞬态变化的声音，如鼓组等。在主控总线上使用平行压缩，也能一定程度上提升 RMS 值。</p>
-<p><em>推荐插件</em>：理论上所有压缩插件都可以用来做平行压缩，不过也有一些插件如 Cytomic 的 The Glue，或 FabFilter 的 Pro-L 本身就提供干/湿调节，基本等同于平行压缩的效果。</p>
-<h6 id="本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES"><a href="#本文由-SOUNDMONO-编译自-THE-PRO-AUDIO-FILES" class="headerlink" title="本文由 SOUNDMONO 编译自 THE PRO AUDIO FILES"></a>本文由 SOUNDMONO 编译自 <a href="http://theproaudiofiles.com/5-different-types-of-compression-and-when-to-use-them/" target="_blank" rel="noopener">THE PRO AUDIO FILES</a></h6><p>固定链接: <a href="https://soundmono.com/5-different-types-of-compression-and-when-to-use-them.html" target="_blank" rel="noopener">https://soundmono.com/5-different-types-of-compression-and-when-to-use-them.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../55.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../55.html" itemprop="url">Logic Pro X 系列教程 8：人声修音</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T18:03:42+08:00">
-                2020-05-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180428.png" alt></p>
-<p><strong>软件修音如今也可以货比三家了，Logic Pro X 内置的 Flex Pitch 便是强者之一。请随 Mark Cousins 来一起见证完美音符的诞生。</strong></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180440.png" alt></p>
-<p>在录音棚的工作过程中，就算是最优秀的歌手偶尔也会出现走音、节拍不精确的情况。实际上，音频工程师往往要面对的是更加普通的演唱者，多如牛毛的音高问题已是家常便饭了。好在音高修正技术，让音频工程师有办法对歌手的声音进行补救。那么问题来了，<del>歌手的火车票谁给报了</del> 老牌工具 Melodyne 与新晋强者，来自 Apple 的 Flex Pitch，谁更灵活易用？谁的音质更好？</p>
-<p>如果你还没尝试过 Flex Pitch，可以先看此段简介。Logic Pro 一直内置有 Flex Time 音频量化工具，而随着 Logic Pro X 的发布，Flex Time 的菜单中新增了一个「Flex Pitch」音高修正。也就是说，Flex Pitch 在原有的量化特性基础之上，能够对音频的单音进行微调。过去，人们只能在 Melodyne 或 Waves Tune 里进行单音修正。</p>
-<p>当然，就目前的音高修正技术来看，Flex Pitch 也并不是万能灵药。了解一下它能做什么，有哪些局限，能够帮助你更好地进行选择。Flex Pitch 假定的源文件是单音录音（monophonic），如人声、原声贝司或主音吉他都是典型的单音音源，而不是和弦声音。在源文件音质足够清晰的条件下（相信这基本上是所有录音棚都能做到的），你会发现 Flex Pitch 能给你带来如此流畅的使用体验，无论是修正偏斜的音高，还是完全改掉原来的旋律，都能顺畅自如。修改颤音强度和共振峰自然也不在话下。</p>
-<p>本文将介绍 Flex Pitch 的基础使用方法，也就是完善音高。然后会介绍几种创造性的用法，例如只需要一次演唱，也能制作出和声伴唱。相信在熟悉了 Flex Pitch 之后，它会成为你重要工具中的一员。</p>
-<h5 id="贴士：窗内检查器"><a href="#贴士：窗内检查器" class="headerlink" title="贴士：窗内检查器"></a>贴士：窗内检查器</h5><p>或许你会对「窗内检查器」这个名字感到陌生，但其实你曾经常与它打交道，在钢琴卷帘界面的左侧，有 midi 音符量化等一系列功能的区域就是 Logic Pro X 的窗内检查器。</p>
-<p>Flex Pitch 同样也有一个窗内检查器，连按轨道上的音频块打开轨道编辑器界面，并开启 Flex Pitch，这时就可以从「显示（View）」菜单中打开窗内检查器了（Show Local Inspector）。如果你熟悉 midi 钢琴卷帘的量化、摇摆等功能，那么 Flex Pitch 也就可以触类旁通。比如节奏量化，按百分比修正音高，更改增益，甚至可以很方便地进行音阶量化，把选定的音符量化调整到某个音阶当中去。简而言之，窗内检查器是高效处理单音的好手。</p>
-<h4 id="精准音高"><a href="#精准音高" class="headerlink" title="精准音高"></a>精准音高</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180454.png" alt></p>
-<p>1、首先，我们在需要修音的音轨上启用 Flex Pitch，轨道区上方的「」按钮，或选择菜单中的「编辑 &gt; 显示“Flex Pitch/Time”」。如果发现音轨没有进入 Flex 状态，你需要在轨道头处启用「Flex Time/Pitch」模式中的「Flex Pitch」。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180505.png" alt></p>
-<p>2、开启了 Flex 模式的音轨外观就会发生一些变化，你可以直观地看出音高等信息了。注意，这里只能看到相对音准，高于中线的表示高于标准音高，低的同理。当在区块点按右键可以调出全体调整菜单，可以把所有音高设为完美音高，或恢复成原始音高。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180516.png" alt></p>
-<p>3、以上还只是 Flex Pitch 的准备功课，接下来才是它的本体。要使用完整的 Flex Pitch，你需要打开音频的轨道编辑器。熟悉 Melodyne 或 Waves Tune 的读者不会陌生，这就是一个钢琴卷帘的界面，并且以半透明的方式显示波形。你可以像操作 midi 音符一样，对录音的音准进行修改。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180526.png" alt></p>
-<p>4、如果只需要粗修一下，可以点按右键，在菜单中选择「将所有设定为完美音高」。音符会自动被量化到最近的音阶上。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180535.png" alt></p>
-<p>5、我们再暂时回到轨道区，经过自动设定完美音高后，音高变化也反映在了音频块上，所有音高都在 Logic Pro X 所判定的完美音高上，没有任何上下突起。如果要把录音改回原始音高，在右键菜单中选择「将所有设定为原始音高」即可。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180544.png" alt></p>
-<p>6、当然，自动修音很难有 100% 准确的时候。这时，你就需要手动调节部分音符了，按住音符上边中间的圆钮，上下拉动即可对准改字的音高，拉动过程中可以听到实时预览，并且可以看到到标准音高的偏移值。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180552.png" alt></p>
-<p>7、为了更深入了解 Flex Pitch 的行为模式，我们不妨把音符分析结果导出为一个 midi 轨。如果音准分析出了问题，后边的修音都会受到影响。点按菜单中的「编辑 &gt; 根据 Flex Pitch 数据创建 MIDI 轨道」。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180602.png" alt></p>
-<p>8、现在我们来查看由 Flex Pitch 分析结果而创建的 midi 区块。由于演唱中往往带有各种不同风格的唱法和技巧，因此很容易出现小的分析错误。以上图为例，开头原本是 G 和 C 两个音，但被 Logic Pro X 判定为了一个长音；在第 5 到 9 小节，E 和 Eb 音识别有些混乱。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180611.png" alt></p>
-<p>9、根据我们在 midi 区块中发现的分析错误，接下来我们就着重调整这些音符。首先修正 5 到 9 小节之间的几个 Eb 音：按住一个音符，可以直接调整它的半音，从 Eb 升到 E 即可。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180619.png" alt></p>
-<p>10、如何拆分被连起来了的音符呢？若 Flex Pitch 把两个音判定为了一个音（例如开头的 G 和 C），我们可以使用剪刀工具来切分音符。切开后，你会发现原来 G 和 C 音都不是很准，G 高了一点，而 C 低了一点。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180628.png" alt></p>
-<p>11、当你把鼠标放在某个音符上时，会看到它的四周包含 6 个圆点。这些圆点各有用途：</p>
-<ul>
-<li>左上角和右上角的 Pitch Drift，分别处理音头和音尾的音高漂移</li>
-<li>上中的圆点之前我们了解过，是用来微调音高的</li>
-<li>左下角的圆点是调节单音的增益值，可以对一些动态进行平滑处理</li>
-<li>下中的圆点可以调节颤音值，增大可以强化颤音，减小则会拉平颤音，处理长音不稳的问题时是个高效率的办法</li>
-<li>最后是右下角的圆点，用来升降共振峰（Formant）</li>
-</ul>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180637.png" alt></p>
-<p>12、到此，Flex Pitch 的核心功能你已掌握，接下来可以慢慢探索一些富有创造力的玩法了。最实用的技巧之一就是制造「假」和声，在手头只有一条人声轨的时候，也只能这样做了。</p>
-<h4 id="人造和声"><a href="#人造和声" class="headerlink" title="人造和声"></a>人造和声</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180647.png" alt></p>
-<p>1、首先，把人声轨需要和声的区块复制到一个新的音轨上。然后连按新复制出来的音频块，打开音频轨道编辑器，选中全部音符。向上移动 4 个半音，原来的 C 音都到了 E 上。但这样的和声存在很多问题，仅仅是变成了 E 大调而已。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180656.png" alt></p>
-<p>2、要修正这些问题，我们可以套用音阶修正工具，但或许手动调整和声旋律可能更加理想。只需找出不和谐的音，根据音乐的需要修改到合适的音高上即可。我通常会把主唱轨静音，只用 MIDI 轨作为音高参考。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180704.png" alt></p>
-<p>3、创造和声时，一个小技巧就是让每个部分都形成独特的听感，换句话说，不要让和声听起来只是转了个调的主唱旋律。举例而言，我们可以实用颤音工具减少一些颤音，让和声的表情更加沉稳，并把丰富的颤音技巧让给主唱旋律。你甚至可以全选，然后调整所有音符的颤音。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180713.png" alt></p>
-<p>4、再举一例，通过共振峰偏移来创造音色独特的和声。我们在此全选音符，按住右下角的圆点，向上少许拖动。这样，演唱者的音色就会被变得更加年轻化、女性化一点。相反，降低共振峰可以让声音更低沉、男性化。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180724.png" alt></p>
-<p>5、在粗调颤音与共振峰参数后，我们的和声仍然有细致调整的空间。比如，最后一个高音，可以继续减少它的颤音，使它在高音和声中听起来更加纯正。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180733.png" alt></p>
-<p>6、在做完三度音的和声之后，不妨再开一轨，制作五度音的和声（也就是将 C 音移到 G）。你仍然可以从颤音、音高漂移和共振峰入手，只要把字句之间做出区别就好。到了混音中，还可以把各个和声轨放在不同的声相上，制造空间感。</p>
-<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/04/lpx-pu-8/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-8.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-8.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../56.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../56.html" itemprop="url">Logic Pro X 系列教程 9：舞曲音效</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T17:51:57+08:00">
-                2020-05-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175733.png" alt></p>
-<p>一支引动全场的舞曲少不了或精美或个性十足的音效。这一节教程中，Alex Holmes 将带领我们了解如何在 Logic Pro X 中制作常用的舞曲效果。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175814.png" alt></p>
-<p>现代舞曲的基本构成包括节拍、贝司线和漂亮的编排，然而要让各个部分顺畅地融合连贯，就少不了各种音效（FX）。舞曲音效可以起到画龙点睛的作用，用来粘合各个声部乐器，以及提示章节过渡再常见不过了。甚至在某些流派的舞曲中，音效占有绝对的比重。接下来我们一起来动手，制作一些精妙的舞曲音效吧。</p>
-<p>从作用上来分类，我们常见的音效有四大类：上升类，下降类，撞击类，和氛围类。上升和下降类音效可长可短，并且在现代舞曲中几乎随处可见，它们通常被用来引导听众，从一个章节过渡到下一个章节。例如制作人必备手法之一，就是演奏 16 小节的白噪音，通过滤波器来慢慢打开高频区，以此制造出一种张力，暗示接下来将会出现新东西了。</p>
-<p>还有一种较为简短的 1 小节白噪音，通常用来进行段落衔接，通常用在两个能量相差较大的段落之间。如果下一个段落的能量是变弱的，就使用下降音效来过渡。</p>
-<p>当上升或下降音效快要结束时，你往往会听到某种强烈撞击的效果，这是进入高能段落的常见手法。而较为细碎或轻柔的撞击声，可以平均分布在每 8 小节当中，以形成一定的律动。</p>
-<p>氛围类音效则能够让你的音乐更加饱满，对已有旋律补充进新的个性化元素。氛围得当的音效可以牢牢抓住听众的心。在你充分理解了各个章节的不同，并使用了恰当的音效后，你的舞曲就能变得更加流畅自然。</p>
-<h5 id="贴士：对音效进行-Flex-操作"><a href="#贴士：对音效进行-Flex-操作" class="headerlink" title="贴士：对音效进行 Flex 操作"></a>贴士：对音效进行 Flex 操作</h5><p>Logic Pro X 内置的 Flex 算法也可以用来处理音效，让它们更加个性化。例如，在 Polyphonic（复音）模式下，拖动拍速不一致的音效音频块，可以将它处理成与工程统一的速度。</p>
-<p>你还可以使用 Tempophone 模式，将采样处理出一些机械金属感、梳状滤波的效果。不过我们常用的还是 Speed（速度）模式，这个模式下，你可以更改音频的音高，而不损伤太多音质，这一点和一般的采样器十分相似。你也可以把采样导入到 EXS24 采样器中，再通过采样器上的参数修改音高，但很明显，直接用 Flex 模式来做会快得多。</p>
-<h4 id="上升和下降类音效"><a href="#上升和下降类音效" class="headerlink" title="上升和下降类音效"></a>上升和下降类音效</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175856.png" alt></p>
-<p>1、我们需要选择一个延续性的音色作为基础，音垫（Pad）、合成弦乐或铜管乐音色都可以。在这里我们在 Retro Synth 里选择 Classic Saw Tooth 这个经典锯齿波音色。在完成了后边的所有自动化和效果器编辑后，可以再回来改一改别的音色预制。如果你喜欢，直接选择一个白噪音也没有问题。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175911.png" alt></p>
-<p>2、接下来，画一个长度为 8 小节或 16 小节的音符。留意一下音符力度，有些音色在不同力度下会发出不同的声音。通常来说，力度较低，音色就会更柔和，反之则较硬朗。如果单音太薄弱，可以在高八度的位置叠加一个音。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175920.png" alt></p>
-<p>3、打开钢琴卷帘窗，画出音高提升的曲线。可以从 0 画到 62，从 -64 画到 +63 也没问题。具体的听感最终取决于合成器的设置。本例中，我们把 Retro Synth 的弯音设置为两个八度（2 oct）。音高合适的话，就能使上升音效起到承上启下的作用。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175930.png" alt></p>
-<p>4、如果觉得你的音色过于直白，缺乏灵气，我们可以通过添加合唱效果器和轻量延迟来解决。甚至还可以添加 Stereo Spread 或 Direction Mixer 插件直接拉宽声场，给中部留下更多混音空间。除了插入效果器，当然还可以使用发送，增加一个绵长的混响。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175940.png" alt></p>
-<p>5、在上升音效的调制中，另一个用途很大的效果器就是 Tremolo，通过它可以轻松做出侧链感觉的抽吸效果。把 Phase 和 Smoothing 设为 0%，offset 设为 180º，然后在音轨自动化上画一个缓慢上升的曲线，在「副歌」起点处达到最高即可。如果延迟设得足够长，你还会听到进入副歌后，上升音效的尾音在回荡。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514175951.png" alt></p>
-<p>6、最后，对音效进行一下音量和 EQ 的调整，使曲子的各声部保持平衡。通常我们会对音效进行低切，避免低频的混乱。当然你也可以画一些低切自动化，用低频做出一些移动感。相应的，高切也可以添加自动化。</p>
-<h4 id="撞击类音效"><a href="#撞击类音效" class="headerlink" title="撞击类音效"></a>撞击类音效</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180003.png" alt></p>
-<p>1、撞击音效，炸弹音效，怎么叫它们都行。它们往往被用来提示下一个段落的到来。比如高音镲片声，低沉的咕咚声，或二者的结合。在鼓声低沉贝司密集的段落，建议避免使用低沉的咕噜声，但在声场宽广的副歌开头，使用一下也无妨。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180014.png" alt></p>
-<p>2、话不多说，我们先来选择一个底鼓声或某种较低的打击声。本例中，使用了 Logic Pro X 自带的一个采样和另一个采样的叠加，使得高频和低频都有着丰富的细节。然后，把这个采样降低到 -24，你可以根据所选采样的实际音质选择其他数值。再添加一个低通滤波，提升一点过载，并点亮 Fat 按钮，让声音更厚实。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180027.png" alt></p>
-<p>3、接下来，对音高进行一下包络，使声音快速向着更低沉的方向运动。你可以在 EQ 插件里设置一个极大的低频增益，同时发送到一个长混响效果的总线上。混响的参数很重要，因为它会直接影响到打击音效的尾音质感，你可能需要亲自尝试一些设置方式。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180037.png" alt></p>
-<p>4、本例中使用了 Tape Delay 效果器，如果你也使用的话，建议 feedback 值不要超过 53%，因为有可能产生无限反馈。可以用自动化来控制反馈量，比如从 55% 降到 53%，可以做出陷入混乱之际及时收住的效果。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180051.png" alt></p>
-<p>5、单有一个打击音效或许不够丰满，我们可以采取叠加的手段，复制一轨，并套用一个镲片音色，通过 EQ 来完善它与其他声部的搭配。比方说，在内容十分丰富的段落，你想要添加一些打击音效，可以使用尽量高的音符，让该音效更加明显。而在你需要填充一个声场宽广的段落时，较低的音更有助于制造氛围感。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180101.png" alt></p>
-<p>6、再讲一个撞击音效厚度的小技巧。同上一条一样，复制一轨底鼓，这一次我们让 EXS24 不载入任何乐器，它就会发出正弦波。稍稍调整一下音高和包络，使得声音短促而低沉，位于其他声部的下方。一般来说，这一轨使用干声即可，音量不必很大，最多对 EQ 有冲突的地方进行一些必要的调整。</p>
-<h4 id="氛围类音效"><a href="#氛围类音效" class="headerlink" title="氛围类音效"></a>氛围类音效</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180112.png" alt></p>
-<p>1、乐曲干瘪怎么办？你可以用氛围类的声音来填充空白，包括真实世界的嘈杂声，或黑胶播放时的噼啪杂声，都可以很好地烘托你的曲子，让它听起来不那么的「DTM」。你可以自己录制环境音，也可以从电影或电视剧当中截取。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180124.png" alt></p>
-<p>2、此例中，我们将选用 EXS24 采样器中的环境音色，你可以在「Factory &gt; Textures &gt; Ambient Environments」分类下找到它们。比如选择 Town Ambient。然后，画一个 8 或 16 小节的长音符。氛围类音效不必过分抢眼，因此要么减小 midi 力度，要么拉下音量推子，都可以。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180136.png" alt></p>
-<p>3、我们可以在氛围音效上继续发挥想象力，比如，更改一下它的音高，使得质感更加丰满。EXS24 本身提供音高修改，当然你也可以直接把 midi 音符画在不同的音高上。通常来讲，降低音高会使得噪音减少，听起来更加富有颗粒感。本例中，我们把音符画在了下两个八度，即 C1 的位置。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180149.png" alt></p>
-<p>4、接下来是对频率的完善。低切是要有的，尤其在采用真实环境声时，要注意切掉含混不清的频段，顺带着也能把高频部分的细节衬托出来。添加一些延迟，发送一些信号到混响总线上。如果存在左右声道偏移，最好将它调整到中心位置。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180159.png" alt></p>
-<p>5、可以对氛围音效也加上一个抽吸效果，并通过自动化来控制它的深浅。然后，调整到合适的音量。这里分享一个小技巧，什么样的音量最合适呢？就是正常播放时，听不出有个氛围音效的存在，但如果把氛围轨静音，又能感觉出变化，这个位置基本就对了。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514180208.png" alt></p>
-<p>6、若想让氛围音效再厚重一点，可以复制一轨，然后把 midi 音符升到 C3。此时，把 C1 的那轨调到偏左，让复制出来的这轨偏右， 将会拓宽声场，给中间部分留下更多空间。</p>
-<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/05/logic-pu-9/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-9.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-9.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../57.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../57.html" itemprop="url">Logic Pro X 系列教程 10：MIDI 进阶</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:46:09+08:00">
-                2020-05-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143632.png" alt></p>
-<p><strong>曾经一段时间内，许多人都认同「混音用 Pro Tools，编曲用 Logic」的观点，足以说明 Logic Pro 在 MIDI 编辑领域所占据的地位。Mark Cousins 将细说 MIDI 的进阶编辑技巧。</strong></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143650.png" alt></p>
-<p>音乐制作少不了用 MIDI 来制作虚拟乐器，制作人需要掌握相当细致的 MIDI 数据编辑、编程技巧，以便做出更为合理或逼真的乐器声。</p>
-<p>有些观点认为，在这个虚拟乐器满天飞的年代，人们似乎有些过于依赖 MIDI 了。但今天我们不谈大道理，只说小手法，MIDI 做得好，创意少不了，MIDI 用得溜，好音乐自然跟着走。</p>
-<p>本文并非要对 Logic 的 MIDI 编辑功能来个说明书式的覆盖讲解，而是针对若干有特色的技巧进行讲解，希望能给读者带来新的创意。首先我们会探索检查器和钢琴卷帘界面，即 MIDI 编辑的主战场，然后讲讲「标准化」编辑流程的重要性。</p>
-<p>「智能选择」是 Logic 的一个重要话题，即用尽量少的组合键，选中你要操作的音符，而不是用鼠标一个一个点选。当你的工程里已经有了成百上千个 MIDI 音符后，高效选取音符就自然成为提高制作效率的重要一环。</p>
-<p>另一方面，我们还将学习一些放置在菜单项里的 MIDI 编辑功能，也是能够为你节省大把大把的编辑时间的方法。最后，结合上边的技巧，我们来具体说说怎样编辑复杂的鼓组节拍、管弦乐编辑技巧，以及通过控制器使你的音乐更富有动态感。请尽享阅读！</p>
-<p><em>这篇教程得到了伦敦 Point Blank 音乐学校的认可。Point Blank 是一所专业的音乐制作、音频工程、音乐营销、演唱、广播制作、DJ 技术和电影制作的学校，全部由英国顶尖的音乐制作人和媒体专家授课，更有音乐和媒体界传奇人物的客座访谈。</em></p>
-<h5 id="贴士：音阶量化"><a href="#贴士：音阶量化" class="headerlink" title="贴士：音阶量化"></a>贴士：音阶量化</h5><p>钢琴卷帘编辑器里的要员之一当属音阶量化工具，你可以理解为 MIDI 的音高纠正器。它能将选中的音符按照指定的音阶进行音高量化，比如变成大调，或自然小调等。你可以快速将一段旋律变成东南亚调式或多利亚调式，极快地获得所需的音乐风格。另一种用法更有趣，结合 MIDI Randomizer 插件（在 MIDI 通道条的 MIDI FX 处启用），把随机的 MIDI 音符量化到一个特定的音阶里，也就得到了一段十分独特的音乐素材。</p>
-<h4 id="提高鼓组编辑技巧"><a href="#提高鼓组编辑技巧" class="headerlink" title="提高鼓组编辑技巧"></a>提高鼓组编辑技巧</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143713.png" alt></p>
-<p>我们在这个部分将要探索鼓组编辑技巧，并从踩镲编辑入手。MIDI 编辑始于检查器，我们先来进行一下 16 拍子的量化，并修正一些动态。你可以按 I 打开和关闭检查器，也可以 Option – R 来打开浮动检查器。然后，把「力度变化」设为固定。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143728.png" alt></p>
-<p>或许，在检查器和钢琴卷帘窗之间来回操作有些繁琐，将 MIDI 片段的参数进行正常化之后则能起到一些改善作用。在片段上右键点出菜单，打开 MIDI 子菜单，并选择「正常化片段参数」。那么，量化和动态数值就被永久写入了。更多关于 MIDI 片段参数的信息可以参考 <a href="https://support.apple.com/kb/PH13069?viewlocale=zh_CN&locale=zh_CN" target="_blank" rel="noopener">Apple 的文档</a>。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143743.png" alt></p>
-<p>要提高 MIDI 编辑姿势，智能选取功能是必须掌握的。例如从菜单选择「编辑 &gt; 选定 &gt; 相同子位置」，或按 Shift – P 组合键。那么，如果我们选中了一个小节里所有的踩镲强拍，则「相同子位置」将选择余下小节里，同位置的强拍音符。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143752.png" alt></p>
-<p>当选中音符后，我们可以在钢琴卷帘窗的窗内检查器中，通过力度滑杆来增加或减少力度的相对值。此时，如果要调节其他音符的力度，只需按下 Shift – I 反选，即可选中刚才不在选择状态的音符。</p>
-<p><img src="https://www.musictech.net/wp-content/uploads/2014/06/Screen-Shot-2014-06-23-at-10.40.19.png" alt="img"></p>
-<p>当你在多个 MIDI 片段之间操作时，请记得多多利用钢琴卷帘窗的「设定音符颜色」功能。本例中，请先选中所有鼓组的片段，然后打开钢琴卷帘窗。现在，在菜单中选择「显示 &gt; 设定音符颜色 &gt; 按片段颜色」命令，看看效果吧！</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143808.png" alt></p>
-<p>再介绍一个 MIDI 鼓组编辑的利器：挪动值。你可以用它，对一个或多个音符进行增量移动，只需按 Option – 左/右方向键即可完成。当然，你需要先设定挪动值（编辑 &gt; 移动 &gt; 将挪动值设定为 &gt; 等份），这样就能把挪动值设定为 1/16 拍的步长了。</p>
-<h4 id="编辑-MIDI-和弦"><a href="#编辑-MIDI-和弦" class="headerlink" title="编辑 MIDI 和弦"></a>编辑 MIDI 和弦</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143819.png" alt></p>
-<p>接下来我们来探索 MIDI 和弦编辑当中的一些趣味技巧。当你录制完一套和弦后，也许会发现若干音符的长度并不那么精确，可能稍短了一点，这时你就需要「强制连音」功能了，从「编辑 &gt; 修剪 &gt; 音符结束到以下音符（强制连音）」或按 Shift – \ 组合键来启用。你可以在一个弦乐的片段上尝试一下，注意音符长度对平滑过渡的作用。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143828.png" alt></p>
-<p>另一个实用的和弦编辑技巧是，将 MIDI 音符分离到不同的乐器上。本例中，我们把单簧管的下边两个音，和长笛的上边两个音进行 double。首先，建立单簧管轨道，把弦乐的 MIDI 片段拷贝过去，然后在菜单中点选「编辑 &gt; 选定 &gt; 最高音符」或按 Shift – 上方向键。</p>
-<p><img src="https://www.musictech.net/wp-content/uploads/2014/06/Screen-Shot-2014-06-23-at-10.50.09.png" alt="img"></p>
-<p>选中顶部的音符后，按 Control – M 将它们静音即可。然后，把 MIDI 片段拷贝到长笛轨上，选中静音的音符（Shift – M），按 Control – M 将它们解除静音，再按 Shift – I 反选，把其他音符静音即可。看起来很繁琐？其实不然，只是三套简单的组合键而已。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143844.png" alt></p>
-<p>同样的技巧，还有另一个实现手法，可以选择菜单里的「功能 &gt; 将 MIDI 通道设定到声部编号」，这个命令会将一个和弦分离到一串 MIDI 通道里。此时，你可以选择「显示 &gt; 设定音符颜色 &gt; 按 MIDI 通道」命令，就可以直观地看出不同通道里的音符了。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143856.png" alt></p>
-<p>试试在 Hammond 风琴轨上使用「将 MIDI 通道设定到声部编号」命令。在本例中，音符会被分离到三个不同的手键盘上（Upper、Pedal 和 Lower）。接下来，通过音栓调节三个部分的音色，便可以组合出不同声音风格的和弦声。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143906.png" alt></p>
-<p>如果要把一个和弦里的音符拆分到不同的虚拟乐器轨上，可以在 MIDI 片段上点按右键，选择菜单中的「MIDI &gt; 通过 MIDI 通道分离」。这个 MIDI 片段就会被立即分割成多个片段，和弦里的每个声部都会成为一个新轨道，接下来你只需要给每个轨道设定乐器即可。</p>
-<h4 id="创意部分：玩转控制器信息"><a href="#创意部分：玩转控制器信息" class="headerlink" title="创意部分：玩转控制器信息"></a>创意部分：玩转控制器信息</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143917.png" alt></p>
-<p>「MIDI 画笔」区域位于钢琴卷帘窗的底部，各种 CC 控制器信息都可以在这里进行查看和修改。最常用的可能就是 MIDI 力度信息了。当你「按片段颜色」来查看 MIDI 音符时，这个部分的信息尤其重要。而通过这里，直观地查看音符之间的相对力度差异也是非常方便的。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143927.png" alt></p>
-<p>通过窗内检查器当中的下拉菜单，你可以选择查看不同的 CC 数据，在 127 个控制器当中任意切换。例如，编辑合成器贝司时，我们可以选择「调制」参数，来控制滤波器的 Cutoff 值。你可以用指针工具添加节点，也可以用铅笔工具直接绘制曲线。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143936.png" alt></p>
-<p>「MIDI 画笔」有一个重要特性，可以让你在编曲过程中立即编辑 CC 控制器参数。在轨道区，选择菜单中的「显示 &gt; MIDI 画笔 &gt; 调制」即可，你应该会在片段上看到 CC 控制器参数。记得把视图缩放调「大」一些。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143946.png" alt></p>
-<p>除了以上介绍到的功能之外，在 MIDI 编辑过程中，你应该时刻记得使用「功能」菜单下的命令，尤其是「MIDI 变换」子菜单。无论你需要进行何种变换，Logic Pro X 都会显示一个 MIDI 变换对话框，点按「选定并操作」即可直接完成变换。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514143955.png" alt></p>
-<p>同样以合成器贝司来举例，我们可以运用一些非常有趣的变换方式。比如，「固定音符长度」可以把贝司序列变得更加机械化，然后把音符缩为原来的一半长即可（也很适合快速获得 1/32 音符）。或者试试「随机力度」，让音符之间的力度变得随机分布。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514144004.png" alt></p>
-<p>回到鼓组，我最喜欢的一个 MIDI 变换命令就是「人性化」，它会在力度和节奏上添加一些微小的随机错动，使得鼓组更像真人的演奏。更方便的是，你可以渐进式的应用人性化效果，可以产生一种越来越松弛的演奏效果。</p>
-<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/06/logic-pu-10/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-10.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-10.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="../3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../3/">3</a><span class="page-number current">4</span><a class="page-number" href="../5/">5</a><span class="space">&hellip;</span><a class="page-number" href="../8/">8</a><a class="extend next" rel="next" href="../5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="../3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../3/">3</a><span class="page-number current">4</span><a class="page-number" href="../5/">5</a><span class="space">&hellip;</span><a class="page-number" href="../9/">9</a><a class="extend next" rel="next" href="../5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1908,7 +1832,7 @@
               
                 <a href="http://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">79</span>
+                  <span class="site-state-item-count">83</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
