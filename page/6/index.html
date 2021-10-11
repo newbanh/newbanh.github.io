@@ -272,6 +272,640 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../58.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../58.html" itemprop="url">Logic Pro X 系列教程 11：混音能手</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:32:21+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103314.png" alt></p>
+<p><strong>Logic Pro X 有着丰富的混音功能，帮助制作人高效地进行混音。Mark Cousins 将带你进入 Logic Pro X 的混音领域。</strong></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103328.png" alt></p>
+<p>混音是音频制作中最具有创造性的一个步骤，Logic Pro X 强大的混音功能能够极大地改善你的工作流程，并且使得音乐性也得到最大的发挥。然而，在如今的虚拟设备混音时代，这个任务也渐渐变得有些失去了创造性，甚至作为创作流程中的一环，其边界也变得越来越模糊。</p>
+<p>混音也是一种创造，因此我们的工作并不是找到一个插件，改一下某个参数，所有声音就都「好听」起来了。要时刻记得，每一个混音操作的原因是什么，以及你的目的是什么。</p>
+<blockquote>
+<p>混音要制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
+</blockquote>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103353.png" alt></p>
+<p>在本篇教程中，我们会探索一系列改进混音的关键技术。首先，我们要学习如何进行有条不紊的工作，学会组织你的工程。包括总线发送的规范，轨道堆栈（Track Stack）以及分组的合理利用，我们会发现，一个组织结构紧密的混音，听起来就不会随意而杂乱。</p>
+<p>第二个部分主要探讨效果器插件的使用，包括通道条插入和总线发送。这是混音策略得以实现的环节，比如压缩器与 EQ 的顺序问题，如何用延迟效果器精准创造一个立体声声场的问题。我们要用混音制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103423.png" alt></p>
+<p>在最后一个部分我们将拿出混音的「秘密武器」：自动化。如果说静态混音能够做到 80% 的话，那么自动化就像那甜点上的一颗草莓，使每一轨之间都互相拼接成一个有机整体。你需要理解 Logic 的几种自动化模式：Touch、Write 和 Read，这样不仅能边播边记录推子的动作，还可以通过手绘自动化曲线将你的混音精确地控制在 0.1dB 之下。</p>
+<h5 id="贴士：创建多版本混音"><a href="#贴士：创建多版本混音" class="headerlink" title="贴士：创建多版本混音"></a>贴士：创建多版本混音</h5><p>Logic 的文件菜单下有一个「备选」功能，可以用来创建和切换同一个工程的不同混音。以往，你可能需要将工程另存为一个新的文件，而「备选」功能则优雅地解决了这个问题，所有版本的混音都共享相同的工程内容。因此，做一段乐器混音、30 秒的广告配乐，或者 remix，你都无需创建新工程，只需要创建备选并直接修改即可。推而广之，当你需要尝试不同录音 take 时也可以使用备选。</p>
+<p><em>这篇教程得到了伦敦 Point Blank 音乐学校的认可。Point Blank 是一所专业的音乐制作、音频工程、音乐营销、演唱、广播制作、DJ 技术和电影制作的学校，全部由英国顶尖的音乐制作人和媒体专家授课，更有音乐和媒体界传奇人物的客座访谈。</em></p>
+<h4 id="更整洁的混音"><a href="#更整洁的混音" class="headerlink" title="更整洁的混音"></a>更整洁的混音</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103441.png" alt></p>
+<p>1、为了让混音过程更加流畅，最好对混音器进行一下组织管理，尤其在轨道数量较多的情况下。如何整理最有效呢？要考虑的第一条就是，怎样分组排序能让你在工程里轻松穿梭，快捷地定位所需的轨道。当混音器处于「轨道」模式下，混音器里的音轨顺序就会自动与轨道区保持一致。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103454.png" alt></p>
+<p>2、如果使用了音色库，它们可能会产生一大堆备用的发送轨和辅助轨，可以考虑把用不到的发送轨删除。你可以按名称顺序实例化发送轨，比如 Bus 1 放在第一个发送槽里。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103507.png" alt></p>
+<p>3、我们往往会用三层混响效果来制造深度感强烈的声场效果，每一层都较上一层的空间更大。上图中，我们为每一轨都实例化了三个混响，按照名称顺序摆放，一目了然。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103518.png" alt></p>
+<p>4、使用轨道堆栈（Track Stack）来归纳成组的声音，例如鼓组等。按住 Command 并点按要收纳的音轨，选择「轨道」菜单下的「创建 Track Stack…」即可。在弹出的对话框中选择「总和堆栈」，这样你可以得到一个堆栈的总推子。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103531.png" alt></p>
+<p>5、点按轨道头列表里的小三角，堆栈就会展开或合拢。为总和轨标注一个名称，甚至分配颜色，以便视觉区分。另外，在混音器中，把轨道堆栈放置在末尾会更加整洁，所以在轨道区把总和堆栈放到最下边即可。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/08/MT-Logic-Pro-X-Mixing-Pic-6.jpg" alt="img"></p>
+<p>6、另一个归纳音轨的方法是编组。将轨道编组后，它们的推子将同步移动。但你不能隐藏音轨。选中要编组的音轨后，在混音器中点按音轨中央的分组按钮，即可以在菜单中完成编组。你可以随时按 Shift + G 临时关闭和恢复编组轨道的联动响应。</p>
+<h4 id="使用信号处理器"><a href="#使用信号处理器" class="headerlink" title="使用信号处理器"></a>使用信号处理器</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103552.png" alt></p>
+<p>1、在混音过程中，试着把插入效果和发送效果的作用区分开。总体而言，插入效果应偏向于修改音调、音色和动态。同时，改变处理器的顺序有时也会产生比较微妙的声音效果变化。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103603.png" alt></p>
+<p>2、相对而言，发送效果则应该主要进行环境修饰，例如混响和延迟。应该好好控制环境效果的作用量，或说干湿比。如果使用混响效果，最好在发送插槽里选择「后声相」，以便保留立体声的摆位。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103612.png" alt></p>
+<p>3、对于混响和延迟效果而言，我们可以在混音中通过发送轨的电平来控制效果量，也可以去直接修改辅助轨。从混音的角度来看，你可以对混响信号进行单独处理，比如用 EQ 做个低切，或者加上一点合唱效果。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103621.png" alt></p>
+<p>4、当你使用延迟（Delay）效果时，需慎重考虑它在立体声声场中的作用。比方说，上图中 Telecaster 轨的声相稍稍偏左，我们可以把这一轨发送到 16 分音符 Tape Delay 上，并把延迟信号的声相打到右边，创造一种独特的空间感。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103630.png" alt></p>
+<p>5、当然了，每一条规则都会有例外，本例则是关于发送压缩效果的。在发送轨使用压缩效果，也就是常说的平行压缩（或称并行压缩、并联压缩）。在主要的鼓轨上激活一个发送效果，并在新创建的辅助轨中实例化一个压缩器插件，将压缩速度调至极快，并使用 6:1 压缩比，大概进行 10dB 的电平衰减。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103639.png" alt></p>
+<p>6、混响、延迟以及平行压缩所创造出的空间效果已确定，「squash（挤压）」轨的效果已经加进了整个混音当中。在此情况下，这条辅助轨通道的电平将影响这组效果的密度，并为鼓组的躯干部分增添饱满度。当然，别忘了把效果分配给鼓组的发送效果。</p>
+<h4 id="添加自动化"><a href="#添加自动化" class="headerlink" title="添加自动化"></a>添加自动化</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103650.png" alt></p>
+<p>1、我们通过各种效果器，可以对混音进行各种控制。尽管如此，自动化却能起到不可替代的作用，通常用来强调混音当中的某些片段，防止它们被其他轨掩盖。要使用自动化，首先需要进入自动化视图，请按字母 A 键。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103659.png" alt></p>
+<p>2、在轨道头当中，有自动化模式选项。比如 Touch 模式，用来边播边记录推子动作。当推子被按住时，会写入自动化数据，当你松开时，推子将回到它的原本位置。Read 模式顾名思义，是用来回放的模式，你可以安全地播放混音，不用担心误操作改变自动化数据。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103714.png" alt></p>
+<p>3、为了更加精确地控制信号电平，你可以在轨道区手绘自动化曲线，用指针工具或铅笔工具都可以。如果要提升某一部分的电平，可以使用选取框工具画出一个区域，然后用指针工具拉动该区域内的曲线。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103724.png" alt></p>
+<p>4、我们接触最多的自动化操作可能都对轨道音量的控制。其实，在 Logic Pro X 中你可以对轨道上的任意插件参数进行自动化控制。在轨道头的下拉菜单中选择不同的参数即可。比如上图中，可以对 Rhodes 钢琴轨的 AutoFilter 效果的 Cutoff 值进行自动化控制，让它在前四小节缓慢打开。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103734.png" alt></p>
+<p>5、刚接触自动化时，你可能需要重新调整音量，而发现音量推子已经被自动化数据完全控制了。这时，你可以使用自动化值来调节音轨的整体音量，而不影响自动化数据的相对变化。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103742.png" alt></p>
+<p>6、如果你的自动化操作出错了，或不再需要某些自动化数据，你可以在「混音」菜单下的「删除自动化」子菜单中找到所需的命令。比如，删除那些可见的自动化数据，甚至整个工程里的全部自动化数据等。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/08/logic-pro-x-tutorial-become-a-power-user-tutorial-part-11-better-mixing-in-logic-pro-x/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-11.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-11.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../60.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../60.html" itemprop="url">Logic Pro X 系列教程 12：母带处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:25:30+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>最新版的 Logic Pro X 内置的 Channel EQ 插件包含大量改进。Mark Cousins 将告诉你如何将它运用在母带工作中。</strong></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102650.png" alt></p>
+<p>对于母带而言，均衡器（EQ）无疑是效果器里的重中之重。EQ 不仅要做出好听的声音，而且更需要成为母带中的多面手，把那个「神奇的音响」用到混音中最正确的地方。</p>
+<p>EQ 不仅要具备足够数量的多频段控制、滤波选项、搁架控制，还要提供左右声道分离控制的功能。如果你具备足够的挑战心，可能还需要 M/S 处理的特性。不止于此，可能还会需要能够在线性相位（Linear Phase）EQ 和可靠的老式「相位偏移」EQ 之间进行选择。显然，母带过程中对于 EQ 的需求是纷繁多样的。</p>
+<blockquote>
+<p>Channel EQ 不仅是混音工具，更是母带处理中高效的多面手，非常值得深入了解。</p>
+</blockquote>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102700.png" alt></p>
+<p>最新版的 Logic Pro X 有着焕然一新的外观和更强大的功能，而自带的 Channel EQ 和 Linear Phase EQ 插件也更是成为了母带工作中的强者。这篇文章将带你深入了解如何使用 Channel EQ 和 Linear Phase EQ 插件进行母带处理，学习较通常的混音实践更为不同的 EQ 操作。</p>
+<p>Channel EQ 最激动人心的功能当属 M/S 均衡，也就是「中部/侧面」式立体声，而不是传统的左/右式立体声。M/S 技术虽然在母带圈当中享有越来越高的声誉，但也正因为它独特的立体声处理方式使得刚接触它的人容易产生一些误解。简单地说，M/S 立体声会将混音分为中部（从左右声道的汇总当中得出）以及侧面（由左右声道的差别中得出）。从作用上来看，这个技术使得 EQ 更加直截了当，尤其对于那些被放置在「幻象中心」的乐器。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102755.png" alt></p>
+<h5 id="解读：插件链接"><a href="#解读：插件链接" class="headerlink" title="解读：插件链接"></a>解读：插件链接</h5><p>插件链接模式按钮在插件窗口的右上角，在母带过程中非常实用。链接模式启用时，插件窗口会随着你在不同轨道之间切换，自动显示所在轨道的相同效果插槽位的插件内容。你可以把需要进行对比的插件分配在同一个插槽位上，例如所有 EQ 都在插槽 1，压缩都在插槽 2 等，然后快速从一首歌转到另一首进行对比，而无需关闭又打开各自的插件窗口。这个技巧在需要进行不间断监听，调整均衡和响度时尤为重要。</p>
+<p><em>这篇教程得到了英国 <a href="http://www.pointblanklondon.com/" target="_blank" rel="noopener">Point Blank 音乐学校</a>的支持。</em></p>
+<h4 id="启程"><a href="#启程" class="headerlink" title="启程"></a>启程</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102806.png" alt></p>
+<p>1、在多数母带信号路径里，Channel EQ 往往是处理序列当中的第一位，后边会有压缩器和限制器。在添加 Channel EQ 插件以后，记得打开底部的扩展参数并勾选 Oversampling，以获得最高音质。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/09/MT-Logic-Pro-X-Mastering-EQ-Pic-2.jpg" alt="img"></p>
+<p>2、在均衡处理工作中，Channel EQ 的 Analyzer（分析器）能告诉你更多频率特性上的信息。点按 Analyzer 激活它，在扩展参数中选择 Resolution Medium 或 Resolution High 来获得更精确、更细致的频率概况。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102827.png" alt></p>
+<p>3、Analyzer Decay 是个很有趣的参数，默认值是 10dB/s。设置为较低速度（甚至低到 0dB/s），能够产生较缓的「Averaged（均值）」频率概况，而不是瞬态显示。这个功能可以帮助你理解当前音轨的宽广频率特性。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/09/MT-Logic-Pro-X-Mastering-EQ-Pic-4.jpg" alt="img"></p>
+<p>4、我们先从音轨的低频部分起手。为了得到更好的控制，你可以使用高通滤波，以去除次低频的干扰。点亮左上角的高通滤波器按钮，将曲线调整到最陡，即 48dB/Oct，并把频率控制点放置在 20-30Hz 上。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102845.png" alt></p>
+<p>5、高通滤波器的另一个技巧是可以用它添加共鸣，对应的参数就是 Q 值，位于频率点和斜度参数的下边。将该值增加到 1.00 就能看到频率切分点处有一个小鼓包。你可以增加一些 Q 值来稍稍提升切分点。适当使用可以得到更紧实和厚重的贝司。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102900.png" alt></p>
+<p>6、在均衡器的两端，即低频和高频端，搁架式均衡可以用来确定轨道的宽频特性。仔细斟酌它们各自的参数，以得到不同的频率色彩。比如，在 7kHz 处进行提升可以增加临场感，而在 12-16kHz 处提升会增加「空气感」。</p>
+<h4 id="Q-值和-Linear-Phase-EQ"><a href="#Q-值和-Linear-Phase-EQ" class="headerlink" title="Q 值和 Linear Phase EQ"></a>Q 值和 Linear Phase EQ</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102912.png" alt></p>
+<p>1、谈到高通滤波，就有必要提及如何在实践中善用 Q 值。对于搁架滤波，Q 值越小曲线越宽平，而不是丘陵形状。曲线和经典的 Baxandall EQ 很相似。Baxandall EQ 是很多母带工程师偏爱的效果器，得益于它在频率设定中让高频平缓提升的特性。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102935.png" alt></p>
+<p>2、在接下来的混音当中，音色修整依靠 4 个参量均衡器来实现。整体而言，最好的方向是提升时使用较宽的 Q 值，衰减时用较窄的 Q 值。如果耳朵已经听不出来 EQ 的痕迹，而作品又具有音乐性的效果就说明方向是正确的。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102945.png" alt></p>
+<p>3、Q-Couple 是个值得注意的功能。默认情况下，当你提升或衰减某个频段的增益时，Q 值会变得更锋利，使得 EQ 的频段各自保持固定的增益和衰减量。Q-Couple 能够让 EQ 以更加具有音乐性的方式工作，因此保留默认设置就可以了。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102954.png" alt></p>
+<p>4、无论进行怎样的均衡调整，最后的结果都会使信号电平被稍许提升。因此为了保持整体的增益结构，并保持未经 EQ 的声源的客观性，应当考虑用右边的 Gain（增益）拉杆来修正整体增益平衡。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103004.png" alt></p>
+<p>5、除了 Channel EQ，Logic Pro X 还内置了一个 Linear Phase EQ 均衡器。你可以直接从 Channel EQ 切换成 Linear Phase EQ 并保持设置不变，非常方便将两个插件的声音进行对比。请多多对比 Linear Phase EQ 所带来的通透感的提升。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103015.png" alt></p>
+<p>6、有时，更加「直达」地处理 EQ 比整体处理效果更好，也就是通过改变 Processing 参数，把 EQ 效果加到指定的左或右声道中。不妨试试在 Left Only（仅左声道）模式下提升一些高频，并留意 Hi-Hat 镲的变化更加清晰可闻，从而避免过多的高频。</p>
+<h4 id="中部和侧面处理"><a href="#中部和侧面处理" class="headerlink" title="中部和侧面处理"></a>中部和侧面处理</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103025.png" alt></p>
+<p>1、如果你使用 Channel EQ 进行 Left Only（仅左声道）模式处理，也许就需要再加载一个 Channel EQ 并设置为 Right Only（仅右声道）。这样，就可以对左右声道的 EQ 进行分别控制，而不再是笼统论之。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103036.png" alt></p>
+<p>2、在分别对左、右声道进行处理之外，你还可以尝试 M/S 处理方式。加载两个 Channel EQ 插件，分别设置为 Mid Only（仅中部）和 Side Only（仅侧面）就可以得到一个基本的 M/S 矩阵了。在效果器末端插入一个免费的 bx_solo（<a href="http://www.brainworx-music.de）效果器可以将中部和侧面声道进行分离。" target="_blank" rel="noopener">www.brainworx-music.de）效果器可以将中部和侧面声道进行分离。</a></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103045.png" alt></p>
+<p>3、按下 bx_solo 的 M Solo 按钮就可以单独听到中部声道的声音。请留意贝司在这个声道的重要地位，在混音当中，它是被固定在中间的。提升一些低频，就可以直接听到底鼓和贝司的加强，同时又能保持侧面声道不受影响。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103054.png" alt></p>
+<p>4、现在来处理侧面声道，请留意中部声道明显遗漏的内容，例如底鼓和贝司。好的处理策略之一是在侧面声道中对贝司进行低频衰减（如果你想要将低音部分聚集在中部，这一点就极其重要），并提升少许空气感来扩充整个混音的通透度和广度。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103104.png" alt></p>
+<p>5、Channel EQ 的 M/S 模式配合增益控制（Gain control）会得到很有趣的效果。作为 M/S 矩阵的一部分，增益控制可以用来调整混音的立体声广度。例如，增加中部的增益，并降低一些侧面的增益，则结果会听起来更加中心聚焦化。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514103113.png" alt></p>
+<p>6、如果你要同时打开和关闭 EQ 矩阵的插件窗口，可以使用 Logic Pro X 的「屏幕设置」功能，默认情况下点按菜单栏里的「1」就可以看到它的菜单。屏幕设置可以分配给键盘上的数字键，可以方便地为母带工程里的每一首歌都设置一个按键，可以记住每首歌的 EQ 窗口设置，其实也包括所有处理器窗口。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/09/logic-pro-x-tutorial-become-a-power-user-tutorial-part-12-mastering-in-logic-pro-x/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-12.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-12.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../47.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../47.html" itemprop="url">Logic Pro X 10.2 的全新合成器 Alchemy</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:20:10+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Logic Pro X 自从发布以来，经历了好几次「静悄悄」的更新，每次更新的内容却是干货满满。目前的最新版本 10.2 虽然也只是一次小版本号更新，然而包含了一个大动作：全新的合成器插件 Alchemy。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102058.png" alt></p>
+<p>这次更新也新增了不少细节功能，例如允许制作人直接把音乐上传到 Apple Music Connect，新增了 1000 多条 Apple Loops 素材，更新 MainStage 到 3.2 版，开始支持 Force Trackpad 操作等。最受期待的采样处理合成器 Alchemy 则是重中之重，内置多套引擎，3000 多种预设，多重效果、琶音器以及高级塑形（Morphing）功能。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102112.png" alt></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102134.png" alt></p>
+<p>这款合成器原属 Camel Audio 公司，其于今年初被 Apple 收购。之前版本的 Alchemy 用户一定也能认出新版本的不同之处。塑形和波形等功能的位置依然如故，也可以使用以前的音色。其它地方的改动则比较大，界面更加整洁、大方，且不用说更符合 Logic Pro X 的整体外观，俨然一副「平时不炫耀，用时找得着」的神态。</p>
+<p>干净的外表并不意味着功能的缺失，如果你有兴趣深入了解这款合成器，一定可以走得很深。首先是它的几大发生引擎：加法、频谱、粒子、重合成、采样以及虚拟模拟信号。你可以导入自己的采样，并通过这些引擎来处理。你也可以创建自己的采样乐器，就像使用其它采样器一样。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102210.png" alt></p>
+<p><strong>点按「Simple」标签页，查看表演功能项</strong></p>
+<p>我们也注意到，随着 Alchemy 的出现，人们期待它会成为 EXS24 的替代品。当然，这两者目前还是有着较大的区别，难以确定是否会存在替代的关系。接下来，我们就深入了解一下 Alchemy 合成器吧。</p>
+<h4 id="四倍处理"><a href="#四倍处理" class="headerlink" title="四倍处理"></a>四倍处理</h4><p>Alchemy 的每个声音都会经过最多四次「源」处理，分别为 A、B、C 和 D，它们把 Alchemy 分成了几大部分。你可以对它们分别进行混合、塑形、调制、效果以及琶音器处理。从此也可以窥见 Alchemy 内部的庞杂程度。</p>
+<p>Alchemy 的主信号要从四个源通过三个滤波器（串联或并联）流动，随后信号源被汇聚到（也可以旁通）另外两个滤波器，以及一个效果器区域。</p>
+<p>从 Alchemy 的界面也能简单地看出信号流向，你可以在界面上切换三种模式，现在我们直接跳到最复杂的一个：Advanced。你可以点按 A、B、C、D 选项，来看到各个声源的详细选项。可以选择合成器引擎和波形，比如简单的 VA 正弦曲线波，或者复杂的采样波形。</p>
+<p>要使用某个引擎模式，你得先导入一些声音。点按右边的 Sampler 标签页，就可以开始导入声音了。快去找出硬盘里那些尘封已久的采样和循环素材吧，统统导入 Alchemy，让它们再次燃起来！</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102224.png" alt></p>
+<p><strong>进入各个音源，选择合成器和波形种类</strong></p>
+<p>这一块做得很精致，你可以逐条浏览硬盘上的采样文件，将它们 Solo 并仔细调整每一步处理。如果你载入一个预设，有可能也会显示这个部分，有些预设会用到 3 个滤波器，可以先将它们关闭，以便听到采样映射在键盘上的原始状态。</p>
+<p>我们可以充分发挥四个音源的潜力：从「库」或自己的硬盘里寻找声音，选择不同的合成引擎和滤波器。但 Alchemy 还可以为你做到更多。点按 Global 标签页，你会看到混音器区域。在这里，四个音源将被糅合在一起，每个音源都有音量、音调和声相调节。接下来，还可以将信号发送到两个滤波器和效果器当中。每个音源都有一个拨号盘，可以在滤波器和效果之间进行分量平衡，制造无限的声音组合。</p>
+<p>滤波器（Filter）区域有多种类型（40 个左右）、电平、截止（Cutoff）和共鸣选项，而在主混音（Master）区域还可以对每个音源进行电平和音调的调节。主效果区域在界面的底部，可以选择最多四个效果（总共 17 个），从左到右显示为若干方块。这有点像 Ableton Live 里的效果器界面。</p>
+<p>每一个方块都有各自独立的控制器，例如混响包含了丰富的选项。它们看起来没什么很炫目的，但非常实用。最后，在 Advanced 标签页中，有一个调制区域，可以把声音拉伸扭曲成各种你想要的结果。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102351.png" alt></p>
+<p><strong>在 Advanced 区域，可以混合、调制、塑形以及演奏各个音源的声音</strong></p>
+<h4 id="大量预设"><a href="#大量预设" class="headerlink" title="大量预设"></a>大量预设</h4><p>现在，你大概已经领略到了 Alchemy 的魅力。现在，更加令人惊喜的地方还在等待你探索：Browse。这里有丰富的分类和子分类，帮助你挑选想要的音色类型。NI 的 FM 或 Massive 用户一定不会陌生吧！</p>
+<p>首先，在左边选择一个主分类（节奏型、贝司、旋律、弦乐等等），接下来可以看到子分类中的内容。除此之外还可以选择音色的种类（Type）和流派（Genre）。在下来菜单中，你还可以深入定义搜索条件。右下角处有一个搜索功能，可以快速筛选已有结果。另外，通过文件选项可以载入或保存音色。</p>
+<p>Browse 画面的下方是效果器（Effects）和琶音器（Arpeggiator）区域，在左边的小标签页切换。上边我们已经聊过了效果器区域（它们在 Advanced 画面也会显示出来）。第三个界面选项可能有些迷惑人，叫做 Simple（简单），它只允许显示 Performance（表演）区域，而不能显示琶音器和效果器区域。这或许是设计者为专注于表演的场合而做的。</p>
+<p>现在我们来看看 Alchemy 的最后几部分：表演和琶音器。在琶音器中，你可以轻松设置摇摆（Swing）、八度（Octave）、频率（Rate）和锁存（Latch）选项。表演标签页是 Alchemy 的另一大便捷之处，你可以通过点击 8 个「打击垫」以及滑动 X-Y 音色板来调用不同的声音。</p>
+<p>Alchemy 和新出的 Blue II 有着类似的合成器理念，只需一个合成器便可完成一切。多引擎，大量的预设，不仅包括电子音色，还覆盖了爵士、管弦和 funk 类型等。</p>
+<p>Apple 提供了足够广泛的基本音色范围，你可以在里面找到任何电子乐或原声音乐所需的元素。从大量的贝司到环境铺底，再到材质类音色。Alchemy 提供了最多 14GB 的可下载内容，提供了尽可能多的可能性。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514102253.png" alt></p>
+<p><strong>Browse 区域是查找预设的地方</strong></p>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>Logic Pro X 10.2.0 带来了焕然一新的 Alchemy，让 EXS 玩家有了新的探索空间，也让旧版 Alchemy 用户继续创造富有个性的声音。Apple 还提到，新版 Alchemy 的 CPU 资源占用更低。</p>
+<p>Alchemy 原本的独立售价甚至比一整套 Logic Pro X 还要贵，这样或许也能吸引原本的 Alchemy 粉丝加入 Logic 的阵营。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSICTECH"><a href="#本文由-SOUNDMONO-编译自-MUSICTECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSICTECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2015/08/apple-logic-pro-10-2-hands-on/" target="_blank" rel="noopener">MUSICTECH</a></h6><p>固定链接: <a href="https://soundmono.com/apple-logic-pro-x-10-2-alchemy.html" target="_blank" rel="noopener">https://soundmono.com/apple-logic-pro-x-10-2-alchemy.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../43.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../43.html" itemprop="url">FuzzMeasure 4：一款优雅的室内声学测量应用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:16:41+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514101742.png" alt></p>
+<p>说起室内声学测量和处理，闻者或许都会皱下眉头，毕竟这不像玩采样、做混音那样有趣，反而比较枯燥乏味。但对于混音或编曲的人而言，声学处理一样非常重要。为了保证听众听到的音乐与你在工作室听到的一致，就需要做好室内声学测量和处理。Super Mega Ultra Groovy 出品的 FuzzMeasure 4 可以帮助大多数工作室完成这一步骤，以便进一步改善。</p>
+<h4 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h4><p>FuzzMeasure 4 是一款专业级声学测量应用，提供了大量数据，并以优雅的图形展示出来。比起其它声学处理软件，它的准备工作非常简洁易行。只需设置好音频 I/O，就可以开始测量了。将麦克风放置与你的听声位置（如果你会在多处听声，则需进行多处测量），然后新建一个「measurement」，FuzzMeasure 4 会启动一次响亮的扫频，然后测量结果就绘制完成了。FuzzMeasure 4 的结果图毫不吝啬设计感，使得枯燥的数据变得更加直观、有帮助。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514101800.png" alt></p>
+<h4 id="内核强大"><a href="#内核强大" class="headerlink" title="内核强大"></a>内核强大</h4><p>扫频完成后留下大量数据，要如何利用呢？首先要清楚的一点，FuzzMeasure 并不能帮你纠正声学缺陷，而是指出有哪些问题、哪里有问题，以便后续来修正。我首先把麦克风置于我常常混音的听音位置，由于之前已经用 Auralex 的产品进行过处理，FuzzMeasure 的测量结果大体没有问题。在我的最佳混音音量下，大概在 80Hz 处频率开始变得平直。我一般会把低频音量给到「刚刚好」的美妙位置。</p>
+<p>这很好理解，接下来才是好玩的部分。紧接着，我把麦克风移到了我身后沙发的位置，模拟我在混音时，客户通常所坐的地方。沙发靠墙，音箱会被我的身体挡住，而这竟会产生 100-200Hz 中间的严重衰减。我打开了正在制作的混音工程，原来在沙发的位置，底鼓都快听不见了。</p>
+<p>原来我的环境会在底鼓的频率上产生严重缺陷，导致客户不断要求我增加低频。我接着用 FuzzMeasure 测量了其它 6 个听声点，甚至新粘了几块 Auralex 拼块，就位修复沙发上的听声问题。</p>
+<p>FuzzMeasure 还有测量历史记录功能，你可以为它们命名，然后进行数据对比，找出更好的设备摆位、听音点以及工作室里的设备处理。对于现场演出，你可以使用它的现场音频模板来进行设备调节、对调音台进行 EQ 预处理，保证演出的正常进行。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514101826.png" alt></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514101843.png" alt></p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200514101909.png" alt></p>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>FuzzMeasure 4 是一款我不曾知晓的好工具，而现在我都必须依靠它，才能改变工作室里的物品摆放，以保持听音品质的一致性。如果你也有一间工作室，无论专业性的高低，或是需要进行现场调音，FuzzMeasure 4 都是一件不可多得的优雅、有效的工具。</p>
+<p>FuzzMeasure 4 的个人授权价格 $99，商业授权 $499。</p>
+<p>官方网站：<a href="http://www.supermegaultragroovy.com/products/fuzzmeasure/" target="_blank" rel="noopener">http://www.supermegaultragroovy.com/products/fuzzmeasure/</a></p>
+<h6 id="本文由-SOUNDMONO-编译自-ASK-AUDIO"><a href="#本文由-SOUNDMONO-编译自-ASK-AUDIO" class="headerlink" title="本文由 SOUNDMONO 编译自 ASK.AUDIO"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/review-fuzzmeasure-4-by-supermegaultragroovy-measures-acoustic-room-response" target="_blank" rel="noopener">ASK.AUDIO</a></h6><p>固定链接: <a href="https://soundmono.com/fuzzmeasure-4-acoustic-measurement-app-review.html" target="_blank" rel="noopener">https://soundmono.com/fuzzmeasure-4-acoustic-measurement-app-review.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../30.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1177,586 +1811,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../39.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../39.html" itemprop="url">Ableton Live：隐藏在 10 个效果器中的 5 个「低调」选项</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T11:15:25+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>几天前我在玩儿 Ableton Live 里的 Saturator（润色） 效果器，一不小心在标题栏上点击了一下右键。然后发现自己发现了一个新的世界。。。一个我以前从没注意到的 High Quality（高品质）选项赫然出现。。。这让我有些吃惊，因为我以为我 Live 玩儿得已经很 6 了，为什么从来没有想过要在标题栏右键呢？</p>
-<p>于是，我把 Live 的各种乐器、效果器都拉出来「右键」了一遍。居然发现有 10 个效果器的右键菜单里有我没发现过的「新功能」。</p>
-<h4 id="高品质设置"><a href="#高品质设置" class="headerlink" title="高品质设置"></a>高品质设置</h4><p>如我上面提到的，Saturator 有一个「高品质」设置，这个功能 Dynamic Tube（动态管）效果器和 Flanger （镶边）效果器也有！</p>
-<h5 id="Saturator（润色）效果器和-Dynamic-Tube（动态管）效果器"><a href="#Saturator（润色）效果器和-Dynamic-Tube（动态管）效果器" class="headerlink" title="Saturator（润色）效果器和 Dynamic Tube（动态管）效果器"></a>Saturator（润色）效果器和 Dynamic Tube（动态管）效果器</h5><p>选择「高品质」模式可以减少混叠失真（Aliasing），这可以提高声音品质，对于高频率的声音品质提高尤为显著。不过随之产生的是较高的 CPU 占用率。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513111721.png" alt></p>
-<h5 id="Flanger（镶边）效果器"><a href="#Flanger（镶边）效果器" class="headerlink" title="Flanger（镶边）效果器"></a>Flanger（镶边）效果器</h5><p>Flanger（镶边）效果器运用「高品质」模式可以得到较为明亮的声音，但 CPU 占用率会升高。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513111734.png" alt></p>
-<h4 id="3-种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）"><a href="#3-种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）" class="headerlink" title="3 种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）"></a>3 种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）</h4><p>Live 的每一个延迟效果器（Filter Delay、Ping-Pong Delay 和 Simple Delay）都有这三个特色模式：Repitch（变调模式）、Fade（淡出模式）以及 Jump（跳跃模式）。在延迟效果器处理音频的过程中对 Delay Time（延迟时间）参数进行实时更改，将会使延迟湿声产生突然变化。这种变化产生的音效常常为制作人所利用。我们可以在这三种延迟信号过渡模式间进行切换，来得到我们想要的音响效果。</p>
-<p>这三种延迟信号过渡模式可以在延迟效果器的标题栏点击右键进行选择。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513111748.png" alt></p>
-<p>Repitch（变调）模式将会在我们实时改变 Delay Time（延迟时间）的时候产生类似于以往硬件延迟效果器产生的移调的效果。</p>
-<p>Fade（淡出）模式是系统默认模式。此模式在当前和上一个「延迟时间」的值之间平滑过渡，产生的效果像是不同的「延迟时间」值产生的延迟效果被安全地拉长或压缩了。</p>
-<p>Jump（跳跃）模式是 Live 8 及更早的版本的唯一默认模式。当打开 Live 8 或 更早版本的工程文件时，系统将自动选择为 Jump 模式。</p>
-<h4 id="Oversampling（双重采样）"><a href="#Oversampling（双重采样）" class="headerlink" title="Oversampling（双重采样）"></a>Oversampling（双重采样）</h4><p>很多人都知道 Live 的 EQ8 均衡器里有一个 Oversampling 的选项。但很多人都不知道 Live 里已经「盛誉加身」的 Glue Compressor（「胶水」压缩器）也有这个选项。</p>
-<p>开启 Oversampling 模式能使 Glue Compressor 或 EQ8 的音频处理速率提高到当前音频采样率的两倍。这样做可以减少混叠失真、提高瞬时信号处理精度。开启 Oversampling 模式会少量增加 CPU 占用率。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513111800.png" alt></p>
-<h4 id="Flat-Response-（平坦响应）"><a href="#Flat-Response-（平坦响应）" class="headerlink" title="Flat Response （平坦响应）"></a>Flat Response （平坦响应）</h4><p>Live 的 EQ3 也有一个有趣的隐藏特性叫做「Flat Response（平坦响应）」。选择 Flat Response 模式可以减小 EQ3 滤波器在两个频率交叉点处的增益效果。我在不同的音频轨道上试验过「平坦响应」模式的效果，发现在此模式下，频率交叉点处的增益比正常模式减小了 0.5 到 1 dB。</p>
-<p>EQ3 滤波器用 Ableton 自己的话来说是「以优秀强大的模拟滤波器而不是数字滤波器为目标进行优化设计」的。这就意味着甚至在增益值为 0 时，滤波器也会产生适量的令人舒适的「声音染色」效果。</p>
-<p>如果我们不想要这种「模拟」味道的「染色」效果，可以打开 Flat Response（平坦响应）模式并把滤波器坡度设置为较平缓的「24 dB」。这样就能把「染色」效果基本消去了。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513111816.png" alt></p>
-<h4 id="混响的全局精度设置"><a href="#混响的全局精度设置" class="headerlink" title="混响的全局精度设置"></a>混响的全局精度设置</h4><p>Live 强大的混响效果器里有个全局精度设置。「Eco」模式使用相对最少的 CPU 资源，而「High」模式使用最多的 CPU 资源，但产生最丰富、精度最高的混响效果。</p>
-<p>在编曲阶段可以采用较低的混响精度以节省系统资源，但在导出时一定要记得把混响精度设置为「High」。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513111829.png" alt></p>
-<h6 id="本文由-SOUNDMONO-编译自-ASKAUDIO"><a href="#本文由-SOUNDMONO-编译自-ASKAUDIO" class="headerlink" title="本文由 SOUNDMONO 编译自 ASKAUDIO"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/ableton-live-secrets-5-hidden-features-in-10-devices/high-quality-settings-nbsp#article" target="_blank" rel="noopener">ASKAUDIO</a></h6><p>固定链接: <a href="https://soundmono.com/ableton-live-5-hidden-features.html" target="_blank" rel="noopener">https://soundmono.com/ableton-live-5-hidden-features.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../35.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../35.html" itemprop="url">在 Ableton Live 中制作「门限混响」效果</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T10:39:30+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在<a href="https://audio.newban.cn/10-%E6%9D%A1%E6%B7%B7%E5%93%8D%E6%8A%80%E5%B7%A7%E8%AE%A9%E4%BD%A0%E7%9A%84%E6%B7%B7%E9%9F%B3%E6%9B%B4%E8%BF%9B%E4%B8%80%E6%AD%A5.html">上一篇文章</a>中我们提到了一种混响的特殊用法，叫做「门限混响」（「Gated Reverb」）。这种兴起于 80 年代的混音手法可以制造出爆发性强且空间感十足的军鼓音色，曾一度被以 Phil Collins 和 David Bowie 为代表的众多音乐人广泛使用。</p>
-<p>今天，我们就用 Ableton Live 中自带的音色及效果器来重制一个典型的「门限混响」效果。</p>
-<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>首先，我们需要建立一个输出到 Master 总轨上的鼓组。</p>
-<p>[<img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513104234.png" alt></p>
-<p>然后编辑一小段简单的节奏。它听起来现在是这样的：</p>
-<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/gated-reverb-just-the-drums-dry_PN.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>注意鼓组里的每样乐器都是独占一轨的，方便待会儿对军鼓轨道进行发送和效果处理。</p>
-<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>在「A Return」上加载一个混响效果器，然后将鼓组中的军鼓轨道 100% 发送到 「A Return」上。</p>
-<p>对于混响的调制，原则上需要留出一定的预延迟时间（Pre-delay）时间，以使得军鼓的音头得以清晰保留。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513104306.png" alt></p>
-<p>加载在「A Return」轨道上的混响器参数</p>
-<p>现在，军鼓的声音几乎淹没在混响效果中。</p>
-<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/gated-reverb-with-reverb_PN.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h5><p>把军鼓轨道 100% 发送到「B Return」轨道上，并将「B Return」轨道的输出设置为 Sends Only（仅发送）。这样做是为了让军鼓的干声成为门限效果器的侧链输入源。轨道设置为仅发送时，轨道没有实际的声音输出。</p>
-<p>然后，在「A Return」轨道上加载 Gate（门限）效果器。选择 Sidechain（侧链）模式。输入源选择「B Return」轨道。参数设置如下图。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513104322.png" alt></p>
-<p>门限效果器参数</p>
-<p>这里是最后的效果。「门限混响」！听起来还不错吧！</p>
-<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/gated-reverb-with-reverb-and-gate_PN-1.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>固定链接: <a href="https://soundmono.com/ableton-live-gated-reverb-tuts.html" target="_blank" rel="noopener">https://soundmono.com/ableton-live-gated-reverb-tuts.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../36.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../36.html" itemprop="url">制作人基本功：混响</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T10:30:20+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>每当你载入一个混响插件，或使用硬件混响时，总会看到各种混响类型（Type）。有的是基于算法模拟（通过内置的延迟处理来还原经典的数字混响），或者 IR（即脉冲响应，利用真实录制的声学空间采样来实现混响效果）。有的类型代表某种声学环境，有的是模拟一些经典的硬件混响设备。录音棚老手对它们了如指掌，然而刚入门的制作人或许会感到疑惑，这些「房间（Room）」、「大厅（Hall）」、「隔间（Chamber）」、「金属板（Plate）」、「弹簧（Spring）」都是什么意思，还有「氛围（Ambience）」和「非线性（Non-linear）」又是什么？</p>
-<p>下面就对这些不同名目的混响器类型进行介绍。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513103223.png" alt></p>
-<p><em>不同的混响插件，带有不同的混响类型</em></p>
-<h4 id="混响概述"><a href="#混响概述" class="headerlink" title="混响概述"></a>混响概述</h4><p>混响的本意是指在某种特定声学环境中对声场的设计。一个普通的混响声场设计可以被拆解为三部分。初始反射代表着房间的尺寸，即第一个反射波抵达的延迟时间，我们的听觉器官会根据这个时间想象出空间的大小（延迟越长，空间越大）。接下来是早期反射，这是一个逐渐累积反射波的过程，它反映出声学空间的形状和其他特性，比如平行墙面，热闹还是死寂。最后是晚期反射，混响累积到一定厚度，并跟随着干声，并逐渐减少和消失。尾部的长度被称为「混响时间」或「衰减」，它是从声音发出，到混响电平降至原始电平的 60 dB 以下。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513103244.png" alt></p>
-<p><em>混响分解图</em></p>
-<p>不同的声学空间和物理设备对这几个混响阶段有着不同的处理方式，也就形成了各个混响的不同特点。我们来逐个了解这些模拟真实声学空间的混响。</p>
-<h4 id="房间混响"><a href="#房间混响" class="headerlink" title="房间混响"></a>房间混响</h4><p>房间（Room）这个词代表最典型的声学环境，它意味着任何封闭空间。尤其是指俱乐部、剧院等音乐空间。房间可以还原成真实的空间，早期反射可以明确这个房间的特性。在算法混响器中，这几个阶段都可以用公式计算出来，并程序化。你的音乐需要什么类型，直接调出某种配置即可。复杂的混响会包含多种物理空间和脉冲响应。</p>
-<p>如果你只需要一个带动总体的混响效果，那么就用房间混响吧，当然具体参数如房间尺寸等需要适合你的音乐。通常来说，混音师会在工程里叠加多个混响，在各个音轨使用不同的混响配置，而最后会用一个房间混响来处理总轨，将所有声音放进同一个空间里，达到声学一致性。</p>
-<h4 id="特定空间（大厅等）"><a href="#特定空间（大厅等）" class="headerlink" title="特定空间（大厅等）"></a>特定空间（大厅等）</h4><p>有些房间的个性独特，有着形式各异的设计。对音乐而言，就是各种大厅。混响中的大厅多指音乐会大厅，一般是矩形房间，有着平行深度，而且散射和回声品质明显不同，混响时间也比较长。这种类型的混响器比较适合制作流行/摇滚的编曲，尤其是鼓组丰富的音乐。弦乐组、某些人声声部也可以使用。更加极端的一种叫做「教堂」混响，完全模仿自然的超长混响衰减，非常强烈的回声。很显然，这比较适合风琴、合唱团等类型。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513103309.png" alt></p>
-<p><em>经典房间和大厅</em></p>
-<p>音频样本 1：房间和大厅混响</p>
-<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/01_aud_reverb_room-hall.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>在后期处理中，你可能会见到各种不寻常的空间，可能对于音乐混音来说并不合适，但对于制作电影等声场创作而言非常重要。例如，小到浴室、衣橱，大到停机坪、地铁隧道等。而脉冲响应的采样还会包括非房间的声音，如钢琴盖共振、吉他琴身共振等，可以为混音注入一些有趣的色彩和空间。</p>
-<h4 id="录音室混响（隔间、金属板和弹簧）"><a href="#录音室混响（隔间、金属板和弹簧）" class="headerlink" title="录音室混响（隔间、金属板和弹簧）"></a>录音室混响（隔间、金属板和弹簧）</h4><p>除了真实的音乐空间以外，有些混响则是依靠特制的仪器、机械来创造的。最古老的，也是最自然的一种，就是隔间混响了。隔间是一个真实的物理空间，但实际上，乐手很少在这种环境演奏。这是一个专用的房间，要么在录音室的建筑内，这种地方往往用来单纯的生成混响（尤其是靠近麦克风录制的声源）。声音从录音控制室发送出来，到达混响隔间里的一个麦克风，这个麦克风通常指向错开声源方向的墙面，专门捕捉反射波，然后通过线路送回控制室。然后，混响会被贴到原始的干声上，完成混响的制作。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513103535.png" alt></p>
-<p><em>典型的混响隔间</em></p>
-<p>这种制作方式的好处是自然的音响效果，不好的一点是几乎无法调制声音。隔间混响对现代混音而言，可以制作出小房间内的听觉效果，但缺少了一些真实房间采样/模拟下的染色感。</p>
-<p>再来说说金属板混响，这纯粹是一种机械装置来模拟混响。一张能够回弹的柔性金属板薄片，挂在一个木质的框架上，四周有能量转换装置，将金属板的震动作为声音拾取。声音依然由控制室传出，到达金属板，造成金属板颤动，因而出现混响一样的余音。拾音器会把混响声传回控制室。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513103558.png" alt></p>
-<p><em>机械的金属板混响器（上）；一个经典金属板混响插件（下）</em></p>
-<p>金属板混响音质独特，和房间混响有着巨大的差别。它没有早期反射，没有逐渐积聚的过程。反而，混响是突然爆发出来的。也正因为此，金属板混响缺少深度，但是对鼓组和打击乐器尤其适用，厚实感和爆发感齐具。而且，人声也可以用金属板来处理，不会像用房间混响那样，使干声消失在混音中。</p>
-<p>或许很多人对弹簧混响的声音再熟悉不过了，大部分吉他前级放大效果器中都含有这种混响效果。弹簧混响和金属板的工作方式差不多，取代金属板的是一组（三个或更多）弹簧。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20200513103617.png" alt></p>
-<p><em>经典的弹簧混响器「tank」</em></p>
-<p>如你所想，弹簧混响听起来有些「boing」感，它无法取代房间混响（甚至不能代替金属板混响），但它是很有个性的混响效果（回忆一下那些大混响的吉他音乐，哦，如果你年纪太小，那么听听《低俗小说》结尾处的音乐吧）。</p>
-<p>音频样本 2：金属板混响作用于鼓组和人声，以及弹簧混响作用于吉他</p>
-<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/02_aud_reverb_plate-spring.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<h4 id="氛围和非线性混响"><a href="#氛围和非线性混响" class="headerlink" title="氛围和非线性混响"></a>氛围和非线性混响</h4><p>许多混响插件有一个选项，你可以单独提出早期反射部分，去除其他阶段的混响。这样能够增加一些空间感和纵深感，又无需附带一个长长的混响尾巴。如果你在处理一个复杂的混音工程，用它可以增加一点点深度，对于需要比较「干」的混音而言，也十分有用。若是真的丝毫没有混响，声音听起来是「死」的，在隔音间里录制的人声、DI 输出的吉他声、合成器声尤为明显。通常，这个早期混响选项被标记为「氛围（Ambience）」，因为这就是对它最好的描述。</p>
-<p>有一种 80 年代的数字混响效果可以算是氛围混响的一个变形，有些混响插件中带有这个选项。你可能还记得经典的「门限混响」效果，是一种通过一次门限器的数字混响，它完全切除了衰减部分，声音听上去是断开的。这种效果现在已经不多见了，但如果你看到某个混响插件里有个选项叫「非线性（Nonlinear）」，那么就是这种门限风格的混响了。</p>
-<h4 id="为混响留出空间"><a href="#为混响留出空间" class="headerlink" title="为混响留出空间"></a>为混响留出空间</h4><p>观察任何一个有经验的工程师或混音师的工程，你可能会看到至少两三个，多至六七个的混响效果器，同时出现在辅助轨（发送和返回）和某些音轨上，为某些乐器增加特殊效果，它们各自为音频增添了「正好足量」的混响特性，使编曲元素更加清晰可辨，又增加了不少的空间深度和立体感。所以，了解混响，逐渐熟练使用它们吧。</p>
-<h6 id="本文由-SOUNDMONO-编译自-ASK-AUDIO"><a href="#本文由-SOUNDMONO-编译自-ASK-AUDIO" class="headerlink" title="本文由 SOUNDMONO 编译自 ASK.AUDIO"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/music-producers-guide-to-reverb" target="_blank" rel="noopener">ASK.AUDIO</a></h6><p>固定链接: <a href="https://soundmono.com/producer-basics-reverb.html" target="_blank" rel="noopener">https://soundmono.com/producer-basics-reverb.html</a></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../9.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../9.html" itemprop="url">各种调式可以这样记忆 快速记忆法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-12T13:43:42+08:00">
-                2020-05-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>如何记忆大小调和升降号的关系, 我想这是令很多初学者头疼的问题, 下面提供几种非常好记忆的方法:</p>
-</blockquote>
-<h3 id="升号调："><a href="#升号调：" class="headerlink" title="升号调："></a>升号调：</h3><p><strong>最后那个#号音上移一个小二度就是该调的调名</strong>。<br>如: A大调有三个#号，最后那个是#G，那么#G上移一个小二度就是A，所以叫做A大调。</p>
-<h3 id="降号调："><a href="#降号调：" class="headerlink" title="降号调："></a>降号调：</h3><p><strong>除了F大调是一个b号之外，凡两个以上的，从右边数起第二个b号所在的音，就是该调的调名。</strong></p>
-<p>如: bE大调，有三个b号，从右边数起，第二个b号是在E音上，所以这个调就叫bE大调。</p>
-<h3 id="无号调式："><a href="#无号调式：" class="headerlink" title="无号调式："></a>无号调式：</h3><p><strong>只有C大调和a小调。</strong></p>
-<h3 id="七个号调式："><a href="#七个号调式：" class="headerlink" title="七个号调式："></a>七个号调式：</h3><p><strong>凡是七个#号或b号的，不用理会，直接就是#C调或bC调。</strong></p>
-<p>七个#号就是每个音都升高半度，当然就是升C大调了。反之所有七个音都降低半音那就是bC调</p>
-<h3 id="关系小调："><a href="#关系小调：" class="headerlink" title="关系小调："></a>关系小调：</h3><p><strong>每个大调式所对应的关系小调，其实就是该大调主音以下小三度为主音的调式。</strong><br>举例：比主音C小三度音程为的主音为A，所以C大调对应的关系小调就是a小调；比主音E小三度音程为的主音#C，所以E大调对应的关系小调为#c小调。</p>
-<h3 id="我自创的关系大小调快速推导法"><a href="#我自创的关系大小调快速推导法" class="headerlink" title="我自创的关系大小调快速推导法:"></a>我自创的关系大小调快速推导法:</h3><p><strong>利用五度圈4152637和7362514</strong>  </p>
-<p><strong>大调推小调–&gt;</strong></p>
-<p>从大调开始第四步即为对应的小调 比如G调 从5开始走四部 5263 最后一个落在E上 那么G大调的关系小调就是E小调  。</p>
-<p>那如果是E调往后呢?不满四步那就从新一轮的4152637开始走 新一轮落下来的调需要加升号</p>
-<p> 以E大调为例: 3741落在新一轮的C上 那么就是C#小调  这是大调推小调的方式。</p>
-<p><strong>小调推大调–&gt;</strong></p>
-<p>如果是小调推大调,那么反过来用7362514 也是走四步 如果是新一轮那就加降号   这种方式虽然效率不算太高 但对于初学者来说很方便</p>
-<p><strong>本帖附件</strong></p>
-<p>参考链接:<a href="http://www.chinaviolin.net/article-1137-1.html" target="_blank" rel="noopener">http://www.chinaviolin.net/article-1137-1.html</a></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1807,7 +1861,7 @@
               
                 <a href="http://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">83</span>
+                  <span class="site-state-item-count">87</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
