@@ -343,7 +343,7 @@
       
         
           
-            <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这里可能还有不少朋友不会使用shell2vst.exe这个小工具，那么我在这里简单介绍一下。</p>
+            <p>这里可能还有不少朋友不会使用shell2vst.exe这个小工具，那么我在这里简单介绍一下。</p>
 <p>大家也许知道，WAVES插件包的VST模块有别于其他，它使用形如WaveShell-VST_5.0.dll、WaveShell-VST_5.2.dll、Vocal_WaveShell-VST_1.1.dll之类的外壳，所有的WAVES插件的VST的dll都被封装到这些外壳里面。</p>
 <p>一般而言，形如Nuendo、Cubase之类的软件都能识别这些外壳，因此都可以自动在软件里面释放出一个个独立的组件。</p>
 <p>但是，形如Samplitude、Sequioa之类的软件的老版本（9.0之前），就不能正确识别WaveShell-VST壳，它会傻到把整个壳当一个插件对待，然后让你选模块，这样你下次加载工程后，是不会帮你记忆的，你到时就傻眼了。</p>
@@ -475,7 +475,7 @@
       
         
           
-            <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Ratio 压缩比只是压缩效果器中的一个参数，要了解计算方法，我认为需要学习压缩效果器的每一个参数用法。我简单介绍一下，希望可以帮到您。</p>
+            <p>Ratio 压缩比只是压缩效果器中的一个参数，要了解计算方法，我认为需要学习压缩效果器的每一个参数用法。我简单介绍一下，希望可以帮到您。</p>
 <p>  <strong>单段压缩效果器通常有：Thrshold、Ratio、Attack、Releas、Gain、Output这六个参数</strong></p>
 <p>例如：Brainworx Vertigo VSC-2 压缩效果器，如下图所示：</p>
 <p><img src="se-extension://ext-1977427434/img/default-pic.png" alt="img"><br>  <strong>参数说明：</strong><br><strong>Thrshold</strong>：阈值，当输入音量高于阈值的时候，压缩器才会开始工作。比如：把阈值设定在-20分贝，当输入音量高于-20分贝的时候，压缩器才会开始工作。低于-20分贝，压缩器不工作！</p>
@@ -604,7 +604,7 @@
       
         
           
-            <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>市场上低价的MIDI控制器只能使用USB接口连接电脑，没有提供标准的5芯MIDI接口，USB MIDI接口的缺点是必须先连接USB设备再打开宿主软件才能接受MIDI信息。</strong><br><strong>例如ICON的icontrols控制器</strong></p>
+            <p><strong>市场上低价的MIDI控制器只能使用USB接口连接电脑，没有提供标准的5芯MIDI接口，USB MIDI接口的缺点是必须先连接USB设备再打开宿主软件才能接受MIDI信息。</strong><br><strong>例如ICON的icontrols控制器</strong></p>
 <p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zphf3my3j20p00jdgnt-1567059830949.jpg" alt></p>
 <p><strong>下面要给这个控制器增加标准5芯MIDI接口，使它一通电就可以发送MIDI信号而不需要经过。</strong><br><strong>拆开这个控制器以后，可以看到它使用了STC 12C5A16AD单片机。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpi0xux2j21kw16ogun.jpg" alt><br><strong>搜索这个单片机的引脚资料，发现它是属于STC12C5A60系列的，它的第7脚就是MIDI输出口。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpj2tmfgj20iv0mdgo2-1567059811650.jpg" alt><br><strong>在参考了用单片机制作MIDI键盘等资料后，了解到单片机的TXD输出口就是MIDI输出口，RXD是MIDI输入口，只是网络上的资料说的是15针的游戏MIDI接口，在一些资料里也有说游戏接口可以直接弄成标准5芯MIDI接口而不需要电平转换电路。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpp8213rj20m30sdtak.jpg" alt><br><strong>本来icontrols另外一个USB接口是给下一级设备，如ikey等设备使用的，但我惊讶的发现单片机中的TXD口竟然直接输出到连接下级设备的USB口，这就很方便改造了。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zppk18ngj21kw23udp1-1567059830972.jpg" alt><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpppad88j20rf0dr76q.jpg" alt><br><strong>好了，开始动手，我用了一根废的USB线，由于MIDI传输仅用到+5V和TXD两根线就可以传输了，也就是对应USB的红线和绿线。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zppx288oj21kw23udpi.jpg" alt><br><strong>由于这个控制器在上电的时候会判断USB的数据线是否接入电脑，如果是插入电脑，它的线路就传输至电脑，如果是仅提供电源，继电器才把信号传给连接下级设备的USB，所以供电的时候要把供电用的USB的D+和D-断开。因此还需要专门制作一根线，我使用的是USB延长线，挑断D+和D-，相当于单纯供电。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpq3mliyj21kw23u7bi.jpg" alt></p>
 <p><strong>这就是制作好的MIDI转接线</strong></p>
@@ -735,7 +735,7 @@
       
         
           
-            <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>大熊: 小笨 今天我来教你搭建免费个人博客 </p>
+            <p>大熊: 小笨 今天我来教你搭建免费个人博客 </p>
 <p>小笨: 我已经有新浪 搜狐 网易 腾讯 百度各种免费博客了呀? </p>
 <p>大熊: 额… 这个是免费个人网站 </p>
 <p>小笨:有什么区别?</p>
