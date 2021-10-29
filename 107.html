@@ -81,24 +81,18 @@
 
 
 
-<meta name="description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
+<meta name="description" content="对比混音水平提升的关键在于 审美和听力  技巧和方法则是其次 而审美和听力的提升靠的就是对比 为什么我们看以前的电视电影会感觉以前画质不如现在? 如果科技不进步 我们估计一直看着黑白电视 而且也不会觉得有任何不对劲 然而现在让我们看黑白电视 你是否还能忍受人类的审美随着科技的进步在被动提升  视频的画质越来越好 音乐音质越来越好 动漫人物动作表情制作得越来越来细腻 我们能感知到它们的不同和变化 其">
 <meta name="keywords" content="混音档案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="压缩器各个参数的深入理解">
-<meta property="og:url" content="https://audio.newban.cn/67.html">
+<meta property="og:title" content="混音水平提升的关键在于审美和听力">
+<meta property="og:url" content="https://audio.newban.cn/107.html">
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
-<meta property="og:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
+<meta property="og:description" content="对比混音水平提升的关键在于 审美和听力  技巧和方法则是其次 而审美和听力的提升靠的就是对比 为什么我们看以前的电视电影会感觉以前画质不如现在? 如果科技不进步 我们估计一直看着黑白电视 而且也不会觉得有任何不对劲 然而现在让我们看黑白电视 你是否还能忍受人类的审美随着科技的进步在被动提升  视频的画质越来越好 音乐音质越来越好 动漫人物动作表情制作得越来越来细腻 我们能感知到它们的不同和变化 其">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909120047851.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909120047851.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112909519.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112834741.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg">
-<meta property="og:updated_time" content="2021-10-19T07:23:30.848Z">
+<meta property="og:updated_time" content="2021-10-29T03:21:14.878Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="压缩器各个参数的深入理解">
-<meta name="twitter:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909120047851.png">
+<meta name="twitter:title" content="混音水平提升的关键在于审美和听力">
+<meta name="twitter:description" content="对比混音水平提升的关键在于 审美和听力  技巧和方法则是其次 而审美和听力的提升靠的就是对比 为什么我们看以前的电视电影会感觉以前画质不如现在? 如果科技不进步 我们估计一直看着黑白电视 而且也不会觉得有任何不对劲 然而现在让我们看黑白电视 你是否还能忍受人类的审美随着科技的进步在被动提升  视频的画质越来越好 音乐音质越来越好 动漫人物动作表情制作得越来越来细腻 我们能感知到它们的不同和变化 其">
 
 
 
@@ -137,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://audio.newban.cn/67.html">
+  <link rel="canonical" href="https://audio.newban.cn/107.html">
 
 
 
 
 
-  <title>压缩器各个参数的深入理解 | 有瓣音频 – 分享编曲混音技术</title>
+  <title>混音水平提升的关键在于审美和听力 | 有瓣音频 – 分享编曲混音技术</title>
   
 
 
@@ -299,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">压缩器各个参数的深入理解</h1>
+          <h1 class="post-title" itemprop="name headline">混音水平提升的关键在于审美和听力</h1>
         
 
         <div class="post-meta">
@@ -311,8 +305,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-09T10:06:53+08:00">
-                2021-09-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-29T11:15:53+08:00">
+                2021-10-29
               </time>
             
 
@@ -349,83 +343,20 @@
       
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:</p>
-<ul>
-<li><strong>阈值</strong>: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作</li>
-<li><strong>压缩比</strong>: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩</li>
-<li><strong>启动时间</strong>: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成有一个缓冲时间)</li>
-<li><strong>释放时间</strong>: 输入音平低于阈值, 此时压缩器准备停止工作, 压缩器花多长时间完全停止工作, 压缩比相当于为0</li>
-</ul>
-<p>压缩器最主要就是上面这四个参数, 但是, 即便你将这几个参数的概念熟记于心, 甚至将压缩器的工作原理了解的非常透彻,  你也未必能用好它, 混音和物理完全是两码事</p>
-<h3 id="压缩器参数形象理解"><a href="#压缩器参数形象理解" class="headerlink" title="压缩器参数形象理解"></a>压缩器参数形象理解</h3><p>想要用好压缩器, 让其使我们的音频更加好听, 那么我们需要从另一个角度去理解压缩器, 抛开压缩器的工作原理, 忘记这些参数的概念, 我们来重新认识这几个参数</p>
-<ul>
-<li><p><strong>阈值</strong>: 被压缩器覆盖的音符数量范围, 也就是对部分还是全部音符添加压缩效果</p>
-</li>
-<li><p><strong>压缩比</strong>: 相当于个一个放大镜, 可以放大压缩器的效果, 压缩比越大 放大倍数越大</p>
-</li>
-<li><p><strong>启动时间</strong>: 时间从小到大, 声音由混沌变得清晰</p>
-</li>
-<li><p><strong>释放时间</strong>: 时间从小到大, 声音由浮躁跳跃变得沉稳温暖</p>
-</li>
-</ul>
-<p>这样一理解, 压缩器是不是感觉更加形象 更贴近混音的实际需求了呢, 那么明白了这几个参数的具体效果后, 我们再来上手按部就班地调节这几个参数:</p>
-<ol>
-<li><p><strong>第一步</strong> 将压缩比调至8:1以上, 为的是使压缩器效果放大, 方便我们在后面调节启动释放时间的时候效果听的更加清晰</p>
-</li>
-<li><p><strong>第二步</strong> 拉下阈值, 使得压缩器开始正常工作</p>
-</li>
-<li><p><strong>第三步</strong> 将启动时间和释放时间都拉到最小值, 减少释放时间所产生的效果, 方便我们接下来专注于启动时间的调节(启动时间越短 压缩效果越大, 释放时间越长 压缩效果越大 )</p>
-</li>
-<li><p><strong>第四步</strong> 开始有小到大调节启动时间, 找到声音由混沌模糊突然变得清晰的那个临界点, 注意是<strong>临界点</strong>  </p>
-</li>
-<li><p><strong>第五步</strong> 开始有小到大调借释放时间, 找到声音由活跃到沉稳的那个<strong>临界点</strong></p>
-<p>一般来说 慢歌适合较长的释放时间, 快歌适合短的释放时间, 如果快歌释放时间过长, 声音会听起来有些拖沓不活跃, 仔细听底鼓就能明显发现</p>
-<p>如果实在听不出来 那就使用公式计算吧 </p>
-<p><strong>释放时间=(60/bpm*1000)/2</strong></p>
-</li>
-<li><p><strong>第六步</strong> 开始减少压缩比,  压缩比越大声音越硬和窄, 反之则越软和宽, 我个人的做法是, 在<strong>包裹住所有音符的前提下, 压缩比尽可能地调小</strong>, 比如设置3:1压缩比, 但即便阈值拉很低了, 依然有部分声音不稳定往外冒, 这说明压缩比不对, 需要加大压缩比, 直到声音平稳为止, 找到这个<strong>临界点</strong></p>
-</li>
-<li><p><strong>第七步</strong> 调节阈值,同样 需要找到合适的<strong>临界值</strong>, 我个人的做法是先将输出增益5~6分贝, 方便听效果, 然后下拉阈值找到使得声音突然具有空间感的那个点</p>
-</li>
-<li><p><strong>最后</strong> 旁通对比压缩效果, 调整输出增益, 使得<strong>电平大小</strong>和压缩之前差不多即可</p>
-</li>
-</ol>
-<p>上面这一套,我称之为临界值理论, 我们需要练习的就是如何准确找到这些个临界点, 练习的多了, 那么找寻的速度也就快了, 耳朵自然就灵敏了</p>
-<p>至此, 压缩器的使用方法已经介绍完毕</p>
-<p>如果你还想在技术层面进一步了解压缩器, 我们可以接着来聊聊</p>
-<h3 id="压缩器模型理解"><a href="#压缩器模型理解" class="headerlink" title="压缩器模型理解"></a>压缩器模型理解</h3><p>首先我们来看一下启动时间和释放时间对音频波形造成的变化:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
-<p>启动时间和释放时间相当于是两把雕刻刀, 对波形进行雕刻, 启动时间雕刻出尖角, 释放时间雕刻出钝角, 形状大小不一样的尖角和钝角, 对声音造成的效果也不一样</p>
-<p>我们知道, 同一款压缩器, 相同的启动释放时间, 雕刻出来的角形状是一样的, 而一样形状的角给声音带来的效果理论上应该也是一样, 那么我们是否可以得出一个结论:</p>
-<p><strong>同一款压缩器下, 即便作用于不同的歌曲, 只要启动释放时间一样, 那么产生的效果也一样</strong></p>
-<p>这个结论成立的最主要前提是 需要保证<strong>角的完整性</strong>,   举个例子, 比如一首慢歌, 使用10ms的启动时间和100ms的, 产生的角形状是这样:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
-<p>同样的参数运用在一首快歌上, 可能由于速度太快, 导致尖角还未完全成型就要开始释放, 而钝角还未成型有要开始启动, 音符密集的地方, 锐角还可能惨遭钝化, 那这种情况下, 同样的参数还能产生一样的效果吗, 肯定是不一样的, 角形状已经发生了改变</p>
-<p>所以同样的启动释放参数, 运用到不同风格的歌曲上产生的效果也不一样, 即便是同样速度的歌曲, 由于歌曲节奏的不一样, 也会导致效果的不同, 只能说速度相同的歌曲套同样的参数 效果打折会小一些</p>
-<p>那么我们是否可以找到那些 经典混音的案例工程, 把它们每个乐器的压缩启动释放参数记录下来, 等日后混相同速度歌曲的时候直接套用, 这种方式似乎也是可行的, 也许不完美, 但效果也不错</p>
-<p>当然 这里介绍这些并不是让大家去套餐数混音</p>
-<p>由上面的一大堆, 我们可以引出一个概念,那就是<strong>压缩模型</strong>, 压缩器的启动释放时间结合在一块就是一套模型, 两者参数排列组合, 可以结合出无数的模型, 每个模型模出各自不同的声音效果, 其中启动时间对模型的影响最大</p>
-<p>这就好比是月饼模子一样, 压缩模型可以对声音进行塑形, 尤其对于节奏规律性比较强的乐器塑形效果最为明显, 比如底鼓, 军鼓, 踩镲等打击乐器</p>
-<p>我们经常看到有人使用诸如B-box和撬瓶盖, 打箱子皮, 敲脸盆的方式来生成类似于底鼓军鼓的声音, 在混音的时候, 为了使得这些个声音听起来更像打击乐, 必须经过压缩塑形才行, 这时候就可以采用一些压缩模型来快速实现了, 比如30ms的启动时间放在底鼓上感觉还不错</p>
-<h5 id="关于压缩效果量"><a href="#关于压缩效果量" class="headerlink" title="关于压缩效果量"></a>关于压缩效果量</h5><p>我们知道压缩器的<strong>压缩量是右启动、释放、 压缩比 、阈值四个参数联合控制</strong>的, 没有人规定压缩比一定就是<code>-6db</code> ,如果有, 那也只是别人的经验, 不一定适合你</p>
-<p>但这里说的压缩效果量和压缩量是两个概念, 平常我们说的压缩量指的是被压缩的电平大小</p>
-<p>而今天我们要说的<strong>压缩效果量指的是压缩模型的作用量</strong>, 换句话说, 就是模子的深度, 作用量越大, 模的越像, 这个压缩效果量对应的压缩器参数就是压缩比</p>
-<p>当我们将启动和释放时间设置好后, 相当于是已经设置好了一个压缩模型, 然后通过设置压缩比来调节该模型的作用量, 而阈值则相当于是模型的作用范围广度</p>
-<p>我认为 用压缩效果量比压缩量更具有实际的意义, 很多人一旦脱离了图示压缩器, 改成只有几个旋钮的压缩器之后就不会用了, 因为找不准压缩量, 事实上, 在模型设置好的前提下, 压缩比就能代替压缩量</p>
-<p>至此 很多人就开始懵了, 这个压缩模型理论岂不是和之前的临界值理论相冲突了吗</p>
-<p>其实模型理论范畴远大于临界值理论, 临界值理论只是其中的一种模型, 两者并不冲突, 模型理论侧重于塑形, 至于塑什么样的, 因人而异, 每个人的审美也不一样</p>
-<p>当然了, 理论仅仅是理论, 这是次要的, 最主要还是多多练习实践</p>
-<h3 id="疑问解答"><a href="#疑问解答" class="headerlink" title="疑问解答"></a>疑问解答</h3><p>有的小伙伴在使用压缩器的时候, 感觉到了声音的明亮度改变, 认为压缩器可以改变声音的频率, 具有EQ的效果, 这里给大家指正一下:</p>
-<p>首先 <strong>压缩器只能控制音量的，不能改变声音的频率</strong>,而我们感觉到的类似频率变化的效果, 实际上是<strong>音频相邻时间之间整体频段音量比例的变化</strong>造成的, 什么意思呢, 举个例子:</p>
-<p>比如在第一毫秒时,  压缩器还没开始工作, 此刻音频的频率曲线是这样:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112909519.png" alt="image-20210909112909519"></p>
-<p>第2毫秒开始, 压缩器开始工作, 此刻的整体频段音量被往下压, 假设压了2db,(这个值取决于压缩比和启动时间), 那么整体曲线往下拉了2db, 如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210909112834741.png" alt="image-20210909112834741"></p>
-<p>第三毫秒下拉的幅度更大, 如果第四毫秒开始, 压缩器开始停止工作, 那么接下来下拉的幅度逐渐减少, 直至停止下拉,此时压缩器也停止工作</p>
-<p>形象图如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
-<p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
-<p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
+        <h3 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h3><p>混音水平提升的关键在于 <strong>审美和听力</strong> </p>
+<p>技巧和方法则是其次</p>
+<p>而审美和听力的提升靠的就是<strong>对比</strong></p>
+<p>为什么我们看以前的电视电影会感觉以前画质不如现在?</p>
+<p>如果科技不进步 我们估计一直看着黑白电视 而且也不会觉得有任何不对劲 然而现在让我们看黑白电视 你是否还能忍受<br>人类的审美随着科技的进步在被动提升  视频的画质越来越好 音乐音质越来越好 动漫人物动作表情制作得越来越来细腻</p>
+<p><strong>我们能感知到它们的不同和变化 其本质在于对比</strong></p>
+<p>在混音中 这一点亦是如此  我们不仅要把我们的混音作品和别人的混音作品对比  同时在使用不同的效果器是也要时刻对比试听 反复不断地分析思考 怎么样能使得声音更好听  只有经过无数次的尝试 把耳朵训练得越来越灵敏 </p>
+<p>那么 最终你能听到 那你就能做到 </p>
+<p>能听到声音太闷 就能想办法减少闷感 让声音变得通透 如果听不出来 那自然无从下手</p>
+<h3 id="监听设备"><a href="#监听设备" class="headerlink" title="监听设备"></a>监听设备</h3><p>另外 对于混音而言 需要配合好的监听设备 <strong>良好的设备能让你的混的声音在任何设备上都听起来差不多 不会一个设备好听 另一个难听</strong></p>
+<p>不用担心自己当下混的是否难听或者水平不够, 而应该要考虑的是让自己不断进步, 超越昨天的自己</p>
+<blockquote>
+<p><em>一切痛苦来源于与别人比较, 一切幸福来源于超越昨天的自己</em></p>
+</blockquote>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -458,8 +389,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="66.html" rel="next" title="音乐创作利器 AI自动作曲">
-                <i class="fa fa-chevron-left"></i> 音乐创作利器 AI自动作曲
+              <a href="106.html" rel="next" title="钢琴键盘弹奏时和弦转换小技巧">
+                <i class="fa fa-chevron-left"></i> 钢琴键盘弹奏时和弦转换小技巧
               </a>
             
           </div>
@@ -468,8 +399,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="68.html" rel="prev" title="混音相当于是给密码箱开锁 关键在于一个临界值">
-                混音相当于是给密码箱开锁 关键在于一个临界值 <i class="fa fa-chevron-right"></i>
+              <a href="91.html" rel="prev" title="号外 号外 第三张原创音乐专辑上线啦">
+                号外 号外 第三张原创音乐专辑上线啦 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -612,7 +543,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩器参数形象理解"><span class="nav-number">2.</span> <span class="nav-text">压缩器参数形象理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩器模型理解"><span class="nav-number">3.</span> <span class="nav-text">压缩器模型理解</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#关于压缩效果量"><span class="nav-number">3.0.1.</span> <span class="nav-text">关于压缩效果量</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#疑问解答"><span class="nav-number">4.</span> <span class="nav-text">疑问解答</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对比"><span class="nav-number">1.</span> <span class="nav-text">对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监听设备"><span class="nav-number">2.</span> <span class="nav-text">监听设备</span></a></li></ol></div>
             
 
           </div>
