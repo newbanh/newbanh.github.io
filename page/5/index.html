@@ -272,6 +272,291 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../70.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../70.html" itemprop="url">用压缩器调出大动态有弹性的底鼓</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-10T15:06:53+08:00">
+                2021-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我个人比较喜欢大弹性的底鼓的声音, 我们直接来听听两者的对比</p>
+<p>原始底鼓音频:</p>
+<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/kick_origin.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>加了压缩后:</p>
+<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/kick_compressor.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>原始音频存在的问题:</p>
+<ul>
+<li><strong>声音不稳定, 忽大忽小</strong></li>
+<li><strong>声音体积不够大</strong> </li>
+<li><strong>声音带有浑浊感</strong></li>
+<li><strong>弹性不满意</strong></li>
+</ul>
+<p>为了使得底鼓有弹性首先需要确保声音块头足够大,这里我使用<code>30ms</code>的启动时间, 确保音头足够肥大</p>
+<p>然后设置压缩比小一些为2.8:1 让声音软一些 整体声场变宽, 就好比有一个巨大的气球砸在你身上,</p>
+<p>最后采用了<code>225ms</code>的释放时间, 让声音更加稳定, 就好比原先皮球自己在地面上弹跳, 此时你用手拍打对皮球进行压制使其弹跳稳定, 具体的参数如下图:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210915104212647.png" alt="image-20210915104212647"></p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<li><strong>启动时间</strong>: 决定了声音的块头大小 值越大Punch感和空间感越强, 反之Sharp感越强</li>
+<li><strong>压缩比</strong>: 比例越大声音越硬, 动态越小 同时声场越窄, 反之越声音软 声场大 </li>
+<li><strong>释放时间</strong>: 决定了声音的稳定性, 值过小声音跳脱,让人心跳加快, 值过大声音拖沓泥泞感觉有阻力 让人喘不过气</li>
+</ul>
+<p>压缩器的工作机制和我们拍打皮球的过程很像:</p>
+<ul>
+<li><p>手往下拍皮球速度相当于是Attack</p>
+</li>
+<li><p>收往回收的速度相当于是Release</p>
+</li>
+<li><p>皮球的软硬对应压缩比</p>
+</li>
+</ul>
+<p>我们需要找到刚刚好的<strong>临界值</strong></p>
+<h3 id="加EQ"><a href="#加EQ" class="headerlink" title="加EQ"></a>加EQ</h3><p>单单使用压缩, 有时候无法达到满意的效果, 为了使得底鼓听起来更加有弹性, 我给其加了一个EQ, 在70HZ位置进行了提升:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/image-20210914120835348.png" alt="image-20210914120835348"></p>
+<p>我们来听一下连着加了EQ的效果:<br><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/kick_compressor_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../69.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../69.html" itemprop="url">多轨混音素材下载网站大合集</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-09T15:06:53+08:00">
+                2021-09-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>学习混音的同学们, 是否苦于找不到免费的多轨混音素材, 那么这里给大家介绍几个网站, 以备不时之需</p>
+<h3 id="网站列表"><a href="#网站列表" class="headerlink" title="网站列表"></a>网站列表</h3><ol>
+<li><p><a href="http://www.cambridge-mt.com/ms/mtk/" target="_blank" rel="noopener">http://www.cambridge-mt.com/ms/mtk/</a></p>
+<p>这是 <em>Mixing Secrets For The Small Studio</em> 这本书的作者 Mike Senior 支持的一个项目，很多乐队或制作人把自己的作品分轨放到这个网站上，供学习者下载来练习混音制作。</p>
+<p>这里面各种各样的音乐风格都有，素材的质量也是千差万别，有的甚至需要你来修正演奏的节奏或人声的音高。这绝对是很好的训练素材。不仅如此，它还有在线论坛供大家切磋、讨论，可以多多与创作者交流</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/20210909155601.png" alt></p>
+<p>这个网站提供的素材有详细的说明。在下载前可以预听缩混完成的版本，选择自己喜欢的风格去下载分轨。当然，缩混好的还可以作为一个混音联系的参考。很贴心</p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../68.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2549,302 +2834,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../4.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../4.html" itemprop="url">节奏与节拍的区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-06T16:06:53+08:00">
-                2021-09-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="什么是节奏"><a href="#什么是节奏" class="headerlink" title="什么是节奏"></a>什么是节奏</h3><p>指各音符之间持续发声时长的<strong>比例关系</strong> </p>
-<p>比如第一个音符占一个拍子 第二个音符时长是第一个的一半 也就是半拍  这种固定的<strong>相对结构</strong> 就是节奏</p>
-<p><strong>常见的基本节奏有</strong>:</p>
-<ul>
-<li>前八后十六</li>
-<li>前十六后八</li>
-<li>前十六后十六</li>
-<li>前八后八</li>
-<li>前八后休止</li>
-<li>……</li>
-</ul>
-<p>其实就是<strong>不同时值比例的排列组合</strong>, 你想怎么排就怎么排</p>
-<p>它和音符的音高没有任何关系, 旋律虽然由音高和节奏组成 但节奏可以脱离旋律单独存在, 比如打击乐</p>
-<h3 id="什么是节拍"><a href="#什么是节拍" class="headerlink" title="什么是节拍"></a>什么是节拍</h3><p>指拍子之间<strong>强弱关系按照小节为单位有规律地重复</strong>出现  这种规律形态我们称之为节拍 </p>
-<p>重点在于:</p>
-<ul>
-<li><strong>以小节为单位</strong></li>
-<li><strong>拍子有规律的强弱变化</strong></li>
-</ul>
-<p>节拍和音符的音高及时值没有关系  </p>
-<p><strong>其中拍号是节拍的具体表现形式</strong> 用不同的拍号来表示不同的强弱关系 比如 拍号是4/4表示:</p>
-<p>单位小节内是拍子强弱是以<strong>强弱次强弱</strong>的关系进行排列 然后<strong>有规律地重复该小节</strong></p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>节奏和节拍是两个完全不同的概念  节奏重点在音符时值比例  而节拍重点在拍子之间的强弱关系</p>
-<h3 id="关于拍号补充"><a href="#关于拍号补充" class="headerlink" title="关于拍号补充"></a>关于拍号补充</h3><p>我们需要明白拍号只是一个昵称, 拍子间的强弱关系并不属于拍号, 而属于节拍, 比如有人问你, 2/4这个是什么, 你回答: </p>
-<p>这一坨叫拍号,  它用于告诉我们歌曲是节拍是四二拍, 具体一点就是以四分音符为一拍, 每小节有两拍, 其强弱关系为 <strong>强弱</strong></p>
-<p>我们再来看以下三个概念:</p>
-<ul>
-<li><p><strong>拍子</strong>: 音符时值参考单位, 同一首歌单拍的时长是一样的</p>
-</li>
-<li><p><strong>节拍</strong>: 单位小节内拍子间的强弱规律关系</p>
-</li>
-<li><p><strong>拍号</strong>: 用于明确是哪一种类型的节拍</p>
-</li>
-</ul>
-<p>你还傻傻分不清吗</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../3.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../3.html" itemprop="url">BPM真的可以表示歌曲的速度么</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-06T15:56:53+08:00">
-                2021-09-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><strong>BPM</strong>: Beat Per Minute的简称, 表示每分钟的拍子数量 也就是每分钟能打多少拍</p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>一首歌的实际速度并不能单纯通过bpm来表示</p>
-<p> 比如我用4/4的节拍配上100的bpm 和用2/4节拍配上50的bpm </p>
-<p>只要将后者音符时值缩短一倍  两者给人的速度听感是一样的 比如:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/v2-9a303629f180170b2205828bccbd4987_720w.jpg" alt="img"></p>
-<p>以上两种记谱都没错, 那你说这首歌速度到底多少呢?</p>
-<p>我们能用一个单纯的BPM指标来衡量一首歌的速度吗</p>
-<p>肯定不行, 我们所说的歌曲速度并非指的是节拍器速度(BPM), 而是歌曲的演奏速度</p>
-<p>实际上, 描述一首歌曲的速度需要结合以下三方面判断:</p>
-<ul>
-<li><strong>BPM</strong></li>
-<li><strong>节拍类型</strong></li>
-<li><strong>音符时值</strong></li>
-</ul>
-<p>以上三者缺一不可</p>
-<p>那么上图中采用50BPM或者100BPM的可以达到同样的速度听感, 记谱虽然也没错, 但是我们在实际的创作过程中, 必然只能选择一个BPM, 那么应该采用哪一个呢?</p>
-<p>这就得结合节拍类型所对应的强弱关系来进行选择了, 看是四拍子的<strong>强弱次强弱</strong>这种律动符合歌曲的情感意境, 还是二拍子的<strong>强弱</strong>律动更加适合</p>
-<p>这完全取决于创作者和改编者</p>
-<p>我们在扒谱的时候, 一般也是尽可能地遵从作者的一图, 从而达到原汁原味的效果</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2895,7 +2884,7 @@
               
                 <a href="http://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">108</span>
+                  <span class="site-state-item-count">110</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
