@@ -272,6 +272,327 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../12.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../12.html" itemprop="url">加强鼓组音色的冲击力</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T10:18:26+08:00">
+                2019-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>我们知道，要得到更具冲击力的音色，就要用到压缩器。但你还需要适当调整它，才能让声音真的「动感」起来。</p>
+<h4 id="Attack-时间就是核心秘密"><a href="#Attack-时间就是核心秘密" class="headerlink" title="Attack 时间就是核心秘密"></a>Attack 时间就是核心秘密</h4><blockquote>
+<p>注意：最好使用工作室级别的耳机或音箱，才能更好感受到具体效果。</p>
+</blockquote>
+<p>首先，我们来看看底鼓的波形。它会从一个很突然且高频的震动开始，然后相对较缓地结束。开始部分就是冲击力所在的位置。为了让这个部分更加丰满，不失去音色本身具有的冲击感，你就需要尽量让这段波峰无伤地通过压缩器。而 Attack 值就是用来控制这个特性的。</p>
+<p>看看下图的底鼓，这是放大到毫秒级别后的波形。我们看到丰满的头部在大约 30 毫秒处开始消逝。这也直接告诉了我，应该怎样设置 Attack 时间。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/01-1.jpg" alt></p>
+<p>在得到了这个重要信息后，我们在通道条上实例化一个压缩器。将 Ratio 比率设置为 4.00:1，Attack 时间设置为 30 毫秒。然后，循环播放底鼓，同时慢慢拉动 Threshold 值，直到你听见冲击感开始增强了为止。有的人喜欢把 Threshold 压低，有的人喜欢放到很高，只要你感觉合适即可！</p>
+<p>当然，Release 也可以适当调调，直到满意为止。</p>
+<p>下面从一个具体例子来讲讲。这是一段 Hip-hop 风格的工程。我在底鼓和军鼓轨道上开有压缩器。通过下图的参数，底鼓的冲击力得到了大幅提升。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lunanzb/luhui/img/02.jpg" alt="02"></p>
+<p>军鼓也可照此方法进行，当然参数会有些许不同。不过在本工程里，我直接拷贝了底鼓的参数，并且觉得没有任何不妥。</p>
+<h4 id="让改变更加明显"><a href="#让改变更加明显" class="headerlink" title="让改变更加明显"></a>让改变更加明显</h4><p>作为混音技巧，这实在不足为奇，但确实有效。然而这里有个陷阱，需要小心避开：在使用压缩器之后，被修改的轨道可能变得更大声了，造成一种「更大声等于更好」的错觉。</p>
+<p>最简单的方法是使用相对增益对比，对修改前后的声音进行 A/B 测试，以确保响度没有较大变化。</p>
+<p>例如，可以使用 Maximiser VST 插件，将 Threshold 和 Output 设为相同的值。此数值应该低于总轨混音电平的峰值。例如，压缩前的鼓峰值是 -2.37dB，那么我就将 Loudmax（一款免费的 maximiser）放置在总轨上，Threshold 和 Output 值都设为 -3dB。</p>
+<p>现在，当我打开/关闭压缩器时，就既能够听清它带来的冲击力效果，又不会让整体音量失去平衡。</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/03.jpg" alt></p>
+<h4 id="听听区别"><a href="#听听区别" class="headerlink" title="听听区别"></a>听听区别</h4><p>处理前的鼓（峰值 -3dB，24-bit，41000kHz）</p>
+<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/dry-punchy_drum_compression_-_dry.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio><br>处理后的鼓（峰值 -3dB，24-bit，41000kHz）</p>
+<p><audio class src="https://cdn.jsdelivr.net/gh/youbanzhishi/youbanzhishi.github.io/audio/wet-punchy_drum_compression_-_wet.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio><br>本文转载自: <a href="https://soundmono.com/the-how-of-punchy-drum-compression.html" target="_blank" rel="noopener">https://soundmono.com/the-how-of-punchy-drum-compression.html</a> </p>
+<p><strong>本帖附件</strong></p>
+<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../14.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../14.html" itemprop="url">经典压缩器 1176：硬件和插件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T10:12:59+08:00">
+                2019-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>对于制作人来说，压缩器可谓是一日三餐一样的存在。它们种类繁多，效果卓越者亦是数不胜数，不同的制作人也都有着不同的偏好。但有一款压缩器是每一个制作人都值得了解的，它就是 Universal Audio 公司经久不衰的 1176 压缩器。</p>
+<h4 id="1176，一段历史"><a href="#1176，一段历史" class="headerlink" title="1176，一段历史"></a>1176，一段历史</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/1176.jpg" alt></p>
+<p>1966 年，Universal Audio 创始人 Bill Putnam 使用 FET 取代了真空管，重新设计了那款成功的 175/176 限幅器。于是，就这样诞生了 1176 峰值限制器，它如此之经典，以至于如今世界上每一个专业工作室里都能看到它的身影。</p>
+<p>这款压缩器最大的卖点就在于极端快速的起音时间（attack），仅有 20 微秒。它没有阈值控制（threshold），只有输入和输出旋钮，压缩量直接由输入电平来控制。</p>
+<p>1176 的声音特点对于音乐和人声而言再合适不过了，它会让中低频更具有能量，让声音更加饱满密致。除了人声，1176 对于底鼓、军鼓、击掌声，甚至整套鼓组都能产生无可比拟的效果。</p>
+<p>与其他压缩器不同，1176 只提供了四个固定压缩比按钮（Ratio），可以按下任意组合，或者像那些喜爱探索的工程师，按下全部按钮。这种用法是 Putnam 也未曾料想的，这会让 1176 制造出一种极其别致的效果。这种极高的压缩比有时被称为「Brit」，用在鼓或强烈的贝司声音上会具有震撼的效果。</p>
+<p>在 1176 的产品历史中，在最初的蓝带版之后又衍生出了不同的版本。如果你在考虑买一台，需要注意区别不同的版本（文章稍候更新）。最新款是黑色面板，由初始版重新设计而来。</p>
+<h4 id="使用-1176-压缩器"><a href="#使用-1176-压缩器" class="headerlink" title="使用 1176 压缩器"></a>使用 1176 压缩器</h4><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/feature.jpg" alt></p>
+<h5 id="旋钮"><a href="#旋钮" class="headerlink" title="旋钮"></a>旋钮</h5><p>1176 的面板上有两个显眼的旋钮，Input（输入）和 Output（输出）。正如前面所讲，1176 没有单独的 Threshold（阈值）控制，输入旋钮同时也是阈值旋钮。也就是说，进入 1176 的信号量越大，阈值也就越小。</p>
+<p>输出旋钮控制 1176 的总体输出电平，类似于其他压缩器中的「Makeup」电平增益参数。开始使用压缩之前，我们可以先调整输出量，直到压缩后电平与未压缩电平一致。反复切换 Bypass（直通）开关就可以方便地对比出来。这个状态下，压缩效果刚好能被听见，又不会影响音量。</p>
+<p>Attack 控制 1176 的压缩需要多长时间才对输入信号起作用。最快 20 微秒，最慢 800 微秒。在 1176AE 版中，还有一个超级「慢」的选项，10 毫秒。这样就可以保留更多瞬态信号，使得音色的冲击力更强。</p>
+<p>Release 则控制 1176 将电平恢复到原始值的时间。可以从 50 微秒起，到最慢的 1.1 秒。</p>
+<p>需要注意的是，1176 的 Attack 和 Release <strong>调节方向和多数压缩器是相反的</strong>，调节到更大值时，实际上 Attack 和 Release 时间会更短。</p>
+<h5 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h5><p>在电平表两遍分布着 8 个按钮。左边的用来设置压缩比，低比率用来压缩（4:1，8:1），高比率用来限制（12:1， 20:1）。而 1176AE 中，还专门有一个 2:1 的极低比率，这是最平滑、knee 值最软的选项，非常适合处理人声。</p>
+<p>右边的按钮可以用来设置不同的电平监视方式。GR 表示「Gain Reduction（增益衰减）」，它会显示出 1176「压」掉了多少信号。当设置为 +8 或 +4 时，电平表将指示输出信号量。例如 +4 时，电平表上的 0 值点代表输出电平为 +4dB。按下 Off 后，1176 将停止工作。</p>
+<h5 id="全按钮模式：「British-模式」"><a href="#全按钮模式：「British-模式」" class="headerlink" title="全按钮模式：「British 模式」"></a>全按钮模式：「British 模式」</h5><p>工程师经常喜欢在鼓组或环境音轨上使用「全按钮」模式，也是常说的「British」模式。这样还会让贝司声更「脏」，或者将人声直接「打」到你的脸上。按下四个压缩比率按钮后，压缩的失真量就会大幅增加。</p>
+<p>此外，你也可以尝试任意按钮组合，每一种都有一些独特的味道。当然，如果两个按钮之间有间隔，插件会自动按下中间的按钮，因此，包括全按钮模式，可用的组合一共六种。</p>
+<h4 id="硬件和软件版的-1176"><a href="#硬件和软件版的-1176" class="headerlink" title="硬件和软件版的 1176"></a>硬件和软件版的 1176</h4><h5 id="1176-硬件系列"><a href="#1176-硬件系列" class="headerlink" title="1176 硬件系列"></a>1176 硬件系列</h5><ul>
+<li><p>Revision A（蓝带版，国内或叫「蓝脸」）：1967 年 6 月 20 日设计，序列号 101-125</p>
+</li>
+<li><p>Revision AB（蓝带版）：1967 年 11 月 20 日设计，序列号 125-216</p>
+</li>
+<li><p>Revision B（蓝带版）：设计日期未知，序列号 217-1078</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/Bluestripe_1176.jpg" alt></p>
+</li>
+<li><p>Revision C（1176 LN）（蓝带版）：1970 年 1 月 9 日设计，序列号 1079-1238</p>
+</li>
+<li><p>Revision D（黑脸）：设计日期未知，序列号 1239-2331</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/UAGolden1176.jpg" alt></p>
+</li>
+<li><p>Revision E（黑脸）：设计日期未知，序列号 2332-2611</p>
+</li>
+<li><p>Revision F（黑脸）：1973 年 3 月 15 日设计，序列号 2611-7052</p>
+</li>
+<li><p>Revision G（黑脸）：设计日期未知，序列号 7053-7651</p>
+</li>
+<li><p>Revision H（银脸）：设计日期未知，序列号 7652-8000+</p>
+</li>
+<li><p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/revH1176.jpg" alt></p>
+</li>
+<li><p>Universal Audio Reissue 1176LN：2000 年 4 月 1 日设计，序列号：101-1959、1960-2946、2947-present</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/1176ln_front.jpg" alt></p>
+</li>
+<li><p>Revision AE（Anniversary Edition 周年版）：2008 年 6 月 4 日设计，序列号 001-500</p>
+<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/1176AE_front.jpg" alt></p>
+</li>
+<li><p>其他版本：1178 立体声版</p>
+</li>
+</ul>
+<h5 id="软件系列"><a href="#软件系列" class="headerlink" title="软件系列"></a>软件系列</h5><ul>
+<li><a href="http://www.uaudio.com/store/compressors-limiters/1176-collection.html" target="_blank" rel="noopener">Universal Audio 官方版 1176 插件</a>（$299）</li>
+<li><a href="http://www.waves.com/plugins/cla-76-compressor-limiter" target="_blank" rel="noopener">Waves CLA-76 插件</a>（$249）</li>
+<li><a href="http://www.softube.com/index.php?id=fc" target="_blank" rel="noopener">Softube FET Compressor</a>（$219）</li>
+<li><a href="http://www.native-instruments.com/en/products/komplete/effects/vintage-compressors/" target="_blank" rel="noopener">Native Instrument VC 76</a>（$199）</li>
+<li><a href="http://antress.blogspot.com/" target="_blank" rel="noopener">The Seventh Sign</a>（免费，国内或许无法访问官网）</li>
+</ul>
+<p>本文转自: <a href="https://soundmono.com/vintage-compressor-1176-and-its-software-versions.html" target="_blank" rel="noopener">https://soundmono.com/vintage-compressor-1176-and-its-software-versions.html</a> </p>
+<p><strong>本帖附件</strong></p>
+<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../32.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1411,266 +1732,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../28.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../28.html" itemprop="url">压缩器(Compresser)的简单介绍</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-29T15:09:32+08:00">
-                2019-08-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Ratio 压缩比只是压缩效果器中的一个参数，要了解计算方法，我认为需要学习压缩效果器的每一个参数用法。我简单介绍一下，希望可以帮到您。</p>
-<p>  <strong>单段压缩效果器通常有：Thrshold、Ratio、Attack、Releas、Gain、Output这六个参数</strong></p>
-<p>例如：Brainworx Vertigo VSC-2 压缩效果器，如下图所示：</p>
-<p><img src="se-extension://ext-1977427434/img/default-pic.png" alt="img"><br>  <strong>参数说明：</strong><br><strong>Thrshold</strong>：阈值，当输入音量高于阈值的时候，压缩器才会开始工作。比如：把阈值设定在-20分贝，当输入音量高于-20分贝的时候，压缩器才会开始工作。低于-20分贝，压缩器不工作！</p>
-<p><strong>Ratio</strong>：比值，也叫压缩比。它可以控制当输入音量高于阈值的时候，按照什么样的比率去进行压缩处理。压缩比控制的是一段时间内的输入音量变化值与输出音量变化值之间的比值。例如：当Thrshold（阈值）在-50分贝、压缩比是2：1的时候。输入音量变化值是-20分贝减去-40分贝，等于20分贝。输出音量变化值-35分贝减去-45分贝，等于10分贝。所以压缩比就是20分贝比10分贝等于2，也就是2：1。输入音量高于阈值的时候，按照压缩比的设定后，输出音量都会小于输入音量。建议使用图形化类的压缩器开始学习，刚刚例举的压缩比如下图所示：<br><img src="se-extension://ext-1977427434/img/default-pic.png" alt="img"></p>
-<p><strong>Gain</strong>：整体音量增益，由于压缩过后的输出音量会相对减小，整体的音量就会减小。我们使用压缩器的目的不是减小音量，而是要透过音量较大位置的压缩，让音量较小位置的音量相对增加。所以，就可以使用Gain来进行一个整体的音量增益。不同的压缩效果器叫法可能不同，有的压缩器叫做Make-Up Gain。</p>
-<p><strong>Attack Time</strong>：启动缓冲时间，它决定了压缩器从不工作到开始工作的瞬间变化时间长度。这个值设置的越小，声音的音头被压缩的痕迹越大。反之则较小，较柔和。</p>
-<p><strong>Releas Time</strong>：释放缓冲时间，它决定了压缩器从开始工作到结束工作的瞬间变化时间长度。这个值设置的越小，声音会显得越紧。反之则越松弛，越柔和。</p>
-<p><strong>Output</strong>：整体输出音量，它控制的是经过压缩器处理后 流出压缩器的音量。有的压缩效果器没有Make-Up Gain，而是使用Output代替。还有的压缩效果器Gain和Output同时出现！</p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../10.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../10.html" itemprop="url">给USB接口的MIDI控制器增加标准5芯MIDI接口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-29T14:03:58+08:00">
-                2019-08-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>市场上低价的MIDI控制器只能使用USB接口连接电脑，没有提供标准的5芯MIDI接口，USB MIDI接口的缺点是必须先连接USB设备再打开宿主软件才能接受MIDI信息。</strong><br><strong>例如ICON的icontrols控制器</strong></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zphf3my3j20p00jdgnt-1567059830949.jpg" alt></p>
-<p><strong>下面要给这个控制器增加标准5芯MIDI接口，使它一通电就可以发送MIDI信号而不需要经过。</strong><br><strong>拆开这个控制器以后，可以看到它使用了STC 12C5A16AD单片机。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpi0xux2j21kw16ogun.jpg" alt><br><strong>搜索这个单片机的引脚资料，发现它是属于STC12C5A60系列的，它的第7脚就是MIDI输出口。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpj2tmfgj20iv0mdgo2-1567059811650.jpg" alt><br><strong>在参考了用单片机制作MIDI键盘等资料后，了解到单片机的TXD输出口就是MIDI输出口，RXD是MIDI输入口，只是网络上的资料说的是15针的游戏MIDI接口，在一些资料里也有说游戏接口可以直接弄成标准5芯MIDI接口而不需要电平转换电路。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpp8213rj20m30sdtak.jpg" alt><br><strong>本来icontrols另外一个USB接口是给下一级设备，如ikey等设备使用的，但我惊讶的发现单片机中的TXD口竟然直接输出到连接下级设备的USB口，这就很方便改造了。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zppk18ngj21kw23udp1-1567059830972.jpg" alt><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpppad88j20rf0dr76q.jpg" alt><br><strong>好了，开始动手，我用了一根废的USB线，由于MIDI传输仅用到+5V和TXD两根线就可以传输了，也就是对应USB的红线和绿线。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zppx288oj21kw23udpi.jpg" alt><br><strong>由于这个控制器在上电的时候会判断USB的数据线是否接入电脑，如果是插入电脑，它的线路就传输至电脑，如果是仅提供电源，继电器才把信号传给连接下级设备的USB，所以供电的时候要把供电用的USB的D+和D-断开。因此还需要专门制作一根线，我使用的是USB延长线，挑断D+和D-，相当于单纯供电。</strong><br><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpq3mliyj21kw23u7bi.jpg" alt></p>
-<p><strong>这就是制作好的MIDI转接线</strong></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpqbwmb5j21kw23utlt.jpg" alt></p>
-<p><strong>最后改造完成通电试机</strong><br><strong>用手机的适配器供电</strong></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpqkpnqyj21kw23utny.jpg" alt></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpvlh5u8j21kw23u15b.jpg" alt></p>
-<p><strong>MIDI线接入声卡</strong></p>
-<p><img src="http://cdn.jsdelivr.net/gh/lunanzb/luhui/img/628113b5gw1e9zpvxqpa9j21kw23uapt.jpg" alt></p>
-<p><strong>最后总结：</strong><br>我认为所有通过单片机生产的USB MIDI控制器都可以直接从单片机的TXD脚、RXD脚直接引出MIDI输出、输入接口。最后我没有经过电脑就输出了MIDI信号，这样在操作DAW软件时真正实现了即插即用。虽然市场上可以买到直接带标准5芯的MIDI控制器，但价格相当昂贵，而现在仅需要几块钱就可以实现这一功能。</p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1721,7 +1782,7 @@
               
                 <a href="http://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">111</span>
+                  <span class="site-state-item-count">113</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
