@@ -89,14 +89,14 @@
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
 <meta property="og:description" content="这里可能还有不少朋友不会使用shell2vst.exe这个小工具，那么我在这里简单介绍一下。 大家也许知道，WAVES插件包的VST模块有别于其他，它使用形如WaveShell-VST_5.0.dll、WaveShell-VST_5.2.dll、Vocal_WaveShell-VST_1.1.dll之类的外壳，所有的WAVES插件的VST的dll都被封装到这些外壳里面。 一般而言，形如Nuendo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-01.jpg">
-<meta property="og:image" content="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-02.jpg">
-<meta property="og:image" content="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-03.jpg">
-<meta property="og:updated_time" content="2022-06-30T10:11:11.421Z">
+<meta property="og:image" content="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-01.jpg">
+<meta property="og:image" content="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-02.jpg">
+<meta property="og:image" content="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-03.jpg">
+<meta property="og:updated_time" content="2022-07-07T06:32:46.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Shell2vst的使用详解『Waves脱壳』">
 <meta name="twitter:description" content="这里可能还有不少朋友不会使用shell2vst.exe这个小工具，那么我在这里简单介绍一下。 大家也许知道，WAVES插件包的VST模块有别于其他，它使用形如WaveShell-VST_5.0.dll、WaveShell-VST_5.2.dll、Vocal_WaveShell-VST_1.1.dll之类的外壳，所有的WAVES插件的VST的dll都被封装到这些外壳里面。 一般而言，形如Nuendo">
-<meta name="twitter:image" content="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-01.jpg">
+<meta name="twitter:image" content="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-01.jpg">
 
 
 
@@ -353,11 +353,11 @@
 <p>但是，形如Samplitude、Sequioa之类的软件的老版本（9.0之前），就不能正确识别WaveShell-VST壳，它会傻到把整个壳当一个插件对待，然后让你选模块，这样你下次加载工程后，是不会帮你记忆的，你到时就傻眼了。</p>
 <p>还有一点，Waves.Vocal.Bundle的VST版本，使用了个比较特别的壳Vocal_WaveShell-VST_1.1.dll，貌似只有牛犊、Cubase可以直接识别，而Samplitude、Sequioa、Audition、SawStudio等等通通对它视而不见….，因此很难在这些宿主内使用WAVES的人声处理软件包了。</p>
 <p>于是，自然有人想出妙招，写出了shell2vst.exe这个小工具，可以把那些壳释放出一个个独立的dll文件。这些独立的VST文件就可以被所有宿主识别了。如下图：</p>
-<p><img src="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-01.jpg" alt></p>
+<p><img src="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-01.jpg" alt></p>
 <p>您可以在本文最下面附件下载这个小工具，下载后解压缩，会看到shell2vst.exe这个可执行文件，但请不要直接双击运行它，否则是没作用的。</p>
 <p>而真正的具体用法是，当您安装了WAVES软件的VST版本后，会在你的Vstplugins文件夹产生形如WaveShell-VST_5.0.dll、Vocal_WaveShell-VST_1.1.dll等等之类的外壳，于是您需要的是把这些外壳文件拖拽到shell2vst.exe这个图标上（您需要打开两个窗口），才能释放出独立的文件。如下两个图，很简单的，看图就会了。</p>
-<p><img src="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-02.jpg" alt></p>
-<p><img src="http://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/Waves-03.jpg" alt></p>
+<p><img src="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-02.jpg" alt></p>
+<p><img src="http://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/Waves-03.jpg" alt></p>
 <h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
 <p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
 
