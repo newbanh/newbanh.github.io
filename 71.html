@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
 <meta property="og:description" content="var startTime = null;var currentBeats = 0;    function handleNewBeat() {         if (currentBeats == 0) {             startTime = new Date();         }         currentBeats++;         updateBpm();">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2021-09-14T06:38:03.243Z">
+<meta property="og:updated_time" content="2021-09-14T06:45:27.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BPM节拍速度测试工具">
 <meta name="twitter:description" content="var startTime = null;var currentBeats = 0;    function handleNewBeat() {         if (currentBeats == 0) {             startTime = new Date();         }         currentBeats++;         updateBpm();">
@@ -645,6 +645,22 @@ shortcut.add("Shift+x",function() {
 
 
 
+
+  <script type="text/javascript" src='https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js'></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
 
         
 

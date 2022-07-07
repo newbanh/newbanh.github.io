@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="../atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
 
@@ -451,6 +449,22 @@
 
 
 
+
+  <script type="text/javascript" src="https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js"></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
 
         
 

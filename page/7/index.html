@@ -1088,24 +1088,29 @@
         
           
             <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><strong>BPM</strong>: Beat Per Minute的简称, 表示每分钟的拍子数量 也就是每分钟能打多少拍</p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>一首歌的实际速度并不能单纯通过bpm来表示</p>
-<p> 比如我用4/4的节拍配上100的bpm 和用2/4节拍配上50的bpm </p>
-<p>只要将后者音符时值缩短一倍  两者给人的速度听感是一样的 比如:</p>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>一首歌的实际速度并不能单纯通过<code>bpm</code>来表示</p>
+<p> 比如我用<code>4/4</code>的节拍配上100的<code>bpm</code> 和用<code>2/4</code>节拍配上50的<code>bpm</code></p>
+<p>只要将后者音符时值缩短一倍  两者给人的<strong>速度听感</strong>是一样的 比如:</p>
 <p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/v2-9a303629f180170b2205828bccbd4987_720w.jpg" alt="img"></p>
+<p><em>(注意 是速度听感 而非乐曲听感)</em> </p>
 <p>以上两种记谱都没错, 那你说这首歌速度到底多少呢?</p>
-<p>我们能用一个单纯的BPM指标来衡量一首歌的速度吗</p>
+<p>我们能用一个单纯的<code>BPM</code>指标来衡量一首歌的速度吗</p>
 <p>肯定不行, 我们所说的歌曲速度并非指的是节拍器速度(BPM), 而是歌曲的演奏速度</p>
-<p>实际上, 描述一首歌曲的速度需要结合以下三方面判断:</p>
+<blockquote>
+<p>如果我们仔细分析会发现, 不管是<code>4/4</code>的节拍配上100的<code>bpm</code>的组合 还是<code>2/4</code>节拍配上50的<code>bpm</code>的组合  每个音符的绝对时值是一样的, 单位以秒计算</p>
+<p>那问题来了 以秒为单位虽然足够精准, 但是我们在记谱的时候难道给音符标注发音持续多少秒?  这简直是文明的倒退  丧心病狂的做法!</p>
+</blockquote>
+<p>实际上, 描述一首歌曲的速度需要结合以下几方面判断:</p>
 <ul>
-<li><strong>BPM</strong></li>
-<li><strong>节拍类型</strong></li>
-<li><strong>音符时值</strong></li>
+<li><strong>BPM</strong> : 可计算出每拍占用绝对时长</li>
+<li><strong>节拍类型</strong> : 每小节多少拍</li>
+<li><strong>音符时值</strong>: 每个音符占据的拍子数量</li>
 </ul>
-<p>以上三者缺一不可</p>
-<p>那么上图中采用50BPM或者100BPM的可以达到同样的速度听感, 记谱虽然也没错, 但是我们在实际的创作过程中, 必然只能选择一个BPM, 那么应该采用哪一个呢?</p>
+<p>以上三者缺一不可, 在每一张乐谱中 它们都有对应体现</p>
+<p>那么上图中采用<code>50BPM</code>或者<code>100BPM</code>的可以达到同样的速度听感, 记谱虽然也没错, 但是我们在实际的创作过程中, 必然只能选择一个<code>BPM</code>, 那么应该采用哪一个呢?</p>
 <p>这就得结合节拍类型所对应的强弱关系来进行选择了, 看是四拍子的<strong>强弱次强弱</strong>这种律动符合歌曲的情感意境, 还是二拍子的<strong>强弱</strong>律动更加适合</p>
 <p>这完全取决于创作者和改编者</p>
-<p>我们在扒谱的时候, 一般也是尽可能地遵从作者的一图, 从而达到原汁原味的效果</p>
+<p>我们在扒谱的时候, 一般也是尽可能地遵从作者的意图, 从而达到原汁原味的效果</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="http://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -2370,6 +2375,22 @@
 
 
 
+
+  <script type="text/javascript" src="https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js"></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
 
         
 
