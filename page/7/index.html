@@ -273,6 +273,754 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../70.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../70.html" itemprop="url">用压缩器调出大动态有弹性的底鼓</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-10T15:06:53+08:00">
+                2021-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我个人比较喜欢大弹性的底鼓的声音, 我们直接来听听两者的对比</p>
+<p>原始底鼓音频:</p>
+<p><audio class src="https://audio.newban.cn/audio/kick_origin.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>加了压缩后:</p>
+<p><audio class src="https://audio.newban.cn/audio/kick_compressor.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>原始音频存在的问题:</p>
+<ul>
+<li><strong>声音不稳定, 忽大忽小</strong></li>
+<li><strong>声音体积不够大</strong> </li>
+<li><strong>声音带有浑浊感</strong></li>
+<li><strong>弹性不满意</strong></li>
+</ul>
+<p>为了使得底鼓有弹性首先需要确保声音块头足够大,这里我使用<code>30ms</code>的启动时间, 确保音头足够肥大</p>
+<p>然后设置压缩比小一些为2.8:1 让声音软一些 整体声场变宽, 就好比有一个巨大的气球砸在你身上,</p>
+<p>最后采用了<code>225ms</code>的释放时间, 让声音更加稳定, 就好比原先皮球自己在地面上弹跳, 此时你用手拍打对皮球进行压制使其弹跳稳定, 具体的参数如下图:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210915104212647.png" alt="image-20210915104212647"></p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<li><strong>启动时间</strong>: 决定了声音的块头大小 值越大Punch感和空间感越强, 反之Sharp感越强</li>
+<li><strong>压缩比</strong>: 比例越大声音越硬, 动态越小 同时声场越窄, 反之越声音软 声场大 </li>
+<li><strong>释放时间</strong>: 决定了声音的稳定性, 值过小声音跳脱,让人心跳加快, 值过大声音拖沓泥泞感觉有阻力 让人喘不过气</li>
+</ul>
+<p>压缩器的工作机制和我们拍打皮球的过程很像:</p>
+<ul>
+<li><p>手往下拍皮球速度相当于是Attack</p>
+</li>
+<li><p>收往回收的速度相当于是Release</p>
+</li>
+<li><p>皮球的软硬对应压缩比</p>
+</li>
+</ul>
+<p>我们需要找到刚刚好的<strong>临界值</strong></p>
+<h3 id="加EQ"><a href="#加EQ" class="headerlink" title="加EQ"></a>加EQ</h3><p>单单使用压缩, 有时候无法达到满意的效果, 为了使得底鼓听起来更加有弹性, 我给其加了一个EQ, 在70HZ位置进行了提升:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210914120835348.png" alt="image-20210914120835348"></p>
+<p>我们来听一下连着加了EQ的效果:<br><audio class src="https://audio.newban.cn/audio/kick_compressor_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../69.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../69.html" itemprop="url">多轨混音素材下载网站大合集</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-09T15:06:53+08:00">
+                2021-09-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>学习混音的同学们, 是否苦于找不到免费的多轨混音素材, 那么这里给大家介绍几个网站, 以备不时之需</p>
+<h3 id="网站列表"><a href="#网站列表" class="headerlink" title="网站列表"></a>网站列表</h3><ol>
+<li><p><a href="http://www.cambridge-mt.com/ms/mtk/" target="_blank" rel="noopener">http://www.cambridge-mt.com/ms/mtk/</a></p>
+<p>这是 <em>Mixing Secrets For The Small Studio</em> 这本书的作者 Mike Senior 支持的一个项目，很多乐队或制作人把自己的作品分轨放到这个网站上，供学习者下载来练习混音制作。</p>
+<p>这里面各种各样的音乐风格都有，素材的质量也是千差万别，有的甚至需要你来修正演奏的节奏或人声的音高。这绝对是很好的训练素材。不仅如此，它还有在线论坛供大家切磋、讨论，可以多多与创作者交流</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/20210909155601.png" alt></p>
+<p>这个网站提供的素材有详细的说明。在下载前可以预听缩混完成的版本，选择自己喜欢的风格去下载分轨。当然，缩混好的还可以作为一个混音联系的参考。很贴心</p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../68.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../68.html" itemprop="url">混音相当于是给密码箱开锁 关键在于一个临界值</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-09T11:06:53+08:00">
+                2021-09-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>什么是混音临界值理论, 我们用几个例子来说明一下:</p>
+<ul>
+<li>音量平衡: 多一分贝太突出, 少一分贝被埋没</li>
+<li>启动时间: 多一毫秒太刺耳, 少一毫秒太浑浊</li>
+<li>EQ: 多一分贝 太亮, 少一分贝太暗淡</li>
+<li>……</li>
+</ul>
+<p>似乎每个参数都有<strong>刚刚好</strong>的值, 我们只要找出这些刚刚好的值对应上那么声音就会变得更好, 当然这些个值不是独立固定的, 它们会受其他效果器的影响</p>
+<p>而我们真正要找的不是具体的参数值, 而是找到声音刚刚好的那种感觉, 这种感觉所对应的参数量, 我们称之为临界值</p>
+<p>临界值理论属于中庸理论, 使用这种理论混出来的作品也许没有特色, 但至少合格</p>
+<h3 id="压缩器"><a href="#压缩器" class="headerlink" title="压缩器"></a>压缩器</h3><p>以压缩器为例, 在调节参数的时候 我们需要找到<strong>声音干净清晰</strong>的那个点</p>
+<h3 id="均衡器"><a href="#均衡器" class="headerlink" title="均衡器"></a>均衡器</h3><p>以衰减为例, 通过扫频找到让声音舒服的那个点</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>再具体一点, <strong>找到声音发生明显改变的那个点</strong>, 那这个点也算作临界点, 这种方法适用于EQ 压缩 混响等各种效果器</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../67.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../67.html" itemprop="url">压缩器各个参数的深入理解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-09T10:06:53+08:00">
+                2021-09-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:</p>
+<ul>
+<li><strong>阈值</strong>: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作</li>
+<li><strong>压缩比</strong>: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩</li>
+<li><strong>启动时间</strong>: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成有一个缓冲时间)</li>
+<li><strong>释放时间</strong>: 输入音平低于阈值, 此时压缩器准备停止工作, 压缩器花多长时间完全停止工作, 压缩比相当于为0</li>
+</ul>
+<p>压缩器最主要就是上面这四个参数, 但是, 即便你将这几个参数的概念熟记于心, 甚至将压缩器的工作原理了解的非常透彻,  你也未必能用好它, 混音和物理完全是两码事</p>
+<h3 id="压缩器参数形象理解"><a href="#压缩器参数形象理解" class="headerlink" title="压缩器参数形象理解"></a>压缩器参数形象理解</h3><p>想要用好压缩器, 让其使我们的音频更加好听, 那么我们需要从另一个角度去理解压缩器, 抛开压缩器的工作原理, 忘记这些参数的概念, 我们来重新认识这几个参数</p>
+<ul>
+<li><p><strong>阈值</strong>: 被压缩器覆盖的音符数量范围, 也就是对部分还是全部音符添加压缩效果</p>
+</li>
+<li><p><strong>压缩比</strong>: 相当于个一个放大镜, 可以放大压缩器的效果, 压缩比越大 放大倍数越大</p>
+</li>
+<li><p><strong>启动时间</strong>: 时间从小到大, 声音由混沌变得清晰</p>
+</li>
+<li><p><strong>释放时间</strong>: 时间从小到大, 声音由浮躁跳跃变得沉稳温暖</p>
+</li>
+</ul>
+<p>这样一理解, 压缩器是不是感觉更加形象 更贴近混音的实际需求了呢, 那么明白了这几个参数的具体效果后, 我们再来上手按部就班地调节这几个参数:</p>
+<ol>
+<li><p><strong>第一步</strong> 将压缩比调至8:1以上, 为的是使压缩器效果放大, 方便我们在后面调节启动释放时间的时候效果听的更加清晰</p>
+</li>
+<li><p><strong>第二步</strong> 拉下阈值, 使得压缩器开始正常工作</p>
+</li>
+<li><p><strong>第三步</strong> 将启动时间和释放时间都拉到最小值, 减少释放时间所产生的效果, 方便我们接下来专注于启动时间的调节(启动时间越短 压缩效果越大, 释放时间越长 压缩效果越大 )</p>
+</li>
+<li><p><strong>第四步</strong> 开始有小到大调节启动时间, 找到声音由混沌模糊突然变得清晰的那个临界点, 注意是<strong>临界点</strong>  </p>
+</li>
+<li><p><strong>第五步</strong> 开始有小到大调借释放时间, 找到声音由活跃到沉稳的那个<strong>临界点</strong></p>
+<p>一般来说 慢歌适合较长的释放时间, 快歌适合短的释放时间, 如果快歌释放时间过长, 声音会听起来有些拖沓不活跃, 仔细听底鼓就能明显发现</p>
+<p>如果实在听不出来 那就使用公式计算吧 </p>
+<p><strong>释放时间=(60/bpm*1000)/2</strong></p>
+</li>
+<li><p><strong>第六步</strong> 开始减少压缩比,  压缩比越大声音越硬和窄, 反之则越软和宽, 我个人的做法是, 在<strong>包裹住所有音符的前提下, 压缩比尽可能地调小</strong>, 比如设置3:1压缩比, 但即便阈值拉很低了, 依然有部分声音不稳定往外冒, 这说明压缩比不对, 需要加大压缩比, 直到声音平稳为止, 找到这个<strong>临界点</strong></p>
+</li>
+<li><p><strong>第七步</strong> 调节阈值,同样 需要找到合适的<strong>临界值</strong>, 我个人的做法是先将输出增益5~6分贝, 方便听效果, 然后下拉阈值找到使得声音突然具有空间感的那个点</p>
+</li>
+<li><p><strong>最后</strong> 旁通对比压缩效果, 调整输出增益, 使得<strong>电平大小</strong>和压缩之前差不多即可</p>
+</li>
+</ol>
+<p>上面这一套,我称之为临界值理论, 我们需要练习的就是如何准确找到这些个临界点, 练习的多了, 那么找寻的速度也就快了, 耳朵自然就灵敏了</p>
+<p>至此, 压缩器的使用方法已经介绍完毕</p>
+<p>如果你还想在技术层面进一步了解压缩器, 我们可以接着来聊聊</p>
+<h3 id="压缩器模型理解"><a href="#压缩器模型理解" class="headerlink" title="压缩器模型理解"></a>压缩器模型理解</h3><p>首先我们来看一下启动时间和释放时间对音频波形造成的变化:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
+<p>启动时间和释放时间相当于是两把雕刻刀, 对波形进行雕刻, 启动时间雕刻出尖角, 释放时间雕刻出钝角, 形状大小不一样的尖角和钝角, 对声音造成的效果也不一样</p>
+<p>我们知道, 同一款压缩器, 相同的启动释放时间, 雕刻出来的角形状是一样的, 而一样形状的角给声音带来的效果理论上应该也是一样, 那么我们是否可以得出一个结论:</p>
+<p><strong>同一款压缩器下, 即便作用于不同的歌曲, 只要启动释放时间一样, 那么产生的效果也一样</strong></p>
+<p>这个结论成立的最主要前提是 需要保证<strong>角的完整性</strong>,   举个例子, 比如一首慢歌, 使用10ms的启动时间和100ms的, 产生的角形状是这样:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
+<p>同样的参数运用在一首快歌上, 可能由于速度太快, 导致尖角还未完全成型就要开始释放, 而钝角还未成型有要开始启动, 音符密集的地方, 锐角还可能惨遭钝化, 那这种情况下, 同样的参数还能产生一样的效果吗, 肯定是不一样的, 角形状已经发生了改变</p>
+<p>所以同样的启动释放参数, 运用到不同风格的歌曲上产生的效果也不一样, 即便是同样速度的歌曲, 由于歌曲节奏的不一样, 也会导致效果的不同, 只能说速度相同的歌曲套同样的参数 效果打折会小一些</p>
+<p>那么我们是否可以找到那些 经典混音的案例工程, 把它们每个乐器的压缩启动释放参数记录下来, 等日后混相同速度歌曲的时候直接套用, 这种方式似乎也是可行的, 也许不完美, 但效果也不错</p>
+<p>当然 这里介绍这些并不是让大家去套餐数混音</p>
+<p>由上面的一大堆, 我们可以引出一个概念,那就是<strong>压缩模型</strong>, 压缩器的启动释放时间结合在一块就是一套模型, 两者参数排列组合, 可以结合出无数的模型, 每个模型模出各自不同的声音效果, 其中启动时间对模型的影响最大</p>
+<p>这就好比是月饼模子一样, 压缩模型可以对声音进行塑形, 尤其对于节奏规律性比较强的乐器塑形效果最为明显, 比如底鼓, 军鼓, 踩镲等打击乐器</p>
+<p>我们经常看到有人使用诸如B-box和撬瓶盖, 打箱子皮, 敲脸盆的方式来生成类似于底鼓军鼓的声音, 在混音的时候, 为了使得这些个声音听起来更像打击乐, 必须经过压缩塑形才行, 这时候就可以采用一些压缩模型来快速实现了, 比如30ms的启动时间放在底鼓上感觉还不错</p>
+<h5 id="关于压缩效果量"><a href="#关于压缩效果量" class="headerlink" title="关于压缩效果量"></a>关于压缩效果量</h5><p>我们知道压缩器的<strong>压缩量是右启动、释放、 压缩比 、阈值四个参数联合控制</strong>的, 没有人规定压缩比一定就是<code>-6db</code> ,如果有, 那也只是别人的经验, 不一定适合你</p>
+<p>但这里说的压缩效果量和压缩量是两个概念, 平常我们说的压缩量指的是被压缩的电平大小</p>
+<p>而今天我们要说的<strong>压缩效果量指的是压缩模型的作用量</strong>, 换句话说, 就是模子的深度, 作用量越大, 模的越像, 这个压缩效果量对应的压缩器参数就是压缩比</p>
+<p>当我们将启动和释放时间设置好后, 相当于是已经设置好了一个压缩模型, 然后通过设置压缩比来调节该模型的作用量, 而阈值则相当于是模型的作用范围广度</p>
+<p>我认为 用压缩效果量比压缩量更具有实际的意义, 很多人一旦脱离了图示压缩器, 改成只有几个旋钮的压缩器之后就不会用了, 因为找不准压缩量, 事实上, 在模型设置好的前提下, 压缩比就能代替压缩量</p>
+<p>至此 很多人就开始懵了, 这个压缩模型理论岂不是和之前的临界值理论相冲突了吗</p>
+<p>其实模型理论范畴远大于临界值理论, 临界值理论只是其中的一种模型, 两者并不冲突, 模型理论侧重于塑形, 至于塑什么样的, 因人而异, 每个人的审美也不一样</p>
+<p>当然了, 理论仅仅是理论, 这是次要的, 最主要还是多多练习实践</p>
+<h3 id="疑问解答"><a href="#疑问解答" class="headerlink" title="疑问解答"></a>疑问解答</h3><p>有的小伙伴在使用压缩器的时候, 感觉到了声音的明亮度改变, 认为压缩器可以改变声音的频率, 具有EQ的效果, 这里给大家指正一下:</p>
+<p>首先 <strong>压缩器只能控制音量的，不能改变声音的频率</strong>,而我们感觉到的类似频率变化的效果, 实际上是<strong>音频相邻时间之间整体频段音量比例的变化</strong>造成的, 什么意思呢, 举个例子:</p>
+<p>比如在第一毫秒时,  压缩器还没开始工作, 此刻音频的频率曲线是这样:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210909112909519.png" alt="image-20210909112909519"></p>
+<p>第2毫秒开始, 压缩器开始工作, 此刻的整体频段音量被往下压, 假设压了2db,(这个值取决于压缩比和启动时间), 那么整体曲线往下拉了2db, 如下:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210909112834741.png" alt="image-20210909112834741"></p>
+<p>第三毫秒下拉的幅度更大, 如果第四毫秒开始, 压缩器开始停止工作, 那么接下来下拉的幅度逐渐减少, 直至停止下拉,此时压缩器也停止工作</p>
+<p>形象图如下:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
+<p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
+<p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../66.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../66.html" itemprop="url">音乐创作利器 AI自动作曲</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-08T12:06:53+08:00">
+                2021-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>所谓灵感, 只不过是心心念念的结果罢了</p>
+<p>那么 如果你懒得思考, 可以借助第三方工具, 助你打开灵感之海, 那就是AI作曲</p>
+<p> 比如<a href="https://www.ampermusic.com/" target="_blank" rel="noopener">Amper Music</a>这个网站, 直接上传一段音频, 然后自动创作出与你上传音频相类似的音乐, 演奏的乐器可以自己挑选, 各种各样的音色, 挺丰富, 界面如下:</p>
+<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/image-20210908120319274.png" alt="image-20210908120319274"></p>
+<h4 id="AI作曲的原理"><a href="#AI作曲的原理" class="headerlink" title="AI作曲的原理"></a>AI作曲的原理</h4><p>你可以简单理解为是大数据统计分析匹配, 采取一个样本, 然后在海量的数据中进行模型匹配, 然后组合成一个类似的音乐片段</p>
+<h3 id="AI作曲的方向"><a href="#AI作曲的方向" class="headerlink" title="AI作曲的方向"></a>AI作曲的方向</h3><p>它只是一个没有感情的机器, 创作出来的音乐让人流泪估计不太现实</p>
+<p>但是</p>
+<p>用它来参考和学习再好不过了, 比如你想创作一首类似于双节棍的歌, 那么你可以将原曲上传, 然后自动生成相同bpm、时长和类似节奏的的demo, 这个demo可以用来激发我们的创作灵感,  <a href="https://www.ampermusic.com/" target="_blank" rel="noopener">Amper Music</a>的目的也正是如此</p>
+<p>或者你想为一段视频快速配乐, 那么直接用它生成的demo感觉也不错</p>
+<p>总之 这是一个工具罢了 大家可以去尝试一下啦</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../65.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2087,780 +2835,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../4.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../4.html" itemprop="url">节奏与节拍的区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-06T16:06:53+08:00">
-                2021-09-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="什么是节奏"><a href="#什么是节奏" class="headerlink" title="什么是节奏"></a>什么是节奏</h3><p>指各音符之间持续发声时长的<strong>比例关系</strong> </p>
-<p>比如第一个音符占一个拍子 第二个音符时长是第一个的一半 也就是半拍  这种固定的<strong>相对结构</strong> 就是节奏</p>
-<p><strong>常见的基本节奏有</strong>:</p>
-<ul>
-<li>前八后十六</li>
-<li>前十六后八</li>
-<li>前十六后十六</li>
-<li>前八后八</li>
-<li>前八后休止</li>
-<li>……</li>
-</ul>
-<p>其实就是<strong>不同时值比例的排列组合</strong>, 你想怎么排就怎么排</p>
-<p>它和音符的音高没有任何关系, 旋律虽然由音高和节奏组成 但节奏可以脱离旋律单独存在, 比如打击乐</p>
-<h3 id="什么是节拍"><a href="#什么是节拍" class="headerlink" title="什么是节拍"></a>什么是节拍</h3><p>指拍子之间<strong>强弱关系按照小节为单位有规律地重复</strong>出现  这种规律形态我们称之为节拍 </p>
-<p>重点在于:</p>
-<ul>
-<li><strong>以小节为单位</strong></li>
-<li><strong>拍子有规律的强弱变化</strong></li>
-</ul>
-<p>节拍和音符的音高及时值没有关系  </p>
-<p><strong>其中拍号是节拍的具体表现形式</strong> 用不同的拍号来表示不同的强弱关系 比如 拍号是4/4表示:</p>
-<p>单位小节内是拍子强弱是以<strong>强弱次强弱</strong>的关系进行排列 然后<strong>有规律地重复该小节</strong></p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>节奏和节拍是两个完全不同的概念  节奏重点在音符时值比例  而节拍重点在拍子之间的强弱关系</p>
-<h3 id="关于拍号补充"><a href="#关于拍号补充" class="headerlink" title="关于拍号补充"></a>关于拍号补充</h3><p>我们需要明白拍号只是一个昵称, 拍子间的强弱关系并不属于拍号, 而属于节拍, 比如有人问你, 2/4这个是什么, 你回答: </p>
-<p>这一坨叫拍号,  它用于告诉我们歌曲是节拍是四二拍, 具体一点就是以四分音符为一拍, 每小节有两拍, 其强弱关系为 <strong>强弱</strong></p>
-<p>我们再来看以下三个概念:</p>
-<ul>
-<li><p><strong>拍子</strong>: 音符时值参考单位, 同一首歌单拍的时长是一样的</p>
-</li>
-<li><p><strong>节拍</strong>: 单位小节内拍子间的强弱规律关系</p>
-</li>
-<li><p><strong>拍号</strong>: 用于明确是哪一种类型的节拍</p>
-</li>
-</ul>
-<p>你还傻傻分不清吗</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../3.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../3.html" itemprop="url">BPM真的可以表示歌曲的速度么</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-06T15:56:53+08:00">
-                2021-09-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><strong>BPM</strong>: Beat Per Minute的简称, 表示每分钟的拍子数量 也就是每分钟能打多少拍</p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>一首歌的实际速度并不能单纯通过<code>bpm</code>来表示</p>
-<p> 比如我用<code>4/4</code>的节拍配上100的<code>bpm</code> 和用<code>2/4</code>节拍配上50的<code>bpm</code></p>
-<p>只要将后者音符时值缩短一倍  两者给人的<strong>速度听感</strong>是一样的 比如:</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/v2-9a303629f180170b2205828bccbd4987_720w.jpg" alt="img"></p>
-<p><em>(注意 是速度听感 而非乐曲听感)</em> </p>
-<p>以上两种记谱都没错, 那你说这首歌速度到底多少呢?</p>
-<p>我们能用一个单纯的<code>BPM</code>指标来衡量一首歌的速度吗</p>
-<p>肯定不行, 我们所说的歌曲速度并非指的是节拍器速度(BPM), 而是歌曲的演奏速度</p>
-<blockquote>
-<p>如果我们仔细分析会发现, 不管是<code>4/4</code>的节拍配上100的<code>bpm</code>的组合 还是<code>2/4</code>节拍配上50的<code>bpm</code>的组合  每个音符的绝对时值是一样的, 单位以秒计算</p>
-<p>那问题来了 以秒为单位虽然足够精准, 但是我们在记谱的时候难道给音符标注发音持续多少秒?  这简直是文明的倒退  丧心病狂的做法!</p>
-</blockquote>
-<p>实际上, 描述一首歌曲的速度需要结合以下几方面判断:</p>
-<ul>
-<li><strong>BPM</strong> : 可计算出每拍占用绝对时长</li>
-<li><strong>节拍类型</strong> : 每小节多少拍</li>
-<li><strong>音符时值</strong>: 每个音符占据的拍子数量</li>
-</ul>
-<p>以上三者缺一不可, 在每一张乐谱中 它们都有对应体现</p>
-<p>那么上图中采用<code>50BPM</code>或者<code>100BPM</code>的可以达到同样的速度听感, 记谱虽然也没错, 但是我们在实际的创作过程中, 必然只能选择一个<code>BPM</code>, 那么应该采用哪一个呢?</p>
-<p>这就得结合节拍类型所对应的强弱关系来进行选择了, 看是四拍子的<strong>强弱次强弱</strong>这种律动符合歌曲的情感意境, 还是二拍子的<strong>强弱</strong>律动更加适合</p>
-<p>这完全取决于创作者和改编者</p>
-<p>我们在扒谱的时候, 一般也是尽可能地遵从作者的意图, 从而达到原汁原味的效果</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../1.html" itemprop="url">如何快速给一首歌或者旋律划分小节</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-02T18:56:53+08:00">
-                2021-09-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>有时候我们听到一首歌或者旋律想要为其划分小节, 或者当我们在创作的时候, 想要旋律记录在谱, 那么小节的线位置该如何摆放</p>
-<p>这个问题 对于音乐初学者来说必定会遇到</p>
-<p>要想准确的划分小节, 首先我们必须明白音乐的强弱关系</p>
-<p>音乐之所以能称为音乐而不是噪音, 最关键的就是声音的<strong>轻重高低起伏</strong> 这种连续的强弱变化给人以优美舒适的感觉</p>
-<p>要想掌握划分的技巧, 除了要有一定的乐感之外, 还需要一定的乐理基础, 乐感这东西多听音乐自然就会有, 至于乐理, 这个需要花点时间学习一下</p>
-<h3 id="拍子"><a href="#拍子" class="headerlink" title="拍子"></a>拍子</h3><p>常见的拍子有四拍子 三拍子 和二拍子</p>
-<ul>
-<li><strong>四拍子典型代表4/4</strong>: 表示以4分音符为一拍, 每小节有4拍</li>
-<li><strong>三拍子典型代表3/4</strong>: 表示以4分音符为一拍, 每小节有3拍</li>
-<li><strong>二拍子典型代表2/4</strong>: 表示以4分音符为一拍, 每小节有2拍</li>
-</ul>
-<p>这三种拍子的强弱变化分别为:</p>
-<ul>
-<li><strong>四拍子</strong>: 强 弱 次强 弱</li>
-<li><strong>三拍子</strong>: 强 弱  弱</li>
-<li><strong>二拍子</strong>: 强 弱 </li>
-</ul>
-<p>强表示重音 我们发现, 不管是哪种拍子, 强音都在小节开头, 那么我们只要找到旋律的重音位置, 也就明确了小节线的位置了, 小节线画在重音前头就行</p>
-<h3 id="开始实战"><a href="#开始实战" class="headerlink" title="开始实战"></a>开始实战</h3><p>接下来就是考验耳朵和乐感的时候了, 闭上眼睛感受旋律重音的位置, 一旦找准了, 旋律的律动感就出来了,</p>
-<p>这个时候看一下强音间隔的拍子数量, 如果间隔3个拍子重复出现强音, 那么这首歌即为四拍子的歌, 如间隔2个拍子即为三拍子, 如果间隔一个拍子, 即为二拍子的歌</p>
-<p>确认无误后, 画上小节线, 那么小节划分的工做就做好了</p>
-<h3 id="拍子知识补充"><a href="#拍子知识补充" class="headerlink" title="拍子知识补充"></a>拍子知识补充</h3><blockquote>
-<p>拍号中分子为每小节的拍子数量 分母为以几分音符为单位拍,</p>
-<p>读法是先读分母，再读分子，比如2/4叫四二拍，3/4叫四三拍，6/8叫八六拍</p>
-</blockquote>
-<p>前面说到常见的拍子有4/4 、3/4 和2/4拍, 可是我们偶尔也会碰到诸如6/8、9/8和12/8拍的拍号, 那么我们是不是可以将其称为6拍子 9拍子和12拍子呢</p>
-<p>不是这样的, 实际上:</p>
-<ul>
-<li><strong>6/8</strong> : 属于二拍子</li>
-<li><strong>9/8</strong>:  属于三拍子</li>
-<li><strong>12/8</strong>:  属于四拍子</li>
-</ul>
-<p>是不是有点懵, 这三个拍号其实叫做复拍子, 而2/4 、3/4和4/4这三个叫做单拍子, 为什么叫做单拍子我们无需纠结, 记住即可, 至于复拍子, 它们是由单拍子重复而来, 怎么个重复法呢, 我们先来看一下它们的强弱变化关系:</p>
-<ul>
-<li><p><strong>6/8</strong> : 强弱弱 次强弱弱 </p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/4cb5c27b81bf44d2a12a24699a426306.jpeg" alt="img"></p>
-<p>其中<code>强弱弱</code>表示一拍 次<code>强弱弱</code>表示一拍, 一共是两拍</p>
-</li>
-<li><p><strong>9/8</strong>:  强弱弱 次强弱弱 次强弱弱 </p>
-</li>
-<li><p><strong>12/8</strong>:  强弱弱 次强弱弱 次强弱弱  次强弱弱</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/c05957a433234d3daf2610b2590e4b2c.png" alt="img"></p>
-</li>
-</ul>
-<p>以6/8为例, 从谱子上看的确是以八分音符为一拍, 每小节有6拍, 但是在唱奏的时候却是两个三连音, 也就是只唱了两拍, 只不过每拍的音符变多了</p>
-<p>所以 我们可以简单理解为, 复拍子就是单拍子内部的重复, 而且是重复三次, 也就是一个大拍子里面有三个小拍</p>
-<h3 id="复拍子记忆"><a href="#复拍子记忆" class="headerlink" title="复拍子记忆"></a>复拍子记忆</h3><p>这里给大家介绍宋大叔的记忆方式:</p>
-<ol>
-<li><p><strong>什么是复拍子</strong></p>
-<p>一个大拍子包含三个小拍子。（即，三个三分之一拍，合为一个完整拍。）</p>
-</li>
-<li><p><strong>复拍子特征</strong></p>
-<p>但凡拍号上方为6、9、12的就是复拍子</p>
-</li>
-<li><p><strong>复拍子的拍子数和每拍实际音符算法</strong></p>
-<p>如果要计算某复拍子属于几拍子或者每小节多少拍, 可以用分子除以3</p>
-<p>如果要计算每个大拍所占的实际音符时值, 可以用分母乘以3</p>
-<p>具体如图:</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/format,f_auto-20210903120024648.jpeg" alt="图1（以6/8为例）"></p>
-</li>
-</ol>
-<p>有了这个算法后 我们对于复拍子可以采用单拍子思维去理解:</p>
-<ul>
-<li><strong>6/8</strong> : 属于二拍子 以附点四分音符为一拍 每小节有两拍</li>
-<li><strong>9/8</strong>:  属于三拍子 以附点四分音符为一拍 每小节有三拍</li>
-<li><strong>12/8</strong>:  属于四拍子 以附点四分音符为一拍 每小节有四拍</li>
-</ul>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../2.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../2.html" itemprop="url">Cubase Artist 10 for Mac 和谐版下载安装</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-02T10:56:53+08:00">
-                2021-09-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="宿主下载"><a href="#宿主下载" class="headerlink" title="宿主下载"></a>宿主下载</h3><p><a href="https://url97.ctfile.com/f/21042697-511473504-0ddff7" target="_blank" rel="noopener">点击下载</a>（访问密码：312306）</p>
-<h3 id="宿主安装和PJ流程"><a href="#宿主安装和PJ流程" class="headerlink" title="宿主安装和PJ流程"></a>宿主安装和PJ流程</h3><h5 id="首先是正常安装"><a href="#首先是正常安装" class="headerlink" title="首先是正常安装"></a>首先是正常安装</h5><p>下载完成后打开如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451320.png" alt="img"></p>
-<p>点击【继续】:</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451321.png" alt="img"></p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451322.png" alt="img"></p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451323.png" alt="img"></p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451324.png" alt="img"></p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451325.png" alt="img"></p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451326.png" alt="img"></p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451427.png" alt="img"></p>
-<h5 id="接下来安装PJ补丁"><a href="#接下来安装PJ补丁" class="headerlink" title="接下来安装PJ补丁"></a>接下来安装PJ补丁</h5><p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451428.png" alt="img"></p>
-<p>将左侧【Cubase10】拖到右侧【MacOS】文件夹内安装，如图：</p>
-<p>将左侧【mediaservice】拖到右侧【MacOS】文件夹内安装，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451429.png" alt="img"></p>
-<p>2个MacOS文件夹路径分别为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MacOS  ：/Applications/Cubase\ 10.app/Contents/MacOS</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MacOS ：/Applications/Cubase\ 10.app/Contents/Components/mediaservice.bundle/Contents/MacOS</span><br></pre></td></tr></table></figure>
-
-<p>点击【鉴定】，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451430.png" alt="img"></p>
-<p>点击【替换】，如图：（2个必须都要替换）</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451431.png" alt="img"></p>
-<p>现在打开应用程序，找到安装好的Cubase 10软件，右击显示包内容，然后打开【Contents】文件夹，删除【VSTPlugins】和【VST3】文件夹，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451432.png" alt="img"></p>
-<p>【VSTPlugins】和【VST3】删除完成后，将“cubase10特别版”镜像包内VST3替换文件拖到【Contents】文件夹内，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451433.png" alt="img"></p>
-<p>打开安装完成的cubase 10 mac特别版，点击【启动 Cubase Artist 10】，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451434.png" alt="img"></p>
-<p>点击【Cancel】，即可进入软件，(需要取消2次)，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451535.png" alt="img"></p>
-<p>注意：每次进入软件都要按【启动 Cubase Artist 10】然后点击【Cancel】哦！！</p>
-<p>进入cubase 10后在【首选项】【常规】中取消【使用Hub】选项，如图：</p>
-<p><img src="https://raw.fastgit.org/songjianzaina/lunanzb_img/master/img/2019080715451536.png" alt="img"></p>
-<p>至此 Cubase10 和谐版安装完毕</p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../18.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../18.html" itemprop="url">木吉他和电贝司的音域范围以及在Cubase中的表示</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-19T10:51:58+08:00">
-                2021-01-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="钢琴音域参考"><a href="#钢琴音域参考" class="headerlink" title="钢琴音域参考"></a>钢琴音域参考</h2><p><img src="https://raw.fastgit.org/songjianzaina/SavePicGoPic/master/img/20210119151335.png" alt></p>
-<p> 以钢琴为准共分为九组，包括了<strong>七个完整组和两个不完整组</strong>。图示中最中央的一组，叫做小字一组 </p>
-<p><strong>中央C的位置即在c1</strong></p>
-<h2 id="木吉他的音域范围"><a href="#木吉他的音域范围" class="headerlink" title="木吉他的音域范围"></a>木吉他的音域范围</h2><p>木吉他一共六根弦,在同一品上,第一弦和第六弦相差两个八度</p>
-<p>木吉他的最低音为E,即大字组E, 如果是24品吉他, 那么音域<strong>横跨4个八度</strong>,从<strong>E~e3</strong>(也就是大字组E到小字三组e)</p>
-<h2 id="电贝司的音域范围"><a href="#电贝司的音域范围" class="headerlink" title="电贝司的音域范围"></a>电贝司的音域范围</h2><p>电贝司通常是四根弦</p>
-<p>电贝司的最低音为E1,即大字一组E,刚好和吉他的最低音低一个八度, 如果是21品贝斯,那么音域<strong>横跨三个八度,</strong>从<strong>E1~e1</strong>(也就是大字一组E到小字一组e)</p>
-<h2 id="Cubase中的表示"><a href="#Cubase中的表示" class="headerlink" title="Cubase中的表示"></a>Cubase中的表示</h2><p>在Cubase钢琴卷帘窗口中C3表示中央C的位置,因此<strong>吉他最低音在E1</strong>,<strong>贝斯最低音在E0</strong></p>
-<p>由于不同的MIDI软件表示中央C的位置不一样,有的是C3,有的是C4甚至C5,因此,我们不必记软件的中排列,只需记住标准88键钢琴大小组表示即可,这是通用的参考</p>
-<p>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频*</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2911,7 +2885,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">125</span>
+                  <span class="site-state-item-count">130</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2924,7 +2898,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -2968,7 +2942,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -2994,7 +2968,7 @@
 
 
 
-  <script type="text/javascript" src="js/src/mermaid.min.js"></script>
+  <script type="text/javascript" async src="js/src/mermaid.min.js"></script>
   <script>
   if (window.mermaid) {
         var mermaid_config = {
