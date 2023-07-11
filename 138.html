@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="referrer" content="never">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="插件,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="前言如果您希望在 REAPER 中提高自动化效率，我整理了一些有用的便捷技巧。🚀  1.快速建立包络按键盘V打开/关闭音量包络通道, 按住shift配合鼠标左键即可快速画出大致包络曲线。  按键盘P打开/关闭声像包络通道。  2. 四点包络线创建时间选择并按Shift + Ctrl/Cmd创建四点包络。 这非常适合快速调整某个部分的值，同时保持通道的其余部分不变。  💡 提示：默认情况下，它将">
+<meta name="keywords" content="插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="REAPER中十多个包络自动化技巧">
+<meta property="og:url" content="https://audio.newban.cn/138.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="前言如果您希望在 REAPER 中提高自动化效率，我整理了一些有用的便捷技巧。🚀  1.快速建立包络按键盘V打开/关闭音量包络通道, 按住shift配合鼠标左键即可快速画出大致包络曲线。  按键盘P打开/关闭声像包络通道。  2. 四点包络线创建时间选择并按Shift + Ctrl/Cmd创建四点包络。 这非常适合快速调整某个部分的值，同时保持通道的其余部分不变。  💡 提示：默认情况下，它将">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce13a94130e5_Thumbnail-10_Automation_Shortcuts_in_REAPER.jpeg">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce5674413112_c941cd6e-6be2-4362-af66-3543470213f9.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce324f413115_2ce87ae4-3240-4e9f-a30f-c37d25b0d855.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1794413121_6d496f29-2d6b-45dc-bee8-c2e1e94a44a6.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1134413125_b92bff56-fd09-4083-8526-932c4aa9873e.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ceeb6a413126_7a1abefd-2e42-4012-b887-75ad5e81f1ff.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070cef56a413111_fd32771b-03fe-47f2-b904-915310b636a0.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce5bdf413114_6b1c0f46-b3ba-47f1-83b0-a864b4d154b2.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce7a2e413127_7f16f631-3c15-42e6-a446-ef7d36880325.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1b06413123_a81455e1-895c-4e06-9957-7c682a62c4ec.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce6361413122_5d4329c8-becb-4961-b6ef-6669e91a093f.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce9e26413113_f4df6143-e336-4f61-84c4-1384b0018742.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce76b6413124_c9cc86f0-2a8d-4107-9204-216b788843b9.gif">
+<meta property="og:updated_time" content="2023-07-11T08:59:31.259Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="REAPER中十多个包络自动化技巧">
+<meta name="twitter:description" content="前言如果您希望在 REAPER 中提高自动化效率，我整理了一些有用的便捷技巧。🚀  1.快速建立包络按键盘V打开/关闭音量包络通道, 按住shift配合鼠标左键即可快速画出大致包络曲线。  按键盘P打开/关闭声像包络通道。  2. 四点包络线创建时间选择并按Shift + Ctrl/Cmd创建四点包络。 这非常适合快速调整某个部分的值，同时保持通道的其余部分不变。  💡 提示：默认情况下，它将">
+<meta name="twitter:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce13a94130e5_Thumbnail-10_Automation_Shortcuts_in_REAPER.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/138.html">
+
+
+
+
+
+  <title>REAPER中十多个包络自动化技巧 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="https://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">REAPER中十多个包络自动化技巧</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T10:15:53+08:00">
+                2023-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果您希望在 REAPER 中提高自动化效率，我整理了一些有用的便捷技巧。🚀</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce13a94130e5_Thumbnail-10_Automation_Shortcuts_in_REAPER.jpeg" alt="img"></p>
+<h2 id="1-快速建立包络"><a href="#1-快速建立包络" class="headerlink" title="1.快速建立包络"></a>1.快速建立包络</h2><p>按键盘<code>V</code>打开/关闭音量包络通道, 按住<code>shift</code>配合鼠标左键即可快速画出大致包络曲线。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce5674413112_c941cd6e-6be2-4362-af66-3543470213f9.gif" alt="img"></p>
+<p>按键盘<code>P</code>打开/关闭声像包络通道。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce324f413115_2ce87ae4-3240-4e9f-a30f-c37d25b0d855.gif" alt="img"></p>
+<h2 id="2-四点包络线"><a href="#2-四点包络线" class="headerlink" title="2. 四点包络线"></a>2. 四点包络线</h2><p>创建时间选择并按<code>Shift + Ctrl/Cmd</code>创建四点包络。</p>
+<p>这非常适合快速调整某个部分的值，同时保持通道的其余部分不变。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1794413121_6d496f29-2d6b-45dc-bee8-c2e1e94a44a6.gif" alt="img"></p>
+<p>💡</p>
+<p>提示：默认情况下，它将产生非常短的过渡曲线，这听起来可能有点刺耳。您可以通过进入“首选项” &gt; “包络显示”并设置“自动创建包络边缘点的过渡时间”来 调整曲线的平滑度</p>
+<h2 id="3-调整包络曲线"><a href="#3-调整包络曲线" class="headerlink" title="3. 调整包络曲线"></a>3. 调整包络曲线</h2><p>按住<code>Alt/Opt</code> 的同时单击并拖动包络曲线以自由塑造其形状。对于平滑过渡非常有用。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1134413125_b92bff56-fd09-4083-8526-932c4aa9873e.gif" alt="img"></p>
+<p>按住<code>Alt/Opt</code>的同时双击鼠标左键可将其重置。</p>
+<h2 id="4-手动调整点"><a href="#4-手动调整点" class="headerlink" title="4.手动调整点"></a>4.手动调整点</h2><p>按住<code>Ctrl/Cmd</code>并双击包络点可手动输入值或更改曲线形状。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ceeb6a413126_7a1abefd-2e42-4012-b887-75ad5e81f1ff.gif" alt="img"></p>
+<h2 id="5-创建自动化项目"><a href="#5-创建自动化项目" class="headerlink" title="5. 创建自动化项目"></a>5. 创建自动化项目</h2><p>按<code>Alt/Opt</code>并在包络通道底部拖动以创建自动化项目。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070cef56a413111_fd32771b-03fe-47f2-b904-915310b636a0.gif" alt="img"></p>
+<p>🤔什么是自动化项目？</p>
+<p>它们是包络的容器。您可以像常规项目一样循环、复制、拉伸和池化。您基本上可以将您的自动化视为物品！</p>
+<p><em>（您也可以双击它们来应用 LFO 并调整设置！）</em></p>
+<h2 id="6-微调包络点"><a href="#6-微调包络点" class="headerlink" title="6. 微调包络点"></a>6. 微调包络点</h2><p>按住<code>Ctrl/Cmd + Alt/Opt</code>并上下拖动点，以非常小的步长进行调整。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce5bdf413114_6b1c0f46-b3ba-47f1-83b0-a864b4d154b2.gif" alt="img"></p>
+<h2 id="7-快速删除包络点"><a href="#7-快速删除包络点" class="headerlink" title="7.快速删除包络点"></a>7.快速删除包络点</h2><p>按<code>Alt/Opt</code> 键并单击包络点将其删除。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce7a2e413127_7f16f631-3c15-42e6-a446-ef7d36880325.gif" alt="img"></p>
+<h2 id="8-重置包络点"><a href="#8-重置包络点" class="headerlink" title="8. 重置包络点"></a>8. 重置包络点</h2><p>双击包络点可将其值重置为 0dB。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1b06413123_a81455e1-895c-4e06-9957-7c682a62c4ec.gif" alt="img"></p>
+<h2 id="9-画包络"><a href="#9-画包络" class="headerlink" title="9. 画包络"></a>9. 画包络</h2><p>在包络通道上拖动时按住<code>Ctrl/Cmd</code>以徒手绘制，忽略捕捉。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce6361413122_5d4329c8-becb-4961-b6ef-6669e91a093f.gif" alt="img"></p>
+<p>💡提示：您可以对其进行设置，使其贴合您的网格。<br>为此，请转至首选项&gt;鼠标修改器&gt;上下文：包络通道 | 左键拖动并将鼠标修改器设置为“徒手绘制信封”</p>
+<h2 id="💎-其他快捷技巧"><a href="#💎-其他快捷技巧" class="headerlink" title="💎 其他快捷技巧"></a>💎 其他快捷技巧</h2><p>接下来的操作没有快捷方式，但它们非常有用，我建议为它们设置一个！</p>
+<h2 id="10-显示和隐藏包络通道"><a href="#10-显示和隐藏包络通道" class="headerlink" title="10.显示和隐藏包络通道"></a>10.显示和隐藏包络通道</h2><p>如果您有一堆包络占用了会话中的空间，可以通过以下方法快速显示/隐藏所有信封或仅显示选定的曲目。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce9e26413113_f4df6143-e336-4f61-84c4-1384b0018742.gif" alt="img"></p>
+<p>在菜单的<code>Actions List</code>中，搜索<code>Envelope: Toggle show all envelopes for all tracks</code>。我将其快键键设置为<code>Alt + Tab</code>。</p>
+<h2 id="11-显示最后编辑的包络通道"><a href="#11-显示最后编辑的包络通道" class="headerlink" title="11.显示最后编辑的包络通道"></a>11.显示最后编辑的包络通道</h2><p>这是我最喜欢的动作之一！</p>
+<p>您无需查看大量参数即可启动包络通道。只需触摸您需要的参数，运行此操作，该参数的通道就会出现在轨道列表上！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce76b6413124_c9cc86f0-2a8d-4107-9204-216b788843b9.gif" alt="img"></p>
+<p>在菜单的<code>Actions List</code>中，搜索<code>FX: Show/hide track envelope for last touched FX parameter</code>, 并为其设置快捷键。我把它设置为<code>L</code> 。</p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>希望这些大家有用~💙 </p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/10-automation-shortcuts-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/插件/" rel="tag"># 插件</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="136.html" rel="next" title="免费且好用的混音插件汇总">
+                <i class="fa fa-chevron-left"></i> 免费且好用的混音插件汇总
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="137.html" rel="prev" title="一些开源的VST音频插件和音乐应用以及">
+                一些开源的VST音频插件和音乐应用以及 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="https://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">138</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-快速建立包络"><span class="nav-number">2.</span> <span class="nav-text">1.快速建立包络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-四点包络线"><span class="nav-number">3.</span> <span class="nav-text">2. 四点包络线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-调整包络曲线"><span class="nav-number">4.</span> <span class="nav-text">3. 调整包络曲线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-手动调整点"><span class="nav-number">5.</span> <span class="nav-text">4.手动调整点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-创建自动化项目"><span class="nav-number">6.</span> <span class="nav-text">5. 创建自动化项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-微调包络点"><span class="nav-number">7.</span> <span class="nav-text">6. 微调包络点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-快速删除包络点"><span class="nav-number">8.</span> <span class="nav-text">7.快速删除包络点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-重置包络点"><span class="nav-number">9.</span> <span class="nav-text">8. 重置包络点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-画包络"><span class="nav-number">10.</span> <span class="nav-text">9. 画包络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#💎-其他快捷技巧"><span class="nav-number">11.</span> <span class="nav-text">💎 其他快捷技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-显示和隐藏包络通道"><span class="nav-number">12.</span> <span class="nav-text">10.显示和隐藏包络通道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-显示最后编辑的包络通道"><span class="nav-number">13.</span> <span class="nav-text">11.显示最后编辑的包络通道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#就是这样！"><span class="nav-number">14.</span> <span class="nav-text">就是这样！</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+  <script type="text/javascript" async src="js/src/mermaid.min.js"></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
