@@ -6633,13 +6633,19 @@ shortcut.add("Shift+x",function() {
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705161845058.png" alt="image-20230705161845058"></p>
 <p>这看起来非常的难受, 有没有办法能使其像<code>Cubase</code>一样, 音频文件统一放到<code>audio</code>目录下呢?</p>
 <p>答案是肯定的</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>我们只需进入到<code>File--&gt;Project settings</code>界面中, 在<code>media</code>选项卡中, 填入指定的文件夹名称即可:</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="音频文件归类"><a href="#音频文件归类" class="headerlink" title="音频文件归类"></a>音频文件归类</h3><p>我们只需进入到<code>File--&gt;Project settings</code>界面中, 在<code>media</code>选项卡中, 填入指定的文件夹名称即可:</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162059603.png" alt="image-20230705162059603"></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162157120.png" alt="image-20230705162157120"></p>
 <p>这里我填入的是<code>./audio</code>, 意思就是将媒体文件存放到工程文件同级目录下的<code>audio</code>文件夹中</p>
 <p>配置完后, 当我们进行工程备份时, 则会自动创建<code>audio</code>目录:</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162542351.png" alt="image-20230705162542351"></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162604197.png" alt="image-20230705162604197"></p>
+<h3 id="缓存文件归类"><a href="#缓存文件归类" class="headerlink" title="缓存文件归类"></a>缓存文件归类</h3><p><code>Reaper</code>为了加快音频波形的加载速度, 会在工程目录下自动生成<code>.reapeaks</code>文件, 我们可以将缓存文件统一放到一个目录下, 设置如下:</p>
+<p>打开<code>Options--&gt;Preferences</code>偏好设置窗口, 在<code>General--&gt;Paths</code>选项卡页面中, 勾选<code>store all peak caches</code>然后选择缓存文件需要存放的路径位置</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230712140616775.png" alt="image-20230712140616775"></p>
+<blockquote>
+<p>👌顺便说一句，您可以时不时地删除所有 reapeak 以节省空间，当您重新打开会话时，REAPER 将自动生成。</p>
+</blockquote>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -6946,17 +6952,18 @@ shortcut.add("Shift+x",function() {
 <h4 id="其他一些好用的ReaPack脚本"><a href="#其他一些好用的ReaPack脚本" class="headerlink" title="其他一些好用的ReaPack脚本"></a>其他一些好用的ReaPack脚本</h4><ol>
 <li><p><strong>kawa</strong></p>
 <p>以<code>MIDI</code>编辑脚本居多</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704162929036.png" alt></p>
 <p>提供了<code>lua</code>和<code>c++</code>两种版本, 仓库地址分别如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kawa Script 1(LUA version) Reapack Repository URL </span><br><span class="line">https://bitbucket.org/kawaCat/reascript-m2bpack/raw/master/index.xml</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kawa Script 1(LUA version) Reapack Repository URL </span><br><span class="line">   https://bitbucket.org/kawaCat/reascript-m2bpack/raw/master/index.xml</span><br></pre></td></tr></table></figure>
 
-<p>和</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kawa Script 2(C++ version) Reapack Repository URL </span><br><span class="line">https://bitbucket.org/kawaCat/kawascript2/raw/master/index.xml</span><br></pre></td></tr></table></figure>
 
-<p>将地址添加进入<code>ReaPack</code>仓库列表中后即可搜索到<code>kawa</code>脚本:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704162929036.png" alt="image-20230704162929036"></p>
 </li>
 </ol>
+<p>   和</p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kawa Script 2(C++ version) Reapack Repository URL </span><br><span class="line">   https://bitbucket.org/kawaCat/kawascript2/raw/master/index.xml</span><br></pre></td></tr></table></figure>
+
+
+<p>   将地址添加进入<code>ReaPack</code>仓库列表中后即可搜索到<code>kawa</code>脚本:</p>
+<p>   <img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704162929036.png" alt="image-20230704162929036"></p>
 <p>   官网: <a href="https://www.kawa.works/" target="_blank" rel="noopener">点击进入</a></p>
 <ol start="2">
 <li><p><strong>reapertoolkit</strong></p>
@@ -6977,6 +6984,8 @@ shortcut.add("Shift+x",function() {
     <title>REAPER宿主常用技巧汇总</title>
     <url>/135.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="轨道锁定"><a href="#轨道锁定" class="headerlink" title="轨道锁定"></a>轨道锁定</h2><p>选择需要锁定的轨道或者<code>item</code>, 右键选择<code>item setting--&gt;Lock item</code>, 即可锁定, 解除锁定同理</p>
+<h2 id="Item编组"><a href="#Item编组" class="headerlink" title="Item编组"></a>Item编组</h2><p>当我们拖动其中一个音频块时, 组内其他音频块也会跟随移动, 特别适用节奏对轨完后使用</p>
+<p>使用方法: 选择需要进行编曲的item, 右键选择<code>Group--&gt;Group items</code></p>
 <h2 id="播放范围包裹指定音频块"><a href="#播放范围包裹指定音频块" class="headerlink" title="播放范围包裹指定音频块"></a>播放范围包裹指定音频块</h2><p>在<code>Action List</code>中搜索<code>loop points</code>, 找到<code>Set loop points to items</code>这个动作就是了</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230706165230859.png" alt="image-20230706165230859"></p>
 <p>为了方便使用, 我们可以点击<code>Add</code>按钮为其添加快捷键</p>
@@ -7028,15 +7037,14 @@ shortcut.add("Shift+x",function() {
 <p>视频教程已传B站, 如下:</p>
 <iframe src="//player.bilibili.com/player.html?aid=615681773&bvid=BV1Jh4y1E7bv&cid=1191451672&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660 framespacing=" 0" allowfullscreen="true"> </iframe>
 
-
-
-
-
+<h2 id="MIDI人性化"><a href="#MIDI人性化" class="headerlink" title="MIDI人性化"></a>MIDI人性化</h2><p>在钢琴卷帘窗中选中需要进行人性化的<code>MIDI</code>, 然后按键盘<code>H</code>, 会弹出<code>Humanize Notes</code>窗口</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230712160321056.png" alt="image-20230712160321056"></p>
+<p>可以对音符的尾巴, 长度和力度进行随机化</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
       <tags>
-        <tag>宿主</tag>
+        <tag>REAPER</tag>
       </tags>
   </entry>
   <entry>
@@ -7085,11 +7093,11 @@ shortcut.add("Shift+x",function() {
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
       <tags>
-        <tag>插件</tag>
+        <tag>REAPER</tag>
       </tags>
   </entry>
   <entry>
-    <title>一些开源的VST音频插件和音乐应用以及</title>
+    <title>一些开源的VST音频插件和音乐应用以及开发框架汇总</title>
     <url>/137.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音频插件"><a href="#音频插件" class="headerlink" title="音频插件"></a>音频插件</h2><table>
 <thead>
@@ -8077,6 +8085,280 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>REAPER中实现轨道自动着色</title>
+    <url>/139.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>此功能使您能够自动更改轨道/片段/标记的颜色、添加图标以及根据您可以设置的规则修改MCP 和 TCP 布局！🚀</p>
+<p>例如，您可以设置一条规则，每当您制作名为<code>Guitar</code>的曲目时，它都会自动将其着色为红色并添加吉他图标，如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e8e068503da3_ca51bfa9-2c1f-478e-907e-6594a83b58b5.gif" alt="img"></p>
+<p>超级棒对吧！？🤩</p>
+<p>我也喜欢自动着色区域！我喜欢给我常用的歌曲结构分配不同的颜色，比如“主歌”、“副歌”、“桥段”、等等……</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e85934503da5_25cc5587-619d-4c5d-8c58-3cb9a4bbf92a.gif" alt="img"></p>
+<p>让我引导您了解如何安装以及您可以用它做的所有事情。</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>下载并安装<a href="https://www.sws-extension.org/" target="_blank" rel="noopener">SWS 扩展</a>。</li>
+<li>打开REAPER 并在扩展下拉菜单中选择自动颜色/图标/布局。</li>
+<li>单击“选项” ，然后启用您需要的所有选项。（<em>自动轨道着色、自动轨道图标…</em> ）</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e86398503da4_8715fbd7-3318-4216-8290-fea0d9b9ca70.jpeg" alt="img"></p>
+<h3 id="自动颜色-图标轨道"><a href="#自动颜色-图标轨道" class="headerlink" title="自动颜色/图标轨道"></a>自动颜色/图标轨道</h3><ol>
+<li>单击添加规则。</li>
+<li>双击“（名称）”的位置，然后输入要设置颜色的曲目的名称。</li>
+<li>右键单击旁边显示“无”的位置，单击“设置颜色”，然后为轨道选择一种颜色。</li>
+<li>通过右键单击颜色列中的空白区域来放置图标。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e8291e503da1_15159516-6a6f-442f-94f5-08ef54affdbd.jpeg" alt="img"></p>
+<h3 id="让子级追踪与父级相同的颜色"><a href="#让子级追踪与父级相同的颜色" class="headerlink" title="让子级追踪与父级相同的颜色"></a>让子级追踪与父级相同的颜色</h3><ol>
+<li>单击添加规则。</li>
+<li>右键单击显示“（名称）”的位置。</li>
+<li>选择“（子级）”。</li>
+<li>右键单击颜色列中显示“无”的位置，然后选择“父级”。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e82302503da2_174107b9-77ba-484e-abdc-7664f200b46f.jpeg" alt="img"></p>
+<h3 id="自动为区域着色"><a href="#自动为区域着色" class="headerlink" title="自动为区域着色"></a>自动为区域着色</h3><ol>
+<li>单击添加规则。</li>
+<li>右键单击显示“轨道”的位置。</li>
+<li>选择“地区”。</li>
+<li>双击显示“（名称）”的位置，然后输入要设置颜色的区域的名称。</li>
+<li>右键单击其旁边显示“无”的位置，单击“设置颜色”，然后为该区域选择一种颜色。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e800ca503da0_22814467-2b82-41e0-8273-8e58b5e440f6.jpeg" alt="img"></p>
+<h2 id="记住…"><a href="#记住…" class="headerlink" title="记住…"></a>记住…</h2><p>自动着色列表按优先级排序，您可以在第一列中看到数字。数字越小优先级最高。</p>
+<p>例如，如果您将“吉他”设置为黄色，作为列表中的#1，将“原声吉他”设置为红色，作为列表中的#2，则它将根据优先级较高的颜色为曲目着色。在这种情况下，只需将“原声吉他”拖到列表中，使其优先级高于“吉他”曲目即可。这将导致名为<code>Acoustic Guitar</code>的曲目显示为红色，而名为<code>Guitar</code>的曲目将显示为黄色。</p>
+<h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><iframe src="//player.bilibili.com/player.html?aid=516862897&bvid=BV1dg41187eS&cid=869145398&page=1&autoPlay=false" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660 framespacing=" 0" allowfullscreen="true"> </iframe>
+
+
+
+
+
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-auto-color-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中显示音频的5种方法</title>
+    <url>/140.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>REAPER</code> 的一项独特功能是能够以五种不同的方式显示音频项目！🤯</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db4800469430_Thumbnail_copy.jpeg" alt="img"></p>
+<p>这确保了无论需要处理什么样的音频，<code>REAPER</code>都能为用户提供完美的视觉呈现👌</p>
+<p>我现在将回顾它们中的每一个，演示它们的用途，并提供显示它们的快捷方式。</p>
+<hr>
+<h2 id="1-规律的高峰"><a href="#1-规律的高峰" class="headerlink" title="1. 规律的高峰"></a>1. 规律的高峰</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db9623469478_3c300e5b-7f7b-47ea-a1e6-895dddc94488.jpeg" alt="img"></p>
+<p>这些是我们大多数人都熟悉的默认波形。</p>
+<p>我们可以清楚地直观地了解音频的响度和长度。</p>
+<blockquote>
+<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Show normal (non-spectral/non-spectrogram) peaks</code></p>
+</blockquote>
+<h2 id="2-纠正峰值"><a href="#2-纠正峰值" class="headerlink" title="2. 纠正峰值"></a>2. 纠正峰值</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33dbb8bf469477_0fda3477-0a18-4d72-8b79-714ba9168159.jpeg" alt="img"></p>
+<p>就像常规峰值一样，但您只能看到波形的一半。</p>
+<p>这通常用于视频编辑，因为它有助于更好地识别对话和更安静的段落。如果您像大多数视频编辑器工作区一样垂直空间有限，也很有用~</p>
+<blockquote>
+<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Rectify peaks</code></p>
+</blockquote>
+<h2 id="3-光谱峰"><a href="#3-光谱峰" class="headerlink" title="3. 光谱峰"></a>3. 光谱峰</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33dbe16d469474_e17cd77e-1133-49f9-916e-9bcdb67b505c-20230711180846612.jpeg" alt="img"></p>
+<p>此视图允许您将不同的频率可视化为颜色。</p>
+<p>这非常适合检测人声中的嘶嘶声、录音中的噪音、转录音符等！</p>
+<blockquote>
+<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectral peaks</code></p>
+</blockquote>
+<p>⚙️您还可以搜索并使用以下操作调整设置：<code>View: Show peaks display settings</code></p>
+<h2 id="4-频谱图"><a href="#4-频谱图" class="headerlink" title="4. 频谱图"></a>4. 频谱图</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db7b5d46947a_a3fbeb65-38d7-49b0-9a69-57254caacd27.jpeg" alt="img"></p>
+<p>这是频率强度的视觉表示。</p>
+<p>我们可以比较 200 Hz 和 10 kHz 等不同频率下的能量水平，并了解这些水平如何随时间变化。</p>
+<blockquote>
+<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectrogram</code></p>
+</blockquote>
+<p>⚙️您还可以搜索并使用以下操作调整设置：<code>View: Show peaks display settings</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db2948469476_547625b4-82af-49ac-8f8f-093b9f07a808.png" alt="img"></p>
+<h2 id="5-频谱图和峰值"><a href="#5-频谱图和峰值" class="headerlink" title="5. 频谱图和峰值"></a>5. 频谱图和峰值</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db3c88469475_7ef00b85-bfe1-4635-a809-66a7b0f3cccc-20230711180257977.jpeg" alt="img"></p>
+<p>这将显示一半频谱图和一半峰值。</p>
+<p>我经常使用它，因为它提供了两全其美的优点！您可以查看常规响度峰值以及其上方的频率信息，从而更容易识别声音。</p>
+<blockquote>
+<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectrogram and peaks</code></p>
+</blockquote>
+<h2 id="福利：光谱编辑"><a href="#福利：光谱编辑" class="headerlink" title="福利：光谱编辑"></a>福利：光谱编辑</h2><p>使用任何频谱图视图时，您可以搜索并使用<code>Spectrogram: Add spectral edit to item</code>操作来调整音频<code>Izotope RX</code> 风格！非常好。我通常用它来消除噪音和异响。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db3463469479_64497c16-1e44-4a7f-aae5-223dbe3742b9.jpeg" alt="img"></p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>如果您为它们设置快捷方式，您可以在它们之间快速切换，并以最适合每个任务的方式查看音频。或者您可以将它们放置在顶部工具栏之一。</p>
+<p>享受💙</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/5-ways-to-display-audio-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中将声音分层到一个轨道中</title>
+    <url>/141.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是一个疯狂的 REAPER 功能。您可以将一堆项目放入一个轨道中并像这样自由移动它们：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea916639afd004a5_5771cf1d-328b-4136-b95d-08a1bc06f808.gif" alt="img"></p>
+<p>这被称为<code>free item positioning</code>，自从我知道这一点以来，我就以这种方式进行了很多分层/堆叠。</p>
+<h2 id="如何实现？"><a href="#如何实现？" class="headerlink" title="如何实现？"></a>如何实现？</h2><p>要启用<code>free item positioning</code>，只需右键单击轨道并选中<code>free item positioning</code>选项即可。</p>
+<p>现在您应该能够自由移动该轨道中的项目，甚至可以将多个项目堆叠在一起。</p>
+<p>如果它变得混乱，您可以在<code>Action list</code>中搜索<code>Item: Auto-reposition items in free item positioning mode</code>进行<code>item</code>规整化, 如果您发现经常使用这个功能，我建议为其设置一个快捷键👍</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91662c08d004a6_983d21e8-2a16-4ad9-93bd-ba3029b14b5c.gif" alt="img"></p>
+<h2 id="为什么要使用这个功能？"><a href="#为什么要使用这个功能？" class="headerlink" title="为什么要使用这个功能？"></a>为什么要使用这个功能？</h2><h3 id="🔊-堆叠音效"><a href="#🔊-堆叠音效" class="headerlink" title="🔊 堆叠音效"></a>🔊 堆叠音效</h3><p>每当我想将多个声音效果分层在一起时，我主要使用它。因此，我可以将它们全部放在一个轨道中，并在那里进行所有处理，而不是使用一堆轨道。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91666f20d004a3_90b31b01-5fa9-445e-adee-7f9b96a08296.jpeg" alt="img"></p>
+<h3 id="🔴-堆叠录音"><a href="#🔴-堆叠录音" class="headerlink" title="🔴 堆叠录音"></a>🔴 堆叠录音</h3><p>如果您在<code>free item positioning</code>功能打开时在轨道上录制，则您所做的每个录制通道都会堆叠在前一个通道的顶部，如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91660bcad004a2_2ea65ee8-826d-498f-9186-0f82efd35c05.jpeg" alt="img"></p>
+<p>这三层将同时播放。</p>
+<p>如果您想在录制时听到前面的音频，可以右键单击监视器图标并选择 <code>Monitor track media when recording</code>。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91664f2ed004a4_54f3d13a-1763-4191-bf6a-c63dcf4d9394.jpeg" alt="img"></p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>请随意尝试并找到创造性的使用方法！</p>
+<p>例如，您可以使用它来增强军鼓或底鼓，或者将多种音效叠加在一起以创建独特的效果。</p>
+<p>您还可以使用它来录制曲目的多个通道并将它们堆叠在一起，以便您在录制时轻松听到前几层</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/layer-sounds-in-one-track-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中轻松浏览大型工程</title>
+    <url>/142.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>很多人不知道这一点，但是您可以在 REAPER 中打开导航器窗口来探索您的项目，如下所示 🔻</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a2c8195bed100a0fe81_335cfc39-9f84-4804-a480-0b26608abf1c-20230712145830436.gif" alt="img"></p>
+<h2 id="如何？"><a href="#如何？" class="headerlink" title="如何？"></a>如何？</h2><p>您可以在<code>View  → Navigator</code>中找到它。</p>
+<p>您还可以在<code>Action Llist</code>中找到它并为其设置快捷方式。它被称为<code>View: Show navigator window</code>，我将其设置为ctrl/cmd + shift + v 。</p>
+<p>如果您想固定它的位置，只需右键单击并选择<code>Dock navigator window in docker</code>，这样您就可以将其放置在屏幕中的任何位置。</p>
+<p>我见过很多人把它放在顶部当做标尺，这非常好！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a2c8195bedb95a0fe80_54462a39-45e3-4b50-9ac3-b159629284ce.jpeg" alt="img"></p>
+<h2 id="快捷键："><a href="#快捷键：" class="headerlink" title="快捷键："></a>快捷键：</h2><blockquote>
+<p>🖱️ctrl/cmd +单击导航器中的任意位置可将播放头移动到该位置。方便快速浏览大型工程！</p>
+</blockquote>
+<blockquote>
+<p>🔎右键单击并拖动以选取框缩放项目的区域。</p>
+</blockquote>
+<blockquote>
+<p>👉右键单击+ ctrl/cmd +水平拖动缩放，同时锁定高度。</p>
+</blockquote>
+<blockquote>
+<p>👆右键单击+ alt/opt +垂直拖动缩放，同时锁定宽度。</p>
+</blockquote>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>我希望这个东西可以帮助您轻松浏览您的大项目！💙</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/easy-way-to-navigate-big-projects" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何实现在同一台机器上安装多个REAPER</title>
+    <url>/143.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>REAPER 允许您使用便携式安装来安装任意数量的 REAPER！🤯</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4ebeab3968fc_Thumbnail.jpeg" alt="img"></p>
+<p>这意味着您可以拥有多个具有不同配置的 <code>REAPERS</code> 以用于不同的目的。它可以是一个用于配音的，另一个用于编曲的，一个用于视频编辑的，还有一个主用的。</p>
+<p>我喜欢让每一个都有自己的快捷键、主题、屏幕设置以及任何对相应工作流程有意义的偏好设置。</p>
+<p>不仅如此，它还可以用于在闪存驱动器上安装 REAPER，并随时随地携带您的整个设置！</p>
+<h2 id="什么是-REAPER-便携式安装？"><a href="#什么是-REAPER-便携式安装？" class="headerlink" title="什么是 REAPER 便携式安装？"></a>什么是 REAPER 便携式安装？</h2><p>使用“便携式安装”选项安装 REAPER 会创建一个包含程序、配置、主题、热键设置等的独立目录。</p>
+<p>这有几个优点💪</p>
+<ul>
+<li>您可以将 <code>REAPER</code> 放在闪存驱动器上并随身携带以在其他计算机上使用。这意味着您可以随身携带整个 <code>REAPER</code> 设置。</li>
+<li>您可以拥有不同的 <code>REAPER</code>，并针对不同的工作流程进行特定设置。</li>
+<li>您可以拥有不同版本或设置的 <code>REAPER</code>，而不会相互妨碍或妨碍您通常的<code>Reaper</code> 安装。使用完其中一个后，只需删除该文件夹即可，不会对其他安装产生任何影响。</li>
+<li>通过复制便携式安装文件夹轻松备份 <code>REAPER</code> 或创建实验副本。</li>
+<li>使用默认设置重现便携式安装中的错误，以帮助开发人员调试。</li>
+</ul>
+<h2 id="如何便携式安装REAPER"><a href="#如何便携式安装REAPER" class="headerlink" title="如何便携式安装REAPER"></a>如何便携式安装REAPER</h2><h3 id="📓在-Windows-上"><a href="#📓在-Windows-上" class="headerlink" title="📓在 Windows 上"></a>📓在 Windows 上</h3><ol>
+<li><p>下载<a href="https://www.reaper.fm/" target="_blank" rel="noopener">REAPER</a>并打开安装程序。</p>
+</li>
+<li><p>启用<code>Protable install</code>并单击浏览</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4e0eb33968fe_0c627bad-ea7e-4294-8153-9d8f3183b421.jpeg" alt="img"></p>
+</li>
+<li><p>选择或创建一个要安装 <code>REAPER</code> 的新文件夹。</p>
+</li>
+<li><p>安装后，打开文件夹并运行<code>REAPER.exe</code> 。这是 <code>REAPER</code> 的便携式版本。</p>
+</li>
+</ol>
+<h3 id="🍎-在-Mac-上"><a href="#🍎-在-Mac-上" class="headerlink" title="🍎 在 Mac 上"></a>🍎 在 Mac 上</h3><ol>
+<li><p>在 Mac 上要安装<code>REAPER</code>的任意位置创建一个新文件夹。按照您想要的方式命名。</p>
+</li>
+<li><p>下载<a href="https://www.reaper.fm/" target="_blank" rel="noopener">REAPER</a>并打开<code>.dmg</code>文件。然后将<code>REAPER.app</code>复制到您在步骤 1 中创建的文件夹中。</p>
+</li>
+<li><p>在 <code>Mac</code>上打开<code>TextEdit</code>应用程序并创建新文档。并将其保存重命名为<code>reaper.ini</code>。确保禁用底部的<code>if no extensionn is provided, use .txt</code> </p>
+</li>
+</ol>
+<p>   <img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4eb3e53968fd_35408bba-d8ba-4e29-a155-bf4aa8f71bfa.jpeg" alt="img"></p>
+<ol start="4">
+<li><p>将您刚刚创建的<code>reaper.ini</code>”文本文件放入您在步骤 1 中创建的便携式文件夹中。您的文件夹应如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4e97963968ff_00a9fc85-7d84-428e-8ce4-531c3a3cd15e.jpeg" alt="img"></p>
+</li>
+<li><p>最后，运行该<code>REAPER</code> 。这将自动创建所有配置文件。</p>
+</li>
+</ol>
+<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>将<code>REAPER.exe/REAPER.app</code>文件保留在单独的文件夹中非常重要。这样，它将保持可移植性并使用该文件夹内的任何配置。</p>
+<p>您可以创建<code>REAPER.exe/REAPER.app</code>的桌面快捷方式，以便更轻松地访问。如果您想将其用于特定目的，我还建议您重命名它。</p>
+<h3 id="安装后"><a href="#安装后" class="headerlink" title="安装后"></a>安装后</h3><ul>
+<li>您需要将许可证密钥添加到便携式安装中。要查找文件<code>reaper-license.rk</code> ，请打开正常的 <code>Reaper</code>安装并选择<code>Options → Show REAPER resource path in explorer/finder...</code>。</li>
+<li>如果你想将配置从一个<code>Reaper</code> 转移到另一个<code>Reaper</code>中, 那么可以：<code>Preferences → General → Export/Import configuration</code></li>
+<li>如果您使用 <a href="https://reapertips.com/post/how-to-install-sws" target="_blank" rel="noopener">SWS 扩展</a>或<a href="https://reapertips.com/post/how-to-install-reapack" target="_blank" rel="noopener">Reapack</a>，则还需要单独安装它。这是唯一没有从上述步骤中导出的内容。点击<code>Options → Show REAPER resource path in explorer/finder...</code>在资源目录中找到<code>UserPlugins</code>文件夹进行拷贝即可。</li>
+</ul>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>现在您已经知道如何通过便携式安装来安装 REAPER，您可以拥有用于不同目的和工作流程的多个版本的 REAPER。您还可以将 REAPER 安装在闪存驱动器中并随身携带以在其他计算机上使用。</p>
+<p>享受便携式安装所提供的乐趣和灵活性！🤩</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-install-multiple-reapers" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费的云端混音和母带诊断工具 Mix Check Studio</title>
+    <url>/145.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><code>RoEx</code>免费推出了一款云端工具：<code>Mix Check Studio</code>，这是一款混音和母带诊断工具。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/3675_1683793047_thumb.png" alt="img"></p>
+<p><code>RoEx</code>是世界上第一个由人工智能驱动的混音平台的创造者，这次他们推出名为Mix Check Studio的免费音频混音和母带诊断工具，旨在分析音频并识别混音和母带处理问题。</p>
+<p><code>Mix Check Studio</code>能够识别典型的混音和母带处理问题，如：</p>
+<ul>
+<li>削波</li>
+<li>相位问题</li>
+<li>单声道兼容性</li>
+<li>立体声场</li>
+<li>响度电平</li>
+<li>评估不同流派的音调特征</li>
+</ul>
+<p><code>Mix Check Studio</code>在分析问题之后，会向用户提供实际的改进建议。</p>
+<p><code>RoEx</code>创始人<code>David Ronan</code>谈到<code>Mix Check Studio</code>时表示：</p>
+<blockquote>
+<p>“我很高兴为处于各个发展阶段的艺术家提供这个强大的免费工具。Mix Check Studio只是我们富有想象力的计划的开始，旨在帮助音乐创作者制作他们的最佳作品。”</p>
+</blockquote>
+<p>43次白金唱片和7次格莱美提名的混音和母带工程师Rich Keller表示：</p>
+<blockquote>
+<p>“Mix Check Studio这样的工具可以引导创作者提高他们的技能，RoEx处于AI音频处理革命的前沿。我能想象，这个平台可以在一个经验丰富的专业人士或卧室创作人受伤发挥多么强大的作用。RoEx将重新定义工作流程，帮助用户找到梦寐以求的声音。”</p>
+</blockquote>
+<p>在线免费使用：<a href="https://mixcheck.studio/" target="_blank" rel="noopener">点击进入</a></p>
+<p><strong>本文转载自</strong>: <a href="https://www.midifan.com/modulenews-detailview-46885.htm" target="_blank" rel="noopener">MIDIFAN</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中如何快速将 MIDI 柱式和弦修改成分解和弦模式</title>
+    <url>/144.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是一个简单的鼠标修改器，您可以在 REAPER 中设置，为您的 MIDI 和弦提供弹奏的感觉🎹</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a20795718dbaae5cead_be0c882f-271b-4c6b-9070-4be4a83ec07c.gif" alt="img"></p>
+<p>如果您正在处理钢琴、吉他或任何其他可以弹奏的乐器，这非常有用。增加了很多真实感，并且可以改变很多氛围。</p>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><ol>
+<li>打开<code>Preferences → Mouse Modifiers → context: MIDI note – left drag</code></li>
+<li>双击您要使用的修饰符（我将其设置为<code>Ctrl</code> ）。</li>
+<li>选择 <code>Stretch notes (arpeggiate/chordize) &gt; Just stretch</code></li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a2079571847f9e5ceaa_02722ad1-8b0b-4160-b02d-b68c3705cf13.jpeg" alt="img"></p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>现在，每次按住所选的修改器时，鼠标光标都会发生变化，让您知道您处于<code>和弦化</code>模式。</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-strum-midi-notes" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
       </tags>
   </entry>
 </search>

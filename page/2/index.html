@@ -273,6 +273,1269 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../135.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../135.html" itemprop="url">REAPER宿主常用技巧汇总</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-06T15:15:53+08:00">
+                2023-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="轨道锁定"><a href="#轨道锁定" class="headerlink" title="轨道锁定"></a>轨道锁定</h2><p>选择需要锁定的轨道或者<code>item</code>, 右键选择<code>item setting--&gt;Lock item</code>, 即可锁定, 解除锁定同理</p>
+<h2 id="Item编组"><a href="#Item编组" class="headerlink" title="Item编组"></a>Item编组</h2><p>当我们拖动其中一个音频块时, 组内其他音频块也会跟随移动, 特别适用节奏对轨完后使用</p>
+<p>使用方法: 选择需要进行编曲的item, 右键选择<code>Group--&gt;Group items</code></p>
+<h2 id="播放范围包裹指定音频块"><a href="#播放范围包裹指定音频块" class="headerlink" title="播放范围包裹指定音频块"></a>播放范围包裹指定音频块</h2><p>在<code>Action List</code>中搜索<code>loop points</code>, 找到<code>Set loop points to items</code>这个动作就是了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230706165230859.png" alt="image-20230706165230859"></p>
+<p>为了方便使用, 我们可以点击<code>Add</code>按钮为其添加快捷键</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230706165539154.png" alt="image-20230706165539154"></p>
+<h2 id="善用鼠标右键"><a href="#善用鼠标右键" class="headerlink" title="善用鼠标右键"></a>善用鼠标右键</h2><p>对准某个按钮 使用鼠标右键 会有不一样的惊喜</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230706170148501.png" alt="image-20230706170148501"></p>
+<p>隐藏功能毫无保留地暴露出来</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230706170244881.png" alt="image-20230706170244881"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230706170309470.png" alt="image-20230706170309470"></p>
+<h2 id="自动检测并剪除空白区域"><a href="#自动检测并剪除空白区域" class="headerlink" title="自动检测并剪除空白区域"></a>自动检测并剪除空白区域</h2><p>首先选中需要进行处理的轨道或者<code>item</code></p>
+<p>然后在<code>Action List</code>中搜索<code>auto trim</code>, 找到<code>Auto trim/split items</code>选项并运行:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707103721841.png" alt="image-20230707103721841"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707104616834.png" alt="image-20230707104616834"></p>
+<h2 id="和弦插入"><a href="#和弦插入" class="headerlink" title="和弦插入"></a>和弦插入</h2><p>在轨道上放一个音源，点开轨道的录制状态，录制键右键–选择输入:MIDI，就可以发出声音</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707110122466.png" alt="image-20230707110122466"></p>
+<p>特别适合用来给歌曲配和弦</p>
+<p>该功能是一个第三方脚本, 需要在<code>ReaPack</code>中搜索关键字<code>ChordGun</code>进行安装:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707110256528.png" alt="image-20230707110256528"></p>
+<p>安装完后在<code>ActionList</code>中可以找到相关脚本, 运行<code>pandabot_ChordGun.lua</code>即可:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707110355793.png" alt="image-20230707110355793"></p>
+<h2 id="和弦检测工具"><a href="#和弦检测工具" class="headerlink" title="和弦检测工具"></a>和弦检测工具</h2><p>能在钢琴卷帘窗口中动态显示当前的<code>midi</code>音符对应的和弦</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/310a1c7fa99c0a119deda934af81036fca4a60f0_2_690x373.png" alt="Quicker_20220315_022105"></p>
+<p>该功能是一个第三方脚本, 需要在<code>ReaPack</code>中搜索关键字<code>Chordbox</code>进行安装:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707111750025.png" alt="image-20230707111750025"></p>
+<p>安装完后在<code>ActionList</code>中可以找到相关脚本, 运行<code>Lil Chordbox.lua</code>即可开启脚本功能:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707111805852.png" alt="image-20230707111805852"></p>
+<h2 id="用音量推子控制插件参数"><a href="#用音量推子控制插件参数" class="headerlink" title="用音量推子控制插件参数"></a>用音量推子控制插件参数</h2><p>原理是使用信号侧链的方式, 具体操作步骤如下:</p>
+<ol>
+<li><p>创建一个控制轨, 并且在该轨道上添加<code>Reaper</code>自带的噪音生成器<code>tone generator</code>, 主要为了充当可发送的音频信号</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710150929613.png" alt="image-20230710150929613"></p>
+<p>为了防止声音吵, 可以关闭<code>Master</code>输出</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710151211218.png" alt="image-20230710151211218"></p>
+</li>
+<li><p>将控制轨发送至需要被控制的轨道(或者鼠标拖拽控制轨的路由设置图标至需要进行控制的轨道或者插件界面上), 并将音频信号输出至<code>3/4</code>通道</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710150005313.png" alt="image-20230710150005313"></p>
+</li>
+<li><p>选择插件中需要进行控制的参数, 并开启侧链模式</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710150211642.png" alt="image-20230710150211642"></p>
+</li>
+<li><p>将侧链信号源通道设置为<code>3/4</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710150326997.png" alt="image-20230710150326997"></p>
+</li>
+<li><p>此时滑动音量推子, 会发现效果参数跟随变化, 配置完毕</p>
+</li>
+<li><p>我们可以利用推子记录参数的自动化</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710151036981.png" alt="image-20230710151036981"></p>
+</li>
+</ol>
+<p>视频教程已传B站, 如下:</p>
+<iframe src="//player.bilibili.com/player.html?aid=615681773&bvid=BV1Jh4y1E7bv&cid=1191451672&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660 framespacing=" 0" allowfullscreen="true"> </iframe>
+
+<h2 id="MIDI人性化"><a href="#MIDI人性化" class="headerlink" title="MIDI人性化"></a>MIDI人性化</h2><p>在钢琴卷帘窗中选中需要进行人性化的<code>MIDI</code>, 然后按键盘<code>H</code>, 会弹出<code>Humanize Notes</code>窗口</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230712160321056.png" alt="image-20230712160321056"></p>
+<p>可以对音符的尾巴, 长度和力度进行随机化</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../134.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../134.html" itemprop="url">混音中如何控制声音的远近</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-06T10:15:53+08:00">
+                2023-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h2><p>在混音中，可以通过以下几种方式来控制声音的远近感：</p>
+<ol>
+<li><strong>音量平衡</strong></li>
+<li><strong>混响效果</strong></li>
+<li><strong>平移/定位</strong></li>
+<li><strong>EQ 调整</strong></li>
+<li><strong>动态处理</strong></li>
+</ol>
+<h2 id="音量平衡"><a href="#音量平衡" class="headerlink" title="音量平衡"></a>音量平衡</h2><p>调整各个音轨的相对音量，使前景音（即主要音源或焦点音频）更响亮，背景音则较为柔和。增加前景音的音量可以使其更突出, 更靠近, 反之则更远</p>
+<h2 id="混响效果"><a href="#混响效果" class="headerlink" title="混响效果"></a>混响效果</h2><p>在混响效果器中，以下参数会对声音的远近产生影响：</p>
+<ol>
+<li><strong>Decay Time（衰减时间）</strong>：衰减时间指的是声音从初始发声到完全消失所需要的时间。较长的衰减时间会使声音听起来更加持久，同时也增加了声音传播的距离感。</li>
+<li><strong>Pre-Delay（预延迟）</strong>：预延迟是指信号开始被混响处理之前的短暂时间间隔。较长的预延迟可以模拟出远离声源的效果，让声音听起来更远。</li>
+<li><strong>Early Reflections（早期反射）</strong>：早期反射是指声源发出的声音在到达主混响体之前发生的一系列反射。调整早期反射参数可以改变声音的空间感和远近感。</li>
+<li><strong>Diffusion（扩散）</strong>：扩散控制着混响声音在空间中的分散程度。较高的扩散值会使声音更均匀地散布在空间中，产生更强烈的远离感。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/predelay_reverb_component.png" alt></p>
+<h2 id="平移-定位"><a href="#平移-定位" class="headerlink" title="平移/定位"></a>平移/定位</h2><p>通过将音源从左到右或前后分布，可以创造出立体声效果，并在听觉上表现远近感。将前景音轨稍微推向前方，背景音轨放置在稍远的位置，以模拟远离听者或围绕听者的感觉。</p>
+<h2 id="EQ-调整"><a href="#EQ-调整" class="headerlink" title="EQ 调整"></a>EQ 调整</h2><p>通过使用均衡器（EQ）来调整音频频谱中不同频段的能量分布，可以改变声音的特点和远近效果。例如，根据需要增加高频内容，可以让声音听起来更清晰和接近；降低低频内容，则可以模拟出遥远的效果。</p>
+<h2 id="动态处理"><a href="#动态处理" class="headerlink" title="动态处理"></a>动态处理</h2><p>使用压缩、限制器等动态效果器来控制音频的动态范围，使声音更加均衡和稳定, 能让声音听起来更加靠前</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../132.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../132.html" itemprop="url">REAPER快速上手之如何对工程文件进行分类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-05T10:15:53+08:00">
+                2023-07-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="痛点"><a href="#痛点" class="headerlink" title="痛点"></a>痛点</h2><p>在<code>Reaper</code>的使用过程中, 我们会发现工程目录中所有的文件全都挤在了同一个目录, 如下:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705161845058.png" alt="image-20230705161845058"></p>
+<p>这看起来非常的难受, 有没有办法能使其像<code>Cubase</code>一样, 音频文件统一放到<code>audio</code>目录下呢?</p>
+<p>答案是肯定的</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="音频文件归类"><a href="#音频文件归类" class="headerlink" title="音频文件归类"></a>音频文件归类</h3><p>我们只需进入到<code>File--&gt;Project settings</code>界面中, 在<code>media</code>选项卡中, 填入指定的文件夹名称即可:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162059603.png" alt="image-20230705162059603"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162157120.png" alt="image-20230705162157120"></p>
+<p>这里我填入的是<code>./audio</code>, 意思就是将媒体文件存放到工程文件同级目录下的<code>audio</code>文件夹中</p>
+<p>配置完后, 当我们进行工程备份时, 则会自动创建<code>audio</code>目录:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162542351.png" alt="image-20230705162542351"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705162604197.png" alt="image-20230705162604197"></p>
+<h3 id="缓存文件归类"><a href="#缓存文件归类" class="headerlink" title="缓存文件归类"></a>缓存文件归类</h3><p><code>Reaper</code>为了加快音频波形的加载速度, 会在工程目录下自动生成<code>.reapeaks</code>文件, 我们可以将缓存文件统一放到一个目录下, 设置如下:</p>
+<p>打开<code>Options--&gt;Preferences</code>偏好设置窗口, 在<code>General--&gt;Paths</code>选项卡页面中, 勾选<code>store all peak caches</code>然后选择缓存文件需要存放的路径位置</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230712140616775.png" alt="image-20230712140616775"></p>
+<blockquote>
+<p>👌顺便说一句，您可以时不时地删除所有 reapeak 以节省空间，当您重新打开会话时，REAPER 将自动生成。</p>
+</blockquote>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../133.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../133.html" itemprop="url">REAPER快速上手之如何导出和导入宿主配置文件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-05T10:15:53+08:00">
+                2023-07-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="导出配置"><a href="#导出配置" class="headerlink" title="导出配置"></a>导出配置</h2><p>这里以<code>MacOS</code>平台为例</p>
+<p>要导出<code>Reaper</code>工程的配置，您可以使用以下步骤：</p>
+<ol>
+<li><p>打开<code>Reaper</code>点击顶部菜单栏中的<code>REAPER</code>。</p>
+</li>
+<li><p>在下拉菜单中选择<code>Preference</code>（偏好设置）。</p>
+</li>
+<li><p>在弹出的窗口中，点击<code>General</code>（常规）选项卡。</p>
+</li>
+<li><p>在<code>General</code>选项卡下方，您会看到一个<code>Export configuration</code>（导出配置）按钮。点击它。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705164436357.png" alt="image-20230705164436357"></p>
+</li>
+<li><p>弹出一个保存对话框，您可以选择需要保存的配置类型, 其中包括轨道设置、效果、插件、节拍器设置等内容. </p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705164546648.png" alt="image-20230705164546648"></p>
+</li>
+<li><p>选择完毕后，并点击<code>Save</code>（保存）按钮。您的工程配置将被保存到指定的文件中</p>
+</li>
+</ol>
+<p>现在，您已经成功导出了Reaper工程的配置。</p>
+<h2 id="导入配置"><a href="#导入配置" class="headerlink" title="导入配置"></a>导入配置</h2><p>如果您想要导入已保存的配置文件, 同样的进入<code>Preference-&gt;General</code>中选择<code>import configuration</code>即可:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230705165005783.png" alt="image-20230705165005783"></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../131.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../131.html" itemprop="url">REAPER宿主功能增强秘技之脚本和插件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-04T10:15:53+08:00">
+                2023-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果我们想增强<code>REAPER</code>功能, 可以使用脚本或者插件来实现, 它们的存在,使得 <code>REAPER</code>有了无限可能</p>
+<h3 id="两者区别"><a href="#两者区别" class="headerlink" title="两者区别"></a>两者区别</h3><p>在<code>REAPER</code>中，插件（<code>Plugin</code>）和脚本（<code>Script</code>）是两种不同类型的扩展。</p>
+<ol>
+<li>插件（<code>Plugin</code>）：<ul>
+<li>插件是使用<code>C++</code>、<code>EEL2</code>或<code>JS_ReascriptAPI</code>等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与<code>REAPER</code>的内部功能进行更深层次的集成和交互。</li>
+<li>插件可以实现一些复杂的音频处理、效果器、虚拟乐器等功能，并以独立的窗口、界面或菜单选项形式提供给用户。</li>
+<li>用户可以通过<code>REAPER</code>的插件管理器安装、加载和管理插件，同时还可以对插件进行配置和参数调整。</li>
+</ul>
+</li>
+<li>脚本（<code>Script</code>）：<ul>
+<li>脚本是使用<code>Lua</code>、<code>EEL2</code>或<code>JS_ReascriptAPI</code>等脚本语言编写的文本文件。它们相对简单，主要用于自动化任务、快捷操作、自定义功能等方面。</li>
+<li>脚本通过<code>REAPER</code>的脚本编辑器打开，可以直接在编辑器中进行修改、调试和执行。</li>
+<li>脚本可以访问<code>REAPER</code>的<code>API</code>功能，并通过特定的命令、函数和方法来实现特定任务，比如批量处理音频文件、创建自定义动作、生成报告等。</li>
+</ul>
+</li>
+</ol>
+<p>简而言之，插件通常为更复杂的功能提供支持，并以二进制形式提供。而脚本则更注重自动化和定制化，以文本脚本的形式编写。插件通常需要通过安装程序或插件管理器安装，并可以以独立的方式运行，而脚本直接在<code>REAPER</code>中运行和编辑</p>
+<h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><p>以<code>lua</code>脚本为例, 我们可以直接将脚本源文件拷贝至<code>REAPER</code>程序目录下的<code>lua</code>文件夹中:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163714821.png" alt="image-20230704163714821"></p>
+<p>然后重启<code>REAPER</code>, 紧接着在<code>Actions List</code>中即可搜索并运行该脚本:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163800998.png" alt="image-20230704163800998"></p>
+<p>是不是非常酷😎</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p><code>SWS Extensions</code>和<code>ReaPack Extensions</code>基本是人手必备的两大插件</p>
+<h3 id="SWS-Extensions"><a href="#SWS-Extensions" class="headerlink" title="SWS Extensions"></a>SWS Extensions</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><code>SWS</code> 是 <code>REAPER</code> 的扩展模块，安装后可以实现轨道、标签、区块自动着色等丰富的功能。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704155445515.png" alt="image-20230704155445515"></p>
+<p>官网: <a href="https://www.sws-extension.org/" target="_blank" rel="noopener">点击进入</a></p>
+<h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p><strong>该插件包含的功能有：</strong></p>
+<ul>
+<li><p><strong>节奏工具</strong>：为音频或 MIDI 事件量化而生：从 item 中检测节奏内容并应用到其他 item 里。</p>
+</li>
+<li><p><strong>拍速操作</strong>：可以对 Tempo 进行拓展操作与映射，如果还未满足您的需求，您甚至可以直接用鼠标拖拽量化网格调节 Tempo！</p>
+</li>
+<li><p><strong>Rea 终端</strong>：通过键盘指令快速控制轨道行为。</p>
+</li>
+<li><p><strong>快照工具</strong>：快照窗口允许您保存选中的轨道参数并回调（笔者注：用于混音版本管理以及对比监听）</p>
+</li>
+<li><p><strong>循环动作</strong>：使得特定、进阶操作顺利实现，可以设置条件分歧命令等。</p>
+</li>
+<li><p><strong>响度工具</strong>：依照 EBU R128 Loudness Recommendation（EBU R128 响度建议标准）对音频进行分析和标准化。</p>
+</li>
+<li><p><strong>记事本工具</strong>：记下任何事情。</p>
+</li>
+<li><p><strong>资源工具</strong>：对工程、轨道模板、效果链、媒体文件等项目进行管理。</p>
+</li>
+<li><p><strong>标签操作</strong>：走带进过标签时执行指定的操作称为可能。</p>
+</li>
+<li><p><strong>上下文工具条</strong>：对右键调用的上下文菜单进行增强定制。</p>
+</li>
+<li><p><strong>其他功能</strong>：现场演出配置工具、缩放工具、工程管理器、颜色管理器、自动颜色／图标工具、LFO 生成器…… </p>
+</li>
+</ul>
+<h4 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h4><p>以<code>Mac</code>平台为例:</p>
+<ol>
+<li><p>进入官网下载安装包</p>
+</li>
+<li><p>打开资源文件存放目录</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165036596.png" alt="image-20230704165036596"></p>
+</li>
+<li><p>将插件拷贝至<code>UserPlugins</code>目录下</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165111242.png" alt="image-20230704165111242"></p>
+</li>
+<li><p>重启<code>REAPER</code>, 菜单栏出现<code>Extensions</code>选项, 即可使用相应的<code>sws</code>扩展功能</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165353817.png" alt="image-20230704165353817"></p>
+</li>
+</ol>
+<h3 id="ReaPack"><a href="#ReaPack" class="headerlink" title="ReaPack"></a>ReaPack</h3><p>如果我们想使用别人已经写好的脚本, 或者将自己写的脚本共享给其他用户使用, 则可以用<code>ReaPack</code>来实现</p>
+<h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p><code>ReaPack</code>则是一个插件管理器，它允许用户浏览、下载和安装第三方开发者创建并共享的<code>REAPER</code>脚本、扩展和主题等。<code>ReaPack</code>可以方便地探索和安装来自全球<code>REAPER</code>社区的丰富资源</p>
+<h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4><ol>
+<li><p>进入<code>ReaPack</code>官网, 下载对应的插件包</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704171327789.png" alt="image-20230704171327789"></p>
+<p>官网: <a href="https://reapack.com/" target="_blank" rel="noopener">点击进入</a></p>
+</li>
+<li><p>然后将下载的插件文件拷贝至<code>REAPER</code>资源目录下的<code>UserPlugins</code>文件夹下</p>
+</li>
+<li><p>重启<code>REAPER</code>后即可从<code>Extensions</code>菜单项找到<code>ReaPack</code>入口</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165852852.png" alt="image-20230704165852852"></p>
+</li>
+</ol>
+<p>由于<code>ReaPack</code>仓库默认使用的是<code>Github</code>的源, 国内用户访问相对较慢, 为了方便使用, 我们可以使用第三方镜像源</p>
+<h4 id="ReaPack第三方源（镜像）"><a href="#ReaPack第三方源（镜像）" class="headerlink" title="ReaPack第三方源（镜像）:"></a>ReaPack第三方源（镜像）:</h4><table>
+<thead>
+<tr>
+<th align="left">repo原始地址</th>
+<th align="left">社区论坛地址（镜像）</th>
+<th align="left">简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://github.com/ReaTeam/Extensions/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam Extensions 58</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml 117</a></td>
+<td align="left">ReaTeam的扩展</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ReaTeam/JSFX/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam JSFX 14</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml 25</a></td>
+<td align="left">ReaTeam的JSFX</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ReaTeam/LangPacks/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam LangPacks 6</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml 7</a></td>
+<td align="left">ReaTeam的语言包（无中文）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ReaTeam/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam Scripts 7</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml 12</a></td>
+<td align="left">ReaTeam的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ReaTeam/Themes/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam Themes 3</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml 4</a></td>
+<td align="left">ReaTeam的主题</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/X-Raym/REAPER-ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">X-Raym Scripts 32</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml 75</a></td>
+<td align="left">X-Raym的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/MichaelPilyavskiy/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">MPL Scripts 3</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml 10</a></td>
+<td align="left">MPL的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/RCJacH/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">RCJacH Scripts 7</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml 7</a></td>
+<td align="left">RCJach的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/dsyrock/Reascript/raw/master/index.xml" target="_blank" rel="noopener">noiZ Reascript 30</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml 38</a></td>
+<td align="left">noiZ的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/nikolalkc/LKC-Tools/raw/master/index.xml" target="_blank" rel="noopener">LKC Tools 9</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml 14</a></td>
+<td align="left">LKC的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/acendan/reascripts/raw/master/index.xml" target="_blank" rel="noopener">ACendan Scripts 5</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/acendan/reascripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/acendan/reascripts/index.xml 6</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/zaibuyidao/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">zaibuyidao Scripts 21</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml 32</a></td>
+<td align="left">再补一刀的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/JoepVanlier/JSFX/raw/master/index.xml" target="_blank" rel="noopener">Saike Tools 1</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml 4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/me2beats/reapack/raw/master/index.xml" target="_blank" rel="noopener">me2beats Scripts 9</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/me2beats/reapack/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/me2beats/reapack/index.xml 8</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/zaibuyidao/YS_ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">YS Scripts 12</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml 9</a></td>
+<td align="left">当归蛋的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://reaticulate.com/release.xml" target="_blank" rel="noopener">Reaticulate 5</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml 2</a></td>
+<td align="left">乐器演奏法脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Dafarkias/REAPER-Lua-Scripts-/raw/master/index.xml" target="_blank" rel="noopener">Dfk REAPER Scripts 1</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml 2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Justin-Johnson/ReJJ/raw/master/index.xml" target="_blank" rel="noopener">ReJJ 3</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml 2</a></td>
+<td align="left">reeq</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/TukanStudios/TUKAN_STUDIOS_PLUGINS/raw/main/index2.xml" target="_blank" rel="noopener">Tukan 16</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml 18</a></td>
+<td align="left">一批 jsfx 效果器</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ershov/reaper64/raw/main/index.xml" target="_blank" rel="noopener">ERSH plugins and effects 3</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ershov/reaper64/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ershov/reaper64/index.xml 3</a></td>
+<td align="left">Automatic Gain Control</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/iliaspoulakis/Reaper-Tools/raw/master/index.xml" target="_blank" rel="noopener">FTC Tools 3</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml 2</a></td>
+<td align="left">缩放 grid 等工具</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Ultraschall/ultraschall-lua-api-for-reaper/raw/master/ultraschall_api_index.xml" target="_blank" rel="noopener">Ultraschall-API 1</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">Yannick-ReaScripts 1</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml 2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/pelori/PeloReaper/raw/master/index.xml" target="_blank" rel="noopener">PeloReaper 2</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml 2</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ArchieScript/Archie_ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">Archie-ReaScripts 6</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml 3</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/LoPoFo/LPF_ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">LPF Scripts 1</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml 1</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/REAPER-CN/reapack-patch/raw/main/index.xml" target="_blank" rel="noopener">reapack-patch for REAPERCN 3</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml 1</a></td>
+<td align="left">给少数 ReaPack 上的脚本打补丁</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/wastee/ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">Tee Scripts 4</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml 8</a></td>
+<td align="left">Tee的脚本</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/DaveInDev/Binbinhfr-Scripts/raw/master/index.xml" target="_blank" rel="noopener">BinbinHfr Scripts</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml 4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/audiokinetic/Reaper-Tools/raw/main/index.xml" target="_blank" rel="noopener">Audiokinetic 7</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml 6</a></td>
+<td align="left">wwise工具</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/jeremybernstein/ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">sockmonkey72 Scripts 1</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml 4</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Bird-Bird/ReaScript_Testing/raw/main/index.xml" target="_blank" rel="noopener">BirdBird ReaScript Testing 2</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml 7</a></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/helgoboss/reaper-packages/raw/master/index.xml" target="_blank" rel="noopener">Helgoboss Projects</a></td>
+<td align="left"><a href="https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml 2</a></td>
+<td align="left">ReaLearn</td>
+</tr>
+</tbody></table>
+<p>点击<code>import repositories</code>, 将以下地址拷贝到编辑窗, 并替换原有的仓库地址:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170556660.png" alt="image-20230704170556660"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170301863.png" alt="image-20230704170301863"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/acendan/reascripts/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/me2beats/reapack/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ershov/reaper64/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml</span><br><span class="line">https://reapertoolkit.dev/index.xml</span><br></pre></td></tr></table></figure>
+
+<p>替换完后,点击<code>browse packages</code> 即可查看已添加仓库中所有的脚本</p>
+<p>然后选择想要的脚本进行安装:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170943505.png" alt="image-20230704170943505"></p>
+<p>安装完后就能直接使用了</p>
+<h4 id="其他一些好用的ReaPack脚本"><a href="#其他一些好用的ReaPack脚本" class="headerlink" title="其他一些好用的ReaPack脚本"></a>其他一些好用的ReaPack脚本</h4><ol>
+<li><p><strong>kawa</strong></p>
+<p>以<code>MIDI</code>编辑脚本居多</p>
+<p>提供了<code>lua</code>和<code>c++</code>两种版本, 仓库地址分别如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kawa Script 1(LUA version) Reapack Repository URL </span><br><span class="line">   https://bitbucket.org/kawaCat/reascript-m2bpack/raw/master/index.xml</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<p>   和</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kawa Script 2(C++ version) Reapack Repository URL </span><br><span class="line">   https://bitbucket.org/kawaCat/kawascript2/raw/master/index.xml</span><br></pre></td></tr></table></figure>
+
+
+<p>   将地址添加进入<code>ReaPack</code>仓库列表中后即可搜索到<code>kawa</code>脚本:</p>
+<p>   <img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704162929036.png" alt="image-20230704162929036"></p>
+<p>   官网: <a href="https://www.kawa.works/" target="_blank" rel="noopener">点击进入</a></p>
+<ol start="2">
+<li><p><strong>reapertoolkit</strong></p>
+<p>一个 <code>GUI</code>开发工具包, 有兴趣的可以查看官方文档介绍</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/rtk-demo.gif" alt="img"></p>
+<p>官方文档: <a href="https://reapertoolkit.dev/index.htm" target="_blank" rel="noopener">点击进入</a></p>
+<p>论坛帖子: <a href="https://forums.cockos.com/showthread.php?p=2492184" target="_blank" rel="noopener">点击进入</a></p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../130.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../130.html" itemprop="url">写歌词没灵感? 别怕 AI来帮助你</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-04-11T10:15:53+08:00">
+                2023-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="AI写歌词"><a href="#AI写歌词" class="headerlink" title="AI写歌词"></a>AI写歌词</h3><p>如图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230412093658587.png" alt="image-20230412093658587"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230412093720087.png" alt="image-20230412093720087"></p>
+<p>是不是很给力呢  这样一来 </p>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>未来<code>AI</code>创作音乐会越来越成熟, 不过不用担心, 毕竟我们玩音乐享受的是创作的过程, 机器虽好, 但不能代替我们享乐~</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../129.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../129.html" itemprop="url">Reason Rack Plugin实现Reason机架插件化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-11T15:15:53+08:00">
+                2022-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/ac8948e8aab84f6dab3247a50340ce52.jpeg" alt="img"></p>
+<p><code>Reason Rack Plugin</code>是<code>Reason 11</code>之后内置的一个<code>VST3</code>插件</p>
+<p>它集成了<code>Reason</code>的核心机架和<code>Rack Extension</code>扩展系统, 从而实现在任意支持<code>VST3</code>的<code>DAW</code> 上调用</p>
+<p>这对于喜欢<code>Reason</code>虚拟机架背面接线的快感的用户而言, 绝对是一件美事😺</p>
+<p>比如下图就是<code>Reason Rack Plugin</code>作为插件，将<code>Reason Rack Extension</code>入侵到<code>Ableton Live</code>里的官方截图：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/82e5a299359946ad94a4c439368fc41e.jpeg" alt="img"></p>
+<h3 id="Reason下载"><a href="#Reason下载" class="headerlink" title="Reason下载"></a>Reason下载</h3><p>软件收费 正版需要499美元, 和谐版请自行搜索</p>
+<p><a href="https://www.reasonstudios.com/" target="_blank" rel="noopener">点击进入官网</a></p>
+<h3 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h3><p>本文图片引用自以下文章</p>
+<p><a href="https://www.sohu.com/a/336808400_154296" target="_blank" rel="noopener">https://www.sohu.com/a/336808400_154296</a></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../128.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -699,1112 +1962,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../125.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../125.html" itemprop="url">Steinberg官方免费的综合音色库 HALion Sonic SE</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-26T10:15:53+08:00">
-                2022-08-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><code>HALion Sonic</code> 是<code>Steinberg</code>公司出品的一款综合音源, 由于<code>Cubase</code>安装附带该款音源  所以我个人平常用的也比较多 </p>
-<p>这款音源里面有很多音色还是很不错的, 比如一些合成音色 效果音色 还有它的<code>GM</code>音色  </p>
-<h3 id="个人需求"><a href="#个人需求" class="headerlink" title="个人需求"></a>个人需求</h3><p>考虑到平常会切换工作平台 时而<code>Windows</code> 时而<code>Mac</code>, 时而<code>Cubase</code> 时而<code>Studio one</code>, 所以我急需一个能跨平台的音源 能让我的工程在任意平台无缝切换</p>
-<p>于是我选择了<code>Kontakt</code>的模式, 将上百G的音色库随身携带, 这确实是个不错的选择 但总感觉还是有些费劲, 一方面音色库体积过大 存在安全隐患 另一方面 <code>Kontakt</code>音色数量太多 管理起来需要花点心思</p>
-<p>总之 我不太想太劳心劳力就对了  </p>
-<p>我想 要不直接用一个大的综合音源 只要能出作品 就OK</p>
-<p>知名度比较高的综合音源有<code>Omnisphere</code>,<code>Nexus</code>, <code>xpand</code>等等, 不过相比之下 <code>HALion Sonic SE</code>性价比更高 更加符合我小而美的需求</p>
-<h3 id="HALion-Sonic-SE优势"><a href="#HALion-Sonic-SE优势" class="headerlink" title="HALion Sonic SE优势"></a>HALion Sonic SE优势</h3><ul>
-<li><strong>官方免费</strong> 用起来没有任何后顾之忧</li>
-<li><strong>跨平台</strong> 支持Mac和Windows以独立应用的形式使用 也可以以<code>VST AU AAX</code>等插件的形式挂载到宿主中使用</li>
-<li><strong>体积小</strong> 只有7百来兆</li>
-</ul>
-<h3 id="音源获取"><a href="#音源获取" class="headerlink" title="音源获取"></a>音源获取</h3><p>既然是官方免费了 那自然得去官网下载了, 插件网址如下:</p>
-<p><a href="https://www.steinberg.net/vst-instruments/halion/se/" target="_blank" rel="noopener">点击进入插件页面</a></p>
-<h5 id="具体操作流程如下"><a href="#具体操作流程如下" class="headerlink" title="具体操作流程如下"></a>具体操作流程如下</h5><ol>
-<li><p>首先在<code>Steinberg</code>官网用邮箱注册一个账号, 这里推荐使用<code>QQ</code>邮箱, <code>163</code>的邮箱注册不了</p>
-</li>
-<li><p>然后在<a href="https://www.steinberg.net/vst-instruments/halion/se/" target="_blank" rel="noopener">HALion Sonic SE插件页面获取</a>插件, 网站会给你的邮箱发送下载地址和软件激活码</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826170746788.png" alt="image-20220826170746788"></p>
-<p>邮箱内容如下:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826170335269.png" alt="image-20220826170335269"></p>
-<p>这里不建议使用邮件中的下载地址进行下载, 有可能出现安装后无法激活的情况, 建议使用<code>Steinberg Download Assistant</code>进行下载</p>
-</li>
-</ol>
-<p>   <a href="https://www.steinberg.net/go/" target="_blank" rel="noopener">点击进入<code>Steinberg Download Assistant</code>下载页面</a></p>
-<p>   <img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826182017591.png" alt="image-20220826182017591"></p>
-<ol start="3">
-<li><p>下载完毕后 选择<code>HALion Sonic SE3</code>进行下载安装</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829114143319.png" alt="image-20220829114143319"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829114243792.png" alt="image-20220829114243792"></p>
-</li>
-<li><p>软件激活</p>
-<p>安装完成后打开主程序登录后提示未激活 :</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829112702675.png" alt="image-20220829112702675"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829113008600.png" alt="image-20220829113008600"></p>
-<p>此时我们需要在<code>Steinberg Download Assistant</code>中输入邮箱中的激活码:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829112951975.png" alt="image-20220829112951975"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829113059729.png" alt="image-20220829113059729"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220829113204790.png" alt="image-20220829113204790"></p>
-</li>
-<li><p>重启<code>HALion Sonic SE 3</code></p>
-<p>激活后需要重启软件许可证才能生效</p>
-</li>
-</ol>
-<h3 id="Steinberg其他免费插件"><a href="#Steinberg其他免费插件" class="headerlink" title="Steinberg其他免费插件"></a>Steinberg其他免费插件</h3><p>除了<code>HALion Sonic SE</code>, Steinberg官方还提供了一些其他的免费音源 比如吉他Harmaonics, LoFi钢琴等等, 有兴趣的可以去下载使用</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826171016987.png" alt="image-20220826171016987"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826171034426.png" alt="image-20220826171034426"></p>
-<h3 id="编曲时音源的选择"><a href="#编曲时音源的选择" class="headerlink" title="编曲时音源的选择"></a>编曲时音源的选择</h3><p>一般来说 一款综合音源已经足够满足正常流行四大件编曲的需求了, 不要嫌弃音色的塑料味太重  每一种音色都有它的用武之地  用得好了那它就是好音色</p>
-<p>对于同一种乐器而言, 好的声音品质能给作品加分 这是肯定的, 但也只是锦上添花  我们不用太过于追求音色的品质  至少前期是这样的  </p>
-<p>因为音源是下载不完的  把心思集中到音乐创作本身才是最为重要</p>
-<p>当你确实无法忍受声音的品质 甚至影响到了作品本身 成了你进步的阻碍 那就果断升级音源  这没什么大不了的</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../124.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../124.html" itemprop="url">Kontakt快速入库工具 Mac版</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-23T10:15:53+08:00">
-                2022-08-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>手动一个一个添加<code>Kontakt</code>音色库太慢?  别怕 <code>Kontakt</code>快速入库小工具帮你搞定</p>
-<h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><p>工具包含一键添加和一键移除音色库, 我们使用<code>Add Library.command</code>脚本来批量添加音色</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826111324904.png" alt="image-20220826111324904"></p>
-<p>双击后弹出音色目录选择窗口:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826111836532.png" alt="image-20220826111836532"></p>
-<p>选择后需要在指令窗口输入<code>mac</code>登录密码:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826111954681.png" alt="image-20220826111954681"></p>
-<p>最后出现<code>Have fun</code>字样表示添加完毕:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826100930008.png" alt="image-20220826100930008"></p>
-<p>此时 重启<code>Kontakt</code>, 则所有的音色都添加进来了:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826112147482.png" alt="image-20220826112147482"></p>
-<h3 id="非标准音色库"><a href="#非标准音色库" class="headerlink" title="非标准音色库"></a>非标准音色库</h3><p>音色库中需要有<code>nicnt</code>文件才能入库到<code>Kontakt</code>, 如果没有的话需要手动添加一个, 只需从其他地方拷贝一份进行修改就行, 修改以下三个地方即可:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826112634078.png" alt="image-20220826112634078"></p>
-<p><strong><code>SNPID</code>属性 填写四位任意的十六进制值</strong> </p>
-<p>保存修改后 重新添加即可</p>
-<h3 id="音色库图片添加"><a href="#音色库图片添加" class="headerlink" title="音色库图片添加"></a>音色库图片添加</h3><p>这个简单 我们只需要制作一张<code>200x90</code>的图片 然后取名为<code>Wallpaper.png</code>, 放到音色根目录下即可:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826113335681.png" alt="image-20220826113335681"></p>
-<p>当然这个图片尺寸不一定非得<code>200x90</code>, 其他比例也可 反正都能识别</p>
-<h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><p>里面包含了入库工具和<code>nicnt</code>模板文件</p>
-<p><a href="https://url97.ctfile.com/d/21042697-50863430-5202ad?p=312306" target="_blank" rel="noopener">点击下载</a>  (访问密码: 312306)</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../123.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../123.html" itemprop="url">编曲中和弦的编配</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-22T10:15:53+08:00">
-                2022-08-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面给大家介绍过如何给旋律编配和弦, 详情参见《<a href="https://audio.newban.cn/93.html">给旋律配和弦的几种方式</a>》</p>
-<p>也就是先有旋律 后有和弦</p>
-<p>那如果没有旋律呢 比如我们需要写一段配乐  烘托某个场景的氛围  这种情况 我们通常会采用和弦先行的做法, 也就是先编配一串符合情绪的和弦</p>
-<p>我们知道 不同的和弦连接 营造的情绪氛围是不一样的, 前面的文章也有提到过这一块 详见《<a href="https://audio.newban.cn/81.html">和弦走向影响歌曲的感情色彩 节奏决定了歌曲的律动</a>》</p>
-<p>我们在编曲的时候 假如我们第一件事要做的是和弦连接的选择, 那就需要我们用耳朵去听 用心去感受  体会其中蕴含的情绪</p>
-<p>那么具体该如何操作呢, 在这里 给大家介绍下我自己的工作流程, 仅供参考:</p>
-<h3 id="低音试探"><a href="#低音试探" class="headerlink" title="低音试探"></a>低音试探</h3><p>我首先会先用低音旋律来试探情绪走向, 从大体听感上来讲, 和弦进行其实相当于是一段旋律  那么 我们可以将低音旋律理解为简化版的和弦进行</p>
-<p>借此 我们可以大体勾勒出和弦的走向 这部分线条我很有可能直接就给贝斯演奏了</p>
-<h3 id="构建和弦"><a href="#构建和弦" class="headerlink" title="构建和弦"></a>构建和弦</h3><p>有了低音后 我们以此为根音 构建和弦</p>
-<p>和弦大体分为六种, <strong>大小增减属中</strong>, 具体参见《<a href="https://audio.newban.cn/80.html">和弦的解析</a>》</p>
-<p>这一步需要我们进行不同种类的尝试   我们只需要使其听感还原或者接近低音旋律的效果即可</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上这种方法算不上有多效率, 只能算是众多方法中的笨方法, 此法可以巩固我们对于和弦的理解和掌握, 另外还可以摆脱常用和弦套路的影响, 让声音回归到耳朵上, 这也算是它的优点了</p>
-<p>我平常闲来无事时 就会用这种方法来写写自己的当下的情绪  然后 觉得还不错~</p>
-<p>关于和弦编配 实际上自由度很大, 你想让歌曲按照怎样的情绪走 那就怎样编配 规矩是一方面 突破规矩也许能迎来新的世界</p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>我们在写歌的时候 可能会借助乐器  比如吉他或者钢琴 一边弹和弦一边哼唱</p>
-<p>在这种情况下 和弦的挑选就显得尤为关键了 哼唱的旋律 很大程度是取决于和弦的</p>
-<p>和弦在前 旋律在后 也就是和弦声音先出来 然后哼唱紧随 </p>
-<p>这一特性 我们可以运用到编曲中, 比如和弦演奏加花 使得接下来出现的旋律更加自然和顺畅连贯</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../122.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../122.html" itemprop="url">歌曲 心跳 编曲分析</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-07-03T10:15:53+08:00">
-                2022-07-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>情深所至, 今天分析一下王力宏的《心跳》</p>
-<h3 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33497050&auto=0&height=66"></iframe>
-
-<h3 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h3><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
-<ul>
-<li><strong>鼓组贝斯</strong>: 常规编排 小间奏在重拍演奏后立马停止 使情绪冷却下来</li>
-<li><strong>铺底乐器</strong>: 钢琴音色  柱式和弦演奏 头部每小节弹一次 尾部跟随底鼓强化情绪  </li>
-<li><strong>律动乐器</strong>: 一般在每段落的后两小节或者后四小节 进行编曲氛围强化</li>
-<li><strong>氛围乐器</strong>: 弦乐 副歌部分开始断断续续出现</li>
-<li><strong>主奏乐器</strong>: 包含前奏乐器和间奏乐器 前奏采用钢琴音色  间奏电吉他 </li>
-</ul>
-<h3 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h3><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
-
-
-<pre class="mermaid">graph LR;
-intro(前奏:)
-style intro fill:#f9f,stroke:#333,stroke-width:4px
-
-主奏乐器;
-
-A(主歌:)
-style A fill:#f9f,stroke:#333,stroke-width:4px
-
-a[/铺底+鼓组+配唱\]-->铺底+鼓组+贝斯+配唱;
-
-B(副歌:)
-style B fill:#f9f,stroke:#333,stroke-width:4px
-
-b[/铺底+鼓组+贝斯+氛围+配唱\]-->律动乐器-->律动+鼓组+贝斯;
-
-inter(小间奏:)
-style inter fill:#f9f,stroke:#333,stroke-width:4px
-
-c((铺底+鼓组+贝斯+主奏乐器+间奏乐器));
-
-A2(第二段主歌:)
-style A2 fill:#f9f,stroke:#333,stroke-width:4px
-
-b21((铺底+律动))-->g((铺底+律动+鼓组+贝斯))-->铺底+律动+鼓组+贝斯+间奏乐器;
-
-B2(第二段副歌:)
-style B2 fill:#f9f,stroke:#333,stroke-width:4px
-
-e[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];
-
-inter2(大间奏:)
-style inter2 fill:#f9f,stroke:#333,stroke-width:4px
-铺底+鼓组+贝斯+氛围+间奏乐器-->铺底+鼓组+贝斯+氛围+间奏乐器+律动;
-
-B3(第三段副歌:)
-style B3 fill:#f9f,stroke:#333,stroke-width:4px
-
-e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
-
-
-
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己编曲模仿一下</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../121.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../121.html" itemprop="url">歌曲fly编曲分析</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-07-02T10:15:53+08:00">
-                2022-07-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>《FLY》一首非常不错的藏语流行歌 地铁上耳机回听, 一时兴起, 对该歌的编曲进行简单分析, 供日后编曲参考借鉴</p>
-<h3 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=479422828&auto=0&height=66"></iframe>
-
-<h3 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h3><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
-<p>以下只介绍编排手法:</p>
-<ul>
-<li><strong>鼓组贝斯</strong>: 先是每拍底鼓 然后追加踩镲  紧接着二四拍换成军鼓 两个军鼓前后采用不同音色处理</li>
-<li><strong>铺底乐器</strong>: 柱式和弦每小节弹一次 贯穿全曲</li>
-<li><strong>律动乐器</strong>: 按照一定的节奏对和弦进行有序分解 每小节变换一次和弦</li>
-<li><strong>氛围乐器</strong>: 放置于左右两边扩大声场 副歌开始出现 营造氛围 </li>
-<li><strong>间奏乐器</strong>: 间奏部分充当主奏乐器演奏旋律, 间奏过后声场往后移变成持续律动乐器, 演奏的依然是间奏旋律 </li>
-</ul>
-<h3 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h3><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
-
-
-<pre class="mermaid">graph LR;
-intro(前奏:)
-style intro fill:#f9f,stroke:#333,stroke-width:4px
-
-铺底乐器-->铺底+律动乐器;
-
-A(主歌:)
-style A fill:#f9f,stroke:#333,stroke-width:4px
-
-铺底+律动+底鼓-->铺底+律动+底鼓+踩镲-->a[/铺底+律动+底鼓+军鼓\];
-
-B(副歌:)
-style B fill:#f9f,stroke:#333,stroke-width:4px
-
-b[/铺底+律动+鼓组+贝斯+氛围乐器\]-->律动乐器-->律动+鼓组+贝斯;
-
-inter(间奏:)
-style inter fill:#f9f,stroke:#333,stroke-width:4px
-
-c[/律动+鼓组+贝斯+氛围+间奏乐器\]
-
-B2(第二段副歌:)
-style B2 fill:#f9f,stroke:#333,stroke-width:4px
-
-d[/铺底+律动+鼓组+贝斯+氛围+间奏乐器\]
-
-A2(第三段主歌:)
-style A2 fill:#f9f,stroke:#333,stroke-width:4px
-
-氛围乐器-->氛围+律动乐器+clap-->e{{氛围+律动乐器+鼓组+贝斯}}-->e2((氛围+clap))
-
-B3(第三段副歌:)
-style B3 fill:#f9f,stroke:#333,stroke-width:4px
-
-f[/律动+鼓组+贝斯+氛围+间奏乐器\]
-
-B4(最后重复一遍主歌和副歌:)
-style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
-
-
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己尝试一下</p>
-<h3 id="编曲模仿"><a href="#编曲模仿" class="headerlink" title="编曲模仿"></a>编曲模仿</h3><p>参照上面分析出来的框架, 我顺手编了一个小<code>demo</code>玩玩:</p>
-<p>歌曲属性:</p>
-<ul>
-<li><strong>BPM</strong> :102</li>
-<li><strong>节拍类型</strong>: 4/4</li>
-</ul>
-<p>试听:</p>
-<p><audio class src="https://audio.newban.cn/audio/fly_demo.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>后面一段旋律键盘随手瞎弹的 节奏有些对不太上  不用太在意~</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../120.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../120.html" itemprop="url">录制和音频相关的小视频</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-04-02T10:15:53+08:00">
-                2022-04-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>无论是文字还是语音视频的记录, 初衷都是为了备忘, 毕竟 随着年纪的增长 很多知识容易遗忘</p>
-<p>如果它们有帮助到你</p>
-<p>那我深感荣幸</p>
-<h3 id="视频列表"><a href="#视频列表" class="headerlink" title="视频列表"></a>视频列表</h3><p>《EQ曲线复制神器 Waves Q-clone插件的使用》</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../119.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../119.html" itemprop="url">混响和延迟的最大区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-03-02T10:15:53+08:00">
-                2022-03-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们知道 混响是由无数延迟构成, 利用延迟效果器我们可以做出大概接近混响的效果 但是混响效果器却不能替代延迟效果器</p>
-<h3 id="两者区别"><a href="#两者区别" class="headerlink" title="两者区别"></a>两者区别</h3><p>它们两种效果最大的区别在于, <strong>延迟声的清晰度</strong></p>
-<ul>
-<li><p><strong>延迟</strong>: 声音很清晰 人耳能分辩</p>
-</li>
-<li><p><strong>混响</strong>: 听不清具体的声音 只能听到一团模糊的声音  这种由无数延迟声混合而成的声音构成了空间听感</p>
-</li>
-</ul>
-<h3 id="混响和延迟效果相同原理的参数"><a href="#混响和延迟效果相同原理的参数" class="headerlink" title="混响和延迟效果相同原理的参数"></a>混响和延迟效果相同原理的参数</h3><table>
-<thead>
-<tr>
-<th>混响效果器</th>
-<th>延迟效果器</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>预延迟时间(predelay time)</td>
-<td>延迟时间(delay time)</td>
-</tr>
-<tr>
-<td>混响时间(reverb time)</td>
-<td>延迟交叉反馈量(feedback)</td>
-</tr>
-<tr>
-<td>早期反射声</td>
-<td>延迟声</td>
-</tr>
-<tr>
-<td>晚期反射声</td>
-<td>延迟交叉反馈声</td>
-</tr>
-</tbody></table>
-<p>混响来自于延迟, 所以很多参数意义是一样的</p>
-<p>我们使用延迟效果器可以大致模拟出低密度的混响声音, 但是空间体积感依然不够  达不到真正混响的效果 主要还是因为叠加延迟数量太少 声音太过清晰</p>
-<p>因此 <strong>两者不能互相取代</strong>, 配合使用反而能得到更好的声音效果</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>混响和延迟最大的区别是 清晰度的差异</p>
-<p>一般来说 我们利用混响做空间  延迟做声场和宽度</p>
-<p>混响负责头部 延迟负责尾部 一前一后 黄金搭档</p>
-<p>至于加的量多少合适 目标在于把歌曲的情绪感情做出来 能感动听众最好不过</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="../../"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="page-number current">2</span><a class="page-number" href="../3/">3</a><span class="space">&hellip;</span><a class="page-number" href="../14/">14</a><a class="extend next" rel="next" href="../3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="../../"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="page-number current">2</span><a class="page-number" href="../3/">3</a><span class="space">&hellip;</span><a class="page-number" href="../15/">15</a><a class="extend next" rel="next" href="../3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1850,7 +2012,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">138</span>
+                  <span class="site-state-item-count">145</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

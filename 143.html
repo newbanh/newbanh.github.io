@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="referrer" content="never">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="REAPER,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="REAPER 允许您使用便携式安装来安装任意数量的 REAPER！🤯  这意味着您可以拥有多个具有不同配置的 REAPERS 以用于不同的目的。它可以是一个用于配音的，另一个用于编曲的，一个用于视频编辑的，还有一个主用的。 我喜欢让每一个都有自己的快捷键、主题、屏幕设置以及任何对相应工作流程有意义的偏好设置。 不仅如此，它还可以用于在闪存驱动器上安装 REAPER，并随时随地携带您的整个设置！">
+<meta name="keywords" content="REAPER">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何实现在同一台机器上安装多个REAPER">
+<meta property="og:url" content="https://audio.newban.cn/143.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="REAPER 允许您使用便携式安装来安装任意数量的 REAPER！🤯  这意味着您可以拥有多个具有不同配置的 REAPERS 以用于不同的目的。它可以是一个用于配音的，另一个用于编曲的，一个用于视频编辑的，还有一个主用的。 我喜欢让每一个都有自己的快捷键、主题、屏幕设置以及任何对相应工作流程有意义的偏好设置。 不仅如此，它还可以用于在闪存驱动器上安装 REAPER，并随时随地携带您的整个设置！">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4ebeab3968fc_Thumbnail.jpeg">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4e0eb33968fe_0c627bad-ea7e-4294-8153-9d8f3183b421.jpeg">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4eb3e53968fd_35408bba-d8ba-4e29-a155-bf4aa8f71bfa.jpeg">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4e97963968ff_00a9fc85-7d84-428e-8ce4-531c3a3cd15e.jpeg">
+<meta property="og:updated_time" content="2023-07-12T07:46:31.858Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何实现在同一台机器上安装多个REAPER">
+<meta name="twitter:description" content="REAPER 允许您使用便携式安装来安装任意数量的 REAPER！🤯  这意味着您可以拥有多个具有不同配置的 REAPERS 以用于不同的目的。它可以是一个用于配音的，另一个用于编曲的，一个用于视频编辑的，还有一个主用的。 我喜欢让每一个都有自己的快捷键、主题、屏幕设置以及任何对相应工作流程有意义的偏好设置。 不仅如此，它还可以用于在闪存驱动器上安装 REAPER，并随时随地携带您的整个设置！">
+<meta name="twitter:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4ebeab3968fc_Thumbnail.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/143.html">
+
+
+
+
+
+  <title>如何实现在同一台机器上安装多个REAPER | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="https://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">如何实现在同一台机器上安装多个REAPER</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-11T13:15:53+08:00">
+                2023-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>REAPER 允许您使用便携式安装来安装任意数量的 REAPER！🤯</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4ebeab3968fc_Thumbnail.jpeg" alt="img"></p>
+<p>这意味着您可以拥有多个具有不同配置的 <code>REAPERS</code> 以用于不同的目的。它可以是一个用于配音的，另一个用于编曲的，一个用于视频编辑的，还有一个主用的。</p>
+<p>我喜欢让每一个都有自己的快捷键、主题、屏幕设置以及任何对相应工作流程有意义的偏好设置。</p>
+<p>不仅如此，它还可以用于在闪存驱动器上安装 REAPER，并随时随地携带您的整个设置！</p>
+<h2 id="什么是-REAPER-便携式安装？"><a href="#什么是-REAPER-便携式安装？" class="headerlink" title="什么是 REAPER 便携式安装？"></a>什么是 REAPER 便携式安装？</h2><p>使用“便携式安装”选项安装 REAPER 会创建一个包含程序、配置、主题、热键设置等的独立目录。</p>
+<p>这有几个优点💪</p>
+<ul>
+<li>您可以将 <code>REAPER</code> 放在闪存驱动器上并随身携带以在其他计算机上使用。这意味着您可以随身携带整个 <code>REAPER</code> 设置。</li>
+<li>您可以拥有不同的 <code>REAPER</code>，并针对不同的工作流程进行特定设置。</li>
+<li>您可以拥有不同版本或设置的 <code>REAPER</code>，而不会相互妨碍或妨碍您通常的<code>Reaper</code> 安装。使用完其中一个后，只需删除该文件夹即可，不会对其他安装产生任何影响。</li>
+<li>通过复制便携式安装文件夹轻松备份 <code>REAPER</code> 或创建实验副本。</li>
+<li>使用默认设置重现便携式安装中的错误，以帮助开发人员调试。</li>
+</ul>
+<h2 id="如何便携式安装REAPER"><a href="#如何便携式安装REAPER" class="headerlink" title="如何便携式安装REAPER"></a>如何便携式安装REAPER</h2><h3 id="📓在-Windows-上"><a href="#📓在-Windows-上" class="headerlink" title="📓在 Windows 上"></a>📓在 Windows 上</h3><ol>
+<li><p>下载<a href="https://www.reaper.fm/" target="_blank" rel="noopener">REAPER</a>并打开安装程序。</p>
+</li>
+<li><p>启用<code>Protable install</code>并单击浏览</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4e0eb33968fe_0c627bad-ea7e-4294-8153-9d8f3183b421.jpeg" alt="img"></p>
+</li>
+<li><p>选择或创建一个要安装 <code>REAPER</code> 的新文件夹。</p>
+</li>
+<li><p>安装后，打开文件夹并运行<code>REAPER.exe</code> 。这是 <code>REAPER</code> 的便携式版本。</p>
+</li>
+</ol>
+<h3 id="🍎-在-Mac-上"><a href="#🍎-在-Mac-上" class="headerlink" title="🍎 在 Mac 上"></a>🍎 在 Mac 上</h3><ol>
+<li><p>在 Mac 上要安装<code>REAPER</code>的任意位置创建一个新文件夹。按照您想要的方式命名。</p>
+</li>
+<li><p>下载<a href="https://www.reaper.fm/" target="_blank" rel="noopener">REAPER</a>并打开<code>.dmg</code>文件。然后将<code>REAPER.app</code>复制到您在步骤 1 中创建的文件夹中。</p>
+</li>
+<li><p>在 <code>Mac</code>上打开<code>TextEdit</code>应用程序并创建新文档。并将其保存重命名为<code>reaper.ini</code>。确保禁用底部的<code>if no extensionn is provided, use .txt</code> </p>
+</li>
+</ol>
+<p>   <img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4eb3e53968fd_35408bba-d8ba-4e29-a155-bf4aa8f71bfa.jpeg" alt="img"></p>
+<ol start="4">
+<li><p>将您刚刚创建的<code>reaper.ini</code>”文本文件放入您在步骤 1 中创建的便携式文件夹中。您的文件夹应如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a274a0e4e97963968ff_00a9fc85-7d84-428e-8ce4-531c3a3cd15e.jpeg" alt="img"></p>
+</li>
+<li><p>最后，运行该<code>REAPER</code> 。这将自动创建所有配置文件。</p>
+</li>
+</ol>
+<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>将<code>REAPER.exe/REAPER.app</code>文件保留在单独的文件夹中非常重要。这样，它将保持可移植性并使用该文件夹内的任何配置。</p>
+<p>您可以创建<code>REAPER.exe/REAPER.app</code>的桌面快捷方式，以便更轻松地访问。如果您想将其用于特定目的，我还建议您重命名它。</p>
+<h3 id="安装后"><a href="#安装后" class="headerlink" title="安装后"></a>安装后</h3><ul>
+<li>您需要将许可证密钥添加到便携式安装中。要查找文件<code>reaper-license.rk</code> ，请打开正常的 <code>Reaper</code>安装并选择<code>Options → Show REAPER resource path in explorer/finder...</code>。</li>
+<li>如果你想将配置从一个<code>Reaper</code> 转移到另一个<code>Reaper</code>中, 那么可以：<code>Preferences → General → Export/Import configuration</code></li>
+<li>如果您使用 <a href="https://reapertips.com/post/how-to-install-sws" target="_blank" rel="noopener">SWS 扩展</a>或<a href="https://reapertips.com/post/how-to-install-reapack" target="_blank" rel="noopener">Reapack</a>，则还需要单独安装它。这是唯一没有从上述步骤中导出的内容。点击<code>Options → Show REAPER resource path in explorer/finder...</code>在资源目录中找到<code>UserPlugins</code>文件夹进行拷贝即可。</li>
+</ul>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>现在您已经知道如何通过便携式安装来安装 REAPER，您可以拥有用于不同目的和工作流程的多个版本的 REAPER。您还可以将 REAPER 安装在闪存驱动器中并随身携带以在其他计算机上使用。</p>
+<p>享受便携式安装所提供的乐趣和灵活性！🤩</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-install-multiple-reapers" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/REAPER/" rel="tag"># REAPER</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="142.html" rel="next" title="在REAPER中轻松浏览大型工程">
+                <i class="fa fa-chevron-left"></i> 在REAPER中轻松浏览大型工程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="144.html" rel="prev" title="在REAPER中如何快速将 MIDI 柱式和弦修改成分解和弦模式">
+                在REAPER中如何快速将 MIDI 柱式和弦修改成分解和弦模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="https://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">145</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-REAPER-便携式安装？"><span class="nav-number">1.</span> <span class="nav-text">什么是 REAPER 便携式安装？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何便携式安装REAPER"><span class="nav-number">2.</span> <span class="nav-text">如何便携式安装REAPER</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#📓在-Windows-上"><span class="nav-number">2.1.</span> <span class="nav-text">📓在 Windows 上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#🍎-在-Mac-上"><span class="nav-number">2.2.</span> <span class="nav-text">🍎 在 Mac 上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建议"><span class="nav-number">2.3.</span> <span class="nav-text">建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装后"><span class="nav-number">2.4.</span> <span class="nav-text">安装后</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#就是这样！"><span class="nav-number">3.</span> <span class="nav-text">就是这样！</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+  <script type="text/javascript" async src="js/src/mermaid.min.js"></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
