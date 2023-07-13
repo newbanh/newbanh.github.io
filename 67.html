@@ -95,7 +95,7 @@
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210909112909519.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210909112834741.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg">
-<meta property="og:updated_time" content="2023-07-11T02:28:07.747Z">
+<meta property="og:updated_time" content="2023-07-13T03:46:42.479Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="压缩器各个参数的深入理解">
 <meta name="twitter:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
@@ -427,6 +427,17 @@
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
 <p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
 <p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
+<h3 id="从听感角度分析启动和释放时间对声音的影响"><a href="#从听感角度分析启动和释放时间对声音的影响" class="headerlink" title="从听感角度分析启动和释放时间对声音的影响"></a>从听感角度分析启动和释放时间对声音的影响</h3><p>抛开理论不谈, 单单从听感分析, 我们可能会发现以下结论:</p>
+<p><strong>较短的启动时间:</strong></p>
+<ul>
+<li>声音更加平稳不突兀, 突发音减少了</li>
+</ul>
+<p><strong>较长的释放时间:</strong></p>
+<ul>
+<li>尾音被压制了</li>
+<li>声音听起来更软</li>
+<li>律动更加沉稳</li>
+</ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -560,7 +571,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">145</span>
+                  <span class="site-state-item-count">150</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -613,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩器参数形象理解"><span class="nav-number">2.</span> <span class="nav-text">压缩器参数形象理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩器模型理解"><span class="nav-number">3.</span> <span class="nav-text">压缩器模型理解</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#关于压缩效果量"><span class="nav-number">3.0.1.</span> <span class="nav-text">关于压缩效果量</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#疑问解答"><span class="nav-number">4.</span> <span class="nav-text">疑问解答</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩器参数形象理解"><span class="nav-number">2.</span> <span class="nav-text">压缩器参数形象理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩器模型理解"><span class="nav-number">3.</span> <span class="nav-text">压缩器模型理解</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#关于压缩效果量"><span class="nav-number">3.0.1.</span> <span class="nav-text">关于压缩效果量</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#疑问解答"><span class="nav-number">4.</span> <span class="nav-text">疑问解答</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从听感角度分析启动和释放时间对声音的影响"><span class="nav-number">5.</span> <span class="nav-text">从听感角度分析启动和释放时间对声音的影响</span></a></li></div>
             
 
           </div>

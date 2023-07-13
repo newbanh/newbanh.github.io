@@ -273,6 +273,787 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../57.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../57.html" itemprop="url">Logic Pro X 系列教程 10：MIDI 进阶</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:46:09+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143632.png" alt></p>
+<p><strong>曾经一段时间内，许多人都认同「混音用 Pro Tools，编曲用 Logic」的观点，足以说明 Logic Pro 在 MIDI 编辑领域所占据的地位。Mark Cousins 将细说 MIDI 的进阶编辑技巧。</strong></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143650.png" alt></p>
+<p>音乐制作少不了用 MIDI 来制作虚拟乐器，制作人需要掌握相当细致的 MIDI 数据编辑、编程技巧，以便做出更为合理或逼真的乐器声。</p>
+<p>有些观点认为，在这个虚拟乐器满天飞的年代，人们似乎有些过于依赖 MIDI 了。但今天我们不谈大道理，只说小手法，MIDI 做得好，创意少不了，MIDI 用得溜，好音乐自然跟着走。</p>
+<p>本文并非要对 Logic 的 MIDI 编辑功能来个说明书式的覆盖讲解，而是针对若干有特色的技巧进行讲解，希望能给读者带来新的创意。首先我们会探索检查器和钢琴卷帘界面，即 MIDI 编辑的主战场，然后讲讲「标准化」编辑流程的重要性。</p>
+<p>「智能选择」是 Logic 的一个重要话题，即用尽量少的组合键，选中你要操作的音符，而不是用鼠标一个一个点选。当你的工程里已经有了成百上千个 MIDI 音符后，高效选取音符就自然成为提高制作效率的重要一环。</p>
+<p>另一方面，我们还将学习一些放置在菜单项里的 MIDI 编辑功能，也是能够为你节省大把大把的编辑时间的方法。最后，结合上边的技巧，我们来具体说说怎样编辑复杂的鼓组节拍、管弦乐编辑技巧，以及通过控制器使你的音乐更富有动态感。请尽享阅读！</p>
+<p><em>这篇教程得到了伦敦 Point Blank 音乐学校的认可。Point Blank 是一所专业的音乐制作、音频工程、音乐营销、演唱、广播制作、DJ 技术和电影制作的学校，全部由英国顶尖的音乐制作人和媒体专家授课，更有音乐和媒体界传奇人物的客座访谈。</em></p>
+<h5 id="贴士：音阶量化"><a href="#贴士：音阶量化" class="headerlink" title="贴士：音阶量化"></a>贴士：音阶量化</h5><p>钢琴卷帘编辑器里的要员之一当属音阶量化工具，你可以理解为 MIDI 的音高纠正器。它能将选中的音符按照指定的音阶进行音高量化，比如变成大调，或自然小调等。你可以快速将一段旋律变成东南亚调式或多利亚调式，极快地获得所需的音乐风格。另一种用法更有趣，结合 MIDI Randomizer 插件（在 MIDI 通道条的 MIDI FX 处启用），把随机的 MIDI 音符量化到一个特定的音阶里，也就得到了一段十分独特的音乐素材。</p>
+<h4 id="提高鼓组编辑技巧"><a href="#提高鼓组编辑技巧" class="headerlink" title="提高鼓组编辑技巧"></a>提高鼓组编辑技巧</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143713.png" alt></p>
+<p>我们在这个部分将要探索鼓组编辑技巧，并从踩镲编辑入手。MIDI 编辑始于检查器，我们先来进行一下 16 拍子的量化，并修正一些动态。你可以按 I 打开和关闭检查器，也可以 Option – R 来打开浮动检查器。然后，把「力度变化」设为固定。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143728.png" alt></p>
+<p>或许，在检查器和钢琴卷帘窗之间来回操作有些繁琐，将 MIDI 片段的参数进行正常化之后则能起到一些改善作用。在片段上右键点出菜单，打开 MIDI 子菜单，并选择「正常化片段参数」。那么，量化和动态数值就被永久写入了。更多关于 MIDI 片段参数的信息可以参考 <a href="https://support.apple.com/kb/PH13069?viewlocale=zh_CN&locale=zh_CN" target="_blank" rel="noopener">Apple 的文档</a>。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143743.png" alt></p>
+<p>要提高 MIDI 编辑姿势，智能选取功能是必须掌握的。例如从菜单选择「编辑 &gt; 选定 &gt; 相同子位置」，或按 Shift – P 组合键。那么，如果我们选中了一个小节里所有的踩镲强拍，则「相同子位置」将选择余下小节里，同位置的强拍音符。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143752.png" alt></p>
+<p>当选中音符后，我们可以在钢琴卷帘窗的窗内检查器中，通过力度滑杆来增加或减少力度的相对值。此时，如果要调节其他音符的力度，只需按下 Shift – I 反选，即可选中刚才不在选择状态的音符。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/06/Screen-Shot-2014-06-23-at-10.40.19.png" alt="img"></p>
+<p>当你在多个 MIDI 片段之间操作时，请记得多多利用钢琴卷帘窗的「设定音符颜色」功能。本例中，请先选中所有鼓组的片段，然后打开钢琴卷帘窗。现在，在菜单中选择「显示 &gt; 设定音符颜色 &gt; 按片段颜色」命令，看看效果吧！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143808.png" alt></p>
+<p>再介绍一个 MIDI 鼓组编辑的利器：挪动值。你可以用它，对一个或多个音符进行增量移动，只需按 Option – 左/右方向键即可完成。当然，你需要先设定挪动值（编辑 &gt; 移动 &gt; 将挪动值设定为 &gt; 等份），这样就能把挪动值设定为 1/16 拍的步长了。</p>
+<h4 id="编辑-MIDI-和弦"><a href="#编辑-MIDI-和弦" class="headerlink" title="编辑 MIDI 和弦"></a>编辑 MIDI 和弦</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143819.png" alt></p>
+<p>接下来我们来探索 MIDI 和弦编辑当中的一些趣味技巧。当你录制完一套和弦后，也许会发现若干音符的长度并不那么精确，可能稍短了一点，这时你就需要「强制连音」功能了，从「编辑 &gt; 修剪 &gt; 音符结束到以下音符（强制连音）」或按 Shift – \ 组合键来启用。你可以在一个弦乐的片段上尝试一下，注意音符长度对平滑过渡的作用。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143828.png" alt></p>
+<p>另一个实用的和弦编辑技巧是，将 MIDI 音符分离到不同的乐器上。本例中，我们把单簧管的下边两个音，和长笛的上边两个音进行 double。首先，建立单簧管轨道，把弦乐的 MIDI 片段拷贝过去，然后在菜单中点选「编辑 &gt; 选定 &gt; 最高音符」或按 Shift – 上方向键。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/06/Screen-Shot-2014-06-23-at-10.50.09.png" alt="img"></p>
+<p>选中顶部的音符后，按 Control – M 将它们静音即可。然后，把 MIDI 片段拷贝到长笛轨上，选中静音的音符（Shift – M），按 Control – M 将它们解除静音，再按 Shift – I 反选，把其他音符静音即可。看起来很繁琐？其实不然，只是三套简单的组合键而已。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143844.png" alt></p>
+<p>同样的技巧，还有另一个实现手法，可以选择菜单里的「功能 &gt; 将 MIDI 通道设定到声部编号」，这个命令会将一个和弦分离到一串 MIDI 通道里。此时，你可以选择「显示 &gt; 设定音符颜色 &gt; 按 MIDI 通道」命令，就可以直观地看出不同通道里的音符了。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143856.png" alt></p>
+<p>试试在 Hammond 风琴轨上使用「将 MIDI 通道设定到声部编号」命令。在本例中，音符会被分离到三个不同的手键盘上（Upper、Pedal 和 Lower）。接下来，通过音栓调节三个部分的音色，便可以组合出不同声音风格的和弦声。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143906.png" alt></p>
+<p>如果要把一个和弦里的音符拆分到不同的虚拟乐器轨上，可以在 MIDI 片段上点按右键，选择菜单中的「MIDI &gt; 通过 MIDI 通道分离」。这个 MIDI 片段就会被立即分割成多个片段，和弦里的每个声部都会成为一个新轨道，接下来你只需要给每个轨道设定乐器即可。</p>
+<h4 id="创意部分：玩转控制器信息"><a href="#创意部分：玩转控制器信息" class="headerlink" title="创意部分：玩转控制器信息"></a>创意部分：玩转控制器信息</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143917.png" alt></p>
+<p>「MIDI 画笔」区域位于钢琴卷帘窗的底部，各种 CC 控制器信息都可以在这里进行查看和修改。最常用的可能就是 MIDI 力度信息了。当你「按片段颜色」来查看 MIDI 音符时，这个部分的信息尤其重要。而通过这里，直观地查看音符之间的相对力度差异也是非常方便的。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143927.png" alt></p>
+<p>通过窗内检查器当中的下拉菜单，你可以选择查看不同的 CC 数据，在 127 个控制器当中任意切换。例如，编辑合成器贝司时，我们可以选择「调制」参数，来控制滤波器的 Cutoff 值。你可以用指针工具添加节点，也可以用铅笔工具直接绘制曲线。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143936.png" alt></p>
+<p>「MIDI 画笔」有一个重要特性，可以让你在编曲过程中立即编辑 CC 控制器参数。在轨道区，选择菜单中的「显示 &gt; MIDI 画笔 &gt; 调制」即可，你应该会在片段上看到 CC 控制器参数。记得把视图缩放调「大」一些。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143946.png" alt></p>
+<p>除了以上介绍到的功能之外，在 MIDI 编辑过程中，你应该时刻记得使用「功能」菜单下的命令，尤其是「MIDI 变换」子菜单。无论你需要进行何种变换，Logic Pro X 都会显示一个 MIDI 变换对话框，点按「选定并操作」即可直接完成变换。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514143955.png" alt></p>
+<p>同样以合成器贝司来举例，我们可以运用一些非常有趣的变换方式。比如，「固定音符长度」可以把贝司序列变得更加机械化，然后把音符缩为原来的一半长即可（也很适合快速获得 1/32 音符）。或者试试「随机力度」，让音符之间的力度变得随机分布。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514144004.png" alt></p>
+<p>回到鼓组，我最喜欢的一个 MIDI 变换命令就是「人性化」，它会在力度和节奏上添加一些微小的随机错动，使得鼓组更像真人的演奏。更方便的是，你可以渐进式的应用人性化效果，可以产生一种越来越松弛的演奏效果。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/06/logic-pu-10/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-10.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-10.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../46.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../46.html" itemprop="url">iOS 9开始 为音乐人带来全面的 AU 插件支持</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:43:03+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>从iOS 9开始，Apple 向开发者开放了音频插件的接口。概括而言，开发者可以在 App Store 发布音频插件，如效果器以及虚拟乐器等，用户下载后就可以在各类音频编辑应用（如 GarageBand）中使用这些插件。</p>
+<p>Apple 一直使用 Audio Units 作为 Mac 平台的标准音频插件格式，并在自家的 Logic Pro 以及 GarageBand 中原生支持。现在，Audio Units 来到 iOS 了。开发者可以使用新推出的第 3 版 Audio Units API 来移植已有的 Mac 版插件。</p>
+<p>这就意味着 GarageBand 之类的应用，以及其他 iOS 上的音频编辑器中，用户能够使用第三方音频插件了。调用的界面如下图。开发者可以将 Audio Units 插件作为应用上传到 App Store 进行销售。而 Apple 自家的效果器和虚拟乐器将会以免费的形式提供下载。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514104350.png" alt></p>
+<p><em>向 iOS 9 的宿主应用引入音频插件</em></p>
+<p>在 iOS 全面支持 Audio Units 之前，音乐人只能采取一些「投机取巧」的办法来使用第三方效果器或虚拟乐器，利用应用间音频功能，或在多个应用之间来回跳转，来实现音频的编辑，例如将 GarageBand 的音频转到另一个应用中去编辑，再切换回来。这种方式限制非常多，并且十分不友好。同时，Mac 上如今已经有了大量优秀的 Audio Units 插件，Apple 的这一举动无疑会鼓励开发者将自己的市场扩展到 iOS 平台上，同时也能提升音乐人在 iOS 平台的音乐制作体验。</p>
+<p>Apple 将在自己的 GarageBand for iOS 中率先支持 Audio Units，其他 iOS 版 DAW 应用或许也会在 iOS 9 的时代逐步开始支持第三方插件。iPad 版 GarageBand 的 Audio Units 调用界面如下图。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514104449.png" alt></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514104501.png" alt></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514104415.png" alt></p>
+<p>Mac 版上已有的 Audio Units 插件的代码几乎不用作太多修改，就可以进行 iOS 版的移植。开发者唯一需要注意的，就是对插件的界面进行触摸控制方面的优化。 开发者可以按照 Audio Units 第 3 版接口对插件进行打包，然后上传至 App Store 或 Mac App Store 进行销售。</p>
+<h6 id="本文由-SOUNDMONO-编译自-9TO5MAC"><a href="#本文由-SOUNDMONO-编译自-9TO5MAC" class="headerlink" title="本文由 SOUNDMONO 编译自 9TO5MAC"></a>本文由 SOUNDMONO 编译自 <a href="http://9to5mac.com/2015/06/12/ios-9-audio-units-plug-in-effects-virtual-insturments/" target="_blank" rel="noopener">9TO5MAC</a></h6><p>固定链接: <a href="https://soundmono.com/ios-9-audio-units-plug-in.html" target="_blank" rel="noopener">https://soundmono.com/ios-9-audio-units-plug-in.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../19.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../19.html" itemprop="url">如何让 Logic Pro X 显示时间而不是小节</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:38:34+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Logic Pro X 有两种标尺：节拍标尺，和时间标尺。默认情况下，在新建工程时「使用音乐网格」选项是选中状态，因此主标尺就是节拍标尺，可以看到节拍和小节数编号。</p>
+<p>如果要在工程编辑过程中切换标尺的显示模式，只需通过下面的步骤切换「使用音乐网格」选项即可：</p>
+<ul>
+<li>点按「文件」菜单，并选择「项目设置 -&gt; 通用…」</li>
+<li>在「项目类型」部分，取消「使用音乐网格」前的对勾</li>
+</ul>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103917.png" alt></p>
+<p>这样，轨道区、钢琴卷帘窗和乐谱编辑器等位置的标尺，就全部变成时间标尺了。你可以随时通过上边的选项，再切换回节拍标尺。</p>
+<p>另外，你甚至可以同时查看这两种标尺，以轨道区为例：</p>
+<ul>
+<li>点按轨道区的「显示」菜单，选择「备用标尺」（或按 control-option-command-R 组合键）</li>
+<li>在项目设置中切换「使用音乐网格」选项，可以更改两种标尺的上下显示顺序</li>
+</ul>
+<p>小编自己倾向于总是开启轨道区的备用标尺，以便对音乐的时长有一个更加直观的了解。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103927.png" alt></p>
+<p>固定链接: <a href="https://soundmono.com/how-to-display-time-ruler-in-logic-pro-x.html" target="_blank" rel="noopener">https://soundmono.com/how-to-display-time-ruler-in-logic-pro-x.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../58.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../58.html" itemprop="url">Logic Pro X 系列教程 11：混音能手</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:32:21+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103314.png" alt></p>
+<p><strong>Logic Pro X 有着丰富的混音功能，帮助制作人高效地进行混音。Mark Cousins 将带你进入 Logic Pro X 的混音领域。</strong></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103328.png" alt></p>
+<p>混音是音频制作中最具有创造性的一个步骤，Logic Pro X 强大的混音功能能够极大地改善你的工作流程，并且使得音乐性也得到最大的发挥。然而，在如今的虚拟设备混音时代，这个任务也渐渐变得有些失去了创造性，甚至作为创作流程中的一环，其边界也变得越来越模糊。</p>
+<p>混音也是一种创造，因此我们的工作并不是找到一个插件，改一下某个参数，所有声音就都「好听」起来了。要时刻记得，每一个混音操作的原因是什么，以及你的目的是什么。</p>
+<blockquote>
+<p>混音要制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
+</blockquote>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103353.png" alt></p>
+<p>在本篇教程中，我们会探索一系列改进混音的关键技术。首先，我们要学习如何进行有条不紊的工作，学会组织你的工程。包括总线发送的规范，轨道堆栈（Track Stack）以及分组的合理利用，我们会发现，一个组织结构紧密的混音，听起来就不会随意而杂乱。</p>
+<p>第二个部分主要探讨效果器插件的使用，包括通道条插入和总线发送。这是混音策略得以实现的环节，比如压缩器与 EQ 的顺序问题，如何用延迟效果器精准创造一个立体声声场的问题。我们要用混音制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103423.png" alt></p>
+<p>在最后一个部分我们将拿出混音的「秘密武器」：自动化。如果说静态混音能够做到 80% 的话，那么自动化就像那甜点上的一颗草莓，使每一轨之间都互相拼接成一个有机整体。你需要理解 Logic 的几种自动化模式：Touch、Write 和 Read，这样不仅能边播边记录推子的动作，还可以通过手绘自动化曲线将你的混音精确地控制在 0.1dB 之下。</p>
+<h5 id="贴士：创建多版本混音"><a href="#贴士：创建多版本混音" class="headerlink" title="贴士：创建多版本混音"></a>贴士：创建多版本混音</h5><p>Logic 的文件菜单下有一个「备选」功能，可以用来创建和切换同一个工程的不同混音。以往，你可能需要将工程另存为一个新的文件，而「备选」功能则优雅地解决了这个问题，所有版本的混音都共享相同的工程内容。因此，做一段乐器混音、30 秒的广告配乐，或者 remix，你都无需创建新工程，只需要创建备选并直接修改即可。推而广之，当你需要尝试不同录音 take 时也可以使用备选。</p>
+<p><em>这篇教程得到了伦敦 Point Blank 音乐学校的认可。Point Blank 是一所专业的音乐制作、音频工程、音乐营销、演唱、广播制作、DJ 技术和电影制作的学校，全部由英国顶尖的音乐制作人和媒体专家授课，更有音乐和媒体界传奇人物的客座访谈。</em></p>
+<h4 id="更整洁的混音"><a href="#更整洁的混音" class="headerlink" title="更整洁的混音"></a>更整洁的混音</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103441.png" alt></p>
+<p>1、为了让混音过程更加流畅，最好对混音器进行一下组织管理，尤其在轨道数量较多的情况下。如何整理最有效呢？要考虑的第一条就是，怎样分组排序能让你在工程里轻松穿梭，快捷地定位所需的轨道。当混音器处于「轨道」模式下，混音器里的音轨顺序就会自动与轨道区保持一致。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103454.png" alt></p>
+<p>2、如果使用了音色库，它们可能会产生一大堆备用的发送轨和辅助轨，可以考虑把用不到的发送轨删除。你可以按名称顺序实例化发送轨，比如 Bus 1 放在第一个发送槽里。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103507.png" alt></p>
+<p>3、我们往往会用三层混响效果来制造深度感强烈的声场效果，每一层都较上一层的空间更大。上图中，我们为每一轨都实例化了三个混响，按照名称顺序摆放，一目了然。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103518.png" alt></p>
+<p>4、使用轨道堆栈（Track Stack）来归纳成组的声音，例如鼓组等。按住 Command 并点按要收纳的音轨，选择「轨道」菜单下的「创建 Track Stack…」即可。在弹出的对话框中选择「总和堆栈」，这样你可以得到一个堆栈的总推子。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103531.png" alt></p>
+<p>5、点按轨道头列表里的小三角，堆栈就会展开或合拢。为总和轨标注一个名称，甚至分配颜色，以便视觉区分。另外，在混音器中，把轨道堆栈放置在末尾会更加整洁，所以在轨道区把总和堆栈放到最下边即可。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/08/MT-Logic-Pro-X-Mixing-Pic-6.jpg" alt="img"></p>
+<p>6、另一个归纳音轨的方法是编组。将轨道编组后，它们的推子将同步移动。但你不能隐藏音轨。选中要编组的音轨后，在混音器中点按音轨中央的分组按钮，即可以在菜单中完成编组。你可以随时按 Shift + G 临时关闭和恢复编组轨道的联动响应。</p>
+<h4 id="使用信号处理器"><a href="#使用信号处理器" class="headerlink" title="使用信号处理器"></a>使用信号处理器</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103552.png" alt></p>
+<p>1、在混音过程中，试着把插入效果和发送效果的作用区分开。总体而言，插入效果应偏向于修改音调、音色和动态。同时，改变处理器的顺序有时也会产生比较微妙的声音效果变化。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103603.png" alt></p>
+<p>2、相对而言，发送效果则应该主要进行环境修饰，例如混响和延迟。应该好好控制环境效果的作用量，或说干湿比。如果使用混响效果，最好在发送插槽里选择「后声相」，以便保留立体声的摆位。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103612.png" alt></p>
+<p>3、对于混响和延迟效果而言，我们可以在混音中通过发送轨的电平来控制效果量，也可以去直接修改辅助轨。从混音的角度来看，你可以对混响信号进行单独处理，比如用 EQ 做个低切，或者加上一点合唱效果。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103621.png" alt></p>
+<p>4、当你使用延迟（Delay）效果时，需慎重考虑它在立体声声场中的作用。比方说，上图中 Telecaster 轨的声相稍稍偏左，我们可以把这一轨发送到 16 分音符 Tape Delay 上，并把延迟信号的声相打到右边，创造一种独特的空间感。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103630.png" alt></p>
+<p>5、当然了，每一条规则都会有例外，本例则是关于发送压缩效果的。在发送轨使用压缩效果，也就是常说的平行压缩（或称并行压缩、并联压缩）。在主要的鼓轨上激活一个发送效果，并在新创建的辅助轨中实例化一个压缩器插件，将压缩速度调至极快，并使用 6:1 压缩比，大概进行 10dB 的电平衰减。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103639.png" alt></p>
+<p>6、混响、延迟以及平行压缩所创造出的空间效果已确定，「squash（挤压）」轨的效果已经加进了整个混音当中。在此情况下，这条辅助轨通道的电平将影响这组效果的密度，并为鼓组的躯干部分增添饱满度。当然，别忘了把效果分配给鼓组的发送效果。</p>
+<h4 id="添加自动化"><a href="#添加自动化" class="headerlink" title="添加自动化"></a>添加自动化</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103650.png" alt></p>
+<p>1、我们通过各种效果器，可以对混音进行各种控制。尽管如此，自动化却能起到不可替代的作用，通常用来强调混音当中的某些片段，防止它们被其他轨掩盖。要使用自动化，首先需要进入自动化视图，请按字母 A 键。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103659.png" alt></p>
+<p>2、在轨道头当中，有自动化模式选项。比如 Touch 模式，用来边播边记录推子动作。当推子被按住时，会写入自动化数据，当你松开时，推子将回到它的原本位置。Read 模式顾名思义，是用来回放的模式，你可以安全地播放混音，不用担心误操作改变自动化数据。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103714.png" alt></p>
+<p>3、为了更加精确地控制信号电平，你可以在轨道区手绘自动化曲线，用指针工具或铅笔工具都可以。如果要提升某一部分的电平，可以使用选取框工具画出一个区域，然后用指针工具拉动该区域内的曲线。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103724.png" alt></p>
+<p>4、我们接触最多的自动化操作可能都对轨道音量的控制。其实，在 Logic Pro X 中你可以对轨道上的任意插件参数进行自动化控制。在轨道头的下拉菜单中选择不同的参数即可。比如上图中，可以对 Rhodes 钢琴轨的 AutoFilter 效果的 Cutoff 值进行自动化控制，让它在前四小节缓慢打开。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103734.png" alt></p>
+<p>5、刚接触自动化时，你可能需要重新调整音量，而发现音量推子已经被自动化数据完全控制了。这时，你可以使用自动化值来调节音轨的整体音量，而不影响自动化数据的相对变化。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103742.png" alt></p>
+<p>6、如果你的自动化操作出错了，或不再需要某些自动化数据，你可以在「混音」菜单下的「删除自动化」子菜单中找到所需的命令。比如，删除那些可见的自动化数据，甚至整个工程里的全部自动化数据等。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/08/logic-pro-x-tutorial-become-a-power-user-tutorial-part-11-better-mixing-in-logic-pro-x/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-11.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-11.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../60.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../60.html" itemprop="url">Logic Pro X 系列教程 12：母带处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T10:25:30+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>最新版的 Logic Pro X 内置的 Channel EQ 插件包含大量改进。Mark Cousins 将告诉你如何将它运用在母带工作中。</strong></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102650.png" alt></p>
+<p>对于母带而言，均衡器（EQ）无疑是效果器里的重中之重。EQ 不仅要做出好听的声音，而且更需要成为母带中的多面手，把那个「神奇的音响」用到混音中最正确的地方。</p>
+<p>EQ 不仅要具备足够数量的多频段控制、滤波选项、搁架控制，还要提供左右声道分离控制的功能。如果你具备足够的挑战心，可能还需要 M/S 处理的特性。不止于此，可能还会需要能够在线性相位（Linear Phase）EQ 和可靠的老式「相位偏移」EQ 之间进行选择。显然，母带过程中对于 EQ 的需求是纷繁多样的。</p>
+<blockquote>
+<p>Channel EQ 不仅是混音工具，更是母带处理中高效的多面手，非常值得深入了解。</p>
+</blockquote>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102700.png" alt></p>
+<p>最新版的 Logic Pro X 有着焕然一新的外观和更强大的功能，而自带的 Channel EQ 和 Linear Phase EQ 插件也更是成为了母带工作中的强者。这篇文章将带你深入了解如何使用 Channel EQ 和 Linear Phase EQ 插件进行母带处理，学习较通常的混音实践更为不同的 EQ 操作。</p>
+<p>Channel EQ 最激动人心的功能当属 M/S 均衡，也就是「中部/侧面」式立体声，而不是传统的左/右式立体声。M/S 技术虽然在母带圈当中享有越来越高的声誉，但也正因为它独特的立体声处理方式使得刚接触它的人容易产生一些误解。简单地说，M/S 立体声会将混音分为中部（从左右声道的汇总当中得出）以及侧面（由左右声道的差别中得出）。从作用上来看，这个技术使得 EQ 更加直截了当，尤其对于那些被放置在「幻象中心」的乐器。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102755.png" alt></p>
+<h5 id="解读：插件链接"><a href="#解读：插件链接" class="headerlink" title="解读：插件链接"></a>解读：插件链接</h5><p>插件链接模式按钮在插件窗口的右上角，在母带过程中非常实用。链接模式启用时，插件窗口会随着你在不同轨道之间切换，自动显示所在轨道的相同效果插槽位的插件内容。你可以把需要进行对比的插件分配在同一个插槽位上，例如所有 EQ 都在插槽 1，压缩都在插槽 2 等，然后快速从一首歌转到另一首进行对比，而无需关闭又打开各自的插件窗口。这个技巧在需要进行不间断监听，调整均衡和响度时尤为重要。</p>
+<p><em>这篇教程得到了英国 <a href="http://www.pointblanklondon.com/" target="_blank" rel="noopener">Point Blank 音乐学校</a>的支持。</em></p>
+<h4 id="启程"><a href="#启程" class="headerlink" title="启程"></a>启程</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102806.png" alt></p>
+<p>1、在多数母带信号路径里，Channel EQ 往往是处理序列当中的第一位，后边会有压缩器和限制器。在添加 Channel EQ 插件以后，记得打开底部的扩展参数并勾选 Oversampling，以获得最高音质。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/09/MT-Logic-Pro-X-Mastering-EQ-Pic-2.jpg" alt="img"></p>
+<p>2、在均衡处理工作中，Channel EQ 的 Analyzer（分析器）能告诉你更多频率特性上的信息。点按 Analyzer 激活它，在扩展参数中选择 Resolution Medium 或 Resolution High 来获得更精确、更细致的频率概况。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102827.png" alt></p>
+<p>3、Analyzer Decay 是个很有趣的参数，默认值是 10dB/s。设置为较低速度（甚至低到 0dB/s），能够产生较缓的「Averaged（均值）」频率概况，而不是瞬态显示。这个功能可以帮助你理解当前音轨的宽广频率特性。</p>
+<p><img src="https://www.musictech.net/wp-content/uploads/2014/09/MT-Logic-Pro-X-Mastering-EQ-Pic-4.jpg" alt="img"></p>
+<p>4、我们先从音轨的低频部分起手。为了得到更好的控制，你可以使用高通滤波，以去除次低频的干扰。点亮左上角的高通滤波器按钮，将曲线调整到最陡，即 48dB/Oct，并把频率控制点放置在 20-30Hz 上。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102845.png" alt></p>
+<p>5、高通滤波器的另一个技巧是可以用它添加共鸣，对应的参数就是 Q 值，位于频率点和斜度参数的下边。将该值增加到 1.00 就能看到频率切分点处有一个小鼓包。你可以增加一些 Q 值来稍稍提升切分点。适当使用可以得到更紧实和厚重的贝司。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102900.png" alt></p>
+<p>6、在均衡器的两端，即低频和高频端，搁架式均衡可以用来确定轨道的宽频特性。仔细斟酌它们各自的参数，以得到不同的频率色彩。比如，在 7kHz 处进行提升可以增加临场感，而在 12-16kHz 处提升会增加「空气感」。</p>
+<h4 id="Q-值和-Linear-Phase-EQ"><a href="#Q-值和-Linear-Phase-EQ" class="headerlink" title="Q 值和 Linear Phase EQ"></a>Q 值和 Linear Phase EQ</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102912.png" alt></p>
+<p>1、谈到高通滤波，就有必要提及如何在实践中善用 Q 值。对于搁架滤波，Q 值越小曲线越宽平，而不是丘陵形状。曲线和经典的 Baxandall EQ 很相似。Baxandall EQ 是很多母带工程师偏爱的效果器，得益于它在频率设定中让高频平缓提升的特性。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102935.png" alt></p>
+<p>2、在接下来的混音当中，音色修整依靠 4 个参量均衡器来实现。整体而言，最好的方向是提升时使用较宽的 Q 值，衰减时用较窄的 Q 值。如果耳朵已经听不出来 EQ 的痕迹，而作品又具有音乐性的效果就说明方向是正确的。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102945.png" alt></p>
+<p>3、Q-Couple 是个值得注意的功能。默认情况下，当你提升或衰减某个频段的增益时，Q 值会变得更锋利，使得 EQ 的频段各自保持固定的增益和衰减量。Q-Couple 能够让 EQ 以更加具有音乐性的方式工作，因此保留默认设置就可以了。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514102954.png" alt></p>
+<p>4、无论进行怎样的均衡调整，最后的结果都会使信号电平被稍许提升。因此为了保持整体的增益结构，并保持未经 EQ 的声源的客观性，应当考虑用右边的 Gain（增益）拉杆来修正整体增益平衡。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103004.png" alt></p>
+<p>5、除了 Channel EQ，Logic Pro X 还内置了一个 Linear Phase EQ 均衡器。你可以直接从 Channel EQ 切换成 Linear Phase EQ 并保持设置不变，非常方便将两个插件的声音进行对比。请多多对比 Linear Phase EQ 所带来的通透感的提升。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103015.png" alt></p>
+<p>6、有时，更加「直达」地处理 EQ 比整体处理效果更好，也就是通过改变 Processing 参数，把 EQ 效果加到指定的左或右声道中。不妨试试在 Left Only（仅左声道）模式下提升一些高频，并留意 Hi-Hat 镲的变化更加清晰可闻，从而避免过多的高频。</p>
+<h4 id="中部和侧面处理"><a href="#中部和侧面处理" class="headerlink" title="中部和侧面处理"></a>中部和侧面处理</h4><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103025.png" alt></p>
+<p>1、如果你使用 Channel EQ 进行 Left Only（仅左声道）模式处理，也许就需要再加载一个 Channel EQ 并设置为 Right Only（仅右声道）。这样，就可以对左右声道的 EQ 进行分别控制，而不再是笼统论之。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103036.png" alt></p>
+<p>2、在分别对左、右声道进行处理之外，你还可以尝试 M/S 处理方式。加载两个 Channel EQ 插件，分别设置为 Mid Only（仅中部）和 Side Only（仅侧面）就可以得到一个基本的 M/S 矩阵了。在效果器末端插入一个免费的 bx_solo（<a href="http://www.brainworx-music.de）效果器可以将中部和侧面声道进行分离。" target="_blank" rel="noopener">www.brainworx-music.de）效果器可以将中部和侧面声道进行分离。</a></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103045.png" alt></p>
+<p>3、按下 bx_solo 的 M Solo 按钮就可以单独听到中部声道的声音。请留意贝司在这个声道的重要地位，在混音当中，它是被固定在中间的。提升一些低频，就可以直接听到底鼓和贝司的加强，同时又能保持侧面声道不受影响。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103054.png" alt></p>
+<p>4、现在来处理侧面声道，请留意中部声道明显遗漏的内容，例如底鼓和贝司。好的处理策略之一是在侧面声道中对贝司进行低频衰减（如果你想要将低音部分聚集在中部，这一点就极其重要），并提升少许空气感来扩充整个混音的通透度和广度。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103104.png" alt></p>
+<p>5、Channel EQ 的 M/S 模式配合增益控制（Gain control）会得到很有趣的效果。作为 M/S 矩阵的一部分，增益控制可以用来调整混音的立体声广度。例如，增加中部的增益，并降低一些侧面的增益，则结果会听起来更加中心聚焦化。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200514103113.png" alt></p>
+<p>6、如果你要同时打开和关闭 EQ 矩阵的插件窗口，可以使用 Logic Pro X 的「屏幕设置」功能，默认情况下点按菜单栏里的「1」就可以看到它的菜单。屏幕设置可以分配给键盘上的数字键，可以方便地为母带工程里的每一首歌都设置一个按键，可以记住每首歌的 EQ 窗口设置，其实也包括所有处理器窗口。</p>
+<h6 id="本文由-SOUNDMONO-编译自-MUSIC-TECH"><a href="#本文由-SOUNDMONO-编译自-MUSIC-TECH" class="headerlink" title="本文由 SOUNDMONO 编译自 MUSIC TECH"></a>本文由 SOUNDMONO 编译自 <a href="http://www.musictech.net/2014/09/logic-pro-x-tutorial-become-a-power-user-tutorial-part-12-mastering-in-logic-pro-x/" target="_blank" rel="noopener">MUSIC TECH</a></h6><p>固定链接: <a href="https://soundmono.com/logic-pro-x-tuts-12.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-12.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../47.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1022,741 +1803,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../15.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../15.html" itemprop="url">关于 Ableton 中的 Groove</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T17:58:52+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/Groove-and-Swing-in-Ableton-Live.jpg" alt="Groove-and-Swing-in-Ableton-Live"></p>
-<p>Groove 这个词指得是音乐中的节奏起伏或摇摆的律动，它可说是现代音乐中最重要的一个部分。了解如何最大限度地运用运用音乐的律动将会让你的音乐脱胎换骨。</p>
-<p>在没有 Groove 的情况下，音乐听起来会很机械很死板。当音乐家们弹奏乐器时，他们很自然地在演奏中加入了自己的律动，尤其是乐队中的鼓和贝斯这两大件，常常主宰了整首歌的律动感。</p>
-<p>而在电子音乐的世界中，Groove 同样非常重要。不同于传统音乐的地方是，在电子乐中实现 Groove 需要更细致的准备工作和更复杂的操作。好在现在的 DAW 几乎都提供了解决 Groove 问题的方案，Ableton Live 当然也不例外。</p>
-<h4 id="Groove-操作入门"><a href="#Groove-操作入门" class="headerlink" title="Groove 操作入门"></a>Groove 操作入门</h4><p>在 Session 或 Arrangement 模式下选取任意数量的 clips（Ableton 中音频片段或 midi 片段的统称「下同」），在 Clip 窗口中选择 Groove 切换按钮。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513180025.png" alt></p>
-<p><em>点击 Groove 切换按钮可以打开 Live 的 Groove 库。</em></p>
-<p>在 Live 的文件浏览器中，Live 为我们提供了分门别类的 Groove 文件库。可供选择的 Groove 文件很多，其中有一些是取样自诸如 Akai MPC 以及 Emu SP1200 这样的经典鼓机。要试听不同的 Groove 很简单，只需要双击任意 .agr文件，Groove就会加载到我们的 clip。我们也可以用鼠标拖动 Groove 文件到 clip 上面释放以加载。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513180049.png" alt></p>
-<p><em>Live 为我们提供了非常丰富的 Groove 素材库。不过我们也可以自己创造属于自己的 Groove 素材</em></p>
-<h4 id="打造属于自己的「律动」！"><a href="#打造属于自己的「律动」！" class="headerlink" title="打造属于自己的「律动」！"></a>打造属于自己的「律动」！</h4><h5 id="调节-Groove-各参数"><a href="#调节-Groove-各参数" class="headerlink" title="调节 Groove 各参数"></a>调节 Groove 各参数</h5><p>当我们对 clip 应用某 Groove 文件后，有多种方式来调整 Groove 的效果。文件浏览器下方的 Groove Pool 按钮可以打开 Groove Pool（Groove 池）。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513180105.png" alt></p>
-<p>在 Groove 池中我们可以对所有工程中使用到的 Groove 文件的各种参数进行调节。点击箭头所指的 Groove Pool 按钮以打开 Groove 池。</p>
-<p>Groove 池中列出了所有使用中的 Groove 文件。我们可以对一些参数进行调节。</p>
-<p>Base：Base 的值决定 Groove 中的音符所参照的时值精度。例如，选择 1/4 的 Base 值意味着 Groove 文件中的各音符将以与其最近的两根 1/4 网格线进行参照，而加载了该 Groove 文件的 clip 中的音符将根据上述参照结果进行等比例地偏移；选择 1/8 的 Base 值意味着 Groove 音符将以相邻的 1/8 网格线进行参照，其与网格线的距离的比值将等比例应用到 clip 的音符上。当 Groove 音符正好落在相应 Base 值的网格线上时，clip 中的音符相应地不会产生任何位移，因为距离比值为 0。</p>
-<p>Quantize：用于调整在加载 Groove 之前 clip 的音符向 Base 值对应网格线的量化程度。若 Quantize 值设为 100%，则 clip 中的音符将 100% 地吸附到 Base 值对应的网格线上。若 Quantize 值为 0，则 clip 音符在 Groove 作用之前不会被量化（移动）。</p>
-<p>Timing：用于调节 Groove 对其加载对象 clip 的作用力度。</p>
-<p>Random：用于调节 Groove 作用于 clip 各音符的力度的随机量。当 Random 值较小时，可用来给音符高度量化的电子乐添加「真实演奏感」。Random 会给 clip 中的每个音符应用随机的 Groove 力度，这意味着 clip 中原本在同一位置的不同音符的位移程度会不同。</p>
-<p>Velocity：Velocity 的值决定 clip 中的音符的力度将在多大程度上受到 Groove 文件中储存的力度信息的影响。注意取值范围从 -100 到 +100。在取负值时，Groove 的力度信息将反向作用于 clip 音符上，即 clip 中原本更响的音符将在加载 Groove 后变得更力度更轻，反之亦然。</p>
-<p>Global Amount：这个参数是对所用使用中的 Groove 文件的 Timing 值、Random 值以及 Velocity 进行整体缩放。当取值为 100% 时，上述各参数的作用效果与其赋值相当，而当取值为 130% 时，上述参数的整体作用效果将在原有基础上变得更为激烈、夸张。除了在 Groove 池中，Global Amount 的值还可以在 Live 的控制面板中进行调节。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/GrooveAmountInTransport_opt.png" alt="GrooveAmountInTransport_opt"></p>
-<p>控制面板中的 Groove Global Amount 调节</p>
-<h5 id="「Commit（提交-Groove）」选项"><a href="#「Commit（提交-Groove）」选项" class="headerlink" title="「Commit（提交 Groove）」选项"></a>「Commit（提交 Groove）」选项</h5><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/CommitGroove_fmt.png" alt="CommitGroove_fmt"></p>
-<p>「提交 Groove」按钮</p>
-<p>点击 Commit 按钮可以将加载的 Groove 文件及其参数直接「写入」clip 中。对 MIDI clip 来说，这将改变 MIDI 音符的位置；对于音频 clip 来说，这将在音频的相应位置插入 Warp 标记。</p>
-<p>点击 Commit 按钮将使 clip 的 Groove 下拉框自动设置为 None。</p>
-<h5 id="「律动福尔摩斯」——抽取-Groove-文件"><a href="#「律动福尔摩斯」——抽取-Groove-文件" class="headerlink" title="「律动福尔摩斯」——抽取 Groove 文件"></a>「律动福尔摩斯」——抽取 Groove 文件</h5><p>任何音频或 MIDI clip的「律动信息」都可以提取出来作为一个新的 Groove 文件。方法很简单，把 clip 拖动到 Groove 池中或在 clip 上右键选择 Extract Groove（s）即可。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513180115.png" alt></p>
-<p><em>一键提取 clip 中的 Groove 信息</em></p>
-<h4 id="Groove-运用技巧"><a href="#Groove-运用技巧" class="headerlink" title="Groove 运用技巧"></a>Groove 运用技巧</h4><h5 id="Clip-应-100-量化"><a href="#Clip-应-100-量化" class="headerlink" title="Clip 应 100% 量化"></a>Clip 应 100% 量化</h5><p>如果音符没有 100% 量化到网格线上，Groove 很难产生确定的可以预期的效果。所以要么通过 Groove 池中的 Quantize 选项量化，要么在直接在 clip 做量化，总之 Groove 作用的音符正好处于网格线上会产生更好更稳定的律动效果。</p>
-<h5 id="分轨应用-Groove-文件"><a href="#分轨应用-Groove-文件" class="headerlink" title="分轨应用 Groove 文件"></a>分轨应用 Groove 文件</h5><p>鼓手演奏时常常在特定的乐器上加入变化元素来产生有味道的节奏。例如，在正确的时值上敲击镲片但将军鼓处理得略微滞后能产生慵懒的「拖沓」节奏感。在 Live 中， 由于 Groove 文件是作用于整个 clip 上的，这种只对军鼓进行律动处理的手法是无法达到的。这时候需要我们对鼓轨道里的乐器进行分轨，可使用 Drum Rack 或 Instrument Rack 来达到这一目的，这样就可以单独对军鼓的 MIDI 轨道应用 Groove 文件了。</p>
-<h5 id="用-Random-功能为音色增加质感"><a href="#用-Random-功能为音色增加质感" class="headerlink" title="用 Random 功能为音色增加质感"></a>用 Random 功能为音色增加质感</h5><p>我们可以用 Groove 的 Random 功能来创造 Doubling 的效果，从而增加音色的质感。方法是将需要 Double 的 clip 复制一份，对其中一个 clip 加载 Groove，将 Timing 值设为 0，然后微调 Random 值，这样两个 clip 的音符间就可以产生轻微的偏移。</p>
-<h5 id="保护式量化"><a href="#保护式量化" class="headerlink" title="保护式量化"></a>保护式量化</h5><p>我们可以用 Groove 来对 clip 中的音符进行实时的、保护性的量化。只需要将 Timing 值、Random 值以及 Velocity 值设为 0%，仅对 Quantize 和 Base 值进行调节。在用这种方法进行保护式量化时，由于 Timing 值为 0，所以使用任意的 Groove 文件都可以达到同样的效果。</p>
-<h4 id="和-Live-一起律动起来吧"><a href="#和-Live-一起律动起来吧" class="headerlink" title="和 Live 一起律动起来吧"></a>和 Live 一起律动起来吧</h4><p>适时地运用 Live 的 Groove 功能，能让我们的音乐一下子生动起来，也能让乐器在混音中更好地相互融合。总而言之，好的 Groove 运用能给音乐带来奇迹般的飞跃。和 Live 一起律动起来吧</p>
-<h6 id="本文由-SOUNDMONO-编译自-ASKAUDIO、ABLETON"><a href="#本文由-SOUNDMONO-编译自-ASKAUDIO、ABLETON" class="headerlink" title="本文由 SOUNDMONO 编译自 ASKAUDIO、ABLETON"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/all-about-groove-in-ableton-live" target="_blank" rel="noopener">ASKAUDIO</a>、<a href="https://www.ableton.com/en/manual/using-grooves/" target="_blank" rel="noopener">ABLETON</a></h6><p>固定链接: <a href="https://soundmono.com/abletons-groove-tuts.html" target="_blank" rel="noopener">https://soundmono.com/abletons-groove-tuts.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../27.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../27.html" itemprop="url">选择滤波器的坡度值：12，18 还是 24 dB/八度？</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T17:51:07+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在低通滤波器或者高通滤波器中常常配备有一个坡度选项</p>
-<p>那么滤波器的坡度值意味着什么呢？我们又该如何选择适合的坡度值呢？</p>
-<p>我们知道，一个低通滤波器的电路原理是让声音信号的低频部分通过，并切掉高频部分。可是信号频率的切除与通过之间又是如何过渡的呢？绝大多数的滤波器并不是在某一频率点将声音拦腰截断。那种「一刀切」或者说「砖墙」似的滤波器效果并不实用，听起来也并不好听。</p>
-<p>事实上，滤波器中存在一个「完全通过频段」，在这一频段上声音信号完全通过而不受滤波器的影响，然后信号逐渐减弱 3 dB 后到达滤波器设定的截止频率（Cutoff Frequency），接着信号继续逐渐减弱到 0 dB。接下来的问题是，上述信号减弱到 0 dB 的过程中，信号的频率相对于截止频率改变了多少呢？</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513175154.png" alt></p>
-<p><em>信号强度相对于频率的减小速率即「坡度」</em></p>
-<p>以低通滤波器为例，如果用一个电阻和一个电容来构成一个最简单的低通滤波器模型，那么频率每升高一个八度（频率值加倍），该频率的信号强度相应减少 6 dB。即信号强度相较于频率的改变速率为 6 dB 每八度。</p>
-<p>如果滤波器的设计更复杂一些，信号减弱的速率可以达到 12 dB/八度、18 dB/八度甚至 24 dB/八度。在电路设计中，6、12、18以及 24 之外的中间值是很难设计出来的。</p>
-<p>问题是，这些不同的信号减弱速率即「坡度」有什么实际用处呢？</p>
-<p>坡度值为 6 dB/八度的滤波器滤波效果更加柔和，产生的声音不那么明亮尖锐，而12 dB/八度的坡度值产生的声音更加棱角分明。24 dB/八度的坡度值在大多数情况下都有些「切太狠」，但是在合成器的滤波器单元中，24 dB/八度对因对声音塑形有着很显著的效果而常常使用。</p>
-<p>扬声器的低中高单元间的交叉同样要用到滤波器原理和其坡度值。12 dB/八度 和 18 dB/八度的坡度值广泛应用于划分扬声器低频单元、中频单元和高频单元。而陡峭的 24 dB/八度的坡度往往只应用于 PA 系统（公共扩声系统）中。</p>
-<p>固定链接: <a href="https://soundmono.com/which-slope-to-chose-for-filters.html" target="_blank" rel="noopener">https://soundmono.com/which-slope-to-chose-for-filters.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../17.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../17.html" itemprop="url">了解 7 种常见类型的麦克风</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T11:27:13+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>麦克风对于音乐人来说是一件很个人的物品，在选择时往往要考虑多种因素。在品类繁多的麦克风里，也并没有「某种麦克风是最好的」之类的定理。每个类型的麦克风都有他们独特的性质和用途，产生的声音质感也不相同。下面我们就来了解一下常见的 7 种麦克风。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513112759.png" alt></p>
-<h5 id="动圈麦克风"><a href="#动圈麦克风" class="headerlink" title="动圈麦克风"></a>动圈麦克风</h5><p>「动圈」的含义是，与振膜紧密相连的导线线圈根据声压变化在磁场中不断运动，从而产生与声波振幅呈等比例变化的电流，这样，声学信号就转换成了电信号。</p>
-<p>动圈麦克风的线圈切割磁场直接产生电流，因而动圈麦不需要供电。动圈麦克风的优势在于它的简单和皮实。缺点是由于被导线线圈「拖累」，振膜对于快速变化的声波的响应速度不如其他类型的麦克风。</p>
-<p>让动圈麦克风去拾取擦片极具能量的高频部分实属强人所难，但在拾取结实的底鼓或军鼓音色时，动圈麦克风可以有让人满意的表现。动圈麦克风也常常被用来录电吉他音箱出来的声音。</p>
-<p>动圈麦克风经常被用于人声录音，这很大程度上是一种「传统习俗」。因为以前的电容麦克风又笨重又脆弱。可是尽管现如今专为现场人声设计的电容麦克风比比皆是，它们更昂贵的平均价格往往使得人们更倾向于选择同样能出色完成工作的动圈麦克风。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513112822.png" alt></p>
-<p><em>Shure SM58 动圈麦克风</em></p>
-<h5 id="小振膜电容麦克风"><a href="#小振膜电容麦克风" class="headerlink" title="小振膜电容麦克风"></a>小振膜电容麦克风</h5><p>电容麦克风是基于静电学原理设计的，振膜与背板构成一个电容单元，振膜随声波的振动导致其与背板间的电势差改变，从而将声学信号转换为电信号。电容麦克风一般内置放大器，因为电容单元的输出是很微弱的。电容麦克风需要外接 48 V 幻象供电或电池。</p>
-<p>选择小振膜电容麦克风的意义在于，那些直径在 12 毫米左右的小振膜对于声波的振动是非常敏感的。振膜做得越大，它对于不正对麦克风的声音的敏感程度越低，且共振产生的音染更明显。</p>
-<p>如果你想要的是极为精确的收音效果，那么小振膜电容麦克风就是不二选择。需要注意的是，更精确的声音并不一定就是更令人满意的声音，有时候精确的声音反而听起来不那么具有活力和力量感。不过如果你想要完全真实地记录自然界的声音，小振膜电容麦克风应是你的选择。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513112902.png" alt></p>
-<p><em>Neumann KM184 小振膜电容麦克风</em></p>
-<h5 id="大振膜电容麦克风"><a href="#大振膜电容麦克风" class="headerlink" title="大振膜电容麦克风"></a>大振膜电容麦克风</h5><p>以前，麦克风生产商们还不能把振膜做得像现在这般玲珑，当时的所有电容麦克风都应称为「大振膜电容麦克风」。当然并没有一条分界线来界定什么是「大振膜」、什么是「小振膜」。如前所述，12 mm 左右的尺寸可以被称为「小振膜」，而 24 mm 或更大的尺寸就可以算作「大振膜」。购买麦克风的时候我们会发现，有些看起来很大只的麦克风，里面的振膜却出人意料地特别小，所以振膜的尺寸是一个需要我们特别注意的麦克风参数。</p>
-<p>大振膜电容麦克风的优点在于它能给你那种录音棚特别推崇的声音——不是最自然的声音，但是声音又厚又温暖，不管录什么声音都感觉十分舒服。</p>
-<p>缺点在于，声音的频率越高，大振膜电容麦克风的定向性越来越明显。如果正对麦克风收音，这不是什么问题，但若是用两只麦克风做立体声收音，侧面来的声音有可能会效果不理想。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513112923.png" alt></p>
-<p><em>AKG C414 大振膜电容麦克风</em></p>
-<h5 id="真空管麦克风"><a href="#真空管麦克风" class="headerlink" title="真空管麦克风"></a>真空管麦克风</h5><p>这类麦克风的设计制造要追溯到电容麦克风时代的早期。那时候由于晶体管还没有大规模普及应用，电容麦克风的内置放大器都是用的真空管。尽管以前有些真空管麦克风搭配的是小振膜，但我们现在见到的真空管麦克风里面大都是大振膜。</p>
-<p>真空管麦克风的优点是真空管放大器容易产生一种非常悦耳舒适的失真效果，即「温暖的声音」。对于人声来说，这种温暖的失真感常常被当做灵丹妙药。</p>
-<p>和其他种类的麦克风不同，真空管麦克风由于真空管的时代早已过去，已经变得非常抢手，价格也往往居高不下。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513112944.png" alt></p>
-<p><em>Peluso 22 47 大振膜真空管麦克风</em></p>
-<h5 id="铝带麦克风"><a href="#铝带麦克风" class="headerlink" title="铝带麦克风"></a>铝带麦克风</h5><p>铝带麦克风是一种特殊的动圈麦克风。传统的动圈麦克风的振膜上紧密联结着导线线圈，而铝带麦克风就是把振膜和导线线圈合在一起做成了一条铝带（或金属带）。由于铝带非常轻薄，铝带麦克风对声波的敏感程度可以媲美电容麦克风，不过一般铝带麦克风的声音相对较暗。</p>
-<p>铝带麦克风可录制出细节清晰但略显黯淡的声音。这使得它们常常在录音棚得到艺术化地运用。</p>
-<p>铝带麦克风普遍很脆弱，脆弱到有些牌子的说明书会提醒用户：拿着铝带麦克风收音的时候走路慢点儿以免空气通过麦克风速度太快导致铝带错位。</p>
-<p>和动圈麦克风一样，铝带麦克风大部分都不需要外部供电（某些自带内置放大器的除外）。然而铝带麦克风的输出一般都比较小，所以搭配前级放大器使用效果更好。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513113014.png" alt></p>
-<p><em>Coles 4038 铝带麦克风</em></p>
-<h5 id="驻极体麦克风"><a href="#驻极体麦克风" class="headerlink" title="驻极体麦克风"></a>驻极体麦克风</h5><p>驻极体麦克风是一种特殊的电容麦克风。我们已经知道电容麦克风的原理是电容上极化的电荷量发生改变，从而在电容两端产生电信号，达到声—电信号转换。而驻极体材料是一种在加上电荷后可以永久性保存这些电荷的材料。利用这个原理，振膜或背板上的驻极体材料提供电容单元所需的恒定电压，可省去麦克风的供电部分。不过麦克风内置放大器的工作仍然需要用电池或幻象供电，需要注意的是用电池的驻极体麦克风与用幻象供电的相比，敏感度较差，对最大声压的处理能力也较弱。</p>
-<p>驻极体麦克风因其低成本、小型化的特点，在手持设备中得到广泛应用。内部集成FET前置放大器的驻极体麦克风可以提供很高的性能。现在世界上最精确的麦克风中也有很多是驻极体麦克风。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513113039.png" alt></p>
-<p><em>DPA 4011 驻极体麦克风</em></p>
-<h5 id="压电麦克风"><a href="#压电麦克风" class="headerlink" title="压电麦克风"></a>压电麦克风</h5><p>压电麦克风也叫晶体麦克风，其原理是利用某些材料的压电效应——即声音造成材料的变形产生电压的变化。</p>
-<p>压电麦克风如今主要是以接触式传声器的形式存在，一个典型的例子是吉他拾音器。压电麦克风直接拾取音源的物理振动，而不是空气中的声波震动。其好处是把乐器声与其他声音隔离开来。不过这样拾取的声音不会特别的真实，因而压电麦克风的应用比较局限。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513113103.png" alt></p>
-<p><em>Fishman BP-100 贝斯压电拾音器</em></p>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>这就是根据工作原理不同而划分的 7 种类型的麦克风。能够了解它们的基本工作原理、识别它们各自独特的声音是每个音乐制作人必备的本领之一。</p>
-<h6 id="本文由-SOUNDMONO-编译自-AUDIOMASTERCLASS"><a href="#本文由-SOUNDMONO-编译自-AUDIOMASTERCLASS" class="headerlink" title="本文由 SOUNDMONO 编译自 AUDIOMASTERCLASS"></a>本文由 SOUNDMONO 编译自 <a href="http://www.audiomasterclass.com/7-important-microphone-types-that-you-should-know-and-the-benefits-of-each" target="_blank" rel="noopener">AUDIOMASTERCLASS</a></h6><p>固定链接: <a href="https://soundmono.com/7-mics-types-you-should-know.html" target="_blank" rel="noopener">https://soundmono.com/7-mics-types-you-should-know.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../39.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../39.html" itemprop="url">Ableton Live：隐藏在 10 个效果器中的 5 个「低调」选项</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T11:15:25+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>几天前我在玩儿 Ableton Live 里的 Saturator（润色） 效果器，一不小心在标题栏上点击了一下右键。然后发现自己发现了一个新的世界。。。一个我以前从没注意到的 High Quality（高品质）选项赫然出现。。。这让我有些吃惊，因为我以为我 Live 玩儿得已经很 6 了，为什么从来没有想过要在标题栏右键呢？</p>
-<p>于是，我把 Live 的各种乐器、效果器都拉出来「右键」了一遍。居然发现有 10 个效果器的右键菜单里有我没发现过的「新功能」。</p>
-<h4 id="高品质设置"><a href="#高品质设置" class="headerlink" title="高品质设置"></a>高品质设置</h4><p>如我上面提到的，Saturator 有一个「高品质」设置，这个功能 Dynamic Tube（动态管）效果器和 Flanger （镶边）效果器也有！</p>
-<h5 id="Saturator（润色）效果器和-Dynamic-Tube（动态管）效果器"><a href="#Saturator（润色）效果器和-Dynamic-Tube（动态管）效果器" class="headerlink" title="Saturator（润色）效果器和 Dynamic Tube（动态管）效果器"></a>Saturator（润色）效果器和 Dynamic Tube（动态管）效果器</h5><p>选择「高品质」模式可以减少混叠失真（Aliasing），这可以提高声音品质，对于高频率的声音品质提高尤为显著。不过随之产生的是较高的 CPU 占用率。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513111721.png" alt></p>
-<h5 id="Flanger（镶边）效果器"><a href="#Flanger（镶边）效果器" class="headerlink" title="Flanger（镶边）效果器"></a>Flanger（镶边）效果器</h5><p>Flanger（镶边）效果器运用「高品质」模式可以得到较为明亮的声音，但 CPU 占用率会升高。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513111734.png" alt></p>
-<h4 id="3-种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）"><a href="#3-种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）" class="headerlink" title="3 种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）"></a>3 种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）</h4><p>Live 的每一个延迟效果器（Filter Delay、Ping-Pong Delay 和 Simple Delay）都有这三个特色模式：Repitch（变调模式）、Fade（淡出模式）以及 Jump（跳跃模式）。在延迟效果器处理音频的过程中对 Delay Time（延迟时间）参数进行实时更改，将会使延迟湿声产生突然变化。这种变化产生的音效常常为制作人所利用。我们可以在这三种延迟信号过渡模式间进行切换，来得到我们想要的音响效果。</p>
-<p>这三种延迟信号过渡模式可以在延迟效果器的标题栏点击右键进行选择。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513111748.png" alt></p>
-<p>Repitch（变调）模式将会在我们实时改变 Delay Time（延迟时间）的时候产生类似于以往硬件延迟效果器产生的移调的效果。</p>
-<p>Fade（淡出）模式是系统默认模式。此模式在当前和上一个「延迟时间」的值之间平滑过渡，产生的效果像是不同的「延迟时间」值产生的延迟效果被安全地拉长或压缩了。</p>
-<p>Jump（跳跃）模式是 Live 8 及更早的版本的唯一默认模式。当打开 Live 8 或 更早版本的工程文件时，系统将自动选择为 Jump 模式。</p>
-<h4 id="Oversampling（双重采样）"><a href="#Oversampling（双重采样）" class="headerlink" title="Oversampling（双重采样）"></a>Oversampling（双重采样）</h4><p>很多人都知道 Live 的 EQ8 均衡器里有一个 Oversampling 的选项。但很多人都不知道 Live 里已经「盛誉加身」的 Glue Compressor（「胶水」压缩器）也有这个选项。</p>
-<p>开启 Oversampling 模式能使 Glue Compressor 或 EQ8 的音频处理速率提高到当前音频采样率的两倍。这样做可以减少混叠失真、提高瞬时信号处理精度。开启 Oversampling 模式会少量增加 CPU 占用率。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513111800.png" alt></p>
-<h4 id="Flat-Response-（平坦响应）"><a href="#Flat-Response-（平坦响应）" class="headerlink" title="Flat Response （平坦响应）"></a>Flat Response （平坦响应）</h4><p>Live 的 EQ3 也有一个有趣的隐藏特性叫做「Flat Response（平坦响应）」。选择 Flat Response 模式可以减小 EQ3 滤波器在两个频率交叉点处的增益效果。我在不同的音频轨道上试验过「平坦响应」模式的效果，发现在此模式下，频率交叉点处的增益比正常模式减小了 0.5 到 1 dB。</p>
-<p>EQ3 滤波器用 Ableton 自己的话来说是「以优秀强大的模拟滤波器而不是数字滤波器为目标进行优化设计」的。这就意味着甚至在增益值为 0 时，滤波器也会产生适量的令人舒适的「声音染色」效果。</p>
-<p>如果我们不想要这种「模拟」味道的「染色」效果，可以打开 Flat Response（平坦响应）模式并把滤波器坡度设置为较平缓的「24 dB」。这样就能把「染色」效果基本消去了。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513111816.png" alt></p>
-<h4 id="混响的全局精度设置"><a href="#混响的全局精度设置" class="headerlink" title="混响的全局精度设置"></a>混响的全局精度设置</h4><p>Live 强大的混响效果器里有个全局精度设置。「Eco」模式使用相对最少的 CPU 资源，而「High」模式使用最多的 CPU 资源，但产生最丰富、精度最高的混响效果。</p>
-<p>在编曲阶段可以采用较低的混响精度以节省系统资源，但在导出时一定要记得把混响精度设置为「High」。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513111829.png" alt></p>
-<h6 id="本文由-SOUNDMONO-编译自-ASKAUDIO"><a href="#本文由-SOUNDMONO-编译自-ASKAUDIO" class="headerlink" title="本文由 SOUNDMONO 编译自 ASKAUDIO"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/ableton-live-secrets-5-hidden-features-in-10-devices/high-quality-settings-nbsp#article" target="_blank" rel="noopener">ASKAUDIO</a></h6><p>固定链接: <a href="https://soundmono.com/ableton-live-5-hidden-features.html" target="_blank" rel="noopener">https://soundmono.com/ableton-live-5-hidden-features.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../35.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../35.html" itemprop="url">在 Ableton Live 中制作「门限混响」效果</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T10:39:30+08:00">
-                2020-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在<a href="https://audio.newban.cn/10-%E6%9D%A1%E6%B7%B7%E5%93%8D%E6%8A%80%E5%B7%A7%E8%AE%A9%E4%BD%A0%E7%9A%84%E6%B7%B7%E9%9F%B3%E6%9B%B4%E8%BF%9B%E4%B8%80%E6%AD%A5.html">上一篇文章</a>中我们提到了一种混响的特殊用法，叫做「门限混响」（「Gated Reverb」）。这种兴起于 80 年代的混音手法可以制造出爆发性强且空间感十足的军鼓音色，曾一度被以 Phil Collins 和 David Bowie 为代表的众多音乐人广泛使用。</p>
-<p>今天，我们就用 Ableton Live 中自带的音色及效果器来重制一个典型的「门限混响」效果。</p>
-<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>首先，我们需要建立一个输出到 Master 总轨上的鼓组。</p>
-<p>[<img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513104234.png" alt></p>
-<p>然后编辑一小段简单的节奏。它听起来现在是这样的：</p>
-<p><audio class src="https://audio.newban.cn/audio/gated-reverb-just-the-drums-dry_PN.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>注意鼓组里的每样乐器都是独占一轨的，方便待会儿对军鼓轨道进行发送和效果处理。</p>
-<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>在「A Return」上加载一个混响效果器，然后将鼓组中的军鼓轨道 100% 发送到 「A Return」上。</p>
-<p>对于混响的调制，原则上需要留出一定的预延迟时间（Pre-delay）时间，以使得军鼓的音头得以清晰保留。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513104306.png" alt></p>
-<p>加载在「A Return」轨道上的混响器参数</p>
-<p>现在，军鼓的声音几乎淹没在混响效果中。</p>
-<p><audio class src="https://audio.newban.cn/audio/gated-reverb-with-reverb_PN.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h5><p>把军鼓轨道 100% 发送到「B Return」轨道上，并将「B Return」轨道的输出设置为 Sends Only（仅发送）。这样做是为了让军鼓的干声成为门限效果器的侧链输入源。轨道设置为仅发送时，轨道没有实际的声音输出。</p>
-<p>然后，在「A Return」轨道上加载 Gate（门限）效果器。选择 Sidechain（侧链）模式。输入源选择「B Return」轨道。参数设置如下图。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513104322.png" alt></p>
-<p>门限效果器参数</p>
-<p>这里是最后的效果。「门限混响」！听起来还不错吧！</p>
-<p><audio class src="https://audio.newban.cn/audio/gated-reverb-with-reverb-and-gate_PN-1.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>固定链接: <a href="https://soundmono.com/ableton-live-gated-reverb-tuts.html" target="_blank" rel="noopener">https://soundmono.com/ableton-live-gated-reverb-tuts.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1807,7 +1853,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">145</span>
+                  <span class="site-state-item-count">150</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

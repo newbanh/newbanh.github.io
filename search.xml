@@ -425,7 +425,7 @@
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
       <tags>
-        <tag>词曲档案</tag>
+        <tag>词曲圣经</tag>
       </tags>
   </entry>
   <entry>
@@ -4130,24 +4130,26 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>Mike Stavrou给大家传授压缩器快速上手秘籍</title>
     <url>/62.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200512134230.png" alt></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200512134230.png" alt></p>
 <blockquote>
 <p>自学混音到现在有三个年头了  一路走走停停   从最开始的不可能到现在能混出属于自己风格的作品   期间看了不少的视频教程  读了好几本混音相关的书籍  概念性的东西很容易掌握  但真正到了实战时却往往容易束手无策, 我想 这应该是每个混音初学者的通病</p>
 </blockquote>
-<p>我不得不承认 由<strong>Mike Stavrou</strong>写的 <strong>《Mixing With Your Mind》</strong>这本书确实是非常的不错,关于压缩器我们不可能在一夜之间就完全能掌握它(反正我是做不到 哈哈)</p>
+<p>不得不承认 由<strong>Mike Stavrou</strong>写的 <strong>《Mixing With Your Mind》</strong>这本书确实是非常的不错,关于压缩器我们不可能在一夜之间就完全能掌握它(反正我是做不到 哈哈)</p>
 <p>这本书不仅解答了很多关于混音方面的问题,同时也逐步引导你走向一个相对正确的方向去练习你的混音技术.</p>
 <p>那么 说到压缩环节  <strong>Mike Stavrou</strong>先生也是非常的重视这一块  那到底该如何正确的使用压缩效果器呢? <strong>如何让未经过训练的耳朵能快速辨别出短和长启动时间分别带来的效果呢?   唯一的办法就是尽可能的放大它对声音的影响</strong> </p>
 <p>让我们来听听 Mike Stavrou是怎么说的:</p>
 <p><strong>“使用压缩器就像是破解一个带有机械密码锁的保险箱”</strong></p>
 <p>压缩器有四个基本旋钮(或者说成是参数),破解它的关键就是 <strong><em>集中精力旋转这些旋钮 并将它们依次指向正确的位置</em></strong>  一旦指向了正确的位置,你将会听到更加清晰的效果声,从而获得更加真实和悦耳的声音.</p>
-<p>按照特殊的顺序调节压缩器的这几个旋钮可以避免反复调节相同的旋钮,也就是说你把attack调整到满意的位置之后再也不需要回过头来调整它了,当然 前提是你得按照正确的顺序去调整各个参数,因为不同的顺序会产生不同的效果.每一步都极其的关键.</p>
-<h4 id="那到底该按照什么样的顺序呢"><a href="#那到底该按照什么样的顺序呢" class="headerlink" title="那到底该按照什么样的顺序呢?"></a>那到底该按照什么样的顺序呢?</h4><p>首先,对压缩器各个参数进行临时设置:</p>
+<p>按照特殊的顺序调节压缩器的这几个旋钮可以避免反复调节相同的旋钮,也就是说你把<code>attack time</code>调整到满意的位置之后再也不需要回过头来调整它了,当然 前提是你得按照正确的顺序去调整各个参数,因为不同的顺序会产生不同的效果.每一步都极其的关键.</p>
+<p>那到底该按照什么样的顺序呢?</p>
+<h2 id="压缩器调节顺序"><a href="#压缩器调节顺序" class="headerlink" title="压缩器调节顺序"></a>压缩器调节顺序</h2><p>首先,对压缩器各个参数进行临时设置:</p>
 <ul>
-<li>启动时间:随意设置一个值</li>
-<li>释放时间:把它调到最小值</li>
-<li>压缩比:设置成最大(20:1)</li>
-<li>阈值:设置在最大音量一下,让压缩器处于正常工作模式</li>
+<li>启动时间: 随意设置一个值</li>
+<li>释放时间: 把它调到最小值</li>
+<li>压缩比: 设置成最大(20:1)</li>
+<li>阈值: 设置-40 或 -60 dB  让压缩器处于极度压缩模式</li>
 </ul>
+<p>现在你的音乐听起来完全是垃圾，但你会清楚地听到每个参数的效果。您可能必须调高音量才能听到乐器/混音的声音</p>
 <p>接下来,我们开始依次调节这四个参数:</p>
 <h5 id="1-启动时间"><a href="#1-启动时间" class="headerlink" title="1.启动时间"></a>1.启动时间</h5><p>这是第一个需要调节的旋钮,播放音频后,开始缓慢旋转按钮,与此同时你需要尽可能地忽略因极小的释放时间所带来的抽吸效果,集中精力注意听启动时间是如何影响声音力度大小的</p>
 <p>如果你播放的是一轨军鼓,设置较短的的启动时间,你将会听到小鼓槌敲击鼓面的声音,相反,设置较长的启动时间给你的感觉像是粗壮的鼓槌正在敲击鼓面</p>
@@ -4160,10 +4162,12 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>因此 <strong>比率越小 声音越宽大 柔软 但是容易失去控制 导致压缩不够声音松散 . 比率越大 声音越窄 但是能控制更多细节 声音更加结实</strong></p>
 <p>那么压缩比到底多少合适呢? 科学的做法就是,由高到低逐步降低压缩比,直到你快听不到你想要的宽厚度和律动,这时你可以稍微提升一点点压缩比 , 把所有的注意力都集中在声音的大小上,不用去想启动时间和释放时间,也不用关注压缩比的具体数值,只需要关注声音大小以及硬度的改变</p>
 <h5 id="4-阈值"><a href="#4-阈值" class="headerlink" title="4.阈值"></a>4.阈值</h5><p>最后调节阈值,阈值是非常关键的 因为它决定了压缩器是否处于工作状态,正确的做法是,观察压缩量,逐步拉低阈值直到声音听起来发扁没有活力,这个时候往回拉一些即可</p>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>不管怎么调节,我们使用压缩器的最终目的是为了得到<strong>一个宽大有力,结实又不失活力,同时保持很好律动</strong>的声音,换种说法就是,得到让人感觉更高贵的声音</p>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>有一点很多工程师容易忽略的是,压缩比是按乘积进行堆叠的,也就是所如果你在单轨上使用10:1的压缩比,然后再在总线上使用10:1的压缩比,最终的压缩比不是20:1 而是100:1</p>
-<p><strong>本帖附件</strong></p>
-<p><a href="http://www.mixingwithyourmind.com/" target="_blank" rel="noopener">官网</a></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>不管怎么调节,我们使用压缩器的最终目的是为了得到<strong>一个宽大有力,结实又不失活力,同时保持很好律动</strong>的声音,换种说法就是,得到让人感觉更高贵的声音</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>有一点很多工程师容易忽略的是,压缩比是按乘积进行堆叠的,也就是所如果你在单轨上使用10:1的压缩比,然后再在总线上使用10:1的压缩比,最终的压缩比不是20:1 而是100:1</p>
+<h2 id="本帖附件"><a href="#本帖附件" class="headerlink" title="本帖附件"></a>本帖附件</h2><p>PDF下载: <a href="https://url97.ctfile.com/d/21042697-56934839-6e1927?p=312306" target="_blank" rel="noopener">点击进入</a> (访问密码: 312306)</p>
+<h2 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h2><p><a href="http://www.mixingwithyourmind.com/" target="_blank" rel="noopener">Mixing With Your Mind官网</a></p>
+<p>《<a href="https://www.kvraudio.com/forum/viewtopic.php?t=389365" target="_blank" rel="noopener">Anyone else using the ‘mixing with your mind’ method for compression?</a>》</p>
+<p>《<a href="https://gearspace.com/board/so-much-gear-so-little-time/141510-quot-mixing-your-mind-quot-your-thoughts.html" target="_blank" rel="noopener">Mixing with your mind” - YOUR thoughts?</a>》</p>
 <p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
 ]]></content>
       <tags>
@@ -5088,6 +5092,17 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
 <p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
 <p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
+<h3 id="从听感角度分析启动和释放时间对声音的影响"><a href="#从听感角度分析启动和释放时间对声音的影响" class="headerlink" title="从听感角度分析启动和释放时间对声音的影响"></a>从听感角度分析启动和释放时间对声音的影响</h3><p>抛开理论不谈, 单单从听感分析, 我们可能会发现以下结论:</p>
+<p><strong>较短的启动时间:</strong></p>
+<ul>
+<li>声音更加平稳不突兀, 突发音减少了</li>
+</ul>
+<p><strong>较长的释放时间:</strong></p>
+<ul>
+<li>尾音被压制了</li>
+<li>声音听起来更软</li>
+<li>律动更加沉稳</li>
+</ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -6459,7 +6474,7 @@ shortcut.add("Shift+x",function() {
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
       <tags>
-        <tag>词曲宝典</tag>
+        <tag>词曲圣经</tag>
       </tags>
   </entry>
   <entry>
@@ -7040,6 +7055,21 @@ shortcut.add("Shift+x",function() {
 <h2 id="MIDI人性化"><a href="#MIDI人性化" class="headerlink" title="MIDI人性化"></a>MIDI人性化</h2><p>在钢琴卷帘窗中选中需要进行人性化的<code>MIDI</code>, 然后按键盘<code>H</code>, 会弹出<code>Humanize Notes</code>窗口</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230712160321056.png" alt="image-20230712160321056"></p>
 <p>可以对音符的尾巴, 长度和力度进行随机化</p>
+<h2 id="快速更改音频音调"><a href="#快速更改音频音调" class="headerlink" title="快速更改音频音调"></a>快速更改音频音调</h2><p>按住<code>Shift + Alt/Opt</code>的同时垂直拖动可向上或向下调整音频音调</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636aa64242f154cabaeca7ab_67570b66-e4f5-4ad6-9b87-e228b20dfde4.gif" alt="img"></p>
+<p>这非常适合您想要为踩镲添加一些音高变化或修复跑调的情况</p>
+<h2 id="A-B-音轨和效果的快速技巧"><a href="#A-B-音轨和效果的快速技巧" class="headerlink" title="A/B 音轨和效果的快速技巧"></a>A/B 音轨和效果的快速技巧</h2><p>首先将其中一个音轨静音，然后选择两个音轨并按<code>Alt/Opt + M</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63702580a705e92ffd7d6a7f_8d102a30-e209-4ae8-8b17-e29990285191.gif" alt="img"></p>
+<h3 id="这也适用于多个轨道！"><a href="#这也适用于多个轨道！" class="headerlink" title="这也适用于多个轨道！"></a>这也适用于多个轨道！</h3><p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63702580a705e95c8c7d6a7e_7e8032dc-0264-4d92-881f-531356695658.gif" alt="img"></p>
+<p>当我比较吉他音色时我经常使用这个。因此，两个轨道静音，两个轨道取消静音。</p>
+<h3 id="您还可以像这样进行-A-B-效果！"><a href="#您还可以像这样进行-A-B-效果！" class="headerlink" title="您还可以像这样进行 A/B 效果！"></a>您还可以像这样进行 A/B 效果！</h3><p>同样的 先勾选其中一个效果器，然后将选择两个或多个 FX 并按<code>Ctrl/Cmd + B</code> 。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63702580a705e9b7837d6a7d_386116bc-4d3b-4185-8f96-a36816e0c0b9.gif" alt="img"></p>
+<h2 id="在调音台中显示和隐藏子轨道"><a href="#在调音台中显示和隐藏子轨道" class="headerlink" title="在调音台中显示和隐藏子轨道"></a>在调音台中显示和隐藏子轨道</h2><p>这是在混音器文件夹轨道中显示和隐藏子轨道的方法。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636aa5423c0bc9f039ae2328_9c597991-7302-40e1-b0bd-3fbbf24e8e8e.gif" alt="img"></p>
+<p>设置方法：</p>
+<p>右键单击混音器空白区域中的任意位置，然后选择<code>Clickable icon for folder tracks to show/hide children</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/6369abdddb2c66a875a468df_977f8bfd-c1d1-41f5-a429-2e9007e4a2e2.png" alt="img"></p>
+<p>✅ 完成！现在您应该可以在混音器中每个文件夹的底部看到一个图标，您可以单击该图标来显示和隐藏子轨道</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8333,12 +8363,12 @@ shortcut.add("Shift+x",function() {
 <blockquote>
 <p>“Mix Check Studio这样的工具可以引导创作者提高他们的技能，RoEx处于AI音频处理革命的前沿。我能想象，这个平台可以在一个经验丰富的专业人士或卧室创作人受伤发挥多么强大的作用。RoEx将重新定义工作流程，帮助用户找到梦寐以求的声音。”</p>
 </blockquote>
-<p>在线免费使用：<a href="https://mixcheck.studio/" target="_blank" rel="noopener">点击进入</a></p>
+<p>在线免费使用：<a href="https://mixcheckstudio.roexaudio.com/" target="_blank" rel="noopener">点击进入</a></p>
 <p><strong>本文转载自</strong>: <a href="https://www.midifan.com/modulenews-detailview-46885.htm" target="_blank" rel="noopener">MIDIFAN</a></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
       <tags>
-        <tag>REAPER</tag>
+        <tag>混音档案</tag>
       </tags>
   </entry>
   <entry>
@@ -8355,6 +8385,184 @@ shortcut.add("Shift+x",function() {
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a2079571847f9e5ceaa_02722ad1-8b0b-4160-b02d-b68c3705cf13.jpeg" alt="img"></p>
 <h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>现在，每次按住所选的修改器时，鼠标光标都会发生变化，让您知道您处于<code>和弦化</code>模式。</p>
 <p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-strum-midi-notes" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中如何合并MIDI轨</title>
+    <url>/147.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>合并 MIDI 允许您将两个或多个 MIDI 项目合并为一个，如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a368195be4993a0fead_d39d5d18-46a6-4237-a005-b50e8de44eeb.gif" alt="img"></p>
+<p>虽然大多数其他 DAW 都内置了此功能，但 REAPER 却没有。幸运的是，可以通过自定义操作轻松完成！</p>
+<h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><ol>
+<li><p>打开<code>Action List</code>窗口。</p>
+</li>
+<li><p>点击 <code>New action--&gt;New custom action</code></p>
+</li>
+<li><p>按以下顺序搜索以下<code>Action</code>并将其从左列拖动到右列：</p>
+<ul>
+<li>Item: Set item mix behavior to always mix</li>
+<li>Item: Implode items across tracks into items on one track</li>
+<li>Item: Glue items, ignoring time selection</li>
+<li>Item: Set item mix behavior to project default</li>
+</ul>
+</li>
+<li><p>勾选<code>Consolidate undo points</code>同时将这个自定义动作命名为 <code>Merge MIDI</code>, 如下图所示:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a368195be29b8a0feae_735d3a28-b636-4e04-8388-73b4adef1781.jpeg" alt="img"></p>
+</li>
+</ol>
+<ol start="5">
+<li><p>当我们在动作列表搜索 <code>Merge MIDI</code>, 时, 可以找到刚刚创建的自定义动作</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63dc1a368195be666da0feac_edf3e89c-46f7-4f58-a7e0-f018ec48ce65.jpeg" alt="img"></p>
+</li>
+<li><p>可以开始使用它了，我建议为其映射一个快捷键或将其放置在工具栏之一中。我将其设置为<code>alt + shift + G</code> 。另外还把它放到了菜单栏中</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230713121353261.png" alt="image-20230713121353261"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230713121416811.png" alt="image-20230713121416811"></p>
+</li>
+</ol>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>现在您已经有了自定义操作设置，您可以轻松地将两个或多个 MIDI 项目合并为一个 💪</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-merge-midi-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>混音中提升音轨融合度之均衡处理</title>
+    <url>/146.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>混音过程中影响融合度的因素有很多, 之前给大家介绍过共同元素理论, 具体可查阅之前文章:《<a href="https://audio.newban.cn/109.html">混音中各音轨共同的元素越多融合度越高</a>》</p>
+<p>今天 我们主要来研究讨论一下均衡器对声音融合度的影响</p>
+<p>从个人经验上, 主要分为以下几个点:</p>
+<ul>
+<li>衰减特色频率</li>
+<li>提升某个频段达到对其他乐器的贴合</li>
+<li>多个音轨间使用同类型的的均衡效果器</li>
+</ul>
+<h2 id="特色频率衰减"><a href="#特色频率衰减" class="headerlink" title="特色频率衰减"></a>特色频率衰减</h2><p>衰减声音的特色频段能让声音听起来更温和, 虽然少了一分刺激感, 但是和其它音轨更加的融合了</p>
+<p>这个世界 大部分都是不起眼的普通人, 特立独行且耀眼的终归是少数, 太过耀眼自然很难融入群众</p>
+<p>混音也是同样的道理, 衰减声音中让你觉得兴奋刺激的频段, 这样能使整体更加地平衡</p>
+<p>除此之外, 声音中如果存在一些让人不舒服的共振频率, 也需要去除, 这能让声音听起来更加清晰有质感, 具体方法是通过扫频或者<code>solo</code>某个频率点, 找出腔体感特别明显以及太过刺耳的频率点并衰减它</p>
+<p>衰减频率这一步骤建议使用窄q值的数字均衡器, 比如<code>waves Q</code>系列插件或者肥波插件, 它们能精准地控制住频率</p>
+<h2 id="提升频段"><a href="#提升频段" class="headerlink" title="提升频段"></a>提升频段</h2><p>提升频段, 建议使用宽Q值的建模均衡器, 主要用来调整声音的色彩, 让其变得更暗还是更亮, 从而实现和其它音轨的贴合</p>
+<p>同时 建模EQ的染色能给声音提升质感, 增加一点点可望不可即的感觉</p>
+<p>具体操作方法是, 通过宽Q值的扫频方式, 一边扫, 一边仔细听需要进行融合的音轨, 如果是扫人声那就听伴奏. 当我们扫到某个频段, 伴奏突然变得更清晰了, 那么这个点差不多就是融合点, 提升它能让声音更加融合</p>
+<p>有时候, 你可能会发现不止一个融合点, 此时我们就需要听当前扫频的声音音色, 选择一个你觉得好听的就行, 这样 既保证了融合度, 又不至于声音变得难听</p>
+<h4 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h4><p>我个人利用频谱分析仪分析两个音轨后得出粗浅结论:</p>
+<p><strong>当两个音轨频谱趋于一致的时候, 融合度能得到大幅提升</strong></p>
+<p>比如有两个音轨, 一个高低频很饱满, 另一个低频足够 但是高频不足, 那么这两个音轨合在一块的听感就是一个很亮, 一个很暗, 虽然声音不打架了, 但两者分离感很明显, 它们就犹如不同世界的两个人,很难融合  </p>
+<p>此时我们将高频不足的那个声音做一个高频提升后, 就能明显感觉到融合度的提升</p>
+<p>我认为这个原理也可以归纳到共同元素理论当中</p>
+<h2 id="使用同类型的的均衡效果器"><a href="#使用同类型的的均衡效果器" class="headerlink" title="使用同类型的的均衡效果器"></a>使用同类型的的均衡效果器</h2><p>这一点其实就是依照共同元素理论了, 同类型的效果器染色一致, 能有效增加融合度</p>
+<h2 id="效果链"><a href="#效果链" class="headerlink" title="效果链"></a>效果链</h2><p>依照上面的所说, 我在对声音进行均衡处理时, 通常依照以下顺序:</p>
+<ul>
+<li>减法EQ </li>
+<li>加法EQ</li>
+<li>压缩器</li>
+<li>….</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文中, 关于关于均衡器对提升融合度, 主要分为以下两大方面:</p>
+<ol>
+<li>增加共同元素: 同类型效果器, 频谱趋于一致….等等</li>
+<li>衰减特色频率: 平凡但不平庸</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>我们在扫频时不建议将音量提的过高, 否则你会发现到处都是不舒服的频率, 一般不超过12db</li>
+<li>衰减的点不要太多, 过多反而会适得其反, 一般来说 这种情况的发生可能是操作方法不对</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音档案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中如何实现在轨道上显示VU表</title>
+    <url>/148.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>这是<a href="https://forums.cockos.com/showthread.php?p=2523691" target="_blank" rel="noopener">ZenoMOD</a>制作的一个很棒的JS 插件，它允许您将可定制的 VU 仪表嵌入到您的轨道中。</p>
+<p>您可以在轨道面板或混音器面板中显示它，并且有超过 10 种皮肤变化！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/6376547f1399e9441b38425b_2ccaee00-e3fe-4a7c-b2cb-d48bfe7c12f6.gif" alt="img"></p>
+<p>我最喜欢的功能是可以直接在调音台中更改电平。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/6376547e1399e922c1384259_907c4cc2-fd07-4df2-a44c-32fdeb622c0d.gif" alt="img"></p>
+<p>单击并拖动<code>MCP / TCP</code>来调节音量。并双击将音量重置为默认值。</p>
+<p>这很方便我们给音轨做<code>Gain Staging</code></p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ul>
+<li>如果你安装了<code>Reapack</code>，你的 <code>FX</code> 列表中应该有这个插件, 插件名叫<code>VU Meter</code>如果你没有<code>Reapack</code>，可以参考我之前发的文章《<a href="https://audio.newban.cn/131.html">REAPER宿主功能增强秘技之脚本和插件</a>》</li>
+<li>或者，如果您需要此插件的原包，也可以在[REAPER stash](<a href="https://stash.reaper.fm/v/42223/VU" target="_blank" rel="noopener">https://stash.reaper.fm/v/42223/VU</a> Meter (ZenoMOD))中直接下载。</li>
+</ul>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><ol>
+<li>在<code>Reapack</code>仓库中搜索<code>VU Meter</code>并安装</li>
+<li>安装后，将<code>VU Meter (ZenoMOD)</code>加载到您的任何轨道。</li>
+<li>在调音台面板中，右键单击插件，然后勾选<code>Show embedded UI in MCP</code>（当然你也可以在 <code>TCP</code>中显示它）</li>
+<li>如何要将其设置为所有新轨道的默认值，实现新插入的轨道自动添加该VU表插件, 请打开<code>FX Track window &gt; Right click the plugin &gt; FX Chains &gt; Save all FX as default chain for new tracks…</code></li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/6376547f1399e918bc38425a_5e95a08b-b6bf-474d-a612-5cda6657b824.jpeg" alt="img"></p>
+<p><code>Zeno</code> 的 <code>VU Meter</code> 是今年<code>REAPER</code> 推出的最棒的产品之一，它使<code>gain staging</code>的方式更加简单，同时看起来也非常好！✨</p>
+<p>如果您想阅读更多内容并支持该项目，请查看<a href="https://forums.cockos.com/showthread.php?p=2523691" target="_blank" rel="noopener">论坛帖子！</a></p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-show-vu-meters-on-tracks" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使 REAPER 中的仪表和波形看起来更加平滑</title>
+    <url>/150.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在本期快速教程中，我将向您展示如何使 <code>REAPER</code> 中的仪表和波形在播放时看起来更加平滑👌</p>
+<p><code>REAPER</code> 允许您自定义仪表和波形的平滑度。默认情况下，设置非常低，导致出现锯齿状外观。</p>
+<p>我现在将介绍如何自定义其中每一个。</p>
+<h2 id="🌊-波形更平滑"><a href="#🌊-波形更平滑" class="headerlink" title="🌊 波形更平滑"></a>🌊 波形更平滑</h2><p>您可能已经注意到，当 <code>REAPER</code> 录制时，波形绘制得非常慢。这是因为它的默认刷新率仅为 <code>3 Hz</code>。我们可以将其设置为 <code>30 Hz</code>，并使其看起来更加平滑，如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7d7bfb9f1a9a_a928f341-c60c-4135-a180-78565dfc024f.gif" alt="录音时的波形。"></p>
+<h3 id="设置步骤："><a href="#设置步骤：" class="headerlink" title="设置步骤："></a>设置步骤：</h3><ol>
+<li><p>首先进入到<code>Preferences &gt; Recording</code>。</p>
+</li>
+<li><p>然后找到<code>Show preview ...update frequency</code>一栏改为<code>30</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7d47999f1a9e_e18d6c90-c4b9-4a9a-bb51-64ac3c87ce7d.jpeg" alt="img"></p>
+</li>
+<li><p>完成！尝试录制，你的波形应该看起来更好😊</p>
+</li>
+</ol>
+<h2 id="🎚-更平滑的仪表"><a href="#🎚-更平滑的仪表" class="headerlink" title="🎚 更平滑的仪表"></a>🎚 更平滑的仪表</h2><p><code>VU Meter</code>也可以可调得更加顺滑！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7dbc009f1a9c_900cefbb-146e-493d-ace0-2d763510de2f.gif" alt="轨道和插件仪表。  "></p>
+<h3 id="设置步骤"><a href="#设置步骤" class="headerlink" title="设置步骤"></a>设置步骤</h3><ol>
+<li><p>首先进入到<code>Preferences &gt; Track Control Panels</code></p>
+</li>
+<li><p>然后找到<code>Meter update frequency</code>一栏, 将其设置为<code>30 Hz</code>, 同时将<code>Meter Decay</code> 设置为<code>40 db/sec</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7d255d9f1a99_7d3559d6-cbd2-4a2c-ae67-9191dbfee371.jpeg" alt></p>
+</li>
+<li><p>完毕！您的轨道计现在看起来应该更平滑了。</p>
+</li>
+</ol>
+<p>如果您的轨道上没有<code>VU</code>表, 可以参考之前的文章:《<a href="https://audio.newban.cn/148.html">在REAPER中如何实现在轨道上显示VU表</a>》</p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>如果您发现任何性能问题，您可以将频率数字降低到15或更低。即使在较旧的机器上，我个人也没有注意到这些设置有任何差异。</p>
+<p>享受💙</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/smoother-waveforms-and-meters-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 REAPER 中调整交叉渐变的 5 种方法</title>
+    <url>/149.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><code>REAPER</code> 在定义交叉淡入淡出方面非常灵活。接下来我将向您展示的这五中调整交叉渐变的方法</p>
+<p>1.按住<code>Shift</code>键并单击+拖动以移动交叉淡入淡出。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636f07159ef3ba77397f7282_b91f1edd-5cc7-4407-9a26-6025d49f7497.gif" alt="img"></p>
+<p>2.选择并拖动交点以水平调整形状。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636f07159ef3ba274f7f7280_6e1f8e2a-d44e-4296-a9f6-f6b704d12ae9.gif" alt="img"></p>
+<p>3.按<code>ctrl/cmd</code> +拖动以调整交叉淡入淡出大小。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636f07159ef3ba7d237f7283_f97b03c2-7fca-4196-809b-3a8fff59c335.gif" alt="img"></p>
+<p>4.按<code>alt/opt</code> +拖动可自由调整形状。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636f07159ef3ba442e7f7281_e644a768-466e-4895-99d0-f6f22a77fb8a.gif" alt="img"></p>
+<p>5.按住Shift + Alt/opt可移动淡入淡出和拉伸项目。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/636f07b3a7d15a30b149fb54_277d70b8-a09f-474e-a90f-9a2cb8d1f595.gif" alt="img"></p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/5-ways-to-adjust-crossfades-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
       <tags>
