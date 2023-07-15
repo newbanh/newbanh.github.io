@@ -6007,6 +6007,17 @@ shortcut.add("Shift+x",function() {
 <p>如果你用其他宿主可能没这么方便, 但是只要明白其中的原理, 无论什么宿主都是一样</p>
 <p>无论干湿比例怎么变, 两者总电平之和在调整前后应该是保持一致的, 在其他宿主中比如<code>Cubase</code>, 默认是推子后发送, 一旦我们加大了发送量, 那么我们就应该将干声音量推子往下拉一部分, 确保前后电平不会相差太多, 这样才能达到我们想要的纵深效果</p>
 <p>如果不下拉干声推子, 纯粹是加大发送量的话, 声音体积过大会将其他乐器声音掩盖, 这肯定不是我们想要的结果</p>
+<h3 id="空间设计参考示例图"><a href="#空间设计参考示例图" class="headerlink" title="空间设计参考示例图"></a>空间设计参考示例图</h3><p>以下图片摘自: <a href="https://www.masteringthemix.com/blogs/learn/best-reference-track-for-all-genres" target="_blank" rel="noopener">masteringthemix</a></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170622035.png" alt="image-20230714170622035"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170724523.png" alt="image-20230714170724523"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170751775.png" alt="image-20230714170751775"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170811421.png" alt="image-20230714170811421"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170845853.png" alt="image-20230714170845853"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170913452.png" alt="image-20230714170913452"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170928022.png" alt="image-20230714170928022"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714170959803.png" alt="image-20230714170959803"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714171021477.png" alt="image-20230714171021477"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714171035147.png" alt="image-20230714171035147"></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -7069,7 +7080,21 @@ shortcut.add("Shift+x",function() {
 <p>设置方法：</p>
 <p>右键单击混音器空白区域中的任意位置，然后选择<code>Clickable icon for folder tracks to show/hide children</code></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/6369abdddb2c66a875a468df_977f8bfd-c1d1-41f5-a429-2e9007e4a2e2.png" alt="img"></p>
+<p>如果轨道太多 没有空白区域, 那么可以在<code>Master</code>轨道右键或者点<code>info</code>图标:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230713175203920.png" alt="image-20230713175203920"></p>
 <p>✅ 完成！现在您应该可以在混音器中每个文件夹的底部看到一个图标，您可以单击该图标来显示和隐藏子轨道</p>
+<h2 id="放大缩小波形"><a href="#放大缩小波形" class="headerlink" title="放大缩小波形"></a>放大缩小波形</h2><p>仅仅是视觉放大, 不影响音量, 方便精细剪辑</p>
+<ul>
+<li><p>横向放大缩小: 键盘<code>+/-</code>号</p>
+</li>
+<li><p>纵向放大缩小: 键盘``/~`</p>
+</li>
+</ul>
+<h2 id="平移剪辑的轨道"><a href="#平移剪辑的轨道" class="headerlink" title="平移剪辑的轨道"></a>平移剪辑的轨道</h2><p>当我们对音频齿音和呼吸声进行剪辑到单独的轨道中, 需要使用到平移功能, 以下是快捷键:</p>
+<ul>
+<li>将选中的音频块平移到下一轨道: 数字键盘2</li>
+<li>将选中的音频块平移到上一轨道: 数字键盘8</li>
+</ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8511,7 +8536,7 @@ shortcut.add("Shift+x",function() {
       </tags>
   </entry>
   <entry>
-    <title>如何使 REAPER 中的仪表和波形看起来更加平滑</title>
+    <title>如何使REAPER中的仪表和波形看起来更加平滑</title>
     <url>/150.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在本期快速教程中，我将向您展示如何使 <code>REAPER</code> 中的仪表和波形在播放时看起来更加平滑👌</p>
 <p><code>REAPER</code> 允许您自定义仪表和波形的平滑度。默认情况下，设置非常低，导致出现锯齿状外观。</p>
@@ -8567,6 +8592,58 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中如何建立音频参考轨道</title>
+    <url>/151.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p><code>reaper</code>中如何建立参考音频轨道 其信号绕过<code>master</code>输出 实现当前混音和参考音频切换播放呢?</p>
+<p>我们在混音过程中可能会拿某个同类型的商业混音作品来进行参考, 使我们的混音更加的理性</p>
+<p>在其他DAW中实现起来有些费劲, 但是在<code>REAPER</code>中却非常容易, 具体实现步骤如下</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><ol>
+<li><p>打开<code>Reaper</code>，并确保你的项目已加载。</p>
+</li>
+<li><p>在Reaper的轨道窗口右键单击空白区域，选择<code>Insert Track</code>（插入轨道）或使用快捷键<code>Ctrl+T（Windows）/Cmd+T（Mac）</code></p>
+</li>
+<li><p>打开调音台, 在新建的轨道上，右键单击并选择弹出路由设置对话框</p>
+</li>
+<li><p>在弹出的对话框中，找到<code>Master send</code>选项，并取消勾选</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714175923470.png" alt="image-20230714175923470"></p>
+</li>
+<li><p>同时, 找到<code>Hardware Output</code>（硬件输出）选项，并选择你<code>Output 1/Output 2</code>输出。这是不同于主输出的输出通道。</p>
+</li>
+<li><p>现在，你的参考音频轨道已创建，通过<code>M/S</code>则可来回切换对比试听了</p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自动识别歌曲的速度和调性</title>
+    <url>/152.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近无意之中发现一个自动识别歌曲的速度和调性的在线工具, 感觉还不错, 在此分享给大家</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230715170628044.png" alt="image-20230715170628044"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230715170851462.png" alt="image-20230715170851462"></p>
+<p>如图所示, 该网站不仅可以识别歌曲调性,还具备以下功能:</p>
+<ul>
+<li>自动去除歌曲人声, 方便我们获取歌曲伴奏</li>
+<li>自动分离歌曲不同声部</li>
+<li>对歌曲进行变调</li>
+<li>对歌曲进行合并剪辑</li>
+<li>以及录音和卡拉OK</li>
+</ul>
+<p>这些功能对于很多UP主来说应该是很有帮助的, 快捷高效</p>
+<p>有兴趣的小伙伴可以试一试</p>
+<h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="https://vocalremover.org/zh/key-bpm-finder" target="_blank" rel="noopener">点击进入</a></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>实用工具</tag>
       </tags>
   </entry>
 </search>
