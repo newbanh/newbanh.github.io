@@ -1456,6 +1456,9 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20221109151510808.png" alt="image-20221109151510808"></p>
 <p>还有<a href="https://forum.cockos.com/showthread.php?t=183627" target="_blank" rel="noopener">这个：</a></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20221109151428.png" alt></p>
+<p>还有这个<a href="https://forum.cockos.com/showthread.php?t=228983" target="_blank" rel="noopener">Smooth6</a>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719103647105.png" alt="image-20230719103647105"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719103716631.png" alt="image-20230719103716631"></p>
 <h3 id="宿主优势"><a href="#宿主优势" class="headerlink" title="宿主优势"></a>宿主优势</h3><ul>
 <li><p><strong>体积小</strong>  安装包最大只有25M, 相比<code>Cubase</code>的六百多M或者<code>Studio one</code>的两百多M  <code>REAPER</code>简直不要太小</p>
 </li>
@@ -1498,6 +1501,10 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <ul>
 <li><a href="https://www.extremraym.com/en/x-raym-analog-reaper-theme/" target="_blank" rel="noopener">X-Raym Analog – Reaper Theme</a></li>
 <li><a href="https://forum.cockos.com/showthread.php?t=196332" target="_blank" rel="noopener">Hydra Theme</a></li>
+</ul>
+<p><strong>国外文章:</strong></p>
+<ul>
+<li><a href="https://www.sonarworks.com/blog/learn/reaper-routing-tracks-in-a-mix-template" target="_blank" rel="noopener">REAPER: Routing Tracks in A Mix Template</a></li>
 </ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -5342,11 +5349,37 @@ shortcut.add("Shift+x",function() {
     <url>/69.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>学习混音的同学们, 是否苦于找不到免费的多轨混音素材, 那么这里给大家介绍几个网站, 以备不时之需</p>
 <h3 id="网站列表"><a href="#网站列表" class="headerlink" title="网站列表"></a>网站列表</h3><ol>
-<li><p><a href="http://www.cambridge-mt.com/ms/mtk/" target="_blank" rel="noopener">http://www.cambridge-mt.com/ms/mtk/</a></p>
+<li><p><a href="http://www.cambridge-mt.com/ms/mtk/" target="_blank" rel="noopener">cambridge</a></p>
 <p>这是 <em>Mixing Secrets For The Small Studio</em> 这本书的作者 <code>Mike Senior</code> 支持的一个项目，很多乐队或制作人把自己的作品分轨放到这个网站上，供学习者下载来练习混音制作。</p>
 <p>这里面各种各样的音乐风格都有，素材的质量也是千差万别，有的甚至需要你来修正演奏的节奏或人声的音高。这绝对是很好的训练素材。不仅如此，它还有在线论坛供大家切磋、讨论，可以多多与创作者交流</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20210909155601.png" alt></p>
 <p>这个网站提供的素材有详细的说明。在下载前可以预听缩混完成的版本，选择自己喜欢的风格去下载分轨。当然，缩混好的还可以作为一个混音联系的参考。很贴心</p>
+</li>
+</ol>
+<ol start="2">
+<li><p><a href="https://telefunken-elektroakustik.com/live-from-the-lab-season-3" target="_blank" rel="noopener">telefunken</a></p>
+<p>德律风根乐队现场分轨文件, 所有音频文件均以<code>.WAV</code>格式呈现，并以<code>24 位/48KHz</code>采样率录制, 而且对所有乐器录制的麦克风具体品牌也做了标明, 可谓是良心之至</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719150451787.png" alt="image-20230719150451787"></p>
+</li>
+<li><p><a href="https://www.subaqueousmusic.com/ableton-live-templates/" target="_blank" rel="noopener">Ableton Live Templates</a></p>
+<p>十首<code>Ableton Live</code>分轨模板, 由<code>subaqueousmusic</code>提供, 强烈推荐</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719151341434.png" alt="image-20230719151341434"></p>
+<p><a href="https://app.gumroad.com/d/05978f637fc5a248aa2edcd064719630" target="_blank" rel="noopener">页面链接</a></p>
+<p>模板使用视频:</p>
+<iframe src="https://app.gumroad.com/s/05978f637fc5a248aa2edcd064719630/G_Ue7lOfpun4_F7KKvCMVA==&autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="1020" height="660 framespacing=" 0" allowfullscreen="true"> </iframe>
+</li>
+<li><p><a href="https://blend.io/explore" target="_blank" rel="noopener">Blend</a></p>
+<p>有点类似于<code>bandlab</code>那种音乐众创平台, 里面有许多音乐人自己上传的分轨, 质量参差不齐, 不过用来混音练习足够了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719152629444.png" alt="image-20230719152629444"></p>
+</li>
+<li><p><a href="https://weathervanemusic.org/shakingthrough/" target="_blank" rel="noopener">Shaking Through</a></p>
+<p>《Shaking Through》是一个由<code>Weathervane Music</code>音乐组织制作的系列节目。每个月他们都会引进一位新艺术家到工作室，并带您了解整个过程。因此，他们向您展示了他们如何录制所有内容并详细记录整个过程，并真正让您了解制作唱片的过程。所以，这是一个非常棒的系列，而且该计划的一部分，他们还允许您访问多轨</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719154433511.png" alt="image-20230719154433511"></p>
+</li>
+<li><p><a href="https://producelikeapro.lpages.co/plap-free-stuff-without-trial/" target="_blank" rel="noopener">producelikeapro</a></p>
+<p>不仅提供免费分轨, 还提供了钢琴和鼓的录音教程</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719155624263.png" alt="image-20230719155624263"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719155550620.png" alt="image-20230719155550620"></p>
 </li>
 </ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -7095,6 +7128,10 @@ shortcut.add("Shift+x",function() {
 <li>将选中的音频块平移到下一轨道: 数字键盘2</li>
 <li>将选中的音频块平移到上一轨道: 数字键盘8</li>
 </ul>
+<h2 id="双声道转成单声道"><a href="#双声道转成单声道" class="headerlink" title="双声道转成单声道"></a>双声道转成单声道</h2><p>有时候我们拿到的某些单声道音频波形显示是双声道, 也就是左右声道波形一模一样, 为了方便后期混音, 我们需要将其转成单身道</p>
+<p>具体操作:</p>
+<p>选中需要操作的音频块, 右键<code>item settings--&gt;Take channel mode: Mono(downmix)</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719161544617.png" alt="image-20230719161544617"></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8615,6 +8652,32 @@ shortcut.add("Shift+x",function() {
 <li><p>现在，你的参考音频轨道已创建，通过<code>M/S</code>则可来回切换对比试听了</p>
 </li>
 </ol>
+<h2 id="混音和参考音频快速切换播放"><a href="#混音和参考音频快速切换播放" class="headerlink" title="混音和参考音频快速切换播放"></a>混音和参考音频快速切换播放</h2><p>混音过程中, 需要频繁切换参考轨道的播放, 而每次切换都需要找到相关轨道来回对其<code>M/S</code>, 效率非常的低而且繁琐, 有没有高效的方法呢, 比如一键切换?, 这里给大家分享两个小技巧:</p>
+<h4 id="第一种-使用grouping编组"><a href="#第一种-使用grouping编组" class="headerlink" title="第一种  使用grouping编组"></a>第一种  使用grouping编组</h4><ol>
+<li>首先选中<code>master</code>轨和<code>reference</code>, 右键选择<code>Track Grouping Parameters..</code>进入编组设置窗口</li>
+<li>将<code>Mute Lead</code>和<code>Mute Follow</code>同时勾选上</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717100214519.png" alt="image-20230717100214519"></p>
+<ol start="3">
+<li><p>此时我们<code>Mute</code>其中任意一轨, 另一轨也跟着被<code>Mute</code>了, 此时我们按住<code>shift</code>键左键取消其中一轨的<code>Mute</code>, 这时我们再点击<code>Mute</code>就能实现两轨之间反向<code>Mute</code>了 , 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-11-16.2023-07-17%2010_18_32.gif" alt="2023-07-17 10-11-16.2023-07-17 10_18_32"></p>
+</li>
+</ol>
+<h4 id="第二种-使用Action组合"><a href="#第二种-使用Action组合" class="headerlink" title="第二种 使用Action组合"></a>第二种 使用Action组合</h4><p>虽然第一种方式能有效减少切换的流程, 但我还是感觉有些慢, 于是决定使用自定义<code>Action</code>的方式, 这样可以给其添加快捷键</p>
+<ol>
+<li><p>首先打开<code>Action List</code>窗口, 创建一个新的<code>Action</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103416258.png" alt="image-20230717103416258"></p>
+</li>
+<li><p>然后搜索<code>Toggle mute for master track</code>和<code>Toggle solo for track 01</code>并将它们拖拽至右方, 这里我将自定义<code>Action</code>命名为<code>toggle reference</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103843224.png" alt="image-20230717103843224"></p>
+</li>
+<li><p>为了方便使用 我为其添加了快捷键<code>/</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717104136573.png" alt="image-20230717104136573"></p>
+</li>
+<li><p>此时回到轨道面板, 我们只需要将参考音频放置在第一轨道上, 并且<code>Mute</code>它, 后面我们就可以随时通过快捷键切换音频的播放了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-44-23.2023-07-17%2010_49_43.gif" alt="2023-07-17 10-44-23.2023-07-17 10_49_43"></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8644,6 +8707,158 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>实用工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Waves Tune人声修音使用技巧</title>
+    <url>/153.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>个人用<code>Waves Tune</code>居多, 有些使用的技巧给大家分享一下</p>
+<h2 id="如何让所有音符移动至某个音上"><a href="#如何让所有音符移动至某个音上" class="headerlink" title="如何让所有音符移动至某个音上"></a>如何让所有音符移动至某个音上</h2><ol>
+<li>首选<code>select all</code>选中所有</li>
+<li>然后按住<code>Ctrl</code>, 鼠标点击需要对其的音符即可</li>
+<li>最后结果如下如所示</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230715180909022.png" alt="image-20230715180909022"></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>Waves</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>REAPER中常用快捷键以及个人定制热键参考</title>
+    <url>/154.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="官方默认快捷键"><a href="#官方默认快捷键" class="headerlink" title="官方默认快捷键"></a>官方默认快捷键</h2><ol>
+<li><p>打开/关闭调音台</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Ctrl+M</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开/关闭媒体搜索窗口</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Ctrl+Alt+X</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对选中<code>Item</code>进行<code>Group</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">G</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入标记</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">shift+M</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分离音频块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">S</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分离时间选取内的音频块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Shift+S</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开/隐藏音量包络轨道</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">V</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开/隐藏声像包络轨道</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">P</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开当前工程所有快捷键列表, 以<code>html</code>页面形式呈现出来(help–&gt;keybindings)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Shift+F1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>item</code>水平放大</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">+</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>item</code>水平缩小</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>所有轨道纵向放至最大</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>所有轨道纵向缩至最小</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">`</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>所有轨道步进放大</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PageUp</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>所有轨道步进缩小</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PageDown</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>音频块上下所有滚动查看</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alt+Up/Down/Left/Right</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<h2 id="我个人的自定义快捷键"><a href="#我个人的自定义快捷键" class="headerlink" title="我个人的自定义快捷键"></a>我个人的自定义快捷键</h2><p>以下快键键仅供参考:</p>
+<ol>
+<li><p>锁定/解锁选中<code>Item</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Shift+Alt+L</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>循环范围包裹音频块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alt+P</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对选中的时间范围进行<code>region</code>插入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Shift+Alt+R</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>播放指针跳转到上/下一个<code>Region</code>点</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alt+Q/W</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开选中<code>item</code>的本地路径</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alt+F1</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717135036638.png" alt="image-20230717135036638"></p>
+</li>
+<li><p>放大/缩小选中的<code>item</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">F1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>item</code>水平放大/缩小</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Ctrl+鼠标滚轮</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>item</code>水平移动</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Shift+鼠标滚轮</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>轨道上下滚动查看</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">鼠标滚轮</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719112358346.png" alt="image-20230719112358346"></p>
+</li>
+</ol>
+<h2 id="我个人的自定义Action"><a href="#我个人的自定义Action" class="headerlink" title="我个人的自定义Action"></a>我个人的自定义Action</h2><p>以下<code>Action</code>仅供参考:</p>
+<ol>
+<li><p>参考音频切换播放<code>toggle reference</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Toggle mute for master track</span><br><span class="line">Toggle solo for track 01</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103843224.png" alt="image-20230717103843224"></p>
+</li>
+</ol>
+<h2 id="REAPER使用过程注意事项"><a href="#REAPER使用过程注意事项" class="headerlink" title="REAPER使用过程注意事项"></a>REAPER使用过程注意事项</h2><ol>
+<li>执行操作时, 需要养成先选中<code>Item</code>的习惯, 如果没有选中某个<code>Item</code>, 默认是分离所有轨道中的音频</li>
+<li>尽量少使用<code>Glue</code>功能, 平常无论你对音频如何复制剪辑都不会新增音频文件, 一旦你用<code>Glue items</code>功能对<code>item</code>进行的了合并操作, 那么在工程目录下会新增音频文件, 这对于我们项目管理和备份时非常不利的</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>REAPER中take和item有什么区别</title>
+    <url>/155.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>刚开始使用<code>reaper</code>时可能会不太清楚<code>take</code>和<code>item</code>的区别, 这里给大家做简单的介绍</p>
+<h2 id="Take"><a href="#Take" class="headerlink" title="Take"></a>Take</h2><p><code>Take (音频片段）</code>是指在一个音频轨道上录制或导入的音频片段。当你在<code>Reaper</code>中录制或导入音频时，每个音频片段都被称为一个 <code>Take</code>。它代表了单独的音频录音或文件。</p>
+<ul>
+<li>一个轨道可以包含多个 <code>Takes</code>，在同一时间点上相互叠加或连续播放。</li>
+<li>每个 <code>Take</code> 可以具有不同的长度、音量、效果处理等属性。</li>
+<li>在混音或编辑过程中，你可以切换和比较不同的 <code>Takes</code>，选择最好的版本或进行组合。</li>
+</ul>
+<h2 id="Item"><a href="#Item" class="headerlink" title="Item"></a>Item</h2><p><code>Item 项目）</code>是指 <code>Reaper</code>中的一个音频片段的可视表示，它将 <code>Take</code>（音频数据）与其它参数（如位置、长度、音量、效果等）结合起来。</p>
+<ul>
+<li>一个音频片段（<code>Take</code>）可以有一个或多个关联的<code>Items</code>，每个<code>Item</code>都显示了该音频片段的可视化内容和相关的控制参数。</li>
+<li>通过编辑 <code>Item</code>，你可以移动、调整大小、裁剪、应用效果、平衡音量等对音频进行精确控制。</li>
+<li>在项目中，你可以使用项（<code>Item</code>）进行整体的编辑、处理和排列。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总之，<code>Take</code>是音频片段本身，而<code>Item</code> 是展示了 <code>Take</code> 的可视化表示，并允许你在项目中对其进行操作和调整。</p>
+<p>通俗点说, <code>Take</code>就相当于是音频素材库,<code>Item</code>就相当于是一个微型音频工程, 它只是对<code>Take</code>进行了引用. 这也是为什么我们在<code>Reaper</code>中对某个<code>item</code>无论怎么剪辑和复制, 工程目录下都不会新增音频文件</p>
+<p><code>Take</code>和<code>item</code>的这种设计不仅大大减少了工程体积, 还使得音频处理变得更加的自由灵活</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
       </tags>
   </entry>
 </search>

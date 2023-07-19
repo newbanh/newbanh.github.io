@@ -91,7 +91,13 @@
 <meta property="og:description" content="需求reaper中如何建立参考音频轨道 其信号绕过master输出 实现当前混音和参考音频切换播放呢? 我们在混音过程中可能会拿某个同类型的商业混音作品来进行参考, 使我们的混音更加的理性 在其他DAW中实现起来有些费劲, 但是在REAPER中却非常容易, 具体实现步骤如下 实现步骤 打开Reaper，并确保你的项目已加载。  在Reaper的轨道窗口右键单击空白区域，选择Insert Track">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714175923470.png">
-<meta property="og:updated_time" content="2023-07-14T10:09:31.599Z">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717100214519.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-11-16.2023-07-17%2010_18_32.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103416258.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103843224.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717104136573.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-44-23.2023-07-17%2010_49_43.gif">
+<meta property="og:updated_time" content="2023-07-17T03:16:34.837Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在REAPER中如何建立音频参考轨道">
 <meta name="twitter:description" content="需求reaper中如何建立参考音频轨道 其信号绕过master输出 实现当前混音和参考音频切换播放呢? 我们在混音过程中可能会拿某个同类型的商业混音作品来进行参考, 使我们的混音更加的理性 在其他DAW中实现起来有些费劲, 但是在REAPER中却非常容易, 具体实现步骤如下 实现步骤 打开Reaper，并确保你的项目已加载。  在Reaper的轨道窗口右键单击空白区域，选择Insert Track">
@@ -364,6 +370,32 @@
 <li><p>现在，你的参考音频轨道已创建，通过<code>M/S</code>则可来回切换对比试听了</p>
 </li>
 </ol>
+<h2 id="混音和参考音频快速切换播放"><a href="#混音和参考音频快速切换播放" class="headerlink" title="混音和参考音频快速切换播放"></a>混音和参考音频快速切换播放</h2><p>混音过程中, 需要频繁切换参考轨道的播放, 而每次切换都需要找到相关轨道来回对其<code>M/S</code>, 效率非常的低而且繁琐, 有没有高效的方法呢, 比如一键切换?, 这里给大家分享两个小技巧:</p>
+<h4 id="第一种-使用grouping编组"><a href="#第一种-使用grouping编组" class="headerlink" title="第一种  使用grouping编组"></a>第一种  使用grouping编组</h4><ol>
+<li>首先选中<code>master</code>轨和<code>reference</code>, 右键选择<code>Track Grouping Parameters..</code>进入编组设置窗口</li>
+<li>将<code>Mute Lead</code>和<code>Mute Follow</code>同时勾选上</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717100214519.png" alt="image-20230717100214519"></p>
+<ol start="3">
+<li><p>此时我们<code>Mute</code>其中任意一轨, 另一轨也跟着被<code>Mute</code>了, 此时我们按住<code>shift</code>键左键取消其中一轨的<code>Mute</code>, 这时我们再点击<code>Mute</code>就能实现两轨之间反向<code>Mute</code>了 , 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-11-16.2023-07-17%2010_18_32.gif" alt="2023-07-17 10-11-16.2023-07-17 10_18_32"></p>
+</li>
+</ol>
+<h4 id="第二种-使用Action组合"><a href="#第二种-使用Action组合" class="headerlink" title="第二种 使用Action组合"></a>第二种 使用Action组合</h4><p>虽然第一种方式能有效减少切换的流程, 但我还是感觉有些慢, 于是决定使用自定义<code>Action</code>的方式, 这样可以给其添加快捷键</p>
+<ol>
+<li><p>首先打开<code>Action List</code>窗口, 创建一个新的<code>Action</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103416258.png" alt="image-20230717103416258"></p>
+</li>
+<li><p>然后搜索<code>Toggle mute for master track</code>和<code>Toggle solo for track 01</code>并将它们拖拽至右方, 这里我将自定义<code>Action</code>命名为<code>toggle reference</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103843224.png" alt="image-20230717103843224"></p>
+</li>
+<li><p>为了方便使用 我为其添加了快捷键<code>/</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717104136573.png" alt="image-20230717104136573"></p>
+</li>
+<li><p>此时回到轨道面板, 我们只需要将参考音频放置在第一轨道上, 并且<code>Mute</code>它, 后面我们就可以随时通过快捷键切换音频的播放了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-44-23.2023-07-17%2010_49_43.gif" alt="2023-07-17 10-44-23.2023-07-17 10_49_43"></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -497,7 +529,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">152</span>
+                  <span class="site-state-item-count">155</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -510,7 +542,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -550,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现步骤"><span class="nav-number">2.</span> <span class="nav-text">实现步骤</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现步骤"><span class="nav-number">2.</span> <span class="nav-text">实现步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混音和参考音频快速切换播放"><span class="nav-number">3.</span> <span class="nav-text">混音和参考音频快速切换播放</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一种-使用grouping编组"><span class="nav-number">3.0.1.</span> <span class="nav-text">第一种  使用grouping编组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二种-使用Action组合"><span class="nav-number">3.0.2.</span> <span class="nav-text">第二种 使用Action组合</span></a></li></ol></li></ol></div>
             
 
           </div>

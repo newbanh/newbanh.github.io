@@ -273,6 +273,512 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../59.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../59.html" itemprop="url">Logic Pro X 系列教程 11：混音能手</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-13T10:51:01+08:00">
+                2019-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>Logic Pro X 有着丰富的混音功能，帮助制作人高效地进行混音。Mark Cousins 将带你进入 Logic Pro X 的混音领域。</strong></p>
+<p>混音是音频制作中最具有创造性的一个步骤，Logic Pro X 强大的混音功能能够极大地改善你的工作流程，并且使得音乐性也得到最大的发挥。然而，在如今的虚拟设备混音时代，这个任务也渐渐变得有些失去了创造性，甚至作为创作流程中的一环，其边界也变得越来越模糊。</p>
+<p>混音也是一种创造，因此我们的工作并不是找到一个插件，改一下某个参数，所有声音就都「好听」起来了。要时刻记得，每一个混音操作的原因是什么，以及你的目的是什么。</p>
+<blockquote>
+<p>混音要制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
+</blockquote>
+<p>在本篇教程中，我们会探索一系列改进混音的关键技术。首先，我们要学习如何进行有条不紊的工作，学会组织你的工程。包括总线发送的规范，轨道堆栈（Track Stack）以及分组的合理利用，我们会发现，一个组织结构紧密的混音，听起来就不会随意而杂乱。</p>
+<p>第二个部分主要探讨效果器插件的使用，包括通道条插入和总线发送。这是混音策略得以实现的环节，比如压缩器与 EQ 的顺序问题，如何用延迟效果器精准创造一个立体声声场的问题。我们要用混音制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
+<p>在最后一个部分我们将拿出混音的「秘密武器」：自动化。如果说静态混音能够做到 80% 的话，那么自动化就像那甜点上的一颗草莓，使每一轨之间都互相拼接成一个有机整体。你需要理解 Logic 的几种自动化模式：Touch、Write 和 Read，这样不仅能边播边记录推子的动作，还可以通过手绘自动化曲线将你的混音精确地控制在 0.1dB 之下。</p>
+<h5 id="贴士：创建多版本混音"><a href="#贴士：创建多版本混音" class="headerlink" title="贴士：创建多版本混音"></a>贴士：创建多版本混音</h5><p>Logic 的文件菜单下有一个「备选」功能，可以用来创建和切换同一个工程的不同混音。以往，你可能需要将工程另存为一个新的文件，而「备选」功能则优雅地解决了这个问题，所有版本的混音都共享相同的工程内容。因此，做一段乐器混音、30 秒的广告配乐，或者 remix，你都无需创建新工程，只需要创建备选并直接修改即可。推而广之，当你需要尝试不同录音 take 时也可以使用备选。</p>
+<p><em>这篇教程得到了伦敦 Point Blank 音乐学校的认可。Point Blank 是一所专业的音乐制作、音频工程、音乐营销、演唱、广播制作、DJ 技术和电影制作的学校，全部由英国顶尖的音乐制作人和媒体专家授课，更有音乐和媒体界传奇人物的客座访谈。</em></p>
+<h4 id="更整洁的混音"><a href="#更整洁的混音" class="headerlink" title="更整洁的混音"></a>更整洁的混音</h4><p>1、为了让混音过程更加流畅，最好对混音器进行一下组织管理，尤其在轨道数量较多的情况下。如何整理最有效呢？要考虑的第一条就是，怎样分组排序能让你在工程里轻松穿梭，快捷地定位所需的轨道。当混音器处于「轨道」模式下，混音器里的音轨顺序就会自动与轨道区保持一致。</p>
+<p>2、如果使用了音色库，它们可能会产生一大堆备用的发送轨和辅助轨，可以考虑把用不到的发送轨删除。你可以按名称顺序实例化发送轨，比如 Bus 1 放在第一个发送槽里。</p>
+<p>3、我们往往会用三层混响效果来制造深度感强烈的声场效果，每一层都较上一层的空间更大。上图中，我们为每一轨都实例化了三个混响，按照名称顺序摆放，一目了然。</p>
+<p>4、使用轨道堆栈（Track Stack）来归纳成组的声音，例如鼓组等。按住 Command 并点按要收纳的音轨，选择「轨道」菜单下的「创建 Track Stack…」即可。在弹出的对话框中选择「总和堆栈」，这样你可以得到一个堆栈的总推子。</p>
+<p>5、点按轨道头列表里的小三角，堆栈就会展开或合拢。为总和轨标注一个名称，甚至分配颜色，以便视觉区分。另外，在混音器中，把轨道堆栈放置在末尾会更加整洁，所以在轨道区把总和堆栈放到最下边即可。</p>
+<p>6、另一个归纳音轨的方法是编组。将轨道编组后，它们的推子将同步移动。但你不能隐藏音轨。选中要编组的音轨后，在混音器中点按音轨中央的分组按钮，即可以在菜单中完成编组。你可以随时按 Shift + G 临时关闭和恢复编组轨道的联动响应。</p>
+<h4 id="使用信号处理器"><a href="#使用信号处理器" class="headerlink" title="使用信号处理器"></a>使用信号处理器</h4><p>1、在混音过程中，试着把插入效果和发送效果的作用区分开。总体而言，插入效果应偏向于修改音调、音色和动态。同时，改变处理器的顺序有时也会产生比较微妙的声音效果变化。</p>
+<p>2、相对而言，发送效果则应该主要进行环境修饰，例如混响和延迟。应该好好控制环境效果的作用量，或说干湿比。如果使用混响效果，最好在发送插槽里选择「后声相」，以便保留立体声的摆位。</p>
+<p>3、对于混响和延迟效果而言，我们可以在混音中通过发送轨的电平来控制效果量，也可以去直接修改辅助轨。从混音的角度来看，你可以对混响信号进行单独处理，比如用 EQ 做个低切，或者加上一点合唱效果。</p>
+<p>4、当你使用延迟（Delay）效果时，需慎重考虑它在立体声声场中的作用。比方说，上图中 Telecaster 轨的声相稍稍偏左，我们可以把这一轨发送到 16 分音符 Tape Delay 上，并把延迟信号的声相打到右边，创造一种独特的空间感。</p>
+<p>5、当然了，每一条规则都会有例外，本例则是关于发送压缩效果的。在发送轨使用压缩效果，也就是常说的平行压缩（或称并行压缩、并联压缩）。在主要的鼓轨上激活一个发送效果，并在新创建的辅助轨中实例化一个压缩器插件，将压缩速度调至极快，并使用 6:1 压缩比，大概进行 10dB 的电平衰减。</p>
+<p>6、混响、延迟以及平行压缩所创造出的空间效果已确定，「squash（挤压）」轨的效果已经加进了整个混音当中。在此情况下，这条辅助轨通道的电平将影响这组效果的密度，并为鼓组的躯干部分增添饱满度。当然，别忘了把效果分配给鼓组的发送效果。</p>
+<h4 id="添加自动化"><a href="#添加自动化" class="headerlink" title="添加自动化"></a>添加自动化</h4><p>1、我们通过各种效果器，可以对混音进行各种控制。尽管如此，自动化却能起到不可替代的作用，通常用来强调混音当中的某些片段，防止它们被其他轨掩盖。要使用自动化，首先需要进入自动化视图，请按字母 A 键。</p>
+<p>2、在轨道头当中，有自动化模式选项。比如 Touch 模式，用来边播边记录推子动作。当推子被按住时，会写入自动化数据，当你松开时，推子将回到它的原本位置。Read 模式顾名思义，是用来回放的模式，你可以安全地播放混音，不用担心误操作改变自动化数据。</p>
+<p>3、为了更加精确地控制信号电平，你可以在轨道区手绘自动化曲线，用指针工具或铅笔工具都可以。如果要提升某一部分的电平，可以使用选取框工具画出一个区域，然后用指针工具拉动该区域内的曲线。</p>
+<p>4、我们接触最多的自动化操作可能都对轨道音量的控制。其实，在 Logic Pro X 中你可以对轨道上的任意插件参数进行自动化控制。在轨道头的下拉菜单中选择不同的参数即可。比如上图中，可以对 Rhodes 钢琴轨的 AutoFilter 效果的 Cutoff 值进行自动化控制，让它在前四小节缓慢打开。</p>
+<p>5、刚接触自动化时，你可能需要重新调整音量，而发现音量推子已经被自动化数据完全控制了。这时，你可以使用自动化值来调节音轨的整体音量，而不影响自动化数据的相对变化。</p>
+<p>6、如果你的自动化操作出错了，或不再需要某些自动化数据，你可以在「混音」菜单下的「删除自动化」子菜单中找到所需的命令。比如，删除那些可见的自动化数据，甚至整个工程里的全部自动化数据等。</p>
+<p>本文转载自:<a href="https://soundmono.com/logic-pro-x-tuts-11.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-11.html</a></p>
+<p><strong>本帖附件</strong></p>
+<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../23.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../23.html" itemprop="url">提升作品水平的 4 条混音技巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-13T10:48:34+08:00">
+                2019-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文分享四条混音技巧，辅助你在声学条件不够好的环境下做出正确的判断。混音虽说是耳闻为主，但再依靠一些小技巧，就能得到更多提升空间。</p>
+<h4 id="技巧-1：光谱分析"><a href="#技巧-1：光谱分析" class="headerlink" title="技巧 1：光谱分析"></a>技巧 1：光谱分析</h4><p>我们先拿 techno 音乐来说，底鼓和贝司线是整首曲子的基底，然而要处理好它们之间「打架」的重叠频率，就需要足够的细心。</p>
+<p>你或许已经知道如何进行低切，或把贝司的低频 EQ 与底鼓融合。但在没有优秀的低频监听单元的情况下，甚至你的房间环境也并不够理想，该如何处理呢？</p>
+<p><strong>使用光谱分析器。</strong>这是在硬件条件有限时，最能够帮到你的方法。下面是三款免费的光谱分析工具，你可以从中选择，或使用你所熟悉的分析工具。</p>
+<p><a href="http://www.voxengo.com/product/span/" target="_blank" rel="noopener">http://www.voxengo.com/product/span/</a><br><a href="http://www.bluecataudio.com/Products/Product_FreqAnalyst/" target="_blank" rel="noopener">http://www.bluecataudio.com/Products/Product_FreqAnalyst/</a><br><a href="https://www.meldaproduction.com/plugins/product.php?id=MAnalyzer" target="_blank" rel="noopener">https://www.meldaproduction.com/plugins/product.php?id=MAnalyzer</a></p>
+<h5 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h5><ul>
+<li>在立体声总输出轨上启用一个频谱分析器</li>
+<li>Solo 底鼓轨，在分析器中观察频段</li>
+<li>再 solo 贝司轨，这样便能直观看出它占用的频段</li>
+<li>逐条检查其他轨道的频段</li>
+</ul>
+<p>Voxengo SPAN 允许输入两个声源，这样你就可以方便地在一个插件里完成频率对比。</p>
+<h4 id="技巧-2：走出泥潭"><a href="#技巧-2：走出泥潭" class="headerlink" title="技巧 2：走出泥潭"></a>技巧 2：走出泥潭</h4><p>还是低频的事情，总是会有各种各样的麻烦：监听音箱的低频表现欠佳，监听环境的声学数据不理想，或是半夜怕扰民不敢开足低频音量。</p>
+<p>怎么解决低频混音问题，已经有了无数文章、帖子来讨论，涉及到房间处理、音箱摆位、音箱种类、昂贵的高精度线材等，问题不减反增。那么，怎样利用现有的工具呢？</p>
+<p>相信<strong>参数化均衡器</strong>吧。简单而言，在 100Hz 处高切。如图所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/1-20211126115129093.jpg" alt="1"></p>
+<h5 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h5><ul>
+<li>在总输出轨上启用一个 EQ 效果器</li>
+<li>在 100Hz 处高切，用最陡峭的 Q 值，这样 100Hz 以上的频率就都被切掉了</li>
+<li>激活此 EQ 效果器，播放曲子</li>
+<li>Mute 掉所有<strong>理应</strong>出现在低频部分的乐器，如底鼓和贝司</li>
+<li>现在，哪些乐器本来不该出现在低频范围却窜到了下边，就一目了然了</li>
+</ul>
+<p>就算监听很糟糕，这个方法也能适用。100Hz 高切能显示出不该出现在低频范围的声音，一目了然。甚至戴耳机混音，也可以用这个方法。</p>
+<p>你可以逐轨进行清理，直到低频范围令你满意为止。然后把底鼓、贝司放进来，听听看是不是它们更清晰了。接下来，再处理底鼓和贝司之间的打架问题即可。</p>
+<p>注意：这并不是说，100Hz 里出现声音就一定是坏事。记住，相信自己的耳朵，在有些编曲场合下，低频信号是有利于曲子的，要审时度势。</p>
+<h4 id="技巧-3：粉噪法"><a href="#技巧-3：粉噪法" class="headerlink" title="技巧 3：粉噪法"></a>技巧 3：粉噪法</h4><p>在电子乐混音中，参考电平非常直观，多数制作人会依照底鼓去混音，换句话说，所有其他声部都围绕着底鼓的电平去处理。但在其他风格的乐曲里，鼓组不一定是核心声部，那么要怎么做呢？</p>
+<p><strong>校准好一个粉噪，将其作为参考电平。</strong>一句话概括：参考粉噪的电平来混其他声部。为何不用白噪而是粉噪呢？因为粉噪比白噪更接近我们听声的直觉。至于更深层的解释，已经超出了本文范围。</p>
+<p>这样，太响的元素就会显得十分突出。有些声部可能会被遮蔽，仍需要仔细听辩，这时多了一个粉噪作为参照物，工作起来就会更加顺畅。</p>
+<p>任何一个声部都不应该独占编曲，就算音量层层叠加，总体上也要能包得住。</p>
+<p>你或许需要一点时间来习惯这种工作方式，想必也会发现它的优势。</p>
+<p>生成粉噪的工具有很多，基本的测试信号生成器就能做到。也可以使用 Voxengo SPAN 这类插件来生成。</p>
+<p>另一款免费的 MDA 插件包里也有信号生成器（<a href="http://mda.smartelectronix.com/" target="_blank" rel="noopener">http://mda.smartelectronix.com/</a>），但是目前没有 64 位版，所以无法在 Logic Pro X 里使用。</p>
+<h5 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤"></a>步骤</h5><p>先设置 MDA Test Tone 插件，让它过一下 Voxengo SPAN 插件。</p>
+<ul>
+<li>在总输出轨上启用 MDA 噪音生成器</li>
+<li>将 Mode 设置为 Pink Noise</li>
+<li>将 Output 设置为 All Channels</li>
+<li>启用 Audio Thru 框</li>
+<li>将 Level 设置为 -23dB</li>
+</ul>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/2-20211126115115644.jpg" alt="2"></p>
+<ul>
+<li>载入 SPAN</li>
+<li>选择 K-14（会把满调幅零点放在 -14dB 的位置，给你的混音预留大量空间）</li>
+<li>调节粉噪的电平，让峰值大概处于 0 的位置，RMS 电平在 -8 到 -9 的位置。多多关注 RMS 电平，而不是峰值，具体原因此处就不赘述了</li>
+</ul>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/3-20211126115107562.jpg" alt="3"></p>
+<p>如果使用 Logic Pro X 自带的测试音频工具，请注意它不支持音频穿越，你需要将它放在立体声 bus 轨上，然后输出到立体声总轨。</p>
+<ul>
+<li><p>选择一个立体声 Aux 轨，载入 Test Oscillator 插件</p>
+</li>
+<li><p>选择 Pink Noise</p>
+</li>
+<li><p>将电平设置为 -16dB</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/4.jpg" alt="4"></p>
+</li>
+<li><p>载入 SPAN</p>
+</li>
+<li><p>选择 K-14。-16dB 的粉噪输出应该会让峰值处于 -0.5 左右，RMS 在 -9 左右</p>
+</li>
+</ul>
+<p>注意：如果你无法使用，或不愿使用 SPAN，或者用不了 K-14 metering，对应的满调幅峰值为 -13dBFS，RMS -25dBFS。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/5_1.jpg" alt="5 1"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/5_2.jpg" alt="5 2"></p>
+<p>这条技巧有两个价值：第一，你可以得到一个校准过、客观的参照物；第二，预留了后期和母带的空间。</p>
+<h4 id="技巧-3：MS-处理"><a href="#技巧-3：MS-处理" class="headerlink" title="技巧 3：MS 处理"></a>技巧 3：MS 处理</h4><p>Mid-side 处理是对声部、bus 或最终混音进行立体声声相的控制方法，它基于音频信号的摆位。</p>
+<p>Mid（中央）通道是指在立体声相位中处于中央的信号，增强 Mid 信号会让声音更加集中、窄小、单声道化。</p>
+<p>Side（边缘）通道就是在立体声相位四周的信号。增强 Side 信号会让声音更加宽广，使中央部分的空间更大。</p>
+<p>那么，反过来就很好理解了。如果我们降低 Mid 电平，不动 Side 的电平，就可以在不提升整体电平的情况下制造出大量的空间。如果降低 Side 信号电平，声音就会更像单声道，更加汇聚在中央，像贝司等低频声部就非常适合后者。</p>
+<h5 id="怎样做"><a href="#怎样做" class="headerlink" title="怎样做"></a>怎样做</h5><p>选择一款支持 M/S 的 EQ 插件，例如 Logic Pro X 的自带 EQ、Ableton 的 EQ 8、Fab Filter 的 Pro Q 2，或者 Izotope Ozone 等。</p>
+<p>我们假设要处理一条贝司，带一些合唱效果，需要将它的低频更「单声道化」，而又不损失合唱效果带来的高频段共鸣的宽度。</p>
+<p>效果器链这样：贝司音源 -&gt; 合唱效果 -&gt; M/S EQ，如图：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6.jpg" alt="6"></p>
+<p>上图的效果全关，光谱如下图：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/7.jpg" alt="7"></p>
+<p>注意：贝司声在相位分析器中显示出一个几乎完全是单声道的图形，在 FFT 分析器（左）里则显示出多层共鸣。</p>
+<p>让我们启用合唱效果（选择 Mega Wide Chorus），看看发生了什么变化：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/8_1.jpg" alt="8 1"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/8_2.jpg" alt="8 2"></p>
+<p>现在看看右边的相位分析器，可以明显看到新增的立体声信号。但是从上到下，直到 30Hz 都有立体声信号。FFT 则没有什么变化。</p>
+<p>然后，让我们添加一个仅作用于 Side 信号的高通滤波器，切到 220Hz 处。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/9_1.jpg" alt="9 1"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/9_2.jpg" alt="9 2"></p>
+<p>再对比一下分析器，FFT 里产生了一些变化，但更重要的是信号变成单声道/宽广共存的声音了。简而言之就是 200Hz 以下都变成了单声道，高于这个位置的频率仍然有立体声的声相。</p>
+<h5 id="总线处理，还是终混处理？"><a href="#总线处理，还是终混处理？" class="headerlink" title="总线处理，还是终混处理？"></a>总线处理，还是终混处理？</h5><p>采用上边的技巧，无论是在集合了若干声部的总线上，还是总输出轨上，都能达到清晰度和声音稳定程度的保障。</p>
+<p>在衰减 Side 信号时需要注意的是，衰减值不当可能导致声音被「钉」在奇怪的声场当中，因为缺少底部的支撑。适当地推起 Side 信号，可以为乐曲制造出所谓的「呼吸空间」。</p>
+<h5 id="创造性-M-S-处理"><a href="#创造性-M-S-处理" class="headerlink" title="创造性 M/S 处理"></a>创造性 M/S 处理</h5><p>Voxengo 有一款免费的 M/S 处理插件 MSED。它原本是用来解码 M/S 技术录制的音频。作为一款均衡器，它也能用作 M/S 增益控制器。也就是说，你可以分开控制 Mid 或 Side 信号的增益值。用它衰减掉 Mid 信号后，留下的 Side 信号也不会被过分影响。用它提升立体声的宽度，能够避免一般立体声技术产生的哈斯效应（Haas Effect）。</p>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>这篇文章内容较杂，论及的要点都是为了让你获得更多混音上的改进空间。</p>
+<p>本文转载自:<a href="https://soundmono.com/4-mixing-techniques-to-help-take-your-music-to-the-next-level.html" target="_blank" rel="noopener">https://soundmono.com/4-mixing-techniques-to-help-take-your-music-to-the-next-level.html</a> </p>
+<p><strong>本帖附件</strong></p>
+<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../12.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../12.html" itemprop="url">加强鼓组音色的冲击力</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T10:18:26+08:00">
+                2019-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>我们知道，要得到更具冲击力的音色，就要用到压缩器。但你还需要适当调整它，才能让声音真的「动感」起来。</p>
+<h4 id="Attack-时间就是核心秘密"><a href="#Attack-时间就是核心秘密" class="headerlink" title="Attack 时间就是核心秘密"></a>Attack 时间就是核心秘密</h4><blockquote>
+<p>注意：最好使用工作室级别的耳机或音箱，才能更好感受到具体效果。</p>
+</blockquote>
+<p>首先，我们来看看底鼓的波形。它会从一个很突然且高频的震动开始，然后相对较缓地结束。开始部分就是冲击力所在的位置。为了让这个部分更加丰满，不失去音色本身具有的冲击感，你就需要尽量让这段波峰无伤地通过压缩器。而 Attack 值就是用来控制这个特性的。</p>
+<p>看看下图的底鼓，这是放大到毫秒级别后的波形。我们看到丰满的头部在大约 30 毫秒处开始消逝。这也直接告诉了我，应该怎样设置 Attack 时间。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/01-1.jpg" alt></p>
+<p>在得到了这个重要信息后，我们在通道条上实例化一个压缩器。将 Ratio 比率设置为 4.00:1，Attack 时间设置为 30 毫秒。然后，循环播放底鼓，同时慢慢拉动 Threshold 值，直到你听见冲击感开始增强了为止。有的人喜欢把 Threshold 压低，有的人喜欢放到很高，只要你感觉合适即可！</p>
+<p>当然，Release 也可以适当调调，直到满意为止。</p>
+<p>下面从一个具体例子来讲讲。这是一段 Hip-hop 风格的工程。我在底鼓和军鼓轨道上开有压缩器。通过下图的参数，底鼓的冲击力得到了大幅提升。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/02.jpg" alt="02"></p>
+<p>军鼓也可照此方法进行，当然参数会有些许不同。不过在本工程里，我直接拷贝了底鼓的参数，并且觉得没有任何不妥。</p>
+<h4 id="让改变更加明显"><a href="#让改变更加明显" class="headerlink" title="让改变更加明显"></a>让改变更加明显</h4><p>作为混音技巧，这实在不足为奇，但确实有效。然而这里有个陷阱，需要小心避开：在使用压缩器之后，被修改的轨道可能变得更大声了，造成一种「更大声等于更好」的错觉。</p>
+<p>最简单的方法是使用相对增益对比，对修改前后的声音进行 A/B 测试，以确保响度没有较大变化。</p>
+<p>例如，可以使用 Maximiser VST 插件，将 Threshold 和 Output 设为相同的值。此数值应该低于总轨混音电平的峰值。例如，压缩前的鼓峰值是 -2.37dB，那么我就将 Loudmax（一款免费的 maximiser）放置在总轨上，Threshold 和 Output 值都设为 -3dB。</p>
+<p>现在，当我打开/关闭压缩器时，就既能够听清它带来的冲击力效果，又不会让整体音量失去平衡。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/03.jpg" alt></p>
+<h4 id="听听区别"><a href="#听听区别" class="headerlink" title="听听区别"></a>听听区别</h4><p>处理前的鼓（峰值 -3dB，24-bit，41000kHz）</p>
+<p><audio class src="https://audio.newban.cn/audio/dry-punchy_drum_compression_-_dry.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio><br>处理后的鼓（峰值 -3dB，24-bit，41000kHz）</p>
+<p><audio class src="https://audio.newban.cn/audio/wet-punchy_drum_compression_-_wet.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio><br>本文转载自: <a href="https://soundmono.com/the-how-of-punchy-drum-compression.html" target="_blank" rel="noopener">https://soundmono.com/the-how-of-punchy-drum-compression.html</a> </p>
+<p><strong>本帖附件</strong></p>
+<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../14.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1311,415 +1817,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../45.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../45.html" itemprop="url">Inpaint 中文版下载 - 最强的专业图片去水印软件工具 </a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-30T13:45:53+08:00">
-                2019-08-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>我们常常遇到一些好看的图片壁纸被加上了水印或文字，拍摄的照片中出现碍眼的人或物体。如果想要去除它们，恐怕你得花一段时间去学习 PS 技术才行，而绝大部分人都是只想要把图修好而非复杂繁琐的学习。</p>
-<p>直到我遇上了 Inpaint 这款神器！它是一款非常强大好用的<strong>图片去除水印/瑕疵的工具</strong>，你只需用它的“魔术笔”涂抹照片中想要消除的对象，然后点击处理按钮即可神奇地让它完美消失。从实际测试看来消除效果相当出色！而且它的操作超级简单，完全不需学习，绝对是居家旅行必备神软啊……</p>
-<h3 id="Teorex-Inpaint-图片去水印工具简介："><a href="#Teorex-Inpaint-图片去水印工具简介：" class="headerlink" title="Teorex Inpaint 图片去水印工具简介："></a>Teorex Inpaint 图片去水印工具简介：</h3><p>Inpaint 是由国外 Teorex 公司开发的一款很神奇的<strong>去水印软件</strong>，提供有 Windows 与 Mac 系统的版本。（虽说是去水印工具，但利用它还可以轻松地将图片中你觉得碍眼的任何物体变走！），它通过非常先进的图像识别算法，智能地将抹除后的区域补充回来，从而实现这个魔法般的效果。我们先看看 Inpaint 的主界面截图吧：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/inpaint-screenshot.jpg" alt>Inpaint 官方简体中文版界面截图（完美支持 Windows 8)</p>
-<p>黑色的界面还算挺酷的，别看它好像按钮很多，基本上你只用一个工具就能轻松搞定各种去水印的操作，使用方法非常非常非常简单，但效果却非常牛叉。下面我们从视频来看看 Inpaint 实际的去水印效果到底怎么样吧。</p>
-<h3 id="Inpaint-去水印效果视频演示-轻松移除图片中不想要的内容-："><a href="#Inpaint-去水印效果视频演示-轻松移除图片中不想要的内容-：" class="headerlink" title="Inpaint 去水印效果视频演示 (轻松移除图片中不想要的内容)："></a>Inpaint 去水印效果视频演示 (轻松移除图片中不想要的内容)：</h3>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-<iframe height="498" width="510" src="https://vthumb.ykimg.com/05410408518E75CF6A0A426595B01308" frameborder="0" allowfullscreen="true"></iframe></div>
-
-
-<p>无论从上面视频中的演示、官网上样张、还是下面我测试的那些图片来看，Inpaint 的实际使用效果还是非常让人满意的！当然，Inpaint 也不是绝对的万能，当遇到要去除的水印周围的环境太复杂，跨越的元素太多的话，去除的效果就会不太理想了，这点还是留待你自己去试用体会吧。总之，它不是神话般的灵丹妙药，但至少是一款称职的好软件。</p>
-<h4 id="更多图片去水印、去瑕疵效果对比："><a href="#更多图片去水印、去瑕疵效果对比：" class="headerlink" title="更多图片去水印、去瑕疵效果对比："></a>更多图片去水印、去瑕疵效果对比：</h4><p>[ 图片去水印、去瑕疵效果前后对比 ]</p>
-<table>
-<thead>
-<tr>
-<th><a href="https://img.iplaysoft.com/wp-content/uploads/2013/Inpaint---_103F2/1.jpg" target="_blank" rel="noopener"><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/1-1567144980827.jpg" alt></a></th>
-<th><a href="https://img.iplaysoft.com/wp-content/uploads/2013/Inpaint---_103F2/2.jpg" target="_blank" rel="noopener"><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/2.jpg" alt></a></th>
-<th><a href="https://img.iplaysoft.com/wp-content/uploads/2013/Inpaint---_103F2/3.jpg" target="_blank" rel="noopener"><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/3.jpg" alt></a></th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>Inpaint 体积小巧启动迅速，而且功能专注，仅需几秒钟就搞定一张图片的处理。对于不想学习和安装庞大的PS的同学绝对值得一试！ 更不用说很多时候用PS搞上大半天也未必能做到它去除得这么完美……</p>
-<h3 id="Inpaint-官方简体中文版："><a href="#Inpaint-官方简体中文版：" class="headerlink" title="Inpaint 官方简体中文版："></a>Inpaint 官方简体中文版：</h3><p><a href="https://u21519047.pipipan.com/fs/21519047-395435036" target="_blank" rel="noopener">点击下载</a></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../6.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../6.html" itemprop="url">Shell2vst的使用详解『Waves脱壳』</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-30T13:31:59+08:00">
-                2019-08-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这里可能还有不少朋友不会使用shell2vst.exe这个小工具，那么我在这里简单介绍一下。</p>
-<p>大家也许知道，WAVES插件包的VST模块有别于其他，它使用形如WaveShell-VST_5.0.dll、WaveShell-VST_5.2.dll、Vocal_WaveShell-VST_1.1.dll之类的外壳，所有的WAVES插件的VST的dll都被封装到这些外壳里面。</p>
-<p>一般而言，形如Nuendo、Cubase之类的软件都能识别这些外壳，因此都可以自动在软件里面释放出一个个独立的组件。</p>
-<p>但是，形如Samplitude、Sequioa之类的软件的老版本（9.0之前），就不能正确识别WaveShell-VST壳，它会傻到把整个壳当一个插件对待，然后让你选模块，这样你下次加载工程后，是不会帮你记忆的，你到时就傻眼了。</p>
-<p>还有一点，Waves.Vocal.Bundle的VST版本，使用了个比较特别的壳Vocal_WaveShell-VST_1.1.dll，貌似只有牛犊、Cubase可以直接识别，而Samplitude、Sequioa、Audition、SawStudio等等通通对它视而不见….，因此很难在这些宿主内使用WAVES的人声处理软件包了。</p>
-<p>于是，自然有人想出妙招，写出了shell2vst.exe这个小工具，可以把那些壳释放出一个个独立的dll文件。这些独立的VST文件就可以被所有宿主识别了。如下图：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/Waves-01.jpg" alt></p>
-<p>您可以在本文最下面附件下载这个小工具，下载后解压缩，会看到shell2vst.exe这个可执行文件，但请不要直接双击运行它，否则是没作用的。</p>
-<p>而真正的具体用法是，当您安装了WAVES软件的VST版本后，会在你的Vstplugins文件夹产生形如WaveShell-VST_5.0.dll、Vocal_WaveShell-VST_1.1.dll等等之类的外壳，于是您需要的是把这些外壳文件拖拽到shell2vst.exe这个图标上（您需要打开两个窗口），才能释放出独立的文件。如下两个图，很简单的，看图就会了。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/Waves-02.jpg" alt></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/Waves-03.jpg" alt></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../28.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../28.html" itemprop="url">压缩器(Compresser)的简单介绍</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-29T15:09:32+08:00">
-                2019-08-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Ratio 压缩比只是压缩效果器中的一个参数，要了解计算方法，我认为需要学习压缩效果器的每一个参数用法。我简单介绍一下，希望可以帮到您。</p>
-<p>  <strong>单段压缩效果器通常有：Thrshold、Ratio、Attack、Releas、Gain、Output这六个参数</strong></p>
-<p>例如：Brainworx Vertigo VSC-2 压缩效果器，如下图所示：</p>
-<p><img src="se-extension://ext-1977427434/img/default-pic.png" alt="img"><br>  <strong>参数说明：</strong><br><strong>Thrshold</strong>：阈值，当输入音量高于阈值的时候，压缩器才会开始工作。比如：把阈值设定在-20分贝，当输入音量高于-20分贝的时候，压缩器才会开始工作。低于-20分贝，压缩器不工作！</p>
-<p><strong>Ratio</strong>：比值，也叫压缩比。它可以控制当输入音量高于阈值的时候，按照什么样的比率去进行压缩处理。压缩比控制的是一段时间内的输入音量变化值与输出音量变化值之间的比值。例如：当Thrshold（阈值）在-50分贝、压缩比是2：1的时候。输入音量变化值是-20分贝减去-40分贝，等于20分贝。输出音量变化值-35分贝减去-45分贝，等于10分贝。所以压缩比就是20分贝比10分贝等于2，也就是2：1。输入音量高于阈值的时候，按照压缩比的设定后，输出音量都会小于输入音量。建议使用图形化类的压缩器开始学习，刚刚例举的压缩比如下图所示：<br><img src="se-extension://ext-1977427434/img/default-pic.png" alt="img"></p>
-<p><strong>Gain</strong>：整体音量增益，由于压缩过后的输出音量会相对减小，整体的音量就会减小。我们使用压缩器的目的不是减小音量，而是要透过音量较大位置的压缩，让音量较小位置的音量相对增加。所以，就可以使用Gain来进行一个整体的音量增益。不同的压缩效果器叫法可能不同，有的压缩器叫做Make-Up Gain。</p>
-<p><strong>Attack Time</strong>：启动缓冲时间，它决定了压缩器从不工作到开始工作的瞬间变化时间长度。这个值设置的越小，声音的音头被压缩的痕迹越大。反之则较小，较柔和。</p>
-<p><strong>Releas Time</strong>：释放缓冲时间，它决定了压缩器从开始工作到结束工作的瞬间变化时间长度。这个值设置的越小，声音会显得越紧。反之则越松弛，越柔和。</p>
-<p><strong>Output</strong>：整体输出音量，它控制的是经过压缩器处理后 流出压缩器的音量。有的压缩效果器没有Make-Up Gain，而是使用Output代替。还有的压缩效果器Gain和Output同时出现！</p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1770,7 +1867,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">152</span>
+                  <span class="site-state-item-count">155</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1783,7 +1880,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>

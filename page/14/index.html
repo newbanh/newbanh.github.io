@@ -273,6 +273,458 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../36.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../36.html" itemprop="url">制作人基本功：混响</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T10:30:20+08:00">
+                2020-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>每当你载入一个混响插件，或使用硬件混响时，总会看到各种混响类型（Type）。有的是基于算法模拟（通过内置的延迟处理来还原经典的数字混响），或者 IR（即脉冲响应，利用真实录制的声学空间采样来实现混响效果）。有的类型代表某种声学环境，有的是模拟一些经典的硬件混响设备。录音棚老手对它们了如指掌，然而刚入门的制作人或许会感到疑惑，这些「房间（Room）」、「大厅（Hall）」、「隔间（Chamber）」、「金属板（Plate）」、「弹簧（Spring）」都是什么意思，还有「氛围（Ambience）」和「非线性（Non-linear）」又是什么？</p>
+<p>下面就对这些不同名目的混响器类型进行介绍。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513103223.png" alt></p>
+<p><em>不同的混响插件，带有不同的混响类型</em></p>
+<h4 id="混响概述"><a href="#混响概述" class="headerlink" title="混响概述"></a>混响概述</h4><p>混响的本意是指在某种特定声学环境中对声场的设计。一个普通的混响声场设计可以被拆解为三部分。初始反射代表着房间的尺寸，即第一个反射波抵达的延迟时间，我们的听觉器官会根据这个时间想象出空间的大小（延迟越长，空间越大）。接下来是早期反射，这是一个逐渐累积反射波的过程，它反映出声学空间的形状和其他特性，比如平行墙面，热闹还是死寂。最后是晚期反射，混响累积到一定厚度，并跟随着干声，并逐渐减少和消失。尾部的长度被称为「混响时间」或「衰减」，它是从声音发出，到混响电平降至原始电平的 60 dB 以下。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513103244.png" alt></p>
+<p><em>混响分解图</em></p>
+<p>不同的声学空间和物理设备对这几个混响阶段有着不同的处理方式，也就形成了各个混响的不同特点。我们来逐个了解这些模拟真实声学空间的混响。</p>
+<h4 id="房间混响"><a href="#房间混响" class="headerlink" title="房间混响"></a>房间混响</h4><p>房间（Room）这个词代表最典型的声学环境，它意味着任何封闭空间。尤其是指俱乐部、剧院等音乐空间。房间可以还原成真实的空间，早期反射可以明确这个房间的特性。在算法混响器中，这几个阶段都可以用公式计算出来，并程序化。你的音乐需要什么类型，直接调出某种配置即可。复杂的混响会包含多种物理空间和脉冲响应。</p>
+<p>如果你只需要一个带动总体的混响效果，那么就用房间混响吧，当然具体参数如房间尺寸等需要适合你的音乐。通常来说，混音师会在工程里叠加多个混响，在各个音轨使用不同的混响配置，而最后会用一个房间混响来处理总轨，将所有声音放进同一个空间里，达到声学一致性。</p>
+<h4 id="特定空间（大厅等）"><a href="#特定空间（大厅等）" class="headerlink" title="特定空间（大厅等）"></a>特定空间（大厅等）</h4><p>有些房间的个性独特，有着形式各异的设计。对音乐而言，就是各种大厅。混响中的大厅多指音乐会大厅，一般是矩形房间，有着平行深度，而且散射和回声品质明显不同，混响时间也比较长。这种类型的混响器比较适合制作流行/摇滚的编曲，尤其是鼓组丰富的音乐。弦乐组、某些人声声部也可以使用。更加极端的一种叫做「教堂」混响，完全模仿自然的超长混响衰减，非常强烈的回声。很显然，这比较适合风琴、合唱团等类型。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513103309.png" alt></p>
+<p><em>经典房间和大厅</em></p>
+<p>音频样本 1：房间和大厅混响</p>
+<p><audio class src="https://audio.newban.cn/audio/01_aud_reverb_room-hall.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>在后期处理中，你可能会见到各种不寻常的空间，可能对于音乐混音来说并不合适，但对于制作电影等声场创作而言非常重要。例如，小到浴室、衣橱，大到停机坪、地铁隧道等。而脉冲响应的采样还会包括非房间的声音，如钢琴盖共振、吉他琴身共振等，可以为混音注入一些有趣的色彩和空间。</p>
+<h4 id="录音室混响（隔间、金属板和弹簧）"><a href="#录音室混响（隔间、金属板和弹簧）" class="headerlink" title="录音室混响（隔间、金属板和弹簧）"></a>录音室混响（隔间、金属板和弹簧）</h4><p>除了真实的音乐空间以外，有些混响则是依靠特制的仪器、机械来创造的。最古老的，也是最自然的一种，就是隔间混响了。隔间是一个真实的物理空间，但实际上，乐手很少在这种环境演奏。这是一个专用的房间，要么在录音室的建筑内，这种地方往往用来单纯的生成混响（尤其是靠近麦克风录制的声源）。声音从录音控制室发送出来，到达混响隔间里的一个麦克风，这个麦克风通常指向错开声源方向的墙面，专门捕捉反射波，然后通过线路送回控制室。然后，混响会被贴到原始的干声上，完成混响的制作。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513103535.png" alt></p>
+<p><em>典型的混响隔间</em></p>
+<p>这种制作方式的好处是自然的音响效果，不好的一点是几乎无法调制声音。隔间混响对现代混音而言，可以制作出小房间内的听觉效果，但缺少了一些真实房间采样/模拟下的染色感。</p>
+<p>再来说说金属板混响，这纯粹是一种机械装置来模拟混响。一张能够回弹的柔性金属板薄片，挂在一个木质的框架上，四周有能量转换装置，将金属板的震动作为声音拾取。声音依然由控制室传出，到达金属板，造成金属板颤动，因而出现混响一样的余音。拾音器会把混响声传回控制室。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513103558.png" alt></p>
+<p><em>机械的金属板混响器（上）；一个经典金属板混响插件（下）</em></p>
+<p>金属板混响音质独特，和房间混响有着巨大的差别。它没有早期反射，没有逐渐积聚的过程。反而，混响是突然爆发出来的。也正因为此，金属板混响缺少深度，但是对鼓组和打击乐器尤其适用，厚实感和爆发感齐具。而且，人声也可以用金属板来处理，不会像用房间混响那样，使干声消失在混音中。</p>
+<p>或许很多人对弹簧混响的声音再熟悉不过了，大部分吉他前级放大效果器中都含有这种混响效果。弹簧混响和金属板的工作方式差不多，取代金属板的是一组（三个或更多）弹簧。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200513103617.png" alt></p>
+<p><em>经典的弹簧混响器「tank」</em></p>
+<p>如你所想，弹簧混响听起来有些「boing」感，它无法取代房间混响（甚至不能代替金属板混响），但它是很有个性的混响效果（回忆一下那些大混响的吉他音乐，哦，如果你年纪太小，那么听听《低俗小说》结尾处的音乐吧）。</p>
+<p>音频样本 2：金属板混响作用于鼓组和人声，以及弹簧混响作用于吉他</p>
+<p><audio class src="https://audio.newban.cn/audio/02_aud_reverb_plate-spring.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<h4 id="氛围和非线性混响"><a href="#氛围和非线性混响" class="headerlink" title="氛围和非线性混响"></a>氛围和非线性混响</h4><p>许多混响插件有一个选项，你可以单独提出早期反射部分，去除其他阶段的混响。这样能够增加一些空间感和纵深感，又无需附带一个长长的混响尾巴。如果你在处理一个复杂的混音工程，用它可以增加一点点深度，对于需要比较「干」的混音而言，也十分有用。若是真的丝毫没有混响，声音听起来是「死」的，在隔音间里录制的人声、DI 输出的吉他声、合成器声尤为明显。通常，这个早期混响选项被标记为「氛围（Ambience）」，因为这就是对它最好的描述。</p>
+<p>有一种 80 年代的数字混响效果可以算是氛围混响的一个变形，有些混响插件中带有这个选项。你可能还记得经典的「门限混响」效果，是一种通过一次门限器的数字混响，它完全切除了衰减部分，声音听上去是断开的。这种效果现在已经不多见了，但如果你看到某个混响插件里有个选项叫「非线性（Nonlinear）」，那么就是这种门限风格的混响了。</p>
+<h4 id="为混响留出空间"><a href="#为混响留出空间" class="headerlink" title="为混响留出空间"></a>为混响留出空间</h4><p>观察任何一个有经验的工程师或混音师的工程，你可能会看到至少两三个，多至六七个的混响效果器，同时出现在辅助轨（发送和返回）和某些音轨上，为某些乐器增加特殊效果，它们各自为音频增添了「正好足量」的混响特性，使编曲元素更加清晰可辨，又增加了不少的空间深度和立体感。所以，了解混响，逐渐熟练使用它们吧。</p>
+<h6 id="本文由-SOUNDMONO-编译自-ASK-AUDIO"><a href="#本文由-SOUNDMONO-编译自-ASK-AUDIO" class="headerlink" title="本文由 SOUNDMONO 编译自 ASK.AUDIO"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/music-producers-guide-to-reverb" target="_blank" rel="noopener">ASK.AUDIO</a></h6><p>固定链接: <a href="https://soundmono.com/producer-basics-reverb.html" target="_blank" rel="noopener">https://soundmono.com/producer-basics-reverb.html</a></p>
+<p><strong>本帖附件</strong></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../9.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../9.html" itemprop="url">各种调式可以这样记忆 快速记忆法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-12T13:43:42+08:00">
+                2020-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>如何记忆大小调和升降号的关系, 我想这是令很多初学者头疼的问题, 下面提供几种非常好记忆的方法:</p>
+</blockquote>
+<h3 id="升号调："><a href="#升号调：" class="headerlink" title="升号调："></a>升号调：</h3><p><strong>最后那个#号音上移一个小二度就是该调的调名</strong>。<br>如: A大调有三个#号，最后那个是#G，那么#G上移一个小二度就是A，所以叫做A大调。</p>
+<h3 id="降号调："><a href="#降号调：" class="headerlink" title="降号调："></a>降号调：</h3><p><strong>除了F大调是一个b号之外，凡两个以上的，从右边数起第二个b号所在的音，就是该调的调名。</strong></p>
+<p>如: bE大调，有三个b号，从右边数起，第二个b号是在E音上，所以这个调就叫bE大调。</p>
+<h3 id="无号调式："><a href="#无号调式：" class="headerlink" title="无号调式："></a>无号调式：</h3><p><strong>只有C大调和a小调。</strong></p>
+<h3 id="七个号调式："><a href="#七个号调式：" class="headerlink" title="七个号调式："></a>七个号调式：</h3><p><strong>凡是七个#号或b号的，不用理会，直接就是#C调或bC调。</strong></p>
+<p>七个#号就是每个音都升高半度，当然就是升C大调了。反之所有七个音都降低半音那就是bC调</p>
+<h3 id="关系小调："><a href="#关系小调：" class="headerlink" title="关系小调："></a>关系小调：</h3><p><strong>每个大调式所对应的关系小调，其实就是该大调主音以下小三度为主音的调式。</strong><br>举例：比主音C小三度音程为的主音为A，所以C大调对应的关系小调就是a小调；比主音E小三度音程为的主音#C，所以E大调对应的关系小调为#c小调。</p>
+<h3 id="我自创的关系大小调快速推导法"><a href="#我自创的关系大小调快速推导法" class="headerlink" title="我自创的关系大小调快速推导法:"></a>我自创的关系大小调快速推导法:</h3><p><strong>利用五度圈4152637和7362514</strong>  </p>
+<p><strong>大调推小调–&gt;</strong></p>
+<p>从大调开始第四步即为对应的小调 比如G调 从5开始走四部 5263 最后一个落在E上 那么G大调的关系小调就是E小调  。</p>
+<p>那如果是E调往后呢?不满四步那就从新一轮的4152637开始走 新一轮落下来的调需要加升号</p>
+<p> 以E大调为例: 3741落在新一轮的C上 那么就是C#小调  这是大调推小调的方式。</p>
+<p><strong>小调推大调–&gt;</strong></p>
+<p>如果是小调推大调,那么反过来用7362514 也是走四步 如果是新一轮那就加降号   这种方式虽然效率不算太高 但对于初学者来说很方便</p>
+<p><strong>本帖附件</strong></p>
+<p>参考链接:<a href="http://www.chinaviolin.net/article-1137-1.html" target="_blank" rel="noopener">http://www.chinaviolin.net/article-1137-1.html</a></p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../62.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../62.html" itemprop="url">Mike Stavrou给大家传授压缩器快速上手秘籍</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-12T13:40:30+08:00">
+                2020-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20200512134230.png" alt></p>
+<blockquote>
+<p>自学混音到现在有三个年头了  一路走走停停   从最开始的不可能到现在能混出属于自己风格的作品   期间看了不少的视频教程  读了好几本混音相关的书籍  概念性的东西很容易掌握  但真正到了实战时却往往容易束手无策, 我想 这应该是每个混音初学者的通病</p>
+</blockquote>
+<p>不得不承认 由<strong>Mike Stavrou</strong>写的 <strong>《Mixing With Your Mind》</strong>这本书确实是非常的不错,关于压缩器我们不可能在一夜之间就完全能掌握它(反正我是做不到 哈哈)</p>
+<p>这本书不仅解答了很多关于混音方面的问题,同时也逐步引导你走向一个相对正确的方向去练习你的混音技术.</p>
+<p>那么 说到压缩环节  <strong>Mike Stavrou</strong>先生也是非常的重视这一块  那到底该如何正确的使用压缩效果器呢? <strong>如何让未经过训练的耳朵能快速辨别出短和长启动时间分别带来的效果呢?   唯一的办法就是尽可能的放大它对声音的影响</strong> </p>
+<p>让我们来听听 Mike Stavrou是怎么说的:</p>
+<p><strong>“使用压缩器就像是破解一个带有机械密码锁的保险箱”</strong></p>
+<p>压缩器有四个基本旋钮(或者说成是参数),破解它的关键就是 <strong><em>集中精力旋转这些旋钮 并将它们依次指向正确的位置</em></strong>  一旦指向了正确的位置,你将会听到更加清晰的效果声,从而获得更加真实和悦耳的声音.</p>
+<p>按照特殊的顺序调节压缩器的这几个旋钮可以避免反复调节相同的旋钮,也就是说你把<code>attack time</code>调整到满意的位置之后再也不需要回过头来调整它了,当然 前提是你得按照正确的顺序去调整各个参数,因为不同的顺序会产生不同的效果.每一步都极其的关键.</p>
+<p>那到底该按照什么样的顺序呢?</p>
+<h2 id="压缩器调节顺序"><a href="#压缩器调节顺序" class="headerlink" title="压缩器调节顺序"></a>压缩器调节顺序</h2><p>首先,对压缩器各个参数进行临时设置:</p>
+<ul>
+<li>启动时间: 随意设置一个值</li>
+<li>释放时间: 把它调到最小值</li>
+<li>压缩比: 设置成最大(20:1)</li>
+<li>阈值: 设置-40 或 -60 dB  让压缩器处于极度压缩模式</li>
+</ul>
+<p>现在你的音乐听起来完全是垃圾，但你会清楚地听到每个参数的效果。您可能必须调高音量才能听到乐器/混音的声音</p>
+<p>接下来,我们开始依次调节这四个参数:</p>
+<h5 id="1-启动时间"><a href="#1-启动时间" class="headerlink" title="1.启动时间"></a>1.启动时间</h5><p>这是第一个需要调节的旋钮,播放音频后,开始缓慢旋转按钮,与此同时你需要尽可能地忽略因极小的释放时间所带来的抽吸效果,集中精力注意听启动时间是如何影响声音力度大小的</p>
+<p>如果你播放的是一轨军鼓,设置较短的的启动时间,你将会听到小鼓槌敲击鼓面的声音,相反,设置较长的启动时间给你的感觉像是粗壮的鼓槌正在敲击鼓面</p>
+<p>如果你播放的是一轨吉他,设置较短的启动时间,你将会听到类似于指甲拨弦的声音,设置较长的启动时间,就好像是有个人正在漫不经心的弹奏</p>
+<h5 id="2-释放时间"><a href="#2-释放时间" class="headerlink" title="2.释放时间"></a>2.释放时间</h5><p>第二步需要调节的是释放时间,一边播放一边由小到大调节,我们需要明白,释放时间控制的是声音被压缩后逐步复原的速度,音乐性的做法就是设置和歌曲速度同步的释放时间,你可能会问,是否是快歌的释放时间要比慢歌小,一般情况是这样的,不过不要把释放时间设置的过小,过小的释放时间容易暴露尾音甚至是抽吸感 除非你需要这种效果,否则的话尽可能将释放时间设置得大一些,这样可以压制声音的反弹,同时能加强声音的律动感,记住 所有的动态处理都会影响到歌曲的律动,越慢的释放时间携带的能量越多</p>
+<p>我们要做的就是在保持声音律动的同时调大释放时间,直到律动丢失,然后再往回拉一些,调节的时候不用考虑压缩器在下一个音头来临之前没有及时释放,有时候不按照公式化的调节反而能得到最佳的释放值,</p>
+<h5 id="3-压缩比"><a href="#3-压缩比" class="headerlink" title="3.压缩比"></a>3.压缩比</h5><p>接下来调节压缩比,由于之前压缩比被设置为了最大值,所以此时声音听起来明显过度压缩了,</p>
+<p>接下来要做的就是 <strong>在不损失启动和释放时间设置所带来的效果</strong>的前提下尽可能降低压缩比,</p>
+<p>可以把压缩比想象成相机的长焦镜头,压缩比越高,更小的声音更多的细节就越容易被控制住,压缩比越低,比如2:1(给定相同的输出电平),那么给人的感觉就像是一副宽广的大图.</p>
+<p>因此 <strong>比率越小 声音越宽大 柔软 但是容易失去控制 导致压缩不够声音松散 . 比率越大 声音越窄 但是能控制更多细节 声音更加结实</strong></p>
+<p>那么压缩比到底多少合适呢? 科学的做法就是,由高到低逐步降低压缩比,直到你快听不到你想要的宽厚度和律动,这时你可以稍微提升一点点压缩比 , 把所有的注意力都集中在声音的大小上,不用去想启动时间和释放时间,也不用关注压缩比的具体数值,只需要关注声音大小以及硬度的改变</p>
+<h5 id="4-阈值"><a href="#4-阈值" class="headerlink" title="4.阈值"></a>4.阈值</h5><p>最后调节阈值,阈值是非常关键的 因为它决定了压缩器是否处于工作状态,正确的做法是,观察压缩量,逐步拉低阈值直到声音听起来发扁没有活力,这个时候往回拉一些即可</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>不管怎么调节,我们使用压缩器的最终目的是为了得到<strong>一个宽大有力,结实又不失活力,同时保持很好律动</strong>的声音,换种说法就是,得到让人感觉更高贵的声音</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>有一点很多工程师容易忽略的是,压缩比是按乘积进行堆叠的,也就是所如果你在单轨上使用10:1的压缩比,然后再在总线上使用10:1的压缩比,最终的压缩比不是20:1 而是100:1</p>
+<h2 id="本帖附件"><a href="#本帖附件" class="headerlink" title="本帖附件"></a>本帖附件</h2><p>PDF下载: <a href="https://url97.ctfile.com/d/21042697-56934839-6e1927?p=312306" target="_blank" rel="noopener">点击进入</a> (访问密码: 312306)</p>
+<h2 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h2><p><a href="http://www.mixingwithyourmind.com/" target="_blank" rel="noopener">Mixing With Your Mind官网</a></p>
+<p>《<a href="https://www.kvraudio.com/forum/viewtopic.php?t=389365" target="_blank" rel="noopener">Anyone else using the ‘mixing with your mind’ method for compression?</a>》</p>
+<p>《<a href="https://gearspace.com/board/so-much-gear-so-little-time/141510-quot-mixing-your-mind-quot-your-thoughts.html" target="_blank" rel="noopener">Mixing with your mind” - YOUR thoughts?</a>》</p>
+<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../29.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1416,512 +1868,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../59.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../59.html" itemprop="url">Logic Pro X 系列教程 11：混音能手</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-13T10:51:01+08:00">
-                2019-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>Logic Pro X 有着丰富的混音功能，帮助制作人高效地进行混音。Mark Cousins 将带你进入 Logic Pro X 的混音领域。</strong></p>
-<p>混音是音频制作中最具有创造性的一个步骤，Logic Pro X 强大的混音功能能够极大地改善你的工作流程，并且使得音乐性也得到最大的发挥。然而，在如今的虚拟设备混音时代，这个任务也渐渐变得有些失去了创造性，甚至作为创作流程中的一环，其边界也变得越来越模糊。</p>
-<p>混音也是一种创造，因此我们的工作并不是找到一个插件，改一下某个参数，所有声音就都「好听」起来了。要时刻记得，每一个混音操作的原因是什么，以及你的目的是什么。</p>
-<blockquote>
-<p>混音要制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
-</blockquote>
-<p>在本篇教程中，我们会探索一系列改进混音的关键技术。首先，我们要学习如何进行有条不紊的工作，学会组织你的工程。包括总线发送的规范，轨道堆栈（Track Stack）以及分组的合理利用，我们会发现，一个组织结构紧密的混音，听起来就不会随意而杂乱。</p>
-<p>第二个部分主要探讨效果器插件的使用，包括通道条插入和总线发送。这是混音策略得以实现的环节，比如压缩器与 EQ 的顺序问题，如何用延迟效果器精准创造一个立体声声场的问题。我们要用混音制造出一种声场，让我们的音乐在其中最有效地展示出来。</p>
-<p>在最后一个部分我们将拿出混音的「秘密武器」：自动化。如果说静态混音能够做到 80% 的话，那么自动化就像那甜点上的一颗草莓，使每一轨之间都互相拼接成一个有机整体。你需要理解 Logic 的几种自动化模式：Touch、Write 和 Read，这样不仅能边播边记录推子的动作，还可以通过手绘自动化曲线将你的混音精确地控制在 0.1dB 之下。</p>
-<h5 id="贴士：创建多版本混音"><a href="#贴士：创建多版本混音" class="headerlink" title="贴士：创建多版本混音"></a>贴士：创建多版本混音</h5><p>Logic 的文件菜单下有一个「备选」功能，可以用来创建和切换同一个工程的不同混音。以往，你可能需要将工程另存为一个新的文件，而「备选」功能则优雅地解决了这个问题，所有版本的混音都共享相同的工程内容。因此，做一段乐器混音、30 秒的广告配乐，或者 remix，你都无需创建新工程，只需要创建备选并直接修改即可。推而广之，当你需要尝试不同录音 take 时也可以使用备选。</p>
-<p><em>这篇教程得到了伦敦 Point Blank 音乐学校的认可。Point Blank 是一所专业的音乐制作、音频工程、音乐营销、演唱、广播制作、DJ 技术和电影制作的学校，全部由英国顶尖的音乐制作人和媒体专家授课，更有音乐和媒体界传奇人物的客座访谈。</em></p>
-<h4 id="更整洁的混音"><a href="#更整洁的混音" class="headerlink" title="更整洁的混音"></a>更整洁的混音</h4><p>1、为了让混音过程更加流畅，最好对混音器进行一下组织管理，尤其在轨道数量较多的情况下。如何整理最有效呢？要考虑的第一条就是，怎样分组排序能让你在工程里轻松穿梭，快捷地定位所需的轨道。当混音器处于「轨道」模式下，混音器里的音轨顺序就会自动与轨道区保持一致。</p>
-<p>2、如果使用了音色库，它们可能会产生一大堆备用的发送轨和辅助轨，可以考虑把用不到的发送轨删除。你可以按名称顺序实例化发送轨，比如 Bus 1 放在第一个发送槽里。</p>
-<p>3、我们往往会用三层混响效果来制造深度感强烈的声场效果，每一层都较上一层的空间更大。上图中，我们为每一轨都实例化了三个混响，按照名称顺序摆放，一目了然。</p>
-<p>4、使用轨道堆栈（Track Stack）来归纳成组的声音，例如鼓组等。按住 Command 并点按要收纳的音轨，选择「轨道」菜单下的「创建 Track Stack…」即可。在弹出的对话框中选择「总和堆栈」，这样你可以得到一个堆栈的总推子。</p>
-<p>5、点按轨道头列表里的小三角，堆栈就会展开或合拢。为总和轨标注一个名称，甚至分配颜色，以便视觉区分。另外，在混音器中，把轨道堆栈放置在末尾会更加整洁，所以在轨道区把总和堆栈放到最下边即可。</p>
-<p>6、另一个归纳音轨的方法是编组。将轨道编组后，它们的推子将同步移动。但你不能隐藏音轨。选中要编组的音轨后，在混音器中点按音轨中央的分组按钮，即可以在菜单中完成编组。你可以随时按 Shift + G 临时关闭和恢复编组轨道的联动响应。</p>
-<h4 id="使用信号处理器"><a href="#使用信号处理器" class="headerlink" title="使用信号处理器"></a>使用信号处理器</h4><p>1、在混音过程中，试着把插入效果和发送效果的作用区分开。总体而言，插入效果应偏向于修改音调、音色和动态。同时，改变处理器的顺序有时也会产生比较微妙的声音效果变化。</p>
-<p>2、相对而言，发送效果则应该主要进行环境修饰，例如混响和延迟。应该好好控制环境效果的作用量，或说干湿比。如果使用混响效果，最好在发送插槽里选择「后声相」，以便保留立体声的摆位。</p>
-<p>3、对于混响和延迟效果而言，我们可以在混音中通过发送轨的电平来控制效果量，也可以去直接修改辅助轨。从混音的角度来看，你可以对混响信号进行单独处理，比如用 EQ 做个低切，或者加上一点合唱效果。</p>
-<p>4、当你使用延迟（Delay）效果时，需慎重考虑它在立体声声场中的作用。比方说，上图中 Telecaster 轨的声相稍稍偏左，我们可以把这一轨发送到 16 分音符 Tape Delay 上，并把延迟信号的声相打到右边，创造一种独特的空间感。</p>
-<p>5、当然了，每一条规则都会有例外，本例则是关于发送压缩效果的。在发送轨使用压缩效果，也就是常说的平行压缩（或称并行压缩、并联压缩）。在主要的鼓轨上激活一个发送效果，并在新创建的辅助轨中实例化一个压缩器插件，将压缩速度调至极快，并使用 6:1 压缩比，大概进行 10dB 的电平衰减。</p>
-<p>6、混响、延迟以及平行压缩所创造出的空间效果已确定，「squash（挤压）」轨的效果已经加进了整个混音当中。在此情况下，这条辅助轨通道的电平将影响这组效果的密度，并为鼓组的躯干部分增添饱满度。当然，别忘了把效果分配给鼓组的发送效果。</p>
-<h4 id="添加自动化"><a href="#添加自动化" class="headerlink" title="添加自动化"></a>添加自动化</h4><p>1、我们通过各种效果器，可以对混音进行各种控制。尽管如此，自动化却能起到不可替代的作用，通常用来强调混音当中的某些片段，防止它们被其他轨掩盖。要使用自动化，首先需要进入自动化视图，请按字母 A 键。</p>
-<p>2、在轨道头当中，有自动化模式选项。比如 Touch 模式，用来边播边记录推子动作。当推子被按住时，会写入自动化数据，当你松开时，推子将回到它的原本位置。Read 模式顾名思义，是用来回放的模式，你可以安全地播放混音，不用担心误操作改变自动化数据。</p>
-<p>3、为了更加精确地控制信号电平，你可以在轨道区手绘自动化曲线，用指针工具或铅笔工具都可以。如果要提升某一部分的电平，可以使用选取框工具画出一个区域，然后用指针工具拉动该区域内的曲线。</p>
-<p>4、我们接触最多的自动化操作可能都对轨道音量的控制。其实，在 Logic Pro X 中你可以对轨道上的任意插件参数进行自动化控制。在轨道头的下拉菜单中选择不同的参数即可。比如上图中，可以对 Rhodes 钢琴轨的 AutoFilter 效果的 Cutoff 值进行自动化控制，让它在前四小节缓慢打开。</p>
-<p>5、刚接触自动化时，你可能需要重新调整音量，而发现音量推子已经被自动化数据完全控制了。这时，你可以使用自动化值来调节音轨的整体音量，而不影响自动化数据的相对变化。</p>
-<p>6、如果你的自动化操作出错了，或不再需要某些自动化数据，你可以在「混音」菜单下的「删除自动化」子菜单中找到所需的命令。比如，删除那些可见的自动化数据，甚至整个工程里的全部自动化数据等。</p>
-<p>本文转载自:<a href="https://soundmono.com/logic-pro-x-tuts-11.html" target="_blank" rel="noopener">https://soundmono.com/logic-pro-x-tuts-11.html</a></p>
-<p><strong>本帖附件</strong></p>
-<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../23.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../23.html" itemprop="url">提升作品水平的 4 条混音技巧</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-13T10:48:34+08:00">
-                2019-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本文分享四条混音技巧，辅助你在声学条件不够好的环境下做出正确的判断。混音虽说是耳闻为主，但再依靠一些小技巧，就能得到更多提升空间。</p>
-<h4 id="技巧-1：光谱分析"><a href="#技巧-1：光谱分析" class="headerlink" title="技巧 1：光谱分析"></a>技巧 1：光谱分析</h4><p>我们先拿 techno 音乐来说，底鼓和贝司线是整首曲子的基底，然而要处理好它们之间「打架」的重叠频率，就需要足够的细心。</p>
-<p>你或许已经知道如何进行低切，或把贝司的低频 EQ 与底鼓融合。但在没有优秀的低频监听单元的情况下，甚至你的房间环境也并不够理想，该如何处理呢？</p>
-<p><strong>使用光谱分析器。</strong>这是在硬件条件有限时，最能够帮到你的方法。下面是三款免费的光谱分析工具，你可以从中选择，或使用你所熟悉的分析工具。</p>
-<p><a href="http://www.voxengo.com/product/span/" target="_blank" rel="noopener">http://www.voxengo.com/product/span/</a><br><a href="http://www.bluecataudio.com/Products/Product_FreqAnalyst/" target="_blank" rel="noopener">http://www.bluecataudio.com/Products/Product_FreqAnalyst/</a><br><a href="https://www.meldaproduction.com/plugins/product.php?id=MAnalyzer" target="_blank" rel="noopener">https://www.meldaproduction.com/plugins/product.php?id=MAnalyzer</a></p>
-<h5 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h5><ul>
-<li>在立体声总输出轨上启用一个频谱分析器</li>
-<li>Solo 底鼓轨，在分析器中观察频段</li>
-<li>再 solo 贝司轨，这样便能直观看出它占用的频段</li>
-<li>逐条检查其他轨道的频段</li>
-</ul>
-<p>Voxengo SPAN 允许输入两个声源，这样你就可以方便地在一个插件里完成频率对比。</p>
-<h4 id="技巧-2：走出泥潭"><a href="#技巧-2：走出泥潭" class="headerlink" title="技巧 2：走出泥潭"></a>技巧 2：走出泥潭</h4><p>还是低频的事情，总是会有各种各样的麻烦：监听音箱的低频表现欠佳，监听环境的声学数据不理想，或是半夜怕扰民不敢开足低频音量。</p>
-<p>怎么解决低频混音问题，已经有了无数文章、帖子来讨论，涉及到房间处理、音箱摆位、音箱种类、昂贵的高精度线材等，问题不减反增。那么，怎样利用现有的工具呢？</p>
-<p>相信<strong>参数化均衡器</strong>吧。简单而言，在 100Hz 处高切。如图所示：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/1-20211126115129093.jpg" alt="1"></p>
-<h5 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h5><ul>
-<li>在总输出轨上启用一个 EQ 效果器</li>
-<li>在 100Hz 处高切，用最陡峭的 Q 值，这样 100Hz 以上的频率就都被切掉了</li>
-<li>激活此 EQ 效果器，播放曲子</li>
-<li>Mute 掉所有<strong>理应</strong>出现在低频部分的乐器，如底鼓和贝司</li>
-<li>现在，哪些乐器本来不该出现在低频范围却窜到了下边，就一目了然了</li>
-</ul>
-<p>就算监听很糟糕，这个方法也能适用。100Hz 高切能显示出不该出现在低频范围的声音，一目了然。甚至戴耳机混音，也可以用这个方法。</p>
-<p>你可以逐轨进行清理，直到低频范围令你满意为止。然后把底鼓、贝司放进来，听听看是不是它们更清晰了。接下来，再处理底鼓和贝司之间的打架问题即可。</p>
-<p>注意：这并不是说，100Hz 里出现声音就一定是坏事。记住，相信自己的耳朵，在有些编曲场合下，低频信号是有利于曲子的，要审时度势。</p>
-<h4 id="技巧-3：粉噪法"><a href="#技巧-3：粉噪法" class="headerlink" title="技巧 3：粉噪法"></a>技巧 3：粉噪法</h4><p>在电子乐混音中，参考电平非常直观，多数制作人会依照底鼓去混音，换句话说，所有其他声部都围绕着底鼓的电平去处理。但在其他风格的乐曲里，鼓组不一定是核心声部，那么要怎么做呢？</p>
-<p><strong>校准好一个粉噪，将其作为参考电平。</strong>一句话概括：参考粉噪的电平来混其他声部。为何不用白噪而是粉噪呢？因为粉噪比白噪更接近我们听声的直觉。至于更深层的解释，已经超出了本文范围。</p>
-<p>这样，太响的元素就会显得十分突出。有些声部可能会被遮蔽，仍需要仔细听辩，这时多了一个粉噪作为参照物，工作起来就会更加顺畅。</p>
-<p>任何一个声部都不应该独占编曲，就算音量层层叠加，总体上也要能包得住。</p>
-<p>你或许需要一点时间来习惯这种工作方式，想必也会发现它的优势。</p>
-<p>生成粉噪的工具有很多，基本的测试信号生成器就能做到。也可以使用 Voxengo SPAN 这类插件来生成。</p>
-<p>另一款免费的 MDA 插件包里也有信号生成器（<a href="http://mda.smartelectronix.com/" target="_blank" rel="noopener">http://mda.smartelectronix.com/</a>），但是目前没有 64 位版，所以无法在 Logic Pro X 里使用。</p>
-<h5 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤"></a>步骤</h5><p>先设置 MDA Test Tone 插件，让它过一下 Voxengo SPAN 插件。</p>
-<ul>
-<li>在总输出轨上启用 MDA 噪音生成器</li>
-<li>将 Mode 设置为 Pink Noise</li>
-<li>将 Output 设置为 All Channels</li>
-<li>启用 Audio Thru 框</li>
-<li>将 Level 设置为 -23dB</li>
-</ul>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/2-20211126115115644.jpg" alt="2"></p>
-<ul>
-<li>载入 SPAN</li>
-<li>选择 K-14（会把满调幅零点放在 -14dB 的位置，给你的混音预留大量空间）</li>
-<li>调节粉噪的电平，让峰值大概处于 0 的位置，RMS 电平在 -8 到 -9 的位置。多多关注 RMS 电平，而不是峰值，具体原因此处就不赘述了</li>
-</ul>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/3-20211126115107562.jpg" alt="3"></p>
-<p>如果使用 Logic Pro X 自带的测试音频工具，请注意它不支持音频穿越，你需要将它放在立体声 bus 轨上，然后输出到立体声总轨。</p>
-<ul>
-<li><p>选择一个立体声 Aux 轨，载入 Test Oscillator 插件</p>
-</li>
-<li><p>选择 Pink Noise</p>
-</li>
-<li><p>将电平设置为 -16dB</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/4.jpg" alt="4"></p>
-</li>
-<li><p>载入 SPAN</p>
-</li>
-<li><p>选择 K-14。-16dB 的粉噪输出应该会让峰值处于 -0.5 左右，RMS 在 -9 左右</p>
-</li>
-</ul>
-<p>注意：如果你无法使用，或不愿使用 SPAN，或者用不了 K-14 metering，对应的满调幅峰值为 -13dBFS，RMS -25dBFS。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/5_1.jpg" alt="5 1"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/5_2.jpg" alt="5 2"></p>
-<p>这条技巧有两个价值：第一，你可以得到一个校准过、客观的参照物；第二，预留了后期和母带的空间。</p>
-<h4 id="技巧-3：MS-处理"><a href="#技巧-3：MS-处理" class="headerlink" title="技巧 3：MS 处理"></a>技巧 3：MS 处理</h4><p>Mid-side 处理是对声部、bus 或最终混音进行立体声声相的控制方法，它基于音频信号的摆位。</p>
-<p>Mid（中央）通道是指在立体声相位中处于中央的信号，增强 Mid 信号会让声音更加集中、窄小、单声道化。</p>
-<p>Side（边缘）通道就是在立体声相位四周的信号。增强 Side 信号会让声音更加宽广，使中央部分的空间更大。</p>
-<p>那么，反过来就很好理解了。如果我们降低 Mid 电平，不动 Side 的电平，就可以在不提升整体电平的情况下制造出大量的空间。如果降低 Side 信号电平，声音就会更像单声道，更加汇聚在中央，像贝司等低频声部就非常适合后者。</p>
-<h5 id="怎样做"><a href="#怎样做" class="headerlink" title="怎样做"></a>怎样做</h5><p>选择一款支持 M/S 的 EQ 插件，例如 Logic Pro X 的自带 EQ、Ableton 的 EQ 8、Fab Filter 的 Pro Q 2，或者 Izotope Ozone 等。</p>
-<p>我们假设要处理一条贝司，带一些合唱效果，需要将它的低频更「单声道化」，而又不损失合唱效果带来的高频段共鸣的宽度。</p>
-<p>效果器链这样：贝司音源 -&gt; 合唱效果 -&gt; M/S EQ，如图：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6.jpg" alt="6"></p>
-<p>上图的效果全关，光谱如下图：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/7.jpg" alt="7"></p>
-<p>注意：贝司声在相位分析器中显示出一个几乎完全是单声道的图形，在 FFT 分析器（左）里则显示出多层共鸣。</p>
-<p>让我们启用合唱效果（选择 Mega Wide Chorus），看看发生了什么变化：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/8_1.jpg" alt="8 1"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/8_2.jpg" alt="8 2"></p>
-<p>现在看看右边的相位分析器，可以明显看到新增的立体声信号。但是从上到下，直到 30Hz 都有立体声信号。FFT 则没有什么变化。</p>
-<p>然后，让我们添加一个仅作用于 Side 信号的高通滤波器，切到 220Hz 处。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/9_1.jpg" alt="9 1"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/9_2.jpg" alt="9 2"></p>
-<p>再对比一下分析器，FFT 里产生了一些变化，但更重要的是信号变成单声道/宽广共存的声音了。简而言之就是 200Hz 以下都变成了单声道，高于这个位置的频率仍然有立体声的声相。</p>
-<h5 id="总线处理，还是终混处理？"><a href="#总线处理，还是终混处理？" class="headerlink" title="总线处理，还是终混处理？"></a>总线处理，还是终混处理？</h5><p>采用上边的技巧，无论是在集合了若干声部的总线上，还是总输出轨上，都能达到清晰度和声音稳定程度的保障。</p>
-<p>在衰减 Side 信号时需要注意的是，衰减值不当可能导致声音被「钉」在奇怪的声场当中，因为缺少底部的支撑。适当地推起 Side 信号，可以为乐曲制造出所谓的「呼吸空间」。</p>
-<h5 id="创造性-M-S-处理"><a href="#创造性-M-S-处理" class="headerlink" title="创造性 M/S 处理"></a>创造性 M/S 处理</h5><p>Voxengo 有一款免费的 M/S 处理插件 MSED。它原本是用来解码 M/S 技术录制的音频。作为一款均衡器，它也能用作 M/S 增益控制器。也就是说，你可以分开控制 Mid 或 Side 信号的增益值。用它衰减掉 Mid 信号后，留下的 Side 信号也不会被过分影响。用它提升立体声的宽度，能够避免一般立体声技术产生的哈斯效应（Haas Effect）。</p>
-<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p>这篇文章内容较杂，论及的要点都是为了让你获得更多混音上的改进空间。</p>
-<p>本文转载自:<a href="https://soundmono.com/4-mixing-techniques-to-help-take-your-music-to-the-next-level.html" target="_blank" rel="noopener">https://soundmono.com/4-mixing-techniques-to-help-take-your-music-to-the-next-level.html</a> </p>
-<p><strong>本帖附件</strong></p>
-<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../12.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../12.html" itemprop="url">加强鼓组音色的冲击力</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T10:18:26+08:00">
-                2019-11-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>我们知道，要得到更具冲击力的音色，就要用到压缩器。但你还需要适当调整它，才能让声音真的「动感」起来。</p>
-<h4 id="Attack-时间就是核心秘密"><a href="#Attack-时间就是核心秘密" class="headerlink" title="Attack 时间就是核心秘密"></a>Attack 时间就是核心秘密</h4><blockquote>
-<p>注意：最好使用工作室级别的耳机或音箱，才能更好感受到具体效果。</p>
-</blockquote>
-<p>首先，我们来看看底鼓的波形。它会从一个很突然且高频的震动开始，然后相对较缓地结束。开始部分就是冲击力所在的位置。为了让这个部分更加丰满，不失去音色本身具有的冲击感，你就需要尽量让这段波峰无伤地通过压缩器。而 Attack 值就是用来控制这个特性的。</p>
-<p>看看下图的底鼓，这是放大到毫秒级别后的波形。我们看到丰满的头部在大约 30 毫秒处开始消逝。这也直接告诉了我，应该怎样设置 Attack 时间。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/01-1.jpg" alt></p>
-<p>在得到了这个重要信息后，我们在通道条上实例化一个压缩器。将 Ratio 比率设置为 4.00:1，Attack 时间设置为 30 毫秒。然后，循环播放底鼓，同时慢慢拉动 Threshold 值，直到你听见冲击感开始增强了为止。有的人喜欢把 Threshold 压低，有的人喜欢放到很高，只要你感觉合适即可！</p>
-<p>当然，Release 也可以适当调调，直到满意为止。</p>
-<p>下面从一个具体例子来讲讲。这是一段 Hip-hop 风格的工程。我在底鼓和军鼓轨道上开有压缩器。通过下图的参数，底鼓的冲击力得到了大幅提升。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/02.jpg" alt="02"></p>
-<p>军鼓也可照此方法进行，当然参数会有些许不同。不过在本工程里，我直接拷贝了底鼓的参数，并且觉得没有任何不妥。</p>
-<h4 id="让改变更加明显"><a href="#让改变更加明显" class="headerlink" title="让改变更加明显"></a>让改变更加明显</h4><p>作为混音技巧，这实在不足为奇，但确实有效。然而这里有个陷阱，需要小心避开：在使用压缩器之后，被修改的轨道可能变得更大声了，造成一种「更大声等于更好」的错觉。</p>
-<p>最简单的方法是使用相对增益对比，对修改前后的声音进行 A/B 测试，以确保响度没有较大变化。</p>
-<p>例如，可以使用 Maximiser VST 插件，将 Threshold 和 Output 设为相同的值。此数值应该低于总轨混音电平的峰值。例如，压缩前的鼓峰值是 -2.37dB，那么我就将 Loudmax（一款免费的 maximiser）放置在总轨上，Threshold 和 Output 值都设为 -3dB。</p>
-<p>现在，当我打开/关闭压缩器时，就既能够听清它带来的冲击力效果，又不会让整体音量失去平衡。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/03.jpg" alt></p>
-<h4 id="听听区别"><a href="#听听区别" class="headerlink" title="听听区别"></a>听听区别</h4><p>处理前的鼓（峰值 -3dB，24-bit，41000kHz）</p>
-<p><audio class src="https://audio.newban.cn/audio/dry-punchy_drum_compression_-_dry.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio><br>处理后的鼓（峰值 -3dB，24-bit，41000kHz）</p>
-<p><audio class src="https://audio.newban.cn/audio/wet-punchy_drum_compression_-_wet.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio><br>本文转载自: <a href="https://soundmono.com/the-how-of-punchy-drum-compression.html" target="_blank" rel="noopener">https://soundmono.com/the-how-of-punchy-drum-compression.html</a> </p>
-<p><strong>本帖附件</strong></p>
-<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1972,7 +1918,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">152</span>
+                  <span class="site-state-item-count">155</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1985,7 +1931,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
