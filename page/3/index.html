@@ -273,6 +273,1543 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../139.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../139.html" itemprop="url">REAPER中实现轨道自动着色</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-09T10:15:53+08:00">
+                2023-07-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>此功能使您能够自动更改轨道/片段/标记的颜色、添加图标以及根据您可以设置的规则修改MCP 和 TCP 布局！🚀</p>
+<p>例如，您可以设置一条规则，每当您制作名为<code>Guitar</code>的曲目时，它都会自动将其着色为红色并添加吉他图标，如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e8e068503da3_ca51bfa9-2c1f-478e-907e-6594a83b58b5.gif" alt="img"></p>
+<p>超级棒对吧！？🤩</p>
+<p>我也喜欢自动着色区域！我喜欢给我常用的歌曲结构分配不同的颜色，比如“主歌”、“副歌”、“桥段”、等等……</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e85934503da5_25cc5587-619d-4c5d-8c58-3cb9a4bbf92a.gif" alt="img"></p>
+<p>让我引导您了解如何安装以及您可以用它做的所有事情。</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>下载并安装<a href="https://www.sws-extension.org/" target="_blank" rel="noopener">SWS 扩展</a>。</li>
+<li>打开REAPER 并在扩展下拉菜单中选择自动颜色/图标/布局。</li>
+<li>单击“选项” ，然后启用您需要的所有选项。（<em>自动轨道着色、自动轨道图标…</em> ）</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e86398503da4_8715fbd7-3318-4216-8290-fea0d9b9ca70.jpeg" alt="img"></p>
+<h3 id="自动颜色-图标轨道"><a href="#自动颜色-图标轨道" class="headerlink" title="自动颜色/图标轨道"></a>自动颜色/图标轨道</h3><ol>
+<li>单击添加规则。</li>
+<li>双击“（名称）”的位置，然后输入要设置颜色的曲目的名称。</li>
+<li>右键单击旁边显示“无”的位置，单击“设置颜色”，然后为轨道选择一种颜色。</li>
+<li>通过右键单击颜色列中的空白区域来放置图标。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e8291e503da1_15159516-6a6f-442f-94f5-08ef54affdbd.jpeg" alt="img"></p>
+<h3 id="让子级追踪与父级相同的颜色"><a href="#让子级追踪与父级相同的颜色" class="headerlink" title="让子级追踪与父级相同的颜色"></a>让子级追踪与父级相同的颜色</h3><ol>
+<li>单击添加规则。</li>
+<li>右键单击显示“（名称）”的位置。</li>
+<li>选择“（子级）”。</li>
+<li>右键单击颜色列中显示“无”的位置，然后选择“父级”。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e82302503da2_174107b9-77ba-484e-abdc-7664f200b46f.jpeg" alt="img"></p>
+<h3 id="自动为区域着色"><a href="#自动为区域着色" class="headerlink" title="自动为区域着色"></a>自动为区域着色</h3><ol>
+<li>单击添加规则。</li>
+<li>右键单击显示“轨道”的位置。</li>
+<li>选择“地区”。</li>
+<li>双击显示“（名称）”的位置，然后输入要设置颜色的区域的名称。</li>
+<li>右键单击其旁边显示“无”的位置，单击“设置颜色”，然后为该区域选择一种颜色。</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/6453144fd3b6e800ca503da0_22814467-2b82-41e0-8273-8e58b5e440f6.jpeg" alt="img"></p>
+<h2 id="记住…"><a href="#记住…" class="headerlink" title="记住…"></a>记住…</h2><p>自动着色列表按优先级排序，您可以在第一列中看到数字。数字越小优先级最高。</p>
+<p>例如，如果您将“吉他”设置为黄色，作为列表中的#1，将“原声吉他”设置为红色，作为列表中的#2，则它将根据优先级较高的颜色为曲目着色。在这种情况下，只需将“原声吉他”拖到列表中，使其优先级高于“吉他”曲目即可。这将导致名为<code>Acoustic Guitar</code>的曲目显示为红色，而名为<code>Guitar</code>的曲目将显示为黄色。</p>
+<h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><iframe src="//player.bilibili.com/player.html?aid=516862897&bvid=BV1dg41187eS&cid=869145398&page=1&autoPlay=false" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660 framespacing=" 0" allowfullscreen="true"> </iframe>
+
+
+
+
+
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/how-to-auto-color-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../138.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../138.html" itemprop="url">REAPER中十多个包络自动化技巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-08T10:15:53+08:00">
+                2023-07-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果您希望在 REAPER 中提高自动化效率，我整理了一些有用的便捷技巧。🚀</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce13a94130e5_Thumbnail-10_Automation_Shortcuts_in_REAPER.jpeg" alt="img"></p>
+<h2 id="1-快速建立包络"><a href="#1-快速建立包络" class="headerlink" title="1.快速建立包络"></a>1.快速建立包络</h2><p>按键盘<code>V</code>打开/关闭音量包络通道, 按住<code>shift</code>配合鼠标左键即可快速画出大致包络曲线。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce5674413112_c941cd6e-6be2-4362-af66-3543470213f9.gif" alt="img"></p>
+<p>按键盘<code>P</code>打开/关闭声像包络通道。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce324f413115_2ce87ae4-3240-4e9f-a30f-c37d25b0d855.gif" alt="img"></p>
+<h2 id="2-四点包络线"><a href="#2-四点包络线" class="headerlink" title="2. 四点包络线"></a>2. 四点包络线</h2><p>创建时间选择并按<code>Shift + Ctrl/Cmd</code>创建四点包络。</p>
+<p>这非常适合快速调整某个部分的值，同时保持通道的其余部分不变。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1794413121_6d496f29-2d6b-45dc-bee8-c2e1e94a44a6.gif" alt="img"></p>
+<p>💡</p>
+<p>提示：默认情况下，它将产生非常短的过渡曲线，这听起来可能有点刺耳。您可以通过进入“首选项” &gt; “包络显示”并设置“自动创建包络边缘点的过渡时间”来 调整曲线的平滑度</p>
+<h2 id="3-调整包络曲线"><a href="#3-调整包络曲线" class="headerlink" title="3. 调整包络曲线"></a>3. 调整包络曲线</h2><p>按住<code>Alt/Opt</code> 的同时单击并拖动包络曲线以自由塑造其形状。对于平滑过渡非常有用。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1134413125_b92bff56-fd09-4083-8526-932c4aa9873e.gif" alt="img"></p>
+<p>按住<code>Alt/Opt</code>的同时双击鼠标左键可将其重置。</p>
+<h2 id="4-手动调整点"><a href="#4-手动调整点" class="headerlink" title="4.手动调整点"></a>4.手动调整点</h2><p>按住<code>Ctrl/Cmd</code>并双击包络点可手动输入值或更改曲线形状。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ceeb6a413126_7a1abefd-2e42-4012-b887-75ad5e81f1ff.gif" alt="img"></p>
+<h2 id="5-创建自动化项目"><a href="#5-创建自动化项目" class="headerlink" title="5. 创建自动化项目"></a>5. 创建自动化项目</h2><p>按<code>Alt/Opt</code>并在包络通道底部拖动以创建自动化项目。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070cef56a413111_fd32771b-03fe-47f2-b904-915310b636a0.gif" alt="img"></p>
+<p>🤔什么是自动化项目？</p>
+<p>它们是包络的容器。您可以像常规项目一样循环、复制、拉伸和池化。您基本上可以将您的自动化视为物品！</p>
+<p><em>（您也可以双击它们来应用 LFO 并调整设置！）</em></p>
+<h2 id="6-微调包络点"><a href="#6-微调包络点" class="headerlink" title="6. 微调包络点"></a>6. 微调包络点</h2><p>按住<code>Ctrl/Cmd + Alt/Opt</code>并上下拖动点，以非常小的步长进行调整。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce5bdf413114_6b1c0f46-b3ba-47f1-83b0-a864b4d154b2.gif" alt="img"></p>
+<h2 id="7-快速删除包络点"><a href="#7-快速删除包络点" class="headerlink" title="7.快速删除包络点"></a>7.快速删除包络点</h2><p>按<code>Alt/Opt</code> 键并单击包络点将其删除。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce7a2e413127_7f16f631-3c15-42e6-a446-ef7d36880325.gif" alt="img"></p>
+<h2 id="8-重置包络点"><a href="#8-重置包络点" class="headerlink" title="8. 重置包络点"></a>8. 重置包络点</h2><p>双击包络点可将其值重置为 0dB。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce1b06413123_a81455e1-895c-4e06-9957-7c682a62c4ec.gif" alt="img"></p>
+<h2 id="9-画包络"><a href="#9-画包络" class="headerlink" title="9. 画包络"></a>9. 画包络</h2><p>在包络通道上拖动时按住<code>Ctrl/Cmd</code>以徒手绘制，忽略捕捉。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce6361413122_5d4329c8-becb-4961-b6ef-6669e91a093f.gif" alt="img"></p>
+<p>💡提示：您可以对其进行设置，使其贴合您的网格。<br>为此，请转至首选项&gt;鼠标修改器&gt;上下文：包络通道 | 左键拖动并将鼠标修改器设置为“徒手绘制信封”</p>
+<h2 id="💎-其他快捷技巧"><a href="#💎-其他快捷技巧" class="headerlink" title="💎 其他快捷技巧"></a>💎 其他快捷技巧</h2><p>接下来的操作没有快捷方式，但它们非常有用，我建议为它们设置一个！</p>
+<h2 id="10-显示和隐藏包络通道"><a href="#10-显示和隐藏包络通道" class="headerlink" title="10.显示和隐藏包络通道"></a>10.显示和隐藏包络通道</h2><p>如果您有一堆包络占用了会话中的空间，可以通过以下方法快速显示/隐藏所有信封或仅显示选定的曲目。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce9e26413113_f4df6143-e336-4f61-84c4-1384b0018742.gif" alt="img"></p>
+<p>在菜单的<code>Actions List</code>中，搜索<code>Envelope: Toggle show all envelopes for all tracks</code>。我将其快键键设置为<code>Alt + Tab</code>。</p>
+<h2 id="11-显示最后编辑的包络通道"><a href="#11-显示最后编辑的包络通道" class="headerlink" title="11.显示最后编辑的包络通道"></a>11.显示最后编辑的包络通道</h2><p>这是我最喜欢的动作之一！</p>
+<p>您无需查看大量参数即可启动包络通道。只需触摸您需要的参数，运行此操作，该参数的通道就会出现在轨道列表上！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/645aa982d070ce76b6413124_c9cc86f0-2a8d-4107-9204-216b788843b9.gif" alt="img"></p>
+<p>在菜单的<code>Actions List</code>中，搜索<code>FX: Show/hide track envelope for last touched FX parameter</code>, 并为其设置快捷键。我把它设置为<code>L</code> 。</p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>希望这些大家有用~💙 </p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/10-automation-shortcuts-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../137.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../137.html" itemprop="url">一些开源的VST音频插件和音乐应用以及开发框架汇总</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T13:15:53+08:00">
+                2023-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="音频插件"><a href="#音频插件" class="headerlink" title="音频插件"></a>音频插件</h2><table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Description</th>
+<th>Type</th>
+<th>Framework</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/jpcima/ADLplug" target="_blank" rel="noopener">ADLplug</a></td>
+<td>FM Chip Synthesizer — OPL &amp; OPN</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/antonok-edm/ampli-Fe" target="_blank" rel="noopener">ampli-Fe</a></td>
+<td>Cross-platform VST2 plugin written in Rust</td>
+<td>Effect</td>
+<td>Rust VST</td>
+</tr>
+<tr>
+<td><a href="https://github.com/artfwo/andes" target="_blank" rel="noopener">andes</a></td>
+<td>Sound synthesiser plugin based on Perlin noise</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/airwindows/airwindows" target="_blank" rel="noopener">Airwindows</a></td>
+<td>Various small and experimental effect plugins</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/amsynth/amsynth" target="_blank" rel="noopener">amsynth</a></td>
+<td>Analog-modelling (virtual analog) synthesizer</td>
+<td>Instrument</td>
+<td>GTK</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mourednik/argotlunar" target="_blank" rel="noopener">Argotlunar</a></td>
+<td>Real-time delay-line granulator</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/juandagilc/Audio-Effects" target="_blank" rel="noopener">Audio Effects</a></td>
+<td>Plugins implemented from the explanations in the book “Audio Effects: Theory, Implementation and Application”</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/awwbees/BespokeSynth" target="_blank" rel="noopener">Bespoke</a></td>
+<td>Node-based modular synth with live coding</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/twoz/binaural-vst" target="_blank" rel="noopener">BinAural VST</a></td>
+<td>Mono-to-stereo plugin that positions sound in a 3D space using Head-Related Transfer Functions</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://khrykin.github.io/BlackBird" target="_blank" rel="noopener">BlackBird</a></td>
+<td>Analog-inspired software synth with its own voice</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/datajake1999/C1Bitcrusher" target="_blank" rel="noopener">C1Bitcrusher</a></td>
+<td>Experimental and accurate bit reduction</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Cardinal/" target="_blank" rel="noopener">Cardinal</a></td>
+<td>Virtual modular synthesizer plugin</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/calf-studio-gear/calf" target="_blank" rel="noopener">Calf Studio Gear</a></td>
+<td>Many LV2 and Jack audio plug-ins</td>
+<td>Effects</td>
+<td>GTK</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jatinchowdhury18/CHOW" target="_blank" rel="noopener">CHOW</a></td>
+<td>Maximally truculent distortion effect</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ValdemarOrn/CloudSeed" target="_blank" rel="noopener">Cloud Seed</a></td>
+<td>Algorithmic reverb for emulating huge, endless spaces and modulated echoes</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tesselode/cocoa-delay" target="_blank" rel="noopener">Cocoa Delay</a></td>
+<td>Warm and lively delay</td>
+<td>Effect</td>
+<td>WDL-OL</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/Convolver" target="_blank" rel="noopener">Convolver</a></td>
+<td>Impulse-response reverb</td>
+<td>Effect</td>
+<td>VSTGUI, JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/asb2m10/dexed" target="_blank" rel="noopener">Dexed</a></td>
+<td>DX7 FM plugin synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LouisGorenfeld/DigitsVst" target="_blank" rel="noopener">Digits</a></td>
+<td>Phase-distortion synth inspired by Casio CZ series</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/glBars" target="_blank" rel="noopener">Distrho glBars</a></td>
+<td>OpenGL bars visualization plugin (as seen in XMMS and XBMC/Kodi) adapted from jack_glbars</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/JuicePlugins" target="_blank" rel="noopener">Distrho Juice Plugins</a></td>
+<td></td>
+<td>Misc</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Kars" target="_blank" rel="noopener">Distrho Kars</a></td>
+<td>Simple karplus-strong plucked string synth based on the karplong DSSI example synth</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Mini-Series" target="_blank" rel="noopener">Distrho Mini-Series</a></td>
+<td>Collection of small plugins based on LOSER-Dev Plugins</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/MVerb" target="_blank" rel="noopener">Distrho MVerb</a></td>
+<td>DPF-based version of MVerb</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/ndc-Plugs" target="_blank" rel="noopener">Distrho ndc Plugs</a></td>
+<td>DPF-based versions of some of ndc Plugs</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Nekobi" target="_blank" rel="noopener">Distrho Nekobi</a></td>
+<td>Simple single-oscillator synth based on Roland TB-303</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/ProM" target="_blank" rel="noopener">Distrho ProM</a></td>
+<td>Music-visualizer plugin based on projectM</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/michaelwillis/dragonfly-reverb" target="_blank" rel="noopener">Dragonfly Reverb</a></td>
+<td>Hall-style reverb based on Freeverb3 algorithms</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/clearly-broken-software/drops" target="_blank" rel="noopener">Drops</a></td>
+<td>Single file audio player</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kushview/Element" target="_blank" rel="noopener">Element</a></td>
+<td>Advanced Audio Plugin Host</td>
+<td>Misc</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/VCVRack/AudibleInstruments" target="_blank" rel="noopener">Eurorack</a></td>
+<td>Diverse set of physical modeling sources, organic processors, wavetable oscillators, waveshapers, granular synths, and utility modules</td>
+<td>Misc</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tesselode/flutterbird" target="_blank" rel="noopener">Flutterbird</a></td>
+<td>Simple pitch fluctuation</td>
+<td>Effect</td>
+<td>iPlug 2</td>
+</tr>
+<tr>
+<td><a href="https://github.com/satelllte/GainPlugin" target="_blank" rel="noopener">GainPlugin</a></td>
+<td>(Experimental) VST/AU audio plugin example based on JUCE with React-JUCE for UI.</td>
+<td>Mics</td>
+<td>JUCE, React-JUCE</td>
+</tr>
+<tr>
+<td><a href="http://elements.byethost3.com/plugins.html" target="_blank" rel="noopener">Gverb/Gigaverb</a></td>
+<td>Reverb</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mtytel/helm" target="_blank" rel="noopener">Helm</a></td>
+<td>Polyphonic synth with lots of modulation</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/smbolton/hexter" target="_blank" rel="noopener">hexter</a></td>
+<td>Yamaha DX7 modeling FM synth for DSSI</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/HiLoFilter" target="_blank" rel="noopener">HiLoFilter</a></td>
+<td>Simple hipass/lopass filter controlled with a single knob</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bsutherland/JuceOPLVSTi" target="_blank" rel="noopener">JuceOPLVSTi</a></td>
+<td>FM synth based on Yamaha OPL2/3 emulation from DOSBox</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://sourceforge.net/projects/juno6/" target="_blank" rel="noopener">Juno 6</a></td>
+<td>Roland Juno 6/60 Synthesizer</td>
+<td>Instrument</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/keithhearne/VSTPlugins" target="_blank" rel="noopener">keithhearne/VSTPlugins</a></td>
+<td>Collection of VST plugins</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mzuther/K-Meter" target="_blank" rel="noopener">K-Meter</a></td>
+<td>Implementation of a K-System meter according to Bob Katz’ specifications</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://michael-jan.github.io/key-repeat/" target="_blank" rel="noopener">Key Repeat</a></td>
+<td>Beat repeat sampler</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/KickMaker" target="_blank" rel="noopener">KickMaker</a></td>
+<td>Synth specifically to create kick-drum sounds</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Iunusov/LameVST" target="_blank" rel="noopener">LameVST</a></td>
+<td>LameMP3 as an effect</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/yokemura/Magical8bitPlug2" target="_blank" rel="noopener">Magical8bitPlug 2</a></td>
+<td>Old 8bit game console style synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://sourceforge.net/projects/mda-vst/" target="_blank" rel="noopener">mda</a></td>
+<td>FX and virtual instruments for PC and Mac</td>
+<td>Misc</td>
+<td>(no GUI)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hollance/mda-plugins-juce" target="_blank" rel="noopener">mda-plugins-juce</a></td>
+<td>JUCE implementations of the classic MDA audio plug-ins</td>
+<td>Misc</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/markwilkins/midi-chord-reader" target="_blank" rel="noopener">MidiChords</a></td>
+<td>Detect chord names from a MIDI track and display them in a scrolling window during track playback</td>
+<td>Misc</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tesselode/mika-micro" target="_blank" rel="noopener">Mika Micro</a></td>
+<td>Simple subtractive synth</td>
+<td>Instrument</td>
+<td>WDL-OL</td>
+</tr>
+<tr>
+<td><a href="https://github.com/martineastwood/mverb" target="_blank" rel="noopener">MVerb</a></td>
+<td>Studio-quality reverb using the Dattorro’s figure-of-eight reverb structure</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mikeoliphant/neural-amp-modeler-lv2" target="_blank" rel="noopener">Neural Amp Modeler LV2</a></td>
+<td>Neural amplifier modeler, LV2 version of Steven Atkinson’s NAM plugin</td>
+<td>Effect</td>
+<td>no GUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/clearly-broken-software/ninjas2" target="_blank" rel="noopener">Ninjas 2</a></td>
+<td>Sample slicer, rewrite of Ninjas</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/NotNotchFilter" target="_blank" rel="noopener">NotNotchFilter</a></td>
+<td>Performance-oriented filter designed to replace the mid-EQ found in a standard 3-band DJ mixer</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://www.niallmoody.com/ndcplugs/plugins.htm" target="_blank" rel="noopener">ndc Plugs</a></td>
+<td>VST plugins for Windows and OSX</td>
+<td>Misc</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/greatest-ape/OctaSine" target="_blank" rel="noopener">OctaSine</a></td>
+<td>VST2 frequency modulation synthesizer written in Rust</td>
+<td>Instrument</td>
+<td>Rust VST</td>
+</tr>
+<tr>
+<td><a href="https://github.com/TheWaveWarden/odin2" target="_blank" rel="noopener">Odin2</a></td>
+<td>Polyphonic Synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/PentagramPro/OwlBass" target="_blank" rel="noopener">OwlBass</a></td>
+<td>Additive bass synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/reales/OB-Xd" target="_blank" rel="noopener">OB-Xd</a></td>
+<td>Based on the Oberheim OB-X</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/oxesoft/oxefmsynth" target="_blank" rel="noopener">Oxe FM Synth</a></td>
+<td>Multitimbral 8-operator FM synth (VST 2.4; Windows, Linux, macOS)</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/PulseDelay" target="_blank" rel="noopener">PulseDelay</a></td>
+<td>Timed delay effect</td>
+<td>Effect</td>
+<td>(no GUI)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mbrucher/QtVST" target="_blank" rel="noopener">QtVST</a></td>
+<td>VST plugins with a Qt interface</td>
+<td>Effect</td>
+<td>Qt</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Sinuslabs/Reach" target="_blank" rel="noopener">REACH</a></td>
+<td>Extraterrestrial Reverb for Electronic Music</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/igorski/regrader" target="_blank" rel="noopener">Regrader</a></td>
+<td>Degenerative delay</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/danielrothmann/Roth-AIR" target="_blank" rel="noopener">Roth-AIR</a></td>
+<td>Mixing tool for easily adding airy, crispy presence to audio</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://sourceforge.net/projects/scorchcrafter/" target="_blank" rel="noopener">ScorchCrafter Guitar FX</a></td>
+<td>Audio DSP FX and plugins, mostly for guitar (amp sim) and other FX</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/JanosGit/Schrammel_OJD" target="_blank" rel="noopener">Schrammel OJD</a></td>
+<td>Model of a modern classic guitar distortion pedal</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sfztools/sfizz" target="_blank" rel="noopener">sfizz</a></td>
+<td>SFZ parser library and instrument plugins</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Iunusov/ShoutVST" target="_blank" rel="noopener">ShoutVST</a></td>
+<td>VST for streaming sound into Icecast/Shoutcast directly from VST hosts</td>
+<td>Effect</td>
+<td>VSTGUI, FLUID</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GuitarML/SmartGuitarAmp" target="_blank" rel="noopener">SmartGuitarAmp</a></td>
+<td>Guitar amplifier-style plugin, that uses machine learning for emulating real world hardware</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GuitarML/SmartGuitarPedal" target="_blank" rel="noopener">SmartGuitarPedal</a></td>
+<td>Guitar pedal-style plugin, that uses machine learning for emulating real world hardware</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/adamstark/Sound-Analyser" target="_blank" rel="noopener">Sound Analyser</a></td>
+<td>Real-time audio analysis to allow anyone to quickly set up and experiment with different algorithms</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/leomccormack/SPARTA" target="_blank" rel="noopener">SPARTA</a></td>
+<td>Spatial audio focused plug-in suite (Ambisonics encoders/decoders, 3-D panners/spatialisers, etc.)</td>
+<td>Effect</td>
+<td><a href="https://github.com/leomccormack/Spatial_Audio_Framework" target="_blank" rel="noopener">SAF</a>, JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mzuther/Squeezer" target="_blank" rel="noopener">Squeezer</a></td>
+<td>Compressor with side-chain, several detection modes and filters, etc</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://surge-synthesizer.github.io/" target="_blank" rel="noopener">Surge</a></td>
+<td>Subtractive wavetable synth</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/the-synister/the-source" target="_blank" rel="noopener">Synister</a></td>
+<td>Subtractive synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lis355/Syntage" target="_blank" rel="noopener">Syntage</a></td>
+<td>VST 2.4 .Net Study Synth</td>
+<td>Instrument</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/creativeintent/temper" target="_blank" rel="noopener">Temper</a></td>
+<td>Digital distortion targeting VST, VST3, and AU for OS X and Windows</td>
+<td>Effect</td>
+<td>Faust, JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/paynebc/tunefish" target="_blank" rel="noopener">Tunefish</a></td>
+<td>VST virtual analog synthesizer</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mzuther/traKmeter" target="_blank" rel="noopener">traKmeter</a></td>
+<td>Loudness meter for correctly setting up tracking and mixing levels</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/VCVRack/Rack" target="_blank" rel="noopener">VCV Rack</a></td>
+<td>Virtual modular synth</td>
+<td>Misc</td>
+<td>RtAudio</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mtytel/vital" target="_blank" rel="noopener">Vital</a></td>
+<td>Spectral warping wavetable synthesizer</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/igorski/VSTSID" target="_blank" rel="noopener">VSTSID</a></td>
+<td>SID synthesizer instrument</td>
+<td>Instrument</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/keijiro/vst2413" target="_blank" rel="noopener">VST2413</a></td>
+<td>FM synth based on emulator of YM2413 (OPLL) chip used in Sega Master System and FM-PAC MSX expansion</td>
+<td>Instrument</td>
+<td>(no GUI)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/webaudiomodules/webcz101" target="_blank" rel="noopener">WebCZ101</a></td>
+<td>Virtual CZ101 synth in a browser</td>
+<td>Instrument</td>
+<td><a href="https://www.webaudiomodules.org/" target="_blank" rel="noopener">WAM</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/webaudiomodules/webdx7" target="_blank" rel="noopener">WebDX7</a></td>
+<td>Virtual Yamaha DX7 synth in a browser</td>
+<td>Instrument</td>
+<td><a href="https://www.webaudiomodules.org/" target="_blank" rel="noopener">WAM</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/pdesaulniers/wolf-shaper" target="_blank" rel="noopener">Wolf Shaper</a></td>
+<td>Waveshaper plugin with spline-based graph editor</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/SpotlightKid/ykchorus" target="_blank" rel="noopener">YK Chorus</a></td>
+<td>Chorus audio effect plugin based on DSP code by TAL</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zamaudio/zam-plugins" target="_blank" rel="noopener">zam-plugins</a></td>
+<td>LADSPA/LV2/VST/JACK audio plugins for high-quality processing</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zynaddsubfx/zynaddsubfx" target="_blank" rel="noopener">zynaddsubfx</a></td>
+<td>Additive/Subtractive AM/FM synthesizer with effects</td>
+<td>Instrument</td>
+<td>FLTK</td>
+</tr>
+</tbody></table>
+<h2 id="大合集"><a href="#大合集" class="headerlink" title="大合集"></a>大合集</h2><ul>
+<li><a href="http://linuxsynths.com/" target="_blank" rel="noopener">Linux Synths</a> — list of linux based synths, some of which are open-source</li>
+<li><a href="http://openavproductions.com/" target="_blank" rel="noopener">OpenAV</a> — collection of instruments, effects, and development tool kits for Linux.</li>
+<li><a href="https://sfzinstruments.github.io/" target="_blank" rel="noopener">SFZ Instruments</a> — list of SFZ instruments, most of which are free</li>
+<li><a href="https://studiorack.github.io/studiorack-site/" target="_blank" rel="noopener">StudioRack</a> — open-source audio plugin registry, app and command line tools</li>
+<li><a href="https://github.com/VCVRack/library" target="_blank" rel="noopener">VCV library</a> — library of plugins compatible with VCV Plugin Manager</li>
+</ul>
+<h2 id="音频相关应用"><a href="#音频相关应用" class="headerlink" title="音频相关应用"></a>音频相关应用</h2><table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://ardour.org/" target="_blank" rel="noopener">Ardour</a></td>
+<td><a href="https://github.com/Ardour/ardour" target="_blank" rel="noopener">Ardour/ardour</a></td>
+<td>DAW</td>
+</tr>
+<tr>
+<td>ASIO2WASAPI</td>
+<td><a href="https://github.com/levmin/ASIO2WASAPI" target="_blank" rel="noopener">levmin/ASIO2WASAPI</a></td>
+<td>Universal ASIO driver for Windows</td>
+</tr>
+<tr>
+<td><a href="https://www.audacityteam.org/" target="_blank" rel="noopener">Audacity</a></td>
+<td><a href="https://github.com/audacity/audacity" target="_blank" rel="noopener">audacity/audacity</a></td>
+<td>Audio editor</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Jaybee18/butterDAWg" target="_blank" rel="noopener">butterDAWg</a></td>
+<td><a href="https://github.com/Jaybee18/butterDAWg" target="_blank" rel="noopener">Jaybee18/butterDAWg</a></td>
+<td>DAW (WIP)</td>
+</tr>
+<tr>
+<td><a href="https://kx.studio/Applications:Carla" target="_blank" rel="noopener">Carla</a></td>
+<td><a href="https://github.com/falkTX/Carla" target="_blank" rel="noopener">falkTX/Carla</a></td>
+<td>GNU/Linux Plugin Host</td>
+</tr>
+<tr>
+<td><a href="https://chuck.stanford.edu/" target="_blank" rel="noopener">ChucK</a></td>
+<td><a href="https://github.com/ccrma/chuck" target="_blank" rel="noopener">ccrma/chuck</a></td>
+<td>Strongly-timed, Concurrent, and On-the-fly Music Programming Language</td>
+</tr>
+<tr>
+<td><a href="https://kushview.net/element/" target="_blank" rel="noopener">Element</a></td>
+<td><a href="https://github.com/kushview/Element" target="_blank" rel="noopener">Kushview/Element</a></td>
+<td>Advanced Audio Plugin Host</td>
+</tr>
+<tr>
+<td>FlexASIO</td>
+<td><a href="https://github.com/dechamps/FlexASIO" target="_blank" rel="noopener">dechamps/FlexASIO</a></td>
+<td>Universal ASIO driver for Windows</td>
+</tr>
+<tr>
+<td><a href="https://www.giadamusic.com/" target="_blank" rel="noopener">Giada</a></td>
+<td><a href="https://github.com/monocasual/giada" target="_blank" rel="noopener">monocasual/giada</a></td>
+<td>Loop machine</td>
+</tr>
+<tr>
+<td><a href="https://guitarix.org/" target="_blank" rel="noopener">Guitarix</a></td>
+<td><a href="https://sourceforge.net/projects/guitarix/" target="_blank" rel="noopener">SourceForge → guitarix</a></td>
+<td>GNU/Linux Virtual Amplifier</td>
+</tr>
+<tr>
+<td><a href="https://helio.fm/" target="_blank" rel="noopener">Helio Workstation</a></td>
+<td><a href="https://github.com/helio-fm/helio-workstation" target="_blank" rel="noopener">helio-fm/helio-workstation</a></td>
+<td>Sequencer</td>
+</tr>
+<tr>
+<td><a href="http://hise.audio/" target="_blank" rel="noopener">HISE</a></td>
+<td><a href="https://github.com/christophhart/HISE" target="_blank" rel="noopener">christophhart/HISE</a></td>
+<td>Cross-platform framework/application for building sample-based virtual instruments (VST, AU, AAX)</td>
+</tr>
+<tr>
+<td><a href="https://keypleezer.com/sfz-to-hise-converter/" target="_blank" rel="noopener">SFZ to HISE converter</a></td>
+<td><a href="https://github.com/anderseklov/SFZ-to-HISE-converter" target="_blank" rel="noopener">anderseklov/SFZ-to-HISE-converter</a></td>
+<td>JavaScript app that translates SFZ instrument files into HISE samplemaps and JSON data objects. Runs in a modern web browser. MIT license.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/harmonoid/harmonoid" target="_blank" rel="noopener">Harmonoid</a></td>
+<td><a href="https://github.com/harmonoid/harmonoid" target="_blank" rel="noopener">harmonoid/harmonoid</a></td>
+<td>Cross-platform music player (Mobile &amp; Desktop) written in Flutter</td>
+</tr>
+<tr>
+<td><a href="http://hydrogen-music.org/" target="_blank" rel="noopener">Hydrogen</a></td>
+<td><a href="https://github.com/hydrogen-music/hydrogen" target="_blank" rel="noopener">hydrogen-music/hydrogen</a></td>
+<td>Drum machine</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jatinchowdhury18/NewMixer" target="_blank" rel="noopener">NewMixer</a></td>
+<td><a href="https://github.com/jatinchowdhury18/NewMixer" target="_blank" rel="noopener">jatinchowdhury18/NewMixer</a></td>
+<td>Mixing Software</td>
+</tr>
+<tr>
+<td><a href="https://lmms.io/" target="_blank" rel="noopener">LMMS</a></td>
+<td><a href="https://github.com/LMMS/lmms" target="_blank" rel="noopener">LMMS/lmms</a></td>
+<td>DAW</td>
+</tr>
+<tr>
+<td><a href="https://openmpt.org/" target="_blank" rel="noopener">OpenMPT</a></td>
+<td><a href="https://github.com/OpenMPT/openmpt" target="_blank" rel="noopener">OpenMPT/openmpt</a></td>
+<td>Popular tracker (formerly ModPlug Tracker) for Windows with support for IT, XM, S3M, MOD modules, VST plugins and ASIO</td>
+</tr>
+<tr>
+<td><a href="https://ossia.io/" target="_blank" rel="noopener">ossia score</a></td>
+<td><a href="https://github.com/ossia/score" target="_blank" rel="noopener">ossia/score</a></td>
+<td>Cross-platform intermedia sequencer</td>
+</tr>
+<tr>
+<td><a href="https://owlplug.com/" target="_blank" rel="noopener">OwlPlug</a></td>
+<td><a href="https://github.com/DropSnorz/OwlPlug" target="_blank" rel="noopener">DropSnorz/OwlPlug</a></td>
+<td>Audio plugin manager</td>
+</tr>
+<tr>
+<td><a href="https://www.ordrumbox.com/" target="_blank" rel="noopener">orDrumbox</a></td>
+<td><a href="https://sourceforge.net/projects/ordrumbox/" target="_blank" rel="noopener">SourceForge → ordrumbox</a></td>
+<td>Drum machine</td>
+</tr>
+<tr>
+<td><a href="http://psycle.pastnotecut.org/portal.php" target="_blank" rel="noopener">Psycle</a></td>
+<td><a href="https://sourceforge.net/projects/psycle/" target="_blank" rel="noopener">SourceForge → psycle</a></td>
+<td>Modular music tracker</td>
+</tr>
+<tr>
+<td><a href="https://github.com/psobot/SampleScanner" target="_blank" rel="noopener">SampleScanner</a></td>
+<td><a href="https://github.com/psobot/SampleScanner" target="_blank" rel="noopener">psobot/SampleScanner</a></td>
+<td>Tool for auto-sampling hardware instruments</td>
+</tr>
+<tr>
+<td><a href="https://sonic-pi.net/" target="_blank" rel="noopener">Sonic Pi</a></td>
+<td><a href="https://github.com/sonic-pi-net/sonic-pi" target="_blank" rel="noopener">sonic-pi-net/sonic-pi</a></td>
+<td>Code-based music creation and performance tool</td>
+</tr>
+<tr>
+<td><a href="https://supercollider.github.io/" target="_blank" rel="noopener">SuperCollider</a></td>
+<td><a href="https://github.com/supercollider/supercollider" target="_blank" rel="noopener">supercollider/supercollider</a></td>
+<td>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound.</td>
+</tr>
+<tr>
+<td>Stargate DAW</td>
+<td><a href="https://github.com/stargatedaw/stargate" target="_blank" rel="noopener">stargatedaw/stargate</a></td>
+<td>Cross-platform, all-in-one DAW and plugin suite</td>
+</tr>
+<tr>
+<td><a href="https://studiorack.github.io/studiorack-site/" target="_blank" rel="noopener">StudioRack</a></td>
+<td><a href="https://github.com/studiorack" target="_blank" rel="noopener">github.com/studiorack</a></td>
+<td>Audio plugin manager</td>
+</tr>
+<tr>
+<td><a href="https://vcvrack.com/" target="_blank" rel="noopener">VCV Rack</a></td>
+<td><a href="https://github.com/VCVRack/Rack" target="_blank" rel="noopener">VCVRack/Rack</a></td>
+<td>Modular synth</td>
+</tr>
+<tr>
+<td>yabridge</td>
+<td><a href="https://github.com/robbert-vdh/yabridge" target="_blank" rel="noopener">robbert-vdh/yabridge</a></td>
+<td>Linux bridge for Windows VSTs</td>
+</tr>
+<tr>
+<td><a href="https://www.zrythm.org/" target="_blank" rel="noopener">Zrythm</a></td>
+<td><a href="https://github.com/zrythm/zrythm" target="_blank" rel="noopener">zrythm/zrythm</a></td>
+<td>DAW</td>
+</tr>
+</tbody></table>
+<h2 id="音频软件和插件开发依赖库和接口"><a href="#音频软件和插件开发依赖库和接口" class="headerlink" title="音频软件和插件开发依赖库和接口"></a>音频软件和插件开发依赖库和接口</h2><table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://celtera.github.io/avendish" target="_blank" rel="noopener">Avendish</a></td>
+<td><a href="https://github.com/celtera/avendish" target="_blank" rel="noopener">celtera/avendish</a></td>
+<td>C++20 framework for any sort of audio / video / midi media objects</td>
+</tr>
+<tr>
+<td><a href="https://cabbageaudio.com/" target="_blank" rel="noopener">Cabbage</a></td>
+<td><a href="https://github.com/rorywalsh/cabbage" target="_blank" rel="noopener">rorywalsh/cabbage</a></td>
+<td>Framework for developing audio plugins and standalone instruments with Csound</td>
+</tr>
+<tr>
+<td><a href="https://csound.com/" target="_blank" rel="noopener">Csound</a></td>
+<td><a href="https://github.com/csound/csound" target="_blank" rel="noopener">csound/csound</a></td>
+<td>Programming language for sound and music synthesis</td>
+</tr>
+<tr>
+<td><a href="https://cmajor.dev/" target="_blank" rel="noopener">Cmajor</a></td>
+<td><a href="https://github.com/SoundStacks/cmajor" target="_blank" rel="noopener">SoundStacks/cmajor</a></td>
+<td>Cmajor is a programming language for writing fast, portable audio software.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/free-audio/clap" target="_blank" rel="noopener">Clap</a></td>
+<td><a href="https://github.com/free-audio/clap" target="_blank" rel="noopener">free-audio/clap</a></td>
+<td>CLAP stands for CLever Audio Plugin. It is an audio plugin ABI which defines a standard for Digital Audio Workstations and audio plugins (synthesizers, audio effects, …) to work together.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DBraun/DawDreamer" target="_blank" rel="noopener">DawDreamer</a></td>
+<td><a href="https://github.com/DBraun/DawDreamer" target="_blank" rel="noopener">DBraun/DawDreamer</a></td>
+<td>Audio-processing Python framework supporting core DAW features written with JUCE</td>
+</tr>
+<tr>
+<td><a href="https://distrho.sourceforge.io/" target="_blank" rel="noopener">DPF</a></td>
+<td><a href="https://github.com/DISTRHO/DPF" target="_blank" rel="noopener">DISTRHO/DPF</a></td>
+<td>C++ framework for creating cross-platform audio plugins. DPF can build for LADSPA, DSSI, LV2, and VST formats.</td>
+</tr>
+<tr>
+<td><a href="https://dplug.org/" target="_blank" rel="noopener">Dplug</a></td>
+<td><a href="https://github.com/AuburnSounds/Dplug" target="_blank" rel="noopener">AuburnSounds/Dplug</a></td>
+<td>Dplug lets you create audio plug-ins with unmatched simplicity and speed, using the D language.</td>
+</tr>
+<tr>
+<td><a href="https://www.elementary.audio/" target="_blank" rel="noopener">Elementary</a></td>
+<td><a href="https://github.com/elemaudio/elementary" target="_blank" rel="noopener">elemaudio/elementary</a></td>
+<td>JavaScript runtime for writing native audio applications, as well as a library and framework for composing audio signal processes.</td>
+</tr>
+<tr>
+<td><a href="https://faust.grame.fr/" target="_blank" rel="noopener">Faust</a></td>
+<td><a href="https://github.com/grame-cncm/faust" target="_blank" rel="noopener">grame-cncm/faust</a></td>
+<td>Functional programming language for real-time signal processing</td>
+</tr>
+<tr>
+<td><a href="https://www.fluidsynth.org/" target="_blank" rel="noopener">FluidSynth</a></td>
+<td><a href="https://github.com/FluidSynth/fluidsynth" target="_blank" rel="noopener">FluidSynth/fluidsynth</a></td>
+<td>Real-time synth based on the SoundFont 2 specifications</td>
+</tr>
+<tr>
+<td><a href="https://wasted-audio.github.io/hvcc/" target="_blank" rel="noopener">Heavy</a></td>
+<td><a href="https://github.com/Wasted-Audio/hvcc" target="_blank" rel="noopener">Wasted-Audio/hvcc</a></td>
+<td>The heavy hvcc compiler for Pure Data patches. With generators for Bela, Fabric, js, pdext, Unity, Daisy, DPF, and Wwise frameworks.</td>
+</tr>
+<tr>
+<td><a href="https://iplug2.github.io/" target="_blank" rel="noopener">iPlug 2</a></td>
+<td><a href="https://github.com/iPlug2/iPlug2" target="_blank" rel="noopener">iPlug2/iPlug2</a></td>
+<td>Simple-to-use C++ framework for developing cross-platform audio plugins/apps</td>
+</tr>
+<tr>
+<td><a href="https://juce.com/" target="_blank" rel="noopener">JUCE</a></td>
+<td><a href="https://github.com/juce-framework/JUCE" target="_blank" rel="noopener">juce-framework/JUCE</a></td>
+<td>Cross-platform C++ framework for developing desktop and mobile apps and audio plugins</td>
+</tr>
+<tr>
+<td><a href="http://jvstwrapper.sourceforge.net/" target="_blank" rel="noopener">jVSTwRapper</a></td>
+<td><a href="https://sourceforge.net/projects/jvstwrapper/" target="_blank" rel="noopener">SourceForge → jvstwrapper</a></td>
+<td>Wrapper to write audio plugins in Java (VST 2.4, AU, LADSPA; Windows, Linux, macOS)</td>
+</tr>
+<tr>
+<td><a href="https://lib.openmpt.org/libopenmpt/" target="_blank" rel="noopener">libopenmpt</a></td>
+<td><a href="https://github.com/OpenMPT/openmpt" target="_blank" rel="noopener">OpenMPT/openmpt</a></td>
+<td>Cross-platform C/C++ module-playback library based on OpenMPT</td>
+</tr>
+<tr>
+<td><a href="https://videolabs.io/" target="_blank" rel="noopener">libspatialaudio</a></td>
+<td><a href="https://github.com/videolabs/libspatialaudio" target="_blank" rel="noopener">videolabs/libspatialaudio</a></td>
+<td>Cross-platform C++ library for Ambisonic encoding and decoding, filtering and binaural rendering</td>
+</tr>
+<tr>
+<td><a href="http://www.portaudio.com/" target="_blank" rel="noopener">PortAudio</a></td>
+<td><a href="https://app.assembla.com/spaces/portaudio/git/source" target="_blank" rel="noopener">Assembla → portaudio</a></td>
+<td>Cross-platform audio I/O library</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/r-audio" target="_blank" rel="noopener">r-audio</a></td>
+<td><a href="https://github.com/bbc/r-audio" target="_blank" rel="noopener">bbc/r-audio</a></td>
+<td>A library of React components for building Web Audio graphs.</td>
+</tr>
+<tr>
+<td><a href="https://docs.react-juce.dev/" target="_blank" rel="noopener">React-JUCE</a></td>
+<td><a href="https://github.com/JoshMarler/react-juce" target="_blank" rel="noopener">JoshMarler/react-juce</a></td>
+<td>React-JUCE (formerly named Blueprint) is a hybrid JavaScript/C++ framework that enables a <a href="https://reactjs.org/" target="_blank" rel="noopener">React.js</a> frontend for a <a href="https://juce.com/" target="_blank" rel="noopener">JUCE</a> application or plugin.</td>
+</tr>
+<tr>
+<td><a href="https://rust-audio.discourse.group/" target="_blank" rel="noopener">RustAudio</a></td>
+<td><a href="https://github.com/RustAudio" target="_blank" rel="noopener">rustaudio</a></td>
+<td>Collection of audio processing and plugin libraries for the Rust language</td>
+</tr>
+<tr>
+<td>RtAudio</td>
+<td><a href="https://github.com/thestk/rtaudio" target="_blank" rel="noopener">thestk/rtaudio</a></td>
+<td>C++ classes for cross-platform real-time audio I/O</td>
+</tr>
+<tr>
+<td>rust-vst</td>
+<td><a href="https://github.com/rust-dsp/rust-vst" target="_blank" rel="noopener">rust-dsp/rust-vst</a></td>
+<td>VST 2.4 API implementation in the Rust language</td>
+</tr>
+<tr>
+<td><a href="https://leomccormack.github.io/Spatial_Audio_Framework/" target="_blank" rel="noopener">SAF</a></td>
+<td><a href="https://github.com/leomccormack/Spatial_Audio_Framework" target="_blank" rel="noopener">leomccormack/Spatial_Audio_Framework</a></td>
+<td>Cross-platform framework for developing spatial audio related algorithms and software in C/C++</td>
+</tr>
+<tr>
+<td><a href="https://soul.dev/" target="_blank" rel="noopener">SOUL</a></td>
+<td><a href="https://github.com/soul-lang/SOUL" target="_blank" rel="noopener">soul-lang/SOUL</a></td>
+<td>SOUL (SOUnd Language) is an attempt to modernise and optimise the way high-performance, low-latency audio code is written and executed.</td>
+</tr>
+<tr>
+<td><a href="https://paulbatchelor.github.io/proj/soundpipe.html" target="_blank" rel="noopener">Soundpipe</a></td>
+<td><a href="https://github.com/PaulBatchelor/Soundpipe" target="_blank" rel="noopener">PaulBatchelor/Soundpipe</a></td>
+<td>Lightweight music DSP library written in C; over 100 modules, many ported from Csound</td>
+</tr>
+<tr>
+<td><a href="https://www.tracktion.com/develop/tracktion-engine" target="_blank" rel="noopener">tracktion_engine</a></td>
+<td><a href="https://github.com/Tracktion/tracktion_engine" target="_blank" rel="noopener">Tracktion/tracktion_engine</a></td>
+<td>Tracktion Engine module. You can build anything from a simple file-player or sequencer to a full blown DAW. Tracktion Engine is supplied as a JUCE module so it can easily fit in to an existing JUCE application.</td>
+</tr>
+<tr>
+<td><a href="https://tonejs.github.io/" target="_blank" rel="noopener">Tone.js</a></td>
+<td><a href="https://github.com/Tonejs/Tone.js" target="_blank" rel="noopener">Tonejs/Tone.js</a></td>
+<td>A Web Audio framework for making interactive music in the browser.</td>
+</tr>
+<tr>
+<td>VSTGUI</td>
+<td><a href="https://github.com/steinbergmedia/vstgui" target="_blank" rel="noopener">steinbergmedia/vstgui</a></td>
+<td>User-interface toolkit mainly for audio plugins</td>
+</tr>
+<tr>
+<td>WDL-OL</td>
+<td><a href="https://github.com/olilarkin/wdl-ol" target="_blank" rel="noopener">olilarkin/wdl-ol</a></td>
+<td>Simple-to-use C++ framework for developing cross-platform audio plugins (superseded by iPlug 2)</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="_blank" rel="noopener">Web Audio API</a></td>
+<td><a href="https://github.com/WebAudio/web-audio-api" target="_blank" rel="noopener">web-audio-api</a></td>
+<td>The Web Audio API provides a powerful and versatile system for controlling audio on the Web, allowing developers to choose audio sources, add effects to audio, create audio visualizations, apply spatial effects (such as panning) and much more. <a href="https://chromium.googlesource.com/chromium/blink/+/refs/heads/main/Source/modules/webaudio" target="_blank" rel="noopener">Web Audio API source code (Chromium / Blink)</a>.</td>
+</tr>
+<tr>
+<td><a href="https://webaudiomodules.org/" target="_blank" rel="noopener">WebAudioModules</a></td>
+<td><a href="https://github.com/webaudiomodules" target="_blank" rel="noopener">webaudiomodules</a></td>
+<td>WAM (WebAudioModules) — synthesizers and audio effects processors for web browsers</td>
+</tr>
+</tbody></table>
+<h2 id="插件示例"><a href="#插件示例" class="headerlink" title="插件示例"></a>插件示例</h2><ul>
+<li><a href="https://github.com/HiFi-LoFi/KlangFalter" target="_blank" rel="noopener">KlangFalter</a> — convolution audio plugin (e.g. for usage as convolution reverb)</li>
+<li><a href="https://github.com/HiFi-LoFi/FFTConvolver" target="_blank" rel="noopener">FFTConvolver</a> — audio convolution algorithm in C++ for real-time audio processing</li>
+<li><a href="https://py-modular.readthedocs.io/" target="_blank" rel="noopener">py-modular</a> — modular and experimental programming environment with basic DSP routines in Python</li>
+</ul>
+<h2 id="开源资源"><a href="#开源资源" class="headerlink" title="开源资源"></a>开源资源</h2><ul>
+<li><a href="https://www.openairlib.net/" target="_blank" rel="noopener">OpenAIR</a> — the Open Acoustic Impulse Response Library (Convolution Reverb Impulse Responses to recreate reverb character of space and equipment/recordings)</li>
+</ul>
+<p><strong>本文为转载自</strong>: <a href="http://openaudio.webprofusion.com/" target="_blank" rel="noopener">openaudio</a>  <a href="https://github.com/webprofusion/OpenAudio" target="_blank" rel="noopener">github</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../136.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../136.html" itemprop="url">免费且好用的混音插件汇总</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T10:15:53+08:00">
+                2023-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Analog-Obession"><a href="#Analog-Obession" class="headerlink" title="Analog Obession"></a>Analog Obession</h2><p>曾经的收费插件, 后来官方宣布免费了, 惊不惊喜😃</p>
+<p><code>Analog Obession</code>的插件都支持 <code>VST/AU/AAX</code> 格式，适用于 <code>Windows</code> 和 <code>Mac</code>，包括经典建模均衡器、压缩器、前置放大器等。</p>
+<p>自从 <code>Analog Obsession</code> 网站被黑之后，这些插件现在只在 Patreon 上提供免费下载:</p>
+<p>下载地址: <a href="https://www.patreon.com/analogobsession" target="_blank" rel="noopener">点击下载</a></p>
+<h2 id="airwindows"><a href="#airwindows" class="headerlink" title="airwindows"></a>airwindows</h2><p>无<code>UI</code>插件, 专注声音品质</p>
+<p>官网: <a href="https://www.airwindows.com/" target="_blank" rel="noopener">点击进入</a></p>
+<p>目前插件数量有三百多个, 还在不断更新中,具体分类如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">Ambience: TapeDelay2, Doublelay, PitchDelay, SampleDelay, BrightAmbience3, TripleSpread, Melt, MV2, MV, ADT, kChamberAR, StereoChorus, PurestEcho, TapeDelay, StarChild2, StarChild, Hombre, BrightAmbience2, BrightAmbience, StereoEnsemble, StereoDoubler, Chorus, ChorusEnsemble, Ensemble</span><br><span class="line"></span><br><span class="line">Amp Sims: GrindAmp, FireAmp, LeadAmp, LilAmp, MidAmp, BigAmp, Cabs, BassDrive, BassAmp</span><br><span class="line"></span><br><span class="line">Bass: OrbitKick, Hermepass, BassKit, DubCenter, DubSub, Floor, Infrasonic, FathomFive</span><br><span class="line"></span><br><span class="line">Biquads: BiquadPlus, Biquad, BiquadDouble, BiquadOneHalf, BiquadTriple, Biquad2</span><br><span class="line"></span><br><span class="line">Brightness: SlewSonic, DeBess, Acceleration2, DeEss, Smooth, Slew3, Slew2, Slew, Air2, Air, PurestAir, Acceleration, DeHiss, Hypersonic, HypersonX, Ultrasonic, UltrasonicLite, UltrasonicMed, UltrasonX</span><br><span class="line"></span><br><span class="line">Clipping: ClipOnly2, ClipSoftly, OneCornerClip, ADClip7, AQuickVoiceClip, ClipOnly</span><br><span class="line"></span><br><span class="line">Consoles: Console8LiteChannel, Console8LiteBuss, Console8BussHype, Console8BussIn, Console8BussOut, Console8ChannelHype, Console8ChannelIn, Console8ChannelOut, Console8SubHype, Console8SubIn, Console8SubOut, Console0Channel, Console0Buss, PurestConsole2Buss, PurestConsole2Channel,Console7Buss, Console7Channel, Console7Cascade, Console7Crunch, PurestConsoleBuss, PurestConsoleChannel,Console6Buss, Console6Channel, PDBuss, PDChannel, Console5Buss, Console5Channel, Console5DarkCh, C5RawBuss, C5RawChannel, AtmosphereBuss, AtmosphereChannel, </span><br><span class="line">Console4Buss, Console4Channel</span><br><span class="line"></span><br><span class="line">Distortion: Distortion, Edge, Dirt, Mackity, Density2, Density, Drive, Loud, Hard Vacuum, HighImpact, MultiBandDistortion</span><br><span class="line"></span><br><span class="line">Dithers: Dark, PaulWide, PaulDither, TPDFWide, TPDFDither, NotJustAnotherDither, NotJustAnotherCD, Beam, TapeDither, SpatializeDither, VinylDither, DoublePaul, Ditherbox, BuildATPDF, NodeDither, StudioTan, DitherMeTimbers, DitherMeDiskers, RawTimbers, RawGlitters, NaturalizeDither, HighGlossDither, DitherFloat</span><br><span class="line"></span><br><span class="line">Dynamics: Pop2, Pressure5, Dynamics, Pop, DigitalBlack, Logical4, VariMu, ButterComp2, curve, Recurve, Pyewacket, BlockParty, SoftGate, Thunder, Compresaturator, DrumSlam, ButterComp, BrassRider, Point, Gatelope, PodcastDeluxe, Podcast, Swell, PurestSquish, Pressure4, Surge, SurgeTide</span><br><span class="line"></span><br><span class="line">Effects: GalacticVibe, Fracture2, Dubly, Pafnuty2, PitchNasty, GuitarConditioner, Aura, TremoSquare, Tremolo, GlitchShifter, Gringer, Exciter, Energy2, Energy, Facet, Fracture, PowerSag2, PowerSag, Preponderant, Nikola</span><br><span class="line"></span><br><span class="line">Filter: Baxandall2, Capacitor2, CStrip2, Weight, Isolator2, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Baxandall, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance2, Distance, Lowpass, Highpass</span><br><span class="line"></span><br><span class="line">Lo-Fi: Pockey2, Flutter, CrunchyGrooveWear, GrooveWear, Pockey, DeRez2, BitGlitter, DeRez, ChromeOxide, Cojones, Vibrato, Bite, Deckwrecka, DustBunny</span><br><span class="line"></span><br><span class="line">Noise: Noise, Texturize, TexturizeMS, VoiceOfTheStarship, DarkNoise, ElectroHat, Silhouette, TapeDust</span><br><span class="line"></span><br><span class="line">Reverb: kPlateD, kPlateB, kPlateA, kPlateC, Verbity2, Galactic2, Galactic, Verbity, Chamber2, Chamber, Infinity2, NonlinearSpace, Infinity, MatrixVerb, PocketVerbs, Reverb</span><br><span class="line"></span><br><span class="line">Saturation: Huge, NCSeventeen, Tube2, Tube, Spiral2, PurestDrive, Focus, Mojo, Dyno, Spiral, UnBox, Desk4, Righteous4</span><br><span class="line"></span><br><span class="line">Stereo: Srsly, Srsly2, Wider, StereoFX, ToVinyl4, AutoPan, LRFlipTimer, Sidepass, SideDull</span><br><span class="line"></span><br><span class="line">Subtlety: Hype, Shape, PurestWarm2, PurestWarm, Coils2, Interstage, PhaseNudge, Remap, SingleEndedTriode, Coils, Desk, TransDesk, TubeDesk</span><br><span class="line"></span><br><span class="line">Tape: ToTape6, FromTape, Tape, IronOxideClassic2, IronOxide5, ToTape5, IronOxideClassic</span><br><span class="line"></span><br><span class="line">Tone Color: BussColors4, Channel9, Apicolypse, Neverland, Elation, Calibre, Cider, Crystal, Precious, Luxor, Channel8, Channel7, Channel6, Channel5, Channel4</span><br><span class="line"></span><br><span class="line">Utility: Monitoring3, Monitoring2, Monitoring, BitShiftPan, BitShiftGain, PurestGain, PurestFade, EveryTrim, HermeTrim, SlewOnly, SubsOnly, PeaksOnly, Golem, DCVoltage, EdIsDim, MidSide, uLawEncode, uLawDecode, RightoMono, LeftoMono, Balanced, Flipity, MoNoam, VoiceTrick</span><br><span class="line"></span><br><span class="line">XYZ Filters: ZBandpass2, ZHighpass2, ZLowpass2, ZNotch2, ZRegion2, ZBandpass, ZHighpass, ZLowpass, ZNotch, ZRegion, YBandpass, YHighpass, YLowpass, YNotch, XBandpass. XHighpass, XLowpass, XNotch, XRegion</span><br></pre></td></tr></table></figure>
+
+<p> 我试用了一下, 还行, 插件界面长这样:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707153946148.png" alt="image-20230707153946148"></p>
+<h2 id="StudioRack"><a href="#StudioRack" class="headerlink" title="StudioRack"></a>StudioRack</h2><p>一个音频插件管理平台, 里面汇总了各种免费开源的音频插件, 包括乐器插件和效果器插件:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707155410658.png" alt="image-20230707155410658"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707155424754.png" alt="image-20230707155424754"></p>
+<p>插件支持<code>Win</code> ,<code>Mac</code>和<code>Linux</code>三大主流平台, 为<code>VST</code>格式, 直接下载安装到电脑插件目录即可使用:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707155726106.png" alt="image-20230707155726106"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707155801860.png" alt="image-20230707155801860"></p>
+<p>官网: <a href="https://studiorack.github.io/studiorack-site" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="OwlPlug"><a href="#OwlPlug" class="headerlink" title="OwlPlug"></a>OwlPlug</h2><p>和<code>StudioRack</code>也是一个音频插件管理平台, 不过它比<code>StudioRack</code>更强的是不仅提供许多免费开源的音频插件下载, 还能对本地已安装的插件进行管理</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707182055543.png" alt="image-20230707182055543"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230707182154624.png" alt="image-20230707182154624"></p>
+<p>官网: <a href="https://owlplug.com/" target="_blank" rel="noopener">点击进入</a></p>
+<p>Github: <a href="https://github.com/DropSnorz/OwlPlug/releases" target="_blank" rel="noopener">点击进入</a></p>
+<p>另外还可以添加第三方插件仓库, 包括<code>StudioRack</code>的插件, 非常强大:</p>
+<p><img src="raw.gitmirror.com/songjianzaina/lunanzb_img/master/img/image-20230710110356779.png" alt="image-20230710110356779"></p>
+<p>目前支持的仓库源有以下几个:</p>
+<h4 id="OwlPlug-Registry⭐"><a href="#OwlPlug-Registry⭐" class="headerlink" title="OwlPlug Registry⭐"></a>OwlPlug Registry⭐</h4><p>OwlPlug official plugin registry for Free or Open Source plugins</p>
+<ul>
+<li>kind: <code>registry</code></li>
+<li>feed: OwlPlug</li>
+<li>host: Various servers</li>
+<li>url : <code>https://registry.owlplug.com/registry.min.json</code></li>
+</ul>
+<h4 id="StudioRack-Registry-⭐"><a href="#StudioRack-Registry-⭐" class="headerlink" title="StudioRack Registry ⭐"></a>StudioRack Registry ⭐</h4><p>Studiorack registry plugins for OwlPlug.</p>
+<ul>
+<li>kind : <code>registry</code></li>
+<li>feed: OwlPlug &amp; Studiorack</li>
+<li>host: Github</li>
+<li>url : <code>https://owlplug.github.io/studiorack-registry-adapter/registry.min.json</code></li>
+</ul>
+<h4 id="Krakli-plugin-Store"><a href="#Krakli-plugin-Store" class="headerlink" title="Krakli plugin Store"></a>Krakli plugin Store</h4><p>Krakli plugin collection hosted (By <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a>)</p>
+<ul>
+<li>kind: <code>store</code></li>
+<li>feed: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
+<li>host: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
+<li>url : <code>https://getdunne.net/Krakli/owl.php</code></li>
+</ul>
+<h4 id="GyL-plugin-Store"><a href="#GyL-plugin-Store" class="headerlink" title="GyL plugin Store"></a>GyL plugin Store</h4><p>Krakli plugin collection hosted (By <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a>)</p>
+<ul>
+<li>kind: <code>store</code></li>
+<li>feed: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
+<li>host: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
+<li>url : <code>https://getdunne.net/GyL/owl.php</code></li>
+</ul>
+<p>更多仓库源可前往: <a href="https://github.com/DropSnorz/OwlPlug/wiki/Remote-plugin-sources" target="_blank" rel="noopener">OwlPlug-Wiki</a></p>
+<h2 id="好用的免费示波器插件"><a href="#好用的免费示波器插件" class="headerlink" title="好用的免费示波器插件"></a>好用的免费示波器插件</h2><p>可以实时查看效果器对声音波形的改变,比如监视底鼓的压缩器是如何塑造音色的音头和织体的</p>
+<ol>
+<li><p><strong>occularScope</strong></p>
+<p>支持侧链功能, 可自定义皮肤, 插件兼容<code>win Mac Linux</code>三大平台, 插件格式为<code>VST</code>和<code>VST3</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710162808546.png" alt="image-20230710162808546"></p>
+<p>官网下载需要注册账户, 有点麻烦, 我直接将插件上传到了网盘上, 有需要的可以直接下载:</p>
+<p>网盘下载: <a href="https://url97.ctfile.com/d/21042697-56884289-331b3b?p=312306" target="_blank" rel="noopener">点击进入</a> (访问密码: 312306)</p>
+<p>官网下载: <a href="https://bomshankamachin.es/plugins/occularScope" target="_blank" rel="noopener">点击进入</a></p>
+</li>
+<li><p><strong>Psyscope</strong></p>
+<p>支持多通道,<code>UI</code>精美, 可惜只有<code>Windows</code>平台的<code>VST</code>格式插件</p>
+<p>该插件无需安装，只需将<code>.dll</code>拖放到插件文件夹中即可</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710162458822.png" alt="image-20230710162458822"></p>
+<p>下载地址: <a href="https://fx23.net/psyscope/" target="_blank" rel="noopener">点击进入</a></p>
+</li>
+</ol>
+<h2 id="更多免费插件"><a href="#更多免费插件" class="headerlink" title="更多免费插件"></a>更多免费插件</h2><p>国外有很多的免费插件平台, 列举如下:</p>
+<ol>
+<li><p><strong>kvraudio</strong></p>
+<p>一个大型插件市场 里面可以淘到不少免费的插件</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710161143668.png" alt="image-20230710161143668"></p>
+<p>官网: <a href="https://www.kvraudio.com/" target="_blank" rel="noopener">点击进入</a></p>
+</li>
+<li><p><strong>Bpb</strong></p>
+<p>里面有大量的免费资源, 包括插件, 宿主, 采样和音乐制作教程, <code>MIDIFAN</code>很多文章都是从这里翻译的</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230710164904892.png" alt="image-20230710164904892"></p>
+<p>官网: <a href="https://bedroomproducersblog.com/" target="_blank" rel="noopener">点击进入</a></p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../135.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -434,6 +1971,20 @@
 <p>具体操作:</p>
 <p>选中需要操作的音频块, 右键<code>item settings--&gt;Take channel mode: Mono(downmix)</code></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719161544617.png" alt="image-20230719161544617"></p>
+<h2 id="锁定包络轨道"><a href="#锁定包络轨道" class="headerlink" title="锁定包络轨道"></a>锁定包络轨道</h2><p>当我们给音频画好包络线后, 为了防止误修改或者莫名其妙被删除(有时在给其他轨道做批量操作的时候, 不知不觉就把包络给清除了 头大), 我们需要对包络进行锁定</p>
+<p>方法很简单, 右键选中锁定图标, 然后勾选<code>track envelope</code>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721102855640.png" alt="image-20230721102855640"></p>
+<p>此时 所有包络轨道都被锁定, 处于不可编辑状态</p>
+<h2 id="包络复用"><a href="#包络复用" class="headerlink" title="包络复用"></a>包络复用</h2><p>有时我们需要给音频的多个片段设置相同的包络曲线, 挨个手动重复画一遍实在太过磨人, 有没有一种方法能实现包络复用呢, 也就是编辑其中一个片段的包络曲线, 其他复用的包络也跟随一块跟着变动</p>
+<p>具体操作如下:</p>
+<ol>
+<li><p>选择需要进行复用的包络<code>item</code>, 并右键创建复用池(<code>Create pooled duplicate</code>)</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721103415024.png" alt="image-20230721103415024"></p>
+</li>
+<li><p>此时会创建一个包络副本, 两个包络块可同步联动修改:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-21%2010-36-30.2023-07-21%2010_40_15.gif" alt="2023-07-21 10-36-30.2023-07-21 10_40_15"></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -1388,583 +2939,8 @@
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230412093720087.png" alt="image-20230412093720087"></p>
 <p>是不是很给力呢  这样一来 </p>
 <h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>未来<code>AI</code>创作音乐会越来越成熟, 不过不用担心, 毕竟我们玩音乐享受的是创作的过程, 机器虽好, 但不能代替我们享乐~</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../129.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../129.html" itemprop="url">Reason Rack Plugin实现Reason机架插件化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-11T15:15:53+08:00">
-                2022-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/ac8948e8aab84f6dab3247a50340ce52.jpeg" alt="img"></p>
-<p><code>Reason Rack Plugin</code>是<code>Reason 11</code>之后内置的一个<code>VST3</code>插件</p>
-<p>它集成了<code>Reason</code>的核心机架和<code>Rack Extension</code>扩展系统, 从而实现在任意支持<code>VST3</code>的<code>DAW</code> 上调用</p>
-<p>这对于喜欢<code>Reason</code>虚拟机架背面接线的快感的用户而言, 绝对是一件美事😺</p>
-<p>比如下图就是<code>Reason Rack Plugin</code>作为插件，将<code>Reason Rack Extension</code>入侵到<code>Ableton Live</code>里的官方截图：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/82e5a299359946ad94a4c439368fc41e.jpeg" alt="img"></p>
-<h3 id="Reason下载"><a href="#Reason下载" class="headerlink" title="Reason下载"></a>Reason下载</h3><p>软件收费 正版需要499美元, 和谐版请自行搜索</p>
-<p><a href="https://www.reasonstudios.com/" target="_blank" rel="noopener">点击进入官网</a></p>
-<h3 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h3><p>本文图片引用自以下文章</p>
-<p><a href="https://www.sohu.com/a/336808400_154296" target="_blank" rel="noopener">https://www.sohu.com/a/336808400_154296</a></p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../128.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../128.html" itemprop="url">一款免费好用的打谱软件musescore</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-11T10:15:53+08:00">
-                2022-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20221109162426812.png" alt="image-20221109162426812"></p>
-<p><strong>musescore</strong>是一款开源跨平台的乐谱编辑软件</p>
-<p><strong>软件优势:</strong></p>
-<ul>
-<li>开源免费</li>
-<li>跨平台 支持<code>win</code>, <code>Mac</code>和<code>linux</code></li>
-<li>支持中文</li>
-<li>社区活跃</li>
-</ul>
-<h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://musescore.org/zh-hans" target="_blank" rel="noopener">点击进入官网</a></p>
-<p><a href="https://github.com/musescore/MuseScore" target="_blank" rel="noopener">Github</a></p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../127.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../127.html" itemprop="url">一款免费的音乐宿主软件 cakewalk by bandlab</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-10T10:15:53+08:00">
-                2022-11-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>大名鼎鼎的<code>Cakewalk Sonar</code>相比大家都不陌生,老牌宿主了,  目前被<code>bandlab</code>整合后推出<code>Cakewalk by bandlab</code></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20221109160402826.png" alt="image-20221109160402826"></p>
-<p><strong>宿主优势:</strong></p>
-<ul>
-<li>软件免费</li>
-<li>界面漂亮 功能全面 录音编曲混音样样拿手 对新手友好 尤其是鼠标党 </li>
-</ul>
-<p><strong>宿主劣势:</strong></p>
-<ul>
-<li>只支持Windows平台 </li>
-</ul>
-<h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://www.bandlab.com/products/cakewalk" target="_blank" rel="noopener">点击进入官网</a></p>
-<h3 id="扩展知识"><a href="#扩展知识" class="headerlink" title="扩展知识"></a>扩展知识</h3><p>除了<code>Sonar</code>之外 业界比较知名的宿主比如<code>Samplitude</code>,<code>Sequoia</code>和<code>SawStudio</code>都只支持<code>Windows</code>平台</p>
-<p>期待未来<code>Magix</code>公司能开发出<code>Mac</code>版的宿主</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../126.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../126.html" itemprop="url">Reaper 一款轻量且强大的音乐宿主软件</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-09T10:15:53+08:00">
-                2022-11-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><strong>REAPER</strong> (<em>Rapid Environment for Audio Production, Engineering, and Recording</em>), 顾名思义, 它是一款<strong>高效轻便</strong>的数字音频工作站</p>
-<p>软件界面张这样:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20221109143807783.png" alt="image-20221109143807783"></p>
-<p>相比<code>Cubase</code>, <code>Studio one</code>, <code>Logic</code>等宿主, 它的界面也许并不那么地美观, 不过没关系, 我们可以使用官网上用户自制的<a href="https://stash.reaper.fm/tag/Themes" target="_blank" rel="noopener">皮肤</a>。</p>
-<p>比如<a href="https://stash.reaper.fm/theme/1993/Concerto%201.1.ReaperThemeZip" target="_blank" rel="noopener">这个：</a></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20221109151510808.png" alt="image-20221109151510808"></p>
-<p>还有<a href="https://forum.cockos.com/showthread.php?t=183627" target="_blank" rel="noopener">这个：</a></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/20221109151428.png" alt></p>
-<p>还有这个<a href="https://forum.cockos.com/showthread.php?t=228983" target="_blank" rel="noopener">Smooth6</a>:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719103647105.png" alt="image-20230719103647105"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719103716631.png" alt="image-20230719103716631"></p>
-<h3 id="宿主优势"><a href="#宿主优势" class="headerlink" title="宿主优势"></a>宿主优势</h3><ul>
-<li><p><strong>体积小</strong>  安装包最大只有25M, 相比<code>Cubase</code>的六百多M或者<code>Studio one</code>的两百多M  <code>REAPER</code>简直不要太小</p>
-</li>
-<li><p><strong>跨平台</strong> 支持<code>Win</code>  <code>Mac</code>和<code>Linux</code>三大主流平台</p>
-</li>
-<li><p><strong>无任何功能限制的长期试用</strong>  近似免费了 正版购买也只需80美元</p>
-</li>
-<li><p><strong>超高的自由度和可定制性</strong>   支持<code>Lua</code>、<code>EEL</code>、<code>C++</code>、<code>Python</code>、以及自家的<code>Jesusonic Effects（JSFX）</code>五种脚本语言 功能不够 脚本来凑</p>
-</li>
-<li><p><strong>出色的稳定性和兼容性</strong> 被很多人认为是最稳定的DAW</p>
-</li>
-<li><p><strong>支持Portable安装</strong>  软件和工程方U盘 随身携带 任意电脑随时创作</p>
-</li>
-</ul>
-<p>如果你也是一名程序员 或者喜欢折腾, 那么强烈推荐你试试<code>Reaper</code> ❤️</p>
-<p>如果你是一名游戏音效师, 那么强烈推荐你试试<code>Reaper</code></p>
-<p>如果你还在为当下使用的<code>DAW</code>功能不全面而闹心, 那么强烈推荐你试试<code>Reaper</code></p>
-<h3 id="宿主下载"><a href="#宿主下载" class="headerlink" title="宿主下载"></a>宿主下载</h3><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20221109152021549.png" alt="image-20221109152021549"></p>
-<p><a href="https://www.reaper.fm/download.php" target="_blank" rel="noopener">点击进入下载页面</a></p>
-<h3 id="个人使用感受"><a href="#个人使用感受" class="headerlink" title="个人使用感受"></a>个人使用感受</h3><p>我本人之前一直使用<code>Cubase</code> 偶尔也用<code>Studio one</code>, 接触<code>Reaper</code>后感觉很对我胃口, 准备逐步投入<code>Reaper</code>的怀抱 哈哈😊</p>
-<h3 id="学习资料参考"><a href="#学习资料参考" class="headerlink" title="学习资料参考"></a>学习资料参考</h3><ul>
-<li><a href="https://www.reaper.fm/" target="_blank" rel="noopener">官网</a></li>
-<li><a href="https://stash.reaper.fm/browse.php?q=tag:Themes" target="_blank" rel="noopener">官网主题下载</a></li>
-<li><a href="https://forum.cockos.com/forumdisplay.php?f=20" target="_blank" rel="noopener">官方英文论坛</a></li>
-<li><a href="https://forum.reaget.com/" target="_blank" rel="noopener">Reaper中文社区</a></li>
-<li><a href="https://www.reapertips.com/" target="_blank" rel="noopener">Reaper实用技巧</a></li>
-</ul>
-<p><strong>知乎文章:</strong></p>
-<ul>
-<li><a href="https://zhuanlan.zhihu.com/p/30151816" target="_blank" rel="noopener">Reaper简介</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/30149477" target="_blank" rel="noopener">Reaper：工程策划音轨模板</a></li>
-<li><a href="https://rcjach.github.io/cn/tags/reaper/" target="_blank" rel="noopener">大佬博客</a></li>
-<li><a href="https://forum.reaget.com/t/topic/219" target="_blank" rel="noopener">ReaPack下载</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/412567483" target="_blank" rel="noopener">如何在REAPER内制作LRC格式的滚动歌词</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/372442551" target="_blank" rel="noopener">REAPER来搭建音源服务器</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/137565172?ADUIN=45627333" target="_blank" rel="noopener">入门看这篇就够了！REAPER 超快速上手指南（一） 简介及初始设置</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/40136890" target="_blank" rel="noopener">简单粗暴的REAPER入正指南</a></li>
-</ul>
-<p><strong>REAPER皮肤推荐:</strong></p>
-<ul>
-<li><a href="https://www.extremraym.com/en/x-raym-analog-reaper-theme/" target="_blank" rel="noopener">X-Raym Analog – Reaper Theme</a></li>
-<li><a href="https://forum.cockos.com/showthread.php?t=196332" target="_blank" rel="noopener">Hydra Theme</a></li>
-</ul>
-<p><strong>国外文章:</strong></p>
-<ul>
-<li><a href="https://www.sonarworks.com/blog/learn/reaper-routing-tracks-in-a-mix-template" target="_blank" rel="noopener">REAPER: Routing Tracks in A Mix Template</a></li>
-</ul>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>2024年3月8日 SunoAI V3横空出世 其创作的音乐可用惊艳来形容 强烈推荐大家去体验一下</p>
+<p><a href="https://app.suno.ai/" target="_blank" rel="noopener">点击进入官网</a></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -2006,7 +2982,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="../2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><a class="page-number" href="../2/">2</a><span class="page-number current">3</span><a class="page-number" href="../4/">4</a><span class="space">&hellip;</span><a class="page-number" href="../16/">16</a><a class="extend next" rel="next" href="../4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="../2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><a class="page-number" href="../2/">2</a><span class="page-number current">3</span><a class="page-number" href="../4/">4</a><span class="space">&hellip;</span><a class="page-number" href="../18/">18</a><a class="extend next" rel="next" href="../4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2052,7 +3028,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">155</span>
+                  <span class="site-state-item-count">172</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2065,7 +3041,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -2109,7 +3085,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

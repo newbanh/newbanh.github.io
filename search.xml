@@ -1157,6 +1157,19 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p>当然这个图片尺寸不一定非得<code>200x90</code>, 其他比例也可 反正都能识别</p>
 <h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><p>里面包含了入库工具和<code>nicnt</code>模板文件</p>
 <p><a href="https://url97.ctfile.com/d/21042697-50863430-5202ad?p=312306" target="_blank" rel="noopener">点击下载</a>  (访问密码: 312306)</p>
+<h2 id="Kontakt入库相关问题"><a href="#Kontakt入库相关问题" class="headerlink" title="Kontakt入库相关问题"></a>Kontakt入库相关问题</h2><ol>
+<li><p>加载乐器时报错提示:<code>This instrument belongs to a library that is currently not installed.</code></p>
+<p>这主要是由于将标准音色库当成非标准音色库入库导致的, 如果画蛇添足给标准音色库添加了<code>nicnt</code>文件,那么就会报错</p>
+</li>
+<li><p>为什么有些标准音色库中包含<code>nicnt</code>文件, 也就是说按照非标准入库后却不报错</p>
+<p>那这有可能是<code>nicnt</code>文件中的<code>SNPID</code>值并非十六进制形式,使得入库工具未能识别,依然将其当做标准音色库来入库, 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20231223211339619.png" alt="image-20231223211339619"></p>
+<p>假如我们将该值修改成入库工具能识别的十六进制形式,比如<code>E332</code>, 那么标准音色库被当成非标准音色库入库,则报错<code>This instrument belongs to a library that is currently not installed.</code></p>
+</li>
+<li><p>标准音色库使用工具入库后,kontakt中不显示</p>
+<p>这应该是<code>kontakt</code>版本过低导致的,无法识别二代音色库, 建议升级<code>Kontakt</code></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -1312,6 +1325,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230412093720087.png" alt="image-20230412093720087"></p>
 <p>是不是很给力呢  这样一来 </p>
 <h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>未来<code>AI</code>创作音乐会越来越成熟, 不过不用担心, 毕竟我们玩音乐享受的是创作的过程, 机器虽好, 但不能代替我们享乐~</p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>2024年3月8日 SunoAI V3横空出世 其创作的音乐可用惊艳来形容 强烈推荐大家去体验一下</p>
+<p><a href="https://app.suno.ai/" target="_blank" rel="noopener">点击进入官网</a></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -1459,6 +1474,17 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>还有这个<a href="https://forum.cockos.com/showthread.php?t=228983" target="_blank" rel="noopener">Smooth6</a>:</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719103647105.png" alt="image-20230719103647105"></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719103716631.png" alt="image-20230719103716631"></p>
+<p><a href="https://forums.cockos.com/showthread.php?p=2546076" target="_blank" rel="noopener">Echolot (FTC Mod)</a>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721120717073.png" alt="image-20230721120717073"></p>
+<p><a href="https://forum.cockos.com/showthread.php?t=214879" target="_blank" rel="noopener">I LOGIC V 3.90</a>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721120924987.png" alt="image-20230721120924987"></p>
+<p><a href="https://stash.reaper.fm/theme/2761/Magic_Clover_Dark.ReaperThemeZip" target="_blank" rel="noopener">Magic Clover</a>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/MC_Dark_0.jpg" alt="img"></p>
+<p><a href="https://stash.reaper.fm/theme/2653/Mammoth.ReaperThemeZip" target="_blank" rel="noopener">Mammoth</a>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/Mammoth8.png" alt="img"></p>
+<p><a href="https://forum.cockos.com/showthread.php?t=265339" target="_blank" rel="noopener">Peace</a>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721121352826.png" alt="image-20230721121352826"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/giphy.gif" alt="giphy"></p>
 <h3 id="宿主优势"><a href="#宿主优势" class="headerlink" title="宿主优势"></a>宿主优势</h3><ul>
 <li><p><strong>体积小</strong>  安装包最大只有25M, 相比<code>Cubase</code>的六百多M或者<code>Studio one</code>的两百多M  <code>REAPER</code>简直不要太小</p>
 </li>
@@ -5110,6 +5136,10 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li>声音听起来更软</li>
 <li>律动更加沉稳</li>
 </ul>
+<h3 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h3><p>以下图片来自网络, 仅供参考</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230720162049267.png" alt="image-20230720162049267"> </p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/20230720162317.png" alt></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/20230720162412.png" alt></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -7132,6 +7162,20 @@ shortcut.add("Shift+x",function() {
 <p>具体操作:</p>
 <p>选中需要操作的音频块, 右键<code>item settings--&gt;Take channel mode: Mono(downmix)</code></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719161544617.png" alt="image-20230719161544617"></p>
+<h2 id="锁定包络轨道"><a href="#锁定包络轨道" class="headerlink" title="锁定包络轨道"></a>锁定包络轨道</h2><p>当我们给音频画好包络线后, 为了防止误修改或者莫名其妙被删除(有时在给其他轨道做批量操作的时候, 不知不觉就把包络给清除了 头大), 我们需要对包络进行锁定</p>
+<p>方法很简单, 右键选中锁定图标, 然后勾选<code>track envelope</code>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721102855640.png" alt="image-20230721102855640"></p>
+<p>此时 所有包络轨道都被锁定, 处于不可编辑状态</p>
+<h2 id="包络复用"><a href="#包络复用" class="headerlink" title="包络复用"></a>包络复用</h2><p>有时我们需要给音频的多个片段设置相同的包络曲线, 挨个手动重复画一遍实在太过磨人, 有没有一种方法能实现包络复用呢, 也就是编辑其中一个片段的包络曲线, 其他复用的包络也跟随一块跟着变动</p>
+<p>具体操作如下:</p>
+<ol>
+<li><p>选择需要进行复用的包络<code>item</code>, 并右键创建复用池(<code>Create pooled duplicate</code>)</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721103415024.png" alt="image-20230721103415024"></p>
+</li>
+<li><p>此时会创建一个包络副本, 两个包络块可同步联动修改:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-21%2010-36-30.2023-07-21%2010_40_15.gif" alt="2023-07-21 10-36-30.2023-07-21 10_40_15"></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8700,6 +8744,7 @@ shortcut.add("Shift+x",function() {
 <li>以及录音和卡拉OK</li>
 </ul>
 <p>这些功能对于很多UP主来说应该是很有帮助的, 快捷高效</p>
+<p>对于扒带和模仿也是一把利器</p>
 <p>有兴趣的小伙伴可以试一试</p>
 <h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="https://vocalremover.org/zh/key-bpm-finder" target="_blank" rel="noopener">点击进入</a></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -8777,6 +8822,12 @@ shortcut.add("Shift+x",function() {
 </li>
 <li><p>音频块上下所有滚动查看</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alt+Up/Down/Left/Right</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>以半音为单位改变MIDI音符的音高</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Ctrl+Up/Down</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>以八度为单位改变MIDI音符的音高</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">shift+数字键盘8/数字键盘2</span><br></pre></td></tr></table></figure>
 
 
 
@@ -8814,6 +8865,69 @@ shortcut.add("Shift+x",function() {
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">鼠标滚轮</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719112358346.png" alt="image-20230719112358346"></p>
+</li>
+</ol>
+<h2 id="个人配置"><a href="#个人配置" class="headerlink" title="个人配置"></a>个人配置</h2><p>以下配置仅供参考</p>
+<ol>
+<li><p>将水平缩放中心点由原来的播放指针位置改为鼠标箭头所在位置</p>
+<p>设置方法:</p>
+<p>前往<code>Preferences &gt; Editing Behavior</code></p>
+<p>找到 <code>Horizontal Zoom Center</code>, 并选择<code>Mouse Cursor</code>模式</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721113420983.png" alt="image-20230721113420983"></p>
+</li>
+<li><p>对网格线进行设置</p>
+<p>默认的网格线密密麻麻, 看得有点头大, 需要对其进行修改</p>
+<ol>
+<li>右键网格线显示开关图标, 弹出<code>Grid</code>设置窗口</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721115031753.png" alt="image-20230721115031753"></p>
+<ol start="2">
+<li><p>将<code>line spacing</code>设置为<code>1/32</code>, 表示放大网格线后, 两线之间间隔最小为<code>1/32</code>, 同时将<code>minimum pixels</code>设置为<code>46</code>, 表示每隔<code>46</code>像素显示一条线</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721115143508.png" alt="image-20230721115143508"></p>
+</li>
+</ol>
+</li>
+<li><p>禁止过度缩小工程</p>
+<p>   默认情况下可以无限缩小工程, 导致音频文件都看不到, 这里做一个限制, 防止缩小过度</p>
+<p>   <img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721120044550.png" alt="image-20230721120044550"></p>
+</li>
+<li><p>解决修改<code>Bpm</code>后音频被拉伸的问题</p>
+<p>进入<code>File &gt; Project Settings…</code>,在<code>Timebase for items/envelopes/markers</code>一栏将<code>Beats</code>改为 <code>Time</code>模式即可</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721123000535.png" alt="image-20230721123000535"></p>
+</li>
+<li><p>降低自动交叉淡入淡出的时间</p>
+<p>当我们对音频进行裁剪时, Reaper默认会自动给音频添加淡入淡出, 这是个很不错的功能, 但是它的时间有点长, 容易导致剪辑后的声音一卡一卡的, 为了让声音更加流畅, 我将时间设置为<code>1ms</code>, 默认是<code>10ms</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721140730806.png" alt="image-20230721140730806"></p>
+</li>
+<li><p>同时修改同一轨道上的多个<code>item</code>的淡入淡出</p>
+<p><code>reaper</code>默认在不同轨道可以实现对多个选中的<code>item</code>同时进行淡入淡出的操作, 但是在同一轨道上的多个<code>item</code>却不行, 这里需要进行一下设置</p>
+<p>设置方法:</p>
+<ol>
+<li><p>进入到<code>Preferences &gt; Mouse Modifiers</code>选择<code>Media Item fade/autocrossfade | Left drag</code></p>
+</li>
+<li><p>鼠标双击 <code>default action and select Move Fade</code>, 然后勾选<code>Relative edge edit</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721141513743.png" alt="image-20230721141513743"></p>
+</li>
+<li><p>最后效果如下</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-21%2014-17-20.2023-07-21%2014_18_47.gif" alt="2023-07-21 14-17-20.2023-07-21 14_18_47"></p>
+</li>
+</ol>
+</li>
+<li><p>简化录音文件命名格式</p>
+<p><code>reaper</code>中默认的录音文件名称比较长, 类似于这种<code>03-GtrL190703_0840.wav</code>, 我们需要对其进行简化, 让其看起来清晰明了</p>
+<p>设置如下:</p>
+<p> 进入<code>Preferences &gt; Recording</code>, 在 <code>filename format, type</code>一栏中填入<code>$track- $recpass00</code> 然后保存即可</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721144226601.png" alt="image-20230721144226601"></p>
+<p>前后效果对比如下:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721144452111.png" alt="image-20230721144452111"></p>
+</li>
+<li><p>钢琴卷帘窗隐藏音符力度控制句柄</p>
+<p>当我们使用鼠标对<code>midi</code>音符进行拖拽的时候, 很容易不小心改动了音符力度, 为了避免误操作, 我们需要将音符力度控制句柄进行隐藏, 具体方法:</p>
+<p><code>View-&gt;Piano roll notes-&gt;取消勾选Show velocity handles on notes</code>, 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230811190413066.png" alt="image-20230811190413066"></p>
+<blockquote>
+<p>如果我们想修改某个音符的力度大小可以使用<code>Alt+鼠标左键上下拖拽</code>的方式来实现</p>
+</blockquote>
 </li>
 </ol>
 <h2 id="我个人的自定义Action"><a href="#我个人的自定义Action" class="headerlink" title="我个人的自定义Action"></a>我个人的自定义Action</h2><p>以下<code>Action</code>仅供参考:</p>
@@ -8859,6 +8973,891 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《追风》</title>
+    <url>/158.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>正如歌名所说</p>
+<p>追风</p>
+<p>追心中所想所向</p>
+<p>也正如歌词所写</p>
+<p>有梦就要去追</p>
+<p>走走停停怎能起飞</p>
+<p>断断续续又失去一辈</p>
+<p>不管是爱情还是生活 </p>
+<p>不去和别人比对</p>
+<p> 只超越昨天的自己</p>
+<p>其实</p>
+<p>人之所求</p>
+<p> 源于过去经历的风雨 </p>
+<p>所有的痛苦</p>
+<p>幻化成最美的梦境 </p>
+<p>才让未来的路显得更加的清晰</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>痛苦是否难接近</p>
+<p>只是曾经没烦心  </p>
+<p>太多的泪与风雨</p>
+<p>不是唯一的命运</p>
+<p>痛苦是否难接近</p>
+<p>只是曾经没反省</p>
+<p>太多的泪与风雨</p>
+<p>在一起</p>
+<p>哦 路~</p>
+<p> 在这里</p>
+<p>能确定你 </p>
+<p>在这里</p>
+<p>能确定你 </p>
+<p>不只是</p>
+<p>等你 爱你</p>
+<p>全都是你</p>
+<p>看穿了你的心</p>
+<p>期待着小小情绪</p>
+<p>爱不比对</p>
+<p>走走停停怎又起飞</p>
+<p>等待着聊聊几句</p>
+<p>临阵撤退</p>
+<p>断断续续又失去一辈</p>
+<p>有梦就要去追  </p>
+<p>baby baby I don ‘t to be</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+<p><strong>欢迎分享</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/wwjhiaQibaVmKxSDCJ3GY1L5ib562ZT6UaftmxqZC6NwpPJvx3eFLUCicDicLEZIocbyZ6w29HPukicuicU23FKT8Yzxw/640?wx_fmt=gif" alt="img"></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/wwjhiaQibaVmKxSDCJ3GY1L5ib562ZT6UafNBTFmVicR5okuf2VjjrrBcnRiaJ0AC2LW9koTh0WsPmyzQGmfWkltpAA/640?wx_fmt=jpeg" alt="15475348638.jpg"></p>
+<p>点击”阅读原文”进入虾米原创主页，谢谢分享</p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于吉他和贝斯的音域跨度</title>
+    <url>/157.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音域跨度表"><a href="#音域跨度表" class="headerlink" title="音域跨度表"></a>音域跨度表</h2><p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20231006101657405.png" alt="image-20231006101657405"></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>乐器演奏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于kontakt音源更换盘符后工程提示找不到音源</title>
+    <url>/156.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="场景复现"><a href="#场景复现" class="headerlink" title="场景复现"></a>场景复现</h2><p>我有两个移动硬盘 一个盘符名为<code>NVME</code> 另一个盘符名为<code>FAT</code>, 里面装了相同的<code>kontakt</code>音源, 某天<code>NVME</code>这个盘突然坏了  我只能使用另外一个FAT来替代 但是两个移动硬盘的盘符不一样, 这导致工程提示找不到音源</p>
+<p>那有没有优雅的解决方案来避免一个一个手动修复呢</p>
+<h2 id="解决方案一"><a href="#解决方案一" class="headerlink" title="解决方案一"></a>解决方案一</h2><p>既然盘符不一致, 那我们只需将<code>FAT</code>这个盘名称改成<code>NVME</code>即可, 当然 有的系统可能不支持修改盘符名称, 那可以使用下面的第二种方案</p>
+<h2 id="解决方案二"><a href="#解决方案二" class="headerlink" title="解决方案二"></a>解决方案二</h2><p>我们可以使用符号链接（Symbolic Link）来解决这个问题。</p>
+<p>符号链接是一种特殊类型的文件，它可以将一个文件或文件夹链接到另一个位置。我们可以将一个移动硬盘的盘符链接到另一个移动硬盘的盘符，以使工程能够找到音源。</p>
+<p>下面是在<code>Windows</code>和<code>Mac</code>上创建符号链接的步骤：</p>
+<p><strong>Windows:</strong></p>
+<ol>
+<li><p>打开命令提示符<code>（CMD）</code>或者<code>PowerShell</code>。</p>
+</li>
+<li><p>使用<code>mklink</code>命令来创建符号链接。假设你的第一个移动硬盘的盘符是<code>D:</code>，第二个移动硬盘的盘符是<code>E:</code>，音源的位置是<code>D:\音源</code>，则可以使用以下命令创建符号链接：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink /J &quot;E:\音源&quot; &quot;D:\音源&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这将在E盘创建一个名为<code>音源</code>的文件夹的符号链接，指向D盘的”音源”文件夹。</p>
+</li>
+</ol>
+<p><strong>Mac:</strong></p>
+<ol>
+<li><p>打开终端。</p>
+</li>
+<li><p>使用<code>ln -s</code>命令来创建符号链接, 如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ln -s &quot;/Volumes/FAT/Sound Source&quot; &quot;/Volumes/NVME/Sound Source&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这相当于是给<code>/Volumes/FAT/Sound Source</code>取了个别名, 名为 <code>/Volumes/NVME/Sound Source</code>, 当工程中的音源搜索<code>NVME/Sound Source</code>盘时, 会自动指向到<code>FAT/Sound Source</code></p>
+</li>
+</ol>
+<p>通过这个创建软链接的方式，工程将能够在第二个移动硬盘上找到音源，而无需手动修复每个工程文件。节省了我们大量的宝贵时间</p>
+<p>如果我们想要删除软连接 可以使用<code>rm</code>命令, 如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm &quot;/Volumes/NVME/Sound Source&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>关于<code>kontakt</code>音源, 有条件的话建议使用多个硬盘备份, 避免出现其中某个硬盘宕机导致工作中断的情况</p>
+<p>我的那个移动硬盘是因为突然断电出现了故障 导致电脑无法识别, 看来硬盘的好坏从断电保护这一块能测试出一二来, 好的硬盘不至于如此脆弱</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>实用技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>说点什么好呢</title>
+    <url>/159.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="2018年11月28日"><a href="#2018年11月28日" class="headerlink" title="2018年11月28日"></a>2018年11月28日</h2><p>正式开启原创专辑制作<br> 虾米首发。</p>
+<h2 id="2019年1月15号"><a href="#2019年1月15号" class="headerlink" title="2019年1月15号"></a>2019年1月15号</h2><p>2019年1月15号</p>
+<p>个人原创音乐对外公众号正式开启 </p>
+<p>其旨在于希望更多的人能听到十二越的歌 </p>
+<p>分享生活的点滴 。</p>
+<h2 id="什么是创作"><a href="#什么是创作" class="headerlink" title="什么是创作"></a>什么是创作</h2><p> 3 </p>
+<p>早年听宋大叔说过一句话<br>记忆尤深 </p>
+<p>大概意思是  </p>
+<p>作品表达的是内心深处的情感  </p>
+<p> 真情流露即为歌  </p>
+<p>我想 </p>
+<p>每个人的感情世界是独一无二的  </p>
+<p>因此 </p>
+<p>每个人的歌也大不相同 </p>
+<p>没有任何的作曲技法能代替心中的呐喊 </p>
+<p>只要你觉得它能代表你此时此刻的心情 </p>
+<p> 那就足够了</p>
+<h2 id="音乐于我而言"><a href="#音乐于我而言" class="headerlink" title="音乐于我而言"></a>音乐于我而言</h2><p>它是情感寄托的一种方式.<br>记录生活的点滴</p>
+<p>人生的感悟 过去的感慨 未来的畅想<br>世界之大<br>个人是如此的渺小<br>如何让自己变得有价值? </p>
+<p>唯有作品留人间<br>这才是最初的愿望~</p>
+<h3 id="什么重要"><a href="#什么重要" class="headerlink" title="什么重要"></a>什么重要</h3><p>什么重要</p>
+<p>什么重要?<br>命运掌握在自己手里! </p>
+<p>人的一生<br>平不平凡完全取决于自己<br>每个人都应该尽情享受追梦的过程<br>加油吧~</p>
+<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>关于我</p>
+<p>从高中开始研究音乐创作</p>
+<p>非科班出身的我</p>
+<p>凭着一腔热血</p>
+<p>硬是走了不少弯路</p>
+<p>兜兜转转</p>
+<p>几经波折</p>
+<p>最后又回到了原点</p>
+<p>后来</p>
+<p>才明白 </p>
+<p>终点其实离得很近</p>
+<p>就一步之遥。</p>
+<h2 id="公众号菜单"><a href="#公众号菜单" class="headerlink" title="公众号菜单"></a>公众号菜单</h2><p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20231109175628895.png" alt="image-20231109175628895"></p>
+<ul>
+<li>原创歌曲</li>
+<li>音乐制作: 《词曲圣经》  《编曲宝典》  《混音档案》 《母带大法 》 《推广狗带》</li>
+<li>音乐合作</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《祝福你》</title>
+    <url>/161.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>姐姐新婚</p>
+<p>特地给她写的一首歌</p>
+<p>祝福她</p>
+<p>时光总是留不住</p>
+<p>亲情是最需要去珍惜的</p>
+<p>多多呵护家人</p>
+<p>呵护已经拥有的一切</p>
+<p>尽可能地</p>
+<p>记录好每个阶段生活的点滴</p>
+<p>以供来时回忆</p>
+<p>以后的事谁都难预料 </p>
+<p>活好当下 </p>
+<p>多多付出</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>最真挚的 </p>
+<p>不离不弃</p>
+<p>近距离承诺</p>
+<p>缘自当初相遇</p>
+<p>没有争吵  </p>
+<p>一起迎着风</p>
+<p>相守的意义</p>
+<p>最真实的 </p>
+<p>一点一滴</p>
+<p>儿时的记忆</p>
+<p>全都变成回忆</p>
+<p>都是  争吵  </p>
+<p>一起打闹</p>
+<p>就是就是祝福你</p>
+<p>用最好的话送给最美的那新娘就是你</p>
+<p>一生一世 永永远远不分离 </p>
+<p>真心不变</p>
+<p>亲情不变</p>
+<p>唯一祝福你</p>
+<p>用最好的话送给最美的那新娘就是你</p>
+<p>一生一世 永永远远不分离 </p>
+<p>爱情</p>
+<p>婚礼</p>
+<p>我们兄弟姐妹都  祝福你</p>
+<p>梦随到</p>
+<p>紧紧的依靠</p>
+<p>奔跑的大象就不是假象</p>
+<p>要开心的笑</p>
+<p>要开心的耗</p>
+<p>阳光明媚 春光灿烂 都知道</p>
+<p>是今天</p>
+<p>两手相牵</p>
+<p>什么誓言</p>
+<p>幸福的时间</p>
+<p>没有了预兆</p>
+<p>幸福的预兆</p>
+<p>各位观众</p>
+<p>听我祝福送到</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《不许动》</title>
+    <url>/163.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>心情愉快的时候</p>
+<p>写出来的歌也是蹦蹦跳跳的</p>
+<p>人之初性本懒</p>
+<p>每天是否都睡不够</p>
+<p>总想着倒个带继续睡一会儿</p>
+<p>可若干个日日夜夜后</p>
+<p>胖了一圈的那谁</p>
+<p>也只够转转圈圈了 </p>
+<p>哈哈~</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>今天醒来心情慢</p>
+<p>没睡够的想去倒带</p>
+<p>想去倒带</p>
+<p>天天想 这么简单</p>
+<p>别总是让人为难</p>
+<p>今天却想要偷懒</p>
+<p>怎么又被你打败</p>
+<p>哒哒哒哒胖了一圈的小肥猪</p>
+<p>不许再动 举起手来</p>
+<p>一分钟就能跑几圈的大笨熊</p>
+<p>你又在    转转转转转转圈圈 </p>
+<p>哒哒哒哒胖了一圈的小肥猪</p>
+<p>不许再动 举起手来</p>
+<p>一分钟就能跑几圈的大笨熊</p>
+<p>你又在    在在在 </p>
+<p>在干嘛呢</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《睡吧》</title>
+    <url>/164.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>写这首歌的时候</p>
+<p>脑海里浮现一幅温馨的画面:</p>
+<p>在床头边</p>
+<p>一位母亲哼着摇篮曲</p>
+<p>哄着自己的宝宝入睡</p>
+<p>什么样的曲子能让人入睡呢?</p>
+<p>于是就有了这首作品</p>
+<p>一边写着摇篮曲</p>
+<p>一边哄自己入睡~</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="创作心得"><a href="#创作心得" class="headerlink" title="创作心得"></a>创作心得</h2><p>其实不管创作文字还是音乐</p>
+<p>画面感非常重要</p>
+<p>可以说画面就是创作的源泉</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>landy Landy go </p>
+<p>喔哦~</p>
+<p>Landy Landy go</p>
+<p>landy Landy go </p>
+<p>喔哦~</p>
+<p>Landy Landy go</p>
+<p>the world over</p>
+<p>你还醒着</p>
+<p>天快亮了 最幸福呢</p>
+<p>Landy Landy go</p>
+<p>喔哦~</p>
+<p>Landy Landy go</p>
+<p>天空是灰色  时间没静止呢</p>
+<p>写了幸福的诗 听着甜蜜的歌</p>
+<p>睡了</p>
+<p>天快亮了</p>
+<p>睡了吧 走了吧 game over</p>
+<p>往哪里走</p>
+<p>梦里的梦已经不是梦</p>
+<p>只有你能懂</p>
+<p>你在哪里等我  就在转角的街口</p>
+<p>等着我 最好的时候</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《云遮月》</title>
+    <url>/162.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>很多时候</p>
+<p>有许多话想说</p>
+<p>却又不能说</p>
+<p>人生总有数不清的无奈</p>
+<p>藏在心里</p>
+<p>等待相对圆满的时机</p>
+<p>可等待的过程本就不轻松</p>
+<p>夜夜回想</p>
+<p>夜夜伤</p>
+<p>原是抚琴在云上</p>
+<p>如今已是青丝遥望</p>
+<p>这种感觉</p>
+<p>我想</p>
+<p>不必多说.</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>我在云遮月中躺</p>
+<p>原是抚琴在云上</p>
+<p>缘分雨中夜已凉</p>
+<p>哀愁的钟声声已扬</p>
+<p>跨过的围墙</p>
+<p>回忆还是难诉衷肠</p>
+<p>梦里的悲伤</p>
+<p>却不能遗忘</p>
+<p>我也曾想</p>
+<p>一语点亮</p>
+<p>无惧是非任谁心伤 </p>
+<p>画云彩一起向</p>
+<p>是最初的愿望</p>
+<p>我远在吟池上 </p>
+<p>我已是青丝遥望</p>
+<p>郁郁中伤  </p>
+<p>难以遗忘 </p>
+<p>回忆在凌乱躺</p>
+<p>云遮月 一时强 </p>
+<p>吟游散落今夜过往</p>
+<p>滑落在迷失的路上</p>
+<p>记忆放回寒冷身上 </p>
+<p>独自清凉</p>
+<p>月色更凉</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《快跟上》</title>
+    <url>/165.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>现代人的生活习惯</p>
+<p>是否早已厌倦</p>
+<p>沙发一躺</p>
+<p>手机一拿</p>
+<p>天昏地暗不为所动</p>
+<p>永远不打烊的坐姿</p>
+<p>早已把人的身体拖垮</p>
+<p>等需要出马的时候</p>
+<p>却已经跟不上步伐~</p>
+<p>快快跟上</p>
+<p>就你最慢喽</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>天气很晴朗朗哟</p>
+<p>在沙发上别坐下</p>
+<p>身体拖垮 不打烊</p>
+<p>一起喝喝茶</p>
+<p>那不算什么 全都是 </p>
+<p>都是假想</p>
+<p>快快跟上就你最慢了</p>
+<p>慢慢悠悠只顾着你享受阳光</p>
+<p>迈开左脚 大步向前 别留恋</p>
+<p>快跟上我呀不跑丢别看榴莲</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《阳光正好》</title>
+    <url>/166.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>时间过得很快</p>
+<p>转眼之间</p>
+<p>都快奔三十了</p>
+<p>哈哈</p>
+<p>都说</p>
+<p>人是靠外界环境来感知自己的</p>
+<p>当周围朋友 同学</p>
+<p>都陆续走向婚姻殿堂的时候</p>
+<p>才发现</p>
+<p>自己青春已不在</p>
+<p>以前别人羡慕我们</p>
+<p>现在我们羡慕他们</p>
+<p>一浪推着一浪</p>
+<p>其实</p>
+<p>想要活得年轻</p>
+<p>就不得不抛开外界环境的束缚</p>
+<p>忘记年龄</p>
+<p>忘记别人对自己的评价</p>
+<p>让自己足够舒服</p>
+<p>就可以了</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>请确定这是晴天</p>
+<p>一十一点</p>
+<p>我还只是没搞清时间</p>
+<p>不确定脑袋断片</p>
+<p>又像昨天</p>
+<p>还好有你在我身边</p>
+<p>一天又一天   </p>
+<p>一年又一年</p>
+<p>断断续续重复着没完没了的时间</p>
+<p> 一遍又一遍还</p>
+<p>一点又一点</p>
+<p>蜗牛不想自己到底跑了几圈</p>
+<p>我开始</p>
+<p>看着尘封的照片</p>
+<p>想念</p>
+<p>没有一丝的阴天 </p>
+<p>不变</p>
+<p>没想过什么是期限</p>
+<p>只想着自己改变</p>
+<p> 青春的时间不见</p>
+<p>我的心已中了爱情几个谎言</p>
+<p>风雨中只有你在我心间</p>
+<p>一起一起漫步在阳光下面 </p>
+<p>无忧无虑游荡着没了时限</p>
+<p>这眼神 不必变</p>
+<p>你是 惊天动地一瞬间</p>
+<p>吃鱼线  聊聊天</p>
+<p>张牙舞爪鬼脸</p>
+<p>够我研究研究   半天 </p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《漫游》</title>
+    <url>/167.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>对于音乐来讲</p>
+<p>情绪就是最好的灵感</p>
+<p>路</p>
+<p>不可能一帆风顺</p>
+<p>有时候</p>
+<p>思绪就如一朵云</p>
+<p>漫无目的地飘荡着</p>
+<p>感觉</p>
+<p>拖着沉重的躯体 </p>
+<p>一副生无可恋的表情</p>
+<p> 呆滞的眼神</p>
+<p>却不知望向何处</p>
+<p>但又</p>
+<p>不需要歇斯底里的呐喊</p>
+<p>因为</p>
+<p>早已没了动弹的力气</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>是很在乎</p>
+<p>这一纸一句一笔</p>
+<p>这夜深到了归途</p>
+<p>在遥望眼前距离</p>
+<p>其实悠悠等你</p>
+<p>在迷失的命里</p>
+<p>诠释着 夜深人静</p>
+<p>期待着完美</p>
+<p>是很在乎 </p>
+<p>这一纸一句一笔</p>
+<p>这夜深到了归途</p>
+<p>在遥望眼前距离</p>
+<p>其实悠悠等你</p>
+<p>在遗失的夜里</p>
+<p>雨下着 风乱人心</p>
+<p>谁又能 完美</p>
+<p>我的泪已泛滥 </p>
+<p>流不停</p>
+<p>见证谁的奇迹</p>
+<p>我的心是像在电影里</p>
+<p>看着谁的命运</p>
+<p>我的心漫游在影子里</p>
+<p>看见你  耶</p>
+<p>没完没了 </p>
+<p>伤人的结局 </p>
+<p>谁来解开这难了的结</p>
+<p>谁能了解</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>音乐合作</title>
+    <url>/170.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="音乐合作"><a href="#音乐合作" class="headerlink" title="音乐合作"></a>音乐合作</h2><p>微信号:infree9</p>
+<h2 id="商业合作"><a href="#商业合作" class="headerlink" title="商业合作"></a>商业合作</h2><p>若您有音乐相关的推广渠道</p>
+<p>可以联系我哦</p>
+<p>微信号:infree9</p>
+<p>或者其他商业合作</p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>混音是音量的艺术</title>
+    <url>/171.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>混音的底层原理其实就是音量 我们通过调整不同音轨的音量 使得乐器之间相互融合 形成一个富有听感的整体</p>
+<h2 id="三个维度"><a href="#三个维度" class="headerlink" title="三个维度"></a>三个维度</h2><p><video src="https://audio.newban.cn/video/volume_time_hz.mp4" scrolling="no" border="0" frameborder="no" allow="false" framespacing="0" allowfullscreen="true"> </video></p>
+<p>我们可以从时间 频率 音量三个维度去分析</p>
+<ul>
+<li>音量推子 : 调整的是 整个时间 所有频段 的音量</li>
+<li>EQ : 调整的是 整个时间 某些个频段 的音量</li>
+<li>压缩器 : 以字或句为单位 循环规律性地调整 整个频段 的音量</li>
+<li>动态EQ/压缩器 : 以字或句为单位 循环规律性地调整 某个频段 的音量</li>
+</ul>
+<p>所有我们使用的效果器都是用来调整音轨音量的工具 某些效果器的存在是为了能更加细致化地调整音量</p>
+<h2 id="混响和延迟"><a href="#混响和延迟" class="headerlink" title="混响和延迟"></a>混响和延迟</h2><p><strong>混响和延迟效果器 其实只是一个音色生成器 并不是音量调整工具</strong></p>
+<p>给人声发送混响和延迟 就相当于是生成了一段基于人声的混响和延迟音色 这些个音色和原本的声音进行叠加后能形成一定的空间感 </p>
+<p>因此我们可以将它们当做是一种和声或者乐器来看待 在宿主中添加混响和延迟 其实就和叠音色没什么太大区别了 既然是叠音色 那就完全根据个人喜好了 可叠一轨或者多轨</p>
+<p>从这个角度去分析的话 当我们在混延迟和混响的时候 就更加有目标 而不是盲目地乱加效果</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音档案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《云游》</title>
+    <url>/160.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>最容易让人成长的</p>
+<p>是感情</p>
+<p>最值得珍惜的</p>
+<p>也是感情</p>
+<p>无论是亲情还是爱情</p>
+<p>有经历就有收获</p>
+<p>漫漫人生</p>
+<p>几次停留</p>
+<p>几次等候</p>
+<p>风雨过后</p>
+<p>最本真的</p>
+<p>才是最需要去呵护的</p>
+<p>平平淡淡也是一种生活方式</p>
+<p>彼此珍惜</p>
+<p>相互扶持</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>分开不需要理由</p>
+<p>说多是借口</p>
+<p>爱情是一招断肠难修</p>
+<p>一个人街角等候 </p>
+<p>而你的眼神闪躲</p>
+<p>全都来笑我</p>
+<p>独自承受以后</p>
+<p>一时停留</p>
+<p>还没闹够</p>
+<p>活着那不是云游</p>
+<p>爱不必留</p>
+<p>是一直不休</p>
+<p>为你守候</p>
+<p>就不用最后</p>
+<p>有时候</p>
+<p>生活没有尽头</p>
+<p>无聊的你我</p>
+<p>无聊的花火</p>
+<p>在一夜过后</p>
+<p>现实依旧</p>
+<p>每个人的以后</p>
+<p>心灵守候 </p>
+<p>经事以后</p>
+<p>是更加的成熟</p>
+<p>岁月的一头</p>
+<p>人已沧桑 快乐依旧</p>
+<p>当下的洒脱</p>
+<p>尽兴的时候</p>
+<p>谁说不够</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《无眠》</title>
+    <url>/168.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>每个人都曾有失眠的时候</p>
+<p>失眠时候的亢奋</p>
+<p>失眠过后的虚脱</p>
+<p>半梦半醒</p>
+<p>游离在记忆的边缘</p>
+<p>这种感觉</p>
+<p>总会让我反思生命的意义</p>
+<p>我不知道</p>
+<p>别人的生命是被什么推着前进的</p>
+<p>我只知道</p>
+<p>我自己的生命</p>
+<p>是靠梦想推着往前走的 </p>
+<p>倘若哪一天</p>
+<p>我无法干任何一丁点</p>
+<p>与梦想相关的事情</p>
+<p> 未来的路暗淡无光 </p>
+<p>那我的生命存在</p>
+<p>似乎没有太大的意义了</p>
+<p> 不过</p>
+<p>我想那一天的到来</p>
+<p>应该都是顺理成章的 </p>
+<p>不然也容不得我这么自私</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
+<p>根据需要添加</p>
+<p>只要能表达出自己想要的情绪</p>
+<p>就已足够</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>无眠过后只留部分记忆</p>
+<p>乱乱的空气在摇曳着</p>
+<p>乱乱的过渡着美丽</p>
+<p>清瘦的眼睛</p>
+<p>无聊的武器</p>
+<p>累积在深夜空里</p>
+<p>失离</p>
+<p>生命的意义</p>
+<p>我的命运</p>
+<p>泛黄模糊失明</p>
+<p>还不在 </p>
+<p> 一失成迷            </p>
+<p>不远等你</p>
+<p>也许你</p>
+<p>喔哦</p>
+<p>清醒一点再谈分离 </p>
+<p>夜~ 很安静</p>
+<p>回头 唯一唯一唯一 湖边没有涟漪</p>
+<p>爱 只是雨季</p>
+<p>只剩下 爱已 爱已 爱已 爱不明</p>
+<p>我独自说谎言</p>
+<p>谁了解心愿</p>
+<p>这一瞬间</p>
+<p>悠悠微光 </p>
+<p>划过脸被风吹灭</p>
+<p>雨下整夜</p>
+<p>我已经失忆中</p>
+<p>抛出好远</p>
+<p>断了线的是无限</p>
+<p>却已经无眠</p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《搞什么事情》</title>
+    <url>/169.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>这首歌曲是虾米beats创作大赛参赛作品</p>
+<p>参加这次比赛</p>
+<p>最主要的目的</p>
+<p>其实是为了推广我的专辑</p>
+<p>这首beats素材是由虾米官方提供的</p>
+<p> 相当于是一道命题作文</p>
+<p>曲风已经被限定 </p>
+<p>当我拿到这个素材的那一刻 </p>
+<p>脑袋里立马就浮现出了一幅</p>
+<p>桀骜不驯的画面</p>
+<p>和青春期的叛逆与傲娇 </p>
+<p>张扬的作风与主流格格不入 </p>
+<p>这是我对这个素材最开始的理解</p>
+<p> 音乐的艺术其实也是审美的艺术</p>
+<p>同样的一个beats</p>
+<p>每个人创作出来的旋律风格自然也是不一样 </p>
+<p>没有好与坏 </p>
+<p>符合自己的审美就够了</p>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>虾米提供的beats</p>
+<p>无需二次编曲</p>
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>什么干系 来头</p>
+<p>我没关系 Double</p>
+<p>诶就不赶紧 不达</p>
+<p>哦 no no no no 弄弄弄</p>
+<p>为  to  get  open</p>
+<p>是什么事情 </p>
+<p>进来吧</p>
+<p>又搞什么事情 </p>
+<p>别走开</p>
+<p>害怕事情</p>
+<p>收下 go go</p>
+<p>​    又来啦     </p>
+<p>是什么事情</p>
+<p>进来吧</p>
+<p>又搞什么事情</p>
+<p>别走开</p>
+<p>go go get</p>
+<p>别穿拖鞋</p>
+<p>搞什么事情 按门铃</p>
+<p>别害怕事情 又不听</p>
+<p>get get</p>
+<p>do do </p>
+<p>get get </p>
+<p>to go go</p>
+<p>别转身你不听 </p>
+<p>别转身你不明</p>
+<p>别转身就走</p>
+<p>别转身两头没有</p>
+<p>(听不清)</p>
+<p>嗖 衣服划破</p>
+<p>弄 别低着头</p>
+<p>路就在身后</p>
+<p>出来 出 出</p>
+<p>嗖 衣服划破</p>
+<p>弄 别低着头</p>
+<p>看路就在身后</p>
+<p>就重来 该该 boom</p>
+<p>来来来…….来搞事情..go go go </p>
+<p>来来来…….来搞 搞事情..go go go  </p>
+<p>来来来…….别紧张都 别紧张 来搞事情..no no no </p>
+<p>别紧张 别害怕 来搞事情..go go</p>
+<p>  别转身 别再回头     </p>
+<p>别转身 别再回头   </p>
+<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
+<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
+<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
+<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
+<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
+<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
+<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
+<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
+<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
+<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
+<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
+]]></content>
+      <tags>
+        <tag>公众号归档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在AI环境下的音乐制作流程</title>
+    <url>/172.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本着打不过就加入的原则 我们可以考虑借助AI工具实现音乐制作效率化</p>
+<h2 id="第一步-灵感启发"><a href="#第一步-灵感启发" class="headerlink" title="第一步 灵感启发"></a>第一步 灵感启发</h2><p>假如你灵感枯竭 不妨使用AI写歌找找灵感 比如<a href="https://app.suno.ai/" target="_blank" rel="noopener">SunoAI</a></p>
+<p>在众多机械的声音中找寻共鸣 </p>
+<p>虽然我个人不太喜欢用 担心被同化  但是毫无头绪的时候参考借鉴一番也未尝不可😃</p>
+<h2 id="第二步-以曲填词"><a href="#第二步-以曲填词" class="headerlink" title="第二步 以曲填词"></a>第二步 以曲填词</h2><p>填词是一项脑力活 精神状态不佳的时候 还不如AI写的词 </p>
+<p>没有头绪的时候 也不妨试试人工智能 比如 <a href="https://tianyin.music.163.com/" target="_blank" rel="noopener">网易天音</a></p>
+<h2 id="第三步-混音母带"><a href="#第三步-混音母带" class="headerlink" title="第三步 混音母带"></a>第三步 混音母带</h2><p>借助AI混音母带分析工具优化自己的作品 是个不错的选择</p>
+<p>比如 <a href="https://mixcheckstudio.roexaudio.com/" target="_blank" rel="noopener">mixcheckstudio</a></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240329095545280.png" alt="image-20240329095545280"></p>
+<h2 id="第四步-歌曲封面"><a href="#第四步-歌曲封面" class="headerlink" title="第四步 歌曲封面"></a>第四步 歌曲封面</h2><p>使用AI一键生成封面图  不要太爽 </p>
+<p>什么?  你说这样没有感情  </p>
+<p>在众多的图片中选择了一张你觉得合适的图  你的选择就是你的感情</p>
+<p>有时候 选择大于创作😼</p>
+<h2 id="第五步-MV制作"><a href="#第五步-MV制作" class="headerlink" title="第五步 MV制作"></a>第五步 MV制作</h2><p>AI生成短视频 这个不用多说了 网上有很多利用AI生成的电影预告片 很震撼</p>
+<p>推荐一个根据文字生成视频的网站 <a href="https://pixverse.ai/" target="_blank" rel="noopener">PixVerse</a></p>
+<p>视频的制作无法一步到位 更需要个人的参与 将各种片段组合在一起并和歌曲进行搭配 这并不是一件容易的事</p>
+<p>如果不熟悉的话 还不如使用摄像机拍摄来的快一些</p>
+<p>当然了 它的优势在于动画和虚拟人物和场景</p>
+<p>我在想 某些小说里震撼的画面 未来指定得靠AI来实现了 人类的脑洞哪有AI的大啊 哈哈😜</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在AI的大环境下 我们更多充当的是创意者 审美者 牵线者 整合者 指挥者 选择者 而不是执行者</p>
+<p>下达命令  让AI去替我们干活</p>
+<p>我不禁思考 当大部分的事情都能让硅基生命去做时 人类其实并不会失业  反而能实现真正意义上的共产大同社会</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>音乐制作</tag>
       </tags>
   </entry>
 </search>

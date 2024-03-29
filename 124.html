@@ -97,7 +97,8 @@
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826112147482.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826112634078.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826113335681.png">
-<meta property="og:updated_time" content="2023-07-11T02:28:07.747Z">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20231223211339619.png">
+<meta property="og:updated_time" content="2023-12-23T13:15:06.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kontakt快速入库工具 Mac版">
 <meta name="twitter:description" content="前言手动一个一个添加Kontakt音色库太慢?  别怕 Kontakt快速入库小工具帮你搞定 工具使用工具包含一键添加和一键移除音色库, 我们使用Add Library.command脚本来批量添加音色  双击后弹出音色目录选择窗口:  选择后需要在指令窗口输入mac登录密码:  最后出现Have fun字样表示添加完毕:  此时 重启Kontakt, 则所有的音色都添加进来了:  非标准音色库音">
@@ -372,6 +373,19 @@
 <p>当然这个图片尺寸不一定非得<code>200x90</code>, 其他比例也可 反正都能识别</p>
 <h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><p>里面包含了入库工具和<code>nicnt</code>模板文件</p>
 <p><a href="https://url97.ctfile.com/d/21042697-50863430-5202ad?p=312306" target="_blank" rel="noopener">点击下载</a>  (访问密码: 312306)</p>
+<h2 id="Kontakt入库相关问题"><a href="#Kontakt入库相关问题" class="headerlink" title="Kontakt入库相关问题"></a>Kontakt入库相关问题</h2><ol>
+<li><p>加载乐器时报错提示:<code>This instrument belongs to a library that is currently not installed.</code></p>
+<p>这主要是由于将标准音色库当成非标准音色库入库导致的, 如果画蛇添足给标准音色库添加了<code>nicnt</code>文件,那么就会报错</p>
+</li>
+<li><p>为什么有些标准音色库中包含<code>nicnt</code>文件, 也就是说按照非标准入库后却不报错</p>
+<p>那这有可能是<code>nicnt</code>文件中的<code>SNPID</code>值并非十六进制形式,使得入库工具未能识别,依然将其当做标准音色库来入库, 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20231223211339619.png" alt="image-20231223211339619"></p>
+<p>假如我们将该值修改成入库工具能识别的十六进制形式,比如<code>E332</code>, 那么标准音色库被当成非标准音色库入库,则报错<code>This instrument belongs to a library that is currently not installed.</code></p>
+</li>
+<li><p>标准音色库使用工具入库后,kontakt中不显示</p>
+<p>这应该是<code>kontakt</code>版本过低导致的,无法识别二代音色库, 建议升级<code>Kontakt</code></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -505,7 +519,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">155</span>
+                  <span class="site-state-item-count">172</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -518,7 +532,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -558,7 +572,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工具使用"><span class="nav-number">2.</span> <span class="nav-text">工具使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非标准音色库"><span class="nav-number">3.</span> <span class="nav-text">非标准音色库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音色库图片添加"><span class="nav-number">4.</span> <span class="nav-text">音色库图片添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工具下载"><span class="nav-number">5.</span> <span class="nav-text">工具下载</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工具使用"><span class="nav-number">2.</span> <span class="nav-text">工具使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非标准音色库"><span class="nav-number">3.</span> <span class="nav-text">非标准音色库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音色库图片添加"><span class="nav-number">4.</span> <span class="nav-text">音色库图片添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工具下载"><span class="nav-number">5.</span> <span class="nav-text">工具下载</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Kontakt入库相关问题"><span class="nav-number"></span> <span class="nav-text">Kontakt入库相关问题</span></a></li></div>
             
 
           </div>
@@ -578,7 +592,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

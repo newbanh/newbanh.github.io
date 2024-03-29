@@ -118,7 +118,10 @@
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/6369abdddb2c66a875a468df_977f8bfd-c1d1-41f5-a429-2e9007e4a2e2.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230713175203920.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719161544617.png">
-<meta property="og:updated_time" content="2023-07-19T08:18:58.027Z">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721102855640.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721103415024.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-21%2010-36-30.2023-07-21%2010_40_15.gif">
+<meta property="og:updated_time" content="2023-07-21T03:31:13.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="REAPER宿主常用技巧汇总">
 <meta name="twitter:description" content="轨道锁定选择需要锁定的轨道或者item, 右键选择item setting--&amp;gt;Lock item, 即可锁定, 解除锁定同理 Item编组当我们拖动其中一个音频块时, 组内其他音频块也会跟随移动, 特别适用节奏对轨完后使用 使用方法: 选择需要进行编曲的item, 右键选择Group--&amp;gt;Group items 播放范围包裹指定音频块在Action List中搜索loop point">
@@ -463,6 +466,20 @@
 <p>具体操作:</p>
 <p>选中需要操作的音频块, 右键<code>item settings--&gt;Take channel mode: Mono(downmix)</code></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230719161544617.png" alt="image-20230719161544617"></p>
+<h2 id="锁定包络轨道"><a href="#锁定包络轨道" class="headerlink" title="锁定包络轨道"></a>锁定包络轨道</h2><p>当我们给音频画好包络线后, 为了防止误修改或者莫名其妙被删除(有时在给其他轨道做批量操作的时候, 不知不觉就把包络给清除了 头大), 我们需要对包络进行锁定</p>
+<p>方法很简单, 右键选中锁定图标, 然后勾选<code>track envelope</code>:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721102855640.png" alt="image-20230721102855640"></p>
+<p>此时 所有包络轨道都被锁定, 处于不可编辑状态</p>
+<h2 id="包络复用"><a href="#包络复用" class="headerlink" title="包络复用"></a>包络复用</h2><p>有时我们需要给音频的多个片段设置相同的包络曲线, 挨个手动重复画一遍实在太过磨人, 有没有一种方法能实现包络复用呢, 也就是编辑其中一个片段的包络曲线, 其他复用的包络也跟随一块跟着变动</p>
+<p>具体操作如下:</p>
+<ol>
+<li><p>选择需要进行复用的包络<code>item</code>, 并右键创建复用池(<code>Create pooled duplicate</code>)</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230721103415024.png" alt="image-20230721103415024"></p>
+</li>
+<li><p>此时会创建一个包络副本, 两个包络块可同步联动修改:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-21%2010-36-30.2023-07-21%2010_40_15.gif" alt="2023-07-21 10-36-30.2023-07-21 10_40_15"></p>
+</li>
+</ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -596,7 +613,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">155</span>
+                  <span class="site-state-item-count">172</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -609,7 +626,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -649,7 +666,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#轨道锁定"><span class="nav-number">1.</span> <span class="nav-text">轨道锁定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Item编组"><span class="nav-number">2.</span> <span class="nav-text">Item编组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#播放范围包裹指定音频块"><span class="nav-number">3.</span> <span class="nav-text">播放范围包裹指定音频块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#善用鼠标右键"><span class="nav-number">4.</span> <span class="nav-text">善用鼠标右键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动检测并剪除空白区域"><span class="nav-number">5.</span> <span class="nav-text">自动检测并剪除空白区域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和弦插入"><span class="nav-number">6.</span> <span class="nav-text">和弦插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和弦检测工具"><span class="nav-number">7.</span> <span class="nav-text">和弦检测工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用音量推子控制插件参数"><span class="nav-number">8.</span> <span class="nav-text">用音量推子控制插件参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MIDI人性化"><span class="nav-number">9.</span> <span class="nav-text">MIDI人性化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速更改音频音调"><span class="nav-number">10.</span> <span class="nav-text">快速更改音频音调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-B-音轨和效果的快速技巧"><span class="nav-number">11.</span> <span class="nav-text">A/B 音轨和效果的快速技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#这也适用于多个轨道！"><span class="nav-number">11.1.</span> <span class="nav-text">这也适用于多个轨道！</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#您还可以像这样进行-A-B-效果！"><span class="nav-number">11.2.</span> <span class="nav-text">您还可以像这样进行 A/B 效果！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在调音台中显示和隐藏子轨道"><span class="nav-number">12.</span> <span class="nav-text">在调音台中显示和隐藏子轨道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#放大缩小波形"><span class="nav-number">13.</span> <span class="nav-text">放大缩小波形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平移剪辑的轨道"><span class="nav-number">14.</span> <span class="nav-text">平移剪辑的轨道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双声道转成单声道"><span class="nav-number">15.</span> <span class="nav-text">双声道转成单声道</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#轨道锁定"><span class="nav-number">1.</span> <span class="nav-text">轨道锁定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Item编组"><span class="nav-number">2.</span> <span class="nav-text">Item编组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#播放范围包裹指定音频块"><span class="nav-number">3.</span> <span class="nav-text">播放范围包裹指定音频块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#善用鼠标右键"><span class="nav-number">4.</span> <span class="nav-text">善用鼠标右键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动检测并剪除空白区域"><span class="nav-number">5.</span> <span class="nav-text">自动检测并剪除空白区域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和弦插入"><span class="nav-number">6.</span> <span class="nav-text">和弦插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和弦检测工具"><span class="nav-number">7.</span> <span class="nav-text">和弦检测工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用音量推子控制插件参数"><span class="nav-number">8.</span> <span class="nav-text">用音量推子控制插件参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MIDI人性化"><span class="nav-number">9.</span> <span class="nav-text">MIDI人性化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速更改音频音调"><span class="nav-number">10.</span> <span class="nav-text">快速更改音频音调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-B-音轨和效果的快速技巧"><span class="nav-number">11.</span> <span class="nav-text">A/B 音轨和效果的快速技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#这也适用于多个轨道！"><span class="nav-number">11.1.</span> <span class="nav-text">这也适用于多个轨道！</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#您还可以像这样进行-A-B-效果！"><span class="nav-number">11.2.</span> <span class="nav-text">您还可以像这样进行 A/B 效果！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在调音台中显示和隐藏子轨道"><span class="nav-number">12.</span> <span class="nav-text">在调音台中显示和隐藏子轨道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#放大缩小波形"><span class="nav-number">13.</span> <span class="nav-text">放大缩小波形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平移剪辑的轨道"><span class="nav-number">14.</span> <span class="nav-text">平移剪辑的轨道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双声道转成单声道"><span class="nav-number">15.</span> <span class="nav-text">双声道转成单声道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#锁定包络轨道"><span class="nav-number">16.</span> <span class="nav-text">锁定包络轨道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包络复用"><span class="nav-number">17.</span> <span class="nav-text">包络复用</span></a></li></ol></div>
             
 
           </div>
@@ -669,7 +686,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
