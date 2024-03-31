@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="混音档案,">
+  <meta name="keywords" content="REAPER,">
 
 
 
@@ -82,18 +82,28 @@
 
 
 
-<meta name="description" content="什么时候才需要MS处理呢？ 1、当M中置/S外围信号有问题的时候，例如：音量不匹配 2、当需要更好的宽度时，例如：S信号较多，M信号较少，自然立体声宽度会更宽广 3、校正MS信号，例如：S信号的冲击力较强，M较弱，导致中置的乐器和人声不够突出 注：宽广的立体声不是由立体声扩展效果器得来，而是S信号的乐器比较多、比较丰满、因此声场会更宽广。人声的宽度通常也是如此，当我们对人声适当发送左右延迟的时候">
-<meta name="keywords" content="混音档案">
+<meta name="description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  步骤 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后 点击Param-&amp;g">
+<meta name="keywords" content="REAPER">
 <meta property="og:type" content="article">
-<meta property="og:title" content="什么时候才需要MS处理呢？">
-<meta property="og:url" content="https://audio.newban.cn/21.html">
+<meta property="og:title" content="在REAPER中如何使用外部MIDI键盘来控制插件参数">
+<meta property="og:url" content="https://audio.newban.cn/174.html">
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
-<meta property="og:description" content="什么时候才需要MS处理呢？ 1、当M中置/S外围信号有问题的时候，例如：音量不匹配 2、当需要更好的宽度时，例如：S信号较多，M信号较少，自然立体声宽度会更宽广 3、校正MS信号，例如：S信号的冲击力较强，M较弱，导致中置的乐器和人声不够突出 注：宽广的立体声不是由立体声扩展效果器得来，而是S信号的乐器比较多、比较丰满、因此声场会更宽广。人声的宽度通常也是如此，当我们对人声适当发送左右延迟的时候">
+<meta property="og:description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  步骤 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后 点击Param-&amp;g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-06-10T10:30:18.000Z">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104028456.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104104989.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104652052.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104917532.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105314276.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105115016.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/2024-03-31%2009-25-58.2024-03-31%2009_28_55.2024-03-31%2011_06_26.gif">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331111030644.png">
+<meta property="og:updated_time" content="2024-03-31T04:40:39.346Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="什么时候才需要MS处理呢？">
-<meta name="twitter:description" content="什么时候才需要MS处理呢？ 1、当M中置/S外围信号有问题的时候，例如：音量不匹配 2、当需要更好的宽度时，例如：S信号较多，M信号较少，自然立体声宽度会更宽广 3、校正MS信号，例如：S信号的冲击力较强，M较弱，导致中置的乐器和人声不够突出 注：宽广的立体声不是由立体声扩展效果器得来，而是S信号的乐器比较多、比较丰满、因此声场会更宽广。人声的宽度通常也是如此，当我们对人声适当发送左右延迟的时候">
+<meta name="twitter:title" content="在REAPER中如何使用外部MIDI键盘来控制插件参数">
+<meta name="twitter:description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  步骤 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后 点击Param-&amp;g">
+<meta name="twitter:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png">
 
 
 
@@ -132,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="https://audio.newban.cn/21.html">
+  <link rel="canonical" href="https://audio.newban.cn/174.html">
 
 
 
 
 
-  <title>什么时候才需要MS处理呢？ | 有瓣音频 – 分享编曲混音技术</title>
+  <title>在REAPER中如何使用外部MIDI键盘来控制插件参数 | 有瓣音频 – 分享编曲混音技术</title>
   
 
 
@@ -294,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">什么时候才需要MS处理呢？</h1>
+          <h1 class="post-title" itemprop="name headline">在REAPER中如何使用外部MIDI键盘来控制插件参数</h1>
         
 
         <div class="post-meta">
@@ -306,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T15:50:00+08:00">
-                2019-09-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-03-31T12:15:53+08:00">
+                2024-03-31
               </time>
             
 
@@ -344,18 +354,36 @@
       
 
       
-        <p> 什么时候才需要MS处理呢？</p>
-<p>1、当M中置/S外围信号有问题的时候，例如：音量不匹配</p>
-<p>2、当需要更好的宽度时，例如：S信号较多，M信号较少，自然立体声宽度会更宽广</p>
-<p>3、校正MS信号，例如：S信号的冲击力较强，M较弱，导致中置的乐器和人声不够突出</p>
-<p>注：宽广的立体声不是由立体声扩展效果器得来，而是S信号的乐器比较多、比较丰满、因此声场会更宽广。人声的宽度通常也是如此，当我们对人声适当发送左右延迟的时候，左右延迟通常在S信号当中，适当发送延迟可以很好的加宽人声的宽度。</p>
-<p>那么，在混音的时候，如何调整MS信号的量呢？</p>
-<p>1、当某一个或某几个乐器需要更多S信号的时候，则声像位置越极左极右，S信号越多，M越少。当极左或极右的时候，这个乐器就只占据S信号，M是空的。这样可以把位置让给M里的Bass，鼓点，以及人声。但过于层次分明的时候，也容易造成缺少融合度。</p>
-<p>2、当要把某个乐器放在M的时候，则声像应该在中间，例如：人声主唱，Bass就是这样。M信号通常给要突出的声音！完全M的话，这个声音会很窄，所以，M中的人声通常需要添加混响和延迟，适当增加S信号来加宽声音！</p>
-<p>3、说到人声，人声主唱占据M信号后，配唱（人声的和声）建议多占据S信号，这样更有层次。方法也是调整声像，越极左极右，S信号就越多。还可以在此基础上发送混响和延迟来调整声音的远近。</p>
-<p>又说到远近了，越扯越远。远近总结如下：</p>
-<p>1、音量，音量小，声音远；音量大，声音近，这毫无疑问！（借助音量推子）<br>2、空间，混响空间大，混响量大，声音远；相反声音近！（借助混响和延迟效果器）<br>3、动态，声音起伏感越大，声音越远；声音起伏越小“像说悄悄话一样的动态”，声音近！（借助压缩/压限效果器）<br>4、频率，低频多，高频少，声音远；低频少，高频多，声音近。因为高频的传输能量比低频弱（借助EQ均衡效果器）  </p>
-<p><em>有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</em></p>
+        <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效</p>
+<p>接下来以MIDI键盘为例 给大家介绍实现方法 </p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li><p>进入<code>Reaper</code>的<code>Preferences</code>页面 找到你的<code>MIDI</code>设备 并开启<code>Control Message</code>功能</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png" alt="image-20240331103757673"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104028456.png" alt="image-20240331104028456"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104104989.png" alt="image-20240331104104989"></p>
+</li>
+<li><p>选中插件中需要控制的推子 确保处于焦点状态(这步很关键)</p>
+<p>这里以<code>Waves Q10</code>的输出音量推子为例</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104652052.png" alt="image-20240331104652052"></p>
+</li>
+<li><p>然后 点击<code>Param-&gt;Learn</code>选项</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104917532.png" alt="image-20240331104917532"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105314276.png" alt="image-20240331105314276"></p>
+</li>
+<li><p>此时 滚动<code>MIDI</code>键盘上的滚轮或者推子 <code>Command</code>一栏会自动识别</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105115016.png" alt="image-20240331105115016"></p>
+</li>
+<li><p>点击OK 此时就能通过<code>MIDI</code>键盘控制该推子了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2024-03-31%2009-25-58.2024-03-31%2009_28_55.2024-03-31%2011_06_26.gif" alt="2024-03-31 09-25-58.2024-03-31 09_28_55.2024-03-31 11_06_26"></p>
+</li>
+<li><p>如果需要记录该自动化 那么在控制之前 需要将<code>automation mode</code>设置为<code>Write</code>模式 记录完成后 再改回<code>Read</code>模式即可</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331111030644.png" alt="image-20240331111030644"></p>
+</li>
+<li><p>设置完毕</p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
       
     </div>
@@ -373,7 +401,7 @@
       
         <div class="post-tags">
           
-            <a href="tags/混音档案/" rel="tag"># 混音档案</a>
+            <a href="tags/REAPER/" rel="tag"># REAPER</a>
           
         </div>
       
@@ -386,8 +414,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="22.html" rel="next" title="使用音高修正效果器，修正不稳的音符">
-                <i class="fa fa-chevron-left"></i> 使用音高修正效果器，修正不稳的音符
+              <a href="173.html" rel="next" title="在REAPER中设置包络自动化">
+                <i class="fa fa-chevron-left"></i> 在REAPER中设置包络自动化
               </a>
             
           </div>
@@ -395,10 +423,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="32.html" rel="prev" title="音频实时导出解答">
-                音频实时导出解答 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -462,8 +486,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -521,6 +554,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

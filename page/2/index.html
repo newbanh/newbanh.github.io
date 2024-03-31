@@ -273,6 +273,320 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../151.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../151.html" itemprop="url">在REAPER中如何建立音频参考轨道</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-13T10:15:53+08:00">
+                2023-07-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p><code>reaper</code>中如何建立参考音频轨道 其信号绕过<code>master</code>输出 实现当前混音和参考音频切换播放呢?</p>
+<p>我们在混音过程中可能会拿某个同类型的商业混音作品来进行参考, 使我们的混音更加的理性</p>
+<p>在其他DAW中实现起来有些费劲, 但是在<code>REAPER</code>中却非常容易, 具体实现步骤如下</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><ol>
+<li><p>打开<code>Reaper</code>，并确保你的项目已加载。</p>
+</li>
+<li><p>在Reaper的轨道窗口右键单击空白区域，选择<code>Insert Track</code>（插入轨道）或使用快捷键<code>Ctrl+T（Windows）/Cmd+T（Mac）</code></p>
+</li>
+<li><p>打开调音台, 在新建的轨道上，右键单击并选择弹出路由设置对话框</p>
+</li>
+<li><p>在弹出的对话框中，找到<code>Master send</code>选项，并取消勾选</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230714175923470.png" alt="image-20230714175923470"></p>
+</li>
+<li><p>同时, 找到<code>Hardware Output</code>（硬件输出）选项，并选择你<code>Output 1/Output 2</code>输出。这是不同于主输出的输出通道。</p>
+</li>
+<li><p>现在，你的参考音频轨道已创建，通过<code>M/S</code>则可来回切换对比试听了</p>
+</li>
+</ol>
+<h2 id="混音和参考音频快速切换播放"><a href="#混音和参考音频快速切换播放" class="headerlink" title="混音和参考音频快速切换播放"></a>混音和参考音频快速切换播放</h2><p>混音过程中, 需要频繁切换参考轨道的播放, 而每次切换都需要找到相关轨道来回对其<code>M/S</code>, 效率非常的低而且繁琐, 有没有高效的方法呢, 比如一键切换?, 这里给大家分享两个小技巧:</p>
+<h4 id="第一种-使用grouping编组"><a href="#第一种-使用grouping编组" class="headerlink" title="第一种  使用grouping编组"></a>第一种  使用grouping编组</h4><ol>
+<li>首先选中<code>master</code>轨和<code>reference</code>, 右键选择<code>Track Grouping Parameters..</code>进入编组设置窗口</li>
+<li>将<code>Mute Lead</code>和<code>Mute Follow</code>同时勾选上</li>
+</ol>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717100214519.png" alt="image-20230717100214519"></p>
+<ol start="3">
+<li><p>此时我们<code>Mute</code>其中任意一轨, 另一轨也跟着被<code>Mute</code>了, 此时我们按住<code>shift</code>键左键取消其中一轨的<code>Mute</code>, 这时我们再点击<code>Mute</code>就能实现两轨之间反向<code>Mute</code>了 , 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-11-16.2023-07-17%2010_18_32.gif" alt="2023-07-17 10-11-16.2023-07-17 10_18_32"></p>
+</li>
+</ol>
+<h4 id="第二种-使用Action组合"><a href="#第二种-使用Action组合" class="headerlink" title="第二种 使用Action组合"></a>第二种 使用Action组合</h4><p>虽然第一种方式能有效减少切换的流程, 但我还是感觉有些慢, 于是决定使用自定义<code>Action</code>的方式, 这样可以给其添加快捷键</p>
+<ol>
+<li><p>首先打开<code>Action List</code>窗口, 创建一个新的<code>Action</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103416258.png" alt="image-20230717103416258"></p>
+</li>
+<li><p>然后搜索<code>Toggle mute for master track</code>和<code>Toggle solo for track 01</code>并将它们拖拽至右方, 这里我将自定义<code>Action</code>命名为<code>toggle reference</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717103843224.png" alt="image-20230717103843224"></p>
+</li>
+<li><p>为了方便使用 我为其添加了快捷键<code>/</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20230717104136573.png" alt="image-20230717104136573"></p>
+</li>
+<li><p>此时回到轨道面板, 我们只需要将参考音频放置在第一轨道上, 并且<code>Mute</code>它, 后面我们就可以随时通过快捷键切换音频的播放了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2023-07-17%2010-44-23.2023-07-17%2010_49_43.gif" alt="2023-07-17 10-44-23.2023-07-17 10_49_43"></p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../150.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../150.html" itemprop="url">如何使REAPER中的仪表和波形看起来更加平滑</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-12T19:15:53+08:00">
+                2023-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在本期快速教程中，我将向您展示如何使 <code>REAPER</code> 中的仪表和波形在播放时看起来更加平滑👌</p>
+<p><code>REAPER</code> 允许您自定义仪表和波形的平滑度。默认情况下，设置非常低，导致出现锯齿状外观。</p>
+<p>我现在将介绍如何自定义其中每一个。</p>
+<h2 id="🌊-波形更平滑"><a href="#🌊-波形更平滑" class="headerlink" title="🌊 波形更平滑"></a>🌊 波形更平滑</h2><p>您可能已经注意到，当 <code>REAPER</code> 录制时，波形绘制得非常慢。这是因为它的默认刷新率仅为 <code>3 Hz</code>。我们可以将其设置为 <code>30 Hz</code>，并使其看起来更加平滑，如下所示：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7d7bfb9f1a9a_a928f341-c60c-4135-a180-78565dfc024f.gif" alt="录音时的波形。"></p>
+<h3 id="设置步骤："><a href="#设置步骤：" class="headerlink" title="设置步骤："></a>设置步骤：</h3><ol>
+<li><p>首先进入到<code>Preferences &gt; Recording</code>。</p>
+</li>
+<li><p>然后找到<code>Show preview ...update frequency</code>一栏改为<code>30</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7d47999f1a9e_e18d6c90-c4b9-4a9a-bb51-64ac3c87ce7d.jpeg" alt="img"></p>
+</li>
+<li><p>完成！尝试录制，你的波形应该看起来更好😊</p>
+</li>
+</ol>
+<h2 id="🎚-更平滑的仪表"><a href="#🎚-更平滑的仪表" class="headerlink" title="🎚 更平滑的仪表"></a>🎚 更平滑的仪表</h2><p><code>VU Meter</code>也可以可调得更加顺滑！</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7dbc009f1a9c_900cefbb-146e-493d-ace0-2d763510de2f.gif" alt="轨道和插件仪表。  "></p>
+<h3 id="设置步骤"><a href="#设置步骤" class="headerlink" title="设置步骤"></a>设置步骤</h3><ol>
+<li><p>首先进入到<code>Preferences &gt; Track Control Panels</code></p>
+</li>
+<li><p>然后找到<code>Meter update frequency</code>一栏, 将其设置为<code>30 Hz</code>, 同时将<code>Meter Decay</code> 设置为<code>40 db/sec</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/63adb88c438b7d255d9f1a99_7d3559d6-cbd2-4a2c-ae67-9191dbfee371.jpeg" alt></p>
+</li>
+<li><p>完毕！您的轨道计现在看起来应该更平滑了。</p>
+</li>
+</ol>
+<p>如果您的轨道上没有<code>VU</code>表, 可以参考之前的文章:《<a href="https://audio.newban.cn/148.html">在REAPER中如何实现在轨道上显示VU表</a>》</p>
+<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>如果您发现任何性能问题，您可以将频率数字降低到15或更低。即使在较旧的机器上，我个人也没有注意到这些设置有任何差异。</p>
+<p>享受💙</p>
+<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/smoother-waveforms-and-meters-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../149.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1430,307 +1744,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../141.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../141.html" itemprop="url">在REAPER中将声音分层到一个轨道中</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-10T15:15:53+08:00">
-                2023-07-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这是一个疯狂的 REAPER 功能。您可以将一堆项目放入一个轨道中并像这样自由移动它们：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea916639afd004a5_5771cf1d-328b-4136-b95d-08a1bc06f808.gif" alt="img"></p>
-<p>这被称为<code>free item positioning</code>，自从我知道这一点以来，我就以这种方式进行了很多分层/堆叠。</p>
-<h2 id="如何实现？"><a href="#如何实现？" class="headerlink" title="如何实现？"></a>如何实现？</h2><p>要启用<code>free item positioning</code>，只需右键单击轨道并选中<code>free item positioning</code>选项即可。</p>
-<p>现在您应该能够自由移动该轨道中的项目，甚至可以将多个项目堆叠在一起。</p>
-<p>如果它变得混乱，您可以在<code>Action list</code>中搜索<code>Item: Auto-reposition items in free item positioning mode</code>进行<code>item</code>规整化, 如果您发现经常使用这个功能，我建议为其设置一个快捷键👍</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91662c08d004a6_983d21e8-2a16-4ad9-93bd-ba3029b14b5c.gif" alt="img"></p>
-<h2 id="为什么要使用这个功能？"><a href="#为什么要使用这个功能？" class="headerlink" title="为什么要使用这个功能？"></a>为什么要使用这个功能？</h2><h3 id="🔊-堆叠音效"><a href="#🔊-堆叠音效" class="headerlink" title="🔊 堆叠音效"></a>🔊 堆叠音效</h3><p>每当我想将多个声音效果分层在一起时，我主要使用它。因此，我可以将它们全部放在一个轨道中，并在那里进行所有处理，而不是使用一堆轨道。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91666f20d004a3_90b31b01-5fa9-445e-adee-7f9b96a08296.jpeg" alt="img"></p>
-<h3 id="🔴-堆叠录音"><a href="#🔴-堆叠录音" class="headerlink" title="🔴 堆叠录音"></a>🔴 堆叠录音</h3><p>如果您在<code>free item positioning</code>功能打开时在轨道上录制，则您所做的每个录制通道都会堆叠在前一个通道的顶部，如下所示：</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91660bcad004a2_2ea65ee8-826d-498f-9186-0f82efd35c05.jpeg" alt="img"></p>
-<p>这三层将同时播放。</p>
-<p>如果您想在录制时听到前面的音频，可以右键单击监视器图标并选择 <code>Monitor track media when recording</code>。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/63dc1a30ea91664f2ed004a4_54f3d13a-1763-4191-bf6a-c63dcf4d9394.jpeg" alt="img"></p>
-<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>请随意尝试并找到创造性的使用方法！</p>
-<p>例如，您可以使用它来增强军鼓或底鼓，或者将多种音效叠加在一起以创建独特的效果。</p>
-<p>您还可以使用它来录制曲目的多个通道并将它们堆叠在一起，以便您在录制时轻松听到前几层</p>
-<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/layer-sounds-in-one-track-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../140.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../140.html" itemprop="url">在REAPER中显示音频的5种方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-10T10:15:53+08:00">
-                2023-07-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>REAPER</code> 的一项独特功能是能够以五种不同的方式显示音频项目！🤯</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db4800469430_Thumbnail_copy.jpeg" alt="img"></p>
-<p>这确保了无论需要处理什么样的音频，<code>REAPER</code>都能为用户提供完美的视觉呈现👌</p>
-<p>我现在将回顾它们中的每一个，演示它们的用途，并提供显示它们的快捷方式。</p>
-<hr>
-<h2 id="1-规律的高峰"><a href="#1-规律的高峰" class="headerlink" title="1. 规律的高峰"></a>1. 规律的高峰</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db9623469478_3c300e5b-7f7b-47ea-a1e6-895dddc94488.jpeg" alt="img"></p>
-<p>这些是我们大多数人都熟悉的默认波形。</p>
-<p>我们可以清楚地直观地了解音频的响度和长度。</p>
-<blockquote>
-<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Show normal (non-spectral/non-spectrogram) peaks</code></p>
-</blockquote>
-<h2 id="2-纠正峰值"><a href="#2-纠正峰值" class="headerlink" title="2. 纠正峰值"></a>2. 纠正峰值</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33dbb8bf469477_0fda3477-0a18-4d72-8b79-714ba9168159.jpeg" alt="img"></p>
-<p>就像常规峰值一样，但您只能看到波形的一半。</p>
-<p>这通常用于视频编辑，因为它有助于更好地识别对话和更安静的段落。如果您像大多数视频编辑器工作区一样垂直空间有限，也很有用~</p>
-<blockquote>
-<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Rectify peaks</code></p>
-</blockquote>
-<h2 id="3-光谱峰"><a href="#3-光谱峰" class="headerlink" title="3. 光谱峰"></a>3. 光谱峰</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33dbe16d469474_e17cd77e-1133-49f9-916e-9bcdb67b505c-20230711180846612.jpeg" alt="img"></p>
-<p>此视图允许您将不同的频率可视化为颜色。</p>
-<p>这非常适合检测人声中的嘶嘶声、录音中的噪音、转录音符等！</p>
-<blockquote>
-<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectral peaks</code></p>
-</blockquote>
-<p>⚙️您还可以搜索并使用以下操作调整设置：<code>View: Show peaks display settings</code></p>
-<h2 id="4-频谱图"><a href="#4-频谱图" class="headerlink" title="4. 频谱图"></a>4. 频谱图</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db7b5d46947a_a3fbeb65-38d7-49b0-9a69-57254caacd27.jpeg" alt="img"></p>
-<p>这是频率强度的视觉表示。</p>
-<p>我们可以比较 200 Hz 和 10 kHz 等不同频率下的能量水平，并了解这些水平如何随时间变化。</p>
-<blockquote>
-<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectrogram</code></p>
-</blockquote>
-<p>⚙️您还可以搜索并使用以下操作调整设置：<code>View: Show peaks display settings</code></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db2948469476_547625b4-82af-49ac-8f8f-093b9f07a808.png" alt="img"></p>
-<h2 id="5-频谱图和峰值"><a href="#5-频谱图和峰值" class="headerlink" title="5. 频谱图和峰值"></a>5. 频谱图和峰值</h2><p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db3c88469475_7ef00b85-bfe1-4635-a809-66a7b0f3cccc-20230711180257977.jpeg" alt="img"></p>
-<p>这将显示一半频谱图和一半峰值。</p>
-<p>我经常使用它，因为它提供了两全其美的优点！您可以查看常规响度峰值以及其上方的频率信息，从而更容易识别声音。</p>
-<blockquote>
-<p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectrogram and peaks</code></p>
-</blockquote>
-<h2 id="福利：光谱编辑"><a href="#福利：光谱编辑" class="headerlink" title="福利：光谱编辑"></a>福利：光谱编辑</h2><p>使用任何频谱图视图时，您可以搜索并使用<code>Spectrogram: Add spectral edit to item</code>操作来调整音频<code>Izotope RX</code> 风格！非常好。我通常用它来消除噪音和异响。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/643d50ee9d33db3463469479_64497c16-1e44-4a7f-aae5-223dbe3742b9.jpeg" alt="img"></p>
-<h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>如果您为它们设置快捷方式，您可以在它们之间快速切换，并以最适合每个任务的方式查看音频。或者您可以将它们放置在顶部工具栏之一。</p>
-<p>享受💙</p>
-<p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/5-ways-to-display-audio-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1781,7 +1794,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">172</span>
+                  <span class="site-state-item-count">174</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

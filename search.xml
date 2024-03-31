@@ -6615,6 +6615,15 @@ shortcut.add("Shift+x",function() {
 <iframe src="https://singer.xiaoice.com/lib/img/AnnualReleaseDemo.mp4" width="1020" height="660" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <h3 id="官网地址"><a href="#官网地址" class="headerlink" title="官网地址"></a>官网地址</h3><p><a href="https://singer.xiaoice.com/" target="_blank" rel="noopener">https://singer.xiaoice.com/</a></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>目前该款工具已经被网易收购 并更名为<code>X-Studio</code></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240329113459954.png" alt="image-20240329113459954"></p>
+<p>除了这个之外 还有很多类似的工具 比如:</p>
+<ul>
+<li><a href="https://tianyin.music.163.com" target="_blank" rel="noopener">网易天音</a></li>
+<li><a href="https://ace-studio.timedomain.cn/" target="_blank" rel="noopener">ACE Studio</a></li>
+<li><a href="https://cevio.jp/" target="_blank" rel="noopener">CeVIO AI</a> : 汉化包可前往<a href="https://github.com/VOICeVIO/CeVIO.CN" target="_blank" rel="noopener">GitHub</a>下载</li>
+<li><a href="https://github.com/svc-develop-team/so-vits-svc" target="_blank" rel="noopener">Sovits 4.0</a>: 声音克隆  可以克隆自己的声音进行唱歌或者配音播稿</li>
+</ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8747,6 +8756,20 @@ shortcut.add("Shift+x",function() {
 <p>对于扒带和模仿也是一把利器</p>
 <p>有兴趣的小伙伴可以试一试</p>
 <h2 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h2><p><a href="https://vocalremover.org/zh/key-bpm-finder" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="类似工具"><a href="#类似工具" class="headerlink" title="类似工具"></a>类似工具</h2><h3 id="乐器分离工具"><a href="#乐器分离工具" class="headerlink" title="乐器分离工具"></a>乐器分离工具</h3><ul>
+<li><p><a href="https://studio.moises.ai/player/1a384d3f-6ed1-4013-863a-d2d84bcfebc8/?context=spliter" target="_blank" rel="noopener">moises</a> </p>
+</li>
+<li><p><a href="https://www.audiostrip.co.uk/isolate" target="_blank" rel="noopener">audiostrip</a> </p>
+</li>
+<li><p><a href="https://tuanziai.com/" target="_blank" rel="noopener">团子AI</a></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/%E6%88%AA%E5%B1%8F2024-03-30%20%E4%B8%8B%E5%8D%8810.39.45.png" alt="截屏2024-03-30 下午10.39.45"></p>
+</li>
+</ul>
+<h3 id="音乐转MIDI谱"><a href="#音乐转MIDI谱" class="headerlink" title="音乐转MIDI谱"></a>音乐转MIDI谱</h3><ul>
+<li><a href="https://www.serocs.cn/transcription/" target="_blank" rel="noopener">serocs</a></li>
+<li><a href="https://github.com/magenta/mt3" target="_blank" rel="noopener">mt3</a></li>
+<li><a href="https://www.midishow.com/zh-tw/tool" target="_blank" rel="noopener">midishow</a></li>
+</ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -9584,7 +9607,8 @@ shortcut.add("Shift+x",function() {
     <title>混音是音量的艺术</title>
     <url>/171.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>混音的底层原理其实就是音量 我们通过调整不同音轨的音量 使得乐器之间相互融合 形成一个富有听感的整体</p>
-<h2 id="三个维度"><a href="#三个维度" class="headerlink" title="三个维度"></a>三个维度</h2><p><video src="https://audio.newban.cn/video/volume_time_hz.mp4" scrolling="no" border="0" frameborder="no" allow="false" framespacing="0" allowfullscreen="true"> </video></p>
+<h2 id="三个维度"><a href="#三个维度" class="headerlink" title="三个维度"></a>三个维度</h2><iframe src="https://audio.newban.cn/video/volume_time_hz.mp4" scrolling="no" border="0" frameborder="no" width="1024" height="630" allow="false" framespacing="0" allowfullscreen="true"> </iframe>
+
 <p>我们可以从时间 频率 音量三个维度去分析</p>
 <ul>
 <li>音量推子 : 调整的是 整个时间 所有频段 的音量</li>
@@ -9832,11 +9856,14 @@ shortcut.add("Shift+x",function() {
     <title>在AI环境下的音乐制作流程</title>
     <url>/172.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本着打不过就加入的原则 我们可以考虑借助AI工具实现音乐制作效率化</p>
-<h2 id="第一步-灵感启发"><a href="#第一步-灵感启发" class="headerlink" title="第一步 灵感启发"></a>第一步 灵感启发</h2><p>假如你灵感枯竭 不妨使用AI写歌找找灵感 比如<a href="https://app.suno.ai/" target="_blank" rel="noopener">SunoAI</a></p>
+<h2 id="第一步-灵感启发"><a href="#第一步-灵感启发" class="headerlink" title="第一步 灵感启发"></a>第一步 灵感启发</h2><p>假如你灵感枯竭 不妨使用AI写歌找找灵感 比如<a href="https://app.suno.ai/" target="_blank" rel="noopener">SunoAI</a> </p>
 <p>在众多机械的声音中找寻共鸣 </p>
 <p>虽然我个人不太喜欢用 担心被同化  但是毫无头绪的时候参考借鉴一番也未尝不可😃</p>
+<p>除了强大的<code>SunoAI</code>之外 还有一些对中文不太友好的工具比如:<a href="https://soundraw.io/" target="_blank" rel="noopener">Soundraw</a>、<a href="https://mubert.com/" target="_blank" rel="noopener">Mubert</a> 可以蹭一蹭免费额度玩一玩</p>
 <h2 id="第二步-以曲填词"><a href="#第二步-以曲填词" class="headerlink" title="第二步 以曲填词"></a>第二步 以曲填词</h2><p>填词是一项脑力活 精神状态不佳的时候 还不如AI写的词 </p>
-<p>没有头绪的时候 也不妨试试人工智能 比如 <a href="https://tianyin.music.163.com/" target="_blank" rel="noopener">网易天音</a></p>
+<p>没有头绪的时候 也不妨试试人工智能 比如 <a href="https://tianyin.music.163.com/" target="_blank" rel="noopener">网易天音</a> 腾讯觅词等等</p>
+<p>如果你喜欢写英文歌词 可以试试<a href="https://studio.moises.ai/lyric-writer/" target="_blank" rel="noopener">Moises</a>或者Waves公司出品的<a href="https://lyricstudio.net/" target="_blank" rel="noopener">LyricStudio</a> </p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331075829696.png" alt="image-20240331075829696"></p>
 <h2 id="第三步-混音母带"><a href="#第三步-混音母带" class="headerlink" title="第三步 混音母带"></a>第三步 混音母带</h2><p>借助AI混音母带分析工具优化自己的作品 是个不错的选择</p>
 <p>比如 <a href="https://mixcheckstudio.roexaudio.com/" target="_blank" rel="noopener">mixcheckstudio</a></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240329095545280.png" alt="image-20240329095545280"></p>
@@ -9858,6 +9885,73 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>音乐制作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中设置包络自动化</title>
+    <url>/173.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>如果你嫌弃手动绘制包络太繁琐 那么<code>Reaper</code>也提供了自动化包络功能 尤其针对一些规律性比较明显的包络 能省下不少时间</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li><p>选择插件中需要进行控制的参数</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331095802136.png" alt="image-20240331095802136"></p>
+</li>
+<li><p>开启LFO模式</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331100015696.png" alt="image-20240331100015696"></p>
+<p>这里我们可以设置参数变化方式以及控制的速度和幅度等等 </p>
+</li>
+<li><p>最终效果</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2024-03-31%2009-25-58.2024-03-31%2009_28_55.gif" alt="2024-03-31 09-25-58.2024-03-31 09_28_55"></p>
+</li>
+<li><p>如果需要记录该自动化 那么在控制之前 需要将<code>automation mode</code>设置为<code>Write</code>模式 记录完成后 再改回<code>Read</code>模式即可</p>
+</li>
+<li><p>如果觉得效果不满意需要对进行参数修改 除了<code>FX</code>中的<code>Param</code>入口之外 还可以点击包络轨道的正弦图标进入 这样更加方便</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331112528038.png" alt="image-20240331112528038"></p>
+</li>
+</ol>
+<h2 id="外部设备绘制包络曲线"><a href="#外部设备绘制包络曲线" class="headerlink" title="外部设备绘制包络曲线"></a>外部设备绘制包络曲线</h2><p>如果需要通过外部硬件设备来写入自动化 那么可以参考下一篇文章<a href="https://audio.newban.cn/174.html">《在REAPER中如何使用外部MIDI键盘来控制插件参数》</a></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在REAPER中如何使用外部MIDI键盘来控制插件参数</title>
+    <url>/174.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效</p>
+<p>接下来以MIDI键盘为例 给大家介绍实现方法 </p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li><p>进入<code>Reaper</code>的<code>Preferences</code>页面 找到你的<code>MIDI</code>设备 并开启<code>Control Message</code>功能</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png" alt="image-20240331103757673"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104028456.png" alt="image-20240331104028456"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104104989.png" alt="image-20240331104104989"></p>
+</li>
+<li><p>选中插件中需要控制的推子 确保处于焦点状态(这步很关键)</p>
+<p>这里以<code>Waves Q10</code>的输出音量推子为例</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104652052.png" alt="image-20240331104652052"></p>
+</li>
+<li><p>然后 点击<code>Param-&gt;Learn</code>选项</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104917532.png" alt="image-20240331104917532"></p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105314276.png" alt="image-20240331105314276"></p>
+</li>
+<li><p>此时 滚动<code>MIDI</code>键盘上的滚轮或者推子 <code>Command</code>一栏会自动识别</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105115016.png" alt="image-20240331105115016"></p>
+</li>
+<li><p>点击OK 此时就能通过<code>MIDI</code>键盘控制该推子了</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/2024-03-31%2009-25-58.2024-03-31%2009_28_55.2024-03-31%2011_06_26.gif" alt="2024-03-31 09-25-58.2024-03-31 09_28_55.2024-03-31 11_06_26"></p>
+</li>
+<li><p>如果需要记录该自动化 那么在控制之前 需要将<code>automation mode</code>设置为<code>Write</code>模式 记录完成后 再改回<code>Read</code>模式即可</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331111030644.png" alt="image-20240331111030644"></p>
+</li>
+<li><p>设置完毕</p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>REAPER</tag>
       </tags>
   </entry>
 </search>
