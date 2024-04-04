@@ -273,6 +273,477 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../124.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../124.html" itemprop="url">Kontakt快速入库工具 Mac版</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-23T10:15:53+08:00">
+                2022-08-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>手动一个一个添加<code>Kontakt</code>音色库太慢?  别怕 <code>Kontakt</code>快速入库小工具帮你搞定</p>
+<h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><p>工具包含一键添加和一键移除音色库, 我们使用<code>Add Library.command</code>脚本来批量添加音色</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826111324904.png" alt="image-20220826111324904"></p>
+<p>双击后弹出音色目录选择窗口:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826111836532.png" alt="image-20220826111836532"></p>
+<p>选择后需要在指令窗口输入<code>mac</code>登录密码:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826111954681.png" alt="image-20220826111954681"></p>
+<p>最后出现<code>Have fun</code>字样表示添加完毕:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826100930008.png" alt="image-20220826100930008"></p>
+<p>此时 重启<code>Kontakt</code>, 则所有的音色都添加进来了:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826112147482.png" alt="image-20220826112147482"></p>
+<h3 id="非标准音色库"><a href="#非标准音色库" class="headerlink" title="非标准音色库"></a>非标准音色库</h3><p>音色库中需要有<code>nicnt</code>文件才能入库到<code>Kontakt</code>, 如果没有的话需要手动添加一个, 只需从其他地方拷贝一份进行修改就行, 修改以下三个地方即可:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826112634078.png" alt="image-20220826112634078"></p>
+<p><strong><code>SNPID</code>属性 填写四位任意的十六进制值</strong> </p>
+<p>保存修改后 重新添加即可</p>
+<h3 id="音色库图片添加"><a href="#音色库图片添加" class="headerlink" title="音色库图片添加"></a>音色库图片添加</h3><p>这个简单 我们只需要制作一张<code>200x90</code>的图片 然后取名为<code>Wallpaper.png</code>, 放到音色根目录下即可:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20220826113335681.png" alt="image-20220826113335681"></p>
+<p>当然这个图片尺寸不一定非得<code>200x90</code>, 其他比例也可 反正都能识别</p>
+<h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><p>里面包含了入库工具和<code>nicnt</code>模板文件</p>
+<p><a href="https://url97.ctfile.com/d/21042697-50863430-5202ad?p=312306" target="_blank" rel="noopener">点击下载</a>  (访问密码: 312306)</p>
+<h2 id="Kontakt入库相关问题"><a href="#Kontakt入库相关问题" class="headerlink" title="Kontakt入库相关问题"></a>Kontakt入库相关问题</h2><ol>
+<li><p>加载乐器时报错提示:<code>This instrument belongs to a library that is currently not installed.</code></p>
+<p>这主要是由于将标准音色库当成非标准音色库入库导致的, 如果画蛇添足给标准音色库添加了<code>nicnt</code>文件,那么就会报错</p>
+</li>
+<li><p>为什么有些标准音色库中包含<code>nicnt</code>文件, 也就是说按照非标准入库后却不报错</p>
+<p>那这有可能是<code>nicnt</code>文件中的<code>SNPID</code>值并非十六进制形式,使得入库工具未能识别,依然将其当做标准音色库来入库, 如下图:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20231223211339619.png" alt="image-20231223211339619"></p>
+<p>假如我们将该值修改成入库工具能识别的十六进制形式,比如<code>E332</code>, 那么标准音色库被当成非标准音色库入库,则报错<code>This instrument belongs to a library that is currently not installed.</code></p>
+</li>
+<li><p>标准音色库使用工具入库后,kontakt中不显示</p>
+<p>这应该是<code>kontakt</code>版本过低导致的,无法识别二代音色库, 建议升级<code>Kontakt</code></p>
+</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../123.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../123.html" itemprop="url">编曲中和弦的编配</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-22T10:15:53+08:00">
+                2022-08-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面给大家介绍过如何给旋律编配和弦, 详情参见《<a href="https://audio.newban.cn/93.html">给旋律配和弦的几种方式</a>》</p>
+<p>也就是先有旋律 后有和弦</p>
+<p>那如果没有旋律呢 比如我们需要写一段配乐  烘托某个场景的氛围  这种情况 我们通常会采用和弦先行的做法, 也就是先编配一串符合情绪的和弦</p>
+<p>我们知道 不同的和弦连接 营造的情绪氛围是不一样的, 前面的文章也有提到过这一块 详见《<a href="https://audio.newban.cn/81.html">和弦走向影响歌曲的感情色彩 节奏决定了歌曲的律动</a>》</p>
+<p>我们在编曲的时候 假如我们第一件事要做的是和弦连接的选择, 那就需要我们用耳朵去听 用心去感受  体会其中蕴含的情绪</p>
+<p>那么具体该如何操作呢, 在这里 给大家介绍下我自己的工作流程, 仅供参考:</p>
+<h3 id="低音试探"><a href="#低音试探" class="headerlink" title="低音试探"></a>低音试探</h3><p>我首先会先用低音旋律来试探情绪走向, 从大体听感上来讲, 和弦进行其实相当于是一段旋律  那么 我们可以将低音旋律理解为简化版的和弦进行</p>
+<p>借此 我们可以大体勾勒出和弦的走向 这部分线条我很有可能直接就给贝斯演奏了</p>
+<h3 id="构建和弦"><a href="#构建和弦" class="headerlink" title="构建和弦"></a>构建和弦</h3><p>有了低音后 我们以此为根音 构建和弦</p>
+<p>和弦大体分为六种, <strong>大小增减属中</strong>, 具体参见《<a href="https://audio.newban.cn/80.html">和弦的解析</a>》</p>
+<p>这一步需要我们进行不同种类的尝试   我们只需要使其听感还原或者接近低音旋律的效果即可</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上这种方法算不上有多效率, 只能算是众多方法中的笨方法, 此法可以巩固我们对于和弦的理解和掌握, 另外还可以摆脱常用和弦套路的影响, 让声音回归到耳朵上, 这也算是它的优点了</p>
+<p>我平常闲来无事时 就会用这种方法来写写自己的当下的情绪  然后 觉得还不错~</p>
+<p>关于和弦编配 实际上自由度很大, 你想让歌曲按照怎样的情绪走 那就怎样编配 规矩是一方面 突破规矩也许能迎来新的世界</p>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>我们在写歌的时候 可能会借助乐器  比如吉他或者钢琴 一边弹和弦一边哼唱</p>
+<p>在这种情况下 和弦的挑选就显得尤为关键了 哼唱的旋律 很大程度是取决于和弦的</p>
+<p>和弦在前 旋律在后 也就是和弦声音先出来 然后哼唱紧随 </p>
+<p>这一特性 我们可以运用到编曲中, 比如和弦演奏加花 使得接下来出现的旋律更加自然和顺畅连贯</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../122.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../122.html" itemprop="url">歌曲 心跳 编曲分析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-07-03T10:15:53+08:00">
+                2022-07-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>情深所至, 今天分析一下王力宏的《心跳》</p>
+<h3 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33497050&auto=0&height=66"></iframe>
+
+<h3 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h3><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
+<ul>
+<li><strong>鼓组贝斯</strong>: 常规编排 小间奏在重拍演奏后立马停止 使情绪冷却下来</li>
+<li><strong>铺底乐器</strong>: 钢琴音色  柱式和弦演奏 头部每小节弹一次 尾部跟随底鼓强化情绪  </li>
+<li><strong>律动乐器</strong>: 一般在每段落的后两小节或者后四小节 进行编曲氛围强化</li>
+<li><strong>氛围乐器</strong>: 弦乐 副歌部分开始断断续续出现</li>
+<li><strong>主奏乐器</strong>: 包含前奏乐器和间奏乐器 前奏采用钢琴音色  间奏电吉他 </li>
+</ul>
+<h3 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h3><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
+
+
+<pre class="mermaid">graph LR;
+intro(前奏:)
+style intro fill:#f9f,stroke:#333,stroke-width:4px
+
+主奏乐器;
+
+A(主歌:)
+style A fill:#f9f,stroke:#333,stroke-width:4px
+
+a[/铺底+鼓组+配唱\]-->铺底+鼓组+贝斯+配唱;
+
+B(副歌:)
+style B fill:#f9f,stroke:#333,stroke-width:4px
+
+b[/铺底+鼓组+贝斯+氛围+配唱\]-->律动乐器-->律动+鼓组+贝斯;
+
+inter(小间奏:)
+style inter fill:#f9f,stroke:#333,stroke-width:4px
+
+c((铺底+鼓组+贝斯+主奏乐器+间奏乐器));
+
+A2(第二段主歌:)
+style A2 fill:#f9f,stroke:#333,stroke-width:4px
+
+b21((铺底+律动))-->g((铺底+律动+鼓组+贝斯))-->铺底+律动+鼓组+贝斯+间奏乐器;
+
+B2(第二段副歌:)
+style B2 fill:#f9f,stroke:#333,stroke-width:4px
+
+e[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];
+
+inter2(大间奏:)
+style inter2 fill:#f9f,stroke:#333,stroke-width:4px
+铺底+鼓组+贝斯+氛围+间奏乐器-->铺底+鼓组+贝斯+氛围+间奏乐器+律动;
+
+B3(第三段副歌:)
+style B3 fill:#f9f,stroke:#333,stroke-width:4px
+
+e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
+
+
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己编曲模仿一下</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../121.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1330,458 +1801,6 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../91.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../91.html" itemprop="url">号外 号外 第三张原创音乐专辑上线啦</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-12-10T09:56:53+08:00">
-                2021-12-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>专辑名为: 《茶余饭后》 茶余饭后写首歌~ 哈哈</p>
-<p>该专辑中一共收录12首曲子 采用连载式更新</p>
-<p>以下为试听链接:</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="//music.163.com/outchain/player?type=1&id=137142351&auto=0&height=430"></iframe>
-
-
-
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../114.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../114.html" itemprop="url">串联和并联处理 让声音更加丰富</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-11-29T11:25:17+08:00">
-                2021-11-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>首先我们需要明白为什么进行串联和并联处理, 合格的混音往往并不需要太过复杂的操作, 但很多人搞得很复杂,一大堆效果器, 一大堆发送, 大师们这么干通常只是做个实验找点乐子, 而大部分人都是在跟风, 误以为效果器挂满才是常规操作, 生生把混音的门槛拉高了一个档次</p>
-<p>整的很多初学者望而却步, 迷茫不已</p>
-<p>有兴趣的同学可以去网上找<code>Waves</code>官方出品的几个混音经典案例工程</p>
-<p>分析他们的工程, 你就会发现, 什么叫做<strong>大道至简</strong></p>
-<h3 id="串联"><a href="#串联" class="headerlink" title="串联"></a>串联</h3><ol>
-<li><p><strong>串联EQ</strong></p>
-<p>我们会经常看到一些混音师在做EQ时衰减和提升用两个不同EQ效果器处理</p>
-<p>很多初学者不免有疑问, 能用一个效果器解决的为什么要用两个, 甚至多个</p>
-<p>你在混音的时候, 如果知道自己为什么要这么干, 那完全没问题, 如果不知道, 那就是无谓的跟风</p>
-<p>许多混音师之所以EQ串联处理, <strong>要么就是为了得到某个效果器的染色, 要么就是使用某个效果器的特殊功能</strong>, 比如有的效果器高频比较甜, 而有的中频很舒服, 有的低频很有弹性, 或者</p>
-<p>有的出来的声音干净, 有的比较温暖</p>
-<p>这个时候, 我们需要根据自己的需求进行效果器的合理搭配, 从而得到<strong>自己心目中那个想要的声音</strong></p>
-<p><strong>用EQ最关键的前提是, 心中已经有了一个标准的声音, 我们要做的就是用EQ来实现那个标准的声音</strong>, 如果你没有标准声音, 或者压根听不出来声音哪里不对, 那么除了常规低切之外, 啥也不用做, 直接跳过EQ这一步, 进入到下一步混音操作</p>
-<p>无数的案例告诉我们, <strong>盲目的处理, 只会让声音更加难听, 当你不懂的时候, 不处理兴许是最好的选择</strong></p>
-<p>而你要做的就是不断训练自己的耳朵, 多听优秀的混音的作品, 在心中建立自己的标准声音</p>
-<blockquote>
-<p>Waves大师签名效果器Manny EQ, 里面每一个频段用的都是不同的效果器, 一个效果器就相当于串联了多个EQ效果, 出来的声音染色很明显, 有兴趣的同学可以用用看</p>
-</blockquote>
-</li>
-<li><p><strong>串联压缩</strong></p>
-<p>同样的多个压缩的串联, 一来是染色, 二来是我们可以将音头和音尾分开处理, 实现更加精细的处理</p>
-<p>或者使用不同压缩比的叠加得到特殊质感的声音</p>
-<p>还是那句话, 如果听不出来, 就没必要画蛇添足, 老老实实用好一个效果器即可</p>
-</li>
-</ol>
-<h3 id="并联"><a href="#并联" class="headerlink" title="并联"></a>并联</h3><ol>
-<li><p><strong>并联EQ</strong></p>
-<p>我们想让声音变得更亮, 但有不想用提升的方式, 这个时候有一种方法就是使用并联EQ, 将并联的部分中低频都切掉, 相当于是变相提升了</p>
-</li>
-<li><p><strong>并联压缩</strong></p>
-<p>我们可以将不同种类具有不同特性的压缩器进行并联, 有晶体管的, 电子管的, 启动时间快的, 启动时间慢的, 各种混合在一块, 得到一个镶了一身金的声音, 大金链子大手表也不是所有人都喜欢, 所以完全看自己喜好啦</p>
-<p>哪怕是同一款压缩器, 也依然可以使用并联, 比如不同的压缩比, 不同的启动时间和释放时间搭配等等</p>
-</li>
-<li><p><strong>并联混响和并联delay</strong></p>
-<p>常规的操作是混响和delay搭配使用, 现在流行的做法是多个混响和delay并联搭配</p>
-<p>比如一个短而亮且靠前的混响搭配一个长而暗且靠后的混响, 外加一个大体积氛围混响, 营造一个高端大气上档次的空间, 再加上一个乒乓延迟和单身道延迟, 让声音更厚更宽</p>
-<p>同样的 只用一个混响和一个延迟也不会有人说你不对, 我们的目的是为了让声音好听, 而不是比谁堆的效果器多, 比谁的操作更复杂更骚气</p>
-</li>
-</ol>
-<p>不过 不可否认的是, 串联和并联处理能让声音更加丰富刺激, 尤其是并联处理, 如果放在多个音轨上或者总线上,共同元素的增加能提升音轨间的融合度</p>
-<p>但是 提升融合度的方式有很多种, <strong>我依然推崇大道至简的手法</strong></p>
-<p>把核心的东西搞明白了, 才能进步</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../113.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../113.html" itemprop="url">压缩之前进行EQ平衡能让声音更加好听</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-11-19T10:05:53+08:00">
-                2021-11-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前闲聊过关于先EQ还是先压缩的问题, 详情参见《<a href="https://audio.newban.cn/79.html">先EQ还是先压缩</a>》</p>
-<p>今天咱们继续, 本文所说的<strong>EQ平衡指的是对声音特色频率进行衰减 从而缩小高低频率差距, 实现声音平衡</strong></p>
-<p>而本文所说的好听, 严格来说应该称之为平滑和舒服</p>
-<p>话不多说, 我们直接来做一个实验</p>
-<h3 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h3><ol>
-<li><p>选取一段十来秒的音频进行循环播放, 挂上<code>FabFilter Q2</code>进行频率监测, 这里使用的是一段人声干声, 原始频率如下:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20211119105141727.png" alt="image-20211119105141727"></p>
-<p>我们能清晰地看到不少冒尖的特色评率凸起</p>
-</li>
-<li><p>此时我们加一个压缩看看频率会变成什么样</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20211119105501352.png" alt="image-20211119105501352"></p>
-<p>对比之下 我们能明显看到特色频率被削减了不少,  低音量频段被抬起, 使得频率高低动态收窄</p>
-<p>仅凭眼睛看 就能感受到声音比压缩前更加圆润不少</p>
-<p>但这还不够</p>
-</li>
-<li><p>我们尝试在压缩之前挂上一个EQ, 先进行特色频率的衰减, 然后再压缩, 最后频率如下图:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20211119111741764.png" alt="image-20211119111741764"></p>
-<p>对比只用压缩的图, 我们能看到频率棱角更少了, 高低频率更加平均</p>
-</li>
-<li><p>如果我们在EQ压缩之后再进行一次EQ平衡呢, 这一步大家可以自行尝试一下 然后前后对比音频试听 看看声音是否变得更好听</p>
-</li>
-</ol>
-<p><strong>EQ平衡–&gt;压缩–&gt;EQ平衡</strong>, 这一系列流程下来, 我个人感觉, 声音更加的舒服和圆润</p>
-<h3 id="实验思考"><a href="#实验思考" class="headerlink" title="实验思考"></a>实验思考</h3><ol>
-<li><p>为什么截取十几秒音频循环播放?</p>
-<p>人耳的听感是建立在持续声音基础之上 分析某一瞬间的声音频率没有任何意义  必须结合一定时间进行判断  七八秒到十几二十秒我认为是不错的选择</p>
-</li>
-<li><p>关于压缩器衰减特色频率</p>
-<p>压缩可以衰减一部分的特色频率 但这种衰减 不是真正意义上的频率衰减 而是将特色频率比较突出的某个时间位置的整个声音音量往下拉低</p>
-<p>用这种相对隐藏的手段 变相实现特色频率的衰减 从而实现声音频率的高低平衡 </p>
-</li>
-</ol>
-<p><strong>压缩 除了控制音量动态之外, 还可以实现特色频率的缓冲</strong>  两个都是缩小了高低差距, 但却是不同的两个概念,  前者主要围绕音量, 后者主要在于频率, 当然后者的实现源自于前者</p>
-<p>有点绕 慢慢消化 哈哈 </p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>通过上面的实验, 我们大致可以得出一个相对科学的结论, 那就是压缩前进行EQ平衡可以让声音更好</p>
-<p>至于有多好, 那就因人而异了</p>
-<p>混音没有固定套路, 你也可以不做EQ平衡, 看个人喜好</p>
-<p>我个人一般在EQ压缩之后的再EQ平衡环节, 会优先使用动态EQ进行处理, 毕竟 衰减过多也未必是件好事</p>
-<h3 id="关于动态EQ先后顺序"><a href="#关于动态EQ先后顺序" class="headerlink" title="关于动态EQ先后顺序"></a>关于动态EQ先后顺序</h3><p>说到动态EQ这里再补充一下, 建议放在动态控制好之后使用, 因为动态不稳的情况下使用动态EQ, 音量小的地方就处理不到, 等到压缩一挂上 没处理到的地方就一下冒了出来, 这就真的成了动态冒尖了,  结果你还得用动态EQ再处理一遍, 何苦呢</p>
-<p>当然 个人建议 仅供参考</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1832,7 +1851,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">174</span>
+                  <span class="site-state-item-count">178</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1845,7 +1864,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>

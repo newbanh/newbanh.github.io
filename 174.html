@@ -82,13 +82,13 @@
 
 
 
-<meta name="description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  步骤 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后 点击Param-&amp;g">
+<meta name="description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  MIDI键盘控制插件参数 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后">
 <meta name="keywords" content="REAPER">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在REAPER中如何使用外部MIDI键盘来控制插件参数">
 <meta property="og:url" content="https://audio.newban.cn/174.html">
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
-<meta property="og:description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  步骤 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后 点击Param-&amp;g">
+<meta property="og:description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  MIDI键盘控制插件参数 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104028456.png">
@@ -99,10 +99,13 @@
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331105115016.png">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/2024-03-31%2009-25-58.2024-03-31%2009_28_55.2024-03-31%2011_06_26.gif">
 <meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331111030644.png">
-<meta property="og:updated_time" content="2024-03-31T04:40:39.346Z">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331173936063.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331174716085.png">
+<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331174945735.png">
+<meta property="og:updated_time" content="2024-03-31T09:55:16.772Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在REAPER中如何使用外部MIDI键盘来控制插件参数">
-<meta name="twitter:description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  步骤 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后 点击Param-&amp;g">
+<meta name="twitter:description" content="需求相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效 接下来以MIDI键盘为例 给大家介绍实现方法  MIDI键盘控制插件参数 进入Reaper的Preferences页面 找到你的MIDI设备 并开启Control Message功能     选中插件中需要控制的推子 确保处于焦点状态(这步很关键) 这里以Waves Q10的输出音量推子为例   然后">
 <meta name="twitter:image" content="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png">
 
 
@@ -356,7 +359,7 @@
       
         <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>相比鼠标绘制包络线 使用外部控制器对音量推子或者插件参数进行控制并记录 会更加人性化且高效</p>
 <p>接下来以MIDI键盘为例 给大家介绍实现方法 </p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<h2 id="MIDI键盘控制插件参数"><a href="#MIDI键盘控制插件参数" class="headerlink" title="MIDI键盘控制插件参数"></a>MIDI键盘控制插件参数</h2><ol>
 <li><p>进入<code>Reaper</code>的<code>Preferences</code>页面 找到你的<code>MIDI</code>设备 并开启<code>Control Message</code>功能</p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331103757673.png" alt="image-20240331103757673"></p>
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331104028456.png" alt="image-20240331104028456"></p>
@@ -380,6 +383,22 @@
 <p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331111030644.png" alt="image-20240331111030644"></p>
 </li>
 <li><p>设置完毕</p>
+</li>
+</ol>
+<h2 id="MIDI键盘绘制CC曲线"><a href="#MIDI键盘绘制CC曲线" class="headerlink" title="MIDI键盘绘制CC曲线"></a>MIDI键盘绘制CC曲线</h2><p>如果我们想使用键盘滚轮来进行<code>MIDI</code>的<code>CC</code>曲线绘制 则需要借助<code>ReaControlMIDI</code>插件</p>
+<ol>
+<li><p>这个插件必须放在音源前面 并勾选<code>Control Change</code>一栏中的<code>Enable</code>选项</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331173936063.png" alt="image-20240331173936063"></p>
+</li>
+<li><p>然后参照前面的步骤只需要给插件中的推子通过<code>MIDI Learn</code>和键盘滚轮进行关联</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331174716085.png" alt="image-20240331174716085"></p>
+</li>
+<li><p>此时 我们开启包络写入 一边播放音频 一边操控滚轮进行CC曲线的绘制</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/image-20240331174945735.png" alt="image-20240331174945735"></p>
+<p>其效果和直接在钢琴卷帘窗中手动绘制的效果一样  只是显示的方式不同 </p>
+<p>借助外部控制器 对于某些乐器 比如弦乐的表情控制可以更加地细腻</p>
+</li>
+<li><p>Done</p>
 </li>
 </ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -414,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="173.html" rel="next" title="在REAPER中设置包络自动化">
-                <i class="fa fa-chevron-left"></i> 在REAPER中设置包络自动化
+              <a href="173.html" rel="next" title="在REAPER中实现自动绘制包络曲线">
+                <i class="fa fa-chevron-left"></i> 在REAPER中实现自动绘制包络曲线
               </a>
             
           </div>
@@ -423,6 +442,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="175.html" rel="prev" title="如何实现手机操控REAPER进行播放和录音">
+                如何实现手机操控REAPER进行播放和录音 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -511,7 +534,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">174</span>
+                  <span class="site-state-item-count">178</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -524,7 +547,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -564,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MIDI键盘控制插件参数"><span class="nav-number">2.</span> <span class="nav-text">MIDI键盘控制插件参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MIDI键盘绘制CC曲线"><span class="nav-number">3.</span> <span class="nav-text">MIDI键盘绘制CC曲线</span></a></li></ol></div>
             
 
           </div>

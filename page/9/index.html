@@ -273,6 +273,439 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../84.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../84.html" itemprop="url">混音实战记录之 You Know Better</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-08T17:56:53+08:00">
+                2021-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>歌曲名为《You Know Better》</p>
+<p><a href="https://cambridge-mt.com/ms/mtk/#HannesKeseberg" target="_blank" rel="noopener">多轨素材下载地址</a></p>
+<h3 id="成品试听"><a href="#成品试听" class="headerlink" title="成品试听"></a>成品试听</h3><p>混音试听(未母带):</p>
+<p><audio class src="https://audio.newban.cn/audio/demo_no_master.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>混音试听(总线添加了一个限制器提升响度):</p>
+<p><audio class src="https://audio.newban.cn/audio/demo_with_limit.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<h3 id="混音记录"><a href="#混音记录" class="headerlink" title="混音记录"></a>混音记录</h3><p>主要用到<strong>EQ、压缩器、混响、延迟、失真</strong>这五大类效果器</p>
+<h4 id="首先是EQ部分"><a href="#首先是EQ部分" class="headerlink" title="首先是EQ部分"></a>首先是EQ部分</h4><ul>
+<li><strong>底鼓</strong>: <ol>
+<li>切除30HZ以下和5500HZ以上的频率 </li>
+<li>窄Q值2衰减110HZ两个分贝避让贝斯</li>
+</ol>
+</li>
+<li><strong>贝斯</strong>: <ol>
+<li>切除50HZ以下和5000HZ以上的频率 使得贝斯低频不那么沉重 同时避让底鼓</li>
+<li>窄Q值2衰减100HZ两个分贝避让底鼓</li>
+</ol>
+</li>
+<li><strong>人声</strong>: <ol>
+<li>切除70HZ以下的频率 </li>
+<li>同时以窄Q值2 衰减320HZ两分贝 以及衰减760HZ一个分贝 使得声音更加立体  </li>
+<li>最后搁架式提升14000HZ 三个分贝 增加人声空气感</li>
+</ol>
+</li>
+<li><strong>剩余乐器</strong>: 一律低切50HZ  SOLO乐器则低切30HZ,填补底鼓空缺</li>
+</ul>
+<p>EQ这一步处理完后, 整体清晰了很多, 融合度也得到提升, 混音中<strong>低频的处理是至关重要的一点</strong>, 除此之外就是人声, <strong>用EQ让人声更加立体具有空间感</strong></p>
+<p><strong>所谓空间感, 就是即便不加混响延迟, 通过EQ的手段, 让听众感觉加了混响, 类似于一种可望不可即的感觉</strong></p>
+<h4 id="压缩部分"><a href="#压缩部分" class="headerlink" title="压缩部分"></a>压缩部分</h4><p>所有音轨皆采用相同的压缩比<code>4.6:1</code>使得整体色彩保持一致, 增加融合度, 大部分乐器压缩量为<code>6db</code></p>
+<p>至于启动和释放时间, 每个乐器各不相同, 找到最清晰的那个点即可</p>
+<p>总线压缩使用常规的压缩设置<code>2:1</code>压缩比 30ms启动时间 100ms释放时间 2分贝的压缩量</p>
+<p><strong>同样的 压缩这一步也可以塑造声音的空间感</strong>, 其诀窍在于阈值的控制, 由小到大 对比试听, 找到那个临界点</p>
+<h4 id="混响部分"><a href="#混响部分" class="headerlink" title="混响部分"></a>混响部分</h4><p>单轨上只给人声发送了5%的混响, 混响<code>size</code>为40%, 仅仅给人声润个色, 听不出任何空间感</p>
+<p>另外<code>master</code>总线同样添加一个5%的混响, 混响<code>size</code>为80%,让所有乐器处在同一个空间里, 增加整体融合度</p>
+<p>另外再混响效果器前头插入了一个EQ效果器, 过滤掉600HZ以下浑浊和10000HZ以上蜂鸣的频率, 同时在2000HZ位置宽Q值1衰减了2个db, 让混响更加靠后</p>
+<p><strong>补充</strong>: 如果要给鼓组加入混响, 那么前头EQ设置为滤除600HZ以下和2000HZ以上的频率 </p>
+<p>本示例中并未单独给底鼓添加混响</p>
+<h4 id="延迟部分"><a href="#延迟部分" class="headerlink" title="延迟部分"></a>延迟部分</h4><p>给人声发送了1%的乒乓混响, 和之前的混响搭配, 人声润色明显</p>
+<h4 id="失真部分"><a href="#失真部分" class="headerlink" title="失真部分"></a>失真部分</h4><p>只用在了贝斯音轨  压缩之前添加了少量的失真, 增加贝斯的下潜深度</p>
+<h4 id="人声并行压缩"><a href="#人声并行压缩" class="headerlink" title="人声并行压缩"></a>人声并行压缩</h4><p>为了使人声柔和的同时不被其他乐器掩盖, 添加了一个并行压缩, 使得人声更加清晰</p>
+<p>具体参数可参考: 《<a href="https://audio.newban.cn/83.html">使用平行压缩让人声更加清晰饱满</a>》</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上效果器皆使用<a href="https://chrome.soundation.com/" target="_blank" rel="noopener">Soundation</a>自带效果器</p>
+<p>人声的空间感大部分来自于EQ和压缩, 而非混响和延迟</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../83.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../83.html" itemprop="url">使用平行压缩让人声更加清晰饱满</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-08T15:56:53+08:00">
+                2021-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>一般情况下我们为了把人声做大做圆润, 在使用压缩器的时候会使用较小的压缩比 </p>
+<p>这样一来 声音确实的柔和了, 但同样容易被其他乐器掩盖</p>
+<p>我们希望听清歌曲每个词, 这个时候怎么办?</p>
+<ul>
+<li><input disabled type="checkbox"> <strong>把人声音轨音量拉大?</strong> 不行 人声会把其他音轨掩盖</li>
+<li><input disabled type="checkbox"> <strong>使用串联压缩?</strong> 不行 压缩过度 声音会变形</li>
+<li><input checked disabled type="checkbox"> <strong>使用并行压缩</strong> 奥利给!!</li>
+</ul>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>并行压缩前的效果:</p>
+<p><audio class src="https://audio.newban.cn/audio/vocal_with_no_parall.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>并行压缩后的效果:</p>
+<p><audio class src="https://audio.newban.cn/audio/vocal_with_parall.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>我们会发现, 使用并行压缩后, 声音不但保持了柔和, 同时清晰度和饱满度也提升了不少</p>
+<p>这样听众在听人声的时候就不会那么费劲了</p>
+<h3 id="压缩参数参考"><a href="#压缩参数参考" class="headerlink" title="压缩参数参考"></a>压缩参数参考</h3><p>原人声轨压缩参数:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20211008153841830.png" alt="image-20211008153841830"></p>
+<p>并行轨压缩参数:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20211008153917258.png" alt="image-20211008153917258"></p>
+<p>仅仅是加大了压缩比 上调了压缩阈值, 其他参数不变, 混合少量并行轨声音即可:</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20211008154104239.png" alt="image-20211008154104239"></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../82.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../82.html" itemprop="url">提升贝斯下潜深度的小技巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-30T15:56:53+08:00">
+                2021-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h3><p>方法很简单, 只需要给<code>bass</code>添加少量失真效果即可</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>没有加失真的效果:</p>
+<p><audio class src="https://audio.newban.cn/audio/bass_no_dis.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>加了失真的效果:</p>
+<p><audio class src="https://audio.newban.cn/audio/bass_with_dis.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>仔细听我们会发现添加失真后, <code>bass</code>颗粒感少一些, 不那么飘了, 声音更加沉稳圆润</p>
+<p>我们要的效果就是让bass声音下潜深一些, 躲在底鼓后面就行</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../81.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1535,462 +1968,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../74.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../74.html" itemprop="url">EQ的使用核心技巧 衰减特色频率</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-15T12:06:53+08:00">
-                2021-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>怎样使用EQ可以使声音更好听, 更舒服</p>
-<p>好不好听因人而异不好判断, 但舒不舒服却是有一套准则, 那就是减少特色频率的存在</p>
-<h3 id="特色频率"><a href="#特色频率" class="headerlink" title="特色频率"></a>特色频率</h3><p>什么是特色频率, 你可以形象理解为冒尖频率:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210915122048505.png" alt="image-20210915122048505"></p>
-<p>如果特色频率太过突出, 容易掩盖其他频段 使得声音不均衡, 比如特色频率集中在低频区域声音则浑浊不堪, 集中在高频区域则尖锐刺耳</p>
-<p>那么 将这些特色频率进行衰减, 其他频段声音相当于被动得到提升, 声音整体更加均衡, 那么人耳听起来就会更加<strong>舒服</strong></p>
-<h4 id="扫频查找"><a href="#扫频查找" class="headerlink" title="扫频查找"></a>扫频查找</h4><p>查找特色频率最快的方法就是通过窄Q值扫频, 可以提升的方式扫, 也可衰减的方式, 看个人习惯</p>
-<p>如果是提升的方式, 那么我们只需要找出突出的频率即可, 这里的<strong>突出指的是贴耳, 如果某个频率点突然让你感觉声音更靠近了, 那么这个频率就是对的</strong> </p>
-<h3 id="增益衰减"><a href="#增益衰减" class="headerlink" title="增益衰减"></a>增益衰减</h3><p>当我们对特色频率进行衰减后, 通过提升输出音量的方式, 可以将非特色频段提升, 这样下来, 声音各频段得到了有效的均衡</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../73.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../73.html" itemprop="url">混响和延迟效果器的使用诀窍</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-15T11:06:53+08:00">
-                2021-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>对于初学者, 在给音频添加混响时, 可能会出现回声感明显的情况, 即便你的发送量非常少, 比如以下人声:</p>
-<p><audio class src="https://audio.newban.cn/audio/reverb_no_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>明显听到声音尾部的回声, 而我仅仅是发送了7%的混响和3%混响, 量很小啊, 为什么回声这么明显呢</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210915112010995.png" alt="image-20210915112010995"></p>
-<h3 id="混响频率"><a href="#混响频率" class="headerlink" title="混响频率"></a>混响频率</h3><p>原因出在混响频率上, 默认情况下我们将全频段声音都发送给了混响和延迟, 里面包括和浑浊的低频, 和尖刺的高频, 事实上, 对于时间类效果器而言, 低频和高频都是不需要的</p>
-<p>我们只需要将中频发送给它们就行,具体做法是在混响和延迟效果器前面插入一个EQ效果器, 具体参数如下图:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210915112145688.png" alt="image-20210915112145688"></p>
-<ul>
-<li><strong>低切600HZ</strong></li>
-<li><strong>高切10KHZ</strong></li>
-<li><strong>2000HZ衰减2分贝</strong></li>
-</ul>
-<p>此时我们再来听一下加了EQ之后的混响效果:</p>
-<p><audio class src="https://audio.newban.cn/audio/reverb_with_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>之前的尾音回声没有了 声音也更加干净</p>
-<p>此时我们哪怕加大发送量, 也不会觉得混响过量, 我们将混响发送量提升至20% 延迟发送量提升至10% 再来听一下:</p>
-<p><audio class src="https://audio.newban.cn/audio/reverb_with_eq_more.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210915113344138.png" alt="image-20210915113344138"></p>
-<p>是不是感受到了EQ的魅力呢</p>
-<h3 id="鼓组混响EQ"><a href="#鼓组混响EQ" class="headerlink" title="鼓组混响EQ"></a>鼓组混响EQ</h3><p>当然 针对不同类型的乐器EQ的参数肯定不一样, 如果是鼓组, 那么我们可以:</p>
-<ul>
-<li><strong>低切600HZ</strong></li>
-<li><strong>高切2000HZ</strong></li>
-</ul>
-<p>如图:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210915114257217.png" alt="image-20210915114257217"></p>
-<p>我们拿底鼓来做示范, 给底鼓加上30%混响量:</p>
-<p>不加EQ的效果:</p>
-<p><audio class src="https://audio.newban.cn/audio/kick_reverb_no_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>加EQ后的效果:</p>
-<p><audio class src="https://audio.newban.cn/audio/kick_reverb_with_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>是不是特别明显, 低频浑浊感 和高频杂音没有了 底鼓更加干净弹性有力</p>
-<p>大家可以去亲自对比尝试一下哦</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../72.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../72.html" itemprop="url">压缩器使用秘诀 启动时间不能太长 释放时间不能太短</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-15T10:06:53+08:00">
-                2021-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们知道压缩器中决定声音能量的最重要的三个参数是<strong>启动时间、释放时间和压缩比</strong></p>
-<p>其中 <strong>启动时间越短 释放时间越长 压缩比越大 压缩器工作的力度就越狠</strong></p>
-<ul>
-<li><strong>启动时间由长变短 声音则由松散变紧实</strong></li>
-<li><strong>释放时间由短变长 声音则由跳脱变稳定</strong></li>
-<li><strong>压缩比越大 声音越清晰硬朗, 不会忽明忽暗 躲躲闪闪</strong></li>
-</ul>
-<p>那么问题来了, 上面所说的长和短, 到底多长算长, 多短算短呢?</p>
-<h3 id="启动时间"><a href="#启动时间" class="headerlink" title="启动时间"></a>启动时间</h3><p>一般来说 启动时间避免超过30ms, 否则声音会松散不够紧实, 这个理论适用于任何乐器乃至人声, 那么具体启动时间是多少毫秒, 还需根据乐器音色而定</p>
-<p>比如, 底鼓使用30ms的启动时间, 可以获得比较好的紧致饱满效果, 如果你想让你的底鼓听起来像一个点, 那时间还可以更小比如3ms或者其他</p>
-<p>为什么偏偏是30ms呢</p>
-<p><strong>理论根据1:</strong></p>
-<p>看看下图的底鼓，这是放大到毫秒级别后的波形。我们看到丰满的头部在大约 30 毫秒处开始消逝。这也直接告诉了我，应该怎样设置 Attack 时间。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/01-1.jpg" alt></p>
-<p><strong>理论根据2:</strong></p>
-<p>根据<strong>哈斯效应</strong>, 两个声音间隔30ms以内, 人耳分辩不出来, 超过30ms, 则可听出两个声音</p>
-<p>在音头和音头的拐点处, 各自占一个声源点, 如果启动时间超过30ms, 那么两个声音叠加, 就会出现微秒延迟感, 对于音头而言, 就是松散感和浑浊感</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
-<p>同时 <strong>较小的启动时间可以消除音头的浑浊感, 使得声音更加干净</strong>, 我们可以拿底鼓来对比一下:</p>
-<p>50ms的启动时间:</p>
-<p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_big_attack.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>3ms的启动时间:</p>
-<p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_small_attack.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>注意听音头位置, 较小的启动时间音头更加干净</p>
-<p>哈斯效应同样适用于混响和延迟效果器, 比如我们常常使用小于30ms的预延迟时间于房间混响, 起到加厚声音的效果</p>
-<h3 id="释放时间"><a href="#释放时间" class="headerlink" title="释放时间"></a>释放时间</h3><p>一般来说 释放时间高于100ms, 在不破坏声音律动的前提下, 释放时间尽可能越大越好, 但不要超过1200ms</p>
-<p>为什么释放时间要尽可能大</p>
-<p>因为<strong>声音的稳定性 能量 压缩音染和高端感大部分来源于释放时间</strong></p>
-<p>被压缩过的声音就好比是披上了一层华丽的外衣的美少女, 可望不可即</p>
-<p><strong>我们对于声音的追求目标, 就是可望不可即的高端感</strong></p>
-<p>同时 <strong>较大的释放时间可以消除浑浊的尾音, 使得声音更加干净</strong>, 我们同样拿底鼓来对比一下:</p>
-<p>使用50ms的释放时间:</p>
-<p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_small_release.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>使用400ms的释放时间:</p>
-<p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_big_release.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<p>注意对比声音的浑浊感, 很明显, 较小的释放时间可以获得更为宽广的声音, 同时砰砰的浑浊感也很明显, 而较长的释放时间 声音更为干净</p>
-<p>长短释放时间对波形造成的影响, 夸张一点如下图:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210916120249390.png" alt="image-20210916120249390"></p>
-<p>一般来说类似鼓这种高瞬态的声音使用使用长释放时间, 而类似Bass这种适合使用低释放时间, 从而获得饱满的延音</p>
-<h3 id="压缩比"><a href="#压缩比" class="headerlink" title="压缩比"></a>压缩比</h3><p>压缩比越大 声音动态越小, 听的越清晰, 尤其是在众多音轨中, 如果不想声音躲躲闪闪被其他音轨埋没, 那么可以将压缩比调大</p>
-<p> 比如军鼓可以调8:1 甚至10:1</p>
-<p>压缩比的范围选择保持在2:1到10:1之间</p>
-<h3 id="多轨混音"><a href="#多轨混音" class="headerlink" title="多轨混音"></a>多轨混音</h3><p>在进行多轨混音时, 为了使得各音轨声音保持融合性, 大部分音轨在压缩时, 释放时间和压缩比尽量保持一致, 这里说的是大部分, 特殊音轨特殊对待, </p>
-<p>如果使用不同的释放和压缩比, 那么整体声音律动和色彩有可能会杂乱不堪</p>
-<h3 id="总线压缩"><a href="#总线压缩" class="headerlink" title="总线压缩"></a>总线压缩</h3><p>在总线压缩中, 我们需要更多的融合度, 所以不追求太长的释放时间, 一般的套路是使用:</p>
-<ul>
-<li><strong>30ms的启动时间</strong> </li>
-<li><strong>100ms的释放时间</strong></li>
-<li><strong>2:1的压缩比</strong></li>
-<li><strong>一两分贝的压缩量</strong></li>
-</ul>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2041,7 +2018,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">174</span>
+                  <span class="site-state-item-count">178</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2054,7 +2031,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
