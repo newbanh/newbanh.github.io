@@ -1609,6 +1609,290 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../179.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../179.html" itemprop="url">给数字混音升温的六个步骤</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-16T17:31:28+08:00">
+                2015-06-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/wps6.png" alt="img"> </p>
+<p><strong>用受模拟概念启发的失真技术消减数字缩混中的刺耳与冰冷感。</strong> </p>
+<p>现代数字音乐技术中公认的不足之一，就是无法提供人耳所能持续享受的那种模拟音乐的温暖感。</p>
+<p>然而，数字音乐技术的积极面之一，就是它给予使用者无限的模仿可能，无论是晶体管音箱还是磁带模拟……日益进步的数字音乐技术在一步步提供给音响工程师们更多发挥想象力的可能性。 </p>
+<p>在本文中，我们将展示“升温”方法的详细步骤，教你给100%数字混音的作品增添饱和度和失真度，使其总体感觉更接近模拟音乐的温暖感。</p>
+<p>下面看看具体操作步骤：</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/wps6.png" alt="img"> </p>
+<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>这是一首<code>128bpm</code>、<code>house</code>风格的作品，常规混音工作基本完成，但总体如果再增添一些模拟音质的温暖感的话，重量感、音色和紧实度都会有很大改进。所以我们先从底鼓入手。在组里加载一个<code>Native Instruments Driver</code>，将两层底鼓发射到driver中，这一步能给底鼓增添好听的谐频，让两层音轨“粘黏”成一层。然后，在输出处减一点电平以补偿drive所做的提升。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/wps6.png" alt="img"> </p>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>军鼓清脆的高频会给整个混音增添冷色。这里用磁带饱和（tape saturation）来改善。这一步能将军鼓峰值电平减低大致5dB，突出体积感，重量感，还能提升听觉兴奋度。嗵鼓在底鼓间出现，带来重量与律动感，但听上去似乎没有与鼓组融合在一块。<code>FabFilter Saturn</code>的磁带饱和校平了声音，增添谐波的同时使得整个鼓组融为一体。</p>
+<p> <img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/wps6.png" alt="img"> </p>
+<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>电子镲片音色过亮，失真能够移走这种数字音乐特色的刺耳声。这里我们用<code>UAD Moog Filter</code>插件中的<code>drive stage</code>来将镲片“打磨”光滑。这个插件的滤波器也能将高频变得圆滑，我们在mix中将滤波后的信号和干信号混起来用。饱和与失真都会带来一些不需要的轰隆声，所以还要调节一下EQ。频谱分析仪能将失真增添的多余中高频直观展现出来。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/wps6.png" alt="img"> </p>
+<h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>现在用<code>Slate Digital VTM</code>里的磁带饱和将整个鼓组平滑地融为一体。这能自然地切去尖锐的各种峰值。然后用<code>UAD API Vision Channel Strip</code> 的前级增益做一点点过载处理，这一步虽然不能明显听出其中的变化，但的确能轻柔地打磨高频，减少粗糙的瞬变，并将鼓组“粘黏”紧实。这里的两个示波器插件——分别位于drive输入的两端——能让我们直观地看到提升的动态余量和自然平滑的瞬态。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/wps6.png" alt="img"> </p>
+<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>合成器部分似乎太过干净和呆板。所以用<code>iZotope&#39;s Trash 2</code>中极端的波形塑造预设来使它变得狂野起来。干湿两种信号mix起来，得到不失声音特性又兴奋人耳的合成器音色。<code>Kush Audio Pusher</code>的独特饱和处理更使合成器听上去更加悦耳。</p>
+<p><img src="https://raw.staticdn.net/songjianzaina/site_img/master/img/20240406173754.png" alt> </p>
+<h2 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h2><p>最后，在总线上加载<code>UAD Studer A800</code>，模拟磁带的混音过程。这种饱和处理给底鼓和嗵鼓的低频增添自然的谐波和重量感，这比压缩或限幅更能动听地驯服瞬态。现在，切换这几种声音听听，是不是后者更紧实、有力、更有动态呢？</p>
+<p><strong>本文转载自:</strong> 音频教学网</p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../180.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../180.html" itemprop="url">Waves OneKnob官方视频效果对比</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-14T17:31:28+08:00">
+                2015-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Waves OneKnob</code>系列效果器 简单又实用 下面是官方提供的测试效果视频</p>
+<h2 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h2><h3 id="Waves-OneKnob-Brighter"><a href="#Waves-OneKnob-Brighter" class="headerlink" title="Waves OneKnob Brighter"></a>Waves OneKnob Brighter</h3><p>让声音更加明亮 但又不会刺耳</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Brighter.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="Waves-OneKnob-Driver"><a href="#Waves-OneKnob-Driver" class="headerlink" title="Waves OneKnob Driver"></a>Waves OneKnob Driver</h3><p>增加饱和失真效果</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Brighter.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="Waves-OneKnob-Filter"><a href="#Waves-OneKnob-Filter" class="headerlink" title="Waves OneKnob Filter"></a>Waves OneKnob Filter</h3><p>滤波效果</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Filter.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="Waves-OneKnob-Louder"><a href="#Waves-OneKnob-Louder" class="headerlink" title="Waves OneKnob Louder"></a>Waves OneKnob Louder</h3><p>增加声音响度</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Louder.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="Waves-OneKnob-Phatter"><a href="#Waves-OneKnob-Phatter" class="headerlink" title="Waves OneKnob Phatter"></a>Waves OneKnob Phatter</h3><p>提升声音低频</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Phatter.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="Waves-OneKnob-Pressure"><a href="#Waves-OneKnob-Pressure" class="headerlink" title="Waves OneKnob Pressure"></a>Waves OneKnob Pressure</h3><p>一钮压缩 使声音更加平稳</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Pressure.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="Waves-OneKnob-Wetter"><a href="#Waves-OneKnob-Wetter" class="headerlink" title="Waves OneKnob Wetter"></a>Waves OneKnob Wetter</h3><p>给声音添加混响湿度</p>
+<iframe src="https://audio.newban.cn/video/Waves_OneKnob_Wetter.mp4" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="585" height="340" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -1659,7 +1943,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">178</span>
+                  <span class="site-state-item-count">180</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
