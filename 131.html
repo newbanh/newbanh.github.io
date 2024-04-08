@@ -90,24 +90,24 @@
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
 <meta property="og:description" content="前言如果我们想增强REAPER功能, 可以使用脚本或者插件来实现, 它们的存在,使得 REAPER有了无限可能 两者区别在REAPER中，插件（Plugin）和脚本（Script）是两种不同类型的扩展。  插件（Plugin）： 插件是使用C++、EEL2或JS_ReascriptAPI等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与REAPER的内部功能进行更深层次的集成和交互。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163714821.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163800998.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704155445515.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165036596.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165111242.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165353817.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704171327789.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165852852.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170556660.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170301863.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170943505.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704162929036.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/rtk-demo.gif">
-<meta property="og:updated_time" content="2023-07-12T05:49:09.637Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704163714821.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704163800998.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704155445515.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165036596.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165111242.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165353817.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704171327789.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165852852.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704170556660.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704170301863.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704170943505.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704162929036.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/rtk-demo.gif">
+<meta property="og:updated_time" content="2024-04-08T02:24:24.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="REAPER宿主功能增强秘技之脚本和插件">
 <meta name="twitter:description" content="前言如果我们想增强REAPER功能, 可以使用脚本或者插件来实现, 它们的存在,使得 REAPER有了无限可能 两者区别在REAPER中，插件（Plugin）和脚本（Script）是两种不同类型的扩展。  插件（Plugin）： 插件是使用C++、EEL2或JS_ReascriptAPI等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与REAPER的内部功能进行更深层次的集成和交互。">
-<meta name="twitter:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163714821.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704163714821.png">
 
 
 
@@ -376,13 +376,13 @@
 </ol>
 <p>简而言之，插件通常为更复杂的功能提供支持，并以二进制形式提供。而脚本则更注重自动化和定制化，以文本脚本的形式编写。插件通常需要通过安装程序或插件管理器安装，并可以以独立的方式运行，而脚本直接在<code>REAPER</code>中运行和编辑</p>
 <h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><p>以<code>lua</code>脚本为例, 我们可以直接将脚本源文件拷贝至<code>REAPER</code>程序目录下的<code>lua</code>文件夹中:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163714821.png" alt="image-20230704163714821"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704163714821.png" alt="image-20230704163714821"></p>
 <p>然后重启<code>REAPER</code>, 紧接着在<code>Actions List</code>中即可搜索并运行该脚本:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704163800998.png" alt="image-20230704163800998"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704163800998.png" alt="image-20230704163800998"></p>
 <p>是不是非常酷😎</p>
 <h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p><code>SWS Extensions</code>和<code>ReaPack Extensions</code>基本是人手必备的两大插件</p>
 <h3 id="SWS-Extensions"><a href="#SWS-Extensions" class="headerlink" title="SWS Extensions"></a>SWS Extensions</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><code>SWS</code> 是 <code>REAPER</code> 的扩展模块，安装后可以实现轨道、标签、区块自动着色等丰富的功能。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704155445515.png" alt="image-20230704155445515"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704155445515.png" alt="image-20230704155445515"></p>
 <p>官网: <a href="https://www.sws-extension.org/" target="_blank" rel="noopener">点击进入</a></p>
 <h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p><strong>该插件包含的功能有：</strong></p>
 <ul>
@@ -414,26 +414,26 @@
 <li><p>进入官网下载安装包</p>
 </li>
 <li><p>打开资源文件存放目录</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165036596.png" alt="image-20230704165036596"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165036596.png" alt="image-20230704165036596"></p>
 </li>
 <li><p>将插件拷贝至<code>UserPlugins</code>目录下</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165111242.png" alt="image-20230704165111242"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165111242.png" alt="image-20230704165111242"></p>
 </li>
 <li><p>重启<code>REAPER</code>, 菜单栏出现<code>Extensions</code>选项, 即可使用相应的<code>sws</code>扩展功能</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165353817.png" alt="image-20230704165353817"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165353817.png" alt="image-20230704165353817"></p>
 </li>
 </ol>
 <h3 id="ReaPack"><a href="#ReaPack" class="headerlink" title="ReaPack"></a>ReaPack</h3><p>如果我们想使用别人已经写好的脚本, 或者将自己写的脚本共享给其他用户使用, 则可以用<code>ReaPack</code>来实现</p>
 <h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p><code>ReaPack</code>则是一个插件管理器，它允许用户浏览、下载和安装第三方开发者创建并共享的<code>REAPER</code>脚本、扩展和主题等。<code>ReaPack</code>可以方便地探索和安装来自全球<code>REAPER</code>社区的丰富资源</p>
 <h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4><ol>
 <li><p>进入<code>ReaPack</code>官网, 下载对应的插件包</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704171327789.png" alt="image-20230704171327789"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704171327789.png" alt="image-20230704171327789"></p>
 <p>官网: <a href="https://reapack.com/" target="_blank" rel="noopener">点击进入</a></p>
 </li>
 <li><p>然后将下载的插件文件拷贝至<code>REAPER</code>资源目录下的<code>UserPlugins</code>文件夹下</p>
 </li>
 <li><p>重启<code>REAPER</code>后即可从<code>Extensions</code>菜单项找到<code>ReaPack</code>入口</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704165852852.png" alt="image-20230704165852852"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704165852852.png" alt="image-20230704165852852"></p>
 </li>
 </ol>
 <p>由于<code>ReaPack</code>仓库默认使用的是<code>Github</code>的源, 国内用户访问相对较慢, 为了方便使用, 我们可以使用第三方镜像源</p>
@@ -612,13 +612,13 @@
 </tr>
 </tbody></table>
 <p>点击<code>import repositories</code>, 将以下地址拷贝到编辑窗, 并替换原有的仓库地址:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170556660.png" alt="image-20230704170556660"></p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170301863.png" alt="image-20230704170301863"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704170556660.png" alt="image-20230704170556660"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704170301863.png" alt="image-20230704170301863"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/acendan/reascripts/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/me2beats/reapack/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ershov/reaper64/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml</span><br><span class="line">https://reapertoolkit.dev/index.xml</span><br></pre></td></tr></table></figure>
 
 <p>替换完后,点击<code>browse packages</code> 即可查看已添加仓库中所有的脚本</p>
 <p>然后选择想要的脚本进行安装:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704170943505.png" alt="image-20230704170943505"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704170943505.png" alt="image-20230704170943505"></p>
 <p>安装完后就能直接使用了</p>
 <h4 id="其他一些好用的ReaPack脚本"><a href="#其他一些好用的ReaPack脚本" class="headerlink" title="其他一些好用的ReaPack脚本"></a>其他一些好用的ReaPack脚本</h4><ol>
 <li><p><strong>kawa</strong></p>
@@ -634,12 +634,12 @@
 
 
 <p>   将地址添加进入<code>ReaPack</code>仓库列表中后即可搜索到<code>kawa</code>脚本:</p>
-<p>   <img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20230704162929036.png" alt="image-20230704162929036"></p>
+<p>   <img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230704162929036.png" alt="image-20230704162929036"></p>
 <p>   官网: <a href="https://www.kawa.works/" target="_blank" rel="noopener">点击进入</a></p>
 <ol start="2">
 <li><p><strong>reapertoolkit</strong></p>
 <p>一个 <code>GUI</code>开发工具包, 有兴趣的可以查看官方文档介绍</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/rtk-demo.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/rtk-demo.gif" alt="img"></p>
 <p>官方文档: <a href="https://reapertoolkit.dev/index.htm" target="_blank" rel="noopener">点击进入</a></p>
 <p>论坛帖子: <a href="https://forums.cockos.com/showthread.php?p=2492184" target="_blank" rel="noopener">点击进入</a></p>
 </li>
@@ -777,7 +777,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">180</span>
+                  <span class="site-state-item-count">182</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

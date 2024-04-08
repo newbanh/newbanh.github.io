@@ -90,14 +90,14 @@
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
 <meta property="og:description" content="前言我们知道压缩器中决定声音能量的最重要的三个参数是启动时间、释放时间和压缩比 其中 启动时间越短 释放时间越长 压缩比越大 压缩器工作的力度就越狠  启动时间由长变短 声音则由松散变紧实 释放时间由短变长 声音则由跳脱变稳定 压缩比越大 声音越清晰硬朗, 不会忽明忽暗 躲躲闪闪  那么问题来了, 上面所说的长和短, 到底多长算长, 多短算短呢? 启动时间一般来说 启动时间避免超过30ms, 否则">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/01-1.jpg">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210909120047851.png">
-<meta property="og:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210916120249390.png">
-<meta property="og:updated_time" content="2023-07-11T02:28:07.746Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/01-1.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210916120249390.png">
+<meta property="og:updated_time" content="2024-04-08T02:24:24.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="压缩器使用秘诀 启动时间不能太长 释放时间不能太短">
 <meta name="twitter:description" content="前言我们知道压缩器中决定声音能量的最重要的三个参数是启动时间、释放时间和压缩比 其中 启动时间越短 释放时间越长 压缩比越大 压缩器工作的力度就越狠  启动时间由长变短 声音则由松散变紧实 释放时间由短变长 声音则由跳脱变稳定 压缩比越大 声音越清晰硬朗, 不会忽明忽暗 躲躲闪闪  那么问题来了, 上面所说的长和短, 到底多长算长, 多短算短呢? 启动时间一般来说 启动时间避免超过30ms, 否则">
-<meta name="twitter:image" content="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/01-1.jpg">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/01-1.jpg">
 
 
 
@@ -361,11 +361,11 @@
 <p>为什么偏偏是30ms呢</p>
 <p><strong>理论根据1:</strong></p>
 <p>看看下图的底鼓，这是放大到毫秒级别后的波形。我们看到丰满的头部在大约 30 毫秒处开始消逝。这也直接告诉了我，应该怎样设置 Attack 时间。</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/01-1.jpg" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/01-1.jpg" alt></p>
 <p><strong>理论根据2:</strong></p>
 <p>根据<strong>哈斯效应</strong>, 两个声音间隔30ms以内, 人耳分辩不出来, 超过30ms, 则可听出两个声音</p>
 <p>在音头和音头的拐点处, 各自占一个声源点, 如果启动时间超过30ms, 那么两个声音叠加, 就会出现微秒延迟感, 对于音头而言, 就是松散感和浑浊感</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
 <p>同时 <strong>较小的启动时间可以消除音头的浑浊感, 使得声音更加干净</strong>, 我们可以拿底鼓来对比一下:</p>
 <p>50ms的启动时间:</p>
 <p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_big_attack.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
@@ -385,7 +385,7 @@
 <p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_big_release.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>注意对比声音的浑浊感, 很明显, 较小的释放时间可以获得更为宽广的声音, 同时砰砰的浑浊感也很明显, 而较长的释放时间 声音更为干净</p>
 <p>长短释放时间对波形造成的影响, 夸张一点如下图:</p>
-<p><img src="https://raw.staticdn.net/songjianzaina/lunanzb_img/master/img/image-20210916120249390.png" alt="image-20210916120249390"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210916120249390.png" alt="image-20210916120249390"></p>
 <p>一般来说类似鼓这种高瞬态的声音使用使用长释放时间, 而类似Bass这种适合使用低释放时间, 从而获得饱满的延音</p>
 <h3 id="压缩比"><a href="#压缩比" class="headerlink" title="压缩比"></a>压缩比</h3><p>压缩比越大 声音动态越小, 听的越清晰, 尤其是在众多音轨中, 如果不想声音躲躲闪闪被其他音轨埋没, 那么可以将压缩比调大</p>
 <p> 比如军鼓可以调8:1 甚至10:1</p>
@@ -532,7 +532,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">180</span>
+                  <span class="site-state-item-count">182</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
