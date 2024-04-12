@@ -273,6 +273,159 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../156.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../156.html" itemprop="url">关于kontakt音源更换盘符后工程提示找不到音源</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-08-10T10:15:53+08:00">
+                2023-08-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="场景复现"><a href="#场景复现" class="headerlink" title="场景复现"></a>场景复现</h2><p>我有两个移动硬盘 一个盘符名为<code>NVME</code> 另一个盘符名为<code>FAT</code>, 里面装了相同的<code>kontakt</code>音源, 某天<code>NVME</code>这个盘突然坏了  我只能使用另外一个FAT来替代 但是两个移动硬盘的盘符不一样, 这导致工程提示找不到音源</p>
+<p>那有没有优雅的解决方案来避免一个一个手动修复呢</p>
+<h2 id="解决方案一"><a href="#解决方案一" class="headerlink" title="解决方案一"></a>解决方案一</h2><p>既然盘符不一致, 那我们只需将<code>FAT</code>这个盘名称改成<code>NVME</code>即可, 当然 有的系统可能不支持修改盘符名称, 那可以使用下面的第二种方案</p>
+<h2 id="解决方案二"><a href="#解决方案二" class="headerlink" title="解决方案二"></a>解决方案二</h2><p>我们可以使用符号链接（Symbolic Link）来解决这个问题。</p>
+<p>符号链接是一种特殊类型的文件，它可以将一个文件或文件夹链接到另一个位置。我们可以将一个移动硬盘的盘符链接到另一个移动硬盘的盘符，以使工程能够找到音源。</p>
+<p>下面是在<code>Windows</code>和<code>Mac</code>上创建符号链接的步骤：</p>
+<p><strong>Windows:</strong></p>
+<ol>
+<li><p>打开命令提示符<code>（CMD）</code>或者<code>PowerShell</code>。</p>
+</li>
+<li><p>使用<code>mklink</code>命令来创建符号链接。假设你的第一个移动硬盘的盘符是<code>D:</code>，第二个移动硬盘的盘符是<code>E:</code>，音源的位置是<code>D:\音源</code>，则可以使用以下命令创建符号链接：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink /J &quot;E:\音源&quot; &quot;D:\音源&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这将在E盘创建一个名为<code>音源</code>的文件夹的符号链接，指向D盘的”音源”文件夹。</p>
+</li>
+</ol>
+<p><strong>Mac:</strong></p>
+<ol>
+<li><p>打开终端。</p>
+</li>
+<li><p>使用<code>ln -s</code>命令来创建符号链接, 如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s &quot;/Volumes/FAT/Sound Source&quot; &quot;/Volumes/NVME/Sound Source&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这相当于是给<code>/Volumes/FAT/Sound Source</code>取了个别名, 名为 <code>/Volumes/NVME/Sound Source</code>, 当工程中的音源搜索<code>NVME/Sound Source</code>盘时, 会自动指向到<code>FAT/Sound Source</code></p>
+</li>
+</ol>
+<p>通过这个创建软链接的方式，工程将能够在第二个移动硬盘上找到音源，而无需手动修复每个工程文件。节省了我们大量的宝贵时间</p>
+<p>如果我们想要删除软连接 可以使用<code>rm</code>命令, 如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm &quot;/Volumes/NVME/Sound Source&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>关于<code>kontakt</code>音源, 有条件的话建议使用多个硬盘备份, 避免出现其中某个硬盘宕机导致工作中断的情况</p>
+<p>我的那个移动硬盘是因为突然断电出现了故障 导致电脑无法识别, 看来硬盘的好坏从断电保护这一块能测试出一二来, 好的硬盘不至于如此脆弱</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../155.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1702,166 +1855,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../146.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../146.html" itemprop="url">混音中提升音轨融合度之均衡处理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-12T10:05:53+08:00">
-                2023-07-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>混音过程中影响融合度的因素有很多, 之前给大家介绍过共同元素理论, 具体可查阅之前文章:《<a href="https://audio.newban.cn/109.html">混音中各音轨共同的元素越多融合度越高</a>》</p>
-<p>今天 我们主要来研究讨论一下均衡器对声音融合度的影响</p>
-<p>从个人经验上, 主要分为以下几个点:</p>
-<ul>
-<li>衰减特色频率</li>
-<li>提升某个频段达到对其他乐器的贴合</li>
-<li>多个音轨间使用同类型的的均衡效果器</li>
-</ul>
-<h2 id="特色频率衰减"><a href="#特色频率衰减" class="headerlink" title="特色频率衰减"></a>特色频率衰减</h2><p>衰减声音的特色频段能让声音听起来更温和, 虽然少了一分刺激感, 但是和其它音轨更加的融合了</p>
-<p>这个世界 大部分都是不起眼的普通人, 特立独行且耀眼的终归是少数, 太过耀眼自然很难融入群众</p>
-<p>混音也是同样的道理, 衰减声音中让你觉得兴奋刺激的频段, 这样能使整体更加地平衡</p>
-<p>除此之外, 声音中如果存在一些让人不舒服的共振频率, 也需要去除, 这能让声音听起来更加清晰有质感, 具体方法是通过扫频或者<code>solo</code>某个频率点, 找出腔体感特别明显以及太过刺耳的频率点并衰减它</p>
-<p>衰减频率这一步骤建议使用窄q值的数字均衡器, 比如<code>waves Q</code>系列插件或者肥波插件, 它们能精准地控制住频率</p>
-<h2 id="提升频段"><a href="#提升频段" class="headerlink" title="提升频段"></a>提升频段</h2><p>提升频段, 建议使用宽Q值的建模均衡器, 主要用来调整声音的色彩, 让其变得更暗还是更亮, 从而实现和其它音轨的贴合</p>
-<p>同时 建模EQ的染色能给声音提升质感, 增加一点点可望不可即的感觉</p>
-<p>具体操作方法是, 通过宽Q值的扫频方式, 一边扫, 一边仔细听需要进行融合的音轨, 如果是扫人声那就听伴奏. 当我们扫到某个频段, 伴奏突然变得更清晰了, 那么这个点差不多就是融合点, 提升它能让声音更加融合</p>
-<p>有时候, 你可能会发现不止一个融合点, 此时我们就需要听当前扫频的声音音色, 选择一个你觉得好听的就行, 这样 既保证了融合度, 又不至于声音变得难听</p>
-<h4 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h4><p>我个人利用频谱分析仪分析两个音轨后得出粗浅结论:</p>
-<p><strong>当两个音轨频谱趋于一致的时候, 融合度能得到大幅提升</strong></p>
-<p>比如有两个音轨, 一个高低频很饱满, 另一个低频足够 但是高频不足, 那么这两个音轨合在一块的听感就是一个很亮, 一个很暗, 虽然声音不打架了, 但两者分离感很明显, 它们就犹如不同世界的两个人,很难融合  </p>
-<p>此时我们将高频不足的那个声音做一个高频提升后, 就能明显感觉到融合度的提升</p>
-<p>我认为这个原理也可以归纳到共同元素理论当中</p>
-<h2 id="使用同类型的的均衡效果器"><a href="#使用同类型的的均衡效果器" class="headerlink" title="使用同类型的的均衡效果器"></a>使用同类型的的均衡效果器</h2><p>这一点其实就是依照共同元素理论了, 同类型的效果器染色一致, 能有效增加融合度</p>
-<h2 id="效果链"><a href="#效果链" class="headerlink" title="效果链"></a>效果链</h2><p>依照上面的所说, 我在对声音进行均衡处理时, 通常依照以下顺序:</p>
-<ul>
-<li>减法EQ </li>
-<li>加法EQ</li>
-<li>压缩器</li>
-<li>….</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文中, 关于关于均衡器对提升融合度, 主要分为以下两大方面:</p>
-<ol>
-<li>增加共同元素: 同类型效果器, 频谱趋于一致….等等</li>
-<li>衰减特色频率: 平凡但不平庸</li>
-</ol>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
-<li>我们在扫频时不建议将音量提的过高, 否则你会发现到处都是不舒服的频率, 一般不超过12db</li>
-<li>衰减的点不要太多, 过多反而会适得其反, 一般来说 这种情况的发生可能是操作方法不对</li>
-</ol>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1912,7 +1905,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">182</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

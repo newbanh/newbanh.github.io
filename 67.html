@@ -90,19 +90,19 @@
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
 <meta property="og:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909112909519.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909112834741.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg">
+<meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909120047851.png">
+<meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909120047851.png">
+<meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909112909519.png">
+<meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909112834741.png">
+<meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg">
 <meta property="og:image" content="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230720162049267.png">
 <meta property="og:image" content="https://gitee.com/songjianzaina/site_img/raw/master/img/20230720162317.png">
 <meta property="og:image" content="https://gitee.com/songjianzaina/site_img/raw/master/img/20230720162412.png">
-<meta property="og:updated_time" content="2024-04-08T14:00:52.178Z">
+<meta property="og:updated_time" content="2024-04-08T14:16:19.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="压缩器各个参数的深入理解">
 <meta name="twitter:description" content="前言关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:  阈值: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作 压缩比: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩 启动时间: 压缩器开始工作后, 压缩器花多长时间达到设定的压缩比(因为压缩器工作状态是随着音平动态变化的, 压缩比达成">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png">
+<meta name="twitter:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909120047851.png">
 
 
 
@@ -398,12 +398,12 @@
 <p>至此, 压缩器的使用方法已经介绍完毕</p>
 <p>如果你还想在技术层面进一步了解压缩器, 我们可以接着来聊聊</p>
 <h3 id="压缩器模型理解"><a href="#压缩器模型理解" class="headerlink" title="压缩器模型理解"></a>压缩器模型理解</h3><p>首先我们来看一下启动时间和释放时间对音频波形造成的变化:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
 <p>启动时间和释放时间相当于是两把雕刻刀, 对波形进行雕刻, 启动时间雕刻出尖角, 释放时间雕刻出钝角, 形状大小不一样的尖角和钝角, 对声音造成的效果也不一样</p>
 <p>我们知道, 同一款压缩器, 相同的启动释放时间, 雕刻出来的角形状是一样的, 而一样形状的角给声音带来的效果理论上应该也是一样, 那么我们是否可以得出一个结论:</p>
 <p><strong>同一款压缩器下, 即便作用于不同的歌曲, 只要启动释放时间一样, 那么产生的效果也一样</strong></p>
 <p>这个结论成立的最主要前提是 需要保证<strong>角的完整性</strong>,   举个例子, 比如一首慢歌, 使用10ms的启动时间和100ms的, 产生的角形状是这样:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
 <p>同样的参数运用在一首快歌上, 可能由于速度太快, 导致尖角还未完全成型就要开始释放, 而钝角还未成型有要开始启动, 音符密集的地方, 锐角还可能惨遭钝化, 那这种情况下, 同样的参数还能产生一样的效果吗, 肯定是不一样的, 角形状已经发生了改变</p>
 <p>所以同样的启动释放参数, 运用到不同风格的歌曲上产生的效果也不一样, 即便是同样速度的歌曲, 由于歌曲节奏的不一样, 也会导致效果的不同, 只能说速度相同的歌曲套同样的参数 效果打折会小一些</p>
 <p>那么我们是否可以找到那些 经典混音的案例工程, 把它们每个乐器的压缩启动释放参数记录下来, 等日后混相同速度歌曲的时候直接套用, 这种方式似乎也是可行的, 也许不完美, 但效果也不错</p>
@@ -422,12 +422,12 @@
 <h3 id="疑问解答"><a href="#疑问解答" class="headerlink" title="疑问解答"></a>疑问解答</h3><p>有的小伙伴在使用压缩器的时候, 感觉到了声音的明亮度改变, 认为压缩器可以改变声音的频率, 具有EQ的效果, 这里给大家指正一下:</p>
 <p>首先 <strong>压缩器只能控制音量的，不能改变声音的频率</strong>,而我们感觉到的类似频率变化的效果, 实际上是<strong>音频相邻时间之间整体频段音量比例的变化</strong>造成的, 什么意思呢, 举个例子:</p>
 <p>比如在第一毫秒时,  压缩器还没开始工作, 此刻音频的频率曲线是这样:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909112909519.png" alt="image-20210909112909519"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909112909519.png" alt="image-20210909112909519"></p>
 <p>第2毫秒开始, 压缩器开始工作, 此刻的整体频段音量被往下压, 假设压了2db,(这个值取决于压缩比和启动时间), 那么整体曲线往下拉了2db, 如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210909112834741.png" alt="image-20210909112834741"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909112834741.png" alt="image-20210909112834741"></p>
 <p>第三毫秒下拉的幅度更大, 如果第四毫秒开始, 压缩器开始停止工作, 那么接下来下拉的幅度逐渐减少, 直至停止下拉,此时压缩器也停止工作</p>
 <p>形象图如下:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
 <p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
 <p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
 <h3 id="从听感角度分析启动和释放时间对声音的影响"><a href="#从听感角度分析启动和释放时间对声音的影响" class="headerlink" title="从听感角度分析启动和释放时间对声音的影响"></a>从听感角度分析启动和释放时间对声音的影响</h3><p>抛开理论不谈, 单单从听感分析, 我们可能会发现以下结论:</p>
@@ -578,7 +578,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">182</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

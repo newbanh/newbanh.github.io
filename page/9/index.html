@@ -273,6 +273,181 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../86.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../86.html" itemprop="url">常用三大类型混响的介绍和使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-10-11T11:56:53+08:00">
+                2021-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在混音中, 我们常用到的混响类型主要有以下三种:</p>
+<ul>
+<li>板式混响</li>
+<li>房间混响</li>
+<li>厅堂混响</li>
+</ul>
+<p>从字面意思上, 我们可以发现, <strong>它们的空间大小时依次递增的, 板式最小, 厅堂最大</strong></p>
+<p>根据我们的生活经验也能知道, 小空间的板式声音回荡的延音很短, 而大空间的厅堂延音很大, 也就是<strong>空间越大混响持续时间越长</strong>,</p>
+<p>同时由于声音传播距离的不同,空<strong>间越大干声和反射声间隔时间越长, 也就是预延迟时间越长</strong></p>
+<p>除了时间的不同外, 还有就是频率特性, 这和场地的材质有关, 我们知道声音在传播过程中高频相比低频更容易被物体吸收掉, 由此可知:</p>
+<ul>
+<li><p><strong>板式空间</strong>: 是由光滑的金属板搭建而成, 声音被壁面吸收的少 反射回来的声音中高频偏多</p>
+</li>
+<li><p><strong>厅堂空间</strong>: 大厅 音乐剧场这种, 声音被壁面吸收的多 高频损耗大 反射回来的声音中低频偏多</p>
+</li>
+<li><p><strong>房间空间</strong>: 也就是卧室房间, 其特性介于板式和厅堂两者之间</p>
+</li>
+</ul>
+<h3 id="特性总结"><a href="#特性总结" class="headerlink" title="特性总结"></a>特性总结</h3><ul>
+<li><strong>板式混响</strong>: 预延迟和混响时间短, 高频衰减少, 反射声中高频居多, 声音宽度和深度不大 , <strong>主要用于声音润色 提升质感</strong></li>
+</ul>
+<ul>
+<li><strong>厅堂混响</strong>: 预延迟和混响时间长,高频衰减多, 反射声 中低频居多, 声音宽度和深度大, <strong>主要用于增加声音尾音和体积 提升优美感</strong></li>
+</ul>
+<ul>
+<li><strong>房间混响</strong>: 预延迟和混响时间适中, 高频衰减适中 反射声中频居多, 声音宽度和深度适中, 对声音的色彩改变较少, 主<strong>要用于增加声音厚度, 以及空间纵深设计(不用厅堂是因为体积太大, 容易糊)</strong></li>
+</ul>
+<h3 id="人声实战"><a href="#人声实战" class="headerlink" title="人声实战"></a>人声实战</h3><p>给人声加混响时, 常规操作是添加一个板式混响让声音更加华丽, 然后再添加一个厅堂混响, 增添延音使得声音更加优美动听</p>
+<p>学过钢琴的朋友都知道, 钢琴音色一旦添加延音后, 立马就变得不一样了, 这个厅堂混响就好比是一个延音踏板</p>
+<p>我们来听一下:</p>
+<p>人声不加混响版本:</p>
+<p><audio class src="https://audio.newban.cn/audio/demo_no_plate_hall_reverb.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<p>人声加板式和厅堂混响版本:</p>
+<p><audio class src="https://audio.newban.cn/audio/demo_plate_hall_reverb.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
+<h3 id="混响模拟"><a href="#混响模拟" class="headerlink" title="混响模拟"></a>混响模拟</h3><p>根据这三种类型混响的特性, 我们可以通过相应的参数组合来模拟不同类型混响:</p>
+<p><strong>板式混响:</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011114735141.png" alt="image-20211011114735141"></p>
+<p>如果是鼓组, EQ切除600HZ以下, 2000HZ以上</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011141214105.png" alt="image-20211011141214105"></p>
+<p>板式混响预延迟时间避免为0 否则相位抵消</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011110807828.png" alt="image-20211011110807828"></p>
+<p><strong>厅堂混响:</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011115536542.png" alt="image-20211011115536542"></p>
+<p>厅堂混响的预延迟时间需要大于<code>30ms</code></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011123400367.png" alt="image-20211011123400367"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011110749879.png" alt="image-20211011110749879"></p>
+<p><strong>房间混响:</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011115636366.png" alt="image-20211011115636366"></p>
+<p>房间混响预延迟之间在<code>10~30ms</code>之间:</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011124106405.png" alt="image-20211011124106405"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011115617052.png" alt="image-20211011115617052"></p>
+<p>上面<code>Reverb</code>效果器中, <code>Size</code>表示混响时间(有的用Decay Time表示), <code>Damp</code>表示高频衰减率, <code>Width</code>表示混响宽度</p>
+<h3 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h3><p>我个人的混响做法是, 用板式和厅堂混响给单轨做音色, 比如人声 钢琴 吉他等</p>
+<p>在总线上 使用房间混响, 给所有乐器添加一个少量空间, 使整体声音更加融合</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../85.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -682,11 +857,11 @@
 <p>我们会发现, 使用并行压缩后, 声音不但保持了柔和, 同时清晰度和饱满度也提升了不少</p>
 <p>这样听众在听人声的时候就不会那么费劲了</p>
 <h3 id="压缩参数参考"><a href="#压缩参数参考" class="headerlink" title="压缩参数参考"></a>压缩参数参考</h3><p>原人声轨压缩参数:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20211008153841830.png" alt="image-20211008153841830"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211008153841830.png" alt="image-20211008153841830"></p>
 <p>并行轨压缩参数:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20211008153917258.png" alt="image-20211008153917258"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211008153917258.png" alt="image-20211008153917258"></p>
 <p>仅仅是加大了压缩比 上调了压缩阈值, 其他参数不变, 混合少量并行轨声音即可:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20211008154104239.png" alt="image-20211008154104239"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211008154104239.png" alt="image-20211008154104239"></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -1491,12 +1666,12 @@
           
             <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这个问题估计大部分混音初学者都思考过, 今天咱们从效果器原理的角度来剖析一下, 看看谁先谁后</p>
 <h3 id="压缩器"><a href="#压缩器" class="headerlink" title="压缩器"></a>压缩器</h3><p>我们知道, 压缩器实际上是对音量的调控, 而且是针对整个频段, 当整个频段中某一个频率点超出阈值时, 所有频段的音量都会往下压:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210916104906609.png" alt="image-20210916104906609"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210916104906609.png" alt="image-20210916104906609"></p>
 <p>由于特色频率太突出, 导致压缩触发频繁, 其他音量偏低的频段也遭到无情碾压, 伤及无辜</p>
 <p>不仅如此, 时间线内的声音也受到波及, 哪怕他们不存在特色频率:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210916112530360.png" alt="image-20210916112530360"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210916112530360.png" alt="image-20210916112530360"></p>
 <p>这就好比是一粒老鼠屎坏了一锅粥, 如果我们在压缩之前将这个特色频率进行削减处理, 那么就可以减少压缩的次数, 减少波及, 同时突出同一时间内低电平频段声音, 使得整体音频更加平均饱满:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210916105743975.png" alt="image-20210916105743975"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210916105743975.png" alt="image-20210916105743975"></p>
 <p>到这, 相比大家心中已经有了答案</p>
 <p><strong>针对特色频率我们应该尽可能地在压缩之前将它处理掉, 而不是放在压缩之后, 有条件的话最好使用动态EQ进行精细化修剪</strong></p>
 <p>倘若是使用EQ对声音进行明暗色彩调整, 那么可前可后</p>
@@ -1626,11 +1801,11 @@
           
             <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>大部分宿主只支持Windows和Mac平台, 但是也有少部分人存在用Linux平台制作音乐的需求</p>
 <p>以下几款宿主支持Windows、MAC和Linux三大平台, 并且是完全免费的</p>
-<h3 id="Audacity"><a href="#Audacity" class="headerlink" title="Audacity"></a>Audacity</h3><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/01_fig_1_free_daws.jpg" alt="img"></p>
+<h3 id="Audacity"><a href="#Audacity" class="headerlink" title="Audacity"></a>Audacity</h3><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/01_fig_1_free_daws.jpg" alt="img"></p>
 <p>I’ll start off with Audacity, a free open-source audio editor. Audacity has been around for many years and is very popular, with a loyal base of users. It’s primarily an audio editor, providing audio recording, editing and processing, including a number of advanced processing tools like audio repair and time/pitch shift. However, Audacity is different than most of the DAWs in this survey in two major ways. First off, there’s no MIDI to speak of—while you can have MIDI Note tracks, there are no virtual instruments or any of the usual MIDI capabilities like quantization. And the second difference is that all editing and processing in Audacity is destructive—tweaks made to the audio permanently change the original files.</p>
 <p>This can make for a very different workflow for basic audio editing than with other DAWs, and the lack of realtime plug-ins and instruments makes Audacity very limited for music and mixing applications. Still, it’s an excellent tool for recording and editing voice and dialog, like for podcasts; simple musical projects, like singer-songwriter demos, and mastering finished mixes. There’s an active online community, and the program is stable and easy to work in, as long as you’re comfortable with its limits.</p>
 <p><strong>Name:</strong> Audacity<br><strong>Maker:</strong> Audacity Team<br><strong>Platform(s):</strong> Mac, Windows, Linux<br><strong>Features:</strong> Audio recording/editing/processing<br><strong>Pros:</strong> Excellent audio editing; advanced processing<br><strong>Cons:</strong> No MIDI; only destructive editing/processing<br><strong>URL:</strong> <a href="https://www.audacityteam.org/" target="_blank" rel="noopener">https://www.audacityteam.org</a></p>
-<h3 id="Tracktion-T7"><a href="#Tracktion-T7" class="headerlink" title="Tracktion T7"></a>Tracktion T7</h3><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/02_fig_2_free_daws.jpg" alt="img"></p>
+<h3 id="Tracktion-T7"><a href="#Tracktion-T7" class="headerlink" title="Tracktion T7"></a>Tracktion T7</h3><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/02_fig_2_free_daws.jpg" alt="img"></p>
 <p>For a while Tracktion was distributed by Mackie, but currently it’s in the hands of its original developer. Tracktion T7 is the current version of this audio/MIDI production DAW. It offers a single-window design, with full recording and editing capabilities for audio and MIDI, and included plug-ins as well as compatibility with AU and VST plug-in formats. Advanced features include time-shifting and Clip effects—the latter is an option to apply effects to individual audio Clips, as an alternative to track-based mix processing (similar to Pro Tools’ AudioSuite processing). While it may not be as well-known as some of the other entries in this survey, Tracktion is a worthy inclusion to any free-DAW list.</p>
 <p><strong>Name:</strong> Tracktion T7<br><strong>Maker:</strong> Tracktion<br><strong>Platform(s):</strong> Mac, Windows, Linux<br><strong>Features:</strong> Audio &amp; MIDI recording/editing/processing/mixing<br><strong>Pros:</strong> Full-featured audio &amp; MIDI rec/editing; Clip Effects<br><strong>Cons:</strong> Horizontal mixer display not as clear as typcial layouts<br><strong>URL:</strong> <a href="https://www.tracktion.com/products/t7-daw" target="_blank" rel="noopener">https://www.tracktion.com/products/t7-daw</a></p>
 <p>更多免费宿主, 可参考《<a href="https://ask.audio/articles/the-best-free-daws-in-2019" target="_blank" rel="noopener">The Best Free DAWs in 2019</a>》</p>
@@ -1759,203 +1934,26 @@
 <p>推荐几个免费的在线母带处理工具</p>
 <h3 id="BandLab"><a href="#BandLab" class="headerlink" title="BandLab"></a>BandLab</h3><p>官网地址: <a href="https://www.bandlab.com/mastering" target="_blank" rel="noopener">点击进入</a></p>
 <p>直接上传音频, 有四种母带效果可选:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210915170404502.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915170404502.png" alt></p>
 <h3 id="Masteringbox"><a href="#Masteringbox" class="headerlink" title="Masteringbox"></a>Masteringbox</h3><p><code>mp3</code>和<code>m4a</code>格式免费</p>
 <p>官网地址: <a href="https://www.masteringbox.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210915171802601.png" alt="image-20210915171802601"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915171802601.png" alt="image-20210915171802601"></p>
 <h3 id="finalizer"><a href="#finalizer" class="headerlink" title="finalizer"></a>finalizer</h3><p>支持在线母带分析</p>
 <p>官网:<a href="https://finalizer.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210915172118341.png" alt="image-20210915172118341"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915172118341.png" alt="image-20210915172118341"></p>
 <h3 id="musicgateway"><a href="#musicgateway" class="headerlink" title="musicgateway"></a>musicgateway</h3><p>官网 : <a href="https://www.musicgateway.com/free-online-mastering" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230403154443469.png" alt="image-20230403154443469"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403154443469.png" alt="image-20230403154443469"></p>
 <h3 id="emastered"><a href="#emastered" class="headerlink" title="emastered"></a>emastered</h3><p>官网: <a href="https://emastered.com" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230403154748147.png" alt="image-20230403154748147"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403154748147.png" alt="image-20230403154748147"></p>
 <p>当然 还有一些收费的,比如下面这几个:</p>
 <h3 id="landr"><a href="#landr" class="headerlink" title="landr"></a>landr</h3><p>官网: <a href="https://app.landr.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20210915171452765.png" alt="image-20210915171452765"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915171452765.png" alt="image-20210915171452765"></p>
 <h3 id="majordecibel"><a href="#majordecibel" class="headerlink" title="majordecibel"></a>majordecibel</h3><p>官网: <a href="https://majordecibel.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230403154930397.png" alt="image-20230403154930397"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403154930397.png" alt="image-20230403154930397"></p>
 <h3 id="cloudbounce"><a href="#cloudbounce" class="headerlink" title="cloudbounce"></a>cloudbounce</h3><p>官网: <a href="https://www.cloudbounce.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230403155119097.png" alt="image-20230403155119097"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403155119097.png" alt="image-20230403155119097"></p>
 <h3 id="onlinemasteringstudio"><a href="#onlinemasteringstudio" class="headerlink" title="onlinemasteringstudio"></a>onlinemasteringstudio</h3><p>官网: <a href="https://www.onlinemasteringstudio.eu/" target="_blank" rel="noopener">点击下载</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230403155503502.png" alt="image-20230403155503502"></p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../76.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../76.html" itemprop="url">在手机上进行编曲和混音</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-09-15T17:06:53+08:00">
-                2021-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>想在手机上进行编曲, 软件有不少, 比如安卓平台的<strong>随身乐队</strong>, IOS平台的<strong>库乐队</strong>, 都很好用, 但是想要兼顾混音除了库乐队外 能用得上的却不多 尤其是安卓平台</p>
-<p>那么今天就给大家介绍几款可以方便我们兼顾混音的音乐制作软件</p>
-<h3 id="BandLab"><a href="#BandLab" class="headerlink" title="BandLab"></a>BandLab</h3><p>软件完全免费 支持IOS和安卓</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.bandlab.bandlab&referrer=utm_source%3Dwww.bandlab.com%26utm_medium%3Dbanner%26utm_content%3Don%2520the%2520go" target="_blank" rel="noopener">谷歌安卓版下载通道</a></p>
-<p><a href="https://itunes.apple.com/app/apple-store/id968585775?pt=117214159&ct=landing_banner&mt=8" target="_blank" rel="noopener">IOS版下载</a></p>
-<p><a href="https://trickym.lanzoui.com/b0e23rgqj" target="_blank" rel="noopener">国内安卓下载通道</a>   访问密码:bbcd</p>
-<p>特色功能:</p>
-<ul>
-<li><p><strong>NEW Sampler</strong> – A new tool for you to create custom instruments. Make a new Sampler Kit by recording sounds you hear in the world around you, or by selecting samples from over 15,000 royalty-free sounds provided by BandLab, or simply import your own sounds. You can even customize each sample to get just the sound you want. Musical creativity is limitless with the Sampler.</p>
-</li>
-<li><p><strong>16-Track Mix Editor</strong> – This is where you make music – the Mix Editor is a multi-track digital audio workstation (DAW) in your pocket. Use it as an audio recording app, beat maker, audio editor and so much more. You are a music maker anytime, anywhere.</p>
-</li>
-<li><p><strong>330+ Virtual MIDI Instruments</strong> – Need 808s for your beat? Synthesizers for your lead lines? How about the sitar?! We’ve got a huge variety of Virtual MIDI instruments you can make music with, all within an app that fits in your pocket.</p>
-</li>
-<li><p><strong>180+ Vocal/Guitar/Bass effect presets</strong> – Give your tracks that extra kick with world-class effects with real-time monitoring. From ambient sounds to crazy modulations, there’s something for everyone to get creative.</p>
-</li>
-<li><p><strong>Looper</strong> – Anyone can be a beat maker no matter your skill level. Make beats instantly from a huge library of loops, add some synth or reverb, or just freestyle your way to a whole new mixtape while on the go.</p>
-</li>
-<li><p><strong>Mastering</strong> – Get your tracks ready for distribution. Upload your song or recording and let our built-in mastering work its magic. Supports mp3 and other formats.</p>
-</li>
-<li><p><strong>Video Mix</strong> – Create expressive video clips, whether you’re a rapper freestyling over a beat or a songwriter laying down a hot solo. Jazz up your video with world-class effects!</p>
-</li>
-<li><p><strong>Explore</strong> – Not in the mood to create? No problem! Let BandLab be a source of entertainment as you explore and get inspired by new artists, genres, and collections curated just for you.</p>
-</li>
-<li><p><strong>Creator Connect</strong> – Looking for a beat maker, producer, or singer? Find like-minded creators just around the corner or halfway across the world! Just fill out your profile and we’ll match you to potential collaborators who share your musical taste and inspiration.</p>
-</li>
-<li><p><strong>Tuner and Metronome</strong> – The essential audio tools for the modern music maker and producer so you never go out of beat or tune.</p>
-</li>
-<li><p><strong>Remix Tracks</strong> – Need inspiration to start a track? ‘Fork’ a public track that any creator has shared to make your own beat and remix</p>
-</li>
-</ul>
-<h3 id="FL-Studio-Mobile"><a href="#FL-Studio-Mobile" class="headerlink" title="FL Studio Mobile"></a>FL Studio Mobile</h3><p>此软件收费 支持IOS、安卓和WindowsApp</p>
-<p><a href="https://support.image-line.com/redirect/flmobile_buyandroid?_ga=2.140158000.208136675.1631691675-56122757.1631691675" target="_blank" rel="noopener">安卓版下载</a></p>
-<p><a href="https://apps.apple.com/us/app/fl-studio-mobile/id432850619" target="_blank" rel="noopener">IOS版下载</a></p>
-<p><a href="https://support.image-line.com/redirect/flmobile_buywindows?_ga=2.204122131.208136675.1631691675-56122757.1631691675" target="_blank" rel="noopener">WindowsApp下载</a></p>
-<p><a href="https://appgallery.huawei.com/#/app/C102155881?_ga=2.238273411.208136675.1631691675-56122757.1631691675" target="_blank" rel="noopener">华为应用市场安卓版下载</a></p>
-<p><a href="https://www.image-line.com/fl-studio-mobile" target="_blank" rel="noopener">官网</a></p>
-<p>功能特色:</p>
-<ul>
-<li>Audio recording, track-length stem/wav import</li>
-<li>Browse sample and presets with preview</li>
-<li>Effects modules (see Included Content)</li>
-<li>Full-screen DeX &amp; Chromebook Touch, Trackpad &amp; Mouse support.</li>
-<li>High quality synthesizers, sampler, drum kits &amp; sliced-loop beats</li>
-<li>Instrument modules (see Included Content)</li>
-<li>Load projects in the FL STUDIO** FREE Plugin version of this App</li>
-<li>MIDI controller support (class compliant). Automation support.</li>
-<li>MIDI file import and Export (Single-track or Multi-track)</li>
-<li>Mixer: Per-track mute, solo, effect bus, pan and volume adjustment</li>
-<li>Piano roll: Edit notes or capture recorded performances.</li>
-<li>Save and load WAV, MP3, AAC*, FLAC, MIDI</li>
-<li>Share your songs via Wi-Fi or Cloud to other Mobile 3 installations</li>
-<li>Step sequencer</li>
-<li>User interface configurable with all screen resolutions and sizes.</li>
-<li>Virtual piano-keyboard &amp; Drumpads#</li>
-</ul>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403155503502.png" alt="image-20230403155503502"></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 
@@ -2043,7 +2041,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">182</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

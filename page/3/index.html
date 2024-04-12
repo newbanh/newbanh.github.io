@@ -273,6 +273,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../146.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../146.html" itemprop="url">混音中提升音轨融合度之均衡处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-12T10:05:53+08:00">
+                2023-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>混音过程中影响融合度的因素有很多, 之前给大家介绍过共同元素理论, 具体可查阅之前文章:《<a href="https://audio.newban.cn/109.html">混音中各音轨共同的元素越多融合度越高</a>》</p>
+<p>今天 我们主要来研究讨论一下均衡器对声音融合度的影响</p>
+<p>从个人经验上, 主要分为以下几个点:</p>
+<ul>
+<li>衰减特色频率</li>
+<li>提升某个频段达到对其他乐器的贴合</li>
+<li>多个音轨间使用同类型的的均衡效果器</li>
+</ul>
+<h2 id="特色频率衰减"><a href="#特色频率衰减" class="headerlink" title="特色频率衰减"></a>特色频率衰减</h2><p>衰减声音的特色频段能让声音听起来更温和, 虽然少了一分刺激感, 但是和其它音轨更加的融合了</p>
+<p>这个世界 大部分都是不起眼的普通人, 特立独行且耀眼的终归是少数, 太过耀眼自然很难融入群众</p>
+<p>混音也是同样的道理, 衰减声音中让你觉得兴奋刺激的频段, 这样能使整体更加地平衡</p>
+<p>除此之外, 声音中如果存在一些让人不舒服的共振频率, 也需要去除, 这能让声音听起来更加清晰有质感, 具体方法是通过扫频或者<code>solo</code>某个频率点, 找出腔体感特别明显以及太过刺耳的频率点并衰减它</p>
+<p>衰减频率这一步骤建议使用窄q值的数字均衡器, 比如<code>waves Q</code>系列插件或者肥波插件, 它们能精准地控制住频率</p>
+<h2 id="提升频段"><a href="#提升频段" class="headerlink" title="提升频段"></a>提升频段</h2><p>提升频段, 建议使用宽Q值的建模均衡器, 主要用来调整声音的色彩, 让其变得更暗还是更亮, 从而实现和其它音轨的贴合</p>
+<p>同时 建模EQ的染色能给声音提升质感, 增加一点点可望不可即的感觉</p>
+<p>具体操作方法是, 通过宽Q值的扫频方式, 一边扫, 一边仔细听需要进行融合的音轨, 如果是扫人声那就听伴奏. 当我们扫到某个频段, 伴奏突然变得更清晰了, 那么这个点差不多就是融合点, 提升它能让声音更加融合</p>
+<p>有时候, 你可能会发现不止一个融合点, 此时我们就需要听当前扫频的声音音色, 选择一个你觉得好听的就行, 这样 既保证了融合度, 又不至于声音变得难听</p>
+<h4 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h4><p>我个人利用频谱分析仪分析两个音轨后得出粗浅结论:</p>
+<p><strong>当两个音轨频谱趋于一致的时候, 融合度能得到大幅提升</strong></p>
+<p>比如有两个音轨, 一个高低频很饱满, 另一个低频足够 但是高频不足, 那么这两个音轨合在一块的听感就是一个很亮, 一个很暗, 虽然声音不打架了, 但两者分离感很明显, 它们就犹如不同世界的两个人,很难融合  </p>
+<p>此时我们将高频不足的那个声音做一个高频提升后, 就能明显感觉到融合度的提升</p>
+<p>我认为这个原理也可以归纳到共同元素理论当中</p>
+<h2 id="使用同类型的的均衡效果器"><a href="#使用同类型的的均衡效果器" class="headerlink" title="使用同类型的的均衡效果器"></a>使用同类型的的均衡效果器</h2><p>这一点其实就是依照共同元素理论了, 同类型的效果器染色一致, 能有效增加融合度</p>
+<h2 id="效果链"><a href="#效果链" class="headerlink" title="效果链"></a>效果链</h2><p>依照上面的所说, 我在对声音进行均衡处理时, 通常依照以下顺序:</p>
+<ul>
+<li>减法EQ </li>
+<li>加法EQ</li>
+<li>压缩器</li>
+<li>….</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本文中, 关于关于均衡器对提升融合度, 主要分为以下两大方面:</p>
+<ol>
+<li>增加共同元素: 同类型效果器, 频谱趋于一致….等等</li>
+<li>衰减特色频率: 平凡但不平庸</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>我们在扫频时不建议将音量提的过高, 否则你会发现到处都是不舒服的频率, 一般不超过12db</li>
+<li>衰减的点不要太多, 过多反而会适得其反, 一般来说 这种情况的发生可能是操作方法不对</li>
+</ol>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../145.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -790,12 +950,12 @@
         
           
             <p>很多人不知道这一点，但是您可以在 REAPER 中打开导航器窗口来探索您的项目，如下所示 🔻</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a2c8195bed100a0fe81_335cfc39-9f84-4804-a480-0b26608abf1c-20230712145830436.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a2c8195bed100a0fe81_335cfc39-9f84-4804-a480-0b26608abf1c-20230712145830436.gif" alt="img"></p>
 <h2 id="如何？"><a href="#如何？" class="headerlink" title="如何？"></a>如何？</h2><p>您可以在<code>View  → Navigator</code>中找到它。</p>
 <p>您还可以在<code>Action Llist</code>中找到它并为其设置快捷方式。它被称为<code>View: Show navigator window</code>，我将其设置为ctrl/cmd + shift + v 。</p>
 <p>如果您想固定它的位置，只需右键单击并选择<code>Dock navigator window in docker</code>，这样您就可以将其放置在屏幕中的任何位置。</p>
 <p>我见过很多人把它放在顶部当做标尺，这非常好！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a2c8195bedb95a0fe80_54462a39-45e3-4b50-9ac3-b159629284ce.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a2c8195bedb95a0fe80_54462a39-45e3-4b50-9ac3-b159629284ce.jpeg" alt="img"></p>
 <h2 id="快捷键："><a href="#快捷键：" class="headerlink" title="快捷键："></a>快捷键：</h2><blockquote>
 <p>🖱️ctrl/cmd +单击导航器中的任意位置可将播放头移动到该位置。方便快速浏览大型工程！</p>
 </blockquote>
@@ -931,19 +1091,19 @@
         
           
             <p>这是一个疯狂的 REAPER 功能。您可以将一堆项目放入一个轨道中并像这样自由移动它们：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a30ea916639afd004a5_5771cf1d-328b-4136-b95d-08a1bc06f808.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a30ea916639afd004a5_5771cf1d-328b-4136-b95d-08a1bc06f808.gif" alt="img"></p>
 <p>这被称为<code>free item positioning</code>，自从我知道这一点以来，我就以这种方式进行了很多分层/堆叠。</p>
 <h2 id="如何实现？"><a href="#如何实现？" class="headerlink" title="如何实现？"></a>如何实现？</h2><p>要启用<code>free item positioning</code>，只需右键单击轨道并选中<code>free item positioning</code>选项即可。</p>
 <p>现在您应该能够自由移动该轨道中的项目，甚至可以将多个项目堆叠在一起。</p>
 <p>如果它变得混乱，您可以在<code>Action list</code>中搜索<code>Item: Auto-reposition items in free item positioning mode</code>进行<code>item</code>规整化, 如果您发现经常使用这个功能，我建议为其设置一个快捷键👍</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a30ea91662c08d004a6_983d21e8-2a16-4ad9-93bd-ba3029b14b5c.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a30ea91662c08d004a6_983d21e8-2a16-4ad9-93bd-ba3029b14b5c.gif" alt="img"></p>
 <h2 id="为什么要使用这个功能？"><a href="#为什么要使用这个功能？" class="headerlink" title="为什么要使用这个功能？"></a>为什么要使用这个功能？</h2><h3 id="🔊-堆叠音效"><a href="#🔊-堆叠音效" class="headerlink" title="🔊 堆叠音效"></a>🔊 堆叠音效</h3><p>每当我想将多个声音效果分层在一起时，我主要使用它。因此，我可以将它们全部放在一个轨道中，并在那里进行所有处理，而不是使用一堆轨道。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a30ea91666f20d004a3_90b31b01-5fa9-445e-adee-7f9b96a08296.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a30ea91666f20d004a3_90b31b01-5fa9-445e-adee-7f9b96a08296.jpeg" alt="img"></p>
 <h3 id="🔴-堆叠录音"><a href="#🔴-堆叠录音" class="headerlink" title="🔴 堆叠录音"></a>🔴 堆叠录音</h3><p>如果您在<code>free item positioning</code>功能打开时在轨道上录制，则您所做的每个录制通道都会堆叠在前一个通道的顶部，如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a30ea91660bcad004a2_2ea65ee8-826d-498f-9186-0f82efd35c05.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a30ea91660bcad004a2_2ea65ee8-826d-498f-9186-0f82efd35c05.jpeg" alt="img"></p>
 <p>这三层将同时播放。</p>
 <p>如果您想在录制时听到前面的音频，可以右键单击监视器图标并选择 <code>Monitor track media when recording</code>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/63dc1a30ea91664f2ed004a4_54f3d13a-1763-4191-bf6a-c63dcf4d9394.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/63dc1a30ea91664f2ed004a4_54f3d13a-1763-4191-bf6a-c63dcf4d9394.jpeg" alt="img"></p>
 <h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>请随意尝试并找到创造性的使用方法！</p>
 <p>例如，您可以使用它来增强军鼓或底鼓，或者将多种音效叠加在一起以创建独特的效果。</p>
 <p>您还可以使用它来录制曲目的多个通道并将它们堆叠在一起，以便您在录制时轻松听到前几层</p>
@@ -1069,45 +1229,45 @@
         
           
             <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>REAPER</code> 的一项独特功能是能够以五种不同的方式显示音频项目！🤯</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33db4800469430_Thumbnail_copy.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db4800469430_Thumbnail_copy.jpeg" alt="img"></p>
 <p>这确保了无论需要处理什么样的音频，<code>REAPER</code>都能为用户提供完美的视觉呈现👌</p>
 <p>我现在将回顾它们中的每一个，演示它们的用途，并提供显示它们的快捷方式。</p>
 <hr>
-<h2 id="1-规律的高峰"><a href="#1-规律的高峰" class="headerlink" title="1. 规律的高峰"></a>1. 规律的高峰</h2><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33db9623469478_3c300e5b-7f7b-47ea-a1e6-895dddc94488.jpeg" alt="img"></p>
+<h2 id="1-规律的高峰"><a href="#1-规律的高峰" class="headerlink" title="1. 规律的高峰"></a>1. 规律的高峰</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db9623469478_3c300e5b-7f7b-47ea-a1e6-895dddc94488.jpeg" alt="img"></p>
 <p>这些是我们大多数人都熟悉的默认波形。</p>
 <p>我们可以清楚地直观地了解音频的响度和长度。</p>
 <blockquote>
 <p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Show normal (non-spectral/non-spectrogram) peaks</code></p>
 </blockquote>
-<h2 id="2-纠正峰值"><a href="#2-纠正峰值" class="headerlink" title="2. 纠正峰值"></a>2. 纠正峰值</h2><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33dbb8bf469477_0fda3477-0a18-4d72-8b79-714ba9168159.jpeg" alt="img"></p>
+<h2 id="2-纠正峰值"><a href="#2-纠正峰值" class="headerlink" title="2. 纠正峰值"></a>2. 纠正峰值</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33dbb8bf469477_0fda3477-0a18-4d72-8b79-714ba9168159.jpeg" alt="img"></p>
 <p>就像常规峰值一样，但您只能看到波形的一半。</p>
 <p>这通常用于视频编辑，因为它有助于更好地识别对话和更安静的段落。如果您像大多数视频编辑器工作区一样垂直空间有限，也很有用~</p>
 <blockquote>
 <p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Rectify peaks</code></p>
 </blockquote>
-<h2 id="3-光谱峰"><a href="#3-光谱峰" class="headerlink" title="3. 光谱峰"></a>3. 光谱峰</h2><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33dbe16d469474_e17cd77e-1133-49f9-916e-9bcdb67b505c-20230711180846612.jpeg" alt="img"></p>
+<h2 id="3-光谱峰"><a href="#3-光谱峰" class="headerlink" title="3. 光谱峰"></a>3. 光谱峰</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33dbe16d469474_e17cd77e-1133-49f9-916e-9bcdb67b505c-20230711180846612.jpeg" alt="img"></p>
 <p>此视图允许您将不同的频率可视化为颜色。</p>
 <p>这非常适合检测人声中的嘶嘶声、录音中的噪音、转录音符等！</p>
 <blockquote>
 <p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectral peaks</code></p>
 </blockquote>
 <p>⚙️您还可以搜索并使用以下操作调整设置：<code>View: Show peaks display settings</code></p>
-<h2 id="4-频谱图"><a href="#4-频谱图" class="headerlink" title="4. 频谱图"></a>4. 频谱图</h2><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33db7b5d46947a_a3fbeb65-38d7-49b0-9a69-57254caacd27.jpeg" alt="img"></p>
+<h2 id="4-频谱图"><a href="#4-频谱图" class="headerlink" title="4. 频谱图"></a>4. 频谱图</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db7b5d46947a_a3fbeb65-38d7-49b0-9a69-57254caacd27.jpeg" alt="img"></p>
 <p>这是频率强度的视觉表示。</p>
 <p>我们可以比较 200 Hz 和 10 kHz 等不同频率下的能量水平，并了解这些水平如何随时间变化。</p>
 <blockquote>
 <p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectrogram</code></p>
 </blockquote>
 <p>⚙️您还可以搜索并使用以下操作调整设置：<code>View: Show peaks display settings</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33db2948469476_547625b4-82af-49ac-8f8f-093b9f07a808.png" alt="img"></p>
-<h2 id="5-频谱图和峰值"><a href="#5-频谱图和峰值" class="headerlink" title="5. 频谱图和峰值"></a>5. 频谱图和峰值</h2><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33db3c88469475_7ef00b85-bfe1-4635-a809-66a7b0f3cccc-20230711180257977.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db2948469476_547625b4-82af-49ac-8f8f-093b9f07a808.png" alt="img"></p>
+<h2 id="5-频谱图和峰值"><a href="#5-频谱图和峰值" class="headerlink" title="5. 频谱图和峰值"></a>5. 频谱图和峰值</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db3c88469475_7ef00b85-bfe1-4635-a809-66a7b0f3cccc-20230711180257977.jpeg" alt="img"></p>
 <p>这将显示一半频谱图和一半峰值。</p>
 <p>我经常使用它，因为它提供了两全其美的优点！您可以查看常规响度峰值以及其上方的频率信息，从而更容易识别声音。</p>
 <blockquote>
 <p>🎯要为此视图分配快捷方式或工具栏，可以在<code>Action List</code>中搜索<code>Peaks: Toggle spectrogram and peaks</code></p>
 </blockquote>
 <h2 id="福利：光谱编辑"><a href="#福利：光谱编辑" class="headerlink" title="福利：光谱编辑"></a>福利：光谱编辑</h2><p>使用任何频谱图视图时，您可以搜索并使用<code>Spectrogram: Add spectral edit to item</code>操作来调整音频<code>Izotope RX</code> 风格！非常好。我通常用它来消除噪音和异响。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/643d50ee9d33db3463469479_64497c16-1e44-4a7f-aae5-223dbe3742b9.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db3463469479_64497c16-1e44-4a7f-aae5-223dbe3742b9.jpeg" alt="img"></p>
 <h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>如果您为它们设置快捷方式，您可以在它们之间快速切换，并以最适合每个任务的方式查看音频。或者您可以将它们放置在顶部工具栏之一。</p>
 <p>享受💙</p>
 <p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/5-ways-to-display-audio-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
@@ -1233,31 +1393,31 @@
           
             <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>此功能使您能够自动更改轨道/片段/标记的颜色、添加图标以及根据您可以设置的规则修改MCP 和 TCP 布局！🚀</p>
 <p>例如，您可以设置一条规则，每当您制作名为<code>Guitar</code>的曲目时，它都会自动将其着色为红色并添加吉他图标，如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/6453144fd3b6e8e068503da3_ca51bfa9-2c1f-478e-907e-6594a83b58b5.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/6453144fd3b6e8e068503da3_ca51bfa9-2c1f-478e-907e-6594a83b58b5.gif" alt="img"></p>
 <p>超级棒对吧！？🤩</p>
 <p>我也喜欢自动着色区域！我喜欢给我常用的歌曲结构分配不同的颜色，比如“主歌”、“副歌”、“桥段”、等等……</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/6453144fd3b6e85934503da5_25cc5587-619d-4c5d-8c58-3cb9a4bbf92a.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/6453144fd3b6e85934503da5_25cc5587-619d-4c5d-8c58-3cb9a4bbf92a.gif" alt="img"></p>
 <p>让我引导您了解如何安装以及您可以用它做的所有事情。</p>
 <h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
 <li>下载并安装<a href="https://www.sws-extension.org/" target="_blank" rel="noopener">SWS 扩展</a>。</li>
 <li>打开REAPER 并在扩展下拉菜单中选择自动颜色/图标/布局。</li>
 <li>单击“选项” ，然后启用您需要的所有选项。（<em>自动轨道着色、自动轨道图标…</em> ）</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/6453144fd3b6e86398503da4_8715fbd7-3318-4216-8290-fea0d9b9ca70.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/6453144fd3b6e86398503da4_8715fbd7-3318-4216-8290-fea0d9b9ca70.jpeg" alt="img"></p>
 <h3 id="自动颜色-图标轨道"><a href="#自动颜色-图标轨道" class="headerlink" title="自动颜色/图标轨道"></a>自动颜色/图标轨道</h3><ol>
 <li>单击添加规则。</li>
 <li>双击“（名称）”的位置，然后输入要设置颜色的曲目的名称。</li>
 <li>右键单击旁边显示“无”的位置，单击“设置颜色”，然后为轨道选择一种颜色。</li>
 <li>通过右键单击颜色列中的空白区域来放置图标。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/6453144fd3b6e8291e503da1_15159516-6a6f-442f-94f5-08ef54affdbd.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/6453144fd3b6e8291e503da1_15159516-6a6f-442f-94f5-08ef54affdbd.jpeg" alt="img"></p>
 <h3 id="让子级追踪与父级相同的颜色"><a href="#让子级追踪与父级相同的颜色" class="headerlink" title="让子级追踪与父级相同的颜色"></a>让子级追踪与父级相同的颜色</h3><ol>
 <li>单击添加规则。</li>
 <li>右键单击显示“（名称）”的位置。</li>
 <li>选择“（子级）”。</li>
 <li>右键单击颜色列中显示“无”的位置，然后选择“父级”。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/6453144fd3b6e82302503da2_174107b9-77ba-484e-abdc-7664f200b46f.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/6453144fd3b6e82302503da2_174107b9-77ba-484e-abdc-7664f200b46f.jpeg" alt="img"></p>
 <h3 id="自动为区域着色"><a href="#自动为区域着色" class="headerlink" title="自动为区域着色"></a>自动为区域着色</h3><ol>
 <li>单击添加规则。</li>
 <li>右键单击显示“轨道”的位置。</li>
@@ -1265,7 +1425,7 @@
 <li>双击显示“（名称）”的位置，然后输入要设置颜色的区域的名称。</li>
 <li>右键单击其旁边显示“无”的位置，单击“设置颜色”，然后为该区域选择一种颜色。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/6453144fd3b6e800ca503da0_22814467-2b82-41e0-8273-8e58b5e440f6.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/6453144fd3b6e800ca503da0_22814467-2b82-41e0-8273-8e58b5e440f6.jpeg" alt="img"></p>
 <h2 id="记住…"><a href="#记住…" class="headerlink" title="记住…"></a>记住…</h2><p>自动着色列表按优先级排序，您可以在第一列中看到数字。数字越小优先级最高。</p>
 <p>例如，如果您将“吉他”设置为黄色，作为列表中的#1，将“原声吉他”设置为红色，作为列表中的#2，则它将根据优先级较高的颜色为曲目着色。在这种情况下，只需将“原声吉他”拖到列表中，使其优先级高于“吉他”曲目即可。这将导致名为<code>Acoustic Guitar</code>的曲目显示为红色，而名为<code>Guitar</code>的曲目将显示为黄色。</p>
 <h2 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h2><iframe src="//player.bilibili.com/player.html?aid=516862897&bvid=BV1dg41187eS&cid=869145398&page=1&autoPlay=false" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
@@ -1396,42 +1556,42 @@
         
           
             <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果您希望在 REAPER 中提高自动化效率，我整理了一些有用的便捷技巧。🚀</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce13a94130e5_Thumbnail-10_Automation_Shortcuts_in_REAPER.jpeg" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce13a94130e5_Thumbnail-10_Automation_Shortcuts_in_REAPER.jpeg" alt="img"></p>
 <h2 id="1-快速建立包络"><a href="#1-快速建立包络" class="headerlink" title="1.快速建立包络"></a>1.快速建立包络</h2><p>按键盘<code>V</code>打开/关闭音量包络通道, 按住<code>shift</code>配合鼠标左键即可快速画出大致包络曲线。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce5674413112_c941cd6e-6be2-4362-af66-3543470213f9.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce5674413112_c941cd6e-6be2-4362-af66-3543470213f9.gif" alt="img"></p>
 <p>按键盘<code>P</code>打开/关闭声像包络通道。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce324f413115_2ce87ae4-3240-4e9f-a30f-c37d25b0d855.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce324f413115_2ce87ae4-3240-4e9f-a30f-c37d25b0d855.gif" alt="img"></p>
 <h2 id="2-四点包络线"><a href="#2-四点包络线" class="headerlink" title="2. 四点包络线"></a>2. 四点包络线</h2><p>创建时间选择并按<code>Shift + Ctrl/Cmd</code>创建四点包络。</p>
 <p>这非常适合快速调整某个部分的值，同时保持通道的其余部分不变。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce1794413121_6d496f29-2d6b-45dc-bee8-c2e1e94a44a6.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce1794413121_6d496f29-2d6b-45dc-bee8-c2e1e94a44a6.gif" alt="img"></p>
 <p>💡</p>
 <p>提示：默认情况下，它将产生非常短的过渡曲线，这听起来可能有点刺耳。您可以通过进入“首选项” &gt; “包络显示”并设置“自动创建包络边缘点的过渡时间”来 调整曲线的平滑度</p>
 <h2 id="3-调整包络曲线"><a href="#3-调整包络曲线" class="headerlink" title="3. 调整包络曲线"></a>3. 调整包络曲线</h2><p>按住<code>Alt/Opt</code> 的同时单击并拖动包络曲线以自由塑造其形状。对于平滑过渡非常有用。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce1134413125_b92bff56-fd09-4083-8526-932c4aa9873e.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce1134413125_b92bff56-fd09-4083-8526-932c4aa9873e.gif" alt="img"></p>
 <p>按住<code>Alt/Opt</code>的同时双击鼠标左键可将其重置。</p>
 <h2 id="4-手动调整点"><a href="#4-手动调整点" class="headerlink" title="4.手动调整点"></a>4.手动调整点</h2><p>按住<code>Ctrl/Cmd</code>并双击包络点可手动输入值或更改曲线形状。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ceeb6a413126_7a1abefd-2e42-4012-b887-75ad5e81f1ff.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ceeb6a413126_7a1abefd-2e42-4012-b887-75ad5e81f1ff.gif" alt="img"></p>
 <h2 id="5-创建自动化项目"><a href="#5-创建自动化项目" class="headerlink" title="5. 创建自动化项目"></a>5. 创建自动化项目</h2><p>按<code>Alt/Opt</code>并在包络通道底部拖动以创建自动化项目。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070cef56a413111_fd32771b-03fe-47f2-b904-915310b636a0.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070cef56a413111_fd32771b-03fe-47f2-b904-915310b636a0.gif" alt="img"></p>
 <p>🤔什么是自动化项目？</p>
 <p>它们是包络的容器。您可以像常规项目一样循环、复制、拉伸和池化。您基本上可以将您的自动化视为物品！</p>
 <p><em>（您也可以双击它们来应用 LFO 并调整设置！）</em></p>
 <h2 id="6-微调包络点"><a href="#6-微调包络点" class="headerlink" title="6. 微调包络点"></a>6. 微调包络点</h2><p>按住<code>Ctrl/Cmd + Alt/Opt</code>并上下拖动点，以非常小的步长进行调整。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce5bdf413114_6b1c0f46-b3ba-47f1-83b0-a864b4d154b2.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce5bdf413114_6b1c0f46-b3ba-47f1-83b0-a864b4d154b2.gif" alt="img"></p>
 <h2 id="7-快速删除包络点"><a href="#7-快速删除包络点" class="headerlink" title="7.快速删除包络点"></a>7.快速删除包络点</h2><p>按<code>Alt/Opt</code> 键并单击包络点将其删除。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce7a2e413127_7f16f631-3c15-42e6-a446-ef7d36880325.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce7a2e413127_7f16f631-3c15-42e6-a446-ef7d36880325.gif" alt="img"></p>
 <h2 id="8-重置包络点"><a href="#8-重置包络点" class="headerlink" title="8. 重置包络点"></a>8. 重置包络点</h2><p>双击包络点可将其值重置为 0dB。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce1b06413123_a81455e1-895c-4e06-9957-7c682a62c4ec.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce1b06413123_a81455e1-895c-4e06-9957-7c682a62c4ec.gif" alt="img"></p>
 <h2 id="9-画包络"><a href="#9-画包络" class="headerlink" title="9. 画包络"></a>9. 画包络</h2><p>在包络通道上拖动时按住<code>Ctrl/Cmd</code>以徒手绘制，忽略捕捉。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce6361413122_5d4329c8-becb-4961-b6ef-6669e91a093f.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce6361413122_5d4329c8-becb-4961-b6ef-6669e91a093f.gif" alt="img"></p>
 <p>💡提示：您可以对其进行设置，使其贴合您的网格。<br>为此，请转至首选项&gt;鼠标修改器&gt;上下文：包络通道 | 左键拖动并将鼠标修改器设置为“徒手绘制信封”</p>
 <h2 id="💎-其他快捷技巧"><a href="#💎-其他快捷技巧" class="headerlink" title="💎 其他快捷技巧"></a>💎 其他快捷技巧</h2><p>接下来的操作没有快捷方式，但它们非常有用，我建议为它们设置一个！</p>
 <h2 id="10-显示和隐藏包络通道"><a href="#10-显示和隐藏包络通道" class="headerlink" title="10.显示和隐藏包络通道"></a>10.显示和隐藏包络通道</h2><p>如果您有一堆包络占用了会话中的空间，可以通过以下方法快速显示/隐藏所有信封或仅显示选定的曲目。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce9e26413113_f4df6143-e336-4f61-84c4-1384b0018742.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce9e26413113_f4df6143-e336-4f61-84c4-1384b0018742.gif" alt="img"></p>
 <p>在菜单的<code>Actions List</code>中，搜索<code>Envelope: Toggle show all envelopes for all tracks</code>。我将其快键键设置为<code>Alt + Tab</code>。</p>
 <h2 id="11-显示最后编辑的包络通道"><a href="#11-显示最后编辑的包络通道" class="headerlink" title="11.显示最后编辑的包络通道"></a>11.显示最后编辑的包络通道</h2><p>这是我最喜欢的动作之一！</p>
 <p>您无需查看大量参数即可启动包络通道。只需触摸您需要的参数，运行此操作，该参数的通道就会出现在轨道列表上！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/645aa982d070ce76b6413124_c9cc86f0-2a8d-4107-9204-216b788843b9.gif" alt="img"></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/645aa982d070ce76b6413124_c9cc86f0-2a8d-4107-9204-216b788843b9.gif" alt="img"></p>
 <p>在菜单的<code>Actions List</code>中，搜索<code>FX: Show/hide track envelope for last touched FX parameter</code>, 并为其设置快捷键。我把它设置为<code>L</code> 。</p>
 <h2 id="就是这样！"><a href="#就是这样！" class="headerlink" title="就是这样！"></a>就是这样！</h2><p>希望这些大家有用~💙 </p>
 <p><strong>本文翻译自</strong>: <a href="https://www.reapertips.com/post/10-automation-shortcuts-in-reaper" target="_blank" rel="noopener">reapertips</a></p>
@@ -2479,211 +2639,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../136.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../136.html" itemprop="url">免费且好用的混音插件汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T10:15:53+08:00">
-                2023-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Analog-Obession"><a href="#Analog-Obession" class="headerlink" title="Analog Obession"></a>Analog Obession</h2><p>曾经的收费插件, 后来官方宣布免费了, 惊不惊喜😃</p>
-<p><code>Analog Obession</code>的插件都支持 <code>VST/AU/AAX</code> 格式，适用于 <code>Windows</code> 和 <code>Mac</code>，包括经典建模均衡器、压缩器、前置放大器等。</p>
-<p>自从 <code>Analog Obsession</code> 网站被黑之后，这些插件现在只在 Patreon 上提供免费下载:</p>
-<p>下载地址: <a href="https://www.patreon.com/analogobsession" target="_blank" rel="noopener">点击下载</a></p>
-<h2 id="airwindows"><a href="#airwindows" class="headerlink" title="airwindows"></a>airwindows</h2><p>无<code>UI</code>插件, 专注声音品质</p>
-<p>官网: <a href="https://www.airwindows.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p>目前插件数量有三百多个, 还在不断更新中,具体分类如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">Ambience: TapeDelay2, Doublelay, PitchDelay, SampleDelay, BrightAmbience3, TripleSpread, Melt, MV2, MV, ADT, kChamberAR, StereoChorus, PurestEcho, TapeDelay, StarChild2, StarChild, Hombre, BrightAmbience2, BrightAmbience, StereoEnsemble, StereoDoubler, Chorus, ChorusEnsemble, Ensemble</span><br><span class="line"></span><br><span class="line">Amp Sims: GrindAmp, FireAmp, LeadAmp, LilAmp, MidAmp, BigAmp, Cabs, BassDrive, BassAmp</span><br><span class="line"></span><br><span class="line">Bass: OrbitKick, Hermepass, BassKit, DubCenter, DubSub, Floor, Infrasonic, FathomFive</span><br><span class="line"></span><br><span class="line">Biquads: BiquadPlus, Biquad, BiquadDouble, BiquadOneHalf, BiquadTriple, Biquad2</span><br><span class="line"></span><br><span class="line">Brightness: SlewSonic, DeBess, Acceleration2, DeEss, Smooth, Slew3, Slew2, Slew, Air2, Air, PurestAir, Acceleration, DeHiss, Hypersonic, HypersonX, Ultrasonic, UltrasonicLite, UltrasonicMed, UltrasonX</span><br><span class="line"></span><br><span class="line">Clipping: ClipOnly2, ClipSoftly, OneCornerClip, ADClip7, AQuickVoiceClip, ClipOnly</span><br><span class="line"></span><br><span class="line">Consoles: Console8LiteChannel, Console8LiteBuss, Console8BussHype, Console8BussIn, Console8BussOut, Console8ChannelHype, Console8ChannelIn, Console8ChannelOut, Console8SubHype, Console8SubIn, Console8SubOut, Console0Channel, Console0Buss, PurestConsole2Buss, PurestConsole2Channel,Console7Buss, Console7Channel, Console7Cascade, Console7Crunch, PurestConsoleBuss, PurestConsoleChannel,Console6Buss, Console6Channel, PDBuss, PDChannel, Console5Buss, Console5Channel, Console5DarkCh, C5RawBuss, C5RawChannel, AtmosphereBuss, AtmosphereChannel, </span><br><span class="line">Console4Buss, Console4Channel</span><br><span class="line"></span><br><span class="line">Distortion: Distortion, Edge, Dirt, Mackity, Density2, Density, Drive, Loud, Hard Vacuum, HighImpact, MultiBandDistortion</span><br><span class="line"></span><br><span class="line">Dithers: Dark, PaulWide, PaulDither, TPDFWide, TPDFDither, NotJustAnotherDither, NotJustAnotherCD, Beam, TapeDither, SpatializeDither, VinylDither, DoublePaul, Ditherbox, BuildATPDF, NodeDither, StudioTan, DitherMeTimbers, DitherMeDiskers, RawTimbers, RawGlitters, NaturalizeDither, HighGlossDither, DitherFloat</span><br><span class="line"></span><br><span class="line">Dynamics: Pop2, Pressure5, Dynamics, Pop, DigitalBlack, Logical4, VariMu, ButterComp2, curve, Recurve, Pyewacket, BlockParty, SoftGate, Thunder, Compresaturator, DrumSlam, ButterComp, BrassRider, Point, Gatelope, PodcastDeluxe, Podcast, Swell, PurestSquish, Pressure4, Surge, SurgeTide</span><br><span class="line"></span><br><span class="line">Effects: GalacticVibe, Fracture2, Dubly, Pafnuty2, PitchNasty, GuitarConditioner, Aura, TremoSquare, Tremolo, GlitchShifter, Gringer, Exciter, Energy2, Energy, Facet, Fracture, PowerSag2, PowerSag, Preponderant, Nikola</span><br><span class="line"></span><br><span class="line">Filter: Baxandall2, Capacitor2, CStrip2, Weight, Isolator2, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Baxandall, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance2, Distance, Lowpass, Highpass</span><br><span class="line"></span><br><span class="line">Lo-Fi: Pockey2, Flutter, CrunchyGrooveWear, GrooveWear, Pockey, DeRez2, BitGlitter, DeRez, ChromeOxide, Cojones, Vibrato, Bite, Deckwrecka, DustBunny</span><br><span class="line"></span><br><span class="line">Noise: Noise, Texturize, TexturizeMS, VoiceOfTheStarship, DarkNoise, ElectroHat, Silhouette, TapeDust</span><br><span class="line"></span><br><span class="line">Reverb: kPlateD, kPlateB, kPlateA, kPlateC, Verbity2, Galactic2, Galactic, Verbity, Chamber2, Chamber, Infinity2, NonlinearSpace, Infinity, MatrixVerb, PocketVerbs, Reverb</span><br><span class="line"></span><br><span class="line">Saturation: Huge, NCSeventeen, Tube2, Tube, Spiral2, PurestDrive, Focus, Mojo, Dyno, Spiral, UnBox, Desk4, Righteous4</span><br><span class="line"></span><br><span class="line">Stereo: Srsly, Srsly2, Wider, StereoFX, ToVinyl4, AutoPan, LRFlipTimer, Sidepass, SideDull</span><br><span class="line"></span><br><span class="line">Subtlety: Hype, Shape, PurestWarm2, PurestWarm, Coils2, Interstage, PhaseNudge, Remap, SingleEndedTriode, Coils, Desk, TransDesk, TubeDesk</span><br><span class="line"></span><br><span class="line">Tape: ToTape6, FromTape, Tape, IronOxideClassic2, IronOxide5, ToTape5, IronOxideClassic</span><br><span class="line"></span><br><span class="line">Tone Color: BussColors4, Channel9, Apicolypse, Neverland, Elation, Calibre, Cider, Crystal, Precious, Luxor, Channel8, Channel7, Channel6, Channel5, Channel4</span><br><span class="line"></span><br><span class="line">Utility: Monitoring3, Monitoring2, Monitoring, BitShiftPan, BitShiftGain, PurestGain, PurestFade, EveryTrim, HermeTrim, SlewOnly, SubsOnly, PeaksOnly, Golem, DCVoltage, EdIsDim, MidSide, uLawEncode, uLawDecode, RightoMono, LeftoMono, Balanced, Flipity, MoNoam, VoiceTrick</span><br><span class="line"></span><br><span class="line">XYZ Filters: ZBandpass2, ZHighpass2, ZLowpass2, ZNotch2, ZRegion2, ZBandpass, ZHighpass, ZLowpass, ZNotch, ZRegion, YBandpass, YHighpass, YLowpass, YNotch, XBandpass. XHighpass, XLowpass, XNotch, XRegion</span><br></pre></td></tr></table></figure>
-
-<p> 我试用了一下, 还行, 插件界面长这样:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707153946148.png" alt="image-20230707153946148"></p>
-<h2 id="StudioRack"><a href="#StudioRack" class="headerlink" title="StudioRack"></a>StudioRack</h2><p>一个音频插件管理平台, 里面汇总了各种免费开源的音频插件, 包括乐器插件和效果器插件:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707155410658.png" alt="image-20230707155410658"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707155424754.png" alt="image-20230707155424754"></p>
-<p>插件支持<code>Win</code> ,<code>Mac</code>和<code>Linux</code>三大主流平台, 为<code>VST</code>格式, 直接下载安装到电脑插件目录即可使用:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707155726106.png" alt="image-20230707155726106"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707155801860.png" alt="image-20230707155801860"></p>
-<p>官网: <a href="https://studiorack.github.io/studiorack-site" target="_blank" rel="noopener">点击进入</a></p>
-<h2 id="OwlPlug"><a href="#OwlPlug" class="headerlink" title="OwlPlug"></a>OwlPlug</h2><p>和<code>StudioRack</code>也是一个音频插件管理平台, 不过它比<code>StudioRack</code>更强的是不仅提供许多免费开源的音频插件下载, 还能对本地已安装的插件进行管理</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707182055543.png" alt="image-20230707182055543"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230707182154624.png" alt="image-20230707182154624"></p>
-<p>官网: <a href="https://owlplug.com/" target="_blank" rel="noopener">点击进入</a></p>
-<p>Github: <a href="https://github.com/DropSnorz/OwlPlug/releases" target="_blank" rel="noopener">点击进入</a></p>
-<p>另外还可以添加第三方插件仓库, 包括<code>StudioRack</code>的插件, 非常强大:</p>
-<p><img src="raw.gitmirror.com/songjianzaina/lunanzb_img/master/img/image-20230710110356779.png" alt="image-20230710110356779"></p>
-<p>目前支持的仓库源有以下几个:</p>
-<h4 id="OwlPlug-Registry⭐"><a href="#OwlPlug-Registry⭐" class="headerlink" title="OwlPlug Registry⭐"></a>OwlPlug Registry⭐</h4><p>OwlPlug official plugin registry for Free or Open Source plugins</p>
-<ul>
-<li>kind: <code>registry</code></li>
-<li>feed: OwlPlug</li>
-<li>host: Various servers</li>
-<li>url : <code>https://registry.owlplug.com/registry.min.json</code></li>
-</ul>
-<h4 id="StudioRack-Registry-⭐"><a href="#StudioRack-Registry-⭐" class="headerlink" title="StudioRack Registry ⭐"></a>StudioRack Registry ⭐</h4><p>Studiorack registry plugins for OwlPlug.</p>
-<ul>
-<li>kind : <code>registry</code></li>
-<li>feed: OwlPlug &amp; Studiorack</li>
-<li>host: Github</li>
-<li>url : <code>https://owlplug.github.io/studiorack-registry-adapter/registry.min.json</code></li>
-</ul>
-<h4 id="Krakli-plugin-Store"><a href="#Krakli-plugin-Store" class="headerlink" title="Krakli plugin Store"></a>Krakli plugin Store</h4><p>Krakli plugin collection hosted (By <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a>)</p>
-<ul>
-<li>kind: <code>store</code></li>
-<li>feed: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
-<li>host: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
-<li>url : <code>https://getdunne.net/Krakli/owl.php</code></li>
-</ul>
-<h4 id="GyL-plugin-Store"><a href="#GyL-plugin-Store" class="headerlink" title="GyL plugin Store"></a>GyL plugin Store</h4><p>Krakli plugin collection hosted (By <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a>)</p>
-<ul>
-<li>kind: <code>store</code></li>
-<li>feed: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
-<li>host: <a href="http://getdunne.net/wiki/doku.php" target="_blank" rel="noopener">Shane Dunne</a></li>
-<li>url : <code>https://getdunne.net/GyL/owl.php</code></li>
-</ul>
-<p>更多仓库源可前往: <a href="https://github.com/DropSnorz/OwlPlug/wiki/Remote-plugin-sources" target="_blank" rel="noopener">OwlPlug-Wiki</a></p>
-<h2 id="好用的免费示波器插件"><a href="#好用的免费示波器插件" class="headerlink" title="好用的免费示波器插件"></a>好用的免费示波器插件</h2><p>可以实时查看效果器对声音波形的改变,比如监视底鼓的压缩器是如何塑造音色的音头和织体的</p>
-<ol>
-<li><p><strong>occularScope</strong></p>
-<p>支持侧链功能, 可自定义皮肤, 插件兼容<code>win Mac Linux</code>三大平台, 插件格式为<code>VST</code>和<code>VST3</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230710162808546.png" alt="image-20230710162808546"></p>
-<p>官网下载需要注册账户, 有点麻烦, 我直接将插件上传到了网盘上, 有需要的可以直接下载:</p>
-<p>网盘下载: <a href="https://url97.ctfile.com/d/21042697-56884289-331b3b?p=312306" target="_blank" rel="noopener">点击进入</a> (访问密码: 312306)</p>
-<p>官网下载: <a href="https://bomshankamachin.es/plugins/occularScope" target="_blank" rel="noopener">点击进入</a></p>
-</li>
-<li><p><strong>Psyscope</strong></p>
-<p>支持多通道,<code>UI</code>精美, 可惜只有<code>Windows</code>平台的<code>VST</code>格式插件</p>
-<p>该插件无需安装，只需将<code>.dll</code>拖放到插件文件夹中即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230710162458822.png" alt="image-20230710162458822"></p>
-<p>下载地址: <a href="https://url97.ctfile.com/d/21042697-56884289-331b3b?p=312306" target="_blank" rel="noopener">点击进入</a> (访问密码: 312306)</p>
-</li>
-</ol>
-<h2 id="更多免费插件"><a href="#更多免费插件" class="headerlink" title="更多免费插件"></a>更多免费插件</h2><p>国外有很多的免费插件平台, 列举如下:</p>
-<ol>
-<li><p><strong>kvraudio</strong></p>
-<p>一个大型插件市场 里面可以淘到不少免费的插件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230710161143668.png" alt="image-20230710161143668"></p>
-<p>官网: <a href="https://www.kvraudio.com/" target="_blank" rel="noopener">点击进入</a></p>
-</li>
-<li><p><strong>Bpb</strong></p>
-<p>里面有大量的免费资源, 包括插件, 宿主, 采样和音乐制作教程, <code>MIDIFAN</code>很多文章都是从这里翻译的</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/image-20230710164904892.png" alt="image-20230710164904892"></p>
-<p>官网: <a href="https://bedroomproducersblog.com/" target="_blank" rel="noopener">点击进入</a></p>
-</li>
-</ol>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2734,7 +2689,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">182</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

@@ -273,6 +273,130 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn183.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="183.html" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-04-11T14:54:45+08:00">
+                2024-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以下是一段完整的原生HTML代码，使用原生JavaScript实现通过歌曲名称和歌曲作者来进行多个音乐平台的搜索查询是否存在该歌曲，并显示结果：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>歌曲搜索<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body &#123;</span><br><span class="line">      font-family: Arial, sans-serif;</span><br><span class="line">    &#125;</span><br><span class="line">    h1 &#123;</span><br><span class="line">      text-align: center;</span><br><span class="line">    &#125;</span><br><span class="line">    .container &#123;</span><br><span class="line">      display: flex;</span><br><span class="line">      justify-content: center;</span><br><span class="line">      align-items: center;</span><br><span class="line">      height: 100vh;</span><br><span class="line">    &#125;</span><br><span class="line">    .result &#123;</span><br><span class="line">      display: flex;</span><br><span class="line">      flex-direction: column;</span><br><span class="line">      align-items: center;</span><br><span class="line">    &#125;</span><br><span class="line">    .platform &#123;</span><br><span class="line">      margin-bottom: 10px;</span><br><span class="line">    &#125;</span><br><span class="line">    .link &#123;</span><br><span class="line">      color: blue;</span><br><span class="line">      text-decoration: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .cross &#123;</span><br><span class="line">      color: red;</span><br><span class="line">      font-size: 24px;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"result"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h1</span>&gt;</span>歌曲搜索结果<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"result"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">    // 定义一个音乐平台对象数组，每个对象包含平台名称和对应的API URL</span><br><span class="line">    var musicPlatforms = [</span><br><span class="line">      &#123;</span><br><span class="line">        name: "百度音乐",</span><br><span class="line">        apiUrl: "https://www.baidu.com/s?wd="</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        name: "网易云音乐",</span><br><span class="line">        apiUrl: "https://music.163.com/#/search/m/"</span><br><span class="line">      &#125;,</span><br><span class="line">      // 可以继续添加其他音乐平台的API URL</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    function searchSong(songName, songAuthor) &#123;</span><br><span class="line">      var resultDiv = document.getElementById("result");</span><br><span class="line">      resultDiv.innerHTML = ""; // 清空之前的结果</span><br><span class="line"></span><br><span class="line">      // 遍历音乐平台对象数组</span><br><span class="line">      for (var i = 0; i &lt; musicPlatforms.length; i++) &#123;</span><br><span class="line">        var platform = musicPlatforms[i];</span><br><span class="line">        var searchUrl = platform.apiUrl + encodeURIComponent(songName + " " + songAuthor);</span><br><span class="line"></span><br><span class="line">        // 创建XMLHttpRequest对象</span><br><span class="line">        var xhr = new XMLHttpRequest();</span><br><span class="line"></span><br><span class="line">        // 设置请求方法和URL</span><br><span class="line">        xhr.open("GET", searchUrl, true);</span><br><span class="line"></span><br><span class="line">        // 发送请求</span><br><span class="line">        xhr.send();</span><br><span class="line"></span><br><span class="line">        // 监听请求状态变化</span><br><span class="line">        xhr.onreadystatechange = function() &#123;</span><br><span class="line">          if (xhr.readyState === 4 &amp;&amp; xhr.status === 200) &#123;</span><br><span class="line">            // 请求成功，处理响应数据</span><br><span class="line">            var response = xhr.responseText;</span><br><span class="line">            // 在这里可以对响应数据进行解析和处理，判断是否存在该歌曲</span><br><span class="line">            // ...</span><br><span class="line"></span><br><span class="line">            // 显示搜索结果</span><br><span class="line">            var platformDiv = document.createElement("div");</span><br><span class="line">            platformDiv.className = "platform";</span><br><span class="line">            platformDiv.innerHTML = platform.name + "：";</span><br><span class="line">            resultDiv.appendChild(platformDiv);</span><br><span class="line"></span><br><span class="line">            if (/* 判断歌曲是否存在 */) &#123;</span><br><span class="line">              var link = document.createElement("a");</span><br><span class="line">              link.href = /* 歌曲链接 */;</span><br><span class="line">              link.className = "link";</span><br><span class="line">              link.innerHTML = "歌曲链接";</span><br><span class="line">              platformDiv.appendChild(link);</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">              var cross = document.createElement("span");</span><br><span class="line">              cross.className = "cross";</span><br><span class="line">              cross.innerHTML = "&amp;#10006;";</span><br><span class="line">              platformDiv.appendChild(cross);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 调用searchSong函数进行搜索</span><br><span class="line">    searchSong("演员", "薛之谦");</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这段代码首先定义了一个音乐平台对象数组，每个对象包含平台名称和对应的API URL。然后，在<code>searchSong</code>函数中，遍历音乐平台对象数组，构造搜索URL并发送HTTP请求。根据搜索结果，在页面上显示歌曲链接或叉号，以直观地展示哪些平台存在该歌曲以及哪些不存在。你可以根据实际需求修改搜索URL和处理响应数据的逻辑。如果需要增加新的音乐平台API，只需在<code>musicPlatforms</code>数组中添加相应的对象即可。 </p>
+<p>发自我的小米手机</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn181.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1512,159 +1636,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn156.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="156.html" itemprop="url">关于kontakt音源更换盘符后工程提示找不到音源</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-08-10T10:15:53+08:00">
-                2023-08-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="场景复现"><a href="#场景复现" class="headerlink" title="场景复现"></a>场景复现</h2><p>我有两个移动硬盘 一个盘符名为<code>NVME</code> 另一个盘符名为<code>FAT</code>, 里面装了相同的<code>kontakt</code>音源, 某天<code>NVME</code>这个盘突然坏了  我只能使用另外一个FAT来替代 但是两个移动硬盘的盘符不一样, 这导致工程提示找不到音源</p>
-<p>那有没有优雅的解决方案来避免一个一个手动修复呢</p>
-<h2 id="解决方案一"><a href="#解决方案一" class="headerlink" title="解决方案一"></a>解决方案一</h2><p>既然盘符不一致, 那我们只需将<code>FAT</code>这个盘名称改成<code>NVME</code>即可, 当然 有的系统可能不支持修改盘符名称, 那可以使用下面的第二种方案</p>
-<h2 id="解决方案二"><a href="#解决方案二" class="headerlink" title="解决方案二"></a>解决方案二</h2><p>我们可以使用符号链接（Symbolic Link）来解决这个问题。</p>
-<p>符号链接是一种特殊类型的文件，它可以将一个文件或文件夹链接到另一个位置。我们可以将一个移动硬盘的盘符链接到另一个移动硬盘的盘符，以使工程能够找到音源。</p>
-<p>下面是在<code>Windows</code>和<code>Mac</code>上创建符号链接的步骤：</p>
-<p><strong>Windows:</strong></p>
-<ol>
-<li><p>打开命令提示符<code>（CMD）</code>或者<code>PowerShell</code>。</p>
-</li>
-<li><p>使用<code>mklink</code>命令来创建符号链接。假设你的第一个移动硬盘的盘符是<code>D:</code>，第二个移动硬盘的盘符是<code>E:</code>，音源的位置是<code>D:\音源</code>，则可以使用以下命令创建符号链接：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink /J &quot;E:\音源&quot; &quot;D:\音源&quot;</span><br></pre></td></tr></table></figure>
-
-<p>这将在E盘创建一个名为<code>音源</code>的文件夹的符号链接，指向D盘的”音源”文件夹。</p>
-</li>
-</ol>
-<p><strong>Mac:</strong></p>
-<ol>
-<li><p>打开终端。</p>
-</li>
-<li><p>使用<code>ln -s</code>命令来创建符号链接, 如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s &quot;/Volumes/FAT/Sound Source&quot; &quot;/Volumes/NVME/Sound Source&quot;</span><br></pre></td></tr></table></figure>
-
-<p>这相当于是给<code>/Volumes/FAT/Sound Source</code>取了个别名, 名为 <code>/Volumes/NVME/Sound Source</code>, 当工程中的音源搜索<code>NVME/Sound Source</code>盘时, 会自动指向到<code>FAT/Sound Source</code></p>
-</li>
-</ol>
-<p>通过这个创建软链接的方式，工程将能够在第二个移动硬盘上找到音源，而无需手动修复每个工程文件。节省了我们大量的宝贵时间</p>
-<p>如果我们想要删除软连接 可以使用<code>rm</code>命令, 如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm &quot;/Volumes/NVME/Sound Source&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>关于<code>kontakt</code>音源, 有条件的话建议使用多个硬盘备份, 避免出现其中某个硬盘宕机导致工作中断的情况</p>
-<p>我的那个移动硬盘是因为突然断电出现了故障 导致电脑无法识别, 看来硬盘的好坏从断电保护这一块能测试出一二来, 好的硬盘不至于如此脆弱</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1715,7 +1686,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">182</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

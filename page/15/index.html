@@ -273,6 +273,151 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../39.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../39.html" itemprop="url">Ableton Live：隐藏在 10 个效果器中的 5 个「低调」选项</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-13T11:15:25+08:00">
+                2020-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>几天前我在玩儿 Ableton Live 里的 Saturator（润色） 效果器，一不小心在标题栏上点击了一下右键。然后发现自己发现了一个新的世界。。。一个我以前从没注意到的 High Quality（高品质）选项赫然出现。。。这让我有些吃惊，因为我以为我 Live 玩儿得已经很 6 了，为什么从来没有想过要在标题栏右键呢？</p>
+<p>于是，我把 Live 的各种乐器、效果器都拉出来「右键」了一遍。居然发现有 10 个效果器的右键菜单里有我没发现过的「新功能」。</p>
+<h4 id="高品质设置"><a href="#高品质设置" class="headerlink" title="高品质设置"></a>高品质设置</h4><p>如我上面提到的，Saturator 有一个「高品质」设置，这个功能 Dynamic Tube（动态管）效果器和 Flanger （镶边）效果器也有！</p>
+<h5 id="Saturator（润色）效果器和-Dynamic-Tube（动态管）效果器"><a href="#Saturator（润色）效果器和-Dynamic-Tube（动态管）效果器" class="headerlink" title="Saturator（润色）效果器和 Dynamic Tube（动态管）效果器"></a>Saturator（润色）效果器和 Dynamic Tube（动态管）效果器</h5><p>选择「高品质」模式可以减少混叠失真（Aliasing），这可以提高声音品质，对于高频率的声音品质提高尤为显著。不过随之产生的是较高的 CPU 占用率。</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513111721.png" alt></p>
+<h5 id="Flanger（镶边）效果器"><a href="#Flanger（镶边）效果器" class="headerlink" title="Flanger（镶边）效果器"></a>Flanger（镶边）效果器</h5><p>Flanger（镶边）效果器运用「高品质」模式可以得到较为明亮的声音，但 CPU 占用率会升高。</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513111734.png" alt></p>
+<h4 id="3-种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）"><a href="#3-种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）" class="headerlink" title="3 种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）"></a>3 种延迟信号过渡模式：Repitch（变调模式）、Fade（淡出模式）、Jump（跳跃模式）</h4><p>Live 的每一个延迟效果器（Filter Delay、Ping-Pong Delay 和 Simple Delay）都有这三个特色模式：Repitch（变调模式）、Fade（淡出模式）以及 Jump（跳跃模式）。在延迟效果器处理音频的过程中对 Delay Time（延迟时间）参数进行实时更改，将会使延迟湿声产生突然变化。这种变化产生的音效常常为制作人所利用。我们可以在这三种延迟信号过渡模式间进行切换，来得到我们想要的音响效果。</p>
+<p>这三种延迟信号过渡模式可以在延迟效果器的标题栏点击右键进行选择。</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513111748.png" alt></p>
+<p>Repitch（变调）模式将会在我们实时改变 Delay Time（延迟时间）的时候产生类似于以往硬件延迟效果器产生的移调的效果。</p>
+<p>Fade（淡出）模式是系统默认模式。此模式在当前和上一个「延迟时间」的值之间平滑过渡，产生的效果像是不同的「延迟时间」值产生的延迟效果被安全地拉长或压缩了。</p>
+<p>Jump（跳跃）模式是 Live 8 及更早的版本的唯一默认模式。当打开 Live 8 或 更早版本的工程文件时，系统将自动选择为 Jump 模式。</p>
+<h4 id="Oversampling（双重采样）"><a href="#Oversampling（双重采样）" class="headerlink" title="Oversampling（双重采样）"></a>Oversampling（双重采样）</h4><p>很多人都知道 Live 的 EQ8 均衡器里有一个 Oversampling 的选项。但很多人都不知道 Live 里已经「盛誉加身」的 Glue Compressor（「胶水」压缩器）也有这个选项。</p>
+<p>开启 Oversampling 模式能使 Glue Compressor 或 EQ8 的音频处理速率提高到当前音频采样率的两倍。这样做可以减少混叠失真、提高瞬时信号处理精度。开启 Oversampling 模式会少量增加 CPU 占用率。</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513111800.png" alt></p>
+<h4 id="Flat-Response-（平坦响应）"><a href="#Flat-Response-（平坦响应）" class="headerlink" title="Flat Response （平坦响应）"></a>Flat Response （平坦响应）</h4><p>Live 的 EQ3 也有一个有趣的隐藏特性叫做「Flat Response（平坦响应）」。选择 Flat Response 模式可以减小 EQ3 滤波器在两个频率交叉点处的增益效果。我在不同的音频轨道上试验过「平坦响应」模式的效果，发现在此模式下，频率交叉点处的增益比正常模式减小了 0.5 到 1 dB。</p>
+<p>EQ3 滤波器用 Ableton 自己的话来说是「以优秀强大的模拟滤波器而不是数字滤波器为目标进行优化设计」的。这就意味着甚至在增益值为 0 时，滤波器也会产生适量的令人舒适的「声音染色」效果。</p>
+<p>如果我们不想要这种「模拟」味道的「染色」效果，可以打开 Flat Response（平坦响应）模式并把滤波器坡度设置为较平缓的「24 dB」。这样就能把「染色」效果基本消去了。</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513111816.png" alt></p>
+<h4 id="混响的全局精度设置"><a href="#混响的全局精度设置" class="headerlink" title="混响的全局精度设置"></a>混响的全局精度设置</h4><p>Live 强大的混响效果器里有个全局精度设置。「Eco」模式使用相对最少的 CPU 资源，而「High」模式使用最多的 CPU 资源，但产生最丰富、精度最高的混响效果。</p>
+<p>在编曲阶段可以采用较低的混响精度以节省系统资源，但在导出时一定要记得把混响精度设置为「High」。</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513111829.png" alt></p>
+<h6 id="本文由-SOUNDMONO-编译自-ASKAUDIO"><a href="#本文由-SOUNDMONO-编译自-ASKAUDIO" class="headerlink" title="本文由 SOUNDMONO 编译自 ASKAUDIO"></a>本文由 SOUNDMONO 编译自 <a href="https://ask.audio/articles/ableton-live-secrets-5-hidden-features-in-10-devices/high-quality-settings-nbsp#article" target="_blank" rel="noopener">ASKAUDIO</a></h6><p>固定链接: <a href="https://soundmono.com/ableton-live-5-hidden-features.html" target="_blank" rel="noopener">https://soundmono.com/ableton-live-5-hidden-features.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
+<p><strong>本帖附件</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../35.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -347,19 +492,19 @@
             <p>在<a href="https://audio.newban.cn/10-%E6%9D%A1%E6%B7%B7%E5%93%8D%E6%8A%80%E5%B7%A7%E8%AE%A9%E4%BD%A0%E7%9A%84%E6%B7%B7%E9%9F%B3%E6%9B%B4%E8%BF%9B%E4%B8%80%E6%AD%A5.html">上一篇文章</a>中我们提到了一种混响的特殊用法，叫做「门限混响」（「Gated Reverb」）。这种兴起于 80 年代的混音手法可以制造出爆发性强且空间感十足的军鼓音色，曾一度被以 Phil Collins 和 David Bowie 为代表的众多音乐人广泛使用。</p>
 <p>今天，我们就用 Ableton Live 中自带的音色及效果器来重制一个典型的「门限混响」效果。</p>
 <h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>首先，我们需要建立一个输出到 Master 总轨上的鼓组。</p>
-<p>[<img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513104234.png" alt></p>
+<p>[<img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513104234.png" alt></p>
 <p>然后编辑一小段简单的节奏。它听起来现在是这样的：</p>
 <p><audio class src="https://audio.newban.cn/audio/gated-reverb-just-the-drums-dry_PN.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>注意鼓组里的每样乐器都是独占一轨的，方便待会儿对军鼓轨道进行发送和效果处理。</p>
 <h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h5><p>在「A Return」上加载一个混响效果器，然后将鼓组中的军鼓轨道 100% 发送到 「A Return」上。</p>
 <p>对于混响的调制，原则上需要留出一定的预延迟时间（Pre-delay）时间，以使得军鼓的音头得以清晰保留。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513104306.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513104306.png" alt></p>
 <p>加载在「A Return」轨道上的混响器参数</p>
 <p>现在，军鼓的声音几乎淹没在混响效果中。</p>
 <p><audio class src="https://audio.newban.cn/audio/gated-reverb-with-reverb_PN.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h5><p>把军鼓轨道 100% 发送到「B Return」轨道上，并将「B Return」轨道的输出设置为 Sends Only（仅发送）。这样做是为了让军鼓的干声成为门限效果器的侧链输入源。轨道设置为仅发送时，轨道没有实际的声音输出。</p>
 <p>然后，在「A Return」轨道上加载 Gate（门限）效果器。选择 Sidechain（侧链）模式。输入源选择「B Return」轨道。参数设置如下图。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513104322.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513104322.png" alt></p>
 <p>门限效果器参数</p>
 <p>这里是最后的效果。「门限混响」！听起来还不错吧！</p>
 <p><audio class src="https://audio.newban.cn/audio/gated-reverb-with-reverb-and-gate_PN-1.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
@@ -487,30 +632,30 @@
           
             <p>每当你载入一个混响插件，或使用硬件混响时，总会看到各种混响类型（Type）。有的是基于算法模拟（通过内置的延迟处理来还原经典的数字混响），或者 IR（即脉冲响应，利用真实录制的声学空间采样来实现混响效果）。有的类型代表某种声学环境，有的是模拟一些经典的硬件混响设备。录音棚老手对它们了如指掌，然而刚入门的制作人或许会感到疑惑，这些「房间（Room）」、「大厅（Hall）」、「隔间（Chamber）」、「金属板（Plate）」、「弹簧（Spring）」都是什么意思，还有「氛围（Ambience）」和「非线性（Non-linear）」又是什么？</p>
 <p>下面就对这些不同名目的混响器类型进行介绍。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513103223.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513103223.png" alt></p>
 <p><em>不同的混响插件，带有不同的混响类型</em></p>
 <h4 id="混响概述"><a href="#混响概述" class="headerlink" title="混响概述"></a>混响概述</h4><p>混响的本意是指在某种特定声学环境中对声场的设计。一个普通的混响声场设计可以被拆解为三部分。初始反射代表着房间的尺寸，即第一个反射波抵达的延迟时间，我们的听觉器官会根据这个时间想象出空间的大小（延迟越长，空间越大）。接下来是早期反射，这是一个逐渐累积反射波的过程，它反映出声学空间的形状和其他特性，比如平行墙面，热闹还是死寂。最后是晚期反射，混响累积到一定厚度，并跟随着干声，并逐渐减少和消失。尾部的长度被称为「混响时间」或「衰减」，它是从声音发出，到混响电平降至原始电平的 60 dB 以下。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513103244.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513103244.png" alt></p>
 <p><em>混响分解图</em></p>
 <p>不同的声学空间和物理设备对这几个混响阶段有着不同的处理方式，也就形成了各个混响的不同特点。我们来逐个了解这些模拟真实声学空间的混响。</p>
 <h4 id="房间混响"><a href="#房间混响" class="headerlink" title="房间混响"></a>房间混响</h4><p>房间（Room）这个词代表最典型的声学环境，它意味着任何封闭空间。尤其是指俱乐部、剧院等音乐空间。房间可以还原成真实的空间，早期反射可以明确这个房间的特性。在算法混响器中，这几个阶段都可以用公式计算出来，并程序化。你的音乐需要什么类型，直接调出某种配置即可。复杂的混响会包含多种物理空间和脉冲响应。</p>
 <p>如果你只需要一个带动总体的混响效果，那么就用房间混响吧，当然具体参数如房间尺寸等需要适合你的音乐。通常来说，混音师会在工程里叠加多个混响，在各个音轨使用不同的混响配置，而最后会用一个房间混响来处理总轨，将所有声音放进同一个空间里，达到声学一致性。</p>
 <h4 id="特定空间（大厅等）"><a href="#特定空间（大厅等）" class="headerlink" title="特定空间（大厅等）"></a>特定空间（大厅等）</h4><p>有些房间的个性独特，有着形式各异的设计。对音乐而言，就是各种大厅。混响中的大厅多指音乐会大厅，一般是矩形房间，有着平行深度，而且散射和回声品质明显不同，混响时间也比较长。这种类型的混响器比较适合制作流行/摇滚的编曲，尤其是鼓组丰富的音乐。弦乐组、某些人声声部也可以使用。更加极端的一种叫做「教堂」混响，完全模仿自然的超长混响衰减，非常强烈的回声。很显然，这比较适合风琴、合唱团等类型。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513103309.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513103309.png" alt></p>
 <p><em>经典房间和大厅</em></p>
 <p>音频样本 1：房间和大厅混响</p>
 <p><audio class src="https://audio.newban.cn/audio/01_aud_reverb_room-hall.m4a" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>在后期处理中，你可能会见到各种不寻常的空间，可能对于音乐混音来说并不合适，但对于制作电影等声场创作而言非常重要。例如，小到浴室、衣橱，大到停机坪、地铁隧道等。而脉冲响应的采样还会包括非房间的声音，如钢琴盖共振、吉他琴身共振等，可以为混音注入一些有趣的色彩和空间。</p>
 <h4 id="录音室混响（隔间、金属板和弹簧）"><a href="#录音室混响（隔间、金属板和弹簧）" class="headerlink" title="录音室混响（隔间、金属板和弹簧）"></a>录音室混响（隔间、金属板和弹簧）</h4><p>除了真实的音乐空间以外，有些混响则是依靠特制的仪器、机械来创造的。最古老的，也是最自然的一种，就是隔间混响了。隔间是一个真实的物理空间，但实际上，乐手很少在这种环境演奏。这是一个专用的房间，要么在录音室的建筑内，这种地方往往用来单纯的生成混响（尤其是靠近麦克风录制的声源）。声音从录音控制室发送出来，到达混响隔间里的一个麦克风，这个麦克风通常指向错开声源方向的墙面，专门捕捉反射波，然后通过线路送回控制室。然后，混响会被贴到原始的干声上，完成混响的制作。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513103535.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513103535.png" alt></p>
 <p><em>典型的混响隔间</em></p>
 <p>这种制作方式的好处是自然的音响效果，不好的一点是几乎无法调制声音。隔间混响对现代混音而言，可以制作出小房间内的听觉效果，但缺少了一些真实房间采样/模拟下的染色感。</p>
 <p>再来说说金属板混响，这纯粹是一种机械装置来模拟混响。一张能够回弹的柔性金属板薄片，挂在一个木质的框架上，四周有能量转换装置，将金属板的震动作为声音拾取。声音依然由控制室传出，到达金属板，造成金属板颤动，因而出现混响一样的余音。拾音器会把混响声传回控制室。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513103558.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513103558.png" alt></p>
 <p><em>机械的金属板混响器（上）；一个经典金属板混响插件（下）</em></p>
 <p>金属板混响音质独特，和房间混响有着巨大的差别。它没有早期反射，没有逐渐积聚的过程。反而，混响是突然爆发出来的。也正因为此，金属板混响缺少深度，但是对鼓组和打击乐器尤其适用，厚实感和爆发感齐具。而且，人声也可以用金属板来处理，不会像用房间混响那样，使干声消失在混音中。</p>
 <p>或许很多人对弹簧混响的声音再熟悉不过了，大部分吉他前级放大效果器中都含有这种混响效果。弹簧混响和金属板的工作方式差不多，取代金属板的是一组（三个或更多）弹簧。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200513103617.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513103617.png" alt></p>
 <p><em>经典的弹簧混响器「tank」</em></p>
 <p>如你所想，弹簧混响听起来有些「boing」感，它无法取代房间混响（甚至不能代替金属板混响），但它是很有个性的混响效果（回忆一下那些大混响的吉他音乐，哦，如果你年纪太小，那么听听《低俗小说》结尾处的音乐吧）。</p>
 <p>音频样本 2：金属板混响作用于鼓组和人声，以及弹簧混响作用于吉他</p>
@@ -779,7 +924,7 @@
       
         
           
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200512134230.png" alt></p>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200512134230.png" alt></p>
 <blockquote>
 <p>自学混音到现在有三个年头了  一路走走停停   从最开始的不可能到现在能混出属于自己风格的作品   期间看了不少的视频教程  读了好几本混音相关的书籍  概念性的东西很容易掌握  但真正到了实战时却往往容易束手无策, 我想 这应该是每个混音初学者的通病</p>
 </blockquote>
@@ -986,11 +1131,11 @@
 </tbody></table>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/201608111810390528626.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/201608111810390528626.png" alt></p>
 <ul>
 <li><p><strong>bx_cleansweep</strong></p>
 <p>想要混音作品听上去“整洁”，就要去除不需要的高频和低频，Cleansweep帮你快速漂亮地解决高切低切问题。又是一款简单又有力的滤波器。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/201608111810380564117.jpg" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/201608111810380564117.jpg" alt></p>
 </li>
 </ul>
 <h4 id="需要安装的插件"><a href="#需要安装的插件" class="headerlink" title="需要安装的插件"></a>需要安装的插件</h4><ul>
@@ -998,19 +1143,19 @@
 <p>里面的MAutoPitch，类似于免费版的Auto-Tune </p>
 <p>下载链接:<a href="https://www.meldaproduction.com/MFreeFXBundle" target="_blank" rel="noopener">https://www.meldaproduction.com/MFreeFXBundle</a></p>
 <p>插件介绍:<a href="https://www.midifan.com/modulenews-detailview-32181.htm" target="_blank" rel="noopener">https://www.midifan.com/modulenews-detailview-32181.htm</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/20200512113034.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200512113034.png" alt></p>
 </li>
 <li><p><strong>Acon Digital Multiply</strong></p>
 <p>如果想要处理声像，可以看看这款特有的合唱效果插件。它有一个很酷的功能去除不满意的相位效果：至多对6组声音单独进行随机梳齿滤波器处理。载有均衡器和滤波器使声音可塑性更加强大。</p>
 <p>插件介绍1:<a href="http://shuziyinpin.blog.163.com/blog/static/53343217201741113922639/" target="_blank" rel="noopener">http://shuziyinpin.blog.163.com/blog/static/53343217201741113922639/</a></p>
 <p>插件介绍2:<a href="https://zx.ingping.com/c_1/5152.html" target="_blank" rel="noopener">https://zx.ingping.com/c_1/5152.html</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/201608111810390017637.png" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/201608111810390017637.png" alt></p>
 </li>
 <li><p><strong>甜蜜效果器Flux BitterSweet II Window</strong></p>
 <p>这是一款瞬态塑形器，俗称甜蜜效果器，基本上用于修饰混音中的节奏部分。它能重塑节奏声源的包络，并可以逆向调整——通过一个旋钮就可以直观地给声音增添冲击力，或去掉太过头的冲击。</p>
 <p>插件介绍1:<a href="http://shuziyinpin.blog.163.com/blog/static/53343217201741113922639/" target="_blank" rel="noopener">http://shuziyinpin.blog.163.com/blog/static/53343217201741113922639/</a></p>
 <p>插件介绍2:<a href="https://zx.ingping.com/c_1/5152.html" target="_blank" rel="noopener">https://zx.ingping.com/c_1/5152.html</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/201608111810380319390.jpg" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/201608111810380319390.jpg" alt></p>
 </li>
 <li><p><strong>Tokyo Dawn Records VOS SlickEQ</strong></p>
 <p>这款均衡器的较大特色是拥有四组个性鲜明的便捷预设类型：美式、德式、英式和苏维埃式。听上去就很有趣吧？它在模仿经典硬件的同时拥有很酷的饱和渲染度，带来经典音频设备的迷人魅力。</p>
@@ -1018,7 +1163,7 @@
 <p>插件介绍2:<a href="https://zx.ingping.com/c_1/5152.html" target="_blank" rel="noopener">https://zx.ingping.com/c_1/5152.html</a></p>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/lunanzb_img/img/201608111810370625990.jpg" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/201608111810370625990.jpg" alt></p>
 <p><strong>本帖附件</strong></p>
 <p>*<a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a>*2</p>
 
@@ -1706,157 +1851,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../33.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../33.html" itemprop="url">优质配音的 10 点提示</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-13T10:55:09+08:00">
-                2019-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>有时也许你想要聘请一些大牌的声优来为你录音，但苦于预算不足。所以只能亲自动手，自己来配音了。别担心，你可以做到。</strong></p>
-<p>简单来讲，如果你能读能说，就不怕不能配音。利用恰当的工具、技巧并加以练习，你同样能够为许多项目录制可用的声音，以便符合预算并准时交活。不管这一次是不是你的处女配，仍然建议你读一读做好配音的这 10 个基本要点。</p>
-<h5 id="1、先准备好脚本"><a href="#1、先准备好脚本" class="headerlink" title="1、先准备好脚本"></a>1、先准备好脚本</h5><p>配音脚本有许多种样式和长度。有的项目只需轻松而简单的几行文字，而有的会有厚厚一沓写得满满当当的脚本。有的是客户编写的，出自员工或制作委员会之手都有可能。</p>
-<p>记住，尽量争取一定的脚本编辑权利，以便使内容清晰。并不是要去修改客户的本意，而是要让它更适合配音制作的需要。例如，文字要适合朗读，明晰易懂，行文衔接自然。</p>
-<p>如果含有你不确定的名字或专业术语，一定要和客户做好沟通，商定读法，甚至写上读音。最让人不爽的返工原因就是录配时把某人的名字读成了错误的读音。</p>
-<h5 id="2、选择合适的软件"><a href="#2、选择合适的软件" class="headerlink" title="2、选择合适的软件"></a>2、选择合适的软件</h5><p>要得到好的配音，制作过程中要用到的工具也十分重要。首当其冲就是音频编辑软件。在专业领域中，Pro Tools、Adobe Audition 和 Sony Sound Forge 都是很常见的编辑软件，当然也有许多其他的选择。Pro Tools、Audition 和 Sound Forge 都有与旗舰版相对应的「试用版」，可以让你尝试和挖掘。</p>
-<p>还有苹果的 Logic Studio（现已升级为 Logic Pro X）、Soundtrack Pro 以及 WavePad。甚至用 GarageBand 也可以进行基本的录音和编辑操作。此外，Reaper、Audacity 和 Nero Wave Editor 都是很不错的音频编辑器。</p>
-<p>找到一个适合于预算又在功能上适合你的软件十分重要，因为你将会花大量时间在软件操作上。</p>
-<h5 id="3、硬件设备的配置"><a href="#3、硬件设备的配置" class="headerlink" title="3、硬件设备的配置"></a>3、硬件设备的配置</h5><p>录音自然要用到麦克风，选一支对你而言最好的吧。对较专业的录音而言，常常会选用大振膜电容麦克风。但其实只要能录出干净声音的麦克风都适合。</p>
-<p>接下来，你需要把麦克风与电脑相连接：要么选用转换头、转换线，要么选购一款声卡。当然还需要一个麦架。另外，为了监听自己的录音，你需要使用一副优质的耳机。耳机里反映出来你的声音细节越丰富，对提升配音品质越有帮助。</p>
-<p>最后别忘了录音环境，好环境的要点在于：1、足够安静；2、尽可能减少反射。如果有条件的话，不妨跟随教程<a href="http://soundmono.com/build-a-guerilla-sound-booth.smn" target="_blank" rel="noopener">打造一间简易录音棚</a>。</p>
-<h5 id="4、制造一些小舒适"><a href="#4、制造一些小舒适" class="headerlink" title="4、制造一些小舒适"></a>4、制造一些小舒适</h5><p>配音工作往往需要一段时间来完成，因此录音环境是否舒适十分关键，要有起码的采光、通风。</p>
-<p>给自己沏一杯好茶，慢慢啜饮。或是准备一点无糖无奶的咖啡。润喉糖能帮助你打开鼻腔和清嗓。录制前记得适当清除唾液。录制中，准备好一杯常温的水在手边，录制的间歇可以喝一些。</p>
-<p>通常站着录音更有助于演绎，但如果稿子太长，也许还是坐着更适合一些。</p>
-<h5 id="5、演绎"><a href="#5、演绎" class="headerlink" title="5、演绎"></a>5、演绎</h5><p>现在该站在麦克风前了，不要再担心任何事，拿起稿，按下录音按钮并录上几遍。</p>
-<p>录完后戴着耳机听听刚才的演绎。如果你完全没有录音的经历，也许会觉得听到的声音有些奇怪。自己的声音真的如此？的确如此。重要的仍然是你的演绎，仔细聆听有没有含混的语词和发音。要注意配音与时间点是否对应。</p>
-<p>基于客户和你自己的意见，重新录制某些小段，甚至再多录几遍也没关系，总之一定要再次审听。如果有词句给你带来麻烦，请做好专门的笔记。</p>
-<h5 id="6、聆听专家的意见"><a href="#6、聆听专家的意见" class="headerlink" title="6、聆听专家的意见"></a>6、聆听专家的意见</h5><p>遇到网络不畅或其他状况而无法顺利提交成品时，就花几分钟看看别人的广告吧。要留意他们的节奏步调和抑扬顿挫，并尝试在你自己的作品中模仿这些方法。这不是鼓励你去做完全照搬的事，而是学自己所需，保留最适合你的录音的元素。</p>
-<p>可以试着比平时说话更用力些，并用不同的语气停顿多录几个 take。录过的素材越多，后期处理时可用的原料就越多。</p>
-<p>配音应当能够在不影响视频的吸引力的同时，获得观众的注意力。</p>
-<h5 id="7、拆分自己的作品"><a href="#7、拆分自己的作品" class="headerlink" title="7、拆分自己的作品"></a>7、拆分自己的作品</h5><p>完成全稿的录制后，就该筛查所有素材了。把每个版本的都听一下，对最好的版本做个记录。无论是否按顺序录稿，都一定要确保录制完整，每一段都有可用的一个版本。如果有你不喜欢的部分，就反复录到自己满意。</p>
-<p>完整的配音作品可能含有多个文件和版本，所以为不同的文件以及时间点建立大纲、做好标记尤为重要。</p>
-<h5 id="8、剪成小段"><a href="#8、剪成小段" class="headerlink" title="8、剪成小段"></a>8、剪成小段</h5><p>在编辑过程中要保持一个良好的习惯，那就是为原始素材单开一轨，作为备份。如果你的工程里片断较多，就要把拆分开的片断按顺序整合，并把每个片断存为单独的文件。</p>
-<p>当你需要用小片断组成句子时，请把每个片断（或单句）的开头结尾都压紧一点，也就是让音频块的边缘紧贴句子的开头和结尾，然后再组成句子。衔接的词语之间使用一点简单的淡出或淡入。稍加练习，你剪出来的声音就不是那么容易被听出编辑点了。</p>
-<h5 id="9、与视频搭配检查"><a href="#9、与视频搭配检查" class="headerlink" title="9、与视频搭配检查"></a>9、与视频搭配检查</h5><p>编辑完所有声音片断、标注名称并列好清单后，就可以将它们导入到你的视频工程里了。先按音频工程的编辑结果放置在视频时间轴上，并检查时间点对位和停顿节奏是否正确。你有可能发现若干片断对位不理想，前后拖移一下片断修正即可。甚至在非编软件里再次裁切声音，使它们对上视频都没问题。</p>
-<p>编辑的一条原则是，无论对声音和视频做什么样的修改，一定要保证内在信息量不能有缺损。</p>
-<h5 id="10、提交成品"><a href="#10、提交成品" class="headerlink" title="10、提交成品"></a>10、提交成品</h5><p>在你向客户提交成品之前，不妨在多种设备上播放一下。电脑是首当其冲的设备，如果条件允许，刻成光盘放在自己的家庭影院里、儿童房、厨房甚至汽车里去听都是有助于检查问题的。一旦听出问题，一定要在交给客户之前修改好。</p>
-<p>就算如此，也要做好觉悟，因为客户往往都会在听过成品之后提出修改意见，在项目结算之前一直修改到满意即可。（当然，在必要时可以给客户提出一点专业上的建议，毕竟不是所有需求都永远合理。前提仍然是不损伤作品原定的信息量，并且你对要提出的建议有充分的把握。/编译者按）</p>
-<h5 id="趣闻：奇怪的名字"><a href="#趣闻：奇怪的名字" class="headerlink" title="趣闻：奇怪的名字"></a>趣闻：奇怪的名字</h5><p>在我居住的城市周围有一些小镇，它们的名字非常奇特：Oronogo、Duquesne 和 Duenweg，发音分别是 Or-o-no-go、Du-kane 和 Dun-e-weg。别问为什么。每年都会有当地企业聘用其他州的制作公司来为他们制作广告片。</p>
-<p>遗憾的是，这些企业经常忘记为声优标注这些地名的读音。当广告上线播放时，电视台总会接到来自愤怒的居民的电话。而过了一两个星期之后，修正后的版本会神奇地突然替掉之前的版本。每次这都能让人会心一笑。</p>
-<p>本文由 <a href="https://soundmono.com" target="_blank" rel="noopener">SOUNDMONO</a> 编译自 <a href="http://www.videomaker.com/article/14617-top-10-best-voice-over-tips" target="_blank" rel="noopener">VIDEOMAKER</a></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1907,7 +1901,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">182</span>
+                  <span class="site-state-item-count">183</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
