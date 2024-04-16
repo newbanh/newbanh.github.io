@@ -273,6 +273,157 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../13.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../13.html" itemprop="url">[教材]ASIO4ALL v2 中文使用手册</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T15:35:59+08:00">
+                2019-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="通用-ASIO-驱动-amp-适应于-WDM-音频"><a href="#通用-ASIO-驱动-amp-适应于-WDM-音频" class="headerlink" title="通用 ASIO 驱动 &amp; 适应于 WDM 音频"></a>通用 ASIO 驱动 &amp; 适应于 WDM 音频</h3><p>- 中文手册 -</p>
+<p><strong>简介</strong><br>欢迎使用ASIO4ALL v2！这份手册希望能帮助你充分使用好已安装的ASIO4ALL，本手册尤其将重点介绍最新加入到这个ASIO4ALL版本中的高级功能。ASIO4ALL v2在安装之后将自动添加两个新的快捷方式图标到你的系统桌面上，一个链接到本手册，另一个则用来以脱机状态调用ASIO4ALL的控制面板。</p>
+<h2 id="入门指南"><a href="#入门指南" class="headerlink" title="入门指南"></a>入门指南</h2><h3 id="软件配置"><a href="#软件配置" class="headerlink" title="软件配置"></a>软件配置</h3><p>在使用ASIO4ALL之前，你需要对相关的音频软件进行适当地配置。要如何设置，这完全取决于你指定的应用程序。通常，你可以在该软件的音频配置菜单中将ASIO驱动指定为“ASIO4ALL v2”。现在你应该可以找到一个用来开启ASIO 控制面板的按钮。这个按钮被定义<br>到哪个选项卡内也完全取决于应用程序本身。当你找到并按下此按钮，ASIO4ALL控制面板将弹出。如果需要的话，请查阅该音频软件的联机帮助以获取更多信息。有时，音频软件并没有提供可用的ASIO控制面板选项。像Winamp和Foobar 2000 的某些ASIO 输出插件就存在这种情况。不管怎样，为配置ASIO4ALL 和这些应用程序，你还是可以从桌面上调用ASIO4ALL 的脱机控制面板。注意，脱机控制面板在工作上如同自身的ASIO宿主，它无法同时反映出任何ASIO4ALL请求<br>所打开的当前设备状态！<br>只有当你重新启动音频软件后，脱机控制面板中所作的设置更改才会生效。也就是说，相对于从已进行了适当配置的音频软件内部加载ASIO4ALL（联机）控制面板的方式而言，用户在脱机控制面板所作的设置将完全无法取得实时效果。<br>一旦你进入ASIO4ALL控制面板，就已经可以进行一些基本的设置操作了。</p>
+<h3 id="简易设置"><a href="#简易设置" class="headerlink" title="简易设置"></a>简易设置</h3><p>（插图一：简易设置面板视图）<br><strong>1、设备列表</strong><br>这是在你系统中找到的WDM音频设备列表。请加亮你想要更改参数的设备。注意：所有的参数更改只能应用到当前高亮显示的设备上！<br>如果设备名以粗体显示，则表明设备可用。上图中，“CMI8738/C3DX PCI音频设备”就是可用的，而其它非粗体显示的设备则表明不可用。<br>每个设备的当前状态都显示为一个小图标，图标可能是如下列出的其中一种：</p>
+<p>“工作中”- 表示该设备的音频驱动引擎已成功启用。<br>“可用”- 表示该设备在此期间可以使用，但还没有正式运作。<br>“不可用”- 表示该设备已处在其它进程的使用当中而无法在此期间使用。<br>“无法解释”- 如果该设备由于某些未知原因而拒绝使用，或者表现出任何<br>不稳定状态的行为，那么尝试关闭并重新打开控制面板可能会解决此问题，像插<br>拔USB设备时就有可能如此。某些时候，只要一返回ASIO4ALL设备就不报告或<br>缺乏它的当前可用性时，这个图标也就意味着等同于“不可用”。<br>注意：如果设备列表为空，则表明在你的系统中没有一个WDM音频设备。请<br>检查你所使用的音频硬件的制造厂商是否为其提供了WDM驱动程序！</p>
+<p><strong>2、ASIO 缓冲区大小</strong><br>你可以借助拖动滑块方便地调节当前已高亮显示设备的ASIO缓冲区大小。<br>很显然，小的缓冲区能带来低的延迟。当你一旦听到存在明显的爆音现象或声音<br>严重失真，你就必须适当地增大ASIO缓冲区，然而缓冲区越大，延迟时间也就<br>越长。因此，你有必要在这里设置一个小且恰当的取值。</p>
+<p><strong>3、可切换按钮</strong><br>允许你“启用/禁用/选择”当前已高亮显示的设备列表内项目。<br>借助此按钮可以用来执行当前高亮设备相关的ASIO 操作。在简易设置模式中，你一次只能选择一个设备。<br>如果没有可对当前项目执行的有效操作，此按钮将自动切换为一个附加的“退出”按钮。<br>无论什么时候你都可以通过点击顶部标题栏上的“关闭”按钮来关闭控制面板，这和“退出”按钮的作用是一样的。</p>
+<p><strong>4、切换到高级设置模式</strong><br>切换控制面板到“高级设置”模式，在这里，你可以调整所有的设置细节，<br>但也完全有可能把你的配置弄得一团糟。有关“高级设置”模式的具体阐述请查<br>阅本文档的“高级设置”部分。<br><strong>5、载入默认设置</strong><br>点击此按钮将把所有的配置项恢复到它们在安装时的默认状态。当音频设备<br>开始工作之前或你在以后自行设置的过程当中迷失时，你可能会用到它。<br><strong>6、状态栏</strong><br>状态栏最重要的部位是过载指示器（正好处在标记⑥所在的位置上）。如果<br>过载指示器出现闪烁，即表明已达到了过载状态，你可能需要增加ASIO 缓冲区<br>大小。如果闪烁的时间较短暂，则可能是某些任务加重了系统的负担（比如在载<br>入某个工程时），你可以忽略它，但这个新增加的功能可以帮助你引起警觉并采<br>取可能的措施以减轻系统负担。</p>
+<h3 id="高级设置"><a href="#高级设置" class="headerlink" title="高级设置"></a>高级设置</h3><p>（插图二：高级设置面板视图）<br>控制面板切换到高级设置模式后，事情开始变得稍微复杂起来。你应该会注<br>意到设备列表内的项目现在已经变成可展开/折叠的了。通过观察展开的设备列<br>表，存在于你系统中的WDM音频体系结构也就一目了然。<br>设备列表包含设备，设备接口也叫做“Pin”（这是微软的独有行话）。上<br>图中展示了设备列表内各项目在WDM KS驱动中的层次关系。<br>借助可切换的操作按钮，你现在就可以自主选择启用/禁用设备列表内的指<br>定项目。你也可以通过这种方式进行多个设备的配置。<br>在安装有多个设备时需要所有相关设备从同一时钟源开始工作。你可以通过<br>采用可菊链式连接的S/PDIF等接口来控制多个设备从而达成此目的。<br>注意：如果设备不能精确同步，设备间传输的音频流将可能随着时间的增加<br>其不同步越来越严重！<br>上图中面板右侧依次标记了各高级设置选项（①..⑤）。<br><strong>1、延迟补偿</strong><br>由于ASIO4ALL在开发过程中缺乏足够多的对硬件/驱动程序底层结构方面<br>的了解，它只能以猜测的方式来估算已牵涉到的延迟情况。<br>借助图中所示的拖动滑块，你可以在ASIO4ALL中对延迟时间进行一定的补偿，从而使得在你音序器件中录音或其他工作时得到适当的校正。<br>注意：在安装有多个设备时，所有设备将以其中某个具有最大取值的设备为准。因此，如果不同的设备内部存在不同延迟情况，某些设备将无法取得精准的<br>音频定位！<br><strong>2、硬件缓冲 [开启/关闭]</strong><br>启用已高亮设备的硬件加速功能。这只能在使用“WavePCI”的miniport 驱动模式下工作，其它类型的WDM驱动通常不允许直接访问硬件缓冲区。要获得最佳的硬件加速性能，有必要配合“ASIO缓冲区大小”滑块和“缓冲区位移”滑块（参阅下文）一起调节。设置较小的ASIO缓冲区有益于给硬件缓冲带来最佳的工作状态，不妨尝试在128到256的采样数之间进行选择！<br>使用硬件缓冲的最大好处就是占用的CPU较少。此外，这种方式还可能带来更低的延迟。<br>在安装有多个设备时，支持和不支持硬件缓冲的设备可能会被同等对待，故此不推荐勾选此项！<br>如果指定的音频设备不支持硬件加速而开启了此项的话，将可能额外增加数百毫秒的延迟，这可以清楚地听到。</p>
+<p><strong>3、内核缓冲区/缓冲区位移</strong><br>如果禁用了硬件缓冲，该设置项将允许你加入两个以上的缓冲区队列到音频输出。每个附加的缓冲区将在播放某个缓冲区的同时增加设备的输出延迟时间。因此，如果要更改初始设定（默认的内核缓冲区数目已设为“2”），只有在比较强劲的机器配置上且预设值和小的ASIO缓冲区搭配不能取得满意的效果时我们才推荐你这么做。<br>如果启用了硬件缓冲，该设置项将允许你指定ASIO4ALL当前正在读/写和下一次准备读/写硬件缓冲区数据之间的时间间隔数（单位为毫秒）。你是否已经觉得头大起来？音频流的控制开始变得越来越复杂，你甚至无法估算出它的实际<br>效果，呵呵，不用担心…<br>一般说来：较高的取值会加大延迟但更趋稳定，较低的取值可能存在不利的影响。无论如何，你应该尽量以达到接近零的取值为目标（比如“4毫秒”就可以看待为“极其接近于零”了，如果是默认的“10毫秒”，这显然表明还存在着改进的余地）。<br>如果使用的是基于威盛Envy24系列芯片的PCI声卡，声卡控制面板中可以看到类似于“以DMA（直接内存存取）缓冲区传输方式调整延迟”的选项（以德国坦克出品的音频卡为例）。你应该将DMA缓冲区大小设置为一个尽可能低的取值，例如“1毫秒”，这是最好的情形。</p>
+<p><strong>4、总是以 44.1&lt; 44.1&lt;-&gt;48 kHz &gt;重采样</strong><br>ASIO4ALL 允许以44.1 kHz&lt;-&gt;48 kHz的采样率实时重采样。只要ASIO4ALL工作于44.1 kHz且WDM驱动不支持此采样率时，重采样就会自动进行。<br>虽然也存在AC97 本身就支持以44.1khz内部重采样的情况。然而，AC97 的重采样品质往往极为低劣并且很不稳定。要在这种环境中进行工作，请勾选此项。至少作为SoundMax WDM驱动（smwdm.sys）的一个典型来说，绝对有必要启用该<br>项以使其完全工作在44.1 kHz的采样环境下。</p>
+<p><strong>5、强制 WDM 驱动以 16 位工作</strong><br>如果WDM驱动支持的采样精度高于16位但低于24位，这个选项就有用了。例如，某些AC97设备虽然声称具备20 位的采样精度工作指标，实际工作时却无法超过16 位。假如你的系统存在这种情况，该选项等于是提供了一个有效的变通方法。在起初的版本中，它被当作SigmaTel AC97 WDM驱动的一个问题解决方案而介绍了。</p>
+<h3 id="应用指南"><a href="#应用指南" class="headerlink" title="应用指南"></a>应用指南</h3><p><strong>●软件的现场演奏</strong><br>此种情形下，你无需音频输入。因此，你最好禁止所有的音频输入，然后将ASIO缓冲区设置一个极小且保证能够稳定工作的取值。此外，你也可以禁止所有无需用到的音频输出。如果要禁用通道的话，在高级设置面板中就可以办到，<br>通过展开WDM设备列表内的项目然后选择禁用该配置无需使用的每个项目即可！</p>
+<p><strong>●计算机]充任效果器</strong><br>很显然，在这种场合你需要音频输入。但是和往常一样，你有必要禁用所有<br>无需使用的通道。另外，如果不是特别需要，也请禁止重采样！</p>
+<p><strong>●音序器中的大体设置</strong><br>通常最重要的是要避免CPU负载激增时引起的任何丢失数据的现象。因此，建议你稍稍放宽对延迟的要求以及使用一个能够让你绝大多数常用的VST/VSTi插件舒适工作的ASIO缓冲区设置。这在录音的时候尤为适用，毕竟相较而言此时任何少许的数据丢失都是难以令人容忍的。如果你的音序器提供了延迟补偿，你或许需要检查一下录音是否已经得到了适当的校正，否则将有必要在高级设置<br>面板的“延迟补偿”选项中继续进行调节。</p>
+<p><strong>●不重视延迟的场合</strong><br>在某些配置中，ASIO4ALL允许位透明音频编码不进入Windows驱动程序堆<br>栈。考虑到由此可能带来的音频数据损失，音响爱好者更喜欢ASIO绕过<br>DirectSound或MME输出。如果你希望这样，显然延迟已经不是你的主要关心对<br>象而且也无需用到音频输入。当然，你同样要做的是确认已禁止了所有的音频输<br>入、ASIO缓冲区大小的取值已设到最大且没有问题的话！  </p>
+<h3 id="疑难解答"><a href="#疑难解答" class="headerlink" title="疑难解答"></a>疑难解答</h3><p>虽然ASIO4ALL在音频软件中表现为一个独立的ASIO驱动，但由于其配置选项的复杂性，表现也各异，抛开ASIO4ALL本身的缺陷来说，仍然可能存在着大量的各种各样的问题。尤其应指出的是，如果你在ASIO4ALL的控制面板中更改了设备设置的话，可用的输入/输出通道数以及显示于宿主程序中的通道名很可能都会随之发生改变。因此，每当你更改了音频设备的设置后，如果发现指定的音频程序似乎无法实时作用于更改设置后的设备项目时，建议你重新启动你的音<br>频宿主程序，看问题能否得到解决。<br>其他可能出现的提问及解答：</p>
+<p><strong>●宿主程序的音频配置选项内找不到ASIO4ALL v2</strong><br>存在着两种可能性：或者你的音频软件本身就不支持ASIO，或者你不是在<br>已取得了足够的系统权限的条件下安装ASIO4ALL v2 的。如果是后者，请以管理<br>员的身份登录系统并重新安装ASIO4ALL v2。安装结束后，操作ASIO4ALL v2 时<br>就不再需要以管理员的身份进行了。</p>
+<p><strong>●尽管音频设备没有用于其他场合，其图标仍然显示为“不可用”或“无法解释”你需要先确认“MS GS 软波表合成”或任何其他类似名称没有出现在你MIDI设置的任何地方。如果对此缺乏了解，请访问ASIO4ALL官方网站查阅更多的信息。</strong><br>假如确信问题不是由“软波表合成”（有时伪装为“…DLS合成…”）所引起的，请尝试重启你的音频宿主程序。有时候从别的驱动切换到ASIO4ALL v2时，音频设备尚未及时释放以前的驱动也有可能造成该现象。<br>如果使用的是USB/PC 卡/火线设备，请关闭ASIO4ALL控制面板，断开设备后再插上，然后重新打开ASIO4ALL的控制面板。</p>
+<p><strong>●在不同的音频软件中对控制面板所作的设定无法通用</strong><br>不仅如此，不同用户在控制面板中对设置选项的更改也完全是彼此独立的！<br>这不是一个Bug（程序错误，或称臭虫），它是ASIO4ALL v2的一个固有特征！<br>因为ASIO4ALL v2将为每个宿主程序/每个用户分别保存设置！只要他（它）们<br>不试图独占性地使用同一音频硬件，同时运行ASIO4ALL的几个线程将是允许的。<br>此外，对于运行在教学/计算机实验室等环境下的ASIO4ALL的某一用户来说，除<br>开他自身以外的同一机器上的任何其他用户都难以取得与其同样的结果。<br><strong>●在Cubase SX 3 等宿主程序中显示的延迟时间和调整ASIO 缓冲区大小的结果</strong><br><strong>不匹配</strong><br>ASIO4ALL支持ASIO宿主程序的延迟补偿功能并可有效地执行。但这项支持<br>还不完善且有待时间来改进。这里报告的值不仅仅只反映了ASIO4LL作用到音频<br>流的延迟值，除此之外还包括了驱动程序/操作系统/硬件设备内在的延迟情况。<br>如果猜测无误，就是这样…<br>在ASIO4ALL的早期版本中没有加入这样的尝试，因此在使用ASIO4ALL v1.x<br>版本或其它WDM-&gt;ASIO封装器（包装程序，顾名思义，其作用即把WDM驱动包装<br>为可用的ASIO驱动，譬如ASIO2KS、AxASIO等）时将会看到显示的延迟值相对<br>较低。实际上真实的延迟情况（例如你听觉所感受到的）新旧版本并无二致，CPU<br>占用上升时亦不会增加更多的负担！<br>版权所有 © 2004, Michael Tippach.<br>本文档所陈述的内容可能真实也可能不真实。因本文档所呈现的颜色搭配或<br>黑白对比反差而可能或不能导致读者癫痫症发作、呕吐乃至对家畜作出奇怪的举<br>动，无论以上哪种情形，作者都不对此承担任何道义上或法律上的责任。 </p>
+<p>nForce2主板南桥 （MCP-T ）本身集成着 Realtek瑞昱 的AC97芯片..<br>很多朋友 装主版驱动 时 不会装它自带的音频驱动 而是去下载Realtek 的AC97驱动，然后 用ASIO2KS 或其他的 软件来实现ASIO…..但是很不稳定. </p>
+<p>这样做的人实在是损失太大了！</p>
+<p>其实 nForce2 的南桥芯片 是支持 ASIO的…<br>方法：AMD用户 到这里下载驱动 </p>
+<p>地址 <a href="http://www.fx-audio.net/plugin.php?id=laoyang_wailianx&url=aHR0cDovL2ZpbGUyLm15ZHJpdmVycy5jb20vYm9hcmQvbnZpZGlhX25mLi4uNF82LjY2d2luMzIuZXhl" target="_blank" rel="noopener">http://file2.mydrivers.com/board/nvidia_nf…4_6.66win32.exe</a><br>虽然是nforce4的.. 但是运行很稳定 ，也可以下载nforce2的驱动，</p>
+<p>地址 <a href="http://www.fx-audio.net/plugin.php?id=laoyang_wailianx&url=aHR0cDovL2ZpbGUyLm15ZHJpdmVycy5jb20vYm9hcmQvbnZpZGlhX2Z3NjM3LnppcA,," target="_blank" rel="noopener">http://file2.mydrivers.com/board/nvidia_fw637.zip</a><br>但是 我觉得 还是 新驱动好. .毕竟能稳定运行，并没什么坏处！</p>
+<p>Intel用户 到这里下载<br>地址 <a href="http://www.fx-audio.net/plugin.php?id=laoyang_wailianx&url=aHR0cDovL2ZpbGUyLm15ZHJpdmVycy5jb20vYm9hcmQvbnZpZGlhX25mLi4uNF82LjY2d2luMzIuZXhl" target="_blank" rel="noopener">http://file2.mydrivers.com/board/nvidia_nf…4_6.66win32.exe</a><br>同上， 虽然是nforce4的.. 但是运行很稳定 ，不愿用新的也可以到这里</p>
+<p>地址 <a href="http://www.fx-audio.net/plugin.php?id=laoyang_wailianx&url=aHR0cDovL2ZpbGUyLm15ZHJpdmVycy5jb20vYm9hcmQvbnZpZGlhX2Z3NjM3LnppcA,," target="_blank" rel="noopener">http://file2.mydrivers.com/board/nvidia_fw637.zip</a><br>安装时 所有 驱动组件 全部选上，装完后<br>打开NVMixer.. 找到 “环境” （下面5个按扭 第4个就是. ）<br>想听原汁原味的..把它关掉 我觉得 那个不怎么样``</p>
+<p>其它的 功能 还很多 比如 不用均衡器只是单纯的增强低音.. </p>
+<p>接下来 打开FB2K.. 转到 ASIO 设置项~~ DEVICE里是不是多了一个选项<br>NVIDIA ASIO.. 就是它！！<br>还有很多功能 朋友们 可以自己探索！！！<br>我只是看中它的ASIO 功能了！！！  </p>
+<p><strong>本帖附件</strong></p>
+<p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../8.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1590,184 +1741,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../160.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../160.html" itemprop="url">原创歌曲《云游》</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T10:15:53+08:00">
-                2019-01-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="创作灵感"><a href="#创作灵感" class="headerlink" title="创作灵感"></a>创作灵感</h2><p>最容易让人成长的</p>
-<p>是感情</p>
-<p>最值得珍惜的</p>
-<p>也是感情</p>
-<p>无论是亲情还是爱情</p>
-<p>有经历就有收获</p>
-<p>漫漫人生</p>
-<p>几次停留</p>
-<p>几次等候</p>
-<p>风雨过后</p>
-<p>最本真的</p>
-<p>才是最需要去呵护的</p>
-<p>平平淡淡也是一种生活方式</p>
-<p>彼此珍惜</p>
-<p>相互扶持</p>
-<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><p>没有太复杂的编曲</p>
-<p>根据需要添加</p>
-<p>只要能表达出自己想要的情绪</p>
-<p>就已足够</p>
-<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><p>分开不需要理由</p>
-<p>说多是借口</p>
-<p>爱情是一招断肠难修</p>
-<p>一个人街角等候 </p>
-<p>而你的眼神闪躲</p>
-<p>全都来笑我</p>
-<p>独自承受以后</p>
-<p>一时停留</p>
-<p>还没闹够</p>
-<p>活着那不是云游</p>
-<p>爱不必留</p>
-<p>是一直不休</p>
-<p>为你守候</p>
-<p>就不用最后</p>
-<p>有时候</p>
-<p>生活没有尽头</p>
-<p>无聊的你我</p>
-<p>无聊的花火</p>
-<p>在一夜过后</p>
-<p>现实依旧</p>
-<p>每个人的以后</p>
-<p>心灵守候 </p>
-<p>经事以后</p>
-<p>是更加的成熟</p>
-<p>岁月的一头</p>
-<p>人已沧桑 快乐依旧</p>
-<p>当下的洒脱</p>
-<p>尽兴的时候</p>
-<p>谁说不够</p>
-<h2 id="第二张原创专辑《转折点》中其他歌曲"><a href="#第二张原创专辑《转折点》中其他歌曲" class="headerlink" title="第二张原创专辑《转折点》中其他歌曲"></a>第二张原创专辑《转折点》中其他歌曲</h2><p><a href="https://audio.newban.cn/161.html">原创歌曲《祝福你》</a></p>
-<p> <a href="https://audio.newban.cn/164.html">原创歌曲《睡吧》</a></p>
-<p><a href="https://audio.newban.cn/163.html">原创歌曲《不许动》</a></p>
-<p><a href="https://audio.newban.cn/169.html">原创歌曲《搞什么事情》</a></p>
-<p><a href="https://audio.newban.cn/165.html">原创歌曲《快跟上》</a></p>
-<p><a href="https://audio.newban.cn/167.html">原创歌曲《漫游》</a></p>
-<p><a href="https://audio.newban.cn/168.html">原创歌曲《无眠》</a></p>
-<p><a href="https://audio.newban.cn/160.html">原创歌曲《云游》</a></p>
-<p><a href="https://audio.newban.cn/166.html">原创歌曲《阳光正好》</a></p>
-<p><a href="https://audio.newban.cn/162.html">原创歌曲《云遮月》</a></p>
-<p><a href="https://audio.newban.cn/158.html">原创歌曲《追风》</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1818,7 +1791,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">183</span>
+                  <span class="site-state-item-count">184</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1831,7 +1804,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>

@@ -273,6 +273,1014 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../137.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../137.html" itemprop="url">一些开源的VST音频插件和音乐应用以及开发框架汇总</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T13:15:53+08:00">
+                2023-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="音频插件"><a href="#音频插件" class="headerlink" title="音频插件"></a>音频插件</h2><table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Description</th>
+<th>Type</th>
+<th>Framework</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://github.com/jpcima/ADLplug" target="_blank" rel="noopener">ADLplug</a></td>
+<td>FM Chip Synthesizer — OPL &amp; OPN</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/antonok-edm/ampli-Fe" target="_blank" rel="noopener">ampli-Fe</a></td>
+<td>Cross-platform VST2 plugin written in Rust</td>
+<td>Effect</td>
+<td>Rust VST</td>
+</tr>
+<tr>
+<td><a href="https://github.com/artfwo/andes" target="_blank" rel="noopener">andes</a></td>
+<td>Sound synthesiser plugin based on Perlin noise</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/airwindows/airwindows" target="_blank" rel="noopener">Airwindows</a></td>
+<td>Various small and experimental effect plugins</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/amsynth/amsynth" target="_blank" rel="noopener">amsynth</a></td>
+<td>Analog-modelling (virtual analog) synthesizer</td>
+<td>Instrument</td>
+<td>GTK</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mourednik/argotlunar" target="_blank" rel="noopener">Argotlunar</a></td>
+<td>Real-time delay-line granulator</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/juandagilc/Audio-Effects" target="_blank" rel="noopener">Audio Effects</a></td>
+<td>Plugins implemented from the explanations in the book “Audio Effects: Theory, Implementation and Application”</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/awwbees/BespokeSynth" target="_blank" rel="noopener">Bespoke</a></td>
+<td>Node-based modular synth with live coding</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/twoz/binaural-vst" target="_blank" rel="noopener">BinAural VST</a></td>
+<td>Mono-to-stereo plugin that positions sound in a 3D space using Head-Related Transfer Functions</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://khrykin.github.io/BlackBird" target="_blank" rel="noopener">BlackBird</a></td>
+<td>Analog-inspired software synth with its own voice</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/datajake1999/C1Bitcrusher" target="_blank" rel="noopener">C1Bitcrusher</a></td>
+<td>Experimental and accurate bit reduction</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Cardinal/" target="_blank" rel="noopener">Cardinal</a></td>
+<td>Virtual modular synthesizer plugin</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/calf-studio-gear/calf" target="_blank" rel="noopener">Calf Studio Gear</a></td>
+<td>Many LV2 and Jack audio plug-ins</td>
+<td>Effects</td>
+<td>GTK</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jatinchowdhury18/CHOW" target="_blank" rel="noopener">CHOW</a></td>
+<td>Maximally truculent distortion effect</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ValdemarOrn/CloudSeed" target="_blank" rel="noopener">Cloud Seed</a></td>
+<td>Algorithmic reverb for emulating huge, endless spaces and modulated echoes</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tesselode/cocoa-delay" target="_blank" rel="noopener">Cocoa Delay</a></td>
+<td>Warm and lively delay</td>
+<td>Effect</td>
+<td>WDL-OL</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/Convolver" target="_blank" rel="noopener">Convolver</a></td>
+<td>Impulse-response reverb</td>
+<td>Effect</td>
+<td>VSTGUI, JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/asb2m10/dexed" target="_blank" rel="noopener">Dexed</a></td>
+<td>DX7 FM plugin synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LouisGorenfeld/DigitsVst" target="_blank" rel="noopener">Digits</a></td>
+<td>Phase-distortion synth inspired by Casio CZ series</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/glBars" target="_blank" rel="noopener">Distrho glBars</a></td>
+<td>OpenGL bars visualization plugin (as seen in XMMS and XBMC/Kodi) adapted from jack_glbars</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/JuicePlugins" target="_blank" rel="noopener">Distrho Juice Plugins</a></td>
+<td></td>
+<td>Misc</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Kars" target="_blank" rel="noopener">Distrho Kars</a></td>
+<td>Simple karplus-strong plucked string synth based on the karplong DSSI example synth</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Mini-Series" target="_blank" rel="noopener">Distrho Mini-Series</a></td>
+<td>Collection of small plugins based on LOSER-Dev Plugins</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/MVerb" target="_blank" rel="noopener">Distrho MVerb</a></td>
+<td>DPF-based version of MVerb</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/ndc-Plugs" target="_blank" rel="noopener">Distrho ndc Plugs</a></td>
+<td>DPF-based versions of some of ndc Plugs</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/Nekobi" target="_blank" rel="noopener">Distrho Nekobi</a></td>
+<td>Simple single-oscillator synth based on Roland TB-303</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DISTRHO/ProM" target="_blank" rel="noopener">Distrho ProM</a></td>
+<td>Music-visualizer plugin based on projectM</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/michaelwillis/dragonfly-reverb" target="_blank" rel="noopener">Dragonfly Reverb</a></td>
+<td>Hall-style reverb based on Freeverb3 algorithms</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/clearly-broken-software/drops" target="_blank" rel="noopener">Drops</a></td>
+<td>Single file audio player</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kushview/Element" target="_blank" rel="noopener">Element</a></td>
+<td>Advanced Audio Plugin Host</td>
+<td>Misc</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/VCVRack/AudibleInstruments" target="_blank" rel="noopener">Eurorack</a></td>
+<td>Diverse set of physical modeling sources, organic processors, wavetable oscillators, waveshapers, granular synths, and utility modules</td>
+<td>Misc</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tesselode/flutterbird" target="_blank" rel="noopener">Flutterbird</a></td>
+<td>Simple pitch fluctuation</td>
+<td>Effect</td>
+<td>iPlug 2</td>
+</tr>
+<tr>
+<td><a href="https://github.com/satelllte/GainPlugin" target="_blank" rel="noopener">GainPlugin</a></td>
+<td>(Experimental) VST/AU audio plugin example based on JUCE with React-JUCE for UI.</td>
+<td>Mics</td>
+<td>JUCE, React-JUCE</td>
+</tr>
+<tr>
+<td><a href="http://elements.byethost3.com/plugins.html" target="_blank" rel="noopener">Gverb/Gigaverb</a></td>
+<td>Reverb</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mtytel/helm" target="_blank" rel="noopener">Helm</a></td>
+<td>Polyphonic synth with lots of modulation</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/smbolton/hexter" target="_blank" rel="noopener">hexter</a></td>
+<td>Yamaha DX7 modeling FM synth for DSSI</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/HiLoFilter" target="_blank" rel="noopener">HiLoFilter</a></td>
+<td>Simple hipass/lopass filter controlled with a single knob</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bsutherland/JuceOPLVSTi" target="_blank" rel="noopener">JuceOPLVSTi</a></td>
+<td>FM synth based on Yamaha OPL2/3 emulation from DOSBox</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://sourceforge.net/projects/juno6/" target="_blank" rel="noopener">Juno 6</a></td>
+<td>Roland Juno 6/60 Synthesizer</td>
+<td>Instrument</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/keithhearne/VSTPlugins" target="_blank" rel="noopener">keithhearne/VSTPlugins</a></td>
+<td>Collection of VST plugins</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mzuther/K-Meter" target="_blank" rel="noopener">K-Meter</a></td>
+<td>Implementation of a K-System meter according to Bob Katz’ specifications</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://michael-jan.github.io/key-repeat/" target="_blank" rel="noopener">Key Repeat</a></td>
+<td>Beat repeat sampler</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/KickMaker" target="_blank" rel="noopener">KickMaker</a></td>
+<td>Synth specifically to create kick-drum sounds</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Iunusov/LameVST" target="_blank" rel="noopener">LameVST</a></td>
+<td>LameMP3 as an effect</td>
+<td>Effect</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/yokemura/Magical8bitPlug2" target="_blank" rel="noopener">Magical8bitPlug 2</a></td>
+<td>Old 8bit game console style synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://sourceforge.net/projects/mda-vst/" target="_blank" rel="noopener">mda</a></td>
+<td>FX and virtual instruments for PC and Mac</td>
+<td>Misc</td>
+<td>(no GUI)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hollance/mda-plugins-juce" target="_blank" rel="noopener">mda-plugins-juce</a></td>
+<td>JUCE implementations of the classic MDA audio plug-ins</td>
+<td>Misc</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/markwilkins/midi-chord-reader" target="_blank" rel="noopener">MidiChords</a></td>
+<td>Detect chord names from a MIDI track and display them in a scrolling window during track playback</td>
+<td>Misc</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tesselode/mika-micro" target="_blank" rel="noopener">Mika Micro</a></td>
+<td>Simple subtractive synth</td>
+<td>Instrument</td>
+<td>WDL-OL</td>
+</tr>
+<tr>
+<td><a href="https://github.com/martineastwood/mverb" target="_blank" rel="noopener">MVerb</a></td>
+<td>Studio-quality reverb using the Dattorro’s figure-of-eight reverb structure</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mikeoliphant/neural-amp-modeler-lv2" target="_blank" rel="noopener">Neural Amp Modeler LV2</a></td>
+<td>Neural amplifier modeler, LV2 version of Steven Atkinson’s NAM plugin</td>
+<td>Effect</td>
+<td>no GUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/clearly-broken-software/ninjas2" target="_blank" rel="noopener">Ninjas 2</a></td>
+<td>Sample slicer, rewrite of Ninjas</td>
+<td>Instrument</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/NotNotchFilter" target="_blank" rel="noopener">NotNotchFilter</a></td>
+<td>Performance-oriented filter designed to replace the mid-EQ found in a standard 3-band DJ mixer</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://www.niallmoody.com/ndcplugs/plugins.htm" target="_blank" rel="noopener">ndc Plugs</a></td>
+<td>VST plugins for Windows and OSX</td>
+<td>Misc</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/greatest-ape/OctaSine" target="_blank" rel="noopener">OctaSine</a></td>
+<td>VST2 frequency modulation synthesizer written in Rust</td>
+<td>Instrument</td>
+<td>Rust VST</td>
+</tr>
+<tr>
+<td><a href="https://github.com/TheWaveWarden/odin2" target="_blank" rel="noopener">Odin2</a></td>
+<td>Polyphonic Synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/PentagramPro/OwlBass" target="_blank" rel="noopener">OwlBass</a></td>
+<td>Additive bass synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/reales/OB-Xd" target="_blank" rel="noopener">OB-Xd</a></td>
+<td>Based on the Oberheim OB-X</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/oxesoft/oxefmsynth" target="_blank" rel="noopener">Oxe FM Synth</a></td>
+<td>Multitimbral 8-operator FM synth (VST 2.4; Windows, Linux, macOS)</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/teragonaudio/PulseDelay" target="_blank" rel="noopener">PulseDelay</a></td>
+<td>Timed delay effect</td>
+<td>Effect</td>
+<td>(no GUI)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mbrucher/QtVST" target="_blank" rel="noopener">QtVST</a></td>
+<td>VST plugins with a Qt interface</td>
+<td>Effect</td>
+<td>Qt</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Sinuslabs/Reach" target="_blank" rel="noopener">REACH</a></td>
+<td>Extraterrestrial Reverb for Electronic Music</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/igorski/regrader" target="_blank" rel="noopener">Regrader</a></td>
+<td>Degenerative delay</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/danielrothmann/Roth-AIR" target="_blank" rel="noopener">Roth-AIR</a></td>
+<td>Mixing tool for easily adding airy, crispy presence to audio</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://sourceforge.net/projects/scorchcrafter/" target="_blank" rel="noopener">ScorchCrafter Guitar FX</a></td>
+<td>Audio DSP FX and plugins, mostly for guitar (amp sim) and other FX</td>
+<td>Effect</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/JanosGit/Schrammel_OJD" target="_blank" rel="noopener">Schrammel OJD</a></td>
+<td>Model of a modern classic guitar distortion pedal</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sfztools/sfizz" target="_blank" rel="noopener">sfizz</a></td>
+<td>SFZ parser library and instrument plugins</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Iunusov/ShoutVST" target="_blank" rel="noopener">ShoutVST</a></td>
+<td>VST for streaming sound into Icecast/Shoutcast directly from VST hosts</td>
+<td>Effect</td>
+<td>VSTGUI, FLUID</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GuitarML/SmartGuitarAmp" target="_blank" rel="noopener">SmartGuitarAmp</a></td>
+<td>Guitar amplifier-style plugin, that uses machine learning for emulating real world hardware</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GuitarML/SmartGuitarPedal" target="_blank" rel="noopener">SmartGuitarPedal</a></td>
+<td>Guitar pedal-style plugin, that uses machine learning for emulating real world hardware</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/adamstark/Sound-Analyser" target="_blank" rel="noopener">Sound Analyser</a></td>
+<td>Real-time audio analysis to allow anyone to quickly set up and experiment with different algorithms</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/leomccormack/SPARTA" target="_blank" rel="noopener">SPARTA</a></td>
+<td>Spatial audio focused plug-in suite (Ambisonics encoders/decoders, 3-D panners/spatialisers, etc.)</td>
+<td>Effect</td>
+<td><a href="https://github.com/leomccormack/Spatial_Audio_Framework" target="_blank" rel="noopener">SAF</a>, JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mzuther/Squeezer" target="_blank" rel="noopener">Squeezer</a></td>
+<td>Compressor with side-chain, several detection modes and filters, etc</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://surge-synthesizer.github.io/" target="_blank" rel="noopener">Surge</a></td>
+<td>Subtractive wavetable synth</td>
+<td>Instrument</td>
+<td>VSTGUI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/the-synister/the-source" target="_blank" rel="noopener">Synister</a></td>
+<td>Subtractive synth</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lis355/Syntage" target="_blank" rel="noopener">Syntage</a></td>
+<td>VST 2.4 .Net Study Synth</td>
+<td>Instrument</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/creativeintent/temper" target="_blank" rel="noopener">Temper</a></td>
+<td>Digital distortion targeting VST, VST3, and AU for OS X and Windows</td>
+<td>Effect</td>
+<td>Faust, JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/paynebc/tunefish" target="_blank" rel="noopener">Tunefish</a></td>
+<td>VST virtual analog synthesizer</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mzuther/traKmeter" target="_blank" rel="noopener">traKmeter</a></td>
+<td>Loudness meter for correctly setting up tracking and mixing levels</td>
+<td>Effect</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/VCVRack/Rack" target="_blank" rel="noopener">VCV Rack</a></td>
+<td>Virtual modular synth</td>
+<td>Misc</td>
+<td>RtAudio</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mtytel/vital" target="_blank" rel="noopener">Vital</a></td>
+<td>Spectral warping wavetable synthesizer</td>
+<td>Instrument</td>
+<td>JUCE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/igorski/VSTSID" target="_blank" rel="noopener">VSTSID</a></td>
+<td>SID synthesizer instrument</td>
+<td>Instrument</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/keijiro/vst2413" target="_blank" rel="noopener">VST2413</a></td>
+<td>FM synth based on emulator of YM2413 (OPLL) chip used in Sega Master System and FM-PAC MSX expansion</td>
+<td>Instrument</td>
+<td>(no GUI)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/webaudiomodules/webcz101" target="_blank" rel="noopener">WebCZ101</a></td>
+<td>Virtual CZ101 synth in a browser</td>
+<td>Instrument</td>
+<td><a href="https://www.webaudiomodules.org/" target="_blank" rel="noopener">WAM</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/webaudiomodules/webdx7" target="_blank" rel="noopener">WebDX7</a></td>
+<td>Virtual Yamaha DX7 synth in a browser</td>
+<td>Instrument</td>
+<td><a href="https://www.webaudiomodules.org/" target="_blank" rel="noopener">WAM</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/pdesaulniers/wolf-shaper" target="_blank" rel="noopener">Wolf Shaper</a></td>
+<td>Waveshaper plugin with spline-based graph editor</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/SpotlightKid/ykchorus" target="_blank" rel="noopener">YK Chorus</a></td>
+<td>Chorus audio effect plugin based on DSP code by TAL</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zamaudio/zam-plugins" target="_blank" rel="noopener">zam-plugins</a></td>
+<td>LADSPA/LV2/VST/JACK audio plugins for high-quality processing</td>
+<td>Effect</td>
+<td>DPF</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zynaddsubfx/zynaddsubfx" target="_blank" rel="noopener">zynaddsubfx</a></td>
+<td>Additive/Subtractive AM/FM synthesizer with effects</td>
+<td>Instrument</td>
+<td>FLTK</td>
+</tr>
+</tbody></table>
+<h2 id="大合集"><a href="#大合集" class="headerlink" title="大合集"></a>大合集</h2><ul>
+<li><a href="http://linuxsynths.com/" target="_blank" rel="noopener">Linux Synths</a> — list of linux based synths, some of which are open-source</li>
+<li><a href="http://openavproductions.com/" target="_blank" rel="noopener">OpenAV</a> — collection of instruments, effects, and development tool kits for Linux.</li>
+<li><a href="https://sfzinstruments.github.io/" target="_blank" rel="noopener">SFZ Instruments</a> — list of SFZ instruments, most of which are free</li>
+<li><a href="https://studiorack.github.io/studiorack-site/" target="_blank" rel="noopener">StudioRack</a> — open-source audio plugin registry, app and command line tools</li>
+<li><a href="https://github.com/VCVRack/library" target="_blank" rel="noopener">VCV library</a> — library of plugins compatible with VCV Plugin Manager</li>
+</ul>
+<h2 id="音频相关应用"><a href="#音频相关应用" class="headerlink" title="音频相关应用"></a>音频相关应用</h2><table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://ardour.org/" target="_blank" rel="noopener">Ardour</a></td>
+<td><a href="https://github.com/Ardour/ardour" target="_blank" rel="noopener">Ardour/ardour</a></td>
+<td>DAW</td>
+</tr>
+<tr>
+<td>ASIO2WASAPI</td>
+<td><a href="https://github.com/levmin/ASIO2WASAPI" target="_blank" rel="noopener">levmin/ASIO2WASAPI</a></td>
+<td>Universal ASIO driver for Windows</td>
+</tr>
+<tr>
+<td><a href="https://www.audacityteam.org/" target="_blank" rel="noopener">Audacity</a></td>
+<td><a href="https://github.com/audacity/audacity" target="_blank" rel="noopener">audacity/audacity</a></td>
+<td>Audio editor</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Jaybee18/butterDAWg" target="_blank" rel="noopener">butterDAWg</a></td>
+<td><a href="https://github.com/Jaybee18/butterDAWg" target="_blank" rel="noopener">Jaybee18/butterDAWg</a></td>
+<td>DAW (WIP)</td>
+</tr>
+<tr>
+<td><a href="https://kx.studio/Applications:Carla" target="_blank" rel="noopener">Carla</a></td>
+<td><a href="https://github.com/falkTX/Carla" target="_blank" rel="noopener">falkTX/Carla</a></td>
+<td>GNU/Linux Plugin Host</td>
+</tr>
+<tr>
+<td><a href="https://chuck.stanford.edu/" target="_blank" rel="noopener">ChucK</a></td>
+<td><a href="https://github.com/ccrma/chuck" target="_blank" rel="noopener">ccrma/chuck</a></td>
+<td>Strongly-timed, Concurrent, and On-the-fly Music Programming Language</td>
+</tr>
+<tr>
+<td><a href="https://kushview.net/element/" target="_blank" rel="noopener">Element</a></td>
+<td><a href="https://github.com/kushview/Element" target="_blank" rel="noopener">Kushview/Element</a></td>
+<td>Advanced Audio Plugin Host</td>
+</tr>
+<tr>
+<td>FlexASIO</td>
+<td><a href="https://github.com/dechamps/FlexASIO" target="_blank" rel="noopener">dechamps/FlexASIO</a></td>
+<td>Universal ASIO driver for Windows</td>
+</tr>
+<tr>
+<td><a href="https://www.giadamusic.com/" target="_blank" rel="noopener">Giada</a></td>
+<td><a href="https://github.com/monocasual/giada" target="_blank" rel="noopener">monocasual/giada</a></td>
+<td>Loop machine</td>
+</tr>
+<tr>
+<td><a href="https://guitarix.org/" target="_blank" rel="noopener">Guitarix</a></td>
+<td><a href="https://sourceforge.net/projects/guitarix/" target="_blank" rel="noopener">SourceForge → guitarix</a></td>
+<td>GNU/Linux Virtual Amplifier</td>
+</tr>
+<tr>
+<td><a href="https://helio.fm/" target="_blank" rel="noopener">Helio Workstation</a></td>
+<td><a href="https://github.com/helio-fm/helio-workstation" target="_blank" rel="noopener">helio-fm/helio-workstation</a></td>
+<td>Sequencer</td>
+</tr>
+<tr>
+<td><a href="http://hise.audio/" target="_blank" rel="noopener">HISE</a></td>
+<td><a href="https://github.com/christophhart/HISE" target="_blank" rel="noopener">christophhart/HISE</a></td>
+<td>Cross-platform framework/application for building sample-based virtual instruments (VST, AU, AAX)</td>
+</tr>
+<tr>
+<td><a href="https://keypleezer.com/sfz-to-hise-converter/" target="_blank" rel="noopener">SFZ to HISE converter</a></td>
+<td><a href="https://github.com/anderseklov/SFZ-to-HISE-converter" target="_blank" rel="noopener">anderseklov/SFZ-to-HISE-converter</a></td>
+<td>JavaScript app that translates SFZ instrument files into HISE samplemaps and JSON data objects. Runs in a modern web browser. MIT license.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/harmonoid/harmonoid" target="_blank" rel="noopener">Harmonoid</a></td>
+<td><a href="https://github.com/harmonoid/harmonoid" target="_blank" rel="noopener">harmonoid/harmonoid</a></td>
+<td>Cross-platform music player (Mobile &amp; Desktop) written in Flutter</td>
+</tr>
+<tr>
+<td><a href="http://hydrogen-music.org/" target="_blank" rel="noopener">Hydrogen</a></td>
+<td><a href="https://github.com/hydrogen-music/hydrogen" target="_blank" rel="noopener">hydrogen-music/hydrogen</a></td>
+<td>Drum machine</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jatinchowdhury18/NewMixer" target="_blank" rel="noopener">NewMixer</a></td>
+<td><a href="https://github.com/jatinchowdhury18/NewMixer" target="_blank" rel="noopener">jatinchowdhury18/NewMixer</a></td>
+<td>Mixing Software</td>
+</tr>
+<tr>
+<td><a href="https://lmms.io/" target="_blank" rel="noopener">LMMS</a></td>
+<td><a href="https://github.com/LMMS/lmms" target="_blank" rel="noopener">LMMS/lmms</a></td>
+<td>DAW</td>
+</tr>
+<tr>
+<td><a href="https://openmpt.org/" target="_blank" rel="noopener">OpenMPT</a></td>
+<td><a href="https://github.com/OpenMPT/openmpt" target="_blank" rel="noopener">OpenMPT/openmpt</a></td>
+<td>Popular tracker (formerly ModPlug Tracker) for Windows with support for IT, XM, S3M, MOD modules, VST plugins and ASIO</td>
+</tr>
+<tr>
+<td><a href="https://ossia.io/" target="_blank" rel="noopener">ossia score</a></td>
+<td><a href="https://github.com/ossia/score" target="_blank" rel="noopener">ossia/score</a></td>
+<td>Cross-platform intermedia sequencer</td>
+</tr>
+<tr>
+<td><a href="https://owlplug.com/" target="_blank" rel="noopener">OwlPlug</a></td>
+<td><a href="https://github.com/DropSnorz/OwlPlug" target="_blank" rel="noopener">DropSnorz/OwlPlug</a></td>
+<td>Audio plugin manager</td>
+</tr>
+<tr>
+<td><a href="https://www.ordrumbox.com/" target="_blank" rel="noopener">orDrumbox</a></td>
+<td><a href="https://sourceforge.net/projects/ordrumbox/" target="_blank" rel="noopener">SourceForge → ordrumbox</a></td>
+<td>Drum machine</td>
+</tr>
+<tr>
+<td><a href="http://psycle.pastnotecut.org/portal.php" target="_blank" rel="noopener">Psycle</a></td>
+<td><a href="https://sourceforge.net/projects/psycle/" target="_blank" rel="noopener">SourceForge → psycle</a></td>
+<td>Modular music tracker</td>
+</tr>
+<tr>
+<td><a href="https://github.com/psobot/SampleScanner" target="_blank" rel="noopener">SampleScanner</a></td>
+<td><a href="https://github.com/psobot/SampleScanner" target="_blank" rel="noopener">psobot/SampleScanner</a></td>
+<td>Tool for auto-sampling hardware instruments</td>
+</tr>
+<tr>
+<td><a href="https://sonic-pi.net/" target="_blank" rel="noopener">Sonic Pi</a></td>
+<td><a href="https://github.com/sonic-pi-net/sonic-pi" target="_blank" rel="noopener">sonic-pi-net/sonic-pi</a></td>
+<td>Code-based music creation and performance tool</td>
+</tr>
+<tr>
+<td><a href="https://supercollider.github.io/" target="_blank" rel="noopener">SuperCollider</a></td>
+<td><a href="https://github.com/supercollider/supercollider" target="_blank" rel="noopener">supercollider/supercollider</a></td>
+<td>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound.</td>
+</tr>
+<tr>
+<td>Stargate DAW</td>
+<td><a href="https://github.com/stargatedaw/stargate" target="_blank" rel="noopener">stargatedaw/stargate</a></td>
+<td>Cross-platform, all-in-one DAW and plugin suite</td>
+</tr>
+<tr>
+<td><a href="https://studiorack.github.io/studiorack-site/" target="_blank" rel="noopener">StudioRack</a></td>
+<td><a href="https://github.com/studiorack" target="_blank" rel="noopener">github.com/studiorack</a></td>
+<td>Audio plugin manager</td>
+</tr>
+<tr>
+<td><a href="https://vcvrack.com/" target="_blank" rel="noopener">VCV Rack</a></td>
+<td><a href="https://github.com/VCVRack/Rack" target="_blank" rel="noopener">VCVRack/Rack</a></td>
+<td>Modular synth</td>
+</tr>
+<tr>
+<td>yabridge</td>
+<td><a href="https://github.com/robbert-vdh/yabridge" target="_blank" rel="noopener">robbert-vdh/yabridge</a></td>
+<td>Linux bridge for Windows VSTs</td>
+</tr>
+<tr>
+<td><a href="https://www.zrythm.org/" target="_blank" rel="noopener">Zrythm</a></td>
+<td><a href="https://github.com/zrythm/zrythm" target="_blank" rel="noopener">zrythm/zrythm</a></td>
+<td>DAW</td>
+</tr>
+</tbody></table>
+<h2 id="音频软件和插件开发依赖库和接口"><a href="#音频软件和插件开发依赖库和接口" class="headerlink" title="音频软件和插件开发依赖库和接口"></a>音频软件和插件开发依赖库和接口</h2><table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://celtera.github.io/avendish" target="_blank" rel="noopener">Avendish</a></td>
+<td><a href="https://github.com/celtera/avendish" target="_blank" rel="noopener">celtera/avendish</a></td>
+<td>C++20 framework for any sort of audio / video / midi media objects</td>
+</tr>
+<tr>
+<td><a href="https://cabbageaudio.com/" target="_blank" rel="noopener">Cabbage</a></td>
+<td><a href="https://github.com/rorywalsh/cabbage" target="_blank" rel="noopener">rorywalsh/cabbage</a></td>
+<td>Framework for developing audio plugins and standalone instruments with Csound</td>
+</tr>
+<tr>
+<td><a href="https://csound.com/" target="_blank" rel="noopener">Csound</a></td>
+<td><a href="https://github.com/csound/csound" target="_blank" rel="noopener">csound/csound</a></td>
+<td>Programming language for sound and music synthesis</td>
+</tr>
+<tr>
+<td><a href="https://cmajor.dev/" target="_blank" rel="noopener">Cmajor</a></td>
+<td><a href="https://github.com/SoundStacks/cmajor" target="_blank" rel="noopener">SoundStacks/cmajor</a></td>
+<td>Cmajor is a programming language for writing fast, portable audio software.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/free-audio/clap" target="_blank" rel="noopener">Clap</a></td>
+<td><a href="https://github.com/free-audio/clap" target="_blank" rel="noopener">free-audio/clap</a></td>
+<td>CLAP stands for CLever Audio Plugin. It is an audio plugin ABI which defines a standard for Digital Audio Workstations and audio plugins (synthesizers, audio effects, …) to work together.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DBraun/DawDreamer" target="_blank" rel="noopener">DawDreamer</a></td>
+<td><a href="https://github.com/DBraun/DawDreamer" target="_blank" rel="noopener">DBraun/DawDreamer</a></td>
+<td>Audio-processing Python framework supporting core DAW features written with JUCE</td>
+</tr>
+<tr>
+<td><a href="https://distrho.sourceforge.io/" target="_blank" rel="noopener">DPF</a></td>
+<td><a href="https://github.com/DISTRHO/DPF" target="_blank" rel="noopener">DISTRHO/DPF</a></td>
+<td>C++ framework for creating cross-platform audio plugins. DPF can build for LADSPA, DSSI, LV2, and VST formats.</td>
+</tr>
+<tr>
+<td><a href="https://dplug.org/" target="_blank" rel="noopener">Dplug</a></td>
+<td><a href="https://github.com/AuburnSounds/Dplug" target="_blank" rel="noopener">AuburnSounds/Dplug</a></td>
+<td>Dplug lets you create audio plug-ins with unmatched simplicity and speed, using the D language.</td>
+</tr>
+<tr>
+<td><a href="https://www.elementary.audio/" target="_blank" rel="noopener">Elementary</a></td>
+<td><a href="https://github.com/elemaudio/elementary" target="_blank" rel="noopener">elemaudio/elementary</a></td>
+<td>JavaScript runtime for writing native audio applications, as well as a library and framework for composing audio signal processes.</td>
+</tr>
+<tr>
+<td><a href="https://faust.grame.fr/" target="_blank" rel="noopener">Faust</a></td>
+<td><a href="https://github.com/grame-cncm/faust" target="_blank" rel="noopener">grame-cncm/faust</a></td>
+<td>Functional programming language for real-time signal processing</td>
+</tr>
+<tr>
+<td><a href="https://www.fluidsynth.org/" target="_blank" rel="noopener">FluidSynth</a></td>
+<td><a href="https://github.com/FluidSynth/fluidsynth" target="_blank" rel="noopener">FluidSynth/fluidsynth</a></td>
+<td>Real-time synth based on the SoundFont 2 specifications</td>
+</tr>
+<tr>
+<td><a href="https://wasted-audio.github.io/hvcc/" target="_blank" rel="noopener">Heavy</a></td>
+<td><a href="https://github.com/Wasted-Audio/hvcc" target="_blank" rel="noopener">Wasted-Audio/hvcc</a></td>
+<td>The heavy hvcc compiler for Pure Data patches. With generators for Bela, Fabric, js, pdext, Unity, Daisy, DPF, and Wwise frameworks.</td>
+</tr>
+<tr>
+<td><a href="https://iplug2.github.io/" target="_blank" rel="noopener">iPlug 2</a></td>
+<td><a href="https://github.com/iPlug2/iPlug2" target="_blank" rel="noopener">iPlug2/iPlug2</a></td>
+<td>Simple-to-use C++ framework for developing cross-platform audio plugins/apps</td>
+</tr>
+<tr>
+<td><a href="https://juce.com/" target="_blank" rel="noopener">JUCE</a></td>
+<td><a href="https://github.com/juce-framework/JUCE" target="_blank" rel="noopener">juce-framework/JUCE</a></td>
+<td>Cross-platform C++ framework for developing desktop and mobile apps and audio plugins</td>
+</tr>
+<tr>
+<td><a href="http://jvstwrapper.sourceforge.net/" target="_blank" rel="noopener">jVSTwRapper</a></td>
+<td><a href="https://sourceforge.net/projects/jvstwrapper/" target="_blank" rel="noopener">SourceForge → jvstwrapper</a></td>
+<td>Wrapper to write audio plugins in Java (VST 2.4, AU, LADSPA; Windows, Linux, macOS)</td>
+</tr>
+<tr>
+<td><a href="https://lib.openmpt.org/libopenmpt/" target="_blank" rel="noopener">libopenmpt</a></td>
+<td><a href="https://github.com/OpenMPT/openmpt" target="_blank" rel="noopener">OpenMPT/openmpt</a></td>
+<td>Cross-platform C/C++ module-playback library based on OpenMPT</td>
+</tr>
+<tr>
+<td><a href="https://videolabs.io/" target="_blank" rel="noopener">libspatialaudio</a></td>
+<td><a href="https://github.com/videolabs/libspatialaudio" target="_blank" rel="noopener">videolabs/libspatialaudio</a></td>
+<td>Cross-platform C++ library for Ambisonic encoding and decoding, filtering and binaural rendering</td>
+</tr>
+<tr>
+<td><a href="http://www.portaudio.com/" target="_blank" rel="noopener">PortAudio</a></td>
+<td><a href="https://app.assembla.com/spaces/portaudio/git/source" target="_blank" rel="noopener">Assembla → portaudio</a></td>
+<td>Cross-platform audio I/O library</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/r-audio" target="_blank" rel="noopener">r-audio</a></td>
+<td><a href="https://github.com/bbc/r-audio" target="_blank" rel="noopener">bbc/r-audio</a></td>
+<td>A library of React components for building Web Audio graphs.</td>
+</tr>
+<tr>
+<td><a href="https://docs.react-juce.dev/" target="_blank" rel="noopener">React-JUCE</a></td>
+<td><a href="https://github.com/JoshMarler/react-juce" target="_blank" rel="noopener">JoshMarler/react-juce</a></td>
+<td>React-JUCE (formerly named Blueprint) is a hybrid JavaScript/C++ framework that enables a <a href="https://reactjs.org/" target="_blank" rel="noopener">React.js</a> frontend for a <a href="https://juce.com/" target="_blank" rel="noopener">JUCE</a> application or plugin.</td>
+</tr>
+<tr>
+<td><a href="https://rust-audio.discourse.group/" target="_blank" rel="noopener">RustAudio</a></td>
+<td><a href="https://github.com/RustAudio" target="_blank" rel="noopener">rustaudio</a></td>
+<td>Collection of audio processing and plugin libraries for the Rust language</td>
+</tr>
+<tr>
+<td>RtAudio</td>
+<td><a href="https://github.com/thestk/rtaudio" target="_blank" rel="noopener">thestk/rtaudio</a></td>
+<td>C++ classes for cross-platform real-time audio I/O</td>
+</tr>
+<tr>
+<td>rust-vst</td>
+<td><a href="https://github.com/rust-dsp/rust-vst" target="_blank" rel="noopener">rust-dsp/rust-vst</a></td>
+<td>VST 2.4 API implementation in the Rust language</td>
+</tr>
+<tr>
+<td><a href="https://leomccormack.github.io/Spatial_Audio_Framework/" target="_blank" rel="noopener">SAF</a></td>
+<td><a href="https://github.com/leomccormack/Spatial_Audio_Framework" target="_blank" rel="noopener">leomccormack/Spatial_Audio_Framework</a></td>
+<td>Cross-platform framework for developing spatial audio related algorithms and software in C/C++</td>
+</tr>
+<tr>
+<td><a href="https://soul.dev/" target="_blank" rel="noopener">SOUL</a></td>
+<td><a href="https://github.com/soul-lang/SOUL" target="_blank" rel="noopener">soul-lang/SOUL</a></td>
+<td>SOUL (SOUnd Language) is an attempt to modernise and optimise the way high-performance, low-latency audio code is written and executed.</td>
+</tr>
+<tr>
+<td><a href="https://paulbatchelor.github.io/proj/soundpipe.html" target="_blank" rel="noopener">Soundpipe</a></td>
+<td><a href="https://github.com/PaulBatchelor/Soundpipe" target="_blank" rel="noopener">PaulBatchelor/Soundpipe</a></td>
+<td>Lightweight music DSP library written in C; over 100 modules, many ported from Csound</td>
+</tr>
+<tr>
+<td><a href="https://www.tracktion.com/develop/tracktion-engine" target="_blank" rel="noopener">tracktion_engine</a></td>
+<td><a href="https://github.com/Tracktion/tracktion_engine" target="_blank" rel="noopener">Tracktion/tracktion_engine</a></td>
+<td>Tracktion Engine module. You can build anything from a simple file-player or sequencer to a full blown DAW. Tracktion Engine is supplied as a JUCE module so it can easily fit in to an existing JUCE application.</td>
+</tr>
+<tr>
+<td><a href="https://tonejs.github.io/" target="_blank" rel="noopener">Tone.js</a></td>
+<td><a href="https://github.com/Tonejs/Tone.js" target="_blank" rel="noopener">Tonejs/Tone.js</a></td>
+<td>A Web Audio framework for making interactive music in the browser.</td>
+</tr>
+<tr>
+<td>VSTGUI</td>
+<td><a href="https://github.com/steinbergmedia/vstgui" target="_blank" rel="noopener">steinbergmedia/vstgui</a></td>
+<td>User-interface toolkit mainly for audio plugins</td>
+</tr>
+<tr>
+<td>WDL-OL</td>
+<td><a href="https://github.com/olilarkin/wdl-ol" target="_blank" rel="noopener">olilarkin/wdl-ol</a></td>
+<td>Simple-to-use C++ framework for developing cross-platform audio plugins (superseded by iPlug 2)</td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="_blank" rel="noopener">Web Audio API</a></td>
+<td><a href="https://github.com/WebAudio/web-audio-api" target="_blank" rel="noopener">web-audio-api</a></td>
+<td>The Web Audio API provides a powerful and versatile system for controlling audio on the Web, allowing developers to choose audio sources, add effects to audio, create audio visualizations, apply spatial effects (such as panning) and much more. <a href="https://chromium.googlesource.com/chromium/blink/+/refs/heads/main/Source/modules/webaudio" target="_blank" rel="noopener">Web Audio API source code (Chromium / Blink)</a>.</td>
+</tr>
+<tr>
+<td><a href="https://webaudiomodules.org/" target="_blank" rel="noopener">WebAudioModules</a></td>
+<td><a href="https://github.com/webaudiomodules" target="_blank" rel="noopener">webaudiomodules</a></td>
+<td>WAM (WebAudioModules) — synthesizers and audio effects processors for web browsers</td>
+</tr>
+</tbody></table>
+<h2 id="插件示例"><a href="#插件示例" class="headerlink" title="插件示例"></a>插件示例</h2><ul>
+<li><a href="https://github.com/HiFi-LoFi/KlangFalter" target="_blank" rel="noopener">KlangFalter</a> — convolution audio plugin (e.g. for usage as convolution reverb)</li>
+<li><a href="https://github.com/HiFi-LoFi/FFTConvolver" target="_blank" rel="noopener">FFTConvolver</a> — audio convolution algorithm in C++ for real-time audio processing</li>
+<li><a href="https://py-modular.readthedocs.io/" target="_blank" rel="noopener">py-modular</a> — modular and experimental programming environment with basic DSP routines in Python</li>
+</ul>
+<h2 id="开源资源"><a href="#开源资源" class="headerlink" title="开源资源"></a>开源资源</h2><ul>
+<li><a href="https://www.openairlib.net/" target="_blank" rel="noopener">OpenAIR</a> — the Open Acoustic Impulse Response Library (Convolution Reverb Impulse Responses to recreate reverb character of space and equipment/recordings)</li>
+</ul>
+<p><strong>本文为转载自</strong>: <a href="http://openaudio.webprofusion.com/" target="_blank" rel="noopener">openaudio</a>  <a href="https://github.com/webprofusion/OpenAudio" target="_blank" rel="noopener">github</a></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../136.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1909,141 +2917,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../127.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../127.html" itemprop="url">一款免费的音乐宿主软件 cakewalk by bandlab</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-10T10:15:53+08:00">
-                2022-11-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>大名鼎鼎的<code>Cakewalk Sonar</code>相比大家都不陌生,老牌宿主了,  目前被<code>bandlab</code>整合后推出<code>Cakewalk by bandlab</code></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20221109160402826.png" alt="image-20221109160402826"></p>
-<p><strong>宿主优势:</strong></p>
-<ul>
-<li>软件免费</li>
-<li>界面漂亮 功能全面 录音编曲混音样样拿手 对新手友好 尤其是鼠标党 </li>
-</ul>
-<p><strong>宿主劣势:</strong></p>
-<ul>
-<li>只支持Windows平台 </li>
-</ul>
-<h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://www.bandlab.com/products/cakewalk" target="_blank" rel="noopener">点击进入官网</a></p>
-<h3 id="扩展知识"><a href="#扩展知识" class="headerlink" title="扩展知识"></a>扩展知识</h3><p>除了<code>Sonar</code>之外 业界比较知名的宿主比如<code>Samplitude</code>,<code>Sequoia</code>和<code>SawStudio</code>都只支持<code>Windows</code>平台</p>
-<p>期待未来<code>Magix</code>公司能开发出<code>Mac</code>版的宿主</p>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2094,7 +2967,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">183</span>
+                  <span class="site-state-item-count">184</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2107,7 +2980,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
