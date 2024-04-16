@@ -82,13 +82,13 @@
 
 
 
-<meta name="description" content="前言如果我们想增强REAPER功能, 可以使用脚本或者插件来实现, 它们的存在,使得 REAPER有了无限可能 两者区别在REAPER中，插件（Plugin）和脚本（Script）是两种不同类型的扩展。  插件（Plugin）： 插件是使用C++、EEL2或JS_ReascriptAPI等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与REAPER的内部功能进行更深层次的集成和交互。">
+<meta name="description" content="&amp;#x524D;&amp;#x8A00;&amp;#x5982;&amp;#x679C;&amp;#x6211;&amp;#x4EEC;&amp;#x60F3;&amp;#x589E;&amp;#x5F3A;REAPER&amp;#x529F;&amp;#x80FD;, &amp;#x53EF;&amp;#x4EE5;&amp;#x4F7F;&amp;#x7528;&amp;#x811A;&amp;#x672C;&amp;#x6216;&amp;#x8005;&amp;#x63D2;&amp;#x4EF6;&amp;#x6765;&amp;#x5B9E;&amp;#x73B0;">
 <meta name="keywords" content="REAPER">
 <meta property="og:type" content="article">
 <meta property="og:title" content="REAPER宿主功能增强秘技之脚本和插件">
 <meta property="og:url" content="https://audio.newban.cn/131.html">
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
-<meta property="og:description" content="前言如果我们想增强REAPER功能, 可以使用脚本或者插件来实现, 它们的存在,使得 REAPER有了无限可能 两者区别在REAPER中，插件（Plugin）和脚本（Script）是两种不同类型的扩展。  插件（Plugin）： 插件是使用C++、EEL2或JS_ReascriptAPI等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与REAPER的内部功能进行更深层次的集成和交互。">
+<meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x5982;&amp;#x679C;&amp;#x6211;&amp;#x4EEC;&amp;#x60F3;&amp;#x589E;&amp;#x5F3A;REAPER&amp;#x529F;&amp;#x80FD;, &amp;#x53EF;&amp;#x4EE5;&amp;#x4F7F;&amp;#x7528;&amp;#x811A;&amp;#x672C;&amp;#x6216;&amp;#x8005;&amp;#x63D2;&amp;#x4EF6;&amp;#x6765;&amp;#x5B9E;&amp;#x73B0;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704163714821.png">
 <meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704163800998.png">
@@ -106,7 +106,7 @@
 <meta property="og:updated_time" content="2024-04-08T14:16:19.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="REAPER宿主功能增强秘技之脚本和插件">
-<meta name="twitter:description" content="前言如果我们想增强REAPER功能, 可以使用脚本或者插件来实现, 它们的存在,使得 REAPER有了无限可能 两者区别在REAPER中，插件（Plugin）和脚本（Script）是两种不同类型的扩展。  插件（Plugin）： 插件是使用C++、EEL2或JS_ReascriptAPI等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与REAPER的内部功能进行更深层次的集成和交互。">
+<meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x5982;&amp;#x679C;&amp;#x6211;&amp;#x4EEC;&amp;#x60F3;&amp;#x589E;&amp;#x5F3A;REAPER&amp;#x529F;&amp;#x80FD;, &amp;#x53EF;&amp;#x4EE5;&amp;#x4F7F;&amp;#x7528;&amp;#x811A;&amp;#x672C;&amp;#x6216;&amp;#x8005;&amp;#x63D2;&amp;#x4EF6;&amp;#x6765;&amp;#x5B9E;&amp;#x73B0;">
 <meta name="twitter:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704163714821.png">
 
 
@@ -358,294 +358,294 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果我们想增强<code>REAPER</code>功能, 可以使用脚本或者插件来实现, 它们的存在,使得 <code>REAPER</code>有了无限可能</p>
-<h3 id="两者区别"><a href="#两者区别" class="headerlink" title="两者区别"></a>两者区别</h3><p>在<code>REAPER</code>中，插件（<code>Plugin</code>）和脚本（<code>Script</code>）是两种不同类型的扩展。</p>
+        <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x589E;&#x5F3A;<code>REAPER</code>&#x529F;&#x80FD;, &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x811A;&#x672C;&#x6216;&#x8005;&#x63D2;&#x4EF6;&#x6765;&#x5B9E;&#x73B0;, &#x5B83;&#x4EEC;&#x7684;&#x5B58;&#x5728;,&#x4F7F;&#x5F97; <code>REAPER</code>&#x6709;&#x4E86;&#x65E0;&#x9650;&#x53EF;&#x80FD;</p>
+<h3 id="&#x4E24;&#x8005;&#x533A;&#x522B;"><a href="#&#x4E24;&#x8005;&#x533A;&#x522B;" class="headerlink" title="&#x4E24;&#x8005;&#x533A;&#x522B;"></a>&#x4E24;&#x8005;&#x533A;&#x522B;</h3><p>&#x5728;<code>REAPER</code>&#x4E2D;&#xFF0C;&#x63D2;&#x4EF6;&#xFF08;<code>Plugin</code>&#xFF09;&#x548C;&#x811A;&#x672C;&#xFF08;<code>Script</code>&#xFF09;&#x662F;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x6269;&#x5C55;&#x3002;</p>
 <ol>
-<li>插件（<code>Plugin</code>）：<ul>
-<li>插件是使用<code>C++</code>、<code>EEL2</code>或<code>JS_ReascriptAPI</code>等语言编写的二进制文件。它们通常具有更高级的功能和性能，能够与<code>REAPER</code>的内部功能进行更深层次的集成和交互。</li>
-<li>插件可以实现一些复杂的音频处理、效果器、虚拟乐器等功能，并以独立的窗口、界面或菜单选项形式提供给用户。</li>
-<li>用户可以通过<code>REAPER</code>的插件管理器安装、加载和管理插件，同时还可以对插件进行配置和参数调整。</li>
+<li>&#x63D2;&#x4EF6;&#xFF08;<code>Plugin</code>&#xFF09;&#xFF1A;<ul>
+<li>&#x63D2;&#x4EF6;&#x662F;&#x4F7F;&#x7528;<code>C++</code>&#x3001;<code>EEL2</code>&#x6216;<code>JS_ReascriptAPI</code>&#x7B49;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x3002;&#x5B83;&#x4EEC;&#x901A;&#x5E38;&#x5177;&#x6709;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x529F;&#x80FD;&#x548C;&#x6027;&#x80FD;&#xFF0C;&#x80FD;&#x591F;&#x4E0E;<code>REAPER</code>&#x7684;&#x5185;&#x90E8;&#x529F;&#x80FD;&#x8FDB;&#x884C;&#x66F4;&#x6DF1;&#x5C42;&#x6B21;&#x7684;&#x96C6;&#x6210;&#x548C;&#x4EA4;&#x4E92;&#x3002;</li>
+<li>&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x97F3;&#x9891;&#x5904;&#x7406;&#x3001;&#x6548;&#x679C;&#x5668;&#x3001;&#x865A;&#x62DF;&#x4E50;&#x5668;&#x7B49;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x4EE5;&#x72EC;&#x7ACB;&#x7684;&#x7A97;&#x53E3;&#x3001;&#x754C;&#x9762;&#x6216;&#x83DC;&#x5355;&#x9009;&#x9879;&#x5F62;&#x5F0F;&#x63D0;&#x4F9B;&#x7ED9;&#x7528;&#x6237;&#x3002;</li>
+<li>&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>REAPER</code>&#x7684;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;&#x3001;&#x52A0;&#x8F7D;&#x548C;&#x7BA1;&#x7406;&#x63D2;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;&#x63D2;&#x4EF6;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x548C;&#x53C2;&#x6570;&#x8C03;&#x6574;&#x3002;</li>
 </ul>
 </li>
-<li>脚本（<code>Script</code>）：<ul>
-<li>脚本是使用<code>Lua</code>、<code>EEL2</code>或<code>JS_ReascriptAPI</code>等脚本语言编写的文本文件。它们相对简单，主要用于自动化任务、快捷操作、自定义功能等方面。</li>
-<li>脚本通过<code>REAPER</code>的脚本编辑器打开，可以直接在编辑器中进行修改、调试和执行。</li>
-<li>脚本可以访问<code>REAPER</code>的<code>API</code>功能，并通过特定的命令、函数和方法来实现特定任务，比如批量处理音频文件、创建自定义动作、生成报告等。</li>
+<li>&#x811A;&#x672C;&#xFF08;<code>Script</code>&#xFF09;&#xFF1A;<ul>
+<li>&#x811A;&#x672C;&#x662F;&#x4F7F;&#x7528;<code>Lua</code>&#x3001;<code>EEL2</code>&#x6216;<code>JS_ReascriptAPI</code>&#x7B49;&#x811A;&#x672C;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;&#x5B83;&#x4EEC;&#x76F8;&#x5BF9;&#x7B80;&#x5355;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x5316;&#x4EFB;&#x52A1;&#x3001;&#x5FEB;&#x6377;&#x64CD;&#x4F5C;&#x3001;&#x81EA;&#x5B9A;&#x4E49;&#x529F;&#x80FD;&#x7B49;&#x65B9;&#x9762;&#x3002;</li>
+<li>&#x811A;&#x672C;&#x901A;&#x8FC7;<code>REAPER</code>&#x7684;&#x811A;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3001;&#x8C03;&#x8BD5;&#x548C;&#x6267;&#x884C;&#x3002;</li>
+<li>&#x811A;&#x672C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;<code>REAPER</code>&#x7684;<code>API</code>&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x7279;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#x3001;&#x51FD;&#x6570;&#x548C;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x7279;&#x5B9A;&#x4EFB;&#x52A1;&#xFF0C;&#x6BD4;&#x5982;&#x6279;&#x91CF;&#x5904;&#x7406;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x3001;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x52A8;&#x4F5C;&#x3001;&#x751F;&#x6210;&#x62A5;&#x544A;&#x7B49;&#x3002;</li>
 </ul>
 </li>
 </ol>
-<p>简而言之，插件通常为更复杂的功能提供支持，并以二进制形式提供。而脚本则更注重自动化和定制化，以文本脚本的形式编写。插件通常需要通过安装程序或插件管理器安装，并可以以独立的方式运行，而脚本直接在<code>REAPER</code>中运行和编辑</p>
-<h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><p>以<code>lua</code>脚本为例, 我们可以直接将脚本源文件拷贝至<code>REAPER</code>程序目录下的<code>lua</code>文件夹中:</p>
+<p>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x63D2;&#x4EF6;&#x901A;&#x5E38;&#x4E3A;&#x66F4;&#x590D;&#x6742;&#x7684;&#x529F;&#x80FD;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#xFF0C;&#x5E76;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x63D0;&#x4F9B;&#x3002;&#x800C;&#x811A;&#x672C;&#x5219;&#x66F4;&#x6CE8;&#x91CD;&#x81EA;&#x52A8;&#x5316;&#x548C;&#x5B9A;&#x5236;&#x5316;&#xFF0C;&#x4EE5;&#x6587;&#x672C;&#x811A;&#x672C;&#x7684;&#x5F62;&#x5F0F;&#x7F16;&#x5199;&#x3002;&#x63D2;&#x4EF6;&#x901A;&#x5E38;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x6216;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x5B89;&#x88C5;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x4EE5;&#x72EC;&#x7ACB;&#x7684;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x811A;&#x672C;&#x76F4;&#x63A5;&#x5728;<code>REAPER</code>&#x4E2D;&#x8FD0;&#x884C;&#x548C;&#x7F16;&#x8F91;</p>
+<h2 id="&#x811A;&#x672C;"><a href="#&#x811A;&#x672C;" class="headerlink" title="&#x811A;&#x672C;"></a>&#x811A;&#x672C;</h2><h3 id="&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a href="#&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="headerlink" title="&#x4F7F;&#x7528;&#x793A;&#x4F8B;"></a>&#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3><p>&#x4EE5;<code>lua</code>&#x811A;&#x672C;&#x4E3A;&#x4F8B;, &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06;&#x811A;&#x672C;&#x6E90;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x81F3;<code>REAPER</code>&#x7A0B;&#x5E8F;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>lua</code>&#x6587;&#x4EF6;&#x5939;&#x4E2D;:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704163714821.png" alt="image-20230704163714821"></p>
-<p>然后重启<code>REAPER</code>, 紧接着在<code>Actions List</code>中即可搜索并运行该脚本:</p>
+<p>&#x7136;&#x540E;&#x91CD;&#x542F;<code>REAPER</code>, &#x7D27;&#x63A5;&#x7740;&#x5728;<code>Actions List</code>&#x4E2D;&#x5373;&#x53EF;&#x641C;&#x7D22;&#x5E76;&#x8FD0;&#x884C;&#x8BE5;&#x811A;&#x672C;:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704163800998.png" alt="image-20230704163800998"></p>
-<p>是不是非常酷😎</p>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p><code>SWS Extensions</code>和<code>ReaPack Extensions</code>基本是人手必备的两大插件</p>
-<h3 id="SWS-Extensions"><a href="#SWS-Extensions" class="headerlink" title="SWS Extensions"></a>SWS Extensions</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><code>SWS</code> 是 <code>REAPER</code> 的扩展模块，安装后可以实现轨道、标签、区块自动着色等丰富的功能。</p>
+<p>&#x662F;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x9177;&#x1F60E;</p>
+<h2 id="&#x63D2;&#x4EF6;"><a href="#&#x63D2;&#x4EF6;" class="headerlink" title="&#x63D2;&#x4EF6;"></a>&#x63D2;&#x4EF6;</h2><p><code>SWS Extensions</code>&#x548C;<code>ReaPack Extensions</code>&#x57FA;&#x672C;&#x662F;&#x4EBA;&#x624B;&#x5FC5;&#x5907;&#x7684;&#x4E24;&#x5927;&#x63D2;&#x4EF6;</p>
+<h3 id="SWS-Extensions"><a href="#SWS-Extensions" class="headerlink" title="SWS Extensions"></a>SWS Extensions</h3><h4 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h4><p><code>SWS</code> &#x662F; <code>REAPER</code> &#x7684;&#x6269;&#x5C55;&#x6A21;&#x5757;&#xFF0C;&#x5B89;&#x88C5;&#x540E;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8F68;&#x9053;&#x3001;&#x6807;&#x7B7E;&#x3001;&#x533A;&#x5757;&#x81EA;&#x52A8;&#x7740;&#x8272;&#x7B49;&#x4E30;&#x5BCC;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704155445515.png" alt="image-20230704155445515"></p>
-<p>官网: <a href="https://www.sws-extension.org/" target="_blank" rel="noopener">点击进入</a></p>
-<h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p><strong>该插件包含的功能有：</strong></p>
+<p>&#x5B98;&#x7F51;: <a href="/external_links/d936dcddbedf5644c581f862503f8f47.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
+<h4 id="&#x529F;&#x80FD;"><a href="#&#x529F;&#x80FD;" class="headerlink" title="&#x529F;&#x80FD;"></a>&#x529F;&#x80FD;</h4><p><strong>&#x8BE5;&#x63D2;&#x4EF6;&#x5305;&#x542B;&#x7684;&#x529F;&#x80FD;&#x6709;&#xFF1A;</strong></p>
 <ul>
-<li><p><strong>节奏工具</strong>：为音频或 MIDI 事件量化而生：从 item 中检测节奏内容并应用到其他 item 里。</p>
+<li><p><strong>&#x8282;&#x594F;&#x5DE5;&#x5177;</strong>&#xFF1A;&#x4E3A;&#x97F3;&#x9891;&#x6216; MIDI &#x4E8B;&#x4EF6;&#x91CF;&#x5316;&#x800C;&#x751F;&#xFF1A;&#x4ECE; item &#x4E2D;&#x68C0;&#x6D4B;&#x8282;&#x594F;&#x5185;&#x5BB9;&#x5E76;&#x5E94;&#x7528;&#x5230;&#x5176;&#x4ED6; item &#x91CC;&#x3002;</p>
 </li>
-<li><p><strong>拍速操作</strong>：可以对 Tempo 进行拓展操作与映射，如果还未满足您的需求，您甚至可以直接用鼠标拖拽量化网格调节 Tempo！</p>
+<li><p><strong>&#x62CD;&#x901F;&#x64CD;&#x4F5C;</strong>&#xFF1A;&#x53EF;&#x4EE5;&#x5BF9; Tempo &#x8FDB;&#x884C;&#x62D3;&#x5C55;&#x64CD;&#x4F5C;&#x4E0E;&#x6620;&#x5C04;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x672A;&#x6EE1;&#x8DB3;&#x60A8;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x60A8;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x9F20;&#x6807;&#x62D6;&#x62FD;&#x91CF;&#x5316;&#x7F51;&#x683C;&#x8C03;&#x8282; Tempo&#xFF01;</p>
 </li>
-<li><p><strong>Rea 终端</strong>：通过键盘指令快速控制轨道行为。</p>
+<li><p><strong>Rea &#x7EC8;&#x7AEF;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x952E;&#x76D8;&#x6307;&#x4EE4;&#x5FEB;&#x901F;&#x63A7;&#x5236;&#x8F68;&#x9053;&#x884C;&#x4E3A;&#x3002;</p>
 </li>
-<li><p><strong>快照工具</strong>：快照窗口允许您保存选中的轨道参数并回调（笔者注：用于混音版本管理以及对比监听）</p>
+<li><p><strong>&#x5FEB;&#x7167;&#x5DE5;&#x5177;</strong>&#xFF1A;&#x5FEB;&#x7167;&#x7A97;&#x53E3;&#x5141;&#x8BB8;&#x60A8;&#x4FDD;&#x5B58;&#x9009;&#x4E2D;&#x7684;&#x8F68;&#x9053;&#x53C2;&#x6570;&#x5E76;&#x56DE;&#x8C03;&#xFF08;&#x7B14;&#x8005;&#x6CE8;&#xFF1A;&#x7528;&#x4E8E;&#x6DF7;&#x97F3;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x4EE5;&#x53CA;&#x5BF9;&#x6BD4;&#x76D1;&#x542C;&#xFF09;</p>
 </li>
-<li><p><strong>循环动作</strong>：使得特定、进阶操作顺利实现，可以设置条件分歧命令等。</p>
+<li><p><strong>&#x5FAA;&#x73AF;&#x52A8;&#x4F5C;</strong>&#xFF1A;&#x4F7F;&#x5F97;&#x7279;&#x5B9A;&#x3001;&#x8FDB;&#x9636;&#x64CD;&#x4F5C;&#x987A;&#x5229;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6761;&#x4EF6;&#x5206;&#x6B67;&#x547D;&#x4EE4;&#x7B49;&#x3002;</p>
 </li>
-<li><p><strong>响度工具</strong>：依照 EBU R128 Loudness Recommendation（EBU R128 响度建议标准）对音频进行分析和标准化。</p>
+<li><p><strong>&#x54CD;&#x5EA6;&#x5DE5;&#x5177;</strong>&#xFF1A;&#x4F9D;&#x7167; EBU R128 Loudness Recommendation&#xFF08;EBU R128 &#x54CD;&#x5EA6;&#x5EFA;&#x8BAE;&#x6807;&#x51C6;&#xFF09;&#x5BF9;&#x97F3;&#x9891;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x548C;&#x6807;&#x51C6;&#x5316;&#x3002;</p>
 </li>
-<li><p><strong>记事本工具</strong>：记下任何事情。</p>
+<li><p><strong>&#x8BB0;&#x4E8B;&#x672C;&#x5DE5;&#x5177;</strong>&#xFF1A;&#x8BB0;&#x4E0B;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#x3002;</p>
 </li>
-<li><p><strong>资源工具</strong>：对工程、轨道模板、效果链、媒体文件等项目进行管理。</p>
+<li><p><strong>&#x8D44;&#x6E90;&#x5DE5;&#x5177;</strong>&#xFF1A;&#x5BF9;&#x5DE5;&#x7A0B;&#x3001;&#x8F68;&#x9053;&#x6A21;&#x677F;&#x3001;&#x6548;&#x679C;&#x94FE;&#x3001;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7B49;&#x9879;&#x76EE;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;</p>
 </li>
-<li><p><strong>标签操作</strong>：走带进过标签时执行指定的操作称为可能。</p>
+<li><p><strong>&#x6807;&#x7B7E;&#x64CD;&#x4F5C;</strong>&#xFF1A;&#x8D70;&#x5E26;&#x8FDB;&#x8FC7;&#x6807;&#x7B7E;&#x65F6;&#x6267;&#x884C;&#x6307;&#x5B9A;&#x7684;&#x64CD;&#x4F5C;&#x79F0;&#x4E3A;&#x53EF;&#x80FD;&#x3002;</p>
 </li>
-<li><p><strong>上下文工具条</strong>：对右键调用的上下文菜单进行增强定制。</p>
+<li><p><strong>&#x4E0A;&#x4E0B;&#x6587;&#x5DE5;&#x5177;&#x6761;</strong>&#xFF1A;&#x5BF9;&#x53F3;&#x952E;&#x8C03;&#x7528;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x83DC;&#x5355;&#x8FDB;&#x884C;&#x589E;&#x5F3A;&#x5B9A;&#x5236;&#x3002;</p>
 </li>
-<li><p><strong>其他功能</strong>：现场演出配置工具、缩放工具、工程管理器、颜色管理器、自动颜色／图标工具、LFO 生成器…… </p>
+<li><p><strong>&#x5176;&#x4ED6;&#x529F;&#x80FD;</strong>&#xFF1A;&#x73B0;&#x573A;&#x6F14;&#x51FA;&#x914D;&#x7F6E;&#x5DE5;&#x5177;&#x3001;&#x7F29;&#x653E;&#x5DE5;&#x5177;&#x3001;&#x5DE5;&#x7A0B;&#x7BA1;&#x7406;&#x5668;&#x3001;&#x989C;&#x8272;&#x7BA1;&#x7406;&#x5668;&#x3001;&#x81EA;&#x52A8;&#x989C;&#x8272;&#xFF0F;&#x56FE;&#x6807;&#x5DE5;&#x5177;&#x3001;LFO &#x751F;&#x6210;&#x5668;&#x2026;&#x2026; </p>
 </li>
 </ul>
-<h4 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h4><p>以<code>Mac</code>平台为例:</p>
+<h4 id="&#x5B89;&#x88C5;&#x65B9;&#x6CD5;"><a href="#&#x5B89;&#x88C5;&#x65B9;&#x6CD5;" class="headerlink" title="&#x5B89;&#x88C5;&#x65B9;&#x6CD5;"></a>&#x5B89;&#x88C5;&#x65B9;&#x6CD5;</h4><p>&#x4EE5;<code>Mac</code>&#x5E73;&#x53F0;&#x4E3A;&#x4F8B;:</p>
 <ol>
-<li><p>进入官网下载安装包</p>
+<li><p>&#x8FDB;&#x5165;&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;</p>
 </li>
-<li><p>打开资源文件存放目录</p>
+<li><p>&#x6253;&#x5F00;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x76EE;&#x5F55;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704165036596.png" alt="image-20230704165036596"></p>
 </li>
-<li><p>将插件拷贝至<code>UserPlugins</code>目录下</p>
+<li><p>&#x5C06;&#x63D2;&#x4EF6;&#x62F7;&#x8D1D;&#x81F3;<code>UserPlugins</code>&#x76EE;&#x5F55;&#x4E0B;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704165111242.png" alt="image-20230704165111242"></p>
 </li>
-<li><p>重启<code>REAPER</code>, 菜单栏出现<code>Extensions</code>选项, 即可使用相应的<code>sws</code>扩展功能</p>
+<li><p>&#x91CD;&#x542F;<code>REAPER</code>, &#x83DC;&#x5355;&#x680F;&#x51FA;&#x73B0;<code>Extensions</code>&#x9009;&#x9879;, &#x5373;&#x53EF;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x7684;<code>sws</code>&#x6269;&#x5C55;&#x529F;&#x80FD;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704165353817.png" alt="image-20230704165353817"></p>
 </li>
 </ol>
-<h3 id="ReaPack"><a href="#ReaPack" class="headerlink" title="ReaPack"></a>ReaPack</h3><p>如果我们想使用别人已经写好的脚本, 或者将自己写的脚本共享给其他用户使用, 则可以用<code>ReaPack</code>来实现</p>
-<h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p><code>ReaPack</code>则是一个插件管理器，它允许用户浏览、下载和安装第三方开发者创建并共享的<code>REAPER</code>脚本、扩展和主题等。<code>ReaPack</code>可以方便地探索和安装来自全球<code>REAPER</code>社区的丰富资源</p>
-<h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4><ol>
-<li><p>进入<code>ReaPack</code>官网, 下载对应的插件包</p>
+<h3 id="ReaPack"><a href="#ReaPack" class="headerlink" title="ReaPack"></a>ReaPack</h3><p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x4F7F;&#x7528;&#x522B;&#x4EBA;&#x5DF2;&#x7ECF;&#x5199;&#x597D;&#x7684;&#x811A;&#x672C;, &#x6216;&#x8005;&#x5C06;&#x81EA;&#x5DF1;&#x5199;&#x7684;&#x811A;&#x672C;&#x5171;&#x4EAB;&#x7ED9;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x4F7F;&#x7528;, &#x5219;&#x53EF;&#x4EE5;&#x7528;<code>ReaPack</code>&#x6765;&#x5B9E;&#x73B0;</p>
+<h4 id="&#x7B80;&#x4ECB;-1"><a href="#&#x7B80;&#x4ECB;-1" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h4><p><code>ReaPack</code>&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x3001;&#x4E0B;&#x8F7D;&#x548C;&#x5B89;&#x88C5;&#x7B2C;&#x4E09;&#x65B9;&#x5F00;&#x53D1;&#x8005;&#x521B;&#x5EFA;&#x5E76;&#x5171;&#x4EAB;&#x7684;<code>REAPER</code>&#x811A;&#x672C;&#x3001;&#x6269;&#x5C55;&#x548C;&#x4E3B;&#x9898;&#x7B49;&#x3002;<code>ReaPack</code>&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x63A2;&#x7D22;&#x548C;&#x5B89;&#x88C5;&#x6765;&#x81EA;&#x5168;&#x7403;<code>REAPER</code>&#x793E;&#x533A;&#x7684;&#x4E30;&#x5BCC;&#x8D44;&#x6E90;</p>
+<h4 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><a href="#&#x4F7F;&#x7528;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"></a>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h4><ol>
+<li><p>&#x8FDB;&#x5165;<code>ReaPack</code>&#x5B98;&#x7F51;, &#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#x5305;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704171327789.png" alt="image-20230704171327789"></p>
-<p>官网: <a href="https://reapack.com/" target="_blank" rel="noopener">点击进入</a></p>
+<p>&#x5B98;&#x7F51;: <a href="/external_links/8294e4ef68281b2484a1f1223fa0b207.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
 </li>
-<li><p>然后将下载的插件文件拷贝至<code>REAPER</code>资源目录下的<code>UserPlugins</code>文件夹下</p>
+<li><p>&#x7136;&#x540E;&#x5C06;&#x4E0B;&#x8F7D;&#x7684;&#x63D2;&#x4EF6;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x81F3;<code>REAPER</code>&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>UserPlugins</code>&#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
 </li>
-<li><p>重启<code>REAPER</code>后即可从<code>Extensions</code>菜单项找到<code>ReaPack</code>入口</p>
+<li><p>&#x91CD;&#x542F;<code>REAPER</code>&#x540E;&#x5373;&#x53EF;&#x4ECE;<code>Extensions</code>&#x83DC;&#x5355;&#x9879;&#x627E;&#x5230;<code>ReaPack</code>&#x5165;&#x53E3;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704165852852.png" alt="image-20230704165852852"></p>
 </li>
 </ol>
-<p>由于<code>ReaPack</code>仓库默认使用的是<code>Github</code>的源, 国内用户访问相对较慢, 为了方便使用, 我们可以使用第三方镜像源</p>
-<h4 id="ReaPack第三方源（镜像）"><a href="#ReaPack第三方源（镜像）" class="headerlink" title="ReaPack第三方源（镜像）:"></a>ReaPack第三方源（镜像）:</h4><table>
+<p>&#x7531;&#x4E8E;<code>ReaPack</code>&#x4ED3;&#x5E93;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>Github</code>&#x7684;&#x6E90;, &#x56FD;&#x5185;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x76F8;&#x5BF9;&#x8F83;&#x6162;, &#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;, &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x955C;&#x50CF;&#x6E90;</p>
+<h4 id="ReaPack&#x7B2C;&#x4E09;&#x65B9;&#x6E90;&#xFF08;&#x955C;&#x50CF;&#xFF09;"><a href="#ReaPack&#x7B2C;&#x4E09;&#x65B9;&#x6E90;&#xFF08;&#x955C;&#x50CF;&#xFF09;" class="headerlink" title="ReaPack&#x7B2C;&#x4E09;&#x65B9;&#x6E90;&#xFF08;&#x955C;&#x50CF;&#xFF09;:"></a>ReaPack&#x7B2C;&#x4E09;&#x65B9;&#x6E90;&#xFF08;&#x955C;&#x50CF;&#xFF09;:</h4><table>
 <thead>
 <tr>
-<th align="left">repo原始地址</th>
-<th align="left">社区论坛地址（镜像）</th>
-<th align="left">简介</th>
+<th align="left">repo&#x539F;&#x59CB;&#x5730;&#x5740;</th>
+<th align="left">&#x793E;&#x533A;&#x8BBA;&#x575B;&#x5730;&#x5740;&#xFF08;&#x955C;&#x50CF;&#xFF09;</th>
+<th align="left">&#x7B80;&#x4ECB;</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><a href="https://github.com/ReaTeam/Extensions/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam Extensions 58</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml 117</a></td>
-<td align="left">ReaTeam的扩展</td>
+<td align="left"><a href="/external_links/54255894009e76725d1a73237b339f65.html" target="blank" rel="noopener">ReaTeam Extensions 58</a></td>
+<td align="left"><a href="/external_links/fc1be841ef30993aed2967280d5fc2ef.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml 117</a></td>
+<td align="left">ReaTeam&#x7684;&#x6269;&#x5C55;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/ReaTeam/JSFX/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam JSFX 14</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml 25</a></td>
-<td align="left">ReaTeam的JSFX</td>
+<td align="left"><a href="/external_links/43fa815e7b8c988d258e05acdf9b79ac.html" target="blank" rel="noopener">ReaTeam JSFX 14</a></td>
+<td align="left"><a href="/external_links/53aab567d2b2bd138792bbf684d8d239.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml 25</a></td>
+<td align="left">ReaTeam&#x7684;JSFX</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/ReaTeam/LangPacks/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam LangPacks 6</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml 7</a></td>
-<td align="left">ReaTeam的语言包（无中文）</td>
+<td align="left"><a href="/external_links/d541ab51140f7f0a783e5cd5f44bd1af.html" target="blank" rel="noopener">ReaTeam LangPacks 6</a></td>
+<td align="left"><a href="/external_links/02ed232c2a07ad5daf07f5baa4f0b89c.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml 7</a></td>
+<td align="left">ReaTeam&#x7684;&#x8BED;&#x8A00;&#x5305;&#xFF08;&#x65E0;&#x4E2D;&#x6587;&#xFF09;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/ReaTeam/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam Scripts 7</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml 12</a></td>
-<td align="left">ReaTeam的脚本</td>
+<td align="left"><a href="/external_links/68e5b154b678594771e17ea10d8705d8.html" target="blank" rel="noopener">ReaTeam Scripts 7</a></td>
+<td align="left"><a href="/external_links/b88c1fba8dcf60d463a28d3419a24b50.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml 12</a></td>
+<td align="left">ReaTeam&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/ReaTeam/Themes/raw/master/index.xml" target="_blank" rel="noopener">ReaTeam Themes 3</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml 4</a></td>
-<td align="left">ReaTeam的主题</td>
+<td align="left"><a href="/external_links/bacbeb5d704846381c877304a4490ff5.html" target="blank" rel="noopener">ReaTeam Themes 3</a></td>
+<td align="left"><a href="/external_links/93bcc26e6a1e409a24430c992eff5929.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml 4</a></td>
+<td align="left">ReaTeam&#x7684;&#x4E3B;&#x9898;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/X-Raym/REAPER-ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">X-Raym Scripts 32</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml 75</a></td>
-<td align="left">X-Raym的脚本</td>
+<td align="left"><a href="/external_links/19e2827035c1d3f2bc821df1744247e4.html" target="blank" rel="noopener">X-Raym Scripts 32</a></td>
+<td align="left"><a href="/external_links/d747f1946744b6c8e4fec3e4b185e5b8.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml 75</a></td>
+<td align="left">X-Raym&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/MichaelPilyavskiy/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">MPL Scripts 3</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml 10</a></td>
-<td align="left">MPL的脚本</td>
+<td align="left"><a href="/external_links/c2dda25ab72b23a2ccad7dd0f59ef541.html" target="blank" rel="noopener">MPL Scripts 3</a></td>
+<td align="left"><a href="/external_links/f94b98ed47342258f5585945db95dd61.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml 10</a></td>
+<td align="left">MPL&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/RCJacH/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">RCJacH Scripts 7</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml 7</a></td>
-<td align="left">RCJach的脚本</td>
+<td align="left"><a href="/external_links/869cf767ec331d82fb45ca75804422f6.html" target="blank" rel="noopener">RCJacH Scripts 7</a></td>
+<td align="left"><a href="/external_links/da06b2eec9087cd0c07c78aa74ff063d.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml 7</a></td>
+<td align="left">RCJach&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/dsyrock/Reascript/raw/master/index.xml" target="_blank" rel="noopener">noiZ Reascript 30</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml 38</a></td>
-<td align="left">noiZ的脚本</td>
+<td align="left"><a href="/external_links/bff6b6a1649761daec0f4c41f414bb04.html" target="blank" rel="noopener">noiZ Reascript 30</a></td>
+<td align="left"><a href="/external_links/67031dcb6ff36e36c6b61af6a81c3c97.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml 38</a></td>
+<td align="left">noiZ&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/nikolalkc/LKC-Tools/raw/master/index.xml" target="_blank" rel="noopener">LKC Tools 9</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml 14</a></td>
-<td align="left">LKC的脚本</td>
+<td align="left"><a href="/external_links/56b3cc3671838b7aec1a9335f27619bf.html" target="blank" rel="noopener">LKC Tools 9</a></td>
+<td align="left"><a href="/external_links/1fee7b2a80f41e0f9e04b0df0ebf2f64.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml 14</a></td>
+<td align="left">LKC&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/acendan/reascripts/raw/master/index.xml" target="_blank" rel="noopener">ACendan Scripts 5</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/acendan/reascripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/acendan/reascripts/index.xml 6</a></td>
+<td align="left"><a href="/external_links/f7dbe8c8e43ec5961c2e2761aac8d1ac.html" target="blank" rel="noopener">ACendan Scripts 5</a></td>
+<td align="left"><a href="/external_links/bf12a1247bf9cfd30867e5f8af0d9fa1.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/acendan/reascripts/index.xml 6</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/zaibuyidao/ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">zaibuyidao Scripts 21</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml 32</a></td>
-<td align="left">再补一刀的脚本</td>
+<td align="left"><a href="/external_links/d6eb6c6f15dfbda4eff2653e1e22a724.html" target="blank" rel="noopener">zaibuyidao Scripts 21</a></td>
+<td align="left"><a href="/external_links/7a6e9c8864c797454fb824ef90654539.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml 32</a></td>
+<td align="left">&#x518D;&#x8865;&#x4E00;&#x5200;&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/JoepVanlier/JSFX/raw/master/index.xml" target="_blank" rel="noopener">Saike Tools 1</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml 4</a></td>
+<td align="left"><a href="/external_links/95210e05fe380f3fe46756fad9f25637.html" target="blank" rel="noopener">Saike Tools 1</a></td>
+<td align="left"><a href="/external_links/241049f83283be470c40932a97d28e2b.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml 4</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/me2beats/reapack/raw/master/index.xml" target="_blank" rel="noopener">me2beats Scripts 9</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/me2beats/reapack/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/me2beats/reapack/index.xml 8</a></td>
+<td align="left"><a href="/external_links/25e845795922b394c51b9ca2d12f15fa.html" target="blank" rel="noopener">me2beats Scripts 9</a></td>
+<td align="left"><a href="/external_links/d680bd6f13a26e50d4d9ded0a794dcb7.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/me2beats/reapack/index.xml 8</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/zaibuyidao/YS_ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">YS Scripts 12</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml 9</a></td>
-<td align="left">当归蛋的脚本</td>
+<td align="left"><a href="/external_links/9ac85622a94a31988320d7dd621abb13.html" target="blank" rel="noopener">YS Scripts 12</a></td>
+<td align="left"><a href="/external_links/8a0105c25d5c2b7ac8a4b4e7fb4b45fe.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml 9</a></td>
+<td align="left">&#x5F53;&#x5F52;&#x86CB;&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://reaticulate.com/release.xml" target="_blank" rel="noopener">Reaticulate 5</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml 2</a></td>
-<td align="left">乐器演奏法脚本</td>
+<td align="left"><a href="/external_links/631de584d058acdb8fd83f8fda765e00.html" target="blank" rel="noopener">Reaticulate 5</a></td>
+<td align="left"><a href="/external_links/d8383bb782c9d0c6d63923276f1e6cb6.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml 2</a></td>
+<td align="left">&#x4E50;&#x5668;&#x6F14;&#x594F;&#x6CD5;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/Dafarkias/REAPER-Lua-Scripts-/raw/master/index.xml" target="_blank" rel="noopener">Dfk REAPER Scripts 1</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml 2</a></td>
+<td align="left"><a href="/external_links/2c3960940f94ed3ae812781b1f14f7b2.html" target="blank" rel="noopener">Dfk REAPER Scripts 1</a></td>
+<td align="left"><a href="/external_links/f456f83545f477f32e6447b6982d125f.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml 2</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/Justin-Johnson/ReJJ/raw/master/index.xml" target="_blank" rel="noopener">ReJJ 3</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml 2</a></td>
+<td align="left"><a href="/external_links/fc229ddab1e290484e24a13d8ecc6a9f.html" target="blank" rel="noopener">ReJJ 3</a></td>
+<td align="left"><a href="/external_links/a6a0ffd056a40ec789e6d296e3c28afa.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml 2</a></td>
 <td align="left">reeq</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/TukanStudios/TUKAN_STUDIOS_PLUGINS/raw/main/index2.xml" target="_blank" rel="noopener">Tukan 16</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml 18</a></td>
-<td align="left">一批 jsfx 效果器</td>
+<td align="left"><a href="/external_links/0711daae1df69b0790d1d733b92f66f0.html" target="blank" rel="noopener">Tukan 16</a></td>
+<td align="left"><a href="/external_links/0465d8e46075aa476f164ab605206601.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml 18</a></td>
+<td align="left">&#x4E00;&#x6279; jsfx &#x6548;&#x679C;&#x5668;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/ershov/reaper64/raw/main/index.xml" target="_blank" rel="noopener">ERSH plugins and effects 3</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ershov/reaper64/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ershov/reaper64/index.xml 3</a></td>
+<td align="left"><a href="/external_links/41888ea4548d358aa896454be94b26f6.html" target="blank" rel="noopener">ERSH plugins and effects 3</a></td>
+<td align="left"><a href="/external_links/3d27f679f8d2b33ad6f0f55bbc3085be.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ershov/reaper64/index.xml 3</a></td>
 <td align="left">Automatic Gain Control</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/iliaspoulakis/Reaper-Tools/raw/master/index.xml" target="_blank" rel="noopener">FTC Tools 3</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml 2</a></td>
-<td align="left">缩放 grid 等工具</td>
+<td align="left"><a href="/external_links/65bc5c7aa4436f67d113fd615d0487ed.html" target="blank" rel="noopener">FTC Tools 3</a></td>
+<td align="left"><a href="/external_links/ec263dcc680aadacdf26b1f2bbe6036c.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml 2</a></td>
+<td align="left">&#x7F29;&#x653E; grid &#x7B49;&#x5DE5;&#x5177;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/Ultraschall/ultraschall-lua-api-for-reaper/raw/master/ultraschall_api_index.xml" target="_blank" rel="noopener">Ultraschall-API 1</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml</a></td>
+<td align="left"><a href="/external_links/8e8824631fbdf60d0a4b95adb1bcca00.html" target="blank" rel="noopener">Ultraschall-API 1</a></td>
+<td align="left"><a href="/external_links/84399f5996d1827235c74f8ef49a4a03.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">Yannick-ReaScripts 1</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml 2</a></td>
+<td align="left"><a href="/external_links/6cf2ddd5a6b2d183361f41b6ecc48ed9.html" target="blank" rel="noopener">Yannick-ReaScripts 1</a></td>
+<td align="left"><a href="/external_links/4af3f063c603601e2f93d22f6f06e713.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml 2</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/pelori/PeloReaper/raw/master/index.xml" target="_blank" rel="noopener">PeloReaper 2</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml 2</a></td>
+<td align="left"><a href="/external_links/795453550a7defa03d15dcd7bfa2cf22.html" target="blank" rel="noopener">PeloReaper 2</a></td>
+<td align="left"><a href="/external_links/963c79958f1b58804a512b9554ba29ae.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml 2</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/ArchieScript/Archie_ReaScripts/raw/master/index.xml" target="_blank" rel="noopener">Archie-ReaScripts 6</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml 3</a></td>
+<td align="left"><a href="/external_links/db25dffea2bac252492ec2d67f4777e4.html" target="blank" rel="noopener">Archie-ReaScripts 6</a></td>
+<td align="left"><a href="/external_links/b5526e7087cc33c44718144f81d88f71.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml 3</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/LoPoFo/LPF_ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">LPF Scripts 1</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml 1</a></td>
+<td align="left"><a href="/external_links/5e889c37d2132e6d623d2db9af9a4c73.html" target="blank" rel="noopener">LPF Scripts 1</a></td>
+<td align="left"><a href="/external_links/2d1382265c6a06347aa8aee0931346d5.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml 1</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/REAPER-CN/reapack-patch/raw/main/index.xml" target="_blank" rel="noopener">reapack-patch for REAPERCN 3</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml 1</a></td>
-<td align="left">给少数 ReaPack 上的脚本打补丁</td>
+<td align="left"><a href="/external_links/e9cc7e1392d69219dc3ced36365049c0.html" target="blank" rel="noopener">reapack-patch for REAPERCN 3</a></td>
+<td align="left"><a href="/external_links/b11b05bbb122553b8d4fbe35b6eff279.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml 1</a></td>
+<td align="left">&#x7ED9;&#x5C11;&#x6570; ReaPack &#x4E0A;&#x7684;&#x811A;&#x672C;&#x6253;&#x8865;&#x4E01;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/wastee/ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">Tee Scripts 4</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml 8</a></td>
-<td align="left">Tee的脚本</td>
+<td align="left"><a href="/external_links/40648e16bc5ea5a26df13f0df09e9438.html" target="blank" rel="noopener">Tee Scripts 4</a></td>
+<td align="left"><a href="/external_links/e6f3ba4f167d2ec4d119368a0b591e44.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml 8</a></td>
+<td align="left">Tee&#x7684;&#x811A;&#x672C;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/DaveInDev/Binbinhfr-Scripts/raw/master/index.xml" target="_blank" rel="noopener">BinbinHfr Scripts</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml 4</a></td>
+<td align="left"><a href="/external_links/3acd7f59349896fe1dc6eed9bd2de535.html" target="blank" rel="noopener">BinbinHfr Scripts</a></td>
+<td align="left"><a href="/external_links/9cee55b7af03465f304ef8338087862d.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml 4</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/audiokinetic/Reaper-Tools/raw/main/index.xml" target="_blank" rel="noopener">Audiokinetic 7</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml 6</a></td>
-<td align="left">wwise工具</td>
+<td align="left"><a href="/external_links/a53efa3608ba9f50e650c97cbe3f50ac.html" target="blank" rel="noopener">Audiokinetic 7</a></td>
+<td align="left"><a href="/external_links/a5410bbf18a77054d02ba5335a5796c2.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml 6</a></td>
+<td align="left">wwise&#x5DE5;&#x5177;</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/jeremybernstein/ReaScripts/raw/main/index.xml" target="_blank" rel="noopener">sockmonkey72 Scripts 1</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml 4</a></td>
+<td align="left"><a href="/external_links/6adb62199df23501011403ca07d70513.html" target="blank" rel="noopener">sockmonkey72 Scripts 1</a></td>
+<td align="left"><a href="/external_links/5b25dea12cf78de4aee4ca46645decf0.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml 4</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/Bird-Bird/ReaScript_Testing/raw/main/index.xml" target="_blank" rel="noopener">BirdBird ReaScript Testing 2</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml 7</a></td>
+<td align="left"><a href="/external_links/f70b31956031b4075e431434aa721c77.html" target="blank" rel="noopener">BirdBird ReaScript Testing 2</a></td>
+<td align="left"><a href="/external_links/eb180c57b3c9e9bad3d0769131372cbe.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml 7</a></td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/helgoboss/reaper-packages/raw/master/index.xml" target="_blank" rel="noopener">Helgoboss Projects</a></td>
-<td align="left"><a href="https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml" target="_blank" rel="noopener">https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml 2</a></td>
+<td align="left"><a href="/external_links/0bf08f528b86ca2b4551ecc0cf333b97.html" target="blank" rel="noopener">Helgoboss Projects</a></td>
+<td align="left"><a href="/external_links/f5797b61f4c3654efab6a3144e76f6ff.html" target="blank" rel="noopener">https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml 2</a></td>
 <td align="left">ReaLearn</td>
 </tr>
 </tbody></table>
-<p>点击<code>import repositories</code>, 将以下地址拷贝到编辑窗, 并替换原有的仓库地址:</p>
+<p>&#x70B9;&#x51FB;<code>import repositories</code>, &#x5C06;&#x4EE5;&#x4E0B;&#x5730;&#x5740;&#x62F7;&#x8D1D;&#x5230;&#x7F16;&#x8F91;&#x7A97;, &#x5E76;&#x66FF;&#x6362;&#x539F;&#x6709;&#x7684;&#x4ED3;&#x5E93;&#x5730;&#x5740;:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704170556660.png" alt="image-20230704170556660"></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704170301863.png" alt="image-20230704170301863"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">https://group.reaget.com/mirrors/ReaTeam/Extensions/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/JSFX/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/LangPacks/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ReaTeam/Themes/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/X-Raym/REAPER-ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/MichaelPilyavskiy/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/RCJacH/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/dsyrock/Reascript/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/nikolalkc/LKC-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/acendan/reascripts/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/zaibuyidao/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/JoepVanlier/JSFX/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/me2beats/reapack/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/zaibuyidao/YS_ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/jtackaberry/reaticulate/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Dafarkias/REAPER-Lua-Scripts-/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Justin-Johnson/ReJJ/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/TukanStudios/TUKAN_STUDIOS_PLUGINS/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/ershov/reaper64/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/iliaspoulakis/Reaper-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Ultraschall/ultraschall-lua-api-for-reaper/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Yaunick/Yannick-ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/pelori/PeloReaper/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/ArchieScript/Archie_ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/LoPoFo/LPF_ReaScripts/index.xml	</span><br><span class="line">https://group.reaget.com/mirrors/REAPER-CN/reapack-patch/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/wastee/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/DaveInDev/Binbinhfr-Scripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/audiokinetic/Reaper-Tools/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/jeremybernstein/ReaScripts/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/Bird-Bird/ReaScript_Testing/index.xml</span><br><span class="line">https://group.reaget.com/mirrors/helgoboss/reaper-packages/index.xml</span><br><span class="line">https://reapertoolkit.dev/index.xml</span><br></pre></td></tr></table></figure>
 
-<p>替换完后,点击<code>browse packages</code> 即可查看已添加仓库中所有的脚本</p>
-<p>然后选择想要的脚本进行安装:</p>
+<p>&#x66FF;&#x6362;&#x5B8C;&#x540E;,&#x70B9;&#x51FB;<code>browse packages</code> &#x5373;&#x53EF;&#x67E5;&#x770B;&#x5DF2;&#x6DFB;&#x52A0;&#x4ED3;&#x5E93;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x811A;&#x672C;</p>
+<p>&#x7136;&#x540E;&#x9009;&#x62E9;&#x60F3;&#x8981;&#x7684;&#x811A;&#x672C;&#x8FDB;&#x884C;&#x5B89;&#x88C5;:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704170943505.png" alt="image-20230704170943505"></p>
-<p>安装完后就能直接使用了</p>
-<h4 id="其他一些好用的ReaPack脚本"><a href="#其他一些好用的ReaPack脚本" class="headerlink" title="其他一些好用的ReaPack脚本"></a>其他一些好用的ReaPack脚本</h4><ol>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x540E;&#x5C31;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E86;</p>
+<h4 id="&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x597D;&#x7528;&#x7684;ReaPack&#x811A;&#x672C;"><a href="#&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x597D;&#x7528;&#x7684;ReaPack&#x811A;&#x672C;" class="headerlink" title="&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x597D;&#x7528;&#x7684;ReaPack&#x811A;&#x672C;"></a>&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x597D;&#x7528;&#x7684;ReaPack&#x811A;&#x672C;</h4><ol>
 <li><p><strong>kawa</strong></p>
-<p>以<code>MIDI</code>编辑脚本居多</p>
-<p>提供了<code>lua</code>和<code>c++</code>两种版本, 仓库地址分别如下:</p>
+<p>&#x4EE5;<code>MIDI</code>&#x7F16;&#x8F91;&#x811A;&#x672C;&#x5C45;&#x591A;</p>
+<p>&#x63D0;&#x4F9B;&#x4E86;<code>lua</code>&#x548C;<code>c++</code>&#x4E24;&#x79CD;&#x7248;&#x672C;, &#x4ED3;&#x5E93;&#x5730;&#x5740;&#x5206;&#x522B;&#x5982;&#x4E0B;:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kawa Script 1(LUA version) Reapack Repository URL </span><br><span class="line">   https://bitbucket.org/kawaCat/reascript-m2bpack/raw/master/index.xml</span><br></pre></td></tr></table></figure>
 
 
 </li>
 </ol>
-<p>   和</p>
+<p>   &#x548C;</p>
    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kawa Script 2(C++ version) Reapack Repository URL </span><br><span class="line">   https://bitbucket.org/kawaCat/kawascript2/raw/master/index.xml</span><br></pre></td></tr></table></figure>
 
 
-<p>   将地址添加进入<code>ReaPack</code>仓库列表中后即可搜索到<code>kawa</code>脚本:</p>
+<p>   &#x5C06;&#x5730;&#x5740;&#x6DFB;&#x52A0;&#x8FDB;&#x5165;<code>ReaPack</code>&#x4ED3;&#x5E93;&#x5217;&#x8868;&#x4E2D;&#x540E;&#x5373;&#x53EF;&#x641C;&#x7D22;&#x5230;<code>kawa</code>&#x811A;&#x672C;:</p>
 <p>   <img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230704162929036.png" alt="image-20230704162929036"></p>
-<p>   官网: <a href="https://www.kawa.works/" target="_blank" rel="noopener">点击进入</a></p>
+<p>   &#x5B98;&#x7F51;: <a href="/external_links/fd7a77657e5633d88d0d41cb85f94545.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
 <ol start="2">
 <li><p><strong>reapertoolkit</strong></p>
-<p>一个 <code>GUI</code>开发工具包, 有兴趣的可以查看官方文档介绍</p>
+<p>&#x4E00;&#x4E2A; <code>GUI</code>&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x5305;, &#x6709;&#x5174;&#x8DA3;&#x7684;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4ECB;&#x7ECD;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/rtk-demo.gif" alt="img"></p>
-<p>官方文档: <a href="https://reapertoolkit.dev/index.htm" target="_blank" rel="noopener">点击进入</a></p>
-<p>论坛帖子: <a href="https://forums.cockos.com/showthread.php?p=2492184" target="_blank" rel="noopener">点击进入</a></p>
+<p>&#x5B98;&#x65B9;&#x6587;&#x6863;: <a href="/external_links/8bb7c074f2866a37ae6173ec7ce8f9fc.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
+<p>&#x8BBA;&#x575B;&#x5E16;&#x5B50;: <a href="/external_links/81c6660d1392b8fcb2495c0c064408de.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
 </li>
 </ol>
-<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
 
       
     </div>

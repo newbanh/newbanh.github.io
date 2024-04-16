@@ -82,19 +82,19 @@
 
 
 
-<meta name="description" content="在低通滤波器或者高通滤波器中常常配备有一个坡度选项 那么滤波器的坡度值意味着什么呢？我们又该如何选择适合的坡度值呢？ 我们知道，一个低通滤波器的电路原理是让声音信号的低频部分通过，并切掉高频部分。可是信号频率的切除与通过之间又是如何过渡的呢？绝大多数的滤波器并不是在某一频率点将声音拦腰截断。那种「一刀切」或者说「砖墙」似的滤波器效果并不实用，听起来也并不好听。 事实上，滤波器中存在一个「完全通过频">
+<meta name="description" content="&amp;#x5728;&amp;#x4F4E;&amp;#x901A;&amp;#x6EE4;&amp;#x6CE2;&amp;#x5668;&amp;#x6216;&amp;#x8005;&amp;#x9AD8;&amp;#x901A;&amp;#x6EE4;&amp;#x6CE2;&amp;#x5668;&amp;#x4E2D;&amp;#x5E38;&amp;#x5E38;&amp;#x914D;&amp;#x5907;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x5761;&amp;#x5EA6;&amp;#x9009;&amp;#x9879;">
 <meta name="keywords" content="混音档案">
 <meta property="og:type" content="article">
 <meta property="og:title" content="选择滤波器的坡度值：12，18 还是 24 dB&#x2F;八度？">
 <meta property="og:url" content="https://audio.newban.cn/27.html">
 <meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
-<meta property="og:description" content="在低通滤波器或者高通滤波器中常常配备有一个坡度选项 那么滤波器的坡度值意味着什么呢？我们又该如何选择适合的坡度值呢？ 我们知道，一个低通滤波器的电路原理是让声音信号的低频部分通过，并切掉高频部分。可是信号频率的切除与通过之间又是如何过渡的呢？绝大多数的滤波器并不是在某一频率点将声音拦腰截断。那种「一刀切」或者说「砖墙」似的滤波器效果并不实用，听起来也并不好听。 事实上，滤波器中存在一个「完全通过频">
+<meta property="og:description" content="&amp;#x5728;&amp;#x4F4E;&amp;#x901A;&amp;#x6EE4;&amp;#x6CE2;&amp;#x5668;&amp;#x6216;&amp;#x8005;&amp;#x9AD8;&amp;#x901A;&amp;#x6EE4;&amp;#x6CE2;&amp;#x5668;&amp;#x4E2D;&amp;#x5E38;&amp;#x5E38;&amp;#x914D;&amp;#x5907;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x5761;&amp;#x5EA6;&amp;#x9009;&amp;#x9879;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513175154.png">
 <meta property="og:updated_time" content="2024-04-08T14:16:19.138Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="选择滤波器的坡度值：12，18 还是 24 dB&#x2F;八度？">
-<meta name="twitter:description" content="在低通滤波器或者高通滤波器中常常配备有一个坡度选项 那么滤波器的坡度值意味着什么呢？我们又该如何选择适合的坡度值呢？ 我们知道，一个低通滤波器的电路原理是让声音信号的低频部分通过，并切掉高频部分。可是信号频率的切除与通过之间又是如何过渡的呢？绝大多数的滤波器并不是在某一频率点将声音拦腰截断。那种「一刀切」或者说「砖墙」似的滤波器效果并不实用，听起来也并不好听。 事实上，滤波器中存在一个「完全通过频">
+<meta name="twitter:description" content="&amp;#x5728;&amp;#x4F4E;&amp;#x901A;&amp;#x6EE4;&amp;#x6CE2;&amp;#x5668;&amp;#x6216;&amp;#x8005;&amp;#x9AD8;&amp;#x901A;&amp;#x6EE4;&amp;#x6CE2;&amp;#x5668;&amp;#x4E2D;&amp;#x5E38;&amp;#x5E38;&amp;#x914D;&amp;#x5907;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x5761;&amp;#x5EA6;&amp;#x9009;&amp;#x9879;">
 <meta name="twitter:image" content="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513175154.png">
 
 
@@ -346,20 +346,20 @@
       
 
       
-        <p>在低通滤波器或者高通滤波器中常常配备有一个坡度选项</p>
-<p>那么滤波器的坡度值意味着什么呢？我们又该如何选择适合的坡度值呢？</p>
-<p>我们知道，一个低通滤波器的电路原理是让声音信号的低频部分通过，并切掉高频部分。可是信号频率的切除与通过之间又是如何过渡的呢？绝大多数的滤波器并不是在某一频率点将声音拦腰截断。那种「一刀切」或者说「砖墙」似的滤波器效果并不实用，听起来也并不好听。</p>
-<p>事实上，滤波器中存在一个「完全通过频段」，在这一频段上声音信号完全通过而不受滤波器的影响，然后信号逐渐减弱 3 dB 后到达滤波器设定的截止频率（Cutoff Frequency），接着信号继续逐渐减弱到 0 dB。接下来的问题是，上述信号减弱到 0 dB 的过程中，信号的频率相对于截止频率改变了多少呢？</p>
+        <p>&#x5728;&#x4F4E;&#x901A;&#x6EE4;&#x6CE2;&#x5668;&#x6216;&#x8005;&#x9AD8;&#x901A;&#x6EE4;&#x6CE2;&#x5668;&#x4E2D;&#x5E38;&#x5E38;&#x914D;&#x5907;&#x6709;&#x4E00;&#x4E2A;&#x5761;&#x5EA6;&#x9009;&#x9879;</p>
+<p>&#x90A3;&#x4E48;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x5761;&#x5EA6;&#x503C;&#x610F;&#x5473;&#x7740;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x53C8;&#x8BE5;&#x5982;&#x4F55;&#x9009;&#x62E9;&#x9002;&#x5408;&#x7684;&#x5761;&#x5EA6;&#x503C;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x4E00;&#x4E2A;&#x4F4E;&#x901A;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x7535;&#x8DEF;&#x539F;&#x7406;&#x662F;&#x8BA9;&#x58F0;&#x97F3;&#x4FE1;&#x53F7;&#x7684;&#x4F4E;&#x9891;&#x90E8;&#x5206;&#x901A;&#x8FC7;&#xFF0C;&#x5E76;&#x5207;&#x6389;&#x9AD8;&#x9891;&#x90E8;&#x5206;&#x3002;&#x53EF;&#x662F;&#x4FE1;&#x53F7;&#x9891;&#x7387;&#x7684;&#x5207;&#x9664;&#x4E0E;&#x901A;&#x8FC7;&#x4E4B;&#x95F4;&#x53C8;&#x662F;&#x5982;&#x4F55;&#x8FC7;&#x6E21;&#x7684;&#x5462;&#xFF1F;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x7684;&#x6EE4;&#x6CE2;&#x5668;&#x5E76;&#x4E0D;&#x662F;&#x5728;&#x67D0;&#x4E00;&#x9891;&#x7387;&#x70B9;&#x5C06;&#x58F0;&#x97F3;&#x62E6;&#x8170;&#x622A;&#x65AD;&#x3002;&#x90A3;&#x79CD;&#x300C;&#x4E00;&#x5200;&#x5207;&#x300D;&#x6216;&#x8005;&#x8BF4;&#x300C;&#x7816;&#x5899;&#x300D;&#x4F3C;&#x7684;&#x6EE4;&#x6CE2;&#x5668;&#x6548;&#x679C;&#x5E76;&#x4E0D;&#x5B9E;&#x7528;&#xFF0C;&#x542C;&#x8D77;&#x6765;&#x4E5F;&#x5E76;&#x4E0D;&#x597D;&#x542C;&#x3002;</p>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x6EE4;&#x6CE2;&#x5668;&#x4E2D;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x300C;&#x5B8C;&#x5168;&#x901A;&#x8FC7;&#x9891;&#x6BB5;&#x300D;&#xFF0C;&#x5728;&#x8FD9;&#x4E00;&#x9891;&#x6BB5;&#x4E0A;&#x58F0;&#x97F3;&#x4FE1;&#x53F7;&#x5B8C;&#x5168;&#x901A;&#x8FC7;&#x800C;&#x4E0D;&#x53D7;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x7136;&#x540E;&#x4FE1;&#x53F7;&#x9010;&#x6E10;&#x51CF;&#x5F31; 3 dB &#x540E;&#x5230;&#x8FBE;&#x6EE4;&#x6CE2;&#x5668;&#x8BBE;&#x5B9A;&#x7684;&#x622A;&#x6B62;&#x9891;&#x7387;&#xFF08;Cutoff Frequency&#xFF09;&#xFF0C;&#x63A5;&#x7740;&#x4FE1;&#x53F7;&#x7EE7;&#x7EED;&#x9010;&#x6E10;&#x51CF;&#x5F31;&#x5230; 0 dB&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x4E0A;&#x8FF0;&#x4FE1;&#x53F7;&#x51CF;&#x5F31;&#x5230; 0 dB &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4FE1;&#x53F7;&#x7684;&#x9891;&#x7387;&#x76F8;&#x5BF9;&#x4E8E;&#x622A;&#x6B62;&#x9891;&#x7387;&#x6539;&#x53D8;&#x4E86;&#x591A;&#x5C11;&#x5462;&#xFF1F;</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/20200513175154.png" alt></p>
-<p><em>信号强度相对于频率的减小速率即「坡度」</em></p>
-<p>以低通滤波器为例，如果用一个电阻和一个电容来构成一个最简单的低通滤波器模型，那么频率每升高一个八度（频率值加倍），该频率的信号强度相应减少 6 dB。即信号强度相较于频率的改变速率为 6 dB 每八度。</p>
-<p>如果滤波器的设计更复杂一些，信号减弱的速率可以达到 12 dB/八度、18 dB/八度甚至 24 dB/八度。在电路设计中，6、12、18以及 24 之外的中间值是很难设计出来的。</p>
-<p>问题是，这些不同的信号减弱速率即「坡度」有什么实际用处呢？</p>
-<p>坡度值为 6 dB/八度的滤波器滤波效果更加柔和，产生的声音不那么明亮尖锐，而12 dB/八度的坡度值产生的声音更加棱角分明。24 dB/八度的坡度值在大多数情况下都有些「切太狠」，但是在合成器的滤波器单元中，24 dB/八度对因对声音塑形有着很显著的效果而常常使用。</p>
-<p>扬声器的低中高单元间的交叉同样要用到滤波器原理和其坡度值。12 dB/八度 和 18 dB/八度的坡度值广泛应用于划分扬声器低频单元、中频单元和高频单元。而陡峭的 24 dB/八度的坡度往往只应用于 PA 系统（公共扩声系统）中。</p>
-<p>固定链接: <a href="https://soundmono.com/which-slope-to-chose-for-filters.html" target="_blank" rel="noopener">https://soundmono.com/which-slope-to-chose-for-filters.html</a><br><strong>转载时请保留本文固定链接并注明出处</strong></p>
-<p><strong>本帖附件</strong></p>
-<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+<p><em>&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#x76F8;&#x5BF9;&#x4E8E;&#x9891;&#x7387;&#x7684;&#x51CF;&#x5C0F;&#x901F;&#x7387;&#x5373;&#x300C;&#x5761;&#x5EA6;&#x300D;</em></p>
+<p>&#x4EE5;&#x4F4E;&#x901A;&#x6EE4;&#x6CE2;&#x5668;&#x4E3A;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x4E00;&#x4E2A;&#x7535;&#x963B;&#x548C;&#x4E00;&#x4E2A;&#x7535;&#x5BB9;&#x6765;&#x6784;&#x6210;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F4E;&#x901A;&#x6EE4;&#x6CE2;&#x5668;&#x6A21;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x9891;&#x7387;&#x6BCF;&#x5347;&#x9AD8;&#x4E00;&#x4E2A;&#x516B;&#x5EA6;&#xFF08;&#x9891;&#x7387;&#x503C;&#x52A0;&#x500D;&#xFF09;&#xFF0C;&#x8BE5;&#x9891;&#x7387;&#x7684;&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#x76F8;&#x5E94;&#x51CF;&#x5C11; 6 dB&#x3002;&#x5373;&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#x76F8;&#x8F83;&#x4E8E;&#x9891;&#x7387;&#x7684;&#x6539;&#x53D8;&#x901F;&#x7387;&#x4E3A; 6 dB &#x6BCF;&#x516B;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6EE4;&#x6CE2;&#x5668;&#x7684;&#x8BBE;&#x8BA1;&#x66F4;&#x590D;&#x6742;&#x4E00;&#x4E9B;&#xFF0C;&#x4FE1;&#x53F7;&#x51CF;&#x5F31;&#x7684;&#x901F;&#x7387;&#x53EF;&#x4EE5;&#x8FBE;&#x5230; 12 dB/&#x516B;&#x5EA6;&#x3001;18 dB/&#x516B;&#x5EA6;&#x751A;&#x81F3; 24 dB/&#x516B;&#x5EA6;&#x3002;&#x5728;&#x7535;&#x8DEF;&#x8BBE;&#x8BA1;&#x4E2D;&#xFF0C;6&#x3001;12&#x3001;18&#x4EE5;&#x53CA; 24 &#x4E4B;&#x5916;&#x7684;&#x4E2D;&#x95F4;&#x503C;&#x662F;&#x5F88;&#x96BE;&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
+<p>&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x8FD9;&#x4E9B;&#x4E0D;&#x540C;&#x7684;&#x4FE1;&#x53F7;&#x51CF;&#x5F31;&#x901F;&#x7387;&#x5373;&#x300C;&#x5761;&#x5EA6;&#x300D;&#x6709;&#x4EC0;&#x4E48;&#x5B9E;&#x9645;&#x7528;&#x5904;&#x5462;&#xFF1F;</p>
+<p>&#x5761;&#x5EA6;&#x503C;&#x4E3A; 6 dB/&#x516B;&#x5EA6;&#x7684;&#x6EE4;&#x6CE2;&#x5668;&#x6EE4;&#x6CE2;&#x6548;&#x679C;&#x66F4;&#x52A0;&#x67D4;&#x548C;&#xFF0C;&#x4EA7;&#x751F;&#x7684;&#x58F0;&#x97F3;&#x4E0D;&#x90A3;&#x4E48;&#x660E;&#x4EAE;&#x5C16;&#x9510;&#xFF0C;&#x800C;12 dB/&#x516B;&#x5EA6;&#x7684;&#x5761;&#x5EA6;&#x503C;&#x4EA7;&#x751F;&#x7684;&#x58F0;&#x97F3;&#x66F4;&#x52A0;&#x68F1;&#x89D2;&#x5206;&#x660E;&#x3002;24 dB/&#x516B;&#x5EA6;&#x7684;&#x5761;&#x5EA6;&#x503C;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x6709;&#x4E9B;&#x300C;&#x5207;&#x592A;&#x72E0;&#x300D;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5408;&#x6210;&#x5668;&#x7684;&#x6EE4;&#x6CE2;&#x5668;&#x5355;&#x5143;&#x4E2D;&#xFF0C;24 dB/&#x516B;&#x5EA6;&#x5BF9;&#x56E0;&#x5BF9;&#x58F0;&#x97F3;&#x5851;&#x5F62;&#x6709;&#x7740;&#x5F88;&#x663E;&#x8457;&#x7684;&#x6548;&#x679C;&#x800C;&#x5E38;&#x5E38;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x626C;&#x58F0;&#x5668;&#x7684;&#x4F4E;&#x4E2D;&#x9AD8;&#x5355;&#x5143;&#x95F4;&#x7684;&#x4EA4;&#x53C9;&#x540C;&#x6837;&#x8981;&#x7528;&#x5230;&#x6EE4;&#x6CE2;&#x5668;&#x539F;&#x7406;&#x548C;&#x5176;&#x5761;&#x5EA6;&#x503C;&#x3002;12 dB/&#x516B;&#x5EA6; &#x548C; 18 dB/&#x516B;&#x5EA6;&#x7684;&#x5761;&#x5EA6;&#x503C;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x5212;&#x5206;&#x626C;&#x58F0;&#x5668;&#x4F4E;&#x9891;&#x5355;&#x5143;&#x3001;&#x4E2D;&#x9891;&#x5355;&#x5143;&#x548C;&#x9AD8;&#x9891;&#x5355;&#x5143;&#x3002;&#x800C;&#x9661;&#x5CED;&#x7684; 24 dB/&#x516B;&#x5EA6;&#x7684;&#x5761;&#x5EA6;&#x5F80;&#x5F80;&#x53EA;&#x5E94;&#x7528;&#x4E8E; PA &#x7CFB;&#x7EDF;&#xFF08;&#x516C;&#x5171;&#x6269;&#x58F0;&#x7CFB;&#x7EDF;&#xFF09;&#x4E2D;&#x3002;</p>
+<p>&#x56FA;&#x5B9A;&#x94FE;&#x63A5;: <a href="/external_links/75536ffcbe6afc587a316a9613090230.html" target="blank" rel="noopener">https://soundmono.com/which-slope-to-chose-for-filters.html</a><br><strong>&#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x4FDD;&#x7559;&#x672C;&#x6587;&#x56FA;&#x5B9A;&#x94FE;&#x63A5;&#x5E76;&#x6CE8;&#x660E;&#x51FA;&#x5904;</strong></p>
+<p><strong>&#x672C;&#x5E16;&#x9644;&#x4EF6;</strong></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
 
       
     </div>
