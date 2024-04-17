@@ -1584,6 +1584,9 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>地址 <a href="http://www.fx-audio.net/plugin.php?id=laoyang_wailianx&url=aHR0cDovL2ZpbGUyLm15ZHJpdmVycy5jb20vYm9hcmQvbnZpZGlhX2Z3NjM3LnppcA,," target="_blank" rel="noopener">http://file2.mydrivers.com/board/nvidia_fw637.zip</a><br>安装时 所有 驱动组件 全部选上，装完后<br>打开NVMixer.. 找到 “环境” （下面5个按扭 第4个就是. ）<br>想听原汁原味的..把它关掉 我觉得 那个不怎么样``</p>
 <p>其它的 功能 还很多 比如 不用均衡器只是单纯的增强低音.. </p>
 <p>接下来 打开FB2K.. 转到 ASIO 设置项~~ DEVICE里是不是多了一个选项<br>NVIDIA ASIO.. 就是它！！<br>还有很多功能 朋友们 可以自己探索！！！<br>我只是看中它的ASIO 功能了！！！  </p>
+<h2 id="其他虚拟声卡"><a href="#其他虚拟声卡" class="headerlink" title="其他虚拟声卡"></a>其他虚拟声卡</h2><ul>
+<li>VoiceMeeter</li>
+</ul>
 <p><strong>本帖附件</strong></p>
 <p><a href="https://u21519047.pipipan.com/fs/21519047-395416051" target="_blank" rel="noopener">点击下载</a></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -10289,6 +10292,128 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>推广</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Antares公司出品的Harmony Engine Evo和声插件的使用方法</title>
+    <url>/189.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>使用的时候注意以下四个部分即可，无论怎么设置，都会严重失真。</p>
+<p>首先在<code>Harmony Control</code>位置选择当前歌曲的调式，选错了，这个制作的和声会严重不对。选对了，也会有很多不对的。如下图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/d3c3d4e9jw1ebxpcrq64jj20rd0ioaft.jpg" alt="img"></p>
+<p>接下来注意中间的位置，有5组参数可调整，第一个<code>INPUT</code>是原始干声的设置，可以直接Mule（静音）掉。</p>
+<p>后面的四组参数是相同的，它们分别对应四个声部，也就是说可以做出四个人的合唱效果。<code>Interval</code>可以选择要制作的和声属性，<code>Solo</code>可以独奏试听这个声部的声音，<code>Mule</code>可以静音当前声部的声音，<code>Throat Length</code>可以调整当前声部的共振峰。<code>Gain</code>大推杆用来调整当前声部的音量大小，<code>Pan</code>推杆设置当前声部的左右声像位置（L是左声道，R右声道）如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/d3c3d4e9jw1ebxpiz82ibj20rd0io0yk.jpg" alt="img"></p>
+<p>在四个声部的下方还可以设置和声的颤音属性，<code>Rate</code>推杆用来设置颤音的调制深度，<code>Onset Delay</code>可以设置颤音的延迟度，<code>Pitch</code>用于调整颤音的音高偏移，<code>Amp Amnt</code>推杆设定颤音的幅度。通过对颤音的设定，就可以获得更多不同的音色，从而模拟不同人的声音演唱和声。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/d3c3d4e9jw1ebxpjbjs7nj20rd0ioq8q.jpg" alt="img"></p>
+<p>除此之外，我们还可以给和声声部模拟多人合唱效果。<code>Input</code>部分可以忽视掉，<code>Voice 1 2 3 4</code>对应上面四个和声声部，点亮按钮后便可以激活当前声部添加多人合唱效果了。<code>Choir Size</code>用来选择合唱的人数，可以选择2人、4人、8人、16人在演唱和声。左边的<code>Choir Bypass</code>可以旁通多人合唱的效果，这样可以对比添加与不添加的效果差别。<code>Vibrato</code>推杆用来调制多人演唱的颤音不同，Pitch推杆用于设定多人演唱的音高偏移，<code>Timing</code>推杆可以设置多人演唱的节拍偏移，最后一个<code>Stereo Spread</code>推杆用于调整多人演唱的立体声声场宽度。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/d3c3d4e9jw1ebxpm4g6oyj20rd0iodln.jpg" alt="img"></p>
+<p>把以上四个部分设定好就可以模拟出凑合的和声了，一般我们可以把人声复制一轨来制作，尽量不要把这种和声的音量放大，因为害怕被人听出来很假。能录制的话，尽量不要制作，任何这类的插件，包括音高修正插件做出来的和声都很假。</p>
+<h2 id="问答"><a href="#问答" class="headerlink" title="问答"></a>问答</h2><ol>
+<li><p>如果是先插入音高修正 再加<code>harmony engine</code>的情况的话 ，也就是和音高修真搭配使用的话，那这个时候<code>harmony engine</code> 只需要动哪些呢?</p>
+<p>答: 先修复音高，你音高不对，自然模拟的和声会有更多的不对。在<code>Harmony</code>中设定一下调式，屏蔽原始干声，设置四组和声的即可！</p>
+</li>
+</ol>
+<p><strong>本文转载自:</strong> 音频教学网站长-磊磊</p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音档案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>做混音的其中一个目的就是融合度</title>
+    <url>/187.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="举一个例子"><a href="#举一个例子" class="headerlink" title="举一个例子"></a>举一个例子</h2><p>先听一下人声的干声：</p>
+<p>除了走音之外，歌手的嗓音高频较多，听起来尖声尖气的。要得到温暖的质感和融合度，首先需要修复音高/节拍，适当做均衡处理。适当增加<code>200hz</code>的音量可以增加声音的厚度，这样可以获得一些温暖的感觉。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef42seohp6g20zk0m60us.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef42uamtmbg20lc053gnt.gif" alt="img"></p>
+<p>试听EQ+音高修正处理后的人声：</p>
+<p>现在也只是音高/频率上有一点点融合度而已，这样是不够的。为了不让人声在伴奏音乐中比较突出，所以需要使用一个压缩效果器，这样人声才不会忽大忽小。才不会一会儿乐器盖住人声，一会儿人声盖住乐器。这样做会大幅提高融合度和饱满度，这个被压缩过的声音在整体中会变得更突出，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef42ztztv4g207e0fx76n.gif" alt="img"></p>
+<p>试听EQ+音高修正+压缩处理后的人声：</p>
+<p>绝大多数歌手通常会把唇齿音咬的比较重，这样录制到的人声与乐器中的超高频部分会有些冲突，同时尖声尖气的唇齿音会让整体听起来非常不圆润，所以我们可以添加一个DeEsser效果器。对咬字过重的唇齿音进行适当削弱，从而使人声听起来更加圆滑一些，这样也可以提高融合度。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef432hk15kg20cc07eq3s.gif" alt="img"></p>
+<p>试听音高修正+EQ+压缩+齿音消除后的人声：</p>
+<p>这首歌在制定混音计划的时候就打算做成比较温暖的质感，添加以上的效果器还是达不到的，在轨道中可以添加一个傻瓜式的效果器NLS Bus，选择MIKE硬件型号来模拟质感。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef435vwprcg20ck0gn41j.gif" alt="img"></p>
+<p>试听音高修正+EQ+压缩+齿音消除+NLS模拟后的人声：</p>
+<p>根据自己的混音计划，目前对人声的振幅（音量类）处理已经结束。接下来需要对延迟（空间类）处理进行分析和调整，我们选用混响+四个点的延迟处理，分别建立三个Aux轨道进行发送。注意：为了获得温暖的感觉，所有空间效果都切掉了超高频。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef439c56ogg20hd0egjut.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43ad6cpsg20kt07mwg8.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43bcnqvdg20g40933zd.gif" alt="img"></p>
+<p>试听音高修正+EQ+压缩+齿音消除+NLS+空间处理的人声：</p>
+<p>对乐器和人声混音结束后（翻唱通常不用处理乐器）就需要做最后的母带处理了，建议阅读 《站长对人声混音与母带工程的经验详解『图文教程』》，这里不想重复说一次。以下配上母带处理截图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43e7xtshg20ek09rmzm.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43f6rgw0g20nn08pdjz.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43gugydxg20ck0h5dib.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43hnvm3eg20ks0dzjwy.gif" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5gw1ef43iqhqg6g20kk0b9781.gif" alt="img"></p>
+<p>试听最终人声：</p>
+<p>试听最终成品：</p>
+<p>总之，你做混音最大一方面就是在做融合度。几乎每一步都可以影响融合度！</p>
+<p><strong>本文转载自:</strong> 音频教学网站长-磊磊</p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音档案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>EQ均衡器 压缩器 混响器的使用介绍</title>
+    <url>/188.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>您说的这些效果器在人声混音的时候一般都是要使用的：Q1是一段均衡器，可以对频率进行控制，但由于只有一个扫频点，所以只能对某一个频率范围内的声音进行音量控制。Q1 Q2 Q3 ~ Q10的区别就在于段数不同，比如Q10有十个扫频点，它就能对十个频率范围内的声音进行音量控制。EQ均衡效果器其实并不难使用，它就是音量推子，区别在于：EQ均衡效果器可以对不同频率范围内的声音进行音量增加或者减小，或者是滤掉（Pass）某些频率。而普通的音量推子则不针对频率，宿主软件调音台上的音量推子通常控制的是音轨的整体音量。</p>
+<h2 id="针对Waves-Q1-均衡效果器举一个例子"><a href="#针对Waves-Q1-均衡效果器举一个例子" class="headerlink" title="针对Waves Q1 均衡效果器举一个例子"></a>针对Waves Q1 均衡效果器举一个例子</h2><p>通常这种简单的一段EQ均衡器，用来做滤波处理是非常好的选择，而且Waves Q1这个均衡效果器的滤切功能可以切的非常干净，这都要归功于它内部的算法。例如：把Waves Q1用在人声上，通常做一下Cut 80hz（高通滤波）切掉80hz以下不需要的频率是必须做的。这可以保证人声的感觉程度，而且还能稍微的改善人声喷麦 以及低频噪声等等。麻烦楼主试听对比下方的音频：</p>
+<p>人声未处理试听：</p>
+<p>人声处理后试听：</p>
+<p>处理后成品小样：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e785sne7itj20ek08s0ub.jpg" alt="img"></p>
+<h2 id="针对Waves-C4-多段动态效果器举例说明"><a href="#针对Waves-C4-多段动态效果器举例说明" class="headerlink" title="针对Waves C4 多段动态效果器举例说明"></a>针对Waves C4 多段动态效果器举例说明</h2><p>关于动态处理，我们建议您参阅《Waves 完美音质视频教程光盘》第35课，在那节课中 长篇大论说明了动态的含义。这里简单重复介绍一下：动态效果器是一个大类别，所谓动态指的是声音起伏大小，动态效果器是用来控制振幅（音量）的效果器。我们常见的：门限器、压缩器、扩展器、压限器、限制器、等等都属于动态效果器里的一种，对于人声单个音轨而言，通常情况下是需要使用压缩效果器的，这样才可以获得更平均的音量。从而获得饱满度、融合度、以及细节等等。以上说明的仅仅是单段动态效果器，这种单段动态效果器作用于所有频率。</p>
+<p>Waves的C4是一个多段动态效果器，像Ozone 5、Waves LinMB也都是多段动态效果器。多段动态效果器就是先把声音分成不同的频率段，然后用户可以对不同频率段的声音进行不同的动态控制。这通常用于不同频率段存在动态问题的时候，所以 您需要先判断自己制作的声音是否存在不同频率的动态问题，然后再选择使用。急于了解多段动态效果器的话，可以参阅 IZotope Mastering Tutorial 02 Multiband Compressor 视频教程。单个人声音轨一般不会存在这个问题，不过使用多段压缩功能到是可以做人声的唇齿音消除处理，还可以制作一些特效。具体什么时候使用，如何发挥自己的想象里，这完全要靠您自己对混音的艺术感悟了。</p>
+<p>以压缩效果器举例来说的话，多段和单段非常好理解。单段类是对16hz到22.1khz的频率做整体压缩处理的效果器，多段压缩效果器 则可以对16hz到22.1khz频率范围内的声音进行不同的压缩处理。当多段压缩效果器的阈值/压缩比/启动缓冲实际/释放缓冲事件/等所有参数完全一样的时候，这个多段压缩效果器的作用 其实就是单段压缩效果器。大家大致思考一下的话，很容易理解这个逻辑！</p>
+<p>既然楼主举例C4，那这里就用C4做一个人声处理的例子吧。使用Waves C4处理人声的时候，我们不但可以对人声进行压缩，还可以通过每一组参数中的Gain来做频率调整。当我们对某个频率范围内的声音进行压缩处理后，这个频率范围内的音量就会减小 对吧。所以，我们需要通过Gain来对这个频率范围内的声音进行适当增益（增加）才能保证频率和谐。同时，在做完人声的压缩处理之后，我们还可以在细混时用Gain来当作EQ功能做调整。下面这个例子，我的目的是：对人声做适当压缩处理，让人声更加饱满。同时对低频进行增益，让人声更具厚度，改善尖声尖气的缺憾。超高频压缩的较厉害，为了不让人声失去磁性，我们适当再对超高频进行增益。请对比下方音频：</p>
+<p>人声未处理试听：</p>
+<p>人声处理后试听：</p>
+<p>处理后成品小样：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e785tgos87j20fy0auwg9.jpg" alt="img"></p>
+<h2 id="EQ均衡效果器附加小知识"><a href="#EQ均衡效果器附加小知识" class="headerlink" title="EQ均衡效果器附加小知识"></a>EQ均衡效果器附加小知识</h2><p>在某些时候，调整频率段的音量不一定是为了让声音好听。EQ均衡效果器其实是一个非常好用的特效处理工具。就拿上面的声音做例子吧，比如：第二段演唱开始的时候，编曲中乐器减小的位置，我们可以做一个滤波处理。我使用的是Sequoia自带的四段EQ均衡效果器，操作方法与Waves Q4是完全相同的。如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e787d6bhsrj20hl0ccjt8.jpg" alt="img"></p>
+<p>人声未处理试听：</p>
+<p>人声处理后试听：</p>
+<p>处理后成品小样：</p>
+<h2 id="混响效果器举例说明"><a href="#混响效果器举例说明" class="headerlink" title="混响效果器举例说明"></a>混响效果器举例说明</h2><p>混响效果器可以说是必须使用的效果器了，现在的流行音乐当中，乐器人声都是有混响的，即便不加混响 也会录制room调用，因为乐曲需要一个空间。混响效果器就是用来对声音描述所处空间感觉的效果器，不但混响可以描述空间。Echo回声/Delay延迟效果器也是可以描述空间感觉的效果器，楼主可以参阅视频教程的第38/48/50三节课来理解空间效果器的原理和参数含义。在实际的使用当中，因为现在流行比较宽/比较贴耳/但不湿润的声音，因此 通常混响效果器搭配延迟效果器是一个不错的组合。因为延迟效果器可以很明显的对声音加宽，而且混响+延迟的组合可以制造出：声音在空气中反复反射 反复叠加的复杂空间效果器，这样也可以大大的提升混响的质感。至于人声/乐器要不要加混响，您听听下面的例子就明白了。</p>
+<p>人声没有加混响：</p>
+<p>加上混响和延迟：</p>
+<p>人声去混响成品：</p>
+<p>处理后成品试听：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e787jel4mbj20hd0eg77e.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e787jb0491j20kt08440c.jpg" alt="img"></p>
+<h2 id="压缩效果器举例说明"><a href="#压缩效果器举例说明" class="headerlink" title="压缩效果器举例说明"></a>压缩效果器举例说明</h2><p>前面说过了，压缩处理是动态处理的一种，但压缩处理是混音中最最常用的处理手法之一。无论是论坛还是视频教程中 都重复过N遍了，压缩器是用来降低音量起伏的工具。当某个声音被压缩处理后比较集中时，这个声音在整体中会最有爆发力。所以，没做好压缩处理，很容易造成一会儿伴奏乐器盖住人声。一会儿人声盖住伴奏乐器，整体忽明忽暗，多多闪闪的感觉，乐器与人声处于脱节状态，人声是人声/伴奏是伴奏，无法融入到一起。该说的参数都说过了，这里教一个小技巧：当伴奏里的乐器压缩量较大的时候，人声的压缩程度就要更大。比如说：摇滚音乐里的乐器压缩幅度都非常大，那么 通常情况下人声压缩到冲击力强于伴奏乐器的时候 才不会被乐器盖住，而且融合性很好。</p>
+<p>除了压缩效果器之外，通常用于母带处理的压限器/以及Max类的最大化效果器也是混音中动态的关键。我们不能说只把单个乐器和人声做得饱满就行，整体的响度，整体的细节也是需要出来的。压限器的压缩量较大，在整体处理的时候可以大幅提升融合度/饱满度/响度/整体的各个细节。这样，听众听起来才会轻松，才会有欣赏音乐的心情。不过，不同风格对于响度的表达是不相同的。比如：编曲比较单薄的音乐，响度就不需要很大，Jazz风格也是如此。如摇滚，舞曲的响度通常需要做得比较大。具体大家要怎么做，这要看大家对当前音乐的理解啦。不过，现阶段流行的还是响度偏大的音频。到底压缩/压线/或者是Max最大化有多重要，大家听一下接下来的例子就能体会了。</p>
+<p>人声未处理试听：</p>
+<p>人声加伴奏试听：</p>
+<p>人声压缩处理后：</p>
+<p>修复音高加电音：</p>
+<p>混音后成品小样：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e78d1c321yj207e0gygmz.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e78d2fknchj20kj0bqacp.jpg" alt="img"></p>
+<p>除了在听觉上可以很明显听出动态处理的前后差别之外，其实在视觉上也是可以很明显看出来的。从波形/电平表/响度观测表中都是可以很明显看出当前音乐是否饱满的。如下图所示：（注：不习惯T-RackS分析仪的用户，可以用Waves的PAZ分析仪代替检测）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e78d0yynasj20q10fcgpw.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/songjianzaina/site_img/img/628113b5jw1e78d14ujouj20no0aygox.jpg" alt="img"></p>
+<p>学完了视频教程，推荐看看下面的相关文章</p>
+<ul>
+<li>站长对人声混音与母带工程的经验详解『图文教程』</li>
+<li>关于站长对唇齿音的处理经验『图文详解』</li>
+<li>Auto Tune Evo 6 手动修正与操作技巧『图文教程』</li>
+<li>Waves H-Delay 混合延迟效果器『使用说明』</li>
+<li>Waves Kramer PIE 压缩效果器『使用说明』</li>
+<li>Hybrid Compressor 混合压缩处理技术『工程分析』</li>
+<li>Waves NLS Buss &amp; Channel 过一遍效果器『使用说明』</li>
+</ul>
+<p><strong>本文转载自:</strong> 音频教学网站长-磊磊</p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音档案</tag>
       </tags>
   </entry>
 </search>
