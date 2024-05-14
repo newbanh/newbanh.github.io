@@ -1880,7 +1880,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p>然后在<code>Action List</code>中搜索<code>auto trim</code>, 找到<code>Auto trim/split items</code>选项并运行:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707103721841.png" alt="image-20230707103721841"></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707104616834.png" alt="image-20230707104616834"></p>
-<h2 id><a href="#" class="headerlink" title=" "></a><iframe src="https://app.gumroad.com/s/05978f637fc5a248aa2edcd064719630/G_Ue7lOfpun4_F7KKvCMVA==&autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe></h2><p>在轨道上放一个音源，点开轨道的录制状态，录制键右键–选择输入:MIDI，就可以发出声音</p>
+<h2 id="和弦插入"><a href="#和弦插入" class="headerlink" title="和弦插入"></a>和弦插入</h2><p>在轨道上放一个音源，点开轨道的录制状态，录制键右键–选择输入:MIDI，就可以发出声音</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707110122466.png" alt="image-20230707110122466"></p>
 <p>特别适合用来给歌曲配和弦</p>
 <p>该功能是一个第三方脚本, 需要在<code>ReaPack</code>中搜索关键字<code>ChordGun</code>进行安装:</p>
@@ -9775,15 +9775,17 @@ shortcut.add("Shift+x",function() {
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ol>
 <li><p>无论是大和弦 小和弦还是属和弦, 其中的九音 、 十一音、  十三音 默认分别都是大九度(大二度)、 纯十一度(纯四度) 、 大十三度(大六度):</p>
 <ul>
-<li><strong>九音–&gt; 大九度  (大二度)</strong></li>
-<li><strong>十一音–&gt; 纯十一度 (纯四度)</strong></li>
-<li><strong>十三音–&gt;大十三度 (大六度)</strong></li>
+<li><p><strong>九音–&gt; 大九度  (大二度)</strong></p>
+</li>
+<li><p><strong>十一音–&gt; 纯十一度 (纯四度)</strong></p>
+</li>
+<li><p><strong>十三音–&gt;大十三度 (大六度)</strong></p>
+</li>
 </ul>
 </li>
 </ol>
-<p>   比如<code>Em9</code>和弦音为 <code>3 5 7 2 4#</code></p>
-<p>   而<code>3 5 7 2 4</code>则是<code>Em9b</code>和弦的组成音 </p>
-<ol start="2">
+<pre><code>比如`Em9`和弦音为 `3 5 7 2 4#`
+而` 3 5 7 2 4`则是`Em9b`和弦的组成音 </code></pre><ol start="2">
 <li><p>我们在实际演奏四个音以上的和弦时, 可以省略其中的五音, 只保留其中四个音即可:</p>
 <ul>
 <li><strong>保留根音</strong>: 和弦之本</li>
@@ -10759,7 +10761,7 @@ shortcut.add("Shift+x",function() {
     <title>国产直播在线K歌 录音 VST效果器机架软件 Monster Audio</title>
     <url>/192.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p>Monster Audio（小怪兽）是一款专门为老百姓打造的免费录音棚软件，它简单易用，同时可以使用VST效果器对声音进行实时处理，支持连接Midi键盘加载VST音源演奏。内部具备点歌台功能，可搭建个人的点歌系统。</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/p1.png" alt="img"> </p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/p1.png" alt="img"></p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/p2.png" alt="img"></p>
 <p><a href="http://jacktan.cn/" target="_blank" rel="noopener">点击进入官网</a></p>
 <h2 id="功能特色"><a href="#功能特色" class="headerlink" title="功能特色"></a>功能特色</h2><ul>
@@ -10839,6 +10841,159 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>音源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>库乐队如何导出音轨MIDI文件</title>
+    <url>/194.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>库乐队默认无法导出MIDI </p>
+<p>只能导入MIDI和音频  </p>
+<p>如果想将库乐队中的编曲片段导出MIDI 有两种曲线救国的方案</p>
+<h2 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h2><p>第一种 就是安装<code>Logic</code> 然后用<code>Logic</code>打开库乐队的工程导出即可 </p>
+<p>我在想 苹果公司阉割了库乐队导出MIDI功能 可能目的就是为了让我们安装他们家的Logic 😂</p>
+<h2 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h2><p>虽然库乐队无法导出<code>MIDI</code>但是可以导出<code>aif</code>格式的<code>loop</code>循环片段</p>
+<p>我们只需将导出的<code>aif</code>通过第三方工具转换成<code>MIDI</code>格式文件即可</p>
+<p>导出<code>aif</code>片段快捷键为 <code>Ctrl+Shift+O</code></p>
+<p>我们可以在在<code>~/Library/Audio/AppleLoops/UserLoops/SingleFiles</code>目录下找到导出的<code>aif</code>文件</p>
+<p><code>aif</code>在线转<code>MIDI</code>工具 : <a href="http://aif2midi.com/" target="_blank" rel="noopener">点击进入</a></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240502203831812.png" alt="image-20240502203831812"></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>实用技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Reaper中关于子工程的使用</title>
+    <url>/195.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Reaper</code>的子工程功能是一种非常有用的工具 它允许用户在一个主工程内部嵌套其他独立的工程</p>
+<p>这些子工程可以包含自己的轨道、区段、效果等  并且可以被像主工程中的其他元素一样进行编辑和操作 子工程的出现，极大地提高了Reaper在处理复杂音乐制作项目时的灵活性和效率。</p>
+<h2 id="子工程的使用场景"><a href="#子工程的使用场景" class="headerlink" title="子工程的使用场景"></a>子工程的使用场景</h2><h3 id="多人合作"><a href="#多人合作" class="headerlink" title="多人合作"></a>多人合作</h3><p>当多个制作者需要共同制作一首歌时，每个人可以独立处理自己的部分，并在自己的子工程中完成</p>
+<p>最后，这些子工程可以被合并到主工程中，形成完整的歌曲</p>
+<h3 id="模块化制作"><a href="#模块化制作" class="headerlink" title="模块化制作"></a>模块化制作</h3><p>在音乐制作中，某些元素（如特定的音效、节奏或旋律）可能需要反复使用或修改</p>
+<p>通过将这些元素放入子工程中，用户可以在不影响主工程的情况下，对它们进行任意的修改和调整</p>
+<h3 id="项目分解"><a href="#项目分解" class="headerlink" title="项目分解"></a>项目分解</h3><p>对于大型的音乐制作项目，用户可以将其分解为多个小的子工程，每个子工程负责处理项目的一个特定部分。这样，项目管理将变得更加清晰和方便。</p>
+<h3 id="节省资源"><a href="#节省资源" class="headerlink" title="节省资源"></a>节省资源</h3><p>当项目过大 如果出现卡顿问题 可以考虑使用子工程渲染 以减少资源消耗</p>
+<h2 id="子工程的使用技巧"><a href="#子工程的使用技巧" class="headerlink" title="子工程的使用技巧"></a>子工程的使用技巧</h2><h3 id="把现有的工程-拆分成多个子工程"><a href="#把现有的工程-拆分成多个子工程" class="headerlink" title="把现有的工程 拆分成多个子工程"></a>把现有的工程 拆分成多个子工程</h3><p>那么我们可以选中需要进行放入子工程的轨道 然后右键选择<code>move tracks to new subject</code></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508103854751.png" alt="image-20240508103854751"></p>
+<h3 id="在某个时间区间建立子工程"><a href="#在某个时间区间建立子工程" class="headerlink" title="在某个时间区间建立子工程"></a>在某个时间区间建立子工程</h3><p>那么我们需要选择一个插入的范围 然后点击轨道面板右键<code>move tracks to new subject</code></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508111556684.png" alt="image-20240508111556684"></p>
+<p>或者使用菜单栏<code>Insert--&gt;New Subject</code>新建空白子工程:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508120310390.png" alt="image-20240508120310390"></p>
+<p>子工程创建后会自动插入<code>start</code>和<code>end</code>标记 我们需要在这个范围内进行音频的编辑:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508111755661.png" alt="image-20240508111755661"></p>
+<p>而主工程中也会自动生成对子工程的引用 由于我们还没有写入音符 所以此时为空白:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508111844407.png" alt="image-20240508111844407"></p>
+<p>当我们在子工程中写入音符后按<code>ctrl+s</code> 子工程会自动渲染:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508112036396.png" alt="image-20240508112036396"></p>
+<p>然后在主工程中就能看到渲染后的音频文件:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508112106300.png" alt="image-20240508112106300"></p>
+<h3 id="实现将当前的工程当做其他工程的子工程"><a href="#实现将当前的工程当做其他工程的子工程" class="headerlink" title="实现将当前的工程当做其他工程的子工程"></a>实现将当前的工程当做其他工程的子工程</h3><p>这个场景用在整张专辑的母带处理非常合适 一张专辑包含了多首歌 我们可以将每一个首歌的工程当做是一个子工程 </p>
+<p>这样做的好处是 如果在处理过程中如果发现某首歌需要修改 那么可以随时双击音频块进入到该首歌的工程中进行修改:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508120101018.png" alt="image-20240508120101018"></p>
+<p>具体操作方法:</p>
+<ol>
+<li><p>保存当前工程</p>
+</li>
+<li><p>新建一个新工程 然后菜单栏<code>Insert--&gt;Media File</code>插入我们刚刚保存的工程即可:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508132750723.png" alt="image-20240508132750723"></p>
+</li>
+</ol>
+<h3 id="实现将工程中某些轨道拷贝到单独的工程中"><a href="#实现将工程中某些轨道拷贝到单独的工程中" class="headerlink" title="实现将工程中某些轨道拷贝到单独的工程中"></a>实现将工程中某些轨道拷贝到单独的工程中</h3><p>有时候我们在开启新工程时可能需要复用以前工程中的某几个轨道 常规做法就是手动复制粘贴</p>
+<p>除此之外还有一种方式就是使用子工程</p>
+<p>具体实现方法:</p>
+<ol>
+<li><p>选中需要复用的轨道 右键<code>move tracks to new subject</code></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240508111556684.png" alt="image-20240508111556684"></p>
+<p>此时会生成一个子工程 里面包含了刚刚选中的轨道及内容</p>
+</li>
+<li><p>在主工程中撤销上一步的操作</p>
+<p><code>Ctrl+Z</code>主工程内容复原 而子工程依然还在 那么我们可以将这个子工程进行保存  将其当做新工程进行制作即可</p>
+</li>
+</ol>
+<h3 id="实现将子工程恢复到主工程中"><a href="#实现将子工程恢复到主工程中" class="headerlink" title="实现将子工程恢复到主工程中"></a>实现将子工程恢复到主工程中</h3><p>有时候我们可能会误操作 如果需要撤销子工程</p>
+<h3 id="实现在主工程中往某个子工程中追加新的轨道"><a href="#实现在主工程中往某个子工程中追加新的轨道" class="headerlink" title="实现在主工程中往某个子工程中追加新的轨道"></a>实现在主工程中往某个子工程中追加新的轨道</h3><p>有时候我们可能需要对子工程的轨道进行增减操作 </p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>reaper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kontakt音源Ilya Efimov Acoustic Guitar Strum扫弦吉他的使用</title>
+    <url>/196.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Ilya Efimov Acoustic Guitar Strum</code>是一款<code>Kontakt</code>钢弦吉他扫弦音源 我平常用它也相对多一些</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510133512538.png" alt="image-20240510133512538"></p>
+<p>接下来以<code>Reaper</code>宿主为例 介绍一下该吉他音源的用法</p>
+<h2 id="快速制作扫弦节奏"><a href="#快速制作扫弦节奏" class="headerlink" title="快速制作扫弦节奏"></a>快速制作扫弦节奏</h2><p>该音源中内置了一些常用的扫弦节奏型  开箱即用  </p>
+<p>首先点击<code>Strum mode</code>点亮<code>Pattern mode</code>开启自动节奏型扫弦模式:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510134518702.png" alt="image-20240510134518702"></p>
+<p>我们进入<code>AG Pattern</code>面板中 点击<code>Style</code>或者<code>Pattern</code>选择框会弹出内置的扫弦节奏列表</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510133715403.png" alt="image-20240510133715403"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510133748277.png" alt="image-20240510133748277"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510134042684.png" alt="image-20240510134042684"></p>
+<p>我们可以选择其中某个节奏型并弹键盘任意音符试听效果</p>
+<p>如果我们感觉某个节奏型特别适合 那么直接可以在钢琴卷帘窗中使用D1键指定力度来调用:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/2024-05-10%2014-34-29.2024-05-10%2014_35_02.gif" alt="2024-05-10 14-34-29.2024-05-10 14_35_02"></p>
+<p>比如我们需要调用列表中序号为第九号的节奏型 那么D1这个音符的力度需要设置为9 这里需要注意的是不同宿主中控制调用节奏型的音符会不太一样<code>Reaper</code>中为D1 而<code>Cubase</code>中则为D0</p>
+<p>通过这种音符力度调用的方式 我们可以快速的在同一段落中 切换不同的节奏型  从而实现复杂多变的扫弦节奏</p>
+<h2 id="自定义扫弦节奏"><a href="#自定义扫弦节奏" class="headerlink" title="自定义扫弦节奏"></a>自定义扫弦节奏</h2><h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>如果音源中内置的节奏型中 没有自己想要的节奏型 那么我们可以进行自定义</p>
+<p>只需要选择一个空白的位置进行编辑</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510144632762.png" alt="image-20240510144632762"></p>
+<p>默认是四拍 每一个小格子时值是16分音符:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510144904501.png" alt="image-20240510144904501"></p>
+<p>这里的拍子数可以根据歌曲情况进行修改 比如改为2/4拍:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510145938817.png" alt="image-20240510145938817"></p>
+<p>用鼠标点击小格子来增加扫弦技巧的触发 按住鼠标左键上下拖动可以修改扫弦力度 如果我们感觉该小节中的节奏型不满意需要清空 那么点击<code>Bar</code>栏下的<code>clear</code>按钮:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510150406444.png" alt="image-20240510150406444"></p>
+<p>如果要清空所有小节的节奏型 那么则点击<code>Pattern</code>栏下的<code>clear</code>:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510152600122.png" alt="image-20240510152600122"></p>
+<p>倘若我们只想删除其中某一个格子, 那么只需要将其力度拉至最低即可自动消失:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/iShot_2024-05-10_15.10.02.gif" alt="iShot_2024-05-10_15.10.02"></p>
+<p>如果我们想以后重复该节奏型 需要对改自定义节奏型进行保存 我们可以为其命个名:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510151350324.png" alt="image-20240510151350324"> </p>
+<h3 id="批量修改力度"><a href="#批量修改力度" class="headerlink" title="批量修改力度"></a>批量修改力度</h3><p>如果我们想要批量修改技巧的力度 可以点亮对应技巧栏 会自动出现<code>velocity+/-</code>按钮:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/iShot_2024-05-10_15.18.05.gif" alt="iShot_2024-05-10_15.18.05"></p>
+<h2 id="上扫弦和下扫弦"><a href="#上扫弦和下扫弦" class="headerlink" title="上扫弦和下扫弦"></a>上扫弦和下扫弦</h2><p>我们在技巧栏中能看到扫弦分为<code>down</code>和<code>up</code> 也就是往下或往上扫弦</p>
+<p>那么该如何控制上下呢</p>
+<p>我们只需要在点击的时候配合<code>Alt</code>键 即可切换扫弦的方向:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510162941931.png" alt="image-20240510162941931"></p>
+<p>横条在方块下方表示下扫 反之则为上扫</p>
+<h2 id="制作复杂的扫弦技巧"><a href="#制作复杂的扫弦技巧" class="headerlink" title="制作复杂的扫弦技巧"></a>制作复杂的扫弦技巧</h2><p>如果上面的自动扫弦功能 不能满足你的需求 我们可以使用默认的<code>Strum mode</code>扫弦模式 在这个模式下 我们可以指定扫弦的把位以及扫弦的钢弦数量</p>
+<p>在钢琴面板中淡蓝色的为和弦音符键 其他颜色为技巧控制键:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510154459150.png" alt="image-20240510154459150"></p>
+<p>我们按下某个控制键时 比如上扫弦或者下扫弦控制键 音源面板中会有相应的提示信息:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510154557042.png" alt="image-20240510154557042"></p>
+<p>当然 有的技巧并无提示 比如控制扫弦数量的键</p>
+<p>其中<code>A#5</code>键表示只扫低音的四根弦 也就是3-6弦 </p>
+<p><code>B5键</code>表示至少高音的四根弦 也就是1-4弦 </p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240510155249810.png" alt="image-20240510155249810"></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>Kontakt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在线制作LRC歌词的工具</title>
+    <url>/197.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前在<code>Windows</code>平台上主要使用<code>LRC Maker</code>这个本地软件进行歌词的生成 导入音频 然后敲击空格键打点</p>
+<p>现在为了方便 主要使用网页在线工具</p>
+<p>接下来介绍几个我个人常用的在线<code>LRC</code>歌词制作工具</p>
+<h2 id="滚动歌词姬"><a href="#滚动歌词姬" class="headerlink" title="滚动歌词姬"></a>滚动歌词姬</h2><p>采用传统手动打点的方式 导入音频 按空格键打点</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240512150551542.png" alt="image-20240512150551542"></p>
+<p><a href="https://lrc-maker.github.io/" target="_blank" rel="noopener">点击进入官网</a></p>
+<h2 id="歌词智编"><a href="#歌词智编" class="headerlink" title="歌词智编"></a>歌词智编</h2><p>看见音乐旗下的一款智能歌词生成工具  只需要导入音频和歌词的文本文件 自动打点生成时间线  当然也支持手动打点</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240512151146464.png" alt="image-20240512151146464"></p>
+<p><a href="https://star.kanjian.com/tool/lrc" target="_blank" rel="noopener">点击进入官网</a></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>Kontakt</tag>
       </tags>
   </entry>
 </search>

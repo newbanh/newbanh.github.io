@@ -273,6 +273,591 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../147.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../147.html" itemprop="url">在REAPER中如何合并MIDI轨</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-12T11:15:53+08:00">
+                2023-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x5408;&#x5E76; MIDI &#x5141;&#x8BB8;&#x60A8;&#x5C06;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A; MIDI &#x9879;&#x76EE;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63dc1a368195be4993a0fead_d39d5d18-46a6-4237-a005-b50e8de44eeb.gif" alt="img"></p>
+<p>&#x867D;&#x7136;&#x5927;&#x591A;&#x6570;&#x5176;&#x4ED6; DAW &#x90FD;&#x5185;&#x7F6E;&#x4E86;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x4F46; REAPER &#x5374;&#x6CA1;&#x6709;&#x3002;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x8F7B;&#x677E;&#x5B8C;&#x6210;&#xFF01;</p>
+<h2 id="&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;"><a href="#&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;" class="headerlink" title="&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;"></a>&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;</h2><ol>
+<li><p>&#x6253;&#x5F00;<code>Action List</code>&#x7A97;&#x53E3;&#x3002;</p>
+</li>
+<li><p>&#x70B9;&#x51FB; <code>New action--&gt;New custom action</code></p>
+</li>
+<li><p>&#x6309;&#x4EE5;&#x4E0B;&#x987A;&#x5E8F;&#x641C;&#x7D22;&#x4EE5;&#x4E0B;<code>Action</code>&#x5E76;&#x5C06;&#x5176;&#x4ECE;&#x5DE6;&#x5217;&#x62D6;&#x52A8;&#x5230;&#x53F3;&#x5217;&#xFF1A;</p>
+<ul>
+<li>Item: Set item mix behavior to always mix</li>
+<li>Item: Implode items across tracks into items on one track</li>
+<li>Item: Glue items, ignoring time selection</li>
+<li>Item: Set item mix behavior to project default</li>
+</ul>
+</li>
+<li><p>&#x52FE;&#x9009;<code>Consolidate undo points</code>&#x540C;&#x65F6;&#x5C06;&#x8FD9;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x52A8;&#x4F5C;&#x547D;&#x540D;&#x4E3A; <code>Merge MIDI</code>, &#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63dc1a368195be29b8a0feae_735d3a28-b636-4e04-8388-73b4adef1781.jpeg" alt="img"></p>
+</li>
+</ol>
+<ol start="5">
+<li><p>&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x52A8;&#x4F5C;&#x5217;&#x8868;&#x641C;&#x7D22; <code>Merge MIDI</code>, &#x65F6;, &#x53EF;&#x4EE5;&#x627E;&#x5230;&#x521A;&#x521A;&#x521B;&#x5EFA;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x52A8;&#x4F5C;</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63dc1a368195be666da0feac_edf3e89c-46f7-4f58-a7e0-f018ec48ce65.jpeg" alt="img"></p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x5B83;&#x4E86;&#xFF0C;&#x6211;&#x5EFA;&#x8BAE;&#x4E3A;&#x5176;&#x6620;&#x5C04;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x952E;&#x6216;&#x5C06;&#x5176;&#x653E;&#x7F6E;&#x5728;&#x5DE5;&#x5177;&#x680F;&#x4E4B;&#x4E00;&#x4E2D;&#x3002;&#x6211;&#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A;<code>alt + shift + G</code> &#x3002;&#x53E6;&#x5916;&#x8FD8;&#x628A;&#x5B83;&#x653E;&#x5230;&#x4E86;&#x83DC;&#x5355;&#x680F;&#x4E2D;</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230713121353261.png" alt="image-20230713121353261"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230713121416811.png" alt="image-20230713121416811"></p>
+</li>
+</ol>
+<h2 id="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"><a href="#&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;" class="headerlink" title="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"></a>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;</h2><p>&#x73B0;&#x5728;&#x60A8;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x8BBE;&#x7F6E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x5C06;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A; MIDI &#x9879;&#x76EE;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A; &#x1F4AA;</p>
+<p><strong>&#x672C;&#x6587;&#x7FFB;&#x8BD1;&#x81EA;</strong>: <a href="/external_links/fb1bb1e8b8d53c21a4efad40aa57799c.html" target="blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../146.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../146.html" itemprop="url">混音中提升音轨融合度之均衡处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-12T10:05:53+08:00">
+                2023-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x6DF7;&#x97F3;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F71;&#x54CD;&#x878D;&#x5408;&#x5EA6;&#x7684;&#x56E0;&#x7D20;&#x6709;&#x5F88;&#x591A;, &#x4E4B;&#x524D;&#x7ED9;&#x5927;&#x5BB6;&#x4ECB;&#x7ECD;&#x8FC7;&#x5171;&#x540C;&#x5143;&#x7D20;&#x7406;&#x8BBA;, &#x5177;&#x4F53;&#x53EF;&#x67E5;&#x9605;&#x4E4B;&#x524D;&#x6587;&#x7AE0;:&#x300A;<a href="https://audio.newban.cn/109.html">&#x6DF7;&#x97F3;&#x4E2D;&#x5404;&#x97F3;&#x8F68;&#x5171;&#x540C;&#x7684;&#x5143;&#x7D20;&#x8D8A;&#x591A;&#x878D;&#x5408;&#x5EA6;&#x8D8A;&#x9AD8;</a>&#x300B;</p>
+<p>&#x4ECA;&#x5929; &#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x6765;&#x7814;&#x7A76;&#x8BA8;&#x8BBA;&#x4E00;&#x4E0B;&#x5747;&#x8861;&#x5668;&#x5BF9;&#x58F0;&#x97F3;&#x878D;&#x5408;&#x5EA6;&#x7684;&#x5F71;&#x54CD;</p>
+<p>&#x4ECE;&#x4E2A;&#x4EBA;&#x7ECF;&#x9A8C;&#x4E0A;, &#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x70B9;:</p>
+<ul>
+<li>&#x8870;&#x51CF;&#x7279;&#x8272;&#x9891;&#x7387;</li>
+<li>&#x63D0;&#x5347;&#x67D0;&#x4E2A;&#x9891;&#x6BB5;&#x8FBE;&#x5230;&#x5BF9;&#x5176;&#x4ED6;&#x4E50;&#x5668;&#x7684;&#x8D34;&#x5408;</li>
+<li>&#x591A;&#x4E2A;&#x97F3;&#x8F68;&#x95F4;&#x4F7F;&#x7528;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7684;&#x5747;&#x8861;&#x6548;&#x679C;&#x5668;</li>
+</ul>
+<h2 id="&#x7279;&#x8272;&#x9891;&#x7387;&#x8870;&#x51CF;"><a href="#&#x7279;&#x8272;&#x9891;&#x7387;&#x8870;&#x51CF;" class="headerlink" title="&#x7279;&#x8272;&#x9891;&#x7387;&#x8870;&#x51CF;"></a>&#x7279;&#x8272;&#x9891;&#x7387;&#x8870;&#x51CF;</h2><p>&#x8870;&#x51CF;&#x58F0;&#x97F3;&#x7684;&#x7279;&#x8272;&#x9891;&#x6BB5;&#x80FD;&#x8BA9;&#x58F0;&#x97F3;&#x542C;&#x8D77;&#x6765;&#x66F4;&#x6E29;&#x548C;, &#x867D;&#x7136;&#x5C11;&#x4E86;&#x4E00;&#x5206;&#x523A;&#x6FC0;&#x611F;, &#x4F46;&#x662F;&#x548C;&#x5176;&#x5B83;&#x97F3;&#x8F68;&#x66F4;&#x52A0;&#x7684;&#x878D;&#x5408;&#x4E86;</p>
+<p>&#x8FD9;&#x4E2A;&#x4E16;&#x754C; &#x5927;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x4E0D;&#x8D77;&#x773C;&#x7684;&#x666E;&#x901A;&#x4EBA;, &#x7279;&#x7ACB;&#x72EC;&#x884C;&#x4E14;&#x8000;&#x773C;&#x7684;&#x7EC8;&#x5F52;&#x662F;&#x5C11;&#x6570;, &#x592A;&#x8FC7;&#x8000;&#x773C;&#x81EA;&#x7136;&#x5F88;&#x96BE;&#x878D;&#x5165;&#x7FA4;&#x4F17;</p>
+<p>&#x6DF7;&#x97F3;&#x4E5F;&#x662F;&#x540C;&#x6837;&#x7684;&#x9053;&#x7406;, &#x8870;&#x51CF;&#x58F0;&#x97F3;&#x4E2D;&#x8BA9;&#x4F60;&#x89C9;&#x5F97;&#x5174;&#x594B;&#x523A;&#x6FC0;&#x7684;&#x9891;&#x6BB5;, &#x8FD9;&#x6837;&#x80FD;&#x4F7F;&#x6574;&#x4F53;&#x66F4;&#x52A0;&#x5730;&#x5E73;&#x8861;</p>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;, &#x58F0;&#x97F3;&#x4E2D;&#x5982;&#x679C;&#x5B58;&#x5728;&#x4E00;&#x4E9B;&#x8BA9;&#x4EBA;&#x4E0D;&#x8212;&#x670D;&#x7684;&#x5171;&#x632F;&#x9891;&#x7387;, &#x4E5F;&#x9700;&#x8981;&#x53BB;&#x9664;, &#x8FD9;&#x80FD;&#x8BA9;&#x58F0;&#x97F3;&#x542C;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x6E05;&#x6670;&#x6709;&#x8D28;&#x611F;, &#x5177;&#x4F53;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x626B;&#x9891;&#x6216;&#x8005;<code>solo</code>&#x67D0;&#x4E2A;&#x9891;&#x7387;&#x70B9;, &#x627E;&#x51FA;&#x8154;&#x4F53;&#x611F;&#x7279;&#x522B;&#x660E;&#x663E;&#x4EE5;&#x53CA;&#x592A;&#x8FC7;&#x523A;&#x8033;&#x7684;&#x9891;&#x7387;&#x70B9;&#x5E76;&#x8870;&#x51CF;&#x5B83;</p>
+<p>&#x8870;&#x51CF;&#x9891;&#x7387;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x7A84;q&#x503C;&#x7684;&#x6570;&#x5B57;&#x5747;&#x8861;&#x5668;, &#x6BD4;&#x5982;<code>waves Q</code>&#x7CFB;&#x5217;&#x63D2;&#x4EF6;&#x6216;&#x8005;&#x80A5;&#x6CE2;&#x63D2;&#x4EF6;, &#x5B83;&#x4EEC;&#x80FD;&#x7CBE;&#x51C6;&#x5730;&#x63A7;&#x5236;&#x4F4F;&#x9891;&#x7387;</p>
+<h2 id="&#x63D0;&#x5347;&#x9891;&#x6BB5;"><a href="#&#x63D0;&#x5347;&#x9891;&#x6BB5;" class="headerlink" title="&#x63D0;&#x5347;&#x9891;&#x6BB5;"></a>&#x63D0;&#x5347;&#x9891;&#x6BB5;</h2><p>&#x63D0;&#x5347;&#x9891;&#x6BB5;, &#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5BBD;Q&#x503C;&#x7684;&#x5EFA;&#x6A21;&#x5747;&#x8861;&#x5668;, &#x4E3B;&#x8981;&#x7528;&#x6765;&#x8C03;&#x6574;&#x58F0;&#x97F3;&#x7684;&#x8272;&#x5F69;, &#x8BA9;&#x5176;&#x53D8;&#x5F97;&#x66F4;&#x6697;&#x8FD8;&#x662F;&#x66F4;&#x4EAE;, &#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x548C;&#x5176;&#x5B83;&#x97F3;&#x8F68;&#x7684;&#x8D34;&#x5408;</p>
+<p>&#x540C;&#x65F6; &#x5EFA;&#x6A21;EQ&#x7684;&#x67D3;&#x8272;&#x80FD;&#x7ED9;&#x58F0;&#x97F3;&#x63D0;&#x5347;&#x8D28;&#x611F;, &#x589E;&#x52A0;&#x4E00;&#x70B9;&#x70B9;&#x53EF;&#x671B;&#x4E0D;&#x53EF;&#x5373;&#x7684;&#x611F;&#x89C9;</p>
+<p>&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x662F;, &#x901A;&#x8FC7;&#x5BBD;Q&#x503C;&#x7684;&#x626B;&#x9891;&#x65B9;&#x5F0F;, &#x4E00;&#x8FB9;&#x626B;, &#x4E00;&#x8FB9;&#x4ED4;&#x7EC6;&#x542C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x878D;&#x5408;&#x7684;&#x97F3;&#x8F68;, &#x5982;&#x679C;&#x662F;&#x626B;&#x4EBA;&#x58F0;&#x90A3;&#x5C31;&#x542C;&#x4F34;&#x594F;. &#x5F53;&#x6211;&#x4EEC;&#x626B;&#x5230;&#x67D0;&#x4E2A;&#x9891;&#x6BB5;, &#x4F34;&#x594F;&#x7A81;&#x7136;&#x53D8;&#x5F97;&#x66F4;&#x6E05;&#x6670;&#x4E86;, &#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x70B9;&#x5DEE;&#x4E0D;&#x591A;&#x5C31;&#x662F;&#x878D;&#x5408;&#x70B9;, &#x63D0;&#x5347;&#x5B83;&#x80FD;&#x8BA9;&#x58F0;&#x97F3;&#x66F4;&#x52A0;&#x878D;&#x5408;</p>
+<p>&#x6709;&#x65F6;&#x5019;, &#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#x4E0D;&#x6B62;&#x4E00;&#x4E2A;&#x878D;&#x5408;&#x70B9;, &#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x542C;&#x5F53;&#x524D;&#x626B;&#x9891;&#x7684;&#x58F0;&#x97F3;&#x97F3;&#x8272;, &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4F60;&#x89C9;&#x5F97;&#x597D;&#x542C;&#x7684;&#x5C31;&#x884C;, &#x8FD9;&#x6837; &#x65E2;&#x4FDD;&#x8BC1;&#x4E86;&#x878D;&#x5408;&#x5EA6;, &#x53C8;&#x4E0D;&#x81F3;&#x4E8E;&#x58F0;&#x97F3;&#x53D8;&#x5F97;&#x96BE;&#x542C;</p>
+<h4 id="&#x539F;&#x7406;&#x5206;&#x6790;"><a href="#&#x539F;&#x7406;&#x5206;&#x6790;" class="headerlink" title="&#x539F;&#x7406;&#x5206;&#x6790;"></a>&#x539F;&#x7406;&#x5206;&#x6790;</h4><p>&#x6211;&#x4E2A;&#x4EBA;&#x5229;&#x7528;&#x9891;&#x8C31;&#x5206;&#x6790;&#x4EEA;&#x5206;&#x6790;&#x4E24;&#x4E2A;&#x97F3;&#x8F68;&#x540E;&#x5F97;&#x51FA;&#x7C97;&#x6D45;&#x7ED3;&#x8BBA;:</p>
+<p><strong>&#x5F53;&#x4E24;&#x4E2A;&#x97F3;&#x8F68;&#x9891;&#x8C31;&#x8D8B;&#x4E8E;&#x4E00;&#x81F4;&#x7684;&#x65F6;&#x5019;, &#x878D;&#x5408;&#x5EA6;&#x80FD;&#x5F97;&#x5230;&#x5927;&#x5E45;&#x63D0;&#x5347;</strong></p>
+<p>&#x6BD4;&#x5982;&#x6709;&#x4E24;&#x4E2A;&#x97F3;&#x8F68;, &#x4E00;&#x4E2A;&#x9AD8;&#x4F4E;&#x9891;&#x5F88;&#x9971;&#x6EE1;, &#x53E6;&#x4E00;&#x4E2A;&#x4F4E;&#x9891;&#x8DB3;&#x591F; &#x4F46;&#x662F;&#x9AD8;&#x9891;&#x4E0D;&#x8DB3;, &#x90A3;&#x4E48;&#x8FD9;&#x4E24;&#x4E2A;&#x97F3;&#x8F68;&#x5408;&#x5728;&#x4E00;&#x5757;&#x7684;&#x542C;&#x611F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x4EAE;, &#x4E00;&#x4E2A;&#x5F88;&#x6697;, &#x867D;&#x7136;&#x58F0;&#x97F3;&#x4E0D;&#x6253;&#x67B6;&#x4E86;, &#x4F46;&#x4E24;&#x8005;&#x5206;&#x79BB;&#x611F;&#x5F88;&#x660E;&#x663E;, &#x5B83;&#x4EEC;&#x5C31;&#x72B9;&#x5982;&#x4E0D;&#x540C;&#x4E16;&#x754C;&#x7684;&#x4E24;&#x4E2A;&#x4EBA;,&#x5F88;&#x96BE;&#x878D;&#x5408;  </p>
+<p>&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5C06;&#x9AD8;&#x9891;&#x4E0D;&#x8DB3;&#x7684;&#x90A3;&#x4E2A;&#x58F0;&#x97F3;&#x505A;&#x4E00;&#x4E2A;&#x9AD8;&#x9891;&#x63D0;&#x5347;&#x540E;, &#x5C31;&#x80FD;&#x660E;&#x663E;&#x611F;&#x89C9;&#x5230;&#x878D;&#x5408;&#x5EA6;&#x7684;&#x63D0;&#x5347;</p>
+<p>&#x6211;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E2A;&#x539F;&#x7406;&#x4E5F;&#x53EF;&#x4EE5;&#x5F52;&#x7EB3;&#x5230;&#x5171;&#x540C;&#x5143;&#x7D20;&#x7406;&#x8BBA;&#x5F53;&#x4E2D;</p>
+<h2 id="&#x4F7F;&#x7528;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7684;&#x5747;&#x8861;&#x6548;&#x679C;&#x5668;"><a href="#&#x4F7F;&#x7528;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7684;&#x5747;&#x8861;&#x6548;&#x679C;&#x5668;" class="headerlink" title="&#x4F7F;&#x7528;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7684;&#x5747;&#x8861;&#x6548;&#x679C;&#x5668;"></a>&#x4F7F;&#x7528;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7684;&#x5747;&#x8861;&#x6548;&#x679C;&#x5668;</h2><p>&#x8FD9;&#x4E00;&#x70B9;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4F9D;&#x7167;&#x5171;&#x540C;&#x5143;&#x7D20;&#x7406;&#x8BBA;&#x4E86;, &#x540C;&#x7C7B;&#x578B;&#x7684;&#x6548;&#x679C;&#x5668;&#x67D3;&#x8272;&#x4E00;&#x81F4;, &#x80FD;&#x6709;&#x6548;&#x589E;&#x52A0;&#x878D;&#x5408;&#x5EA6;</p>
+<h2 id="&#x6548;&#x679C;&#x94FE;"><a href="#&#x6548;&#x679C;&#x94FE;" class="headerlink" title="&#x6548;&#x679C;&#x94FE;"></a>&#x6548;&#x679C;&#x94FE;</h2><p>&#x4F9D;&#x7167;&#x4E0A;&#x9762;&#x7684;&#x6240;&#x8BF4;, &#x6211;&#x5728;&#x5BF9;&#x58F0;&#x97F3;&#x8FDB;&#x884C;&#x5747;&#x8861;&#x5904;&#x7406;&#x65F6;, &#x901A;&#x5E38;&#x4F9D;&#x7167;&#x4EE5;&#x4E0B;&#x987A;&#x5E8F;:</p>
+<ul>
+<li>&#x51CF;&#x6CD5;EQ </li>
+<li>&#x52A0;&#x6CD5;EQ</li>
+<li>&#x538B;&#x7F29;&#x5668;</li>
+<li>&#x2026;.</li>
+</ul>
+<h2 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h2><p>&#x672C;&#x6587;&#x4E2D;, &#x5173;&#x4E8E;&#x5173;&#x4E8E;&#x5747;&#x8861;&#x5668;&#x5BF9;&#x63D0;&#x5347;&#x878D;&#x5408;&#x5EA6;, &#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E24;&#x5927;&#x65B9;&#x9762;:</p>
+<ol>
+<li>&#x589E;&#x52A0;&#x5171;&#x540C;&#x5143;&#x7D20;: &#x540C;&#x7C7B;&#x578B;&#x6548;&#x679C;&#x5668;, &#x9891;&#x8C31;&#x8D8B;&#x4E8E;&#x4E00;&#x81F4;&#x2026;.&#x7B49;&#x7B49;</li>
+<li>&#x8870;&#x51CF;&#x7279;&#x8272;&#x9891;&#x7387;: &#x5E73;&#x51E1;&#x4F46;&#x4E0D;&#x5E73;&#x5EB8;</li>
+</ol>
+<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="headerlink" title="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"></a>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2><ol>
+<li>&#x6211;&#x4EEC;&#x5728;&#x626B;&#x9891;&#x65F6;&#x4E0D;&#x5EFA;&#x8BAE;&#x5C06;&#x97F3;&#x91CF;&#x63D0;&#x7684;&#x8FC7;&#x9AD8;, &#x5426;&#x5219;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x5230;&#x5904;&#x90FD;&#x662F;&#x4E0D;&#x8212;&#x670D;&#x7684;&#x9891;&#x7387;, &#x4E00;&#x822C;&#x4E0D;&#x8D85;&#x8FC7;12db</li>
+<li>&#x8870;&#x51CF;&#x7684;&#x70B9;&#x4E0D;&#x8981;&#x592A;&#x591A;, &#x8FC7;&#x591A;&#x53CD;&#x800C;&#x4F1A;&#x9002;&#x5F97;&#x5176;&#x53CD;, &#x4E00;&#x822C;&#x6765;&#x8BF4; &#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x53D1;&#x751F;&#x53EF;&#x80FD;&#x662F;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x4E0D;&#x5BF9;</li>
+</ol>
+<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../145.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../145.html" itemprop="url">免费的云端混音和母带诊断工具 Mix Check Studio</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-11T19:15:53+08:00">
+                2023-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><code>RoEx</code>&#x514D;&#x8D39;&#x63A8;&#x51FA;&#x4E86;&#x4E00;&#x6B3E;&#x4E91;&#x7AEF;&#x5DE5;&#x5177;&#xFF1A;<code>Mix Check Studio</code>&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x6B3E;&#x6DF7;&#x97F3;&#x548C;&#x6BCD;&#x5E26;&#x8BCA;&#x65AD;&#x5DE5;&#x5177;&#x3002;</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/3675_1683793047_thumb.png" alt="img"></p>
+<p><code>RoEx</code>&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x7B2C;&#x4E00;&#x4E2A;&#x7531;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x9A71;&#x52A8;&#x7684;&#x6DF7;&#x97F3;&#x5E73;&#x53F0;&#x7684;&#x521B;&#x9020;&#x8005;&#xFF0C;&#x8FD9;&#x6B21;&#x4ED6;&#x4EEC;&#x63A8;&#x51FA;&#x540D;&#x4E3A;Mix Check Studio&#x7684;&#x514D;&#x8D39;&#x97F3;&#x9891;&#x6DF7;&#x97F3;&#x548C;&#x6BCD;&#x5E26;&#x8BCA;&#x65AD;&#x5DE5;&#x5177;&#xFF0C;&#x65E8;&#x5728;&#x5206;&#x6790;&#x97F3;&#x9891;&#x5E76;&#x8BC6;&#x522B;&#x6DF7;&#x97F3;&#x548C;&#x6BCD;&#x5E26;&#x5904;&#x7406;&#x95EE;&#x9898;&#x3002;</p>
+<p><code>Mix Check Studio</code>&#x80FD;&#x591F;&#x8BC6;&#x522B;&#x5178;&#x578B;&#x7684;&#x6DF7;&#x97F3;&#x548C;&#x6BCD;&#x5E26;&#x5904;&#x7406;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x524A;&#x6CE2;</li>
+<li>&#x76F8;&#x4F4D;&#x95EE;&#x9898;</li>
+<li>&#x5355;&#x58F0;&#x9053;&#x517C;&#x5BB9;&#x6027;</li>
+<li>&#x7ACB;&#x4F53;&#x58F0;&#x573A;</li>
+<li>&#x54CD;&#x5EA6;&#x7535;&#x5E73;</li>
+<li>&#x8BC4;&#x4F30;&#x4E0D;&#x540C;&#x6D41;&#x6D3E;&#x7684;&#x97F3;&#x8C03;&#x7279;&#x5F81;</li>
+</ul>
+<p><code>Mix Check Studio</code>&#x5728;&#x5206;&#x6790;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x5B9E;&#x9645;&#x7684;&#x6539;&#x8FDB;&#x5EFA;&#x8BAE;&#x3002;</p>
+<p><code>RoEx</code>&#x521B;&#x59CB;&#x4EBA;<code>David Ronan</code>&#x8C08;&#x5230;<code>Mix Check Studio</code>&#x65F6;&#x8868;&#x793A;&#xFF1A;</p>
+<blockquote>
+<p>&#x201C;&#x6211;&#x5F88;&#x9AD8;&#x5174;&#x4E3A;&#x5904;&#x4E8E;&#x5404;&#x4E2A;&#x53D1;&#x5C55;&#x9636;&#x6BB5;&#x7684;&#x827A;&#x672F;&#x5BB6;&#x63D0;&#x4F9B;&#x8FD9;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x514D;&#x8D39;&#x5DE5;&#x5177;&#x3002;Mix Check Studio&#x53EA;&#x662F;&#x6211;&#x4EEC;&#x5BCC;&#x6709;&#x60F3;&#x8C61;&#x529B;&#x7684;&#x8BA1;&#x5212;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x65E8;&#x5728;&#x5E2E;&#x52A9;&#x97F3;&#x4E50;&#x521B;&#x4F5C;&#x8005;&#x5236;&#x4F5C;&#x4ED6;&#x4EEC;&#x7684;&#x6700;&#x4F73;&#x4F5C;&#x54C1;&#x3002;&#x201D;</p>
+</blockquote>
+<p>43&#x6B21;&#x767D;&#x91D1;&#x5531;&#x7247;&#x548C;7&#x6B21;&#x683C;&#x83B1;&#x7F8E;&#x63D0;&#x540D;&#x7684;&#x6DF7;&#x97F3;&#x548C;&#x6BCD;&#x5E26;&#x5DE5;&#x7A0B;&#x5E08;Rich Keller&#x8868;&#x793A;&#xFF1A;</p>
+<blockquote>
+<p>&#x201C;Mix Check Studio&#x8FD9;&#x6837;&#x7684;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x5F15;&#x5BFC;&#x521B;&#x4F5C;&#x8005;&#x63D0;&#x9AD8;&#x4ED6;&#x4EEC;&#x7684;&#x6280;&#x80FD;&#xFF0C;RoEx&#x5904;&#x4E8E;AI&#x97F3;&#x9891;&#x5904;&#x7406;&#x9769;&#x547D;&#x7684;&#x524D;&#x6CBF;&#x3002;&#x6211;&#x80FD;&#x60F3;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5E73;&#x53F0;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x7ECF;&#x9A8C;&#x4E30;&#x5BCC;&#x7684;&#x4E13;&#x4E1A;&#x4EBA;&#x58EB;&#x6216;&#x5367;&#x5BA4;&#x521B;&#x4F5C;&#x4EBA;&#x53D7;&#x4F24;&#x53D1;&#x6325;&#x591A;&#x4E48;&#x5F3A;&#x5927;&#x7684;&#x4F5C;&#x7528;&#x3002;RoEx&#x5C06;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x627E;&#x5230;&#x68A6;&#x5BD0;&#x4EE5;&#x6C42;&#x7684;&#x58F0;&#x97F3;&#x3002;&#x201D;</p>
+</blockquote>
+<p>&#x5728;&#x7EBF;&#x514D;&#x8D39;&#x4F7F;&#x7528;&#xFF1A;<a href="/external_links/d375a3f91f1ee7d3eeef7a75760112b7.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
+<p><strong>&#x672C;&#x6587;&#x8F6C;&#x8F7D;&#x81EA;</strong>: <a href="/external_links/69b1b2109d9490c23a9729e092b62b40.html" target="blank" rel="noopener">MIDIFAN</a></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../144.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../144.html" itemprop="url">在REAPER中如何快速将 MIDI 柱式和弦修改成分解和弦模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-11T16:15:53+08:00">
+                2023-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x9F20;&#x6807;&#x4FEE;&#x6539;&#x5668;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728; REAPER &#x4E2D;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E3A;&#x60A8;&#x7684; MIDI &#x548C;&#x5F26;&#x63D0;&#x4F9B;&#x5F39;&#x594F;&#x7684;&#x611F;&#x89C9;&#x1F3B9;</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63dc1a20795718dbaae5cead_be0c882f-271b-4c6b-9070-4be4a83ec07c.gif" alt="img"></p>
+<p>&#x5982;&#x679C;&#x60A8;&#x6B63;&#x5728;&#x5904;&#x7406;&#x94A2;&#x7434;&#x3001;&#x5409;&#x4ED6;&#x6216;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x53EF;&#x4EE5;&#x5F39;&#x594F;&#x7684;&#x4E50;&#x5668;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x589E;&#x52A0;&#x4E86;&#x5F88;&#x591A;&#x771F;&#x5B9E;&#x611F;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x5F88;&#x591A;&#x6C1B;&#x56F4;&#x3002;</p>
+<h2 id="&#x8BBE;&#x7F6E;"><a href="#&#x8BBE;&#x7F6E;" class="headerlink" title="&#x8BBE;&#x7F6E;"></a>&#x8BBE;&#x7F6E;</h2><ol>
+<li>&#x6253;&#x5F00;<code>Preferences &#x2192; Mouse Modifiers &#x2192; context: MIDI note &#x2013; left drag</code></li>
+<li>&#x53CC;&#x51FB;&#x60A8;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x4FEE;&#x9970;&#x7B26;&#xFF08;&#x6211;&#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A;<code>Ctrl</code> &#xFF09;&#x3002;</li>
+<li>&#x9009;&#x62E9; <code>Stretch notes (arpeggiate/chordize) &gt; Just stretch</code></li>
+</ol>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63dc1a2079571847f9e5ceaa_02722ad1-8b0b-4160-b02d-b68c3705cf13.jpeg" alt="img"></p>
+<h2 id="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"><a href="#&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;" class="headerlink" title="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"></a>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;</h2><p>&#x73B0;&#x5728;&#xFF0C;&#x6BCF;&#x6B21;&#x6309;&#x4F4F;&#x6240;&#x9009;&#x7684;&#x4FEE;&#x6539;&#x5668;&#x65F6;&#xFF0C;&#x9F20;&#x6807;&#x5149;&#x6807;&#x90FD;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x8BA9;&#x60A8;&#x77E5;&#x9053;&#x60A8;&#x5904;&#x4E8E;<code>&#x548C;&#x5F26;&#x5316;</code>&#x6A21;&#x5F0F;&#x3002;</p>
+<p><strong>&#x672C;&#x6587;&#x7FFB;&#x8BD1;&#x81EA;</strong>: <a href="/external_links/6b1932766e88358746815c6468932f95.html" target="blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../143.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1197,1585 +1782,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../137.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../137.html" itemprop="url">一些开源的VST音频插件和音乐应用以及开发框架汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T13:15:53+08:00">
-                2023-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x97F3;&#x9891;&#x63D2;&#x4EF6;"><a href="#&#x97F3;&#x9891;&#x63D2;&#x4EF6;" class="headerlink" title="&#x97F3;&#x9891;&#x63D2;&#x4EF6;"></a>&#x97F3;&#x9891;&#x63D2;&#x4EF6;</h2><table>
-<thead>
-<tr>
-<th>Plugin</th>
-<th>Description</th>
-<th>Type</th>
-<th>Framework</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="/external_links/d574f40d451cc8fca3bbe6b20f3d2642.html" target="blank" rel="noopener">ADLplug</a></td>
-<td>FM Chip Synthesizer &#x2014; OPL &amp; OPN</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/a0e9283e4fa9f6c6ce06090f7fd3d360.html" target="blank" rel="noopener">ampli-Fe</a></td>
-<td>Cross-platform VST2 plugin written in Rust</td>
-<td>Effect</td>
-<td>Rust VST</td>
-</tr>
-<tr>
-<td><a href="/external_links/e2f00d5f2f189681a25eeecf228ff041.html" target="blank" rel="noopener">andes</a></td>
-<td>Sound synthesiser plugin based on Perlin noise</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/44dacaf0d1cb4bf81500406de11868ca.html" target="blank" rel="noopener">Airwindows</a></td>
-<td>Various small and experimental effect plugins</td>
-<td>Effect</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/50ea3a062da75e78be4b9896c55ff67d.html" target="blank" rel="noopener">amsynth</a></td>
-<td>Analog-modelling (virtual analog) synthesizer</td>
-<td>Instrument</td>
-<td>GTK</td>
-</tr>
-<tr>
-<td><a href="/external_links/21087ee7b51812d766df1ec63874fae3.html" target="blank" rel="noopener">Argotlunar</a></td>
-<td>Real-time delay-line granulator</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/372afd3dba0b09bbcada11494e373826.html" target="blank" rel="noopener">Audio Effects</a></td>
-<td>Plugins implemented from the explanations in the book &#x201C;Audio Effects: Theory, Implementation and Application&#x201D;</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/8c075b5695f010591ef834b16e3a28b4.html" target="blank" rel="noopener">Bespoke</a></td>
-<td>Node-based modular synth with live coding</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/82e9931731c011bce863b261278ba107.html" target="blank" rel="noopener">BinAural VST</a></td>
-<td>Mono-to-stereo plugin that positions sound in a 3D space using Head-Related Transfer Functions</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/54f2881c891a42ccc5df50eae8bbfc8c.html" target="blank" rel="noopener">BlackBird</a></td>
-<td>Analog-inspired software synth with its own voice</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/9089b6355804f6da1b4b6c04ef3e7189.html" target="blank" rel="noopener">C1Bitcrusher</a></td>
-<td>Experimental and accurate bit reduction</td>
-<td>Effect</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/d19bfc6ff17db16a7813e9951bb85fe0.html" target="blank" rel="noopener">Cardinal</a></td>
-<td>Virtual modular synthesizer plugin</td>
-<td>Instrument</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/ebf23147f3add401812fc970f955029f.html" target="blank" rel="noopener">Calf Studio Gear</a></td>
-<td>Many LV2 and Jack audio plug-ins</td>
-<td>Effects</td>
-<td>GTK</td>
-</tr>
-<tr>
-<td><a href="/external_links/d338cf62cf72738689c880900cde826d.html" target="blank" rel="noopener">CHOW</a></td>
-<td>Maximally truculent distortion effect</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/9a2dbf21e708f64bb85694cfcf1f556d.html" target="blank" rel="noopener">Cloud Seed</a></td>
-<td>Algorithmic reverb for emulating huge, endless spaces and modulated echoes</td>
-<td>Effect</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/59c44243a5051120ea287ba55d136e82.html" target="blank" rel="noopener">Cocoa Delay</a></td>
-<td>Warm and lively delay</td>
-<td>Effect</td>
-<td>WDL-OL</td>
-</tr>
-<tr>
-<td><a href="/external_links/410c47ee75dbd36f011e68732c4ccce5.html" target="blank" rel="noopener">Convolver</a></td>
-<td>Impulse-response reverb</td>
-<td>Effect</td>
-<td>VSTGUI, JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/446b79b37586c2b23d974b8e6daef2c8.html" target="blank" rel="noopener">Dexed</a></td>
-<td>DX7 FM plugin synth</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/b9aa094a913d7cb619dbb6c6c022204d.html" target="blank" rel="noopener">Digits</a></td>
-<td>Phase-distortion synth inspired by Casio CZ series</td>
-<td>Instrument</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/3b98696c0191514899b43b0e59f1892a.html" target="blank" rel="noopener">Distrho glBars</a></td>
-<td>OpenGL bars visualization plugin (as seen in XMMS and XBMC/Kodi) adapted from jack_glbars</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/1036ae7ef069ac1b1f1fa181854abf5c.html" target="blank" rel="noopener">Distrho Juice Plugins</a></td>
-<td></td>
-<td>Misc</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/8d35110be961ef3074df545b35d45efe.html" target="blank" rel="noopener">Distrho Kars</a></td>
-<td>Simple karplus-strong plucked string synth based on the karplong DSSI example synth</td>
-<td>Instrument</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/02b982a24e58fe598a7ecd8d62104500.html" target="blank" rel="noopener">Distrho Mini-Series</a></td>
-<td>Collection of small plugins based on LOSER-Dev Plugins</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/7d10e61bb16fb368ad187e89dd29e6b6.html" target="blank" rel="noopener">Distrho MVerb</a></td>
-<td>DPF-based version of MVerb</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/11fd1b9ebd16b801c22f84426fcea8cd.html" target="blank" rel="noopener">Distrho ndc Plugs</a></td>
-<td>DPF-based versions of some of ndc Plugs</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/b7b2d0845bb96adbb8a9636e1df12c11.html" target="blank" rel="noopener">Distrho Nekobi</a></td>
-<td>Simple single-oscillator synth based on Roland TB-303</td>
-<td>Instrument</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/1cd45d801691aace37d95085704a5a03.html" target="blank" rel="noopener">Distrho ProM</a></td>
-<td>Music-visualizer plugin based on projectM</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/f5c5022fd5ac146347da95b42113deae.html" target="blank" rel="noopener">Dragonfly Reverb</a></td>
-<td>Hall-style reverb based on Freeverb3 algorithms</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/f3117171ebd4f0bf1d98112c5af14f8e.html" target="blank" rel="noopener">Drops</a></td>
-<td>Single file audio player</td>
-<td>Instrument</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/106a60eac2fdfb1562fe43fc43bbc6a6.html" target="blank" rel="noopener">Element</a></td>
-<td>Advanced Audio Plugin Host</td>
-<td>Misc</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/32afe08dca8b8cba2f21fc9fe362c01e.html" target="blank" rel="noopener">Eurorack</a></td>
-<td>Diverse set of physical modeling sources, organic processors, wavetable oscillators, waveshapers, granular synths, and utility modules</td>
-<td>Misc</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/8065104fd79239d35d27a8e0c37b554e.html" target="blank" rel="noopener">Flutterbird</a></td>
-<td>Simple pitch fluctuation</td>
-<td>Effect</td>
-<td>iPlug 2</td>
-</tr>
-<tr>
-<td><a href="/external_links/b4e46c186011c0d40a2f5b30fc22dff8.html" target="blank" rel="noopener">GainPlugin</a></td>
-<td>(Experimental) VST/AU audio plugin example based on JUCE with React-JUCE for UI.</td>
-<td>Mics</td>
-<td>JUCE, React-JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/db3ab3fbc815c8254623a219947f972b.html" target="blank" rel="noopener">Gverb/Gigaverb</a></td>
-<td>Reverb</td>
-<td>Effect</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/542f574d9890a41f685f794752b9c6d5.html" target="blank" rel="noopener">Helm</a></td>
-<td>Polyphonic synth with lots of modulation</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/337819cd62082ba7f2942d46a23d300b.html" target="blank" rel="noopener">hexter</a></td>
-<td>Yamaha DX7 modeling FM synth for DSSI</td>
-<td>Instrument</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/8b39ff1189c028404da69fd7065e43e6.html" target="blank" rel="noopener">HiLoFilter</a></td>
-<td>Simple hipass/lopass filter controlled with a single knob</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/1b8bc4e6bcca7b041af56d4bb9e2ba8c.html" target="blank" rel="noopener">JuceOPLVSTi</a></td>
-<td>FM synth based on Yamaha OPL2/3 emulation from DOSBox</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/74a853886d96b87a9d82a0490fcc2c97.html" target="blank" rel="noopener">Juno 6</a></td>
-<td>Roland Juno 6/60 Synthesizer</td>
-<td>Instrument</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/cf7364b0b3c77ef4221fd2d85f4a8997.html" target="blank" rel="noopener">keithhearne/VSTPlugins</a></td>
-<td>Collection of VST plugins</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/1e466276f4d77884ed38e319422adf07.html" target="blank" rel="noopener">K-Meter</a></td>
-<td>Implementation of a K-System meter according to Bob Katz&#x2019; specifications</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/43648049274948621cacfcf51a2fe5c7.html" target="blank" rel="noopener">Key Repeat</a></td>
-<td>Beat repeat sampler</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/20db675c8508350fd47251c1cdce1ec1.html" target="blank" rel="noopener">KickMaker</a></td>
-<td>Synth specifically to create kick-drum sounds</td>
-<td>Instrument</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/63d56ec2e06465be915baf907128e9c6.html" target="blank" rel="noopener">LameVST</a></td>
-<td>LameMP3 as an effect</td>
-<td>Effect</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/2571c921f08d84af47802a66e1d3b23c.html" target="blank" rel="noopener">Magical8bitPlug 2</a></td>
-<td>Old 8bit game console style synth</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/d4487949f71c0bc4bb982d45ef05ccac.html" target="blank" rel="noopener">mda</a></td>
-<td>FX and virtual instruments for PC and Mac</td>
-<td>Misc</td>
-<td>(no GUI)</td>
-</tr>
-<tr>
-<td><a href="/external_links/d739059e4278f19cfa7266674475c3f4.html" target="blank" rel="noopener">mda-plugins-juce</a></td>
-<td>JUCE implementations of the classic MDA audio plug-ins</td>
-<td>Misc</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/b3c811cbcb75a90ea9b26fffd2cf0161.html" target="blank" rel="noopener">MidiChords</a></td>
-<td>Detect chord names from a MIDI track and display them in a scrolling window during track playback</td>
-<td>Misc</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/5b7e1840cd5efc1b4e90eb2b427a431c.html" target="blank" rel="noopener">Mika Micro</a></td>
-<td>Simple subtractive synth</td>
-<td>Instrument</td>
-<td>WDL-OL</td>
-</tr>
-<tr>
-<td><a href="/external_links/7d5695431c7c23b545437918445757af.html" target="blank" rel="noopener">MVerb</a></td>
-<td>Studio-quality reverb using the Dattorro&#x2019;s figure-of-eight reverb structure</td>
-<td>Effect</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/1798a22d46ed40d9399c30ddaac408f1.html" target="blank" rel="noopener">Neural Amp Modeler LV2</a></td>
-<td>Neural amplifier modeler, LV2 version of Steven Atkinson&#x2019;s NAM plugin</td>
-<td>Effect</td>
-<td>no GUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/c7724c680702b020c371f12256502d5a.html" target="blank" rel="noopener">Ninjas 2</a></td>
-<td>Sample slicer, rewrite of Ninjas</td>
-<td>Instrument</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/4df12e91be7d9e57d6e1d169d154bba0.html" target="blank" rel="noopener">NotNotchFilter</a></td>
-<td>Performance-oriented filter designed to replace the mid-EQ found in a standard 3-band DJ mixer</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/9731dda4a8b0d2cc156746055c5afb53.html" target="blank" rel="noopener">ndc Plugs</a></td>
-<td>VST plugins for Windows and OSX</td>
-<td>Misc</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/65129614e592a80905252a58877845e9.html" target="blank" rel="noopener">OctaSine</a></td>
-<td>VST2 frequency modulation synthesizer written in Rust</td>
-<td>Instrument</td>
-<td>Rust VST</td>
-</tr>
-<tr>
-<td><a href="/external_links/a5c2231571b5effb950452ae80ca3abe.html" target="blank" rel="noopener">Odin2</a></td>
-<td>Polyphonic Synth</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/dec47cebde7cf1d8be5f591a2c598869.html" target="blank" rel="noopener">OwlBass</a></td>
-<td>Additive bass synth</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/a4053a506016f66ab29fe767f397ba2a.html" target="blank" rel="noopener">OB-Xd</a></td>
-<td>Based on the Oberheim OB-X</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/834758d6784d4a5218b0c31c69fc22d4.html" target="blank" rel="noopener">Oxe FM Synth</a></td>
-<td>Multitimbral 8-operator FM synth (VST 2.4; Windows, Linux, macOS)</td>
-<td>Instrument</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/ce8f91e814e10f93b6c8144616bbb414.html" target="blank" rel="noopener">PulseDelay</a></td>
-<td>Timed delay effect</td>
-<td>Effect</td>
-<td>(no GUI)</td>
-</tr>
-<tr>
-<td><a href="/external_links/07aece0ca3828a80e041f8f7e3c76f2c.html" target="blank" rel="noopener">QtVST</a></td>
-<td>VST plugins with a Qt interface</td>
-<td>Effect</td>
-<td>Qt</td>
-</tr>
-<tr>
-<td><a href="/external_links/ed423f58844283e663933c2ceda79e53.html" target="blank" rel="noopener">REACH</a></td>
-<td>Extraterrestrial Reverb for Electronic Music</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/6696cffd9798a29b562aefcc8e7444ba.html" target="blank" rel="noopener">Regrader</a></td>
-<td>Degenerative delay</td>
-<td>Effect</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/4314f46790a43325259c90f999c96088.html" target="blank" rel="noopener">Roth-AIR</a></td>
-<td>Mixing tool for easily adding airy, crispy presence to audio</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/34052a5a4146550ce1b2ee745a779f06.html" target="blank" rel="noopener">ScorchCrafter Guitar FX</a></td>
-<td>Audio DSP FX and plugins, mostly for guitar (amp sim) and other FX</td>
-<td>Effect</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/7ab8741a0aa74e77bbdfb4087569bd67.html" target="blank" rel="noopener">Schrammel OJD</a></td>
-<td>Model of a modern classic guitar distortion pedal</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/bb6ce331aa52e12ba194b6771820de76.html" target="blank" rel="noopener">sfizz</a></td>
-<td>SFZ parser library and instrument plugins</td>
-<td>Instrument</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/34fc7dcafde70d266276ce93ce274142.html" target="blank" rel="noopener">ShoutVST</a></td>
-<td>VST for streaming sound into Icecast/Shoutcast directly from VST hosts</td>
-<td>Effect</td>
-<td>VSTGUI, FLUID</td>
-</tr>
-<tr>
-<td><a href="/external_links/3a4444c54002dcf089ec74252939dd8c.html" target="blank" rel="noopener">SmartGuitarAmp</a></td>
-<td>Guitar amplifier-style plugin, that uses machine learning for emulating real world hardware</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/2d2c9d1e22c002c73400bfdc8a2e349e.html" target="blank" rel="noopener">SmartGuitarPedal</a></td>
-<td>Guitar pedal-style plugin, that uses machine learning for emulating real world hardware</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/1385ee910abf419583bffc8ee84b0780.html" target="blank" rel="noopener">Sound Analyser</a></td>
-<td>Real-time audio analysis to allow anyone to quickly set up and experiment with different algorithms</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/88b2a23182797ef8c83500c527ff9152.html" target="blank" rel="noopener">SPARTA</a></td>
-<td>Spatial audio focused plug-in suite (Ambisonics encoders/decoders, 3-D panners/spatialisers, etc.)</td>
-<td>Effect</td>
-<td><a href="/external_links/57e097a199553ac090e79ab564fb7b06.html" target="blank" rel="noopener">SAF</a>, JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/db46a076007e4455d13600ebb4eaa0ee.html" target="blank" rel="noopener">Squeezer</a></td>
-<td>Compressor with side-chain, several detection modes and filters, etc</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/7cf5ba855ba678ebc4899c1342414441.html" target="blank" rel="noopener">Surge</a></td>
-<td>Subtractive wavetable synth</td>
-<td>Instrument</td>
-<td>VSTGUI</td>
-</tr>
-<tr>
-<td><a href="/external_links/882731023b35bd600818afdbb2e6129a.html" target="blank" rel="noopener">Synister</a></td>
-<td>Subtractive synth</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/7f135e0f6c6886d9981aac61b78a6f7a.html" target="blank" rel="noopener">Syntage</a></td>
-<td>VST 2.4 .Net Study Synth</td>
-<td>Instrument</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/8d751f9ea78620f6862233df2d9ef333.html" target="blank" rel="noopener">Temper</a></td>
-<td>Digital distortion targeting VST, VST3, and AU for OS X and Windows</td>
-<td>Effect</td>
-<td>Faust, JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/40f9a87fec7bca2a6f8445ff95b5b394.html" target="blank" rel="noopener">Tunefish</a></td>
-<td>VST virtual analog synthesizer</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/a317e58078b7e04257ed07850902f247.html" target="blank" rel="noopener">traKmeter</a></td>
-<td>Loudness meter for correctly setting up tracking and mixing levels</td>
-<td>Effect</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/c55417f2e5a34e7f57840b71d5ca8854.html" target="blank" rel="noopener">VCV Rack</a></td>
-<td>Virtual modular synth</td>
-<td>Misc</td>
-<td>RtAudio</td>
-</tr>
-<tr>
-<td><a href="/external_links/4f1b4219a6c1b87f105e86ced4bfc29e.html" target="blank" rel="noopener">Vital</a></td>
-<td>Spectral warping wavetable synthesizer</td>
-<td>Instrument</td>
-<td>JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/57626bc86dabf4d77a64757a74c3d106.html" target="blank" rel="noopener">VSTSID</a></td>
-<td>SID synthesizer instrument</td>
-<td>Instrument</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="/external_links/fe4e63730cc6b405bd54643d46d9d9ea.html" target="blank" rel="noopener">VST2413</a></td>
-<td>FM synth based on emulator of YM2413 (OPLL) chip used in Sega Master System and FM-PAC MSX expansion</td>
-<td>Instrument</td>
-<td>(no GUI)</td>
-</tr>
-<tr>
-<td><a href="/external_links/9b90a774d6a926315274ec6c377fcc02.html" target="blank" rel="noopener">WebCZ101</a></td>
-<td>Virtual CZ101 synth in a browser</td>
-<td>Instrument</td>
-<td><a href="/external_links/df4774c540709525d54a61e062cb3746.html" target="blank" rel="noopener">WAM</a></td>
-</tr>
-<tr>
-<td><a href="/external_links/54e473711025c5b90b4fc232ef6330e2.html" target="blank" rel="noopener">WebDX7</a></td>
-<td>Virtual Yamaha DX7 synth in a browser</td>
-<td>Instrument</td>
-<td><a href="/external_links/df4774c540709525d54a61e062cb3746.html" target="blank" rel="noopener">WAM</a></td>
-</tr>
-<tr>
-<td><a href="/external_links/d6cf1072d04ce727128d6c847c1f6e3a.html" target="blank" rel="noopener">Wolf Shaper</a></td>
-<td>Waveshaper plugin with spline-based graph editor</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/bfabf0ca5312e320a28a1adb53458341.html" target="blank" rel="noopener">YK Chorus</a></td>
-<td>Chorus audio effect plugin based on DSP code by TAL</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/19ddbeacc281b3171c367c0a63fd7fc5.html" target="blank" rel="noopener">zam-plugins</a></td>
-<td>LADSPA/LV2/VST/JACK audio plugins for high-quality processing</td>
-<td>Effect</td>
-<td>DPF</td>
-</tr>
-<tr>
-<td><a href="/external_links/cd85eba5621d1fb63667ea3d8892b4e6.html" target="blank" rel="noopener">zynaddsubfx</a></td>
-<td>Additive/Subtractive AM/FM synthesizer with effects</td>
-<td>Instrument</td>
-<td>FLTK</td>
-</tr>
-</tbody></table>
-<h2 id="&#x5927;&#x5408;&#x96C6;"><a href="#&#x5927;&#x5408;&#x96C6;" class="headerlink" title="&#x5927;&#x5408;&#x96C6;"></a>&#x5927;&#x5408;&#x96C6;</h2><ul>
-<li><a href="/external_links/05914f24f4d7ac701e1eeb77ecc2d5b9.html" target="blank" rel="noopener">Linux Synths</a> &#x2014; list of linux based synths, some of which are open-source</li>
-<li><a href="/external_links/2fd21ff361e87d21f3b06d2b058603f8.html" target="blank" rel="noopener">OpenAV</a> &#x2014; collection of instruments, effects, and development tool kits for Linux.</li>
-<li><a href="/external_links/f958d6fce27399262f8e6ee70240a0b5.html" target="blank" rel="noopener">SFZ Instruments</a> &#x2014; list of SFZ instruments, most of which are free</li>
-<li><a href="/external_links/ab973438f8fadced4238c3c654e8068c.html" target="blank" rel="noopener">StudioRack</a> &#x2014; open-source audio plugin registry, app and command line tools</li>
-<li><a href="/external_links/a91f24ec5be34e11540ce4c8f576d466.html" target="blank" rel="noopener">VCV library</a> &#x2014; library of plugins compatible with VCV Plugin Manager</li>
-</ul>
-<h2 id="&#x97F3;&#x9891;&#x76F8;&#x5173;&#x5E94;&#x7528;"><a href="#&#x97F3;&#x9891;&#x76F8;&#x5173;&#x5E94;&#x7528;" class="headerlink" title="&#x97F3;&#x9891;&#x76F8;&#x5173;&#x5E94;&#x7528;"></a>&#x97F3;&#x9891;&#x76F8;&#x5173;&#x5E94;&#x7528;</h2><table>
-<thead>
-<tr>
-<th>Software</th>
-<th>Source</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="/external_links/a5e4f02045133263b1dfba820afa3a7c.html" target="blank" rel="noopener">Ardour</a></td>
-<td><a href="/external_links/15e6cdf0b62a2a7c6fcfe9c511d40e99.html" target="blank" rel="noopener">Ardour/ardour</a></td>
-<td>DAW</td>
-</tr>
-<tr>
-<td>ASIO2WASAPI</td>
-<td><a href="/external_links/5e9ec78e731ad4390d42a3299cfb149c.html" target="blank" rel="noopener">levmin/ASIO2WASAPI</a></td>
-<td>Universal ASIO driver for Windows</td>
-</tr>
-<tr>
-<td><a href="/external_links/16e832822c847183d0445b351f703edb.html" target="blank" rel="noopener">Audacity</a></td>
-<td><a href="/external_links/6d751e16020d889e9c0324ebdc0a406d.html" target="blank" rel="noopener">audacity/audacity</a></td>
-<td>Audio editor</td>
-</tr>
-<tr>
-<td><a href="/external_links/3cc9abde0a4c38610bfd802ac5fac85c.html" target="blank" rel="noopener">butterDAWg</a></td>
-<td><a href="/external_links/3cc9abde0a4c38610bfd802ac5fac85c.html" target="blank" rel="noopener">Jaybee18/butterDAWg</a></td>
-<td>DAW (WIP)</td>
-</tr>
-<tr>
-<td><a href="/external_links/7d7d3f11118e49d1ee3f5cfcd885a969.html" target="blank" rel="noopener">Carla</a></td>
-<td><a href="/external_links/5135262acfc2d4ce293ea265bdd44307.html" target="blank" rel="noopener">falkTX/Carla</a></td>
-<td>GNU/Linux Plugin Host</td>
-</tr>
-<tr>
-<td><a href="/external_links/d2788489cc51506dbb0734df2bffb9ac.html" target="blank" rel="noopener">ChucK</a></td>
-<td><a href="/external_links/298724abdb024f72388c9c64751b12c4.html" target="blank" rel="noopener">ccrma/chuck</a></td>
-<td>Strongly-timed, Concurrent, and On-the-fly Music Programming Language</td>
-</tr>
-<tr>
-<td><a href="/external_links/5a70a3c401f1b50c5479c643a03f81b8.html" target="blank" rel="noopener">Element</a></td>
-<td><a href="/external_links/106a60eac2fdfb1562fe43fc43bbc6a6.html" target="blank" rel="noopener">Kushview/Element</a></td>
-<td>Advanced Audio Plugin Host</td>
-</tr>
-<tr>
-<td>FlexASIO</td>
-<td><a href="/external_links/8251f681326958dfe4eafadb8cccae16.html" target="blank" rel="noopener">dechamps/FlexASIO</a></td>
-<td>Universal ASIO driver for Windows</td>
-</tr>
-<tr>
-<td><a href="/external_links/7fe1ac6ae2d0db25e4195b69f57612e7.html" target="blank" rel="noopener">Giada</a></td>
-<td><a href="/external_links/19382fa9aa797f0c47ff60ec38d4feeb.html" target="blank" rel="noopener">monocasual/giada</a></td>
-<td>Loop machine</td>
-</tr>
-<tr>
-<td><a href="/external_links/3fbfb6bf41f4d04adaddc96e711b408b.html" target="blank" rel="noopener">Guitarix</a></td>
-<td><a href="/external_links/ff39602ae1e9883cbdffc1400189a56d.html" target="blank" rel="noopener">SourceForge &#x2192; guitarix</a></td>
-<td>GNU/Linux Virtual Amplifier</td>
-</tr>
-<tr>
-<td><a href="/external_links/e613b82c837efe9cdd7c5b86ce2a8bd8.html" target="blank" rel="noopener">Helio Workstation</a></td>
-<td><a href="/external_links/4c104d560cb77f8b985a4ecb1ab0c545.html" target="blank" rel="noopener">helio-fm/helio-workstation</a></td>
-<td>Sequencer</td>
-</tr>
-<tr>
-<td><a href="/external_links/389a0b2246f18e919707f494ef135463.html" target="blank" rel="noopener">HISE</a></td>
-<td><a href="/external_links/6bea25e8f6f7993433c29241e34c316c.html" target="blank" rel="noopener">christophhart/HISE</a></td>
-<td>Cross-platform framework/application for building sample-based virtual instruments (VST, AU, AAX)</td>
-</tr>
-<tr>
-<td><a href="/external_links/f6a45577a5964d1cd178b9633393a9aa.html" target="blank" rel="noopener">SFZ to HISE converter</a></td>
-<td><a href="/external_links/226a6101fece9fa8381fb3709869909e.html" target="blank" rel="noopener">anderseklov/SFZ-to-HISE-converter</a></td>
-<td>JavaScript app that translates SFZ instrument files into HISE samplemaps and JSON data objects. Runs in a modern web browser. MIT license.</td>
-</tr>
-<tr>
-<td><a href="/external_links/f96b8e87613e1a99dcf17d2adc1f30b6.html" target="blank" rel="noopener">Harmonoid</a></td>
-<td><a href="/external_links/f96b8e87613e1a99dcf17d2adc1f30b6.html" target="blank" rel="noopener">harmonoid/harmonoid</a></td>
-<td>Cross-platform music player (Mobile &amp; Desktop) written in Flutter</td>
-</tr>
-<tr>
-<td><a href="/external_links/a768df2d64beee2443e25a2ff6520377.html" target="blank" rel="noopener">Hydrogen</a></td>
-<td><a href="/external_links/c0f1180a12413deab7e0c539503c6da8.html" target="blank" rel="noopener">hydrogen-music/hydrogen</a></td>
-<td>Drum machine</td>
-</tr>
-<tr>
-<td><a href="/external_links/52fdb5a198bf907ce8ec4542a5bd239e.html" target="blank" rel="noopener">NewMixer</a></td>
-<td><a href="/external_links/52fdb5a198bf907ce8ec4542a5bd239e.html" target="blank" rel="noopener">jatinchowdhury18/NewMixer</a></td>
-<td>Mixing Software</td>
-</tr>
-<tr>
-<td><a href="/external_links/1b1b2f0baefc6d65ec401f075a91fa16.html" target="blank" rel="noopener">LMMS</a></td>
-<td><a href="/external_links/5818f3916259638c2deff63192c9449e.html" target="blank" rel="noopener">LMMS/lmms</a></td>
-<td>DAW</td>
-</tr>
-<tr>
-<td><a href="/external_links/424320abfad63bbb7c92058941b50be1.html" target="blank" rel="noopener">OpenMPT</a></td>
-<td><a href="/external_links/adadb163be7a97b488afc19375e1a553.html" target="blank" rel="noopener">OpenMPT/openmpt</a></td>
-<td>Popular tracker (formerly ModPlug Tracker) for Windows with support for IT, XM, S3M, MOD modules, VST plugins and ASIO</td>
-</tr>
-<tr>
-<td><a href="/external_links/a63fea945a75478e1bc6f52c4e685d95.html" target="blank" rel="noopener">ossia score</a></td>
-<td><a href="/external_links/19ddced539abb4025dfc2fd78f4c8b77.html" target="blank" rel="noopener">ossia/score</a></td>
-<td>Cross-platform intermedia sequencer</td>
-</tr>
-<tr>
-<td><a href="/external_links/f099a0bd6cdf29a91765ed067ad03dac.html" target="blank" rel="noopener">OwlPlug</a></td>
-<td><a href="/external_links/781f1550f76a4f227eac2967fb9a3d6c.html" target="blank" rel="noopener">DropSnorz/OwlPlug</a></td>
-<td>Audio plugin manager</td>
-</tr>
-<tr>
-<td><a href="/external_links/6b5477cab15a0283bb9c26f54169e23b.html" target="blank" rel="noopener">orDrumbox</a></td>
-<td><a href="/external_links/a70f81c5ccbeb206fd32b9ad9576f0ce.html" target="blank" rel="noopener">SourceForge &#x2192; ordrumbox</a></td>
-<td>Drum machine</td>
-</tr>
-<tr>
-<td><a href="/external_links/a0d04a43cfbd7024a504991eab70a14c.html" target="blank" rel="noopener">Psycle</a></td>
-<td><a href="/external_links/d67df5b96f5455cdb8a4a455e9757350.html" target="blank" rel="noopener">SourceForge &#x2192; psycle</a></td>
-<td>Modular music tracker</td>
-</tr>
-<tr>
-<td><a href="/external_links/e22c0072dfba2e07033b8c1aad1fc616.html" target="blank" rel="noopener">SampleScanner</a></td>
-<td><a href="/external_links/e22c0072dfba2e07033b8c1aad1fc616.html" target="blank" rel="noopener">psobot/SampleScanner</a></td>
-<td>Tool for auto-sampling hardware instruments</td>
-</tr>
-<tr>
-<td><a href="/external_links/0c994ec5e43c27bbf02e82677b394e39.html" target="blank" rel="noopener">Sonic Pi</a></td>
-<td><a href="/external_links/d6bc13d0aa14b2b5c9c7f736f4459fe6.html" target="blank" rel="noopener">sonic-pi-net/sonic-pi</a></td>
-<td>Code-based music creation and performance tool</td>
-</tr>
-<tr>
-<td><a href="/external_links/67b6022484bb5fd9249ed3db8e79ecef.html" target="blank" rel="noopener">SuperCollider</a></td>
-<td><a href="/external_links/c5c698b452f0d207ee53bc4e63ba72c2.html" target="blank" rel="noopener">supercollider/supercollider</a></td>
-<td>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound.</td>
-</tr>
-<tr>
-<td>Stargate DAW</td>
-<td><a href="/external_links/b351a6089ab9ded38f189510e9391de9.html" target="blank" rel="noopener">stargatedaw/stargate</a></td>
-<td>Cross-platform, all-in-one DAW and plugin suite</td>
-</tr>
-<tr>
-<td><a href="/external_links/ab973438f8fadced4238c3c654e8068c.html" target="blank" rel="noopener">StudioRack</a></td>
-<td><a href="/external_links/83247463f433b599fa736bea16f642d5.html" target="blank" rel="noopener">github.com/studiorack</a></td>
-<td>Audio plugin manager</td>
-</tr>
-<tr>
-<td><a href="/external_links/96895c5c9ce3588b3328d42d0a4f6f39.html" target="blank" rel="noopener">VCV Rack</a></td>
-<td><a href="/external_links/c55417f2e5a34e7f57840b71d5ca8854.html" target="blank" rel="noopener">VCVRack/Rack</a></td>
-<td>Modular synth</td>
-</tr>
-<tr>
-<td>yabridge</td>
-<td><a href="/external_links/377139f5edc7588fb1feb91a17a2f02b.html" target="blank" rel="noopener">robbert-vdh/yabridge</a></td>
-<td>Linux bridge for Windows VSTs</td>
-</tr>
-<tr>
-<td><a href="/external_links/5fd14069ade0b60675b7f63f040ad822.html" target="blank" rel="noopener">Zrythm</a></td>
-<td><a href="/external_links/98d97926b0b110f28145bc8f916a87e0.html" target="blank" rel="noopener">zrythm/zrythm</a></td>
-<td>DAW</td>
-</tr>
-</tbody></table>
-<h2 id="&#x97F3;&#x9891;&#x8F6F;&#x4EF6;&#x548C;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x5E93;&#x548C;&#x63A5;&#x53E3;"><a href="#&#x97F3;&#x9891;&#x8F6F;&#x4EF6;&#x548C;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x5E93;&#x548C;&#x63A5;&#x53E3;" class="headerlink" title="&#x97F3;&#x9891;&#x8F6F;&#x4EF6;&#x548C;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x5E93;&#x548C;&#x63A5;&#x53E3;"></a>&#x97F3;&#x9891;&#x8F6F;&#x4EF6;&#x548C;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x4F9D;&#x8D56;&#x5E93;&#x548C;&#x63A5;&#x53E3;</h2><table>
-<thead>
-<tr>
-<th>Library</th>
-<th>Source</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="/external_links/359aa2690b378ca817f40009291105e1.html" target="blank" rel="noopener">Avendish</a></td>
-<td><a href="/external_links/b3f0b8f6e3362a31ef66b615e476fbe2.html" target="blank" rel="noopener">celtera/avendish</a></td>
-<td>C++20 framework for any sort of audio / video / midi media objects</td>
-</tr>
-<tr>
-<td><a href="/external_links/0c3b3ce207ec41d0ddaecf7ae643cb50.html" target="blank" rel="noopener">Cabbage</a></td>
-<td><a href="/external_links/259a40749d368665616a730877f94a75.html" target="blank" rel="noopener">rorywalsh/cabbage</a></td>
-<td>Framework for developing audio plugins and standalone instruments with Csound</td>
-</tr>
-<tr>
-<td><a href="/external_links/eaadd65719e016dc634961b23205fd0b.html" target="blank" rel="noopener">Csound</a></td>
-<td><a href="/external_links/dba664b8f557eb320d2dce8a22da396c.html" target="blank" rel="noopener">csound/csound</a></td>
-<td>Programming language for sound and music synthesis</td>
-</tr>
-<tr>
-<td><a href="/external_links/7bb011485bce60a0754d7c00408b0050.html" target="blank" rel="noopener">Cmajor</a></td>
-<td><a href="/external_links/177ef402db348d4158f2d0b042a19c11.html" target="blank" rel="noopener">SoundStacks/cmajor</a></td>
-<td>Cmajor is a programming language for writing fast, portable audio software.</td>
-</tr>
-<tr>
-<td><a href="/external_links/3ecf3ffff9387b86ec5e5e6ef9d2a6e6.html" target="blank" rel="noopener">Clap</a></td>
-<td><a href="/external_links/3ecf3ffff9387b86ec5e5e6ef9d2a6e6.html" target="blank" rel="noopener">free-audio/clap</a></td>
-<td>CLAP stands for CLever Audio Plugin. It is an audio plugin ABI which defines a standard for Digital Audio Workstations and audio plugins (synthesizers, audio effects, &#x2026;) to work together.</td>
-</tr>
-<tr>
-<td><a href="/external_links/fe19fb41de80f0353905572ed8ce55f5.html" target="blank" rel="noopener">DawDreamer</a></td>
-<td><a href="/external_links/fe19fb41de80f0353905572ed8ce55f5.html" target="blank" rel="noopener">DBraun/DawDreamer</a></td>
-<td>Audio-processing Python framework supporting core DAW features written with JUCE</td>
-</tr>
-<tr>
-<td><a href="/external_links/c05bf159fd775aa3640d545a4bd6a6de.html" target="blank" rel="noopener">DPF</a></td>
-<td><a href="/external_links/262733118b831a43112c43644c836a0d.html" target="blank" rel="noopener">DISTRHO/DPF</a></td>
-<td>C++ framework for creating cross-platform audio plugins. DPF can build for LADSPA, DSSI, LV2, and VST formats.</td>
-</tr>
-<tr>
-<td><a href="/external_links/612036e6aa5fbcbc3521dc9d109b188f.html" target="blank" rel="noopener">Dplug</a></td>
-<td><a href="/external_links/53521c847fb41a528ff78c9f5f931794.html" target="blank" rel="noopener">AuburnSounds/Dplug</a></td>
-<td>Dplug lets you create audio plug-ins with unmatched simplicity and speed, using the D language.</td>
-</tr>
-<tr>
-<td><a href="/external_links/49084aa993fbf54e6ef28ea6983ce7b4.html" target="blank" rel="noopener">Elementary</a></td>
-<td><a href="/external_links/08a7a9409ca7a158b02a50165d091679.html" target="blank" rel="noopener">elemaudio/elementary</a></td>
-<td>JavaScript runtime for writing native audio applications, as well as a library and framework for composing audio signal processes.</td>
-</tr>
-<tr>
-<td><a href="/external_links/5a9a5df19952a843bec867c7920ce2cc.html" target="blank" rel="noopener">Faust</a></td>
-<td><a href="/external_links/9f60e98b5c20b80d18caba7d96dd66ff.html" target="blank" rel="noopener">grame-cncm/faust</a></td>
-<td>Functional programming language for real-time signal processing</td>
-</tr>
-<tr>
-<td><a href="/external_links/381b47fed960384298689cc9d01c0600.html" target="blank" rel="noopener">FluidSynth</a></td>
-<td><a href="/external_links/8cd21b2e4680825209a6620545868273.html" target="blank" rel="noopener">FluidSynth/fluidsynth</a></td>
-<td>Real-time synth based on the SoundFont 2 specifications</td>
-</tr>
-<tr>
-<td><a href="/external_links/92e97b20ff5e4538087195a03a4ea64f.html" target="blank" rel="noopener">Heavy</a></td>
-<td><a href="/external_links/38be774f8d8f0b17dbd6606d24da809b.html" target="blank" rel="noopener">Wasted-Audio/hvcc</a></td>
-<td>The heavy hvcc compiler for Pure Data patches. With generators for Bela, Fabric, js, pdext, Unity, Daisy, DPF, and Wwise frameworks.</td>
-</tr>
-<tr>
-<td><a href="/external_links/2be7f0920eddaf61bb75670052a1c0b1.html" target="blank" rel="noopener">iPlug 2</a></td>
-<td><a href="/external_links/78bab8fb15633e78559f5171adb22d85.html" target="blank" rel="noopener">iPlug2/iPlug2</a></td>
-<td>Simple-to-use C++ framework for developing cross-platform audio plugins/apps</td>
-</tr>
-<tr>
-<td><a href="/external_links/f24b5e258c77822bbd110b937188f8d0.html" target="blank" rel="noopener">JUCE</a></td>
-<td><a href="/external_links/39fab07145b922b5635c8cfc4925b340.html" target="blank" rel="noopener">juce-framework/JUCE</a></td>
-<td>Cross-platform C++ framework for developing desktop and mobile apps and audio plugins</td>
-</tr>
-<tr>
-<td><a href="/external_links/4952f4f1a391fce9caa5c1ab58bcac0a.html" target="blank" rel="noopener">jVSTwRapper</a></td>
-<td><a href="/external_links/728f58fb12095c5eebd1cebc349675ab.html" target="blank" rel="noopener">SourceForge &#x2192; jvstwrapper</a></td>
-<td>Wrapper to write audio plugins in Java (VST 2.4, AU, LADSPA; Windows, Linux, macOS)</td>
-</tr>
-<tr>
-<td><a href="/external_links/f56925591b60bd2064be8923ef5d8346.html" target="blank" rel="noopener">libopenmpt</a></td>
-<td><a href="/external_links/adadb163be7a97b488afc19375e1a553.html" target="blank" rel="noopener">OpenMPT/openmpt</a></td>
-<td>Cross-platform C/C++ module-playback library based on OpenMPT</td>
-</tr>
-<tr>
-<td><a href="/external_links/1779f8bcc760f05e893c8feb583d99dc.html" target="blank" rel="noopener">libspatialaudio</a></td>
-<td><a href="/external_links/0e0304b6901c44427f507b9f1c987b17.html" target="blank" rel="noopener">videolabs/libspatialaudio</a></td>
-<td>Cross-platform C++ library for Ambisonic encoding and decoding, filtering and binaural rendering</td>
-</tr>
-<tr>
-<td><a href="/external_links/56adccf25746643f1de202bd11ee4206.html" target="blank" rel="noopener">PortAudio</a></td>
-<td><a href="/external_links/4ceed1748048e3e3e31e52000be3daf2.html" target="blank" rel="noopener">Assembla &#x2192; portaudio</a></td>
-<td>Cross-platform audio I/O library</td>
-</tr>
-<tr>
-<td><a href="/external_links/51687975c52c87d1f36f41d955f2beab.html" target="blank" rel="noopener">r-audio</a></td>
-<td><a href="/external_links/51687975c52c87d1f36f41d955f2beab.html" target="blank" rel="noopener">bbc/r-audio</a></td>
-<td>A library of React components for building Web Audio graphs.</td>
-</tr>
-<tr>
-<td><a href="/external_links/01bf80107bc370a6384b610ec0199d2f.html" target="blank" rel="noopener">React-JUCE</a></td>
-<td><a href="/external_links/f0c8b4af385851de794d12680004e431.html" target="blank" rel="noopener">JoshMarler/react-juce</a></td>
-<td>React-JUCE (formerly named Blueprint) is a hybrid JavaScript/C++ framework that enables a <a href="/external_links/acc923af874f0f6fe0fb081e4e4073c1.html" target="blank" rel="noopener">React.js</a> frontend for a <a href="/external_links/f24b5e258c77822bbd110b937188f8d0.html" target="blank" rel="noopener">JUCE</a> application or plugin.</td>
-</tr>
-<tr>
-<td><a href="/external_links/5aba08e12c1227f84165a0e9384d17d7.html" target="blank" rel="noopener">RustAudio</a></td>
-<td><a href="/external_links/e35d3469168e35c838c331f2df72efe8.html" target="blank" rel="noopener">rustaudio</a></td>
-<td>Collection of audio processing and plugin libraries for the Rust language</td>
-</tr>
-<tr>
-<td>RtAudio</td>
-<td><a href="/external_links/af4cd96e509dfa3266ba4752c054988f.html" target="blank" rel="noopener">thestk/rtaudio</a></td>
-<td>C++ classes for cross-platform real-time audio I/O</td>
-</tr>
-<tr>
-<td>rust-vst</td>
-<td><a href="/external_links/277db949d91d98748200dc598b0421c6.html" target="blank" rel="noopener">rust-dsp/rust-vst</a></td>
-<td>VST 2.4 API implementation in the Rust language</td>
-</tr>
-<tr>
-<td><a href="/external_links/285b9887aa53ecbba7699a45e254d24e.html" target="blank" rel="noopener">SAF</a></td>
-<td><a href="/external_links/57e097a199553ac090e79ab564fb7b06.html" target="blank" rel="noopener">leomccormack/Spatial_Audio_Framework</a></td>
-<td>Cross-platform framework for developing spatial audio related algorithms and software in C/C++</td>
-</tr>
-<tr>
-<td><a href="/external_links/4dab80c12a3dee5f0ccdf369060944e1.html" target="blank" rel="noopener">SOUL</a></td>
-<td><a href="/external_links/694300e6aacab09b737e09d69a22f31a.html" target="blank" rel="noopener">soul-lang/SOUL</a></td>
-<td>SOUL (SOUnd Language) is an attempt to modernise and optimise the way high-performance, low-latency audio code is written and executed.</td>
-</tr>
-<tr>
-<td><a href="/external_links/8f9f22fc0e8185de199aab2600e04f6c.html" target="blank" rel="noopener">Soundpipe</a></td>
-<td><a href="/external_links/7546b67081bbc2403a203b807b69dd9d.html" target="blank" rel="noopener">PaulBatchelor/Soundpipe</a></td>
-<td>Lightweight music DSP library written in C; over 100 modules, many ported from Csound</td>
-</tr>
-<tr>
-<td><a href="/external_links/5ba45bb0cec001e0f1f63919c77aab24.html" target="blank" rel="noopener">tracktion_engine</a></td>
-<td><a href="/external_links/1f4ff2a81c6ae65fb7a27b31c1c797c4.html" target="blank" rel="noopener">Tracktion/tracktion_engine</a></td>
-<td>Tracktion Engine module. You can build anything from a simple file-player or sequencer to a full blown DAW. Tracktion Engine is supplied as a JUCE module so it can easily fit in to an existing JUCE application.</td>
-</tr>
-<tr>
-<td><a href="/external_links/21487a9429ffa0eb3fc0e6f2045d584f.html" target="blank" rel="noopener">Tone.js</a></td>
-<td><a href="/external_links/cfb2ca22d0eb1c8d4264037e8c2ff5f5.html" target="blank" rel="noopener">Tonejs/Tone.js</a></td>
-<td>A Web Audio framework for making interactive music in the browser.</td>
-</tr>
-<tr>
-<td>VSTGUI</td>
-<td><a href="/external_links/1c642c7d432d34404c4aae6a091eb864.html" target="blank" rel="noopener">steinbergmedia/vstgui</a></td>
-<td>User-interface toolkit mainly for audio plugins</td>
-</tr>
-<tr>
-<td>WDL-OL</td>
-<td><a href="/external_links/19d3f91fa9ffeb10f6ac9702fa54380f.html" target="blank" rel="noopener">olilarkin/wdl-ol</a></td>
-<td>Simple-to-use C++ framework for developing cross-platform audio plugins (superseded by iPlug 2)</td>
-</tr>
-<tr>
-<td><a href="/external_links/f02ec28abda8188ef1c9dc49bd33d60c.html" target="blank" rel="noopener">Web Audio API</a></td>
-<td><a href="/external_links/d7c0a1d31306198c81671f1245d0e235.html" target="blank" rel="noopener">web-audio-api</a></td>
-<td>The Web Audio API provides a powerful and versatile system for controlling audio on the Web, allowing developers to choose audio sources, add effects to audio, create audio visualizations, apply spatial effects (such as panning) and much more. <a href="/external_links/3b6af61befed54be28089ec4a3574d26.html" target="blank" rel="noopener">Web Audio API source code (Chromium / Blink)</a>.</td>
-</tr>
-<tr>
-<td><a href="/external_links/f14f26febfc6843b95a100627c9dbf84.html" target="blank" rel="noopener">WebAudioModules</a></td>
-<td><a href="/external_links/a5827526b6b479bb5c7d072f67221541.html" target="blank" rel="noopener">webaudiomodules</a></td>
-<td>WAM (WebAudioModules) &#x2014; synthesizers and audio effects processors for web browsers</td>
-</tr>
-</tbody></table>
-<h2 id="&#x63D2;&#x4EF6;&#x793A;&#x4F8B;"><a href="#&#x63D2;&#x4EF6;&#x793A;&#x4F8B;" class="headerlink" title="&#x63D2;&#x4EF6;&#x793A;&#x4F8B;"></a>&#x63D2;&#x4EF6;&#x793A;&#x4F8B;</h2><ul>
-<li><a href="/external_links/3d5905bfe271ccbe9937adeb1a5aacaf.html" target="blank" rel="noopener">KlangFalter</a> &#x2014; convolution audio plugin (e.g. for usage as convolution reverb)</li>
-<li><a href="/external_links/40be43c9e176f1cfd1a6a4635bb7b34b.html" target="blank" rel="noopener">FFTConvolver</a> &#x2014; audio convolution algorithm in C++ for real-time audio processing</li>
-<li><a href="/external_links/b2a10c757b6d8f3dc165ac2157dfd596.html" target="blank" rel="noopener">py-modular</a> &#x2014; modular and experimental programming environment with basic DSP routines in Python</li>
-</ul>
-<h2 id="&#x5F00;&#x6E90;&#x8D44;&#x6E90;"><a href="#&#x5F00;&#x6E90;&#x8D44;&#x6E90;" class="headerlink" title="&#x5F00;&#x6E90;&#x8D44;&#x6E90;"></a>&#x5F00;&#x6E90;&#x8D44;&#x6E90;</h2><ul>
-<li><a href="/external_links/b7a79724f85d6c84f1e8e611cc12a33a.html" target="blank" rel="noopener">OpenAIR</a> &#x2014; the Open Acoustic Impulse Response Library (Convolution Reverb Impulse Responses to recreate reverb character of space and equipment/recordings)</li>
-</ul>
-<p><strong>&#x672C;&#x6587;&#x4E3A;&#x8F6C;&#x8F7D;&#x81EA;</strong>: <a href="/external_links/98a54c30023d58fe2ce713f3e3a9aa25.html" target="blank" rel="noopener">openaudio</a>  <a href="/external_links/803a9c41bc59f7fd12abe7a6990f159c.html" target="blank" rel="noopener">github</a></p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../136.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../136.html" itemprop="url">免费且好用的混音插件汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-07T10:15:53+08:00">
-                2023-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Analog-Obession"><a href="#Analog-Obession" class="headerlink" title="Analog Obession"></a>Analog Obession</h2><p>&#x66FE;&#x7ECF;&#x7684;&#x6536;&#x8D39;&#x63D2;&#x4EF6;, &#x540E;&#x6765;&#x5B98;&#x65B9;&#x5BA3;&#x5E03;&#x514D;&#x8D39;&#x4E86;, &#x60CA;&#x4E0D;&#x60CA;&#x559C;&#x1F603;</p>
-<p><code>Analog Obession</code>&#x7684;&#x63D2;&#x4EF6;&#x90FD;&#x652F;&#x6301; <code>VST/AU/AAX</code> &#x683C;&#x5F0F;&#xFF0C;&#x9002;&#x7528;&#x4E8E; <code>Windows</code> &#x548C; <code>Mac</code>&#xFF0C;&#x5305;&#x62EC;&#x7ECF;&#x5178;&#x5EFA;&#x6A21;&#x5747;&#x8861;&#x5668;&#x3001;&#x538B;&#x7F29;&#x5668;&#x3001;&#x524D;&#x7F6E;&#x653E;&#x5927;&#x5668;&#x7B49;&#x3002;</p>
-<p>&#x81EA;&#x4ECE; <code>Analog Obsession</code> &#x7F51;&#x7AD9;&#x88AB;&#x9ED1;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E9B;&#x63D2;&#x4EF6;&#x73B0;&#x5728;&#x53EA;&#x5728; Patreon &#x4E0A;&#x63D0;&#x4F9B;&#x514D;&#x8D39;&#x4E0B;&#x8F7D;:</p>
-<p>&#x4E0B;&#x8F7D;&#x5730;&#x5740;: <a href="/external_links/ea2d2168a190bf8977e527340c1ef5ff.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;</a></p>
-<h2 id="airwindows"><a href="#airwindows" class="headerlink" title="airwindows"></a>airwindows</h2><p>&#x65E0;<code>UI</code>&#x63D2;&#x4EF6;, &#x4E13;&#x6CE8;&#x58F0;&#x97F3;&#x54C1;&#x8D28;</p>
-<p>&#x5B98;&#x7F51;: <a href="/external_links/a45f742cf6aca0a107b908286827f31b.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-<p>&#x76EE;&#x524D;&#x63D2;&#x4EF6;&#x6570;&#x91CF;&#x6709;&#x4E09;&#x767E;&#x591A;&#x4E2A;, &#x8FD8;&#x5728;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#x4E2D;,&#x5177;&#x4F53;&#x5206;&#x7C7B;&#x5982;&#x4E0B;:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">Ambience: TapeDelay2, Doublelay, PitchDelay, SampleDelay, BrightAmbience3, TripleSpread, Melt, MV2, MV, ADT, kChamberAR, StereoChorus, PurestEcho, TapeDelay, StarChild2, StarChild, Hombre, BrightAmbience2, BrightAmbience, StereoEnsemble, StereoDoubler, Chorus, ChorusEnsemble, Ensemble</span><br><span class="line"></span><br><span class="line">Amp Sims: GrindAmp, FireAmp, LeadAmp, LilAmp, MidAmp, BigAmp, Cabs, BassDrive, BassAmp</span><br><span class="line"></span><br><span class="line">Bass: OrbitKick, Hermepass, BassKit, DubCenter, DubSub, Floor, Infrasonic, FathomFive</span><br><span class="line"></span><br><span class="line">Biquads: BiquadPlus, Biquad, BiquadDouble, BiquadOneHalf, BiquadTriple, Biquad2</span><br><span class="line"></span><br><span class="line">Brightness: SlewSonic, DeBess, Acceleration2, DeEss, Smooth, Slew3, Slew2, Slew, Air2, Air, PurestAir, Acceleration, DeHiss, Hypersonic, HypersonX, Ultrasonic, UltrasonicLite, UltrasonicMed, UltrasonX</span><br><span class="line"></span><br><span class="line">Clipping: ClipOnly2, ClipSoftly, OneCornerClip, ADClip7, AQuickVoiceClip, ClipOnly</span><br><span class="line"></span><br><span class="line">Consoles: Console8LiteChannel, Console8LiteBuss, Console8BussHype, Console8BussIn, Console8BussOut, Console8ChannelHype, Console8ChannelIn, Console8ChannelOut, Console8SubHype, Console8SubIn, Console8SubOut, Console0Channel, Console0Buss, PurestConsole2Buss, PurestConsole2Channel,Console7Buss, Console7Channel, Console7Cascade, Console7Crunch, PurestConsoleBuss, PurestConsoleChannel,Console6Buss, Console6Channel, PDBuss, PDChannel, Console5Buss, Console5Channel, Console5DarkCh, C5RawBuss, C5RawChannel, AtmosphereBuss, AtmosphereChannel, </span><br><span class="line">Console4Buss, Console4Channel</span><br><span class="line"></span><br><span class="line">Distortion: Distortion, Edge, Dirt, Mackity, Density2, Density, Drive, Loud, Hard Vacuum, HighImpact, MultiBandDistortion</span><br><span class="line"></span><br><span class="line">Dithers: Dark, PaulWide, PaulDither, TPDFWide, TPDFDither, NotJustAnotherDither, NotJustAnotherCD, Beam, TapeDither, SpatializeDither, VinylDither, DoublePaul, Ditherbox, BuildATPDF, NodeDither, StudioTan, DitherMeTimbers, DitherMeDiskers, RawTimbers, RawGlitters, NaturalizeDither, HighGlossDither, DitherFloat</span><br><span class="line"></span><br><span class="line">Dynamics: Pop2, Pressure5, Dynamics, Pop, DigitalBlack, Logical4, VariMu, ButterComp2, curve, Recurve, Pyewacket, BlockParty, SoftGate, Thunder, Compresaturator, DrumSlam, ButterComp, BrassRider, Point, Gatelope, PodcastDeluxe, Podcast, Swell, PurestSquish, Pressure4, Surge, SurgeTide</span><br><span class="line"></span><br><span class="line">Effects: GalacticVibe, Fracture2, Dubly, Pafnuty2, PitchNasty, GuitarConditioner, Aura, TremoSquare, Tremolo, GlitchShifter, Gringer, Exciter, Energy2, Energy, Facet, Fracture, PowerSag2, PowerSag, Preponderant, Nikola</span><br><span class="line"></span><br><span class="line">Filter: Baxandall2, Capacitor2, CStrip2, Weight, Isolator2, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Baxandall, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance2, Distance, Lowpass, Highpass</span><br><span class="line"></span><br><span class="line">Lo-Fi: Pockey2, Flutter, CrunchyGrooveWear, GrooveWear, Pockey, DeRez2, BitGlitter, DeRez, ChromeOxide, Cojones, Vibrato, Bite, Deckwrecka, DustBunny</span><br><span class="line"></span><br><span class="line">Noise: Noise, Texturize, TexturizeMS, VoiceOfTheStarship, DarkNoise, ElectroHat, Silhouette, TapeDust</span><br><span class="line"></span><br><span class="line">Reverb: kPlateD, kPlateB, kPlateA, kPlateC, Verbity2, Galactic2, Galactic, Verbity, Chamber2, Chamber, Infinity2, NonlinearSpace, Infinity, MatrixVerb, PocketVerbs, Reverb</span><br><span class="line"></span><br><span class="line">Saturation: Huge, NCSeventeen, Tube2, Tube, Spiral2, PurestDrive, Focus, Mojo, Dyno, Spiral, UnBox, Desk4, Righteous4</span><br><span class="line"></span><br><span class="line">Stereo: Srsly, Srsly2, Wider, StereoFX, ToVinyl4, AutoPan, LRFlipTimer, Sidepass, SideDull</span><br><span class="line"></span><br><span class="line">Subtlety: Hype, Shape, PurestWarm2, PurestWarm, Coils2, Interstage, PhaseNudge, Remap, SingleEndedTriode, Coils, Desk, TransDesk, TubeDesk</span><br><span class="line"></span><br><span class="line">Tape: ToTape6, FromTape, Tape, IronOxideClassic2, IronOxide5, ToTape5, IronOxideClassic</span><br><span class="line"></span><br><span class="line">Tone Color: BussColors4, Channel9, Apicolypse, Neverland, Elation, Calibre, Cider, Crystal, Precious, Luxor, Channel8, Channel7, Channel6, Channel5, Channel4</span><br><span class="line"></span><br><span class="line">Utility: Monitoring3, Monitoring2, Monitoring, BitShiftPan, BitShiftGain, PurestGain, PurestFade, EveryTrim, HermeTrim, SlewOnly, SubsOnly, PeaksOnly, Golem, DCVoltage, EdIsDim, MidSide, uLawEncode, uLawDecode, RightoMono, LeftoMono, Balanced, Flipity, MoNoam, VoiceTrick</span><br><span class="line"></span><br><span class="line">XYZ Filters: ZBandpass2, ZHighpass2, ZLowpass2, ZNotch2, ZRegion2, ZBandpass, ZHighpass, ZLowpass, ZNotch, ZRegion, YBandpass, YHighpass, YLowpass, YNotch, XBandpass. XHighpass, XLowpass, XNotch, XRegion</span><br></pre></td></tr></table></figure>
-
-<p> &#x6211;&#x8BD5;&#x7528;&#x4E86;&#x4E00;&#x4E0B;, &#x8FD8;&#x884C;, &#x63D2;&#x4EF6;&#x754C;&#x9762;&#x957F;&#x8FD9;&#x6837;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707153946148.png" alt="image-20230707153946148"></p>
-<h2 id="StudioRack"><a href="#StudioRack" class="headerlink" title="StudioRack"></a>StudioRack</h2><p>&#x4E00;&#x4E2A;&#x97F3;&#x9891;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5E73;&#x53F0;, &#x91CC;&#x9762;&#x6C47;&#x603B;&#x4E86;&#x5404;&#x79CD;&#x514D;&#x8D39;&#x5F00;&#x6E90;&#x7684;&#x97F3;&#x9891;&#x63D2;&#x4EF6;, &#x5305;&#x62EC;&#x4E50;&#x5668;&#x63D2;&#x4EF6;&#x548C;&#x6548;&#x679C;&#x5668;&#x63D2;&#x4EF6;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707155410658.png" alt="image-20230707155410658"></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707155424754.png" alt="image-20230707155424754"></p>
-<p>&#x63D2;&#x4EF6;&#x652F;&#x6301;<code>Win</code> ,<code>Mac</code>&#x548C;<code>Linux</code>&#x4E09;&#x5927;&#x4E3B;&#x6D41;&#x5E73;&#x53F0;, &#x4E3A;<code>VST</code>&#x683C;&#x5F0F;, &#x76F4;&#x63A5;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5230;&#x7535;&#x8111;&#x63D2;&#x4EF6;&#x76EE;&#x5F55;&#x5373;&#x53EF;&#x4F7F;&#x7528;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707155726106.png" alt="image-20230707155726106"></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707155801860.png" alt="image-20230707155801860"></p>
-<p>&#x5B98;&#x7F51;: <a href="/external_links/8da620eb664998392512fd1694c18d56.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-<h2 id="OwlPlug"><a href="#OwlPlug" class="headerlink" title="OwlPlug"></a>OwlPlug</h2><p>&#x548C;<code>StudioRack</code>&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x97F3;&#x9891;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5E73;&#x53F0;, &#x4E0D;&#x8FC7;&#x5B83;&#x6BD4;<code>StudioRack</code>&#x66F4;&#x5F3A;&#x7684;&#x662F;&#x4E0D;&#x4EC5;&#x63D0;&#x4F9B;&#x8BB8;&#x591A;&#x514D;&#x8D39;&#x5F00;&#x6E90;&#x7684;&#x97F3;&#x9891;&#x63D2;&#x4EF6;&#x4E0B;&#x8F7D;, &#x8FD8;&#x80FD;&#x5BF9;&#x672C;&#x5730;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x63D2;&#x4EF6;&#x8FDB;&#x884C;&#x7BA1;&#x7406;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707182055543.png" alt="image-20230707182055543"></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707182154624.png" alt="image-20230707182154624"></p>
-<p>&#x5B98;&#x7F51;: <a href="/external_links/f099a0bd6cdf29a91765ed067ad03dac.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-<p>Github: <a href="/external_links/7d1cc9e48c511287f12d70a1d2474ea6.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-<p>&#x53E6;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#x4ED3;&#x5E93;, &#x5305;&#x62EC;<code>StudioRack</code>&#x7684;&#x63D2;&#x4EF6;, &#x975E;&#x5E38;&#x5F3A;&#x5927;:</p>
-<p><img src="raw.gitmirror.com/songjianzaina/lunanzb_img/master/img/image-20230710110356779.png" alt="image-20230710110356779"></p>
-<p>&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x4ED3;&#x5E93;&#x6E90;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;:</p>
-<h4 id="OwlPlug-Registry&#x2B50;"><a href="#OwlPlug-Registry&#x2B50;" class="headerlink" title="OwlPlug Registry&#x2B50;"></a>OwlPlug Registry&#x2B50;</h4><p>OwlPlug official plugin registry for Free or Open Source plugins</p>
-<ul>
-<li>kind: <code>registry</code></li>
-<li>feed: OwlPlug</li>
-<li>host: Various servers</li>
-<li>url : <code>https://registry.owlplug.com/registry.min.json</code></li>
-</ul>
-<h4 id="StudioRack-Registry-&#x2B50;"><a href="#StudioRack-Registry-&#x2B50;" class="headerlink" title="StudioRack Registry &#x2B50;"></a>StudioRack Registry &#x2B50;</h4><p>Studiorack registry plugins for OwlPlug.</p>
-<ul>
-<li>kind : <code>registry</code></li>
-<li>feed: OwlPlug &amp; Studiorack</li>
-<li>host: Github</li>
-<li>url : <code>https://owlplug.github.io/studiorack-registry-adapter/registry.min.json</code></li>
-</ul>
-<h4 id="Krakli-plugin-Store"><a href="#Krakli-plugin-Store" class="headerlink" title="Krakli plugin Store"></a>Krakli plugin Store</h4><p>Krakli plugin collection hosted (By <a href="/external_links/d6b0ee422a3a9a187173c1e5e637a890.html" target="blank" rel="noopener">Shane Dunne</a>)</p>
-<ul>
-<li>kind: <code>store</code></li>
-<li>feed: <a href="/external_links/d6b0ee422a3a9a187173c1e5e637a890.html" target="blank" rel="noopener">Shane Dunne</a></li>
-<li>host: <a href="/external_links/d6b0ee422a3a9a187173c1e5e637a890.html" target="blank" rel="noopener">Shane Dunne</a></li>
-<li>url : <code>https://getdunne.net/Krakli/owl.php</code></li>
-</ul>
-<h4 id="GyL-plugin-Store"><a href="#GyL-plugin-Store" class="headerlink" title="GyL plugin Store"></a>GyL plugin Store</h4><p>Krakli plugin collection hosted (By <a href="/external_links/d6b0ee422a3a9a187173c1e5e637a890.html" target="blank" rel="noopener">Shane Dunne</a>)</p>
-<ul>
-<li>kind: <code>store</code></li>
-<li>feed: <a href="/external_links/d6b0ee422a3a9a187173c1e5e637a890.html" target="blank" rel="noopener">Shane Dunne</a></li>
-<li>host: <a href="/external_links/d6b0ee422a3a9a187173c1e5e637a890.html" target="blank" rel="noopener">Shane Dunne</a></li>
-<li>url : <code>https://getdunne.net/GyL/owl.php</code></li>
-</ul>
-<p>&#x66F4;&#x591A;&#x4ED3;&#x5E93;&#x6E90;&#x53EF;&#x524D;&#x5F80;: <a href="/external_links/6d1a1e5fa997c9bdc4836ea9ec07de24.html" target="blank" rel="noopener">OwlPlug-Wiki</a></p>
-<h2 id="&#x597D;&#x7528;&#x7684;&#x514D;&#x8D39;&#x793A;&#x6CE2;&#x5668;&#x63D2;&#x4EF6;"><a href="#&#x597D;&#x7528;&#x7684;&#x514D;&#x8D39;&#x793A;&#x6CE2;&#x5668;&#x63D2;&#x4EF6;" class="headerlink" title="&#x597D;&#x7528;&#x7684;&#x514D;&#x8D39;&#x793A;&#x6CE2;&#x5668;&#x63D2;&#x4EF6;"></a>&#x597D;&#x7528;&#x7684;&#x514D;&#x8D39;&#x793A;&#x6CE2;&#x5668;&#x63D2;&#x4EF6;</h2><p>&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x67E5;&#x770B;&#x6548;&#x679C;&#x5668;&#x5BF9;&#x58F0;&#x97F3;&#x6CE2;&#x5F62;&#x7684;&#x6539;&#x53D8;,&#x6BD4;&#x5982;&#x76D1;&#x89C6;&#x5E95;&#x9F13;&#x7684;&#x538B;&#x7F29;&#x5668;&#x662F;&#x5982;&#x4F55;&#x5851;&#x9020;&#x97F3;&#x8272;&#x7684;&#x97F3;&#x5934;&#x548C;&#x7EC7;&#x4F53;&#x7684;</p>
-<ol>
-<li><p><strong>occularScope</strong></p>
-<p>&#x652F;&#x6301;&#x4FA7;&#x94FE;&#x529F;&#x80FD;, &#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x76AE;&#x80A4;, &#x63D2;&#x4EF6;&#x517C;&#x5BB9;<code>win Mac Linux</code>&#x4E09;&#x5927;&#x5E73;&#x53F0;, &#x63D2;&#x4EF6;&#x683C;&#x5F0F;&#x4E3A;<code>VST</code>&#x548C;<code>VST3</code></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710162808546.png" alt="image-20230710162808546"></p>
-<p>&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x9700;&#x8981;&#x6CE8;&#x518C;&#x8D26;&#x6237;, &#x6709;&#x70B9;&#x9EBB;&#x70E6;, &#x6211;&#x76F4;&#x63A5;&#x5C06;&#x63D2;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;&#x4E86;&#x7F51;&#x76D8;&#x4E0A;, &#x6709;&#x9700;&#x8981;&#x7684;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4E0B;&#x8F7D;:</p>
-<p>&#x7F51;&#x76D8;&#x4E0B;&#x8F7D;: <a href="/external_links/0488cc69702357cee4ca987ea1e90e5b.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a> (&#x8BBF;&#x95EE;&#x5BC6;&#x7801;: 312306)</p>
-<p>&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;: <a href="/external_links/3c827729824f9859ae08e22f55ea53f8.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-</li>
-<li><p><strong>Psyscope</strong></p>
-<p>&#x652F;&#x6301;&#x591A;&#x901A;&#x9053;,<code>UI</code>&#x7CBE;&#x7F8E;, &#x53EF;&#x60DC;&#x53EA;&#x6709;<code>Windows</code>&#x5E73;&#x53F0;&#x7684;<code>VST</code>&#x683C;&#x5F0F;&#x63D2;&#x4EF6;</p>
-<p>&#x8BE5;&#x63D2;&#x4EF6;&#x65E0;&#x9700;&#x5B89;&#x88C5;&#xFF0C;&#x53EA;&#x9700;&#x5C06;<code>.dll</code>&#x62D6;&#x653E;&#x5230;&#x63D2;&#x4EF6;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5373;&#x53EF;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710162458822.png" alt="image-20230710162458822"></p>
-<p>&#x4E0B;&#x8F7D;&#x5730;&#x5740;: <a href="/external_links/0488cc69702357cee4ca987ea1e90e5b.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a> (&#x8BBF;&#x95EE;&#x5BC6;&#x7801;: 312306)</p>
-</li>
-</ol>
-<h2 id="&#x66F4;&#x591A;&#x514D;&#x8D39;&#x63D2;&#x4EF6;"><a href="#&#x66F4;&#x591A;&#x514D;&#x8D39;&#x63D2;&#x4EF6;" class="headerlink" title="&#x66F4;&#x591A;&#x514D;&#x8D39;&#x63D2;&#x4EF6;"></a>&#x66F4;&#x591A;&#x514D;&#x8D39;&#x63D2;&#x4EF6;</h2><p>&#x56FD;&#x5916;&#x6709;&#x5F88;&#x591A;&#x7684;&#x514D;&#x8D39;&#x63D2;&#x4EF6;&#x5E73;&#x53F0;, &#x5217;&#x4E3E;&#x5982;&#x4E0B;:</p>
-<ol>
-<li><p><strong>kvraudio</strong></p>
-<p>&#x4E00;&#x4E2A;&#x5927;&#x578B;&#x63D2;&#x4EF6;&#x5E02;&#x573A; &#x91CC;&#x9762;&#x53EF;&#x4EE5;&#x6DD8;&#x5230;&#x4E0D;&#x5C11;&#x514D;&#x8D39;&#x7684;&#x63D2;&#x4EF6;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710161143668.png" alt="image-20230710161143668"></p>
-<p>&#x5B98;&#x7F51;: <a href="/external_links/b0f76314ab1583e6cf37d6e54f0b915e.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-</li>
-<li><p><strong>Bpb</strong></p>
-<p>&#x91CC;&#x9762;&#x6709;&#x5927;&#x91CF;&#x7684;&#x514D;&#x8D39;&#x8D44;&#x6E90;, &#x5305;&#x62EC;&#x63D2;&#x4EF6;, &#x5BBF;&#x4E3B;, &#x91C7;&#x6837;&#x548C;&#x97F3;&#x4E50;&#x5236;&#x4F5C;&#x6559;&#x7A0B;, <code>MIDIFAN</code>&#x5F88;&#x591A;&#x6587;&#x7AE0;&#x90FD;&#x662F;&#x4ECE;&#x8FD9;&#x91CC;&#x7FFB;&#x8BD1;&#x7684;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710164904892.png" alt="image-20230710164904892"></p>
-<p>&#x5B98;&#x7F51;: <a href="/external_links/fc0c87daebe2206201efb928ebd1ac93.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x8FDB;&#x5165;</a></p>
-</li>
-</ol>
-<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../135.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../135.html" itemprop="url">REAPER宿主常用技巧汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-06T15:15:53+08:00">
-                2023-07-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x8F68;&#x9053;&#x9501;&#x5B9A;"><a href="#&#x8F68;&#x9053;&#x9501;&#x5B9A;" class="headerlink" title="&#x8F68;&#x9053;&#x9501;&#x5B9A;"></a>&#x8F68;&#x9053;&#x9501;&#x5B9A;</h2><p>&#x9009;&#x62E9;&#x9700;&#x8981;&#x9501;&#x5B9A;&#x7684;&#x8F68;&#x9053;&#x6216;&#x8005;<code>item</code>, &#x53F3;&#x952E;&#x9009;&#x62E9;<code>item setting--&gt;Lock item</code>, &#x5373;&#x53EF;&#x9501;&#x5B9A;, &#x89E3;&#x9664;&#x9501;&#x5B9A;&#x540C;&#x7406;</p>
-<h2 id="Item&#x7F16;&#x7EC4;"><a href="#Item&#x7F16;&#x7EC4;" class="headerlink" title="Item&#x7F16;&#x7EC4;"></a>Item&#x7F16;&#x7EC4;</h2><p>&#x5F53;&#x6211;&#x4EEC;&#x62D6;&#x52A8;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x97F3;&#x9891;&#x5757;&#x65F6;, &#x7EC4;&#x5185;&#x5176;&#x4ED6;&#x97F3;&#x9891;&#x5757;&#x4E5F;&#x4F1A;&#x8DDF;&#x968F;&#x79FB;&#x52A8;, &#x7279;&#x522B;&#x9002;&#x7528;&#x8282;&#x594F;&#x5BF9;&#x8F68;&#x5B8C;&#x540E;&#x4F7F;&#x7528;</p>
-<p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;: &#x9009;&#x62E9;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x7F16;&#x66F2;&#x7684;item, &#x53F3;&#x952E;&#x9009;&#x62E9;<code>Group--&gt;Group items</code></p>
-<h2 id="&#x64AD;&#x653E;&#x8303;&#x56F4;&#x5305;&#x88F9;&#x6307;&#x5B9A;&#x97F3;&#x9891;&#x5757;"><a href="#&#x64AD;&#x653E;&#x8303;&#x56F4;&#x5305;&#x88F9;&#x6307;&#x5B9A;&#x97F3;&#x9891;&#x5757;" class="headerlink" title="&#x64AD;&#x653E;&#x8303;&#x56F4;&#x5305;&#x88F9;&#x6307;&#x5B9A;&#x97F3;&#x9891;&#x5757;"></a>&#x64AD;&#x653E;&#x8303;&#x56F4;&#x5305;&#x88F9;&#x6307;&#x5B9A;&#x97F3;&#x9891;&#x5757;</h2><p>&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>loop points</code>, &#x627E;&#x5230;<code>Set loop points to items</code>&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#x5C31;&#x662F;&#x4E86;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230706165230859.png" alt="image-20230706165230859"></p>
-<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;, &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;<code>Add</code>&#x6309;&#x94AE;&#x4E3A;&#x5176;&#x6DFB;&#x52A0;&#x5FEB;&#x6377;&#x952E;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230706165539154.png" alt="image-20230706165539154"></p>
-<h2 id="&#x5584;&#x7528;&#x9F20;&#x6807;&#x53F3;&#x952E;"><a href="#&#x5584;&#x7528;&#x9F20;&#x6807;&#x53F3;&#x952E;" class="headerlink" title="&#x5584;&#x7528;&#x9F20;&#x6807;&#x53F3;&#x952E;"></a>&#x5584;&#x7528;&#x9F20;&#x6807;&#x53F3;&#x952E;</h2><p>&#x5BF9;&#x51C6;&#x67D0;&#x4E2A;&#x6309;&#x94AE; &#x4F7F;&#x7528;&#x9F20;&#x6807;&#x53F3;&#x952E; &#x4F1A;&#x6709;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x60CA;&#x559C;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230706170148501.png" alt="image-20230706170148501"></p>
-<p>&#x9690;&#x85CF;&#x529F;&#x80FD;&#x6BEB;&#x65E0;&#x4FDD;&#x7559;&#x5730;&#x66B4;&#x9732;&#x51FA;&#x6765;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230706170244881.png" alt="image-20230706170244881"></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230706170309470.png" alt="image-20230706170309470"></p>
-<h2 id="&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5E76;&#x526A;&#x9664;&#x7A7A;&#x767D;&#x533A;&#x57DF;"><a href="#&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5E76;&#x526A;&#x9664;&#x7A7A;&#x767D;&#x533A;&#x57DF;" class="headerlink" title="&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5E76;&#x526A;&#x9664;&#x7A7A;&#x767D;&#x533A;&#x57DF;"></a>&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x5E76;&#x526A;&#x9664;&#x7A7A;&#x767D;&#x533A;&#x57DF;</h2><p>&#x9996;&#x5148;&#x9009;&#x4E2D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x7684;&#x8F68;&#x9053;&#x6216;&#x8005;<code>item</code></p>
-<p>&#x7136;&#x540E;&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>auto trim</code>, &#x627E;&#x5230;<code>Auto trim/split items</code>&#x9009;&#x9879;&#x5E76;&#x8FD0;&#x884C;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707103721841.png" alt="image-20230707103721841"></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707104616834.png" alt="image-20230707104616834"></p>
-<h2 id><a href="#" class="headerlink" title=" "></a><iframe src="https://app.gumroad.com/s/05978f637fc5a248aa2edcd064719630/G_Ue7lOfpun4_F7KKvCMVA==&amp;autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" autoplay="false" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe></h2><p>&#x5728;&#x8F68;&#x9053;&#x4E0A;&#x653E;&#x4E00;&#x4E2A;&#x97F3;&#x6E90;&#xFF0C;&#x70B9;&#x5F00;&#x8F68;&#x9053;&#x7684;&#x5F55;&#x5236;&#x72B6;&#x6001;&#xFF0C;&#x5F55;&#x5236;&#x952E;&#x53F3;&#x952E;&#x2013;&#x9009;&#x62E9;&#x8F93;&#x5165;:MIDI&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x53D1;&#x51FA;&#x58F0;&#x97F3;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707110122466.png" alt="image-20230707110122466"></p>
-<p>&#x7279;&#x522B;&#x9002;&#x5408;&#x7528;&#x6765;&#x7ED9;&#x6B4C;&#x66F2;&#x914D;&#x548C;&#x5F26;</p>
-<p>&#x8BE5;&#x529F;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9;&#x811A;&#x672C;, &#x9700;&#x8981;&#x5728;<code>ReaPack</code>&#x4E2D;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;<code>ChordGun</code>&#x8FDB;&#x884C;&#x5B89;&#x88C5;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707110256528.png" alt="image-20230707110256528"></p>
-<p>&#x5B89;&#x88C5;&#x5B8C;&#x540E;&#x5728;<code>ActionList</code>&#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x76F8;&#x5173;&#x811A;&#x672C;, &#x8FD0;&#x884C;<code>pandabot_ChordGun.lua</code>&#x5373;&#x53EF;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707110355793.png" alt="image-20230707110355793"></p>
-<h2 id="&#x548C;&#x5F26;&#x68C0;&#x6D4B;&#x5DE5;&#x5177;"><a href="#&#x548C;&#x5F26;&#x68C0;&#x6D4B;&#x5DE5;&#x5177;" class="headerlink" title="&#x548C;&#x5F26;&#x68C0;&#x6D4B;&#x5DE5;&#x5177;"></a>&#x548C;&#x5F26;&#x68C0;&#x6D4B;&#x5DE5;&#x5177;</h2><p>&#x80FD;&#x5728;&#x94A2;&#x7434;&#x5377;&#x5E18;&#x7A97;&#x53E3;&#x4E2D;&#x52A8;&#x6001;&#x663E;&#x793A;&#x5F53;&#x524D;&#x7684;<code>midi</code>&#x97F3;&#x7B26;&#x5BF9;&#x5E94;&#x7684;&#x548C;&#x5F26;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/310a1c7fa99c0a119deda934af81036fca4a60f0_2_690x373.png" alt="Quicker_20220315_022105"></p>
-<p>&#x8BE5;&#x529F;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9;&#x811A;&#x672C;, &#x9700;&#x8981;&#x5728;<code>ReaPack</code>&#x4E2D;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;<code>Chordbox</code>&#x8FDB;&#x884C;&#x5B89;&#x88C5;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707111750025.png" alt="image-20230707111750025"></p>
-<p>&#x5B89;&#x88C5;&#x5B8C;&#x540E;&#x5728;<code>ActionList</code>&#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x76F8;&#x5173;&#x811A;&#x672C;, &#x8FD0;&#x884C;<code>Lil Chordbox.lua</code>&#x5373;&#x53EF;&#x5F00;&#x542F;&#x811A;&#x672C;&#x529F;&#x80FD;:</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230707111805852.png" alt="image-20230707111805852"></p>
-<h2 id="&#x7528;&#x97F3;&#x91CF;&#x63A8;&#x5B50;&#x63A7;&#x5236;&#x63D2;&#x4EF6;&#x53C2;&#x6570;"><a href="#&#x7528;&#x97F3;&#x91CF;&#x63A8;&#x5B50;&#x63A7;&#x5236;&#x63D2;&#x4EF6;&#x53C2;&#x6570;" class="headerlink" title="&#x7528;&#x97F3;&#x91CF;&#x63A8;&#x5B50;&#x63A7;&#x5236;&#x63D2;&#x4EF6;&#x53C2;&#x6570;"></a>&#x7528;&#x97F3;&#x91CF;&#x63A8;&#x5B50;&#x63A7;&#x5236;&#x63D2;&#x4EF6;&#x53C2;&#x6570;</h2><p>&#x539F;&#x7406;&#x662F;&#x4F7F;&#x7528;&#x4FE1;&#x53F7;&#x4FA7;&#x94FE;&#x7684;&#x65B9;&#x5F0F;, &#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;:</p>
-<ol>
-<li><p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x8F68;, &#x5E76;&#x4E14;&#x5728;&#x8BE5;&#x8F68;&#x9053;&#x4E0A;&#x6DFB;&#x52A0;<code>Reaper</code>&#x81EA;&#x5E26;&#x7684;&#x566A;&#x97F3;&#x751F;&#x6210;&#x5668;<code>tone generator</code>, &#x4E3B;&#x8981;&#x4E3A;&#x4E86;&#x5145;&#x5F53;&#x53EF;&#x53D1;&#x9001;&#x7684;&#x97F3;&#x9891;&#x4FE1;&#x53F7;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710150929613.png" alt="image-20230710150929613"></p>
-<p>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x58F0;&#x97F3;&#x5435;, &#x53EF;&#x4EE5;&#x5173;&#x95ED;<code>Master</code>&#x8F93;&#x51FA;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710151211218.png" alt="image-20230710151211218"></p>
-</li>
-<li><p>&#x5C06;&#x63A7;&#x5236;&#x8F68;&#x53D1;&#x9001;&#x81F3;&#x9700;&#x8981;&#x88AB;&#x63A7;&#x5236;&#x7684;&#x8F68;&#x9053;(&#x6216;&#x8005;&#x9F20;&#x6807;&#x62D6;&#x62FD;&#x63A7;&#x5236;&#x8F68;&#x7684;&#x8DEF;&#x7531;&#x8BBE;&#x7F6E;&#x56FE;&#x6807;&#x81F3;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x7684;&#x8F68;&#x9053;&#x6216;&#x8005;&#x63D2;&#x4EF6;&#x754C;&#x9762;&#x4E0A;), &#x5E76;&#x5C06;&#x97F3;&#x9891;&#x4FE1;&#x53F7;&#x8F93;&#x51FA;&#x81F3;<code>3/4</code>&#x901A;&#x9053;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710150005313.png" alt="image-20230710150005313"></p>
-</li>
-<li><p>&#x9009;&#x62E9;&#x63D2;&#x4EF6;&#x4E2D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x7684;&#x53C2;&#x6570;, &#x5E76;&#x5F00;&#x542F;&#x4FA7;&#x94FE;&#x6A21;&#x5F0F;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710150211642.png" alt="image-20230710150211642"></p>
-</li>
-<li><p>&#x5C06;&#x4FA7;&#x94FE;&#x4FE1;&#x53F7;&#x6E90;&#x901A;&#x9053;&#x8BBE;&#x7F6E;&#x4E3A;<code>3/4</code></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710150326997.png" alt="image-20230710150326997"></p>
-</li>
-<li><p>&#x6B64;&#x65F6;&#x6ED1;&#x52A8;&#x97F3;&#x91CF;&#x63A8;&#x5B50;, &#x4F1A;&#x53D1;&#x73B0;&#x6548;&#x679C;&#x53C2;&#x6570;&#x8DDF;&#x968F;&#x53D8;&#x5316;, &#x914D;&#x7F6E;&#x5B8C;&#x6BD5;</p>
-</li>
-<li><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x63A8;&#x5B50;&#x8BB0;&#x5F55;&#x53C2;&#x6570;&#x7684;&#x81EA;&#x52A8;&#x5316;</p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230710151036981.png" alt="image-20230710151036981"></p>
-</li>
-</ol>
-<p>&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x5DF2;&#x4F20;B&#x7AD9;, &#x5982;&#x4E0B;:</p>
-<iframe src="//player.bilibili.com/player.html?aid=615681773&amp;bvid=BV1Jh4y1E7bv&amp;cid=1191451672&amp;page=1&amp;autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h2 id="MIDI&#x4EBA;&#x6027;&#x5316;"><a href="#MIDI&#x4EBA;&#x6027;&#x5316;" class="headerlink" title="MIDI&#x4EBA;&#x6027;&#x5316;"></a>MIDI&#x4EBA;&#x6027;&#x5316;</h2><p>&#x5728;&#x94A2;&#x7434;&#x5377;&#x5E18;&#x7A97;&#x4E2D;&#x9009;&#x4E2D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4EBA;&#x6027;&#x5316;&#x7684;<code>MIDI</code>, &#x7136;&#x540E;&#x6309;&#x952E;&#x76D8;<code>H</code>, &#x4F1A;&#x5F39;&#x51FA;<code>Humanize Notes</code>&#x7A97;&#x53E3;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230712160321056.png" alt="image-20230712160321056"></p>
-<p>&#x53EF;&#x4EE5;&#x5BF9;&#x97F3;&#x7B26;&#x7684;&#x5C3E;&#x5DF4;, &#x957F;&#x5EA6;&#x548C;&#x529B;&#x5EA6;&#x8FDB;&#x884C;&#x968F;&#x673A;&#x5316;</p>
-<h2 id="&#x5FEB;&#x901F;&#x66F4;&#x6539;&#x97F3;&#x9891;&#x97F3;&#x8C03;"><a href="#&#x5FEB;&#x901F;&#x66F4;&#x6539;&#x97F3;&#x9891;&#x97F3;&#x8C03;" class="headerlink" title="&#x5FEB;&#x901F;&#x66F4;&#x6539;&#x97F3;&#x9891;&#x97F3;&#x8C03;"></a>&#x5FEB;&#x901F;&#x66F4;&#x6539;&#x97F3;&#x9891;&#x97F3;&#x8C03;</h2><p>&#x6309;&#x4F4F;<code>Shift + Alt/Opt</code>&#x7684;&#x540C;&#x65F6;&#x5782;&#x76F4;&#x62D6;&#x52A8;&#x53EF;&#x5411;&#x4E0A;&#x6216;&#x5411;&#x4E0B;&#x8C03;&#x6574;&#x97F3;&#x9891;&#x97F3;&#x8C03;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/636aa64242f154cabaeca7ab_67570b66-e4f5-4ad6-9b87-e228b20dfde4.gif" alt="img"></p>
-<p>&#x8FD9;&#x975E;&#x5E38;&#x9002;&#x5408;&#x60A8;&#x60F3;&#x8981;&#x4E3A;&#x8E29;&#x9572;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x97F3;&#x9AD8;&#x53D8;&#x5316;&#x6216;&#x4FEE;&#x590D;&#x8DD1;&#x8C03;&#x7684;&#x60C5;&#x51B5;</p>
-<h2 id="A-B-&#x97F3;&#x8F68;&#x548C;&#x6548;&#x679C;&#x7684;&#x5FEB;&#x901F;&#x6280;&#x5DE7;"><a href="#A-B-&#x97F3;&#x8F68;&#x548C;&#x6548;&#x679C;&#x7684;&#x5FEB;&#x901F;&#x6280;&#x5DE7;" class="headerlink" title="A/B &#x97F3;&#x8F68;&#x548C;&#x6548;&#x679C;&#x7684;&#x5FEB;&#x901F;&#x6280;&#x5DE7;"></a>A/B &#x97F3;&#x8F68;&#x548C;&#x6548;&#x679C;&#x7684;&#x5FEB;&#x901F;&#x6280;&#x5DE7;</h2><p>&#x9996;&#x5148;&#x5C06;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x97F3;&#x8F68;&#x9759;&#x97F3;&#xFF0C;&#x7136;&#x540E;&#x9009;&#x62E9;&#x4E24;&#x4E2A;&#x97F3;&#x8F68;&#x5E76;&#x6309;<code>Alt/Opt + M</code></p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63702580a705e92ffd7d6a7f_8d102a30-e209-4ae8-8b17-e29990285191.gif" alt="img"></p>
-<h3 id="&#x8FD9;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x8F68;&#x9053;&#xFF01;"><a href="#&#x8FD9;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x8F68;&#x9053;&#xFF01;" class="headerlink" title="&#x8FD9;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x8F68;&#x9053;&#xFF01;"></a>&#x8FD9;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x4E2A;&#x8F68;&#x9053;&#xFF01;</h3><p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63702580a705e95c8c7d6a7e_7e8032dc-0264-4d92-881f-531356695658.gif" alt="img"></p>
-<p>&#x5F53;&#x6211;&#x6BD4;&#x8F83;&#x5409;&#x4ED6;&#x97F3;&#x8272;&#x65F6;&#x6211;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E24;&#x4E2A;&#x8F68;&#x9053;&#x9759;&#x97F3;&#xFF0C;&#x4E24;&#x4E2A;&#x8F68;&#x9053;&#x53D6;&#x6D88;&#x9759;&#x97F3;&#x3002;</p>
-<h3 id="&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x8FDB;&#x884C;-A-B-&#x6548;&#x679C;&#xFF01;"><a href="#&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x8FDB;&#x884C;-A-B-&#x6548;&#x679C;&#xFF01;" class="headerlink" title="&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x8FDB;&#x884C; A/B &#x6548;&#x679C;&#xFF01;"></a>&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x8FDB;&#x884C; A/B &#x6548;&#x679C;&#xFF01;</h3><p>&#x540C;&#x6837;&#x7684; &#x5148;&#x52FE;&#x9009;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6548;&#x679C;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x9009;&#x62E9;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A; FX &#x5E76;&#x6309;<code>Ctrl/Cmd + B</code> &#x3002;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63702580a705e9b7837d6a7d_386116bc-4d3b-4185-8f96-a36816e0c0b9.gif" alt="img"></p>
-<h2 id="&#x5728;&#x8C03;&#x97F3;&#x53F0;&#x4E2D;&#x663E;&#x793A;&#x548C;&#x9690;&#x85CF;&#x5B50;&#x8F68;&#x9053;"><a href="#&#x5728;&#x8C03;&#x97F3;&#x53F0;&#x4E2D;&#x663E;&#x793A;&#x548C;&#x9690;&#x85CF;&#x5B50;&#x8F68;&#x9053;" class="headerlink" title="&#x5728;&#x8C03;&#x97F3;&#x53F0;&#x4E2D;&#x663E;&#x793A;&#x548C;&#x9690;&#x85CF;&#x5B50;&#x8F68;&#x9053;"></a>&#x5728;&#x8C03;&#x97F3;&#x53F0;&#x4E2D;&#x663E;&#x793A;&#x548C;&#x9690;&#x85CF;&#x5B50;&#x8F68;&#x9053;</h2><p>&#x8FD9;&#x662F;&#x5728;&#x6DF7;&#x97F3;&#x5668;&#x6587;&#x4EF6;&#x5939;&#x8F68;&#x9053;&#x4E2D;&#x663E;&#x793A;&#x548C;&#x9690;&#x85CF;&#x5B50;&#x8F68;&#x9053;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/636aa5423c0bc9f039ae2328_9c597991-7302-40e1-b0bd-3fbbf24e8e8e.gif" alt="img"></p>
-<p>&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#xFF1A;</p>
-<p>&#x53F3;&#x952E;&#x5355;&#x51FB;&#x6DF7;&#x97F3;&#x5668;&#x7A7A;&#x767D;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x9009;&#x62E9;<code>Clickable icon for folder tracks to show/hide children</code></p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/6369abdddb2c66a875a468df_977f8bfd-c1d1-41f5-a429-2e9007e4a2e2.png" alt="img"></p>
-<p>&#x5982;&#x679C;&#x8F68;&#x9053;&#x592A;&#x591A; &#x6CA1;&#x6709;&#x7A7A;&#x767D;&#x533A;&#x57DF;, &#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x5728;<code>Master</code>&#x8F68;&#x9053;&#x53F3;&#x952E;&#x6216;&#x8005;&#x70B9;<code>info</code>&#x56FE;&#x6807;:</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230713175203920.png" alt="image-20230713175203920"></p>
-<p>&#x2705; &#x5B8C;&#x6210;&#xFF01;&#x73B0;&#x5728;&#x60A8;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x5728;&#x6DF7;&#x97F3;&#x5668;&#x4E2D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x5E95;&#x90E8;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x56FE;&#x6807;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5355;&#x51FB;&#x8BE5;&#x56FE;&#x6807;&#x6765;&#x663E;&#x793A;&#x548C;&#x9690;&#x85CF;&#x5B50;&#x8F68;&#x9053;</p>
-<h2 id="&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x6CE2;&#x5F62;"><a href="#&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x6CE2;&#x5F62;" class="headerlink" title="&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x6CE2;&#x5F62;"></a>&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x6CE2;&#x5F62;</h2><p>&#x4EC5;&#x4EC5;&#x662F;&#x89C6;&#x89C9;&#x653E;&#x5927;, &#x4E0D;&#x5F71;&#x54CD;&#x97F3;&#x91CF;, &#x65B9;&#x4FBF;&#x7CBE;&#x7EC6;&#x526A;&#x8F91;</p>
-<ul>
-<li><p>&#x6A2A;&#x5411;&#x653E;&#x5927;&#x7F29;&#x5C0F;: &#x952E;&#x76D8;<code>+/-</code>&#x53F7;</p>
-</li>
-<li><p>&#x7EB5;&#x5411;&#x653E;&#x5927;&#x7F29;&#x5C0F;: &#x952E;&#x76D8;``/~`</p>
-</li>
-</ul>
-<h2 id="&#x5E73;&#x79FB;&#x526A;&#x8F91;&#x7684;&#x8F68;&#x9053;"><a href="#&#x5E73;&#x79FB;&#x526A;&#x8F91;&#x7684;&#x8F68;&#x9053;" class="headerlink" title="&#x5E73;&#x79FB;&#x526A;&#x8F91;&#x7684;&#x8F68;&#x9053;"></a>&#x5E73;&#x79FB;&#x526A;&#x8F91;&#x7684;&#x8F68;&#x9053;</h2><p>&#x5F53;&#x6211;&#x4EEC;&#x5BF9;&#x97F3;&#x9891;&#x9F7F;&#x97F3;&#x548C;&#x547C;&#x5438;&#x58F0;&#x8FDB;&#x884C;&#x526A;&#x8F91;&#x5230;&#x5355;&#x72EC;&#x7684;&#x8F68;&#x9053;&#x4E2D;, &#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x5E73;&#x79FB;&#x529F;&#x80FD;, &#x4EE5;&#x4E0B;&#x662F;&#x5FEB;&#x6377;&#x952E;:</p>
-<ul>
-<li>&#x5C06;&#x9009;&#x4E2D;&#x7684;&#x97F3;&#x9891;&#x5757;&#x5E73;&#x79FB;&#x5230;&#x4E0B;&#x4E00;&#x8F68;&#x9053;: &#x6570;&#x5B57;&#x952E;&#x76D8;2</li>
-<li>&#x5C06;&#x9009;&#x4E2D;&#x7684;&#x97F3;&#x9891;&#x5757;&#x5E73;&#x79FB;&#x5230;&#x4E0A;&#x4E00;&#x8F68;&#x9053;: &#x6570;&#x5B57;&#x952E;&#x76D8;8</li>
-</ul>
-<h2 id="&#x53CC;&#x58F0;&#x9053;&#x8F6C;&#x6210;&#x5355;&#x58F0;&#x9053;"><a href="#&#x53CC;&#x58F0;&#x9053;&#x8F6C;&#x6210;&#x5355;&#x58F0;&#x9053;" class="headerlink" title="&#x53CC;&#x58F0;&#x9053;&#x8F6C;&#x6210;&#x5355;&#x58F0;&#x9053;"></a>&#x53CC;&#x58F0;&#x9053;&#x8F6C;&#x6210;&#x5355;&#x58F0;&#x9053;</h2><p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x62FF;&#x5230;&#x7684;&#x67D0;&#x4E9B;&#x5355;&#x58F0;&#x9053;&#x97F3;&#x9891;&#x6CE2;&#x5F62;&#x663E;&#x793A;&#x662F;&#x53CC;&#x58F0;&#x9053;, &#x4E5F;&#x5C31;&#x662F;&#x5DE6;&#x53F3;&#x58F0;&#x9053;&#x6CE2;&#x5F62;&#x4E00;&#x6A21;&#x4E00;&#x6837;, &#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x540E;&#x671F;&#x6DF7;&#x97F3;, &#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x5176;&#x8F6C;&#x6210;&#x5355;&#x8EAB;&#x9053;</p>
-<p>&#x5177;&#x4F53;&#x64CD;&#x4F5C;:</p>
-<p>&#x9009;&#x4E2D;&#x9700;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x97F3;&#x9891;&#x5757;, &#x53F3;&#x952E;<code>item settings--&gt;Take channel mode: Mono(downmix)</code></p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230719161544617.png" alt="image-20230719161544617"></p>
-<h2 id="&#x9501;&#x5B9A;&#x5305;&#x7EDC;&#x8F68;&#x9053;"><a href="#&#x9501;&#x5B9A;&#x5305;&#x7EDC;&#x8F68;&#x9053;" class="headerlink" title="&#x9501;&#x5B9A;&#x5305;&#x7EDC;&#x8F68;&#x9053;"></a>&#x9501;&#x5B9A;&#x5305;&#x7EDC;&#x8F68;&#x9053;</h2><p>&#x5F53;&#x6211;&#x4EEC;&#x7ED9;&#x97F3;&#x9891;&#x753B;&#x597D;&#x5305;&#x7EDC;&#x7EBF;&#x540E;, &#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x8BEF;&#x4FEE;&#x6539;&#x6216;&#x8005;&#x83AB;&#x540D;&#x5176;&#x5999;&#x88AB;&#x5220;&#x9664;(&#x6709;&#x65F6;&#x5728;&#x7ED9;&#x5176;&#x4ED6;&#x8F68;&#x9053;&#x505A;&#x6279;&#x91CF;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;, &#x4E0D;&#x77E5;&#x4E0D;&#x89C9;&#x5C31;&#x628A;&#x5305;&#x7EDC;&#x7ED9;&#x6E05;&#x9664;&#x4E86; &#x5934;&#x5927;), &#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;&#x5305;&#x7EDC;&#x8FDB;&#x884C;&#x9501;&#x5B9A;</p>
-<p>&#x65B9;&#x6CD5;&#x5F88;&#x7B80;&#x5355;, &#x53F3;&#x952E;&#x9009;&#x4E2D;&#x9501;&#x5B9A;&#x56FE;&#x6807;, &#x7136;&#x540E;&#x52FE;&#x9009;<code>track envelope</code>:</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721102855640.png" alt="image-20230721102855640"></p>
-<p>&#x6B64;&#x65F6; &#x6240;&#x6709;&#x5305;&#x7EDC;&#x8F68;&#x9053;&#x90FD;&#x88AB;&#x9501;&#x5B9A;, &#x5904;&#x4E8E;&#x4E0D;&#x53EF;&#x7F16;&#x8F91;&#x72B6;&#x6001;</p>
-<h2 id="&#x5305;&#x7EDC;&#x590D;&#x7528;"><a href="#&#x5305;&#x7EDC;&#x590D;&#x7528;" class="headerlink" title="&#x5305;&#x7EDC;&#x590D;&#x7528;"></a>&#x5305;&#x7EDC;&#x590D;&#x7528;</h2><p>&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7ED9;&#x97F3;&#x9891;&#x7684;&#x591A;&#x4E2A;&#x7247;&#x6BB5;&#x8BBE;&#x7F6E;&#x76F8;&#x540C;&#x7684;&#x5305;&#x7EDC;&#x66F2;&#x7EBF;, &#x6328;&#x4E2A;&#x624B;&#x52A8;&#x91CD;&#x590D;&#x753B;&#x4E00;&#x904D;&#x5B9E;&#x5728;&#x592A;&#x8FC7;&#x78E8;&#x4EBA;, &#x6709;&#x6CA1;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x80FD;&#x5B9E;&#x73B0;&#x5305;&#x7EDC;&#x590D;&#x7528;&#x5462;, &#x4E5F;&#x5C31;&#x662F;&#x7F16;&#x8F91;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7247;&#x6BB5;&#x7684;&#x5305;&#x7EDC;&#x66F2;&#x7EBF;, &#x5176;&#x4ED6;&#x590D;&#x7528;&#x7684;&#x5305;&#x7EDC;&#x4E5F;&#x8DDF;&#x968F;&#x4E00;&#x5757;&#x8DDF;&#x7740;&#x53D8;&#x52A8;</p>
-<p>&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;:</p>
-<ol>
-<li><p>&#x9009;&#x62E9;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x590D;&#x7528;&#x7684;&#x5305;&#x7EDC;<code>item</code>, &#x5E76;&#x53F3;&#x952E;&#x521B;&#x5EFA;&#x590D;&#x7528;&#x6C60;(<code>Create pooled duplicate</code>)</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721103415024.png" alt="image-20230721103415024"></p>
-</li>
-<li><p>&#x6B64;&#x65F6;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5305;&#x7EDC;&#x526F;&#x672C;, &#x4E24;&#x4E2A;&#x5305;&#x7EDC;&#x5757;&#x53EF;&#x540C;&#x6B65;&#x8054;&#x52A8;&#x4FEE;&#x6539;:</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/2023-07-21%2010-36-30.2023-07-21%2010_40_15.gif" alt="2023-07-21 10-36-30.2023-07-21 10_40_15"></p>
-</li>
-</ol>
-<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../134.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../134.html" itemprop="url">混音中如何控制声音的远近</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-06T10:15:53+08:00">
-                2023-07-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x65B9;&#x5F0F;"><a href="#&#x65B9;&#x5F0F;" class="headerlink" title="&#x65B9;&#x5F0F;"></a>&#x65B9;&#x5F0F;</h2><p>&#x5728;&#x6DF7;&#x97F3;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x63A7;&#x5236;&#x58F0;&#x97F3;&#x7684;&#x8FDC;&#x8FD1;&#x611F;&#xFF1A;</p>
-<ol>
-<li><strong>&#x97F3;&#x91CF;&#x5E73;&#x8861;</strong></li>
-<li><strong>&#x6DF7;&#x54CD;&#x6548;&#x679C;</strong></li>
-<li><strong>&#x5E73;&#x79FB;/&#x5B9A;&#x4F4D;</strong></li>
-<li><strong>EQ &#x8C03;&#x6574;</strong></li>
-<li><strong>&#x52A8;&#x6001;&#x5904;&#x7406;</strong></li>
-</ol>
-<h2 id="&#x97F3;&#x91CF;&#x5E73;&#x8861;"><a href="#&#x97F3;&#x91CF;&#x5E73;&#x8861;" class="headerlink" title="&#x97F3;&#x91CF;&#x5E73;&#x8861;"></a>&#x97F3;&#x91CF;&#x5E73;&#x8861;</h2><p>&#x8C03;&#x6574;&#x5404;&#x4E2A;&#x97F3;&#x8F68;&#x7684;&#x76F8;&#x5BF9;&#x97F3;&#x91CF;&#xFF0C;&#x4F7F;&#x524D;&#x666F;&#x97F3;&#xFF08;&#x5373;&#x4E3B;&#x8981;&#x97F3;&#x6E90;&#x6216;&#x7126;&#x70B9;&#x97F3;&#x9891;&#xFF09;&#x66F4;&#x54CD;&#x4EAE;&#xFF0C;&#x80CC;&#x666F;&#x97F3;&#x5219;&#x8F83;&#x4E3A;&#x67D4;&#x548C;&#x3002;&#x589E;&#x52A0;&#x524D;&#x666F;&#x97F3;&#x7684;&#x97F3;&#x91CF;&#x53EF;&#x4EE5;&#x4F7F;&#x5176;&#x66F4;&#x7A81;&#x51FA;, &#x66F4;&#x9760;&#x8FD1;, &#x53CD;&#x4E4B;&#x5219;&#x66F4;&#x8FDC;</p>
-<h2 id="&#x6DF7;&#x54CD;&#x6548;&#x679C;"><a href="#&#x6DF7;&#x54CD;&#x6548;&#x679C;" class="headerlink" title="&#x6DF7;&#x54CD;&#x6548;&#x679C;"></a>&#x6DF7;&#x54CD;&#x6548;&#x679C;</h2><p>&#x5728;&#x6DF7;&#x54CD;&#x6548;&#x679C;&#x5668;&#x4E2D;&#xFF0C;&#x4EE5;&#x4E0B;&#x53C2;&#x6570;&#x4F1A;&#x5BF9;&#x58F0;&#x97F3;&#x7684;&#x8FDC;&#x8FD1;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#xFF1A;</p>
-<ol>
-<li><strong>Decay Time&#xFF08;&#x8870;&#x51CF;&#x65F6;&#x95F4;&#xFF09;</strong>&#xFF1A;&#x8870;&#x51CF;&#x65F6;&#x95F4;&#x6307;&#x7684;&#x662F;&#x58F0;&#x97F3;&#x4ECE;&#x521D;&#x59CB;&#x53D1;&#x58F0;&#x5230;&#x5B8C;&#x5168;&#x6D88;&#x5931;&#x6240;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x8F83;&#x957F;&#x7684;&#x8870;&#x51CF;&#x65F6;&#x95F4;&#x4F1A;&#x4F7F;&#x58F0;&#x97F3;&#x542C;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x6301;&#x4E45;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x589E;&#x52A0;&#x4E86;&#x58F0;&#x97F3;&#x4F20;&#x64AD;&#x7684;&#x8DDD;&#x79BB;&#x611F;&#x3002;</li>
-<li><strong>Pre-Delay&#xFF08;&#x9884;&#x5EF6;&#x8FDF;&#xFF09;</strong>&#xFF1A;&#x9884;&#x5EF6;&#x8FDF;&#x662F;&#x6307;&#x4FE1;&#x53F7;&#x5F00;&#x59CB;&#x88AB;&#x6DF7;&#x54CD;&#x5904;&#x7406;&#x4E4B;&#x524D;&#x7684;&#x77ED;&#x6682;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x3002;&#x8F83;&#x957F;&#x7684;&#x9884;&#x5EF6;&#x8FDF;&#x53EF;&#x4EE5;&#x6A21;&#x62DF;&#x51FA;&#x8FDC;&#x79BB;&#x58F0;&#x6E90;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x8BA9;&#x58F0;&#x97F3;&#x542C;&#x8D77;&#x6765;&#x66F4;&#x8FDC;&#x3002;</li>
-<li><strong>Early Reflections&#xFF08;&#x65E9;&#x671F;&#x53CD;&#x5C04;&#xFF09;</strong>&#xFF1A;&#x65E9;&#x671F;&#x53CD;&#x5C04;&#x662F;&#x6307;&#x58F0;&#x6E90;&#x53D1;&#x51FA;&#x7684;&#x58F0;&#x97F3;&#x5728;&#x5230;&#x8FBE;&#x4E3B;&#x6DF7;&#x54CD;&#x4F53;&#x4E4B;&#x524D;&#x53D1;&#x751F;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x53CD;&#x5C04;&#x3002;&#x8C03;&#x6574;&#x65E9;&#x671F;&#x53CD;&#x5C04;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x58F0;&#x97F3;&#x7684;&#x7A7A;&#x95F4;&#x611F;&#x548C;&#x8FDC;&#x8FD1;&#x611F;&#x3002;</li>
-<li><strong>Diffusion&#xFF08;&#x6269;&#x6563;&#xFF09;</strong>&#xFF1A;&#x6269;&#x6563;&#x63A7;&#x5236;&#x7740;&#x6DF7;&#x54CD;&#x58F0;&#x97F3;&#x5728;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x5206;&#x6563;&#x7A0B;&#x5EA6;&#x3002;&#x8F83;&#x9AD8;&#x7684;&#x6269;&#x6563;&#x503C;&#x4F1A;&#x4F7F;&#x58F0;&#x97F3;&#x66F4;&#x5747;&#x5300;&#x5730;&#x6563;&#x5E03;&#x5728;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x4EA7;&#x751F;&#x66F4;&#x5F3A;&#x70C8;&#x7684;&#x8FDC;&#x79BB;&#x611F;&#x3002;</li>
-</ol>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/predelay_reverb_component.png" alt></p>
-<h2 id="&#x5E73;&#x79FB;-&#x5B9A;&#x4F4D;"><a href="#&#x5E73;&#x79FB;-&#x5B9A;&#x4F4D;" class="headerlink" title="&#x5E73;&#x79FB;/&#x5B9A;&#x4F4D;"></a>&#x5E73;&#x79FB;/&#x5B9A;&#x4F4D;</h2><p>&#x901A;&#x8FC7;&#x5C06;&#x97F3;&#x6E90;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6216;&#x524D;&#x540E;&#x5206;&#x5E03;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x9020;&#x51FA;&#x7ACB;&#x4F53;&#x58F0;&#x6548;&#x679C;&#xFF0C;&#x5E76;&#x5728;&#x542C;&#x89C9;&#x4E0A;&#x8868;&#x73B0;&#x8FDC;&#x8FD1;&#x611F;&#x3002;&#x5C06;&#x524D;&#x666F;&#x97F3;&#x8F68;&#x7A0D;&#x5FAE;&#x63A8;&#x5411;&#x524D;&#x65B9;&#xFF0C;&#x80CC;&#x666F;&#x97F3;&#x8F68;&#x653E;&#x7F6E;&#x5728;&#x7A0D;&#x8FDC;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4EE5;&#x6A21;&#x62DF;&#x8FDC;&#x79BB;&#x542C;&#x8005;&#x6216;&#x56F4;&#x7ED5;&#x542C;&#x8005;&#x7684;&#x611F;&#x89C9;&#x3002;</p>
-<h2 id="EQ-&#x8C03;&#x6574;"><a href="#EQ-&#x8C03;&#x6574;" class="headerlink" title="EQ &#x8C03;&#x6574;"></a>EQ &#x8C03;&#x6574;</h2><p>&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x5747;&#x8861;&#x5668;&#xFF08;EQ&#xFF09;&#x6765;&#x8C03;&#x6574;&#x97F3;&#x9891;&#x9891;&#x8C31;&#x4E2D;&#x4E0D;&#x540C;&#x9891;&#x6BB5;&#x7684;&#x80FD;&#x91CF;&#x5206;&#x5E03;&#xFF0C;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x58F0;&#x97F3;&#x7684;&#x7279;&#x70B9;&#x548C;&#x8FDC;&#x8FD1;&#x6548;&#x679C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6839;&#x636E;&#x9700;&#x8981;&#x589E;&#x52A0;&#x9AD8;&#x9891;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x58F0;&#x97F3;&#x542C;&#x8D77;&#x6765;&#x66F4;&#x6E05;&#x6670;&#x548C;&#x63A5;&#x8FD1;&#xFF1B;&#x964D;&#x4F4E;&#x4F4E;&#x9891;&#x5185;&#x5BB9;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x6A21;&#x62DF;&#x51FA;&#x9065;&#x8FDC;&#x7684;&#x6548;&#x679C;&#x3002;</p>
-<h2 id="&#x52A8;&#x6001;&#x5904;&#x7406;"><a href="#&#x52A8;&#x6001;&#x5904;&#x7406;" class="headerlink" title="&#x52A8;&#x6001;&#x5904;&#x7406;"></a>&#x52A8;&#x6001;&#x5904;&#x7406;</h2><p>&#x4F7F;&#x7528;&#x538B;&#x7F29;&#x3001;&#x9650;&#x5236;&#x5668;&#x7B49;&#x52A8;&#x6001;&#x6548;&#x679C;&#x5668;&#x6765;&#x63A7;&#x5236;&#x97F3;&#x9891;&#x7684;&#x52A8;&#x6001;&#x8303;&#x56F4;&#xFF0C;&#x4F7F;&#x58F0;&#x97F3;&#x66F4;&#x52A0;&#x5747;&#x8861;&#x548C;&#x7A33;&#x5B9A;, &#x80FD;&#x8BA9;&#x58F0;&#x97F3;&#x542C;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x9760;&#x524D;</p>
-<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2826,7 +1832,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">193</span>
+                  <span class="site-state-item-count">197</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2839,7 +1845,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
