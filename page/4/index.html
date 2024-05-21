@@ -273,155 +273,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../150.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../150.html" itemprop="url">如何使REAPER中的仪表和波形看起来更加平滑</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-12T19:15:53+08:00">
-                2023-07-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>&#x5728;&#x672C;&#x671F;&#x5FEB;&#x901F;&#x6559;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x5C06;&#x5411;&#x60A8;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x4F7F; <code>REAPER</code> &#x4E2D;&#x7684;&#x4EEA;&#x8868;&#x548C;&#x6CE2;&#x5F62;&#x5728;&#x64AD;&#x653E;&#x65F6;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x5E73;&#x6ED1;&#x1F44C;</p>
-<p><code>REAPER</code> &#x5141;&#x8BB8;&#x60A8;&#x81EA;&#x5B9A;&#x4E49;&#x4EEA;&#x8868;&#x548C;&#x6CE2;&#x5F62;&#x7684;&#x5E73;&#x6ED1;&#x5EA6;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BBE;&#x7F6E;&#x975E;&#x5E38;&#x4F4E;&#xFF0C;&#x5BFC;&#x81F4;&#x51FA;&#x73B0;&#x952F;&#x9F7F;&#x72B6;&#x5916;&#x89C2;&#x3002;</p>
-<p>&#x6211;&#x73B0;&#x5728;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x81EA;&#x5B9A;&#x4E49;&#x5176;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x3002;</p>
-<h2 id="&#x1F30A;-&#x6CE2;&#x5F62;&#x66F4;&#x5E73;&#x6ED1;"><a href="#&#x1F30A;-&#x6CE2;&#x5F62;&#x66F4;&#x5E73;&#x6ED1;" class="headerlink" title="&#x1F30A; &#x6CE2;&#x5F62;&#x66F4;&#x5E73;&#x6ED1;"></a>&#x1F30A; &#x6CE2;&#x5F62;&#x66F4;&#x5E73;&#x6ED1;</h2><p>&#x60A8;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x5F53; <code>REAPER</code> &#x5F55;&#x5236;&#x65F6;&#xFF0C;&#x6CE2;&#x5F62;&#x7ED8;&#x5236;&#x5F97;&#x975E;&#x5E38;&#x6162;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x9ED8;&#x8BA4;&#x5237;&#x65B0;&#x7387;&#x4EC5;&#x4E3A; <code>3 Hz</code>&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A; <code>30 Hz</code>&#xFF0C;&#x5E76;&#x4F7F;&#x5176;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x52A0;&#x5E73;&#x6ED1;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63adb88c438b7d7bfb9f1a9a_a928f341-c60c-4135-a180-78565dfc024f.gif" alt="&#x5F55;&#x97F3;&#x65F6;&#x7684;&#x6CE2;&#x5F62;&#x3002;"></p>
-<h3 id="&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;&#xFF1A;"><a href="#&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;&#xFF1A;" class="headerlink" title="&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;&#xFF1A;"></a>&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;&#xFF1A;</h3><ol>
-<li><p>&#x9996;&#x5148;&#x8FDB;&#x5165;&#x5230;<code>Preferences &gt; Recording</code>&#x3002;</p>
-</li>
-<li><p>&#x7136;&#x540E;&#x627E;&#x5230;<code>Show preview ...update frequency</code>&#x4E00;&#x680F;&#x6539;&#x4E3A;<code>30</code></p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63adb88c438b7d47999f1a9e_e18d6c90-c4b9-4a9a-bb51-64ac3c87ce7d.jpeg" alt="img"></p>
-</li>
-<li><p>&#x5B8C;&#x6210;&#xFF01;&#x5C1D;&#x8BD5;&#x5F55;&#x5236;&#xFF0C;&#x4F60;&#x7684;&#x6CE2;&#x5F62;&#x5E94;&#x8BE5;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x597D;&#x1F60A;</p>
-</li>
-</ol>
-<h2 id="&#x1F39A;-&#x66F4;&#x5E73;&#x6ED1;&#x7684;&#x4EEA;&#x8868;"><a href="#&#x1F39A;-&#x66F4;&#x5E73;&#x6ED1;&#x7684;&#x4EEA;&#x8868;" class="headerlink" title="&#x1F39A; &#x66F4;&#x5E73;&#x6ED1;&#x7684;&#x4EEA;&#x8868;"></a>&#x1F39A; &#x66F4;&#x5E73;&#x6ED1;&#x7684;&#x4EEA;&#x8868;</h2><p><code>VU Meter</code>&#x4E5F;&#x53EF;&#x4EE5;&#x53EF;&#x8C03;&#x5F97;&#x66F4;&#x52A0;&#x987A;&#x6ED1;&#xFF01;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63adb88c438b7dbc009f1a9c_900cefbb-146e-493d-ace0-2d763510de2f.gif" alt="&#x8F68;&#x9053;&#x548C;&#x63D2;&#x4EF6;&#x4EEA;&#x8868;&#x3002;  "></p>
-<h3 id="&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;"><a href="#&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;" class="headerlink" title="&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;"></a>&#x8BBE;&#x7F6E;&#x6B65;&#x9AA4;</h3><ol>
-<li><p>&#x9996;&#x5148;&#x8FDB;&#x5165;&#x5230;<code>Preferences &gt; Track Control Panels</code></p>
-</li>
-<li><p>&#x7136;&#x540E;&#x627E;&#x5230;<code>Meter update frequency</code>&#x4E00;&#x680F;, &#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A;<code>30 Hz</code>, &#x540C;&#x65F6;&#x5C06;<code>Meter Decay</code> &#x8BBE;&#x7F6E;&#x4E3A;<code>40 db/sec</code></p>
-<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/63adb88c438b7d255d9f1a99_7d3559d6-cbd2-4a2c-ae67-9191dbfee371.jpeg" alt></p>
-</li>
-<li><p>&#x5B8C;&#x6BD5;&#xFF01;&#x60A8;&#x7684;&#x8F68;&#x9053;&#x8BA1;&#x73B0;&#x5728;&#x770B;&#x8D77;&#x6765;&#x5E94;&#x8BE5;&#x66F4;&#x5E73;&#x6ED1;&#x4E86;&#x3002;</p>
-</li>
-</ol>
-<p>&#x5982;&#x679C;&#x60A8;&#x7684;&#x8F68;&#x9053;&#x4E0A;&#x6CA1;&#x6709;<code>VU</code>&#x8868;, &#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;:&#x300A;<a href="https://audio.newban.cn/148.html">&#x5728;REAPER&#x4E2D;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5728;&#x8F68;&#x9053;&#x4E0A;&#x663E;&#x793A;VU&#x8868;</a>&#x300B;</p>
-<h2 id="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"><a href="#&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;" class="headerlink" title="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"></a>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;</h2><p>&#x5982;&#x679C;&#x60A8;&#x53D1;&#x73B0;&#x4EFB;&#x4F55;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x9891;&#x7387;&#x6570;&#x5B57;&#x964D;&#x4F4E;&#x5230;15&#x6216;&#x66F4;&#x4F4E;&#x3002;&#x5373;&#x4F7F;&#x5728;&#x8F83;&#x65E7;&#x7684;&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x6211;&#x4E2A;&#x4EBA;&#x4E5F;&#x6CA1;&#x6709;&#x6CE8;&#x610F;&#x5230;&#x8FD9;&#x4E9B;&#x8BBE;&#x7F6E;&#x6709;&#x4EFB;&#x4F55;&#x5DEE;&#x5F02;&#x3002;</p>
-<p>&#x4EAB;&#x53D7;&#x1F499;</p>
-<p><strong>&#x672C;&#x6587;&#x7FFB;&#x8BD1;&#x81EA;</strong>: <a href="/external_links/2798ca4ed81939c9e75dab5b39a6b666.html" target="blank" rel="noopener">reapertips</a></p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../149.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1681,6 +1532,169 @@
 <p>&#x4F8B;&#x5982;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x589E;&#x5F3A;&#x519B;&#x9F13;&#x6216;&#x5E95;&#x9F13;&#xFF0C;&#x6216;&#x8005;&#x5C06;&#x591A;&#x79CD;&#x97F3;&#x6548;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x4EE5;&#x521B;&#x5EFA;&#x72EC;&#x7279;&#x7684;&#x6548;&#x679C;&#x3002;</p>
 <p>&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x5F55;&#x5236;&#x66F2;&#x76EE;&#x7684;&#x591A;&#x4E2A;&#x901A;&#x9053;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x5806;&#x53E0;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x4EE5;&#x4FBF;&#x60A8;&#x5728;&#x5F55;&#x5236;&#x65F6;&#x8F7B;&#x677E;&#x542C;&#x5230;&#x524D;&#x51E0;&#x5C42;</p>
 <p><strong>&#x672C;&#x6587;&#x7FFB;&#x8BD1;&#x81EA;</strong>: <a href="/external_links/639e96bbeb7ec99784ee5a5bba220308.html" target="blank" rel="noopener">reapertips</a></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../140.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../140.html" itemprop="url">在REAPER中显示音频的5种方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-07-10T10:15:53+08:00">
+                2023-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p><code>REAPER</code> &#x7684;&#x4E00;&#x9879;&#x72EC;&#x7279;&#x529F;&#x80FD;&#x662F;&#x80FD;&#x591F;&#x4EE5;&#x4E94;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#x97F3;&#x9891;&#x9879;&#x76EE;&#xFF01;&#x1F92F;</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db4800469430_Thumbnail_copy.jpeg" alt="img"></p>
+<p>&#x8FD9;&#x786E;&#x4FDD;&#x4E86;&#x65E0;&#x8BBA;&#x9700;&#x8981;&#x5904;&#x7406;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x97F3;&#x9891;&#xFF0C;<code>REAPER</code>&#x90FD;&#x80FD;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x5B8C;&#x7F8E;&#x7684;&#x89C6;&#x89C9;&#x5448;&#x73B0;&#x1F44C;</p>
+<p>&#x6211;&#x73B0;&#x5728;&#x5C06;&#x56DE;&#x987E;&#x5B83;&#x4EEC;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#xFF0C;&#x6F14;&#x793A;&#x5B83;&#x4EEC;&#x7684;&#x7528;&#x9014;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x663E;&#x793A;&#x5B83;&#x4EEC;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x3002;</p>
+<hr>
+<h2 id="1-&#x89C4;&#x5F8B;&#x7684;&#x9AD8;&#x5CF0;"><a href="#1-&#x89C4;&#x5F8B;&#x7684;&#x9AD8;&#x5CF0;" class="headerlink" title="1. &#x89C4;&#x5F8B;&#x7684;&#x9AD8;&#x5CF0;"></a>1. &#x89C4;&#x5F8B;&#x7684;&#x9AD8;&#x5CF0;</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db9623469478_3c300e5b-7f7b-47ea-a1e6-895dddc94488.jpeg" alt="img"></p>
+<p>&#x8FD9;&#x4E9B;&#x662F;&#x6211;&#x4EEC;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x90FD;&#x719F;&#x6089;&#x7684;&#x9ED8;&#x8BA4;&#x6CE2;&#x5F62;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6E05;&#x695A;&#x5730;&#x76F4;&#x89C2;&#x5730;&#x4E86;&#x89E3;&#x97F3;&#x9891;&#x7684;&#x54CD;&#x5EA6;&#x548C;&#x957F;&#x5EA6;&#x3002;</p>
+<blockquote>
+<p>&#x1F3AF;&#x8981;&#x4E3A;&#x6B64;&#x89C6;&#x56FE;&#x5206;&#x914D;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6216;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>Peaks: Show normal (non-spectral/non-spectrogram) peaks</code></p>
+</blockquote>
+<h2 id="2-&#x7EA0;&#x6B63;&#x5CF0;&#x503C;"><a href="#2-&#x7EA0;&#x6B63;&#x5CF0;&#x503C;" class="headerlink" title="2. &#x7EA0;&#x6B63;&#x5CF0;&#x503C;"></a>2. &#x7EA0;&#x6B63;&#x5CF0;&#x503C;</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33dbb8bf469477_0fda3477-0a18-4d72-8b79-714ba9168159.jpeg" alt="img"></p>
+<p>&#x5C31;&#x50CF;&#x5E38;&#x89C4;&#x5CF0;&#x503C;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x60A8;&#x53EA;&#x80FD;&#x770B;&#x5230;&#x6CE2;&#x5F62;&#x7684;&#x4E00;&#x534A;&#x3002;</p>
+<p>&#x8FD9;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x89C6;&#x9891;&#x7F16;&#x8F91;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6709;&#x52A9;&#x4E8E;&#x66F4;&#x597D;&#x5730;&#x8BC6;&#x522B;&#x5BF9;&#x8BDD;&#x548C;&#x66F4;&#x5B89;&#x9759;&#x7684;&#x6BB5;&#x843D;&#x3002;&#x5982;&#x679C;&#x60A8;&#x50CF;&#x5927;&#x591A;&#x6570;&#x89C6;&#x9891;&#x7F16;&#x8F91;&#x5668;&#x5DE5;&#x4F5C;&#x533A;&#x4E00;&#x6837;&#x5782;&#x76F4;&#x7A7A;&#x95F4;&#x6709;&#x9650;&#xFF0C;&#x4E5F;&#x5F88;&#x6709;&#x7528;~</p>
+<blockquote>
+<p>&#x1F3AF;&#x8981;&#x4E3A;&#x6B64;&#x89C6;&#x56FE;&#x5206;&#x914D;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6216;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>Peaks: Rectify peaks</code></p>
+</blockquote>
+<h2 id="3-&#x5149;&#x8C31;&#x5CF0;"><a href="#3-&#x5149;&#x8C31;&#x5CF0;" class="headerlink" title="3. &#x5149;&#x8C31;&#x5CF0;"></a>3. &#x5149;&#x8C31;&#x5CF0;</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33dbe16d469474_e17cd77e-1133-49f9-916e-9bcdb67b505c-20230711180846612.jpeg" alt="img"></p>
+<p>&#x6B64;&#x89C6;&#x56FE;&#x5141;&#x8BB8;&#x60A8;&#x5C06;&#x4E0D;&#x540C;&#x7684;&#x9891;&#x7387;&#x53EF;&#x89C6;&#x5316;&#x4E3A;&#x989C;&#x8272;&#x3002;</p>
+<p>&#x8FD9;&#x975E;&#x5E38;&#x9002;&#x5408;&#x68C0;&#x6D4B;&#x4EBA;&#x58F0;&#x4E2D;&#x7684;&#x5636;&#x5636;&#x58F0;&#x3001;&#x5F55;&#x97F3;&#x4E2D;&#x7684;&#x566A;&#x97F3;&#x3001;&#x8F6C;&#x5F55;&#x97F3;&#x7B26;&#x7B49;&#xFF01;</p>
+<blockquote>
+<p>&#x1F3AF;&#x8981;&#x4E3A;&#x6B64;&#x89C6;&#x56FE;&#x5206;&#x914D;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6216;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>Peaks: Toggle spectral peaks</code></p>
+</blockquote>
+<p>&#x2699;&#xFE0F;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x5E76;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#x8C03;&#x6574;&#x8BBE;&#x7F6E;&#xFF1A;<code>View: Show peaks display settings</code></p>
+<h2 id="4-&#x9891;&#x8C31;&#x56FE;"><a href="#4-&#x9891;&#x8C31;&#x56FE;" class="headerlink" title="4. &#x9891;&#x8C31;&#x56FE;"></a>4. &#x9891;&#x8C31;&#x56FE;</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db7b5d46947a_a3fbeb65-38d7-49b0-9a69-57254caacd27.jpeg" alt="img"></p>
+<p>&#x8FD9;&#x662F;&#x9891;&#x7387;&#x5F3A;&#x5EA6;&#x7684;&#x89C6;&#x89C9;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83; 200 Hz &#x548C; 10 kHz &#x7B49;&#x4E0D;&#x540C;&#x9891;&#x7387;&#x4E0B;&#x7684;&#x80FD;&#x91CF;&#x6C34;&#x5E73;&#xFF0C;&#x5E76;&#x4E86;&#x89E3;&#x8FD9;&#x4E9B;&#x6C34;&#x5E73;&#x5982;&#x4F55;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x3002;</p>
+<blockquote>
+<p>&#x1F3AF;&#x8981;&#x4E3A;&#x6B64;&#x89C6;&#x56FE;&#x5206;&#x914D;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6216;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>Peaks: Toggle spectrogram</code></p>
+</blockquote>
+<p>&#x2699;&#xFE0F;&#x60A8;&#x8FD8;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x5E76;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#x8C03;&#x6574;&#x8BBE;&#x7F6E;&#xFF1A;<code>View: Show peaks display settings</code></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db2948469476_547625b4-82af-49ac-8f8f-093b9f07a808.png" alt="img"></p>
+<h2 id="5-&#x9891;&#x8C31;&#x56FE;&#x548C;&#x5CF0;&#x503C;"><a href="#5-&#x9891;&#x8C31;&#x56FE;&#x548C;&#x5CF0;&#x503C;" class="headerlink" title="5. &#x9891;&#x8C31;&#x56FE;&#x548C;&#x5CF0;&#x503C;"></a>5. &#x9891;&#x8C31;&#x56FE;&#x548C;&#x5CF0;&#x503C;</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db3c88469475_7ef00b85-bfe1-4635-a809-66a7b0f3cccc-20230711180257977.jpeg" alt="img"></p>
+<p>&#x8FD9;&#x5C06;&#x663E;&#x793A;&#x4E00;&#x534A;&#x9891;&#x8C31;&#x56FE;&#x548C;&#x4E00;&#x534A;&#x5CF0;&#x503C;&#x3002;</p>
+<p>&#x6211;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x5168;&#x5176;&#x7F8E;&#x7684;&#x4F18;&#x70B9;&#xFF01;&#x60A8;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5E38;&#x89C4;&#x54CD;&#x5EA6;&#x5CF0;&#x503C;&#x4EE5;&#x53CA;&#x5176;&#x4E0A;&#x65B9;&#x7684;&#x9891;&#x7387;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x66F4;&#x5BB9;&#x6613;&#x8BC6;&#x522B;&#x58F0;&#x97F3;&#x3002;</p>
+<blockquote>
+<p>&#x1F3AF;&#x8981;&#x4E3A;&#x6B64;&#x89C6;&#x56FE;&#x5206;&#x914D;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6216;&#x5DE5;&#x5177;&#x680F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>Action List</code>&#x4E2D;&#x641C;&#x7D22;<code>Peaks: Toggle spectrogram and peaks</code></p>
+</blockquote>
+<h2 id="&#x798F;&#x5229;&#xFF1A;&#x5149;&#x8C31;&#x7F16;&#x8F91;"><a href="#&#x798F;&#x5229;&#xFF1A;&#x5149;&#x8C31;&#x7F16;&#x8F91;" class="headerlink" title="&#x798F;&#x5229;&#xFF1A;&#x5149;&#x8C31;&#x7F16;&#x8F91;"></a>&#x798F;&#x5229;&#xFF1A;&#x5149;&#x8C31;&#x7F16;&#x8F91;</h2><p>&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x9891;&#x8C31;&#x56FE;&#x89C6;&#x56FE;&#x65F6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x5E76;&#x4F7F;&#x7528;<code>Spectrogram: Add spectral edit to item</code>&#x64CD;&#x4F5C;&#x6765;&#x8C03;&#x6574;&#x97F3;&#x9891;<code>Izotope RX</code> &#x98CE;&#x683C;&#xFF01;&#x975E;&#x5E38;&#x597D;&#x3002;&#x6211;&#x901A;&#x5E38;&#x7528;&#x5B83;&#x6765;&#x6D88;&#x9664;&#x566A;&#x97F3;&#x548C;&#x5F02;&#x54CD;&#x3002;</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/643d50ee9d33db3463469479_64497c16-1e44-4a7f-aae5-223dbe3742b9.jpeg" alt="img"></p>
+<h2 id="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"><a href="#&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;" class="headerlink" title="&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;"></a>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF01;</h2><p>&#x5982;&#x679C;&#x60A8;&#x4E3A;&#x5B83;&#x4EEC;&#x8BBE;&#x7F6E;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x5FEB;&#x901F;&#x5207;&#x6362;&#xFF0C;&#x5E76;&#x4EE5;&#x6700;&#x9002;&#x5408;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x65B9;&#x5F0F;&#x67E5;&#x770B;&#x97F3;&#x9891;&#x3002;&#x6216;&#x8005;&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x4EEC;&#x653E;&#x7F6E;&#x5728;&#x9876;&#x90E8;&#x5DE5;&#x5177;&#x680F;&#x4E4B;&#x4E00;&#x3002;</p>
+<p>&#x4EAB;&#x53D7;&#x1F499;</p>
+<p><strong>&#x672C;&#x6587;&#x7FFB;&#x8BD1;&#x81EA;</strong>: <a href="/external_links/ebd1da977fd94895f9cf85195530b5a3.html" target="blank" rel="noopener">reapertips</a></p>
 <p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
 
           
