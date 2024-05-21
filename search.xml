@@ -947,7 +947,7 @@
 
 </li>
 </ol>
-<h3 id="编曲作品打赏"><a href="#编曲作品打赏" class="headerlink" title="编曲作品打赏"></a>编曲作品打赏</h3><ol>
+<h3 id="编曲作品欣赏"><a href="#编曲作品欣赏" class="headerlink" title="编曲作品欣赏"></a>编曲作品欣赏</h3><ol>
 <li><p><strong>弦乐编的很棒</strong></p>
 <iframe src="//player.bilibili.com/player.html?aid=549270056&bvid=BV1Sq4y1u7Vf&cid=446892953&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
 </li>
@@ -3744,6 +3744,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <li>最后结果如下如所示</li>
 </ol>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230715180909022.png" alt="image-20230715180909022"></p>
+<h2 id="使用注意事项"><a href="#使用注意事项" class="headerlink" title="使用注意事项"></a>使用注意事项</h2><p>如果是非单声道人声建议 将其转成单声道后进行修音 否则容易出现声音颤抖问题</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -10223,10 +10224,23 @@ shortcut.add("Shift+x",function() {
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240329113459954.png" alt="image-20240329113459954"></p>
 <p>除了这个之外 还有很多类似的工具 比如:</p>
 <ul>
-<li><a href="https://tianyin.music.163.com" target="_blank" rel="noopener">网易天音</a></li>
-<li><a href="https://ace-studio.timedomain.cn/" target="_blank" rel="noopener">ACE Studio</a></li>
-<li><a href="https://cevio.jp/" target="_blank" rel="noopener">CeVIO AI</a> : 汉化包可前往<a href="https://github.com/VOICeVIO/CeVIO.CN" target="_blank" rel="noopener">GitHub</a>下载</li>
-<li><a href="https://github.com/svc-develop-team/so-vits-svc" target="_blank" rel="noopener">Sovits 4.0</a>: 声音克隆  可以克隆自己的声音进行唱歌或者配音播稿</li>
+<li><p><a href="https://tianyin.music.163.com" target="_blank" rel="noopener">网易天音</a></p>
+</li>
+<li><p><a href="https://ace-studio.timedomain.cn/" target="_blank" rel="noopener">ACE Studio</a></p>
+</li>
+<li><p><a href="https://cevio.jp/" target="_blank" rel="noopener">CeVIO AI</a> : 汉化包可前往<a href="https://github.com/VOICeVIO/CeVIO.CN" target="_blank" rel="noopener">GitHub</a>下载</p>
+</li>
+<li><p><a href="https://github.com/svc-develop-team/so-vits-svc" target="_blank" rel="noopener">Sovits 4.0</a>: 声音克隆  可以克隆自己的声音进行唱歌或者配音播稿</p>
+</li>
+<li><p><a href="https://dreamtonics.com/zh-CN/synthesizerv/" target="_blank" rel="noopener">Synthesizer V</a> : AI驱动的虚拟歌姬 简单易上手 效果也不错</p>
+<p>下面是详细使用教程:</p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=477125079&bvid=BV1BK41117Bd&cid=949229364&p=1&autoplay=no" scrolling="no" border="0" frameborder="no" width="1020" height="660" framespacing="0" allowfullscreen="true"></iframe>
+
+
+
+
+
+</li>
 </ul>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -10994,6 +11008,35 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>Kontakt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《你说》上线啦</title>
+    <url>/198.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="网易云试听"><a href="#网易云试听" class="headerlink" title="网易云试听"></a>网易云试听</h2><p>如果以下播放器无法播放 可以<a href="https://music.163.com/#/song?id=2156948660" target="_blank" rel="noopener">点击进入网易云网页</a> 或者各大音乐平台搜索歌手 : 十二越</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2156948660&auto=0&height=66"></iframe>
+
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">你说</span><br><span class="line"></span><br><span class="line">词/曲 : 十二越</span><br><span class="line">编曲/混音 : 十二越</span><br><span class="line"></span><br><span class="line">遇见你的那一天起</span><br><span class="line">昏天黑地让人着迷 </span><br><span class="line">什么样才足够美丽 </span><br><span class="line">这样的你放下了真心</span><br><span class="line"></span><br><span class="line">直到后来丢失记忆</span><br><span class="line">目不转睛我看着你</span><br><span class="line">雨滴傻傻落下秘密</span><br><span class="line">最后的你是全部意义</span><br><span class="line"></span><br><span class="line">你说你说你说解脱</span><br><span class="line">你说你说真假没错</span><br><span class="line">你说你说没有结果</span><br><span class="line">彻夜彻日忍受折磨</span><br><span class="line"></span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<h2 id="创作背景"><a href="#创作背景" class="headerlink" title="创作背景"></a>创作背景</h2><p>依然是一首情歌</p>
+<p>感情里的两个人 没有对与错  只有认与不认</p>
+<p>极限逃避 还不如勇于承认</p>
+<p>承认内心的情感 承认各自的问题</p>
+<h2 id="编曲混音"><a href="#编曲混音" class="headerlink" title="编曲混音"></a>编曲混音</h2><p>严格意义上讲  这首歌不能算完全原创的作品 </p>
+<p>因为在编曲上我大篇幅地模仿了一首商业的情歌</p>
+<p>以前的情歌编曲 总感觉差点意思  尤其到了副歌部分 情绪没有怎么拉起来 所以这次实验性地  做了一个模仿</p>
+<p>整首商业情歌歌扒带下来 感觉学到了很多  很多人都说扒带是最好的学习编曲的方式  确实是如此  不过这种扒带方式更适合有基础的人 因为需要听音 对于新手而言还是有点难度的   </p>
+<p>混音上 我在副歌部分做了一些变化 比如混响增大 音量包络等  尤其到了后期高潮 加了齐唱 让人声听起来更加有冲击力</p>
+<p>为了偷懒 我使用了<code>Reaper</code>自带的LFO自动化功能  对人声和吉他做了音量包络 使得声音听起来更加的灵动不那么死板  这种变化比较细微 需要反复对比试听才能听出两者的区别</p>
+<p>这里需要注意的是 人声LFO震荡频率不宜过快, 否则形成颤音导致声音抖动不稳定, 这首歌就存在这个问题 当时我没听出来, 后面歌曲已经上线,为时已晚</p>
+<p>另外就是 这首歌除了人声、齐唱、Bass、鼓之外 其他乐器破天荒的没有添加压缩效果 比如钢琴和弦乐都也只是加了一个EQ效果器  总线上只用了一个压限器 响度没做太大</p>
+<p>主要是之前的几首歌比如《<a href="https://audio.newban.cn/184.html">我以为</a>》和《<a href="https://audio.newban.cn/183.html">天长地久</a>》压缩太过 导致声音动态不够 整体听感上比较僵硬 缺失了不少的情感  这种状态对于情歌而言是非常不利的.  情歌需要更多的松弛感和高低起伏 所以我也是吸取了之前的教训  做了一些调整  </p>
+<p>最后出来的效果 虽然差强人意 但从情绪角度来说  也算是有所收获</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>推广</tag>
       </tags>
   </entry>
 </search>
