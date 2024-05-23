@@ -11039,4 +11039,56 @@ shortcut.add("Shift+x",function() {
         <tag>公众号归档</tag>
       </tags>
   </entry>
+  <entry>
+    <title>原创歌曲《离家》上线啦</title>
+    <url>/200.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="网易云试听"><a href="#网易云试听" class="headerlink" title="网易云试听"></a>网易云试听</h2><p>如果以下播放器无法播放 <a href="https://music.163.com/#/song?id=2158180223" target="_blank" rel="noopener">可以点击进入网易云网页</a> 或者各大音乐平台搜索歌手 : 十二越</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2158180223&auto=0&height=66"></iframe>
+
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">离家</span><br><span class="line"></span><br><span class="line">词/曲 : 十二越</span><br><span class="line">编曲/混音 : 十二越</span><br><span class="line"></span><br><span class="line">不知不觉离家</span><br><span class="line">已经好多年</span><br><span class="line">在孤单的时候</span><br><span class="line">止不住想念</span><br><span class="line"></span><br><span class="line">记不起多少个黑夜</span><br><span class="line">闪过模糊的脸</span><br><span class="line">和温柔的目光交错再现</span><br><span class="line">一遍又一遍</span><br><span class="line"></span><br><span class="line">是真的累了</span><br><span class="line">回忆在拼凑呢</span><br><span class="line">一直不停呢 不停的</span><br><span class="line">持续恍惚的画面</span><br><span class="line"></span><br><span class="line">我是真的不想了</span><br><span class="line">不想再去奢求了</span><br><span class="line">早就没有了年少轻狂的执念</span><br><span class="line">如何才能飞的更远</span><br><span class="line"></span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<h2 id="创作背景"><a href="#创作背景" class="headerlink" title="创作背景"></a>创作背景</h2><p>离家多年 想的不仅仅是家 还有对人生的思考</p>
+<p>现在这个社会 大部分人都漂泊在外 名利是一把双刃剑 </p>
+<p>不想如何才能飞得更远 而是想想如何才能飞得更舒服</p>
+<p>知足常乐 心存希望 把日子过好</p>
+<h2 id="编曲混音"><a href="#编曲混音" class="headerlink" title="编曲混音"></a>编曲混音</h2><p>这首歌从词曲创作到录音编曲混音 也就花了一天时间 严格上讲是八个小时</p>
+<p>这不算是最快的时间 最早的一张专辑  一首歌的制作时间好像也就一晚上</p>
+<p>制作时间的长短 和个人精神状态以及对业务的熟悉程度有很大关系 但它和歌曲的质量并不完全挂钩  </p>
+<p>有时候一首歌可能花上好一阵子 但并不意味着歌曲质量就有多好  这里只是给这首歌做一个记录 供我年老后自娱自乐 嘿嘿 </p>
+<p>编曲上 乐器编配采用了常规的四大件外加一个弦乐 中规中矩吧  总体上还算能实现歌曲的情绪和意境  间奏部分吉他短音和弦乐长音的相互配合 让编曲更加热闹不单调</p>
+<p>混音上 我这次录唱比较偷懒 没录配唱  到副歌部分 我感觉人声有些单薄 于是为其添加了一个<code>doubler4</code>效果器:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240520135326403.png" alt="image-20240520135326403"></p>
+<p>并在不同段落做了不同的发送量:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20240520135222700.png" alt="image-20240520135222700"> </p>
+<p>这样使人声越来越有气势感</p>
+<p>乐器部分的混音 主要就是滤除一部分的低频以及和人声的避让 加了一点点压缩  其他的没有做特别的处理</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>推广</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>原创歌曲《等你爱我》上线啦</title>
+    <url>/199.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="网易云试听"><a href="#网易云试听" class="headerlink" title="网易云试听"></a>网易云试听</h2><p>如果以下播放器无法播放 <a href="https://music.163.com/#/song?id=2158180474" target="_blank" rel="noopener">可以点击进入网易云网页</a> 或者各大音乐平台搜索歌手 : 十二越</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2158180474&auto=0&height=66"></iframe>
+
+<h2 id="歌词"><a href="#歌词" class="headerlink" title="歌词"></a>歌词</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">等你爱我</span><br><span class="line"></span><br><span class="line">词/曲 : 十二越</span><br><span class="line">编曲/混音 : 十二越</span><br><span class="line"></span><br><span class="line">等你等你爱我</span><br><span class="line">不用等以后</span><br><span class="line">只要拥有</span><br><span class="line"></span><br><span class="line">等你等你爱我</span><br><span class="line">别说等以后</span><br><span class="line">只想拥有</span><br><span class="line"></span><br><span class="line">当时的我们都还没有</span><br><span class="line">没有太多的自我</span><br><span class="line">当时的我们都只为了</span><br><span class="line">为了最初的承诺</span><br><span class="line"></span><br><span class="line">可是现在的  那些苦果</span><br><span class="line">你说要如何更过</span><br><span class="line">最后的我们也爱过</span><br><span class="line">没有退后和软弱</span><br><span class="line"></span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<h2 id="创作背景"><a href="#创作背景" class="headerlink" title="创作背景"></a>创作背景</h2><p>爱与被爱 角色的转换 </p>
+<p>爱情 其实没有那么难</p>
+<p>如果很难 说明不合适</p>
+<h2 id="编曲混音"><a href="#编曲混音" class="headerlink" title="编曲混音"></a>编曲混音</h2><p>编曲上 以钢琴为核心的发展 这首歌最开始也是在练钢琴的时候写的  隔了半年 后进行编曲补充 这首歌算是第一首人声结尾的歌吧  嗯 好像是  我也记不清了 </p>
+<p>反正 编曲 我觉的 更多的是随性吧 不要太拘谨 没有什么严格的条条框框 只要自己喜欢或者觉得合适 就可以尝试一下  没有对与错之分  </p>
+<p>混音上  这首歌没有用一些新鲜的东西 也只是做了些简单的处理 不过我感觉整体的声场还是有些不足 这个问题也可以从编曲上去解决 下首歌再优化优化  多多学习别人的经验</p>
+<p>加油💪</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>推广</tag>
+      </tags>
+  </entry>
 </search>
