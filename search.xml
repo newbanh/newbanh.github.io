@@ -1201,6 +1201,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>激活后需要重启软件许可证才能生效</p>
 </li>
 </ol>
+<h3 id="其他渠道下载Halion"><a href="#其他渠道下载Halion" class="headerlink" title="其他渠道下载Halion"></a>其他渠道下载Halion</h3><p>如果你嫌弃官网下载安装流程太过费劲, 可以考虑从第三方下载安装包:</p>
+<p><code>Mac</code>平台: <a href="https://www.imacso.com/steinberg-halion.html" target="_blank" rel="noopener">点击进入</a></p>
 <h3 id="Steinberg其他免费插件"><a href="#Steinberg其他免费插件" class="headerlink" title="Steinberg其他免费插件"></a>Steinberg其他免费插件</h3><p>除了<code>HALion Sonic SE</code>, Steinberg官方还提供了一些其他的免费音源 比如吉他Harmaonics, LoFi钢琴等等, 有兴趣的可以去下载使用</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826171016987.png" alt="image-20220826171016987"></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826171034426.png" alt="image-20220826171034426"></p>
@@ -1984,6 +1986,21 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 </li>
 <li><p>此时会创建一个包络副本, 两个包络块可同步联动修改:</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/2023-07-21%2010-36-30.2023-07-21%2010_40_15.gif" alt="2023-07-21 10-36-30.2023-07-21 10_40_15"></p>
+</li>
+</ol>
+<h2 id="改变某个音频块的速度"><a href="#改变某个音频块的速度" class="headerlink" title="改变某个音频块的速度"></a>改变某个音频块的速度</h2><p>有时候我们可能会复用一些其他工程的音频文件, 比如底鼓这种规律性比较强的乐器</p>
+<p>假如原来工程<code>bpm</code>是63, 而现工程<code>bpm</code>是69, 那么我们需要对该进行速度的调整, 从而适应当下工程</p>
+<p>方法也很简单, 具体操作如下:</p>
+<ol>
+<li><p>选中需要操作的音频, 右键选择<code>item properties</code></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251004120004611.png" alt="image-20251004120004611"></p>
+</li>
+<li><p>在弹出的窗口中找到<code>Playback rate</code>选项</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251004115600755.png" alt="image-20251004115600755"></p>
+<p>点击<code>set</code>按钮, 填入该音频原始<code>bpm</code>值:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251004115708010.png" alt="image-20251004115708010"></p>
+<p>点击<code>ok</code>, <code>reaper</code>会自动计算<code>rate</code>值并调整音频</p>
+<p>最后点击<code>apply</code>应用设置即可</p>
 </li>
 </ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -3772,7 +3789,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <li><p>打开/隐藏声像包络轨道</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">P</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开当前工程所有快捷键列表, 以<code>html</code>页面形式呈现出来(help–&gt;keybindings)</p>
+<li><p>打开当前工程所有快捷键列表, 以<code>html</code>页面形式呈现出来<code>(help--&gt;keybindings)</code></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Shift+F1</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>item</code>水平放大</p>
@@ -3799,8 +3816,11 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <li><p>以半音为单位改变MIDI音符的音高</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Ctrl+Up/Down</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>以八度为单位改变MIDI音符的音高</p>
+<li><p>以八度为单位改变<code>MIDI</code>音符的音高</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">shift+数字键盘8/数字键盘2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将音频垂直移动到上一个/下一个轨道上</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NumPad 8/NumPad 2</span><br></pre></td></tr></table></figure>
 
 
 
@@ -3839,16 +3859,25 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230719112358346.png" alt="image-20230719112358346"></p>
 </li>
+<li><p>快速创建<code>Region</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">shift+R</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>垂直复制选中的<code>item</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alt+cmd+鼠标左键上下拖拽</span><br></pre></td></tr></table></figure>
+
+<p>该快捷键可以在<code>Preferences</code>中的<code>Mouse Modifiers</code>选项中设置</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251003185710952.png" alt="image-20251003185710952"></p>
+</li>
 </ol>
 <h2 id="个人配置"><a href="#个人配置" class="headerlink" title="个人配置"></a>个人配置</h2><p>以下配置仅供参考</p>
 <ol>
-<li><p>将水平缩放中心点由原来的播放指针位置改为鼠标箭头所在位置</p>
+<li><p><strong>将水平缩放中心点由原来的播放指针位置改为鼠标箭头所在位置</strong></p>
 <p>设置方法:</p>
 <p>前往<code>Preferences &gt; Editing Behavior</code></p>
 <p>找到 <code>Horizontal Zoom Center</code>, 并选择<code>Mouse Cursor</code>模式</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721113420983.png" alt="image-20230721113420983"></p>
 </li>
-<li><p>对网格线进行设置</p>
+<li><p><strong>对网格线进行设置</strong></p>
 <p>默认的网格线密密麻麻, 看得有点头大, 需要对其进行修改</p>
 <ol>
 <li>右键网格线显示开关图标, 弹出<code>Grid</code>设置窗口</li>
@@ -3860,19 +3889,19 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 </li>
 </ol>
 </li>
-<li><p>禁止过度缩小工程</p>
+<li><p><strong>禁止过度缩小工程</strong></p>
 <p>   默认情况下可以无限缩小工程, 导致音频文件都看不到, 这里做一个限制, 防止缩小过度</p>
 <p>   <img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721120044550.png" alt="image-20230721120044550"></p>
 </li>
-<li><p>解决修改<code>Bpm</code>后音频被拉伸的问题</p>
+<li><p><strong>解决修改<code>Bpm</code>后音频被拉伸的问题</strong></p>
 <p>进入<code>File &gt; Project Settings…</code>,在<code>Timebase for items/envelopes/markers</code>一栏将<code>Beats</code>改为 <code>Time</code>模式即可</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721123000535.png" alt="image-20230721123000535"></p>
 </li>
-<li><p>降低自动交叉淡入淡出的时间</p>
+<li><p><strong>降低自动交叉淡入淡出的时间</strong></p>
 <p>当我们对音频进行裁剪时, Reaper默认会自动给音频添加淡入淡出, 这是个很不错的功能, 但是它的时间有点长, 容易导致剪辑后的声音一卡一卡的, 为了让声音更加流畅, 我将时间设置为<code>1ms</code>, 默认是<code>10ms</code></p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721140730806.png" alt="image-20230721140730806"></p>
 </li>
-<li><p>同时修改同一轨道上的多个<code>item</code>的淡入淡出</p>
+<li><p><strong>同时修改同一轨道上的多个<code>item</code>的淡入淡出</strong></p>
 <p><code>reaper</code>默认在不同轨道可以实现对多个选中的<code>item</code>同时进行淡入淡出的操作, 但是在同一轨道上的多个<code>item</code>却不行, 这里需要进行一下设置</p>
 <p>设置方法:</p>
 <ol>
@@ -3886,7 +3915,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 </li>
 </ol>
 </li>
-<li><p>简化录音文件命名格式</p>
+<li><p><strong>简化录音文件命名格式</strong></p>
 <p><code>reaper</code>中默认的录音文件名称比较长, 类似于这种<code>03-GtrL190703_0840.wav</code>, 我们需要对其进行简化, 让其看起来清晰明了</p>
 <p>设置如下:</p>
 <p> 进入<code>Preferences &gt; Recording</code>, 在 <code>filename format, type</code>一栏中填入<code>$track- $recpass00</code> 然后保存即可</p>
@@ -3894,13 +3923,46 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p>前后效果对比如下:</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230721144452111.png" alt="image-20230721144452111"></p>
 </li>
-<li><p>钢琴卷帘窗隐藏音符力度控制句柄</p>
+<li><p><strong>钢琴卷帘窗隐藏音符力度控制句柄</strong></p>
 <p>当我们使用鼠标对<code>midi</code>音符进行拖拽的时候, 很容易不小心改动了音符力度, 为了避免误操作, 我们需要将音符力度控制句柄进行隐藏, 具体方法:</p>
 <p><code>View-&gt;Piano roll notes-&gt;取消勾选Show velocity handles on notes</code>, 如下图:</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230811190413066.png" alt="image-20230811190413066"></p>
 <blockquote>
 <p>如果我们想修改某个音符的力度大小可以使用<code>Alt+鼠标左键上下拖拽</code>的方式来实现</p>
 </blockquote>
+</li>
+<li><p><strong>修改钢琴卷帘窗缩放和滚动快捷键</strong></p>
+<p>由于之前习惯了<code>Cubase</code>的缩放快捷键, 为了更好的过渡, 这里我对其进行修改, 具体方法如下:</p>
+<p>首先打开钢琴卷帘窗, 点击顶部菜单中的<code>Actions</code>选项, 进入到<code>Actions</code>窗口:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002193745524.png" alt="image-20251002193745524"></p>
+<p>然后根据<code>zoom</code>关键字搜索, 找到水平缩放<code>View: Zoom horizontally (MIDI relative/mousewheel)</code>和垂直缩放<code>View: Zoom vertically (MIDI relative/mousewheel)</code>, 对其进行快捷键修改即可:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002193422351.png" alt="image-20251002193422351"></p>
+<p>同样的, 滚动快捷键, 搜索<code>scroll</code>关键字, 找到水平滚动<code>View: Scroll horizontally (MIDI relative/mousewheel)</code>和垂直滚动<code>View: Scroll vertically (MIDI relative/mousewheel)</code>, 并做对应的修改:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002194529081.png" alt="image-20251002194529081"></p>
+</li>
+</ol>
+<ol start="10">
+<li><p><strong>修改音符拖拽复制和画笔切换快捷键</strong></p>
+<ul>
+<li><p>音符拖拽复制快捷键修改成<code>Alt+鼠标左键</code></p>
+<p>操作如下:</p>
+<p>打开<code>Preferences</code>窗口, 进入<code>Mouse Modifiers</code>选项, 选择<code>MIDI note</code>和<code>Left drag</code>, 找到<code>opt</code>条目并双击, 在弹出的下拉菜单中选择<code>copy note</code>动作:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002211742007.png" alt="image-20251002211742007"></p>
+</li>
+<li><p>画笔切换快捷键修改成<code>Ctrl+鼠标左键</code></p>
+<p>操作如下:</p>
+<p>打开<code>Preferences</code>窗口, 进入<code>Mouse Modifiers</code>选项, 选择<code>MIDI piano roll</code>和<code>Left drag</code>, 找到<code>cmd</code>条目并双击, 在弹出的下拉菜单中选择<code>insert note ignoring vetical drag</code>动作:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002205731127.png" alt="image-20251002205731127"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002210019852.png" alt="image-20251002210019852"></p>
+<p>这一步还没完, 紧接着切换成<code>Left click</code>模式, 找到<code>cmd</code>条目并双击, 在弹出的下拉菜单中选择<code>insert note</code>动作:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002211155393.png" alt="image-20251002211155393"></p>
+<p>如此一来, 便实现了和<code>Cubase</code>一样的效果, 为了方便<code>windows</code>平台使用, 我对<code>Ctrl</code>也做了和<code>cmd</code>一样的设置</p>
+<p>简单解释一下相关的参数, 首先<code>MIDI piano roll</code>是<code>MIDI Editor</code>的一部分, 而<code>MIDI note</code>是<code>MIDI piano roll</code>的一部分</p>
+<p><code>MIDI Editor</code>父级–&gt;<code>MIDI piano roll</code>子级–&gt;<code>MIDI note</code>孙级</p>
+<p>当父级和子级动作有冲突时, 子级占有优先权</p>
+<p>我们在设置快捷键的时候, 需要明确该动作是作用在音符上还是钢琴卷帘窗上, 这样才能准确选择对应的<code>Context</code>, 从而避免出现改了半天没反应的情况</p>
+</li>
+</ul>
 </li>
 </ol>
 <h2 id="我个人的自定义Action"><a href="#我个人的自定义Action" class="headerlink" title="我个人的自定义Action"></a>我个人的自定义Action</h2><p>以下<code>Action</code>仅供参考:</p>
@@ -3911,6 +3973,38 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230717103843224.png" alt="image-20230717103843224"></p>
 </li>
 </ol>
+<h2 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h2><h3 id="钢琴卷帘窗背景颜色修改"><a href="#钢琴卷帘窗背景颜色修改" class="headerlink" title="钢琴卷帘窗背景颜色修改"></a>钢琴卷帘窗背景颜色修改</h3><p><code>Reaper</code>默认主题中的钢琴卷帘窗背景颜色太深了, 小节网格线根本看不清, 这里需要自定义调整一下</p>
+<p>具体操作:</p>
+<p>打开<code>Actions</code>窗口, 搜索<code>tweak</code>, 在搜索结果列表中找到<code>Theme development: Show theme tweak/configuration window</code>选项, 鼠标双击打开进入到主题编辑窗口:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002222106050.png" alt="image-20251002222106050"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002222305036.png" alt="image-20251002222305036"></p>
+<p>搜索栏中输入<code>midi</code>关键字进行快速过滤, 我们只需要对以下部分的颜色进行修改:</p>
+<ul>
+<li><code>MIDI editor grid line (start of measure)</code>小节线颜色设置为:  #000000</li>
+<li><code>MIDI editor grid line (start of beat)</code>节拍网格颜色设置为:  #333333</li>
+<li><code>MIDI editor grid line (between of beat)</code>每拍内部节奏细分网格颜色设置为:  #555555</li>
+<li><code>MIDI editor background color (naturals)</code>钢琴卷帘窗白键背景颜色设置为:  #F5F5F5</li>
+<li><code>MIDI editor background color (sharps/flats)</code>钢琴卷帘窗黑键键背景颜色设置为:  #E5E5E5</li>
+<li><code>MIDI editor background color, selected pitch (naturals)</code>钢琴卷帘窗白键选中时背景颜色设置为:  #F5F5F5  </li>
+<li><code>MIDI editor background color, selected pitch (sharps/flats)</code>钢琴卷帘窗黑键选中时背景颜色设置为:  #E5E5E5</li>
+<li><code>MIDI editor ruler background</code>MIDI编辑器下方音符属性区域背景颜色 设置为:  #CCCCCC</li>
+<li><code>MIDI editor background color, out of bounds (naturals)</code>钢琴卷帘窗音符编辑区域之外的白键背景颜色 设置为:  #CCCCCC</li>
+<li><code>MIDI editor background color, out of bounds (sharps/flats)</code>钢琴卷帘窗音符编辑区域之外的黑键背景颜色 设置为:  #BBBBBB</li>
+</ul>
+<p>注意: 钢琴卷帘窗白键选中时背景颜色需要和白键背景颜色保持一致, 黑键同理, 保证在绘制音符过程中不会出现颜色混杂的情况</p>
+<p>调整之后的最终效果为:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002230407874.png" alt="image-20251002230407874"></p>
+<p>调整之前默认效果为:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251002230331036.png" alt="image-20251002230331036"></p>
+<h3 id="钢琴卷帘窗音符颜色修改"><a href="#钢琴卷帘窗音符颜色修改" class="headerlink" title="钢琴卷帘窗音符颜色修改"></a>钢琴卷帘窗音符颜色修改</h3><p>由于音符的颜色根据不同的力度大小作不同的显示, 因此需要一个渐变的颜色<code>png</code>文件, 比如下面这种:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251003084404001.png" alt="image-20251003084404001"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251003084437925.png" alt="image-20251003084437925"></p>
+<p>上面的<code>png</code>文件有需要可以自行去<code>reapertips</code>官网下载, 这里仅举例介绍, 有条件的话尽量自己设计一套颜色, 因为他们给的这些实在是太丑, 还不如官方自带的好看</p>
+<p>紧接着在<code>Preferences</code>窗口的<code>MIDI Editor</code>选项中对该<code>png</code>文件进行加载即可:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251003084945122.png" alt="image-20251003084945122"></p>
+<p>加载完后效果如下:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251003085116482.png" alt="image-20251003085116482"></p>
+<p>如果需要回到默认的颜色, 只需删除<code>MIDI Editor</code>中加载的路径地址即可</p>
 <h2 id="REAPER使用过程注意事项"><a href="#REAPER使用过程注意事项" class="headerlink" title="REAPER使用过程注意事项"></a>REAPER使用过程注意事项</h2><ol>
 <li>执行操作时, 需要养成先选中<code>Item</code>的习惯, 如果没有选中某个<code>Item</code>, 默认是分离所有轨道中的音频</li>
 <li>尽量少使用<code>Glue</code>功能, 平常无论你对音频如何复制剪辑都不会新增音频文件, 一旦你用<code>Glue items</code>功能对<code>item</code>进行的了合并操作, 那么在工程目录下会新增音频文件, 这对于我们项目管理和备份时非常不利的</li>
@@ -5830,6 +5924,9 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p>另外就是 这首歌除了人声、齐唱、Bass、鼓之外 其他乐器破天荒的没有添加压缩效果 比如钢琴和弦乐都也只是加了一个EQ效果器  总线上只用了一个压限器 响度没做太大</p>
 <p>主要是之前的几首歌比如《<a href="https://audio.newban.cn/184.html">我以为</a>》和《<a href="https://audio.newban.cn/183.html">天长地久</a>》压缩太过 导致声音动态不够 整体听感上比较僵硬 缺失了不少的情感  这种状态对于情歌而言是非常不利的.  情歌需要更多的松弛感和高低起伏 所以我也是吸取了之前的教训  做了一些调整  </p>
 <p>最后出来的效果 虽然差强人意 但从情绪角度来说  也算是有所收获</p>
+<h2 id="关于音色抖动"><a href="#关于音色抖动" class="headerlink" title="关于音色抖动"></a>关于音色抖动</h2><p>音色抖动, 是我自己瞎取的名😝, 简而言之就是让音色灵动起来, 不那么机械死板, 除了基础的音符力度和时值量化手段之外, 还可以使用上面说的LFO音量包络方式</p>
+<p>另外添加延迟也是种不错的方式, 比如在《<a href="https://music.163.com/#/song?id=1341780843" target="_blank" rel="noopener">无眠</a>》这首歌的前奏就给音色添加了延迟, 使声音听起来更<strong>糊</strong>一些, 可以适当掩盖一部分僵硬感</p>
+<p>当然了以上所说的音色针对的是鼠标<code>MIDI</code>, 如果是直接弹奏录入, 那么不需要做太多后期处理, 只要在演奏的时候, 把情感加入到演奏中即可</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -8522,40 +8619,30 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
   <entry>
     <title>BPM节拍速度测试工具</title>
     <url>/71.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script> <html><head><meta name="generator" content="Hexo 3.9.0"><link href="http://www.bq186.com/bpm/styles.css" type="text/css" rel="stylesheet"><script src="http://www.bq186.com/bpm/shortcut.js" type="text/javascript"></script><script type="text/javascript">var startTime = null;var currentBeats = 0;    function handleNewBeat() {
-        if (currentBeats == 0) {
-            startTime = new Date();
-        }
-        currentBeats++;
-        updateBpm();
-    };function handleReset() {
-    startTime = null;
-    currentBeats = 0;
-    updateBpm();
-};function updateBpm() {
-    var value = '&nbsp;';
-    var title = 'BPM';
-    if (currentBeats > 1) {
-        var now = new Date();
-        var miliseconds = now.getTime() - startTime.getTime();
-        var minutes = miliseconds / 60000.0;
-        var bpm = (currentBeats - 1) / minutes;
-        value = bpm.toFixed(2);
-        title = 'BPM (' + currentBeats.toString() + ' 次)';
-    } else if (currentBeats == 1) {
-        title = 'BPM (1 beat)';
-    }
-    $('#divBpm').html(value);
-    $('#divBpmTitle').html(title);
-};shortcut.add(" ",function() {
-    handleNewBeat();
-});
-shortcut.add("x",function() {
-    handleReset();
-});
-shortcut.add("Shift+x",function() {
-    handleReset();
-});</script></head><body><div id="divMain"><h1>BPM节拍速度测试</h1><p>本软件通过您按下空格键来测速，例如一边听鼓点，一边按空格键。</p><p><strong>按下&quot;X&quot;键清空 按下“空格键”测速</strong></p><div id="divBpmTitle">BPM</div><div id="divBpm">&nbsp;</div></div></body></html>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BPM计算器</title><style>:root{--primary-color:#4361ee;--secondary-color:#3a0ca3;--accent-color:#4cc9f0;--light-color:#f8f9fa;--dark-color:#212529;--success-color:#2ec4b6;--warning-color:#ff9f1c;--danger-color:#e71d36;--gray-color:#6c757d;--box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);--transition:all 0.3s ease;}*{margin:0;padding:0;box-sizing:border-box;}body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height:1.6;background-color:#f5f7ff;color:var(--dark-color);padding:20px;}.bpm-container{background:white;border-radius:16px;box-shadow:var(--box-shadow);padding:30px;max-width:500px;margin:0 auto;width:100%;}.bpm-title{text-align:center;font-size:1.8rem;font-weight:700;color:var(--primary-color);margin-bottom:20px;}.bpm-display{font-size:5rem;font-weight:700;color:var(--primary-color);margin:20px 0;text-align:center;text-shadow:0 4px 10px rgba(67, 97, 238, 0.2);transition:transform 0.3s ease;}.bpm-display.active{transform:scale(1.05);}.tap-area{background:linear-gradient(135deg, var(--primary-color), var(--secondary-color));border-radius:12px;padding:30px;margin:20px 0;cursor:pointer;box-shadow:0 6px 15px rgba(67, 97, 238, 0.3);transition:var(--transition);position:relative;overflow:hidden;}.tap-area:active{transform:scale(0.98);box-shadow:0 3px 8px rgba(67, 97, 238, 0.3);}.tap-area::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255, 255, 255, 0.1);opacity:0;transition:opacity 0.3s ease;}.tap-area:active::before{opacity:1;}.tap-instruction{font-size:1.4rem;color:white;font-weight:600;margin-bottom:15px;text-align:center;}.mobile-instruction{display:none;font-size:1.4rem;color:white;font-weight:600;margin-bottom:15px;text-align:center;}.tap-count{font-size:1.1rem;color:rgba(255, 255, 255, 0.9);text-align:center;}.tap-count span{font-weight:600;color:white;}.controls{display:flex;justify-content:center;gap:15px;margin-top:25px;}.btn{padding:12px 24px;border:none;border-radius:8px;font-size:1rem;font-weight:500;cursor:pointer;transition:var(--transition);}.btn-primary{background:var(--primary-color);color:white;box-shadow:0 4px 8px rgba(67, 97, 238, 0.3);}.btn-primary:hover{background:var(--secondary-color);transform:translateY(-2px);}.btn-secondary{background:var(--light-color);color:var(--dark-color);border:1px solid #e0e0e0;}.btn-secondary:hover{background:#f0f0f0;}.hint{margin-top:20px;color:var(--gray-color);font-size:0.95rem;text-align:center;}.visualizer{height:100px;margin:20px 0;position:relative;overflow:hidden;}.beat-bar{position:absolute;bottom:0;left:0;width:100%;height:5px;background:var(--primary-color);transform:scaleX(0);transform-origin:left;transition:transform 0.1s ease;}.beat-indicator{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:20px;height:20px;background:var(--accent-color);border-radius:50%;opacity:0;transition:opacity 0.3s ease;}.beat-indicator.active{opacity:1;animation:beat 0.5s ease;}@keyframes beat{0%{transform:translate(-50%, -50%) scale(1);opacity:0.8;}100%{transform:translate(-50%, -50%) scale(3);opacity:0;}}/* 移动端优化 */
+        @media (max-width:768px){.bpm-container{padding:20px;}.bpm-title{font-size:1.5rem;margin-bottom:15px;}.bpm-display{font-size:4rem;}.tap-area{padding:25px;}.controls{flex-direction:column;gap:10px;}.btn{width:100%;padding:15px;}/* 移动端隐藏空格键提示 */
+            .tap-instruction{display:none;}.mobile-instruction{display:block;}}</style></head><body><div class="bpm-container"><h1 class="bpm-title">歌曲BPM计算器</h1><div class="visualizer"><div class="beat-bar" id="beatBar"></div><div class="beat-indicator" id="beatIndicator"></div></div><div class="bpm-display" id="bpmDisplay">0</div><div class="tap-area" id="tapButton"><div class="tap-instruction">点击此处或按空格键</div><div class="mobile-instruction">点击此处开始计算</div><div class="tap-count">已敲击:<span id="tapCount">0</span>次</div></div><div class="controls"><button class="btn btn-primary" id="resetBtn">重置</button><button class="btn btn-secondary" id="infoBtn">使用说明</button></div><p class="hint">提示：至少敲击4次才能获得准确结果</p></div><script>// BPM计算器逻辑
+        const bpmDisplay=document.getElementById('bpmDisplay');const tapCount=document.getElementById('tapCount');const tapButton=document.getElementById('tapButton');const resetBtn=document.getElementById('resetBtn');const infoBtn=document.getElementById('infoBtn');const beatBar=document.getElementById('beatBar');const beatIndicator=document.getElementById('beatIndicator');let tapTimes=[];let lastTapTime=0;// 初始化
+        function initBpmCalculator(){tapTimes=[];updateDisplay();// 添加事件监听
+            tapButton.addEventListener('click', tap);resetBtn.addEventListener('click', resetBpm);infoBtn.addEventListener('click', showInstructions);document.addEventListener('keydown', handleKeyPress);}// 处理键盘事件
+        function handleKeyPress(e){if (e.code==='Space'){e.preventDefault();tap();}}// 敲击事件
+        function tap(){const now=Date.now();// 防止连续点击过快
+            if (now - lastTapTime< 100) return;lastTapTime=now;// 添加敲击时间
+            tapTimes.push(now);// 保留最近10次敲击
+            if (tapTimes.length>10){tapTimes.shift();}// 更新显示
+            updateDisplay();// 添加视觉反馈
+            animateBeat();// 计算BPM
+            calculateBpm();}// 更新显示
+        function updateDisplay(){tapCount.textContent=tapTimes.length;// 添加脉冲动画
+            if (tapTimes.length>0){bpmDisplay.classList.add('active');setTimeout(()=>{bpmDisplay.classList.remove('active');}, 300);}}// 计算BPM
+        function calculateBpm(){if (tapTimes.length< 2){bpmDisplay.textContent='0';return;}// 计算平均间隔
+            const intervals=[];for (let i=1;i< tapTimes.length;i++){intervals.push(tapTimes[i] - tapTimes[i - 1]);}const avgInterval=intervals.reduce((a, b)=>a + b, 0) / intervals.length;const bpm=Math.round(60000 / avgInterval);bpmDisplay.textContent=bpm;}// 重置
+        function resetBpm(){tapTimes=[];updateDisplay();bpmDisplay.textContent='0';}// 显示使用说明
+        function showInstructions(){const isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);let instructions='使用说明：\n\n';instructions +='1. 随着歌曲节奏点击蓝色区域\n';if (!isMobile){instructions +='2. 或者按空格键记录节拍\n';}instructions +='3. 至少敲击4次才能获得准确结果\n';instructions +='4. 点击重置按钮可以重新开始\n\n';if (isMobile){instructions +='移动端提示：\n';instructions +='- 请确保在安静环境下使用\n';instructions +='- 点击区域时尽量保持节奏稳定\n';instructions +='- 结果会随着敲击次数增加变得更准确';}else{instructions +='桌面端提示：\n';instructions +='- 可以使用空格键代替点击\n';instructions +='- 结果会随着敲击次数增加变得更准确';}alert(instructions);}// 添加节拍动画
+        function animateBeat(){// 节拍指示器动画
+            beatIndicator.classList.remove('active');setTimeout(()=>{beatIndicator.classList.add('active');}, 10);// 节拍条动画
+            beatBar.style.transform='scaleX(1)';setTimeout(()=>{beatBar.style.transform='scaleX(0)';}, 100);}// 初始化计算器
+        window.addEventListener('DOMContentLoaded', initBpmCalculator);</script></body></html>
 
 
 
@@ -9641,11 +9728,11 @@ shortcut.add("Shift+x",function() {
   <entry>
     <title>混响和延迟效果器的使用诀窍</title>
     <url>/73.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>对于初学者, 在给音频添加混响时, 可能会出现回声感明显的情况, 即便你的发送量非常少, 比如以下人声:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>对于初学者, 在给音频添加混响时, 可能会出现回声感明显的情况, 即便你的发送量非常少, 比如以下人声:</p>
 <p><audio class src="https://audio.newban.cn/audio/reverb_no_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>明显听到声音尾部的回声, 而我仅仅是发送了7%的混响和3%混响, 量很小啊, 为什么回声这么明显呢</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915112010995.png" alt="image-20210915112010995"></p>
-<h3 id="混响频率"><a href="#混响频率" class="headerlink" title="混响频率"></a>混响频率</h3><p>原因出在混响频率上, 默认情况下我们将全频段声音都发送给了混响和延迟, 里面包括和浑浊的低频, 和尖刺的高频, 事实上, 对于时间类效果器而言, 低频和高频都是不需要的</p>
+<h2 id="混响频率"><a href="#混响频率" class="headerlink" title="混响频率"></a>混响频率</h2><p>原因出在混响频率上, 默认情况下我们将全频段声音都发送给了混响和延迟, 里面包括和浑浊的低频, 和尖刺的高频, 事实上, 对于时间类效果器而言, 低频和高频都是不需要的</p>
 <p>我们只需要将中频发送给它们就行,具体做法是在混响和延迟效果器前面插入一个EQ效果器, 具体参数如下图:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915112145688.png" alt="image-20210915112145688"></p>
 <ul>
@@ -9660,7 +9747,7 @@ shortcut.add("Shift+x",function() {
 <p><audio class src="https://audio.newban.cn/audio/reverb_with_eq_more.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915113344138.png" alt="image-20210915113344138"></p>
 <p>是不是感受到了EQ的魅力呢</p>
-<h3 id="鼓组混响EQ"><a href="#鼓组混响EQ" class="headerlink" title="鼓组混响EQ"></a>鼓组混响EQ</h3><p>当然 针对不同类型的乐器EQ的参数肯定不一样, 如果是鼓组, 那么我们可以:</p>
+<h2 id="鼓组混响EQ"><a href="#鼓组混响EQ" class="headerlink" title="鼓组混响EQ"></a>鼓组混响EQ</h2><p>当然 针对不同类型的乐器EQ的参数肯定不一样, 如果是鼓组, 那么我们可以:</p>
 <ul>
 <li><strong>低切600HZ</strong></li>
 <li><strong>高切2000HZ</strong></li>
@@ -9674,6 +9761,14 @@ shortcut.add("Shift+x",function() {
 <p><audio class src="https://audio.newban.cn/audio/kick_reverb_with_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>是不是特别明显, 低频浑浊感 和高频杂音没有了 底鼓更加干净弹性有力</p>
 <p>大家可以去亲自对比尝试一下哦</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>如果在添加混响的时候, 不太清楚混响该如何调整, 那么不妨参照一下步骤试一试:</p>
+<ol>
+<li>将混响发送量调整至最大,也就是0%</li>
+<li>听原始声音和混响声音叠加在一起的整体音色效果, 是否浑浊? 或者刺耳? 或者有其它感觉不好听的地方</li>
+<li>像处理其它音色一样处理混响声音, 不限于EQ、压缩等手段, 直到混合的声音变得干净好听</li>
+<li>最后降低发送量至一个合理的位置</li>
+</ol>
+<p>我们可以将混响当成是叠音色, 将混响音色叠加到人声上, 以这种思路去处理混响, 会更加得心应手</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -11089,6 +11184,97 @@ shortcut.add("Shift+x",function() {
 ]]></content>
       <tags>
         <tag>推广</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>混响时间计算器</title>
+    <url>/203.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>最近开发了一个混响时间计算工具</p>
+<p>根据<code>BPM</code>计算房间、板式和厅堂混响的预延迟和混响时间参考值</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251011094553731.png" alt="image-20251011094553731"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251011094635991.png" alt="image-20251011094635991"></p>
+<h2 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h2><p>进入工具百宝箱, 音频处理模块, 选择混响时间计算器</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251011094759210.png" alt="image-20251011094759210"></p>
+<p>开始使用: <a href="https://box.newban.cn/" target="_blank" rel="noopener">点击进入</a></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>压缩器不同的启动释放时间对声音波形的影响</title>
+    <url>/201.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们可以借助一些工具来分析不同启动释放时间对声音的影响, 以底鼓为例, 一首69bpm速度的歌曲, 释放时间54ms和108ms听感会有明显不同</p>
+<h2 id="可视化交互"><a href="#可视化交互" class="headerlink" title="可视化交互"></a>可视化交互</h2><p>我制作了一个可视化交互页面, 大家可以参考一下:</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>底鼓压缩参数交互演示</title><style>*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI','Microsoft YaHei',sans-serif}body{background:linear-gradient(135deg,#1a1f2b 0%,#0d1117 100%);color:#e0e0e0;line-height:1.6;padding:20px;min-height:100vh}.container{max-width:1200px;margin:0 auto;padding:20px}header{text-align:center;margin-bottom:30px;padding:30px;background:rgba(255,255,255,0.05);border-radius:15px;box-shadow:0 8px 16px rgba(0,0,0,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}h1{color:#6ab7ff;margin-bottom:10px;font-size:2.5rem;text-shadow:0 2px 4px rgba(0,0,0,0.3)}.subtitle{color:#a0b9d9;font-size:1.2rem;max-width:800px;margin:0 auto}.content{display:flex;flex-wrap:wrap;gap:25px;margin-bottom:40px}.card{background:rgba(255,255,255,0.05);border-radius:15px;padding:25px;box-shadow:0 8px 16px rgba(0,0,0,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);flex:1;min-width:300px;transition:transform 0.3s ease,box-shadow 0.3s ease}.card:hover{transform:translateY(-5px);box-shadow:0 12px 20px rgba(0,0,0,0.3)}h2{color:#6ab7ff;margin-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:10px;font-size:1.6rem}h3{color:#8ec5ff;margin:20px 0 10px;font-size:1.3rem}p{margin-bottom:15px;font-size:1.05rem;line-height:1.7}.highlight{color:#6ab7ff;font-weight:600}.param-display{display:flex;justify-content:space-around;margin:25px 0}.param-box{text-align:center;padding:20px;border-radius:10px;background:rgba(0,0,0,0.3);width:45%;transition:all 0.3s ease}.param-value{font-size:2.2rem;font-weight:bold;color:#6ab7ff;margin:10px 0;text-shadow:0 2px 4px rgba(0,0,0,0.3)}.param-label{font-size:1rem;color:#a0b9d9}.slider-container{margin:20px 0}.slider-label{display:flex;justify-content:space-between;margin-bottom:5px}input[type="range"]{width:100%;height:8px;-webkit-appearance:none;background:#37474f;border-radius:4px;outline:none}input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#6ab7ff;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.3)}.visualization{width:100%;margin-top:30px}.canvas-container{position:relative;width:100%;height:300px;margin:20px 0;background:rgba(0,0,0,0.2);border-radius:10px;overflow:hidden}canvas{display:block}.wave-info{display:flex;justify-content:space-around;margin-top:20px}.wave-characteristic{text-align:center;padding:15px;background:rgba(0,0,0,0.3);border-radius:8px;width:30%}.char-title{font-size:1.1rem;color:#8ec5ff;margin-bottom:5px}.char-value{font-size:1.3rem;font-weight:bold;color:#6ab7ff}.comparison{display:flex;justify-content:space-around;margin-top:25px;gap:20px}.comparison-item{text-align:center;width:48%;padding:20px;border-radius:10px;background:rgba(0,0,0,0.2);transition:all 0.3s ease}.comparison-title{font-size:1.4rem;font-weight:bold;margin-bottom:15px;color:#6ab7ff}.comparison-desc{font-size:1rem;color:#c5d4f0;line-height:1.6}.effect-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px;justify-content:center}.tag{padding:6px 12px;background:rgba(106,183,255,0.2);border-radius:20px;font-size:0.9rem;color:#a0d0ff}footer{text-align:center;margin-top:40px;color:#a0b9d9;font-size:0.95rem;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1)}@media (max-width:768px){.content{flex-direction:column}.param-display,.wave-info,.comparison{flex-direction:column;align-items:center;gap:15px}.param-box,.wave-characteristic,.comparison-item{width:100%}h1{font-size:2rem}}</style></head><body><div class="container"><header><h1>底鼓压缩参数交互演示</h1><p class="subtitle">探索不同启动时间和释放时间对底鼓波形的影响</p></header><div class="content"><div class="card"><h2>底鼓压缩参数</h2><p>根据您提供的表格，底鼓（大鼓/堂鼓）的压缩参数范围为：</p><div class="param-display"><div class="param-box"><div class="param-label">启动时间</div><div class="param-value">1-20ms</div><div class="param-label">推荐值: 5ms</div></div><div class="param-box"><div class="param-label">释放时间</div><div class="param-value">100-600ms</div><div class="param-label">推荐值: 300ms</div></div></div><h3>核心目标</h3><p>增强击打瞬间的冲击力，控制鼓腔的长频共鸣</p><h3>重要注意事项</h3><p>根据乐曲需要：短启动+短释放(80ms)增加力度感；长释放匹配低频自然衰减</p></div><div class="card"><h2>参数调节</h2><p>使用下方的滑块调整启动时间和释放时间，观察底鼓波形的变化：</p><div class="slider-container"><div class="slider-label"><span>启动时间: </span><span id="attackValue">5ms</span></div><input type="range" id="attackSlider" min="1" max="20" value="5" step="1"></div><div class="slider-container"><div class="slider-label"><span>释放时间: </span><span id="releaseValue">300ms</span></div><input type="range" id="releaseSlider" min="50" max="600" value="300" step="10"></div><div class="wave-info"><div class="wave-characteristic"><div class="char-title">冲击力</div><div class="char-value" id="impactValue">中等</div></div><div class="wave-characteristic"><div class="char-title">衰减速度</div><div class="char-value" id="decayValue">中等</div></div><div class="wave-characteristic"><div class="char-title">共鸣感</div><div class="char-value" id="resonanceValue">中等</div></div></div></div><div class="card visualization"><h2>波形可视化</h2><p>下方展示了当前参数设置下的底鼓波形：</p><div class="canvas-container"><canvas id="waveformCanvas"></canvas></div><div class="comparison"><div class="comparison-item"><div class="comparison-title">短启动时间 (1-5ms)</div><div class="comparison-desc">保留更多原始冲击力，声音更硬朗，适合节奏感强的音乐</div><div class="effect-tags"><div class="tag">冲击力强</div><div class="tag">瞬态明显</div><div class="tag">硬朗</div></div></div><div class="comparison-item"><div class="comparison-title">长启动时间 (15-20ms)</div><div class="comparison-desc">让更多瞬态通过，声音更自然，但可能损失部分冲击力</div><div class="effect-tags"><div class="tag">自然感</div><div class="tag">瞬态柔和</div><div class="tag">平滑</div></div></div></div></div></div><footer><p>参考数据基于您提供的乐器压缩参数表格 | 交互式演示仅供参考，实际效果需通过听觉验证</p></footer></div><script>const attackSlider=document.getElementById('attackSlider'),attackValue=document.getElementById('attackValue'),releaseSlider=document.getElementById('releaseSlider'),releaseValue=document.getElementById('releaseValue'),impactValue=document.getElementById('impactValue'),decayValue=document.getElementById('decayValue'),resonanceValue=document.getElementById('resonanceValue'),canvas=document.getElementById('waveformCanvas'),ctx=canvas.getContext('2d');function resizeCanvas(){const container=canvas.parentElement;canvas.width=container.clientWidth,canvas.height=container.clientHeight,drawWaveform(parseInt(attackSlider.value),parseInt(releaseSlider.value))}function drawWaveform(attackTime,releaseTime){const width=canvas.width,height=canvas.height;ctx.clearRect(0,0,width,height),ctx.strokeStyle='rgba(255, 255, 255, 0.1)',ctx.lineWidth=1;for(let i=0;i<width;i+=width/10)ctx.beginPath(),ctx.moveTo(i,0),ctx.lineTo(i,height),ctx.stroke();for(let i=0;i<height;i+=height/5)ctx.beginPath(),ctx.moveTo(0,i),ctx.lineTo(width,i),ctx.stroke();ctx.fillStyle='rgba(255, 255, 255, 0.7)',ctx.font='12px Arial',ctx.fillText('0ms',10,height-10),ctx.fillText('100ms',width*.25,height-10),ctx.fillText('200ms',width*.5,height-10),ctx.fillText('300ms',width*.75,height-10),ctx.fillText('振幅',10,15),ctx.strokeStyle='#6ab7ff',ctx.lineWidth=3,ctx.beginPath();const centerY=height/2,maxAmplitude=height*.4,totalTime=400;for(let x=0;x<width*(attackTime/totalTime);x++){const progress=x/(width*(attackTime/totalTime)),y=centerY-maxAmplitude*Math.pow(progress,.5);0===x?ctx.moveTo(x,y):ctx.lineTo(x,y)}const attackEndX=width*(attackTime/totalTime),releaseEndX=Math.min(width,width*((attackTime+releaseTime)/totalTime));for(let x=attackEndX;x<releaseEndX;x++){const progress=(x-attackEndX)/(releaseEndX-attackEndX),decay=Math.exp(-4*progress),y=centerY-maxAmplitude*decay;ctx.lineTo(x,y)}releaseEndX<width&&(ctx.lineTo(releaseEndX,centerY),ctx.lineTo(width,centerY)),ctx.stroke(),ctx.fillStyle='#ff9800',ctx.beginPath(),ctx.arc(attackEndX,centerY-maxAmplitude,5,0,2*Math.PI),ctx.fill(),ctx.fillStyle='#e91e63',ctx.beginPath(),ctx.arc(releaseEndX,centerY,5,0,2*Math.PI),ctx.fill(),ctx.fillStyle='#ff9800',ctx.fillText('启动结束',attackEndX-30,centerY-maxAmplitude-10),ctx.fillStyle='#e91e63',ctx.fillText('释放结束',releaseEndX-30,centerY+20)}function updateEffectDescription(attackTime,releaseTime){attackTime<=5?(impactValue.textContent="强",impactValue.style.color="#ff5252"):attackTime<=10?(impactValue.textContent="中等",impactValue.style.color="#ff9800"):(impactValue.textContent="柔和",impactValue.style.color="#4caf50"),releaseTime<=150?(decayValue.textContent="快",decayValue.style.color="#ff5252"):releaseTime<=350?(decayValue.textContent="中等",decayValue.style.color="#ff9800"):(decayValue.textContent="慢",decayValue.style.color="#4caf50"),releaseTime<=150?(resonanceValue.textContent="弱",resonanceValue.style.color="#ff5252"):releaseTime<=350?(resonanceValue.textContent="中等",resonanceValue.style.color="#ff9800"):(resonanceValue.textContent="强",resonanceValue.style.color="#4caf50")}window.addEventListener('load',(function(){resizeCanvas(),drawWaveform(parseInt(attackSlider.value),parseInt(releaseSlider.value)),updateEffectDescription(parseInt(attackSlider.value),parseInt(releaseSlider.value)),window.addEventListener('resize',resizeCanvas)})),attackSlider.addEventListener('input',(function(){const attackTime=parseInt(this.value);attackValue.textContent=`${attackTime}ms`,drawWaveform(attackTime,parseInt(releaseSlider.value)),updateEffectDescription(attackTime,parseInt(releaseSlider.value))})),releaseSlider.addEventListener('input',(function(){const releaseTime=parseInt(this.value);releaseValue.textContent=`${releaseTime}ms`,drawWaveform(parseInt(attackSlider.value),releaseTime),updateEffectDescription(parseInt(attackSlider.value),releaseTime)}));</script></body></html>
+
+
+
+
+
+
+
+
+
+
+<h2 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h2><p>这个交互式演示包含以下功能：</p>
+<ul>
+<li>参数调节：可以分别调整启动时间(1-20ms)和释放时间(50-600ms)</li>
+<li>波形可视化：实时显示不同参数设置下的底鼓波形</li>
+<li>效果分析：直观展示不同参数对冲击力、衰减速度和共鸣感的影响</li>
+<li>参数对比：对比短启动时间和长启动时间的不同效果</li>
+</ul>
+<h2 id="使用建议"><a href="#使用建议" class="headerlink" title="使用建议"></a>使用建议</h2><ul>
+<li>短启动时间(1-5ms)：适合需要强烈冲击力的音乐风格，如EDM、摇滚</li>
+<li>中等启动时间(5-10ms)：平衡冲击力和自然感，适合多种音乐风格</li>
+<li>长启动时间(10-20ms)：让更多瞬态通过，声音更自然，适合爵士、氛围音乐</li>
+</ul>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见乐器压缩器释放时间计算器</title>
+    <url>/204.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>最近开发了一个常见乐器压缩器释放时间工具</p>
+<p>根据<code>BPM</code>计算鼓组、贝斯、人声、吉他、钢琴、弦乐、二胡、古筝等乐器的压缩释放时间参考值</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251011095337322.png" alt="image-20251011095337322"></p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251011095400329.png" alt="image-20251011095400329"></p>
+<h2 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h2><p>进入工具百宝箱, 音频处理模块, 选择混响时间计算器</p>
+<p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20251011095308812.png" alt="image-20251011095308812"></p>
+<p>开始使用: <a href="https://box.newban.cn/" target="_blank" rel="noopener">点击进入</a></p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>情歌贝斯释放时间选择分析</title>
+    <url>/202.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>对于情歌而言，贝斯音符以长音为主，释放时间的选择会影响音乐的<strong>情感表达</strong>和<strong>氛围营造</strong></p>
+<p>这里以一首69bpm速度歌曲的贝斯为例, 54ms和108ms释放时间对贝斯波形的影响, 以下是一个交互式分析页面, 大家可以一起来研究一下</p>
+<h2 id="交互分析"><a href="#交互分析" class="headerlink" title="交互分析"></a>交互分析</h2><!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>情歌贝斯释放时间选择分析</title><style> * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; } body { background: linear-gradient(135deg, #1a1f2b 0%, #0d1117 100%); color: #e0e0e0; line-height: 1.6; padding: 20px; min-height: 100vh; } .container { max-width: 1200px; margin: 0 auto; padding: 20px; } header { text-align: center; margin-bottom: 30px; padding: 30px; background: rgba(255, 255, 255, 0.05); border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); } h1 { color: #6ab7ff; margin-bottom: 10px; font-size: 2.5rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); } .subtitle { color: #a0b9d9; font-size: 1.2rem; max-width: 800px; margin: 0 auto; } .content { display: flex; flex-wrap: wrap; gap: 25px; margin-bottom: 40px; } .card { background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 25px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); flex: 1; min-width: 300px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .card:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); } .recommendation { background: rgba(106, 183, 255, 0.1); border-left: 4px solid #6ab7ff; } h2 { color: #6ab7ff; margin-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; font-size: 1.6rem; } h3 { color: #8ec5ff; margin: 20px 0 10px; font-size: 1.3rem; } p { margin-bottom: 15px; font-size: 1.05rem; line-height: 1.7; } .highlight { color: #6ab7ff; font-weight: 600; } .param-display { display: flex; justify-content: space-around; margin: 25px 0; } .param-box { text-align: center; padding: 20px; border-radius: 10px; background: rgba(0, 0, 0, 0.3); width: 45%; transition: all 0.3s ease; } .param-box.active { background: rgba(106, 183, 255, 0.2); box-shadow: 0 0 15px rgba(106, 183, 255, 0.3); } .param-value { font-size: 2.2rem; font-weight: bold; color: #6ab7ff; margin: 10px 0; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); } .param-label { font-size: 1rem; color: #a0b9d9; } .comparison { display: flex; justify-content: space-around; margin-top: 25px; gap: 20px; } .comparison-item { text-align: center; width: 48%; padding: 20px; border-radius: 10px; background: rgba(0, 0, 0, 0.2); transition: all 0.3s ease; } .comparison-item.active { background: rgba(106, 183, 255, 0.15); box-shadow: 0 0 15px rgba(106, 183, 255, 0.2); } .comparison-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 15px; color: #6ab7ff; } .comparison-desc { font-size: 1rem; color: #c5d4f0; line-height: 1.6; } .effect-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; justify-content: center; } .tag { padding: 6px 12px; background: rgba(106, 183, 255, 0.2); border-radius: 20px; font-size: 0.9rem; color: #a0d0ff; } .visualization { width: 100%; margin-top: 30px; } .canvas-container { position: relative; width: 100%; height: 300px; margin: 20px 0; background: rgba(0, 0, 0, 0.2); border-radius: 10px; overflow: hidden; } canvas { display: block; } .controls { display: flex; justify-content: center; gap: 20px; margin-top: 20px; } .control-btn { padding: 12px 25px; background: rgba(106, 183, 255, 0.2); border: 1px solid rgba(106, 183, 255, 0.4); border-radius: 8px; color: #6ab7ff; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; } .control-btn:hover { background: rgba(106, 183, 255, 0.3); transform: translateY(-2px); } .control-btn.active { background: rgba(106, 183, 255, 0.4); box-shadow: 0 0 15px rgba(106, 183, 255, 0.4); } .song-examples { margin-top: 30px; } .example-list { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px; } .example-item { flex: 1; min-width: 200px; padding: 15px; background: rgba(0, 0, 0, 0.2); border-radius: 8px; border-left: 3px solid #6ab7ff; } .example-title { font-weight: bold; color: #8ec5ff; margin-bottom: 5px; } footer { text-align: center; margin-top: 40px; color: #a0b9d9; font-size: 0.95rem; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); } @media (max-width: 768px) { .content { flex-direction: column; } .param-display, .comparison { flex-direction: column; align-items: center; gap: 15px; } .param-box, .comparison-item { width: 100%; } h1 { font-size: 2rem; } } </style></head><body><div class="container"><header><h1>情歌贝斯释放时间选择分析</h1><p class="subtitle">针对69 BPM情歌中贝斯长音特性，分析54ms与108ms释放时间的不同效果及推荐选择</p></header><div class="content"><div class="card"><h2>情歌贝斯特点分析</h2><p>在<span class="highlight">69 BPM的情歌</span>中，贝斯通常扮演着支撑和声、营造氛围的角色，音符多以<span class="highlight">长音为主</span>，需要温暖、连贯的低频铺垫。</p><h3>情歌贝斯的关键要求：</h3><ul><li><span class="highlight">温暖感</span> - 提供情感基础</li><li><span class="highlight">连贯性</span> - 音符之间平滑过渡</li><li><span class="highlight">空间感</span> - 营造浪漫氛围</li><li><span class="highlight">不突兀</span> - 支持而非主导</li></ul><div class="param-display"><div class="param-box" id="param54"><div class="param-label">释放时间</div><div class="param-value">54ms</div><div class="param-label">较短释放</div></div><div class="param-box active" id="param108"><div class="param-label">释放时间</div><div class="param-value">108ms</div><div class="param-label">较长释放</div></div></div></div><div class="card recommendation"><h2>专业推荐</h2><p>对于<span class="highlight">69 BPM的情歌</span>，贝斯音符以长音为主的情况下，<span class="highlight">强烈推荐使用108ms的释放时间</span>。</p><h3>推荐理由：</h3><p>108ms释放时间能更好地配合情歌的<span class="highlight">情感表达</span>和<span class="highlight">节奏感</span>：</p><ul><li>与69 BPM的节奏周期更匹配</li><li>提供更自然的音符衰减，增强温暖感</li><li>使贝斯线条更连贯，支持情感表达</li><li>避免过于急促的衰减破坏浪漫氛围</li></ul><div class="comparison"><div class="comparison-item"><div class="comparison-title">54ms 释放时间</div><div class="comparison-desc">衰减较快，可能使贝斯听起来过于"急促"，破坏情歌的舒缓感</div><div class="effect-tags"><div class="tag">节奏感强</div><div class="tag">衰减快</div><div class="tag">可能突兀</div></div></div><div class="comparison-item active"><div class="comparison-title">108ms 释放时间</div><div class="comparison-desc">衰减更自然，与情歌的舒缓节奏完美契合，增强温暖感和空间感</div><div class="effect-tags"><div class="tag">温暖连贯</div><div class="tag">衰减自然</div><div class="tag">氛围感强</div></div></div></div></div><div class="card visualization"><h2>波形衰减可视化</h2><p>下方展示了不同释放时间对贝斯长音衰减的影响：</p><div class="canvas-container"><canvas id="waveformCanvas"></canvas></div><div class="controls"><button class="control-btn" id="btn54">54ms 释放时间</button><button class="control-btn active" id="btn108">108ms 释放时间</button></div><p id="waveDescription">108ms释放时间提供更平滑的衰减，适合情歌长音贝斯的温暖感和连贯性要求。</p></div><div class="card song-examples"><h2>情歌应用示例</h2><p>以下情歌风格更适合使用108ms释放时间的贝斯处理：</p><div class="example-list"><div class="example-item"><div class="example-title">抒情 ballad</div><div>需要温暖、持续的低频铺垫</div></div><div class="example-item"><div class="example-title">R&B 情歌</div><div>强调节奏感和氛围的平衡</div></div><div class="example-item"><div class="example-title">爵士标准曲</div><div>需要贝斯提供稳定的和声基础</div></div><div class="example-item"><div class="example-title">氛围音乐</div><div>空间感和连贯性至关重要</div></div></div><h3>何时考虑使用54ms？</h3><p>只有当情歌中有<span class="highlight">明显的节奏变化</span>或<span class="highlight">需要贝斯突出节奏感</span>的部分，才可考虑使用54ms释放时间。</p></div></div><footer><p>参考数据基于音频工程实践与情歌制作经验 | 实际应用中需根据具体歌曲和音色进行调整</p></footer></div><script> // 获取DOM元素 const btn54=document.getElementById('btn54'); const btn108=document.getElementById('btn108'); const param54=document.getElementById('param54'); const param108=document.getElementById('param108'); const waveDescription=document.getElementById('waveDescription'); const canvas=document.getElementById('waveformCanvas'); const ctx=canvas.getContext('2d'); // 设置Canvas尺寸 function resizeCanvas() { const container=canvas.parentElement; canvas.width=container.clientWidth; canvas.height=container.clientHeight; drawWaveform(108); // 默认绘制108ms } // 绘制贝斯波形 function drawWaveform(releaseTime) { const width=canvas.width; const height=canvas.height; // 清除画布 ctx.clearRect(0, 0, width, height); // 绘制网格 ctx.strokeStyle='rgba(255, 255, 255, 0.1)'; ctx.lineWidth=1; // 垂直网格线（时间） for (let i=0; i < width; i +=width / 8) { ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, height); ctx.stroke(); } // 水平网格线（振幅） for (let i=0; i < height; i +=height / 4) { ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(width, i); ctx.stroke(); } // 绘制时间轴标签 ctx.fillStyle='rgba(255, 255, 255, 0.7)'; ctx.font='12px Arial'; ctx.fillText('0ms', 10, height - 10); ctx.fillText('200ms', width * 0.25, height - 10); ctx.fillText('400ms', width * 0.5, height - 10); ctx.fillText('600ms', width * 0.75, height - 10); // 绘制振幅标签 ctx.fillText('振幅', 10, 15); // 绘制69 BPM节奏标记 const beatInterval=870; // 69 BPM下每拍的ms数 const beatsToShow=4; ctx.fillStyle='rgba(255, 255, 255, 0.3)'; ctx.font='10px Arial'; for (let i=1; i <=beatsToShow; i++) { const x=(i * beatInterval / (beatsToShow * beatInterval)) * width; ctx.beginPath(); ctx.moveTo(x, height - 20); ctx.lineTo(x, height); ctx.stroke(); ctx.fillText(`拍 ${i}`, x - 10, height - 5); } // 绘制波形 ctx.strokeStyle='#6ab7ff'; ctx.lineWidth=3; ctx.beginPath(); const centerY=height / 2; const attackTime=10; // 固定启动时间10ms const maxAmplitude=height * 0.35; // 计算总绘制时间（以ms为单位） const totalTime=beatsToShow * beatInterval; // 绘制4拍的波形 // 攻击阶段（0到10ms） for (let x=0; x < width * (attackTime / totalTime); x++) { const progress=x / (width * (attackTime / totalTime)); const y=centerY - maxAmplitude * progress; if (x===0) { ctx.moveTo(x, y); } else { ctx.lineTo(x, y); } } // 释放阶段（10ms到释放时间结束） const releaseStartX=width * (attackTime / totalTime); const releaseEndX=width * ((attackTime + releaseTime) / totalTime); for (let x=releaseStartX; x < releaseEndX && x < width; x++) { const progress=(x - releaseStartX) / (releaseEndX - releaseStartX); // 使用指数衰减模拟释放阶段 const decay=Math.exp(-progress * 3); const y=centerY - maxAmplitude * decay; ctx.lineTo(x, y); } // 如果释放阶段结束后还有空间，绘制平稳线 if (releaseEndX < width) { ctx.lineTo(releaseEndX, centerY); ctx.lineTo(width, centerY); } ctx.stroke(); // 标记关键点 ctx.fillStyle='#ff9800'; ctx.beginPath(); ctx.arc(releaseStartX, centerY - maxAmplitude, 5, 0, Math.PI * 2); ctx.fill(); ctx.fillStyle='#e91e63'; ctx.beginPath(); ctx.arc(releaseEndX, centerY, 5, 0, Math.PI * 2); ctx.fill(); // 添加标注 ctx.fillStyle='#ff9800'; ctx.fillText('启动结束', releaseStartX - 30, centerY - maxAmplitude - 10); ctx.fillStyle='#e91e63'; ctx.fillText('释放结束', releaseEndX - 30, centerY + 20); // 绘制节奏参考线 ctx.strokeStyle='rgba(255, 255, 255, 0.2)'; ctx.setLineDash([5, 5]); ctx.beginPath(); ctx.moveTo(releaseEndX, 0); ctx.lineTo(releaseEndX, height); ctx.stroke(); ctx.setLineDash([]); } // 更新界面状态 function updateUI(releaseTime) { // 更新按钮状态 if (releaseTime===54) { btn54.classList.add('active'); btn108.classList.remove('active'); param54.classList.add('active'); param108.classList.remove('active'); } else { btn54.classList.remove('active'); btn108.classList.add('active'); param54.classList.remove('active'); param108.classList.add('active'); } // 更新描述 if (releaseTime===54) { waveDescription.innerHTML="54ms释放时间使贝斯声音<span class='highlight'>衰减较快</span>，可能破坏情歌的舒缓感，仅适用于需要突出节奏感的段落。"; } else { waveDescription.innerHTML="108ms释放时间提供<span class='highlight'>更平滑的衰减</span>，与69 BPM情歌的节奏完美契合，增强温暖感和连贯性。"; } // 重绘波形 drawWaveform(releaseTime); } // 初始化 window.addEventListener('load', function() { resizeCanvas(); updateUI(108); // 添加窗口调整大小监听 window.addEventListener('resize', resizeCanvas); }); // 按钮事件监听 btn54.addEventListener('click', function() { updateUI(54); }); btn108.addEventListener('click', function() { updateUI(108); }); </script></body></html>
+
+<h2 id="分析与推荐"><a href="#分析与推荐" class="headerlink" title="分析与推荐"></a>分析与推荐</h2><p>对于69 BPM的情歌，贝斯音符以长音为主的情况，<strong>强烈推荐使用108ms的释放时间</strong>。</p>
+<h3 id="推荐理由："><a href="#推荐理由：" class="headerlink" title="推荐理由："></a>推荐理由：</h3><ol>
+<li><strong>节奏匹配</strong>：108ms与69 BPM的节奏周期更协调，提供更自然的音符衰减</li>
+<li><strong>情感表达</strong>：更长的释放时间增强温暖感和空间感，符合情歌的情感需求</li>
+<li><strong>连贯性</strong>：使贝斯线条更平滑，支持而非主导歌曲情感</li>
+<li><strong>氛围营造</strong>：避免急促衰减破坏情歌的浪漫氛围</li>
+</ol>
+<h3 id="54ms适用场景："><a href="#54ms适用场景：" class="headerlink" title="54ms适用场景："></a>54ms适用场景：</h3><p>只有当情歌中有明显节奏变化或需要贝斯突出节奏感的特殊段落时，才考虑使用54ms释放时间。</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音</tag>
       </tags>
   </entry>
 </search>

@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<meta name="referrer" content="never">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="混音," />
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#x524D;&amp;#x8A00;&amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x501F;&amp;#x52A9;&amp;#x4E00;&amp;#x4E9B;&amp;#x5DE5;&amp;#x5177;&amp;#x6765;&amp;#x5206;&amp;#x6790;&amp;#x4E0D;&amp;#x540C;&amp;#x542F;&amp;#x52A8;&amp;#x91CA;&amp;#x653E;&amp;#x65F6;&amp;#x95F4;&amp;#x5BF9;&amp;#x58F0;">
+<meta name="keywords" content="混音">
+<meta property="og:type" content="article">
+<meta property="og:title" content="压缩器不同的启动释放时间对声音波形的影响">
+<meta property="og:url" content="https://audio.newban.cn/201.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x501F;&amp;#x52A9;&amp;#x4E00;&amp;#x4E9B;&amp;#x5DE5;&amp;#x5177;&amp;#x6765;&amp;#x5206;&amp;#x6790;&amp;#x4E0D;&amp;#x540C;&amp;#x542F;&amp;#x52A8;&amp;#x91CA;&amp;#x653E;&amp;#x65F6;&amp;#x95F4;&amp;#x5BF9;&amp;#x58F0;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2025-10-11T01:22:13.369Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="压缩器不同的启动释放时间对声音波形的影响">
+<meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x501F;&amp;#x52A9;&amp;#x4E00;&amp;#x4E9B;&amp;#x5DE5;&amp;#x5177;&amp;#x6765;&amp;#x5206;&amp;#x6790;&amp;#x4E0D;&amp;#x540C;&amp;#x542F;&amp;#x52A8;&amp;#x91CA;&amp;#x653E;&amp;#x65F6;&amp;#x95F4;&amp;#x5BF9;&amp;#x58F0;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/201.html"/>
+
+
+
+
+
+  <title>压缩器不同的启动释放时间对声音波形的影响 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="https://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">压缩器不同的启动释放时间对声音波形的影响</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2025-10-10T09:31:28+08:00">
+                2025-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x6765;&#x5206;&#x6790;&#x4E0D;&#x540C;&#x542F;&#x52A8;&#x91CA;&#x653E;&#x65F6;&#x95F4;&#x5BF9;&#x58F0;&#x97F3;&#x7684;&#x5F71;&#x54CD;, &#x4EE5;&#x5E95;&#x9F13;&#x4E3A;&#x4F8B;, &#x4E00;&#x9996;69bpm&#x901F;&#x5EA6;&#x7684;&#x6B4C;&#x66F2;, &#x91CA;&#x653E;&#x65F6;&#x95F4;54ms&#x548C;108ms&#x542C;&#x611F;&#x4F1A;&#x6709;&#x660E;&#x663E;&#x4E0D;&#x540C;</p>
+<h2 id="&#x53EF;&#x89C6;&#x5316;&#x4EA4;&#x4E92;"><a href="#&#x53EF;&#x89C6;&#x5316;&#x4EA4;&#x4E92;" class="headerlink" title="&#x53EF;&#x89C6;&#x5316;&#x4EA4;&#x4E92;"></a>&#x53EF;&#x89C6;&#x5316;&#x4EA4;&#x4E92;</h2><p>&#x6211;&#x5236;&#x4F5C;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x89C6;&#x5316;&#x4EA4;&#x4E92;&#x9875;&#x9762;, &#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E00;&#x4E0B;:</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>&#x5E95;&#x9F13;&#x538B;&#x7F29;&#x53C2;&#x6570;&#x4EA4;&#x4E92;&#x6F14;&#x793A;</title><style>*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI','Microsoft YaHei',sans-serif}body{background:linear-gradient(135deg,#1a1f2b 0%,#0d1117 100%);color:#e0e0e0;line-height:1.6;padding:20px;min-height:100vh}.container{max-width:1200px;margin:0 auto;padding:20px}header{text-align:center;margin-bottom:30px;padding:30px;background:rgba(255,255,255,0.05);border-radius:15px;box-shadow:0 8px 16px rgba(0,0,0,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}h1{color:#6ab7ff;margin-bottom:10px;font-size:2.5rem;text-shadow:0 2px 4px rgba(0,0,0,0.3)}.subtitle{color:#a0b9d9;font-size:1.2rem;max-width:800px;margin:0 auto}.content{display:flex;flex-wrap:wrap;gap:25px;margin-bottom:40px}.card{background:rgba(255,255,255,0.05);border-radius:15px;padding:25px;box-shadow:0 8px 16px rgba(0,0,0,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);flex:1;min-width:300px;transition:transform 0.3s ease,box-shadow 0.3s ease}.card:hover{transform:translateY(-5px);box-shadow:0 12px 20px rgba(0,0,0,0.3)}h2{color:#6ab7ff;margin-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:10px;font-size:1.6rem}h3{color:#8ec5ff;margin:20px 0 10px;font-size:1.3rem}p{margin-bottom:15px;font-size:1.05rem;line-height:1.7}.highlight{color:#6ab7ff;font-weight:600}.param-display{display:flex;justify-content:space-around;margin:25px 0}.param-box{text-align:center;padding:20px;border-radius:10px;background:rgba(0,0,0,0.3);width:45%;transition:all 0.3s ease}.param-value{font-size:2.2rem;font-weight:bold;color:#6ab7ff;margin:10px 0;text-shadow:0 2px 4px rgba(0,0,0,0.3)}.param-label{font-size:1rem;color:#a0b9d9}.slider-container{margin:20px 0}.slider-label{display:flex;justify-content:space-between;margin-bottom:5px}input[type="range"]{width:100%;height:8px;-webkit-appearance:none;background:#37474f;border-radius:4px;outline:none}input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#6ab7ff;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.3)}.visualization{width:100%;margin-top:30px}.canvas-container{position:relative;width:100%;height:300px;margin:20px 0;background:rgba(0,0,0,0.2);border-radius:10px;overflow:hidden}canvas{display:block}.wave-info{display:flex;justify-content:space-around;margin-top:20px}.wave-characteristic{text-align:center;padding:15px;background:rgba(0,0,0,0.3);border-radius:8px;width:30%}.char-title{font-size:1.1rem;color:#8ec5ff;margin-bottom:5px}.char-value{font-size:1.3rem;font-weight:bold;color:#6ab7ff}.comparison{display:flex;justify-content:space-around;margin-top:25px;gap:20px}.comparison-item{text-align:center;width:48%;padding:20px;border-radius:10px;background:rgba(0,0,0,0.2);transition:all 0.3s ease}.comparison-title{font-size:1.4rem;font-weight:bold;margin-bottom:15px;color:#6ab7ff}.comparison-desc{font-size:1rem;color:#c5d4f0;line-height:1.6}.effect-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px;justify-content:center}.tag{padding:6px 12px;background:rgba(106,183,255,0.2);border-radius:20px;font-size:0.9rem;color:#a0d0ff}footer{text-align:center;margin-top:40px;color:#a0b9d9;font-size:0.95rem;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1)}@media (max-width:768px){.content{flex-direction:column}.param-display,.wave-info,.comparison{flex-direction:column;align-items:center;gap:15px}.param-box,.wave-characteristic,.comparison-item{width:100%}h1{font-size:2rem}}</style></head><body><div class="container"><header><h1>&#x5E95;&#x9F13;&#x538B;&#x7F29;&#x53C2;&#x6570;&#x4EA4;&#x4E92;&#x6F14;&#x793A;</h1><p class="subtitle">&#x63A2;&#x7D22;&#x4E0D;&#x540C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x548C;&#x91CA;&#x653E;&#x65F6;&#x95F4;&#x5BF9;&#x5E95;&#x9F13;&#x6CE2;&#x5F62;&#x7684;&#x5F71;&#x54CD;</p></header><div class="content"><div class="card"><h2>&#x5E95;&#x9F13;&#x538B;&#x7F29;&#x53C2;&#x6570;</h2><p>&#x6839;&#x636E;&#x60A8;&#x63D0;&#x4F9B;&#x7684;&#x8868;&#x683C;&#xFF0C;&#x5E95;&#x9F13;&#xFF08;&#x5927;&#x9F13;/&#x5802;&#x9F13;&#xFF09;&#x7684;&#x538B;&#x7F29;&#x53C2;&#x6570;&#x8303;&#x56F4;&#x4E3A;&#xFF1A;</p><div class="param-display"><div class="param-box"><div class="param-label">&#x542F;&#x52A8;&#x65F6;&#x95F4;</div><div class="param-value">1-20ms</div><div class="param-label">&#x63A8;&#x8350;&#x503C;: 5ms</div></div><div class="param-box"><div class="param-label">&#x91CA;&#x653E;&#x65F6;&#x95F4;</div><div class="param-value">100-600ms</div><div class="param-label">&#x63A8;&#x8350;&#x503C;: 300ms</div></div></div><h3>&#x6838;&#x5FC3;&#x76EE;&#x6807;</h3><p>&#x589E;&#x5F3A;&#x51FB;&#x6253;&#x77AC;&#x95F4;&#x7684;&#x51B2;&#x51FB;&#x529B;&#xFF0C;&#x63A7;&#x5236;&#x9F13;&#x8154;&#x7684;&#x957F;&#x9891;&#x5171;&#x9E23;</p><h3>&#x91CD;&#x8981;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3><p>&#x6839;&#x636E;&#x4E50;&#x66F2;&#x9700;&#x8981;&#xFF1A;&#x77ED;&#x542F;&#x52A8;+&#x77ED;&#x91CA;&#x653E;(80ms)&#x589E;&#x52A0;&#x529B;&#x5EA6;&#x611F;&#xFF1B;&#x957F;&#x91CA;&#x653E;&#x5339;&#x914D;&#x4F4E;&#x9891;&#x81EA;&#x7136;&#x8870;&#x51CF;</p></div><div class="card"><h2>&#x53C2;&#x6570;&#x8C03;&#x8282;</h2><p>&#x4F7F;&#x7528;&#x4E0B;&#x65B9;&#x7684;&#x6ED1;&#x5757;&#x8C03;&#x6574;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x548C;&#x91CA;&#x653E;&#x65F6;&#x95F4;&#xFF0C;&#x89C2;&#x5BDF;&#x5E95;&#x9F13;&#x6CE2;&#x5F62;&#x7684;&#x53D8;&#x5316;&#xFF1A;</p><div class="slider-container"><div class="slider-label"><span>&#x542F;&#x52A8;&#x65F6;&#x95F4;: </span><span id="attackValue">5ms</span></div><input type="range" id="attackSlider" min="1" max="20" value="5" step="1"></div><div class="slider-container"><div class="slider-label"><span>&#x91CA;&#x653E;&#x65F6;&#x95F4;: </span><span id="releaseValue">300ms</span></div><input type="range" id="releaseSlider" min="50" max="600" value="300" step="10"></div><div class="wave-info"><div class="wave-characteristic"><div class="char-title">&#x51B2;&#x51FB;&#x529B;</div><div class="char-value" id="impactValue">&#x4E2D;&#x7B49;</div></div><div class="wave-characteristic"><div class="char-title">&#x8870;&#x51CF;&#x901F;&#x5EA6;</div><div class="char-value" id="decayValue">&#x4E2D;&#x7B49;</div></div><div class="wave-characteristic"><div class="char-title">&#x5171;&#x9E23;&#x611F;</div><div class="char-value" id="resonanceValue">&#x4E2D;&#x7B49;</div></div></div></div><div class="card visualization"><h2>&#x6CE2;&#x5F62;&#x53EF;&#x89C6;&#x5316;</h2><p>&#x4E0B;&#x65B9;&#x5C55;&#x793A;&#x4E86;&#x5F53;&#x524D;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E0B;&#x7684;&#x5E95;&#x9F13;&#x6CE2;&#x5F62;&#xFF1A;</p><div class="canvas-container"><canvas id="waveformCanvas"></canvas></div><div class="comparison"><div class="comparison-item"><div class="comparison-title">&#x77ED;&#x542F;&#x52A8;&#x65F6;&#x95F4; (1-5ms)</div><div class="comparison-desc">&#x4FDD;&#x7559;&#x66F4;&#x591A;&#x539F;&#x59CB;&#x51B2;&#x51FB;&#x529B;&#xFF0C;&#x58F0;&#x97F3;&#x66F4;&#x786C;&#x6717;&#xFF0C;&#x9002;&#x5408;&#x8282;&#x594F;&#x611F;&#x5F3A;&#x7684;&#x97F3;&#x4E50;</div><div class="effect-tags"><div class="tag">&#x51B2;&#x51FB;&#x529B;&#x5F3A;</div><div class="tag">&#x77AC;&#x6001;&#x660E;&#x663E;</div><div class="tag">&#x786C;&#x6717;</div></div></div><div class="comparison-item"><div class="comparison-title">&#x957F;&#x542F;&#x52A8;&#x65F6;&#x95F4; (15-20ms)</div><div class="comparison-desc">&#x8BA9;&#x66F4;&#x591A;&#x77AC;&#x6001;&#x901A;&#x8FC7;&#xFF0C;&#x58F0;&#x97F3;&#x66F4;&#x81EA;&#x7136;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x635F;&#x5931;&#x90E8;&#x5206;&#x51B2;&#x51FB;&#x529B;</div><div class="effect-tags"><div class="tag">&#x81EA;&#x7136;&#x611F;</div><div class="tag">&#x77AC;&#x6001;&#x67D4;&#x548C;</div><div class="tag">&#x5E73;&#x6ED1;</div></div></div></div></div></div><footer><p>&#x53C2;&#x8003;&#x6570;&#x636E;&#x57FA;&#x4E8E;&#x60A8;&#x63D0;&#x4F9B;&#x7684;&#x4E50;&#x5668;&#x538B;&#x7F29;&#x53C2;&#x6570;&#x8868;&#x683C; | &#x4EA4;&#x4E92;&#x5F0F;&#x6F14;&#x793A;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#xFF0C;&#x5B9E;&#x9645;&#x6548;&#x679C;&#x9700;&#x901A;&#x8FC7;&#x542C;&#x89C9;&#x9A8C;&#x8BC1;</p></footer></div><script>const attackSlider=document.getElementById('attackSlider'),attackValue=document.getElementById('attackValue'),releaseSlider=document.getElementById('releaseSlider'),releaseValue=document.getElementById('releaseValue'),impactValue=document.getElementById('impactValue'),decayValue=document.getElementById('decayValue'),resonanceValue=document.getElementById('resonanceValue'),canvas=document.getElementById('waveformCanvas'),ctx=canvas.getContext('2d');function resizeCanvas(){const container=canvas.parentElement;canvas.width=container.clientWidth,canvas.height=container.clientHeight,drawWaveform(parseInt(attackSlider.value),parseInt(releaseSlider.value))}function drawWaveform(attackTime,releaseTime){const width=canvas.width,height=canvas.height;ctx.clearRect(0,0,width,height),ctx.strokeStyle='rgba(255, 255, 255, 0.1)',ctx.lineWidth=1;for(let i=0;i<width;i+=width/10)ctx.beginPath(),ctx.moveTo(i,0),ctx.lineTo(i,height),ctx.stroke();for(let i=0;i<height;i+=height/5)ctx.beginPath(),ctx.moveTo(0,i),ctx.lineTo(width,i),ctx.stroke();ctx.fillStyle='rgba(255, 255, 255, 0.7)',ctx.font='12px Arial',ctx.fillText('0ms',10,height-10),ctx.fillText('100ms',width*.25,height-10),ctx.fillText('200ms',width*.5,height-10),ctx.fillText('300ms',width*.75,height-10),ctx.fillText('振幅',10,15),ctx.strokeStyle='#6ab7ff',ctx.lineWidth=3,ctx.beginPath();const centerY=height/2,maxAmplitude=height*.4,totalTime=400;for(let x=0;x<width*(attackTime/totalTime);x++){const progress=x/(width*(attackTime/totalTime)),y=centerY-maxAmplitude*Math.pow(progress,.5);0===x?ctx.moveTo(x,y):ctx.lineTo(x,y)}const attackEndX=width*(attackTime/totalTime),releaseEndX=Math.min(width,width*((attackTime+releaseTime)/totalTime));for(let x=attackEndX;x<releaseEndX;x++){const progress=(x-attackEndX)/(releaseEndX-attackEndX),decay=Math.exp(-4*progress),y=centerY-maxAmplitude*decay;ctx.lineTo(x,y)}releaseEndX<width&&(ctx.lineTo(releaseEndX,centerY),ctx.lineTo(width,centerY)),ctx.stroke(),ctx.fillStyle='#ff9800',ctx.beginPath(),ctx.arc(attackEndX,centerY-maxAmplitude,5,0,2*Math.PI),ctx.fill(),ctx.fillStyle='#e91e63',ctx.beginPath(),ctx.arc(releaseEndX,centerY,5,0,2*Math.PI),ctx.fill(),ctx.fillStyle='#ff9800',ctx.fillText('启动结束',attackEndX-30,centerY-maxAmplitude-10),ctx.fillStyle='#e91e63',ctx.fillText('释放结束',releaseEndX-30,centerY+20)}function updateEffectDescription(attackTime,releaseTime){attackTime<=5?(impactValue.textContent="强",impactValue.style.color="#ff5252"):attackTime<=10?(impactValue.textContent="中等",impactValue.style.color="#ff9800"):(impactValue.textContent="柔和",impactValue.style.color="#4caf50"),releaseTime<=150?(decayValue.textContent="快",decayValue.style.color="#ff5252"):releaseTime<=350?(decayValue.textContent="中等",decayValue.style.color="#ff9800"):(decayValue.textContent="慢",decayValue.style.color="#4caf50"),releaseTime<=150?(resonanceValue.textContent="弱",resonanceValue.style.color="#ff5252"):releaseTime<=350?(resonanceValue.textContent="中等",resonanceValue.style.color="#ff9800"):(resonanceValue.textContent="强",resonanceValue.style.color="#4caf50")}window.addEventListener('load',(function(){resizeCanvas(),drawWaveform(parseInt(attackSlider.value),parseInt(releaseSlider.value)),updateEffectDescription(parseInt(attackSlider.value),parseInt(releaseSlider.value)),window.addEventListener('resize',resizeCanvas)})),attackSlider.addEventListener('input',(function(){const attackTime=parseInt(this.value);attackValue.textContent=`${attackTime}ms`,drawWaveform(attackTime,parseInt(releaseSlider.value)),updateEffectDescription(attackTime,parseInt(releaseSlider.value))})),releaseSlider.addEventListener('input',(function(){const releaseTime=parseInt(this.value);releaseValue.textContent=`${releaseTime}ms`,drawWaveform(parseInt(attackSlider.value),releaseTime),updateEffectDescription(parseInt(attackSlider.value),releaseTime)}));</script></body></html>
+
+
+
+
+
+
+
+
+
+
+<h2 id="&#x529F;&#x80FD;&#x8BF4;&#x660E;"><a href="#&#x529F;&#x80FD;&#x8BF4;&#x660E;" class="headerlink" title="&#x529F;&#x80FD;&#x8BF4;&#x660E;"></a>&#x529F;&#x80FD;&#x8BF4;&#x660E;</h2><p>&#x8FD9;&#x4E2A;&#x4EA4;&#x4E92;&#x5F0F;&#x6F14;&#x793A;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x53C2;&#x6570;&#x8C03;&#x8282;&#xFF1A;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x8C03;&#x6574;&#x542F;&#x52A8;&#x65F6;&#x95F4;(1-20ms)&#x548C;&#x91CA;&#x653E;&#x65F6;&#x95F4;(50-600ms)</li>
+<li>&#x6CE2;&#x5F62;&#x53EF;&#x89C6;&#x5316;&#xFF1A;&#x5B9E;&#x65F6;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E0B;&#x7684;&#x5E95;&#x9F13;&#x6CE2;&#x5F62;</li>
+<li>&#x6548;&#x679C;&#x5206;&#x6790;&#xFF1A;&#x76F4;&#x89C2;&#x5C55;&#x793A;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x5BF9;&#x51B2;&#x51FB;&#x529B;&#x3001;&#x8870;&#x51CF;&#x901F;&#x5EA6;&#x548C;&#x5171;&#x9E23;&#x611F;&#x7684;&#x5F71;&#x54CD;</li>
+<li>&#x53C2;&#x6570;&#x5BF9;&#x6BD4;&#xFF1A;&#x5BF9;&#x6BD4;&#x77ED;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x548C;&#x957F;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#x6548;&#x679C;</li>
+</ul>
+<h2 id="&#x4F7F;&#x7528;&#x5EFA;&#x8BAE;"><a href="#&#x4F7F;&#x7528;&#x5EFA;&#x8BAE;" class="headerlink" title="&#x4F7F;&#x7528;&#x5EFA;&#x8BAE;"></a>&#x4F7F;&#x7528;&#x5EFA;&#x8BAE;</h2><ul>
+<li>&#x77ED;&#x542F;&#x52A8;&#x65F6;&#x95F4;(1-5ms)&#xFF1A;&#x9002;&#x5408;&#x9700;&#x8981;&#x5F3A;&#x70C8;&#x51B2;&#x51FB;&#x529B;&#x7684;&#x97F3;&#x4E50;&#x98CE;&#x683C;&#xFF0C;&#x5982;EDM&#x3001;&#x6447;&#x6EDA;</li>
+<li>&#x4E2D;&#x7B49;&#x542F;&#x52A8;&#x65F6;&#x95F4;(5-10ms)&#xFF1A;&#x5E73;&#x8861;&#x51B2;&#x51FB;&#x529B;&#x548C;&#x81EA;&#x7136;&#x611F;&#xFF0C;&#x9002;&#x5408;&#x591A;&#x79CD;&#x97F3;&#x4E50;&#x98CE;&#x683C;</li>
+<li>&#x957F;&#x542F;&#x52A8;&#x65F6;&#x95F4;(10-20ms)&#xFF1A;&#x8BA9;&#x66F4;&#x591A;&#x77AC;&#x6001;&#x901A;&#x8FC7;&#xFF0C;&#x58F0;&#x97F3;&#x66F4;&#x81EA;&#x7136;&#xFF0C;&#x9002;&#x5408;&#x7235;&#x58EB;&#x3001;&#x6C1B;&#x56F4;&#x97F3;&#x4E50;</li>
+</ul>
+<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/混音/" rel="tag"># 混音</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="200.html" rel="next" title="原创歌曲《离家》上线啦">
+                <i class="fa fa-chevron-left"></i> 原创歌曲《离家》上线啦
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="202.html" rel="prev" title="情歌贝斯释放时间选择分析">
+                情歌贝斯释放时间选择分析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2626449904708114"
+     data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-2626449904708114"
+     data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="https://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">204</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可视化交互"><span class="nav-number">2.</span> <span class="nav-text">可视化交互</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number"></span> <span class="nav-text">底鼓压缩参数交互演示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">底鼓压缩参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text">核心目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">1.2.</span> <span class="nav-text">重要注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">参数调节</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">波形可视化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能说明"><span class="nav-number">4.</span> <span class="nav-text">功能说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用建议"><span class="nav-number">5.</span> <span class="nav-text">使用建议</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+  <script type="text/javascript" async src='js/src/mermaid.min.js'></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
