@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://audio.newban.cn/203.html</loc>
-    <lastmod>2025-10-11T01:50:03.486Z</lastmod>
+    <loc>https://audio.newban.cn/202.html</loc>
+    <lastmod>2025-10-11T01:28:23.736Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://audio.newban.cn/206.html</loc>
+    <lastmod>2025-10-29T13:31:51.247Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -13,14 +19,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://audio.newban.cn/204.html</loc>
-    <lastmod>2025-10-11T01:54:07.364Z</lastmod>
+    <loc>https://audio.newban.cn/208.html</loc>
+    <lastmod>2025-10-31T04:28:20.223Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://audio.newban.cn/202.html</loc>
-    <lastmod>2025-10-11T01:28:23.736Z</lastmod>
+    <loc>https://audio.newban.cn/207.html</loc>
+    <lastmod>2025-10-31T03:56:36.587Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://audio.newban.cn/205.html</loc>
+    <lastmod>2025-10-26T13:46:30.881Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://audio.newban.cn/203.html</loc>
+    <lastmod>2025-10-11T01:50:03.486Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://audio.newban.cn/204.html</loc>
+    <lastmod>2025-10-11T01:54:07.364Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

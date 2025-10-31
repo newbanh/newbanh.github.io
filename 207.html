@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="referrer" content="never">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="乐理,">
+
+
+
+
+
+  <link rel="alternate" href="atom.xml" title="有瓣音频 – 分享编曲混音技术" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="&amp;#x524D;&amp;#x8A00;&amp;#x5728;&amp;#x6211;&amp;#x4EEC;&amp;#x5BF9;&amp;#x4E8E;&amp;#x5173;&amp;#x7CFB;&amp;#x5927;&amp;#x5C0F;&amp;#x8C03;&amp;#x7684;&amp;#x719F;&amp;#x6089;&amp;#x7A0B;&amp;#x5EA6;&amp;#x8FD8;&amp;#x6CA1;&amp;#x8FBE;&amp;#x5230;&amp;#x8131;&amp;#x53E3;&amp;#x800C;&amp;#x51FA;">
+<meta name="keywords" content="乐理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关系大小调的快速推导">
+<meta property="og:url" content="https://audio.newban.cn/207.html">
+<meta property="og:site_name" content="有瓣音频 – 分享编曲混音技术">
+<meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x5728;&amp;#x6211;&amp;#x4EEC;&amp;#x5BF9;&amp;#x4E8E;&amp;#x5173;&amp;#x7CFB;&amp;#x5927;&amp;#x5C0F;&amp;#x8C03;&amp;#x7684;&amp;#x719F;&amp;#x6089;&amp;#x7A0B;&amp;#x5EA6;&amp;#x8FD8;&amp;#x6CA1;&amp;#x8FBE;&amp;#x5230;&amp;#x8131;&amp;#x53E3;&amp;#x800C;&amp;#x51FA;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2025-10-31T03:56:36.587Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关系大小调的快速推导">
+<meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x5728;&amp;#x6211;&amp;#x4EEC;&amp;#x5BF9;&amp;#x4E8E;&amp;#x5173;&amp;#x7CFB;&amp;#x5927;&amp;#x5C0F;&amp;#x8C03;&amp;#x7684;&amp;#x719F;&amp;#x6089;&amp;#x7A0B;&amp;#x5EA6;&amp;#x8FD8;&amp;#x6CA1;&amp;#x8FBE;&amp;#x5230;&amp;#x8131;&amp;#x53E3;&amp;#x800C;&amp;#x51FA;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<!--谷歌广告验证代码-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2626449904708114",
+          enable_page_level_ads: true
+     });
+</script>
+<!--谷歌广告验证代码-->
+
+
+
+  <link rel="canonical" href="https://audio.newban.cn/207.html">
+
+
+
+
+
+  <title>关系大小调的快速推导 | 有瓣音频 – 分享编曲混音技术</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">有瓣音频 – 分享编曲混音技术</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">有瓣音频 – 有伴你我</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="http://www.newban.cn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="https://audio.newban.cn/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">关系大小调的快速推导</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2025-10-31T10:31:28+08:00">
+                2025-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x5728;&#x6211;&#x4EEC;&#x5BF9;&#x4E8E;&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x7684;&#x719F;&#x6089;&#x7A0B;&#x5EA6;&#x8FD8;&#x6CA1;&#x8FBE;&#x5230;&#x8131;&#x53E3;&#x800C;&#x51FA;&#x7684;&#x5730;&#x6B65;&#x4E4B;&#x524D;, &#x63A8;&#x5BFC;&#x7684;&#x8FC7;&#x7A0B;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;, &#x8FD9;&#x7B97;&#x662F;&#x4E00;&#x4E2A;&#x8FC7;&#x6E21;&#x9636;&#x6BB5;</p>
+<p>&#x5F53;&#x7136;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x67E5;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x6765;&#x52A0;&#x6DF1;&#x5370;&#x8C61;, &#x67E5;&#x7684;&#x6B21;&#x6570;&#x591A;&#x4E86;, &#x81EA;&#x7136;&#x5C31;&#x8BB0;&#x4F4F;&#x4E86;</p>
+<p>&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5BF9;&#x7167;&#x8868;&#x683C;&#x5982;&#x4E0B;:</p>
+<table>
+<thead>
+<tr>
+<th align="left">&#x5927;&#x8C03; (Major Key)</th>
+<th align="left">&#x5173;&#x7CFB;&#x5C0F;&#x8C03; (Relative Minor Key)</th>
+<th align="left">&#x8C03;&#x53F7; (Key Signature)</th>
+<th align="left">&#x5B9E;&#x4F8B;&#x8BF4;&#x660E; (&#x81EA;&#x7136;&#x97F3;&#x9636;)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>C &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>a &#x5C0F;&#x8C03;</strong></td>
+<td align="left">&#x65E0;&#x5347;&#x964D;&#x53F7;</td>
+<td align="left"><strong>C</strong> D E F G A B <strong>C</strong> / <strong>A</strong> B C D E F G <strong>A</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>G &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>e &#x5C0F;&#x8C03;</strong></td>
+<td align="left">1&#x4E2A;&#x5347;&#x53F7; (#F)</td>
+<td align="left"><strong>G</strong> A B C D E F# <strong>G</strong> / <strong>E</strong> F# G A B C D <strong>E</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>D &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>b &#x5C0F;&#x8C03;</strong></td>
+<td align="left">2&#x4E2A;&#x5347;&#x53F7; (#F, #C)</td>
+<td align="left"><strong>D</strong> E F# G A B C# <strong>D</strong> / <strong>B</strong> C# D E F# G A <strong>B</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>A &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>#f &#x5C0F;&#x8C03;</strong></td>
+<td align="left">3&#x4E2A;&#x5347;&#x53F7; (#F, #C, #G)</td>
+<td align="left"><strong>A</strong> B C# D E F# G# <strong>A</strong> / <strong>F#</strong> G# A B C# D E <strong>F#</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>E &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>#c &#x5C0F;&#x8C03;</strong></td>
+<td align="left">4&#x4E2A;&#x5347;&#x53F7; (#F, #C, #G, #D)</td>
+<td align="left"><strong>E</strong> F# G# A B C# D# <strong>E</strong> / <strong>C#</strong> D# E F# G# A B <strong>C#</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>B &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>#g &#x5C0F;&#x8C03;</strong></td>
+<td align="left">5&#x4E2A;&#x5347;&#x53F7; (#F, #C, #G, #D, #A)</td>
+<td align="left"><strong>B</strong> C# D# E F# G# A# <strong>B</strong> / <strong>G#</strong> A# B C# D# E F# <strong>G#</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>#F &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>#d &#x5C0F;&#x8C03;</strong></td>
+<td align="left">6&#x4E2A;&#x5347;&#x53F7; (#F, #C, #G, #D, #A, #E)</td>
+<td align="left"><strong>F#</strong> G# A# B C# D# E# (F) <strong>F#</strong> / <strong>D#</strong> E# (F) F# G# A# B C# <strong>D#</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>F &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>d &#x5C0F;&#x8C03;</strong></td>
+<td align="left">1&#x4E2A;&#x964D;&#x53F7; (bB)</td>
+<td align="left"><strong>F</strong> G A Bb C D E <strong>F</strong> / <strong>D</strong> E F G A Bb C <strong>D</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bB &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>g &#x5C0F;&#x8C03;</strong></td>
+<td align="left">2&#x4E2A;&#x964D;&#x53F7; (bB, bE)</td>
+<td align="left"><strong>Bb</strong> C D Eb F G A <strong>Bb</strong> / <strong>G</strong> A Bb C D Eb F <strong>G</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bE &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>c &#x5C0F;&#x8C03;</strong></td>
+<td align="left">3&#x4E2A;&#x964D;&#x53F7; (bB, bE, bA)</td>
+<td align="left"><strong>Eb</strong> F G Ab Bb C D <strong>Eb</strong> / <strong>C</strong> D Eb F G Ab Bb <strong>C</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bA &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>f &#x5C0F;&#x8C03;</strong></td>
+<td align="left">4&#x4E2A;&#x964D;&#x53F7; (bB, bE, bA, bD)</td>
+<td align="left"><strong>Ab</strong> Bb C Db Eb F G <strong>Ab</strong> / <strong>F</strong> G Ab Bb C Db Eb <strong>F</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bD &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>bb &#x5C0F;&#x8C03;</strong></td>
+<td align="left">5&#x4E2A;&#x964D;&#x53F7; (bB, bE, bA, bD, bG)</td>
+<td align="left"><strong>Db</strong> Eb F Gb Ab Bb C <strong>Db</strong> / <strong>Bb</strong> C Db Eb F Gb Ab <strong>Bb</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bG &#x5927;&#x8C03;</strong></td>
+<td align="left"><strong>be &#x5C0F;&#x8C03;</strong></td>
+<td align="left">6&#x4E2A;&#x964D;&#x53F7; (bB, bE, bA, bD, bG, bC)</td>
+<td align="left"><strong>Gb</strong> Ab Bb Cb (B) Db Eb <strong>Gb</strong> / <strong>Eb</strong> F Gb Ab Bb Cb (B) Db <strong>Eb</strong></td>
+</tr>
+</tbody></table>
+<h2 id="&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5FEB;&#x901F;&#x63A8;&#x5BFC;"><a href="#&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5FEB;&#x901F;&#x63A8;&#x5BFC;" class="headerlink" title="&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5FEB;&#x901F;&#x63A8;&#x5BFC;"></a>&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5FEB;&#x901F;&#x63A8;&#x5BFC;</h2><p>&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x89C4;&#x5219;&#xFF1A;</p>
+<p><strong>&#x4ECE;&#x5927;&#x8C03;&#x7684;&#x4E3B;&#x97F3;&#x5411;&#x4E0B;&#x6570;&#x4E00;&#x4E2A;&#x5C0F;&#x4E09;&#x5EA6;&#xFF08;&#x5373;&#x4E09;&#x4E2A;&#x534A;&#x97F3;&#xFF09;&#xFF0C;&#x627E;&#x5230;&#x7684;&#x90A3;&#x4E2A;&#x97F3;&#xFF0C;&#x5C31;&#x662F;&#x5176;&#x5173;&#x7CFB;&#x5C0F;&#x8C03;&#x7684;&#x4E3B;&#x97F3;&#x3002;</strong></p>
+<ul>
+<li><strong>&#x4F8B;&#x5B50;1&#xFF1A;C&#x5927;&#x8C03;&#x7684;&#x5173;&#x7CFB;&#x5C0F;&#x8C03;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong>&#x2219;&#x4ECE;C&#x97F3;&#x5411;&#x4E0B;&#x6570;&#xFF1A;C -&gt; B -&gt; Bb -&gt; <strong>A</strong>&#x3002;&#x6240;&#x4EE5;&#xFF0C;a&#x5C0F;&#x8C03;&#x662F;C&#x5927;&#x8C03;&#x7684;&#x5173;&#x7CFB;&#x5C0F;&#x8C03;&#x3002;</li>
+<li><strong>&#x4F8B;&#x5B50;2&#xFF1A;G&#x5927;&#x8C03;&#x7684;&#x5173;&#x7CFB;&#x5C0F;&#x8C03;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong>&#x2219;&#x4ECE;G&#x97F3;&#x5411;&#x4E0B;&#x6570;&#xFF1A;G -&gt; F# -&gt; F -&gt; <strong>E</strong>&#x3002;&#x6240;&#x4EE5;&#xFF0C;e&#x5C0F;&#x8C03;&#x662F;G&#x5927;&#x8C03;&#x7684;&#x5173;&#x7CFB;&#x5C0F;&#x8C03;&#x3002;</li>
+</ul>
+<p>&#x53CD;&#x8FC7;&#x6765;&#xFF0C;<strong>&#x4ECE;&#x5C0F;&#x8C03;&#x627E;&#x5173;&#x7CFB;&#x5927;&#x8C03;</strong>&#xFF0C;&#x53EA;&#x9700;&#x5411;&#x4E0A;&#x6570;&#x5C0F;&#x4E09;&#x5EA6;&#x5373;&#x53EF;&#x3002;</p>
+<ul>
+<li><strong>&#x4F8B;&#x5B50;&#xFF1A;d&#x5C0F;&#x8C03;&#x7684;&#x5173;&#x7CFB;&#x5927;&#x8C03;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong>&#x2219;&#x4ECE;D&#x97F3;&#x5411;&#x4E0A;&#x6570;&#xFF1A;D -&gt; Eb -&gt; E -&gt; <strong>F</strong>&#x3002;&#x6240;&#x4EE5;&#xFF0C;F&#x5927;&#x8C03;&#x662F;d&#x5C0F;&#x8C03;&#x7684;&#x5173;&#x7CFB;&#x5927;&#x8C03;&#x3002;</li>
+</ul>
+<h2 id="&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5728;&#x521B;&#x4F5C;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF08;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF01;&#xFF09;"><a href="#&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5728;&#x521B;&#x4F5C;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF08;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF01;&#xFF09;" class="headerlink" title="&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5728;&#x521B;&#x4F5C;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF08;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF01;&#xFF09;"></a>&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x5728;&#x521B;&#x4F5C;&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF08;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF01;&#xFF09;</h2><p>&#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x4E4B;&#x6240;&#x4EE5;&#x5B9E;&#x7528;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;<strong>&#x5728;&#x4E0D;&#x53D8;&#x66F4;&#x8C03;&#x53F7;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x81EA;&#x7531;&#x5207;&#x6362;&#x6B4C;&#x66F2;&#x60C5;&#x7EEA;</strong>&#x7684;&#x53EF;&#x80FD;</p>
+<ol>
+<li><strong>&#x540C;&#x66F2;&#x5185;&#x7684;&#x8C03;&#x5F0F;&#x8F6C;&#x6362;</strong>&#xFF1A;&#x5728;&#x4E00;&#x9996;&#x4EE5;C&#x5927;&#x8C03;&#x4E3A;&#x4E3B;&#x7684;&#x660E;&#x4EAE;&#x3001;&#x6B22;&#x5FEB;&#x7684;&#x6B4C;&#x66F2;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7A81;&#x7136;&#x8FC7;&#x6E21;&#x5230;A&#x5C0F;&#x8C03;&#x7684;&#x6BB5;&#x843D;&#xFF0C;&#x7ACB;&#x523B;&#x4E3A;&#x97F3;&#x4E50;&#x5E26;&#x6765;&#x4E00;&#x4E1D;&#x5FE7;&#x90C1;&#x3001;&#x6DF1;&#x6C89;&#x6216;&#x5185;&#x7701;&#x7684;&#x60C5;&#x611F;&#x8272;&#x5F69;&#x3002;&#x56E0;&#x4E3A;&#x97F3;&#x9636;&#x76F8;&#x540C;&#xFF0C;&#x8FD9;&#x79CD;&#x8F6C;&#x6362;&#x4F1A;&#x975E;&#x5E38;&#x81EA;&#x7136;&#x6D41;&#x7545;&#x3002;</li>
+<li><strong>&#x7F16;&#x66F2;&#x7684;&#x4E30;&#x5BCC;&#x6027;</strong>&#xFF1A;&#x5F53;&#x4F60;&#x7684;&#x4E3B;&#x65CB;&#x5F8B;&#xFF08;&#x5982;&#x4EBA;&#x58F0;&#xFF09;&#x5728;C&#x5927;&#x8C03;&#x4E0A;&#x65F6;&#xFF0C;&#x4F60;&#x7684;&#x5F26;&#x4E50;&#x6216;&#x5408;&#x6210;&#x5668;<code>pad</code>&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x5728;A&#x5C0F;&#x8C03;&#x7684;&#x548C;&#x58F0;&#x4E0A;&#x8FDB;&#x884C;&#x63A2;&#x7D22;&#xFF0C;&#x521B;&#x9020;&#x51FA;&#x66F4;&#x590D;&#x6742;&#x3001;&#x66F4;&#x6709;&#x6DF1;&#x5EA6;&#x7684;&#x548C;&#x58F0;&#x73AF;&#x5883;&#x3002;&#x8FD9;&#x662F;&#x201D;&#x590D;&#x8C03;&#x201D;&#x548C;&#x201D;&#x548C;&#x58F0;&#x586B;&#x5145;&#x201D;&#x7684;&#x9AD8;&#x7EA7;&#x6280;&#x5DE7;&#x3002;</li>
+<li><strong>&#x5373;&#x5174;&#x6F14;&#x594F;</strong>&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x9996;&#x6B4C;&#x662F;C&#x5927;&#x8C03;&#xFF0C;&#x4F60;&#x65E2;&#x53EF;&#x4EE5;&#x7528;C&#x5927;&#x8C03;&#x97F3;&#x9636;&#x5373;&#x5174;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5173;&#x7CFB;&#x5C0F;&#x8C03;A&#x5C0F;&#x8C03;&#x97F3;&#x9636;&#xFF08;&#x56E0;&#x4E3A;&#x97F3;&#x7B26;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF09;&#xFF0C;&#x8FD9;&#x4F1A;&#x5E26;&#x6765;&#x4E0D;&#x540C;&#x7684;&#x5473;&#x9053;&#x3002;</li>
+</ol>
+<p><strong>&#x6CE8;&#x610F;&#x533A;&#x5206;</strong>&#xFF1A; &#x5173;&#x7CFB;&#x5927;&#x5C0F;&#x8C03;&#x4E0D;&#x540C;&#x4E8E;&#x5E73;&#x884C;&#x5927;&#x5C0F;&#x8C03;&#x3002;&#x5E73;&#x884C;&#x5927;&#x5C0F;&#x8C03;&#x662F;&#x4E3B;&#x97F3;&#x76F8;&#x540C;&#x3001;&#x8C03;&#x53F7;&#x4E0D;&#x540C;&#x7684;&#x5927;&#x5C0F;&#x8C03;&#xFF08;&#x5982;C&#x5927;&#x8C03;&#x548C;C&#x5C0F;&#x8C03;&#xFF09;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h2><p>&#x5B66;&#x4E60;&#x7684;&#x6838;&#x5FC3;&#x624B;&#x6BB5;&#x5728;&#x4E8E;&#x5BF9;&#x77E5;&#x8BC6;&#x7684;&#x8BB0;&#x5FC6;, &#x8FD9;&#x4E5F;&#x662F;&#x96BE;&#x70B9;&#x4E4B;&#x4E00;, &#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x63A8;&#x5BFC;&#x7684;&#x76EE;&#x7684;&#x5728;&#x4E8E;&#x8F85;&#x52A9;&#x8BB0;&#x5FC6;, &#x5176;&#x6700;&#x7EC8;&#x76EE;&#x6807;&#x662F;&#x5B9E;&#x73B0;&#x4E0D;&#x5047;&#x601D;&#x7D22;, &#x8131;&#x53E3;&#x800C;&#x51FA;</p>
+<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="tags/乐理/" rel="tag"># 乐理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="206.html" rel="next" title="解决Reaper宿主从外部导入MIDI文件没有声音的问题">
+                <i class="fa fa-chevron-left"></i> 解决Reaper宿主从外部导入MIDI文件没有声音的问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="208.html" rel="prev" title="Reaper中创建歌词轨道的几种方式">
+                Reaper中创建歌词轨道的几种方式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <!-- 有瓣音频文章内嵌广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6145016388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+  <!-- 有瓣音频信息流广告 -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w" data-ad-client="ca-pub-2626449904708114" data-ad-slot="6455528644"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">有瓣音频</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="https://audio.newban.cn/archives/">
+              
+                  <span class="site-state-item-count">208</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系大小调快速推导"><span class="nav-number">2.</span> <span class="nav-text">关系大小调快速推导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系大小调在创作中的应用（非常重要！）"><span class="nav-number">3.</span> <span class="nav-text">关系大小调在创作中的应用（非常重要！）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">有瓣音频</span>
+  <div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+  <script type="text/javascript" async src="js/src/mermaid.min.js"></script>
+  <script>
+  if (window.mermaid) {
+        var mermaid_config = {
+            startOnLoad: true,
+            theme: 'default',
+            flowchart:{
+                useMaxWidth: false,
+                htmlLabels: true
+            }                
+        }
+        mermaid.initialize(mermaid_config);
+  }
+  </script>
+  
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
