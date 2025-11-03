@@ -273,6 +273,450 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../14.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../14.html" itemprop="url">经典压缩器 1176：硬件和插件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-12T10:12:59+08:00">
+                2019-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&#x5BF9;&#x4E8E;&#x5236;&#x4F5C;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x538B;&#x7F29;&#x5668;&#x53EF;&#x8C13;&#x662F;&#x4E00;&#x65E5;&#x4E09;&#x9910;&#x4E00;&#x6837;&#x7684;&#x5B58;&#x5728;&#x3002;&#x5B83;&#x4EEC;&#x79CD;&#x7C7B;&#x7E41;&#x591A;&#xFF0C;&#x6548;&#x679C;&#x5353;&#x8D8A;&#x8005;&#x4EA6;&#x662F;&#x6570;&#x4E0D;&#x80DC;&#x6570;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x5236;&#x4F5C;&#x4EBA;&#x4E5F;&#x90FD;&#x6709;&#x7740;&#x4E0D;&#x540C;&#x7684;&#x504F;&#x597D;&#x3002;&#x4F46;&#x6709;&#x4E00;&#x6B3E;&#x538B;&#x7F29;&#x5668;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;&#x5236;&#x4F5C;&#x4EBA;&#x90FD;&#x503C;&#x5F97;&#x4E86;&#x89E3;&#x7684;&#xFF0C;&#x5B83;&#x5C31;&#x662F; Universal Audio &#x516C;&#x53F8;&#x7ECF;&#x4E45;&#x4E0D;&#x8870;&#x7684; 1176 &#x538B;&#x7F29;&#x5668;&#x3002;</p>
+<h4 id="1176&#xFF0C;&#x4E00;&#x6BB5;&#x5386;&#x53F2;"><a href="#1176&#xFF0C;&#x4E00;&#x6BB5;&#x5386;&#x53F2;" class="headerlink" title="1176&#xFF0C;&#x4E00;&#x6BB5;&#x5386;&#x53F2;"></a>1176&#xFF0C;&#x4E00;&#x6BB5;&#x5386;&#x53F2;</h4><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/1176.jpg" alt></p>
+<p>1966 &#x5E74;&#xFF0C;Universal Audio &#x521B;&#x59CB;&#x4EBA; Bill Putnam &#x4F7F;&#x7528; FET &#x53D6;&#x4EE3;&#x4E86;&#x771F;&#x7A7A;&#x7BA1;&#xFF0C;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1;&#x4E86;&#x90A3;&#x6B3E;&#x6210;&#x529F;&#x7684; 175/176 &#x9650;&#x5E45;&#x5668;&#x3002;&#x4E8E;&#x662F;&#xFF0C;&#x5C31;&#x8FD9;&#x6837;&#x8BDE;&#x751F;&#x4E86; 1176 &#x5CF0;&#x503C;&#x9650;&#x5236;&#x5668;&#xFF0C;&#x5B83;&#x5982;&#x6B64;&#x4E4B;&#x7ECF;&#x5178;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x5982;&#x4ECA;&#x4E16;&#x754C;&#x4E0A;&#x6BCF;&#x4E00;&#x4E2A;&#x4E13;&#x4E1A;&#x5DE5;&#x4F5C;&#x5BA4;&#x91CC;&#x90FD;&#x80FD;&#x770B;&#x5230;&#x5B83;&#x7684;&#x8EAB;&#x5F71;&#x3002;</p>
+<p>&#x8FD9;&#x6B3E;&#x538B;&#x7F29;&#x5668;&#x6700;&#x5927;&#x7684;&#x5356;&#x70B9;&#x5C31;&#x5728;&#x4E8E;&#x6781;&#x7AEF;&#x5FEB;&#x901F;&#x7684;&#x8D77;&#x97F3;&#x65F6;&#x95F4;&#xFF08;attack&#xFF09;&#xFF0C;&#x4EC5;&#x6709; 20 &#x5FAE;&#x79D2;&#x3002;&#x5B83;&#x6CA1;&#x6709;&#x9608;&#x503C;&#x63A7;&#x5236;&#xFF08;threshold&#xFF09;&#xFF0C;&#x53EA;&#x6709;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x65CB;&#x94AE;&#xFF0C;&#x538B;&#x7F29;&#x91CF;&#x76F4;&#x63A5;&#x7531;&#x8F93;&#x5165;&#x7535;&#x5E73;&#x6765;&#x63A7;&#x5236;&#x3002;</p>
+<p>1176 &#x7684;&#x58F0;&#x97F3;&#x7279;&#x70B9;&#x5BF9;&#x4E8E;&#x97F3;&#x4E50;&#x548C;&#x4EBA;&#x58F0;&#x800C;&#x8A00;&#x518D;&#x5408;&#x9002;&#x4E0D;&#x8FC7;&#x4E86;&#xFF0C;&#x5B83;&#x4F1A;&#x8BA9;&#x4E2D;&#x4F4E;&#x9891;&#x66F4;&#x5177;&#x6709;&#x80FD;&#x91CF;&#xFF0C;&#x8BA9;&#x58F0;&#x97F3;&#x66F4;&#x52A0;&#x9971;&#x6EE1;&#x5BC6;&#x81F4;&#x3002;&#x9664;&#x4E86;&#x4EBA;&#x58F0;&#xFF0C;1176 &#x5BF9;&#x4E8E;&#x5E95;&#x9F13;&#x3001;&#x519B;&#x9F13;&#x3001;&#x51FB;&#x638C;&#x58F0;&#xFF0C;&#x751A;&#x81F3;&#x6574;&#x5957;&#x9F13;&#x7EC4;&#x90FD;&#x80FD;&#x4EA7;&#x751F;&#x65E0;&#x53EF;&#x6BD4;&#x62DF;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<p>&#x4E0E;&#x5176;&#x4ED6;&#x538B;&#x7F29;&#x5668;&#x4E0D;&#x540C;&#xFF0C;1176 &#x53EA;&#x63D0;&#x4F9B;&#x4E86;&#x56DB;&#x4E2A;&#x56FA;&#x5B9A;&#x538B;&#x7F29;&#x6BD4;&#x6309;&#x94AE;&#xFF08;Ratio&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x4E0B;&#x4EFB;&#x610F;&#x7EC4;&#x5408;&#xFF0C;&#x6216;&#x8005;&#x50CF;&#x90A3;&#x4E9B;&#x559C;&#x7231;&#x63A2;&#x7D22;&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#xFF0C;&#x6309;&#x4E0B;&#x5168;&#x90E8;&#x6309;&#x94AE;&#x3002;&#x8FD9;&#x79CD;&#x7528;&#x6CD5;&#x662F; Putnam &#x4E5F;&#x672A;&#x66FE;&#x6599;&#x60F3;&#x7684;&#xFF0C;&#x8FD9;&#x4F1A;&#x8BA9; 1176 &#x5236;&#x9020;&#x51FA;&#x4E00;&#x79CD;&#x6781;&#x5176;&#x522B;&#x81F4;&#x7684;&#x6548;&#x679C;&#x3002;&#x8FD9;&#x79CD;&#x6781;&#x9AD8;&#x7684;&#x538B;&#x7F29;&#x6BD4;&#x6709;&#x65F6;&#x88AB;&#x79F0;&#x4E3A;&#x300C;Brit&#x300D;&#xFF0C;&#x7528;&#x5728;&#x9F13;&#x6216;&#x5F3A;&#x70C8;&#x7684;&#x8D1D;&#x53F8;&#x58F0;&#x97F3;&#x4E0A;&#x4F1A;&#x5177;&#x6709;&#x9707;&#x64BC;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<p>&#x5728; 1176 &#x7684;&#x4EA7;&#x54C1;&#x5386;&#x53F2;&#x4E2D;&#xFF0C;&#x5728;&#x6700;&#x521D;&#x7684;&#x84DD;&#x5E26;&#x7248;&#x4E4B;&#x540E;&#x53C8;&#x884D;&#x751F;&#x51FA;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x7248;&#x672C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x8003;&#x8651;&#x4E70;&#x4E00;&#x53F0;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x533A;&#x522B;&#x4E0D;&#x540C;&#x7684;&#x7248;&#x672C;&#xFF08;&#x6587;&#x7AE0;&#x7A0D;&#x5019;&#x66F4;&#x65B0;&#xFF09;&#x3002;&#x6700;&#x65B0;&#x6B3E;&#x662F;&#x9ED1;&#x8272;&#x9762;&#x677F;&#xFF0C;&#x7531;&#x521D;&#x59CB;&#x7248;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1;&#x800C;&#x6765;&#x3002;</p>
+<h4 id="&#x4F7F;&#x7528;-1176-&#x538B;&#x7F29;&#x5668;"><a href="#&#x4F7F;&#x7528;-1176-&#x538B;&#x7F29;&#x5668;" class="headerlink" title="&#x4F7F;&#x7528; 1176 &#x538B;&#x7F29;&#x5668;"></a>&#x4F7F;&#x7528; 1176 &#x538B;&#x7F29;&#x5668;</h4><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/feature.jpg" alt></p>
+<h5 id="&#x65CB;&#x94AE;"><a href="#&#x65CB;&#x94AE;" class="headerlink" title="&#x65CB;&#x94AE;"></a>&#x65CB;&#x94AE;</h5><p>1176 &#x7684;&#x9762;&#x677F;&#x4E0A;&#x6709;&#x4E24;&#x4E2A;&#x663E;&#x773C;&#x7684;&#x65CB;&#x94AE;&#xFF0C;Input&#xFF08;&#x8F93;&#x5165;&#xFF09;&#x548C; Output&#xFF08;&#x8F93;&#x51FA;&#xFF09;&#x3002;&#x6B63;&#x5982;&#x524D;&#x9762;&#x6240;&#x8BB2;&#xFF0C;1176 &#x6CA1;&#x6709;&#x5355;&#x72EC;&#x7684; Threshold&#xFF08;&#x9608;&#x503C;&#xFF09;&#x63A7;&#x5236;&#xFF0C;&#x8F93;&#x5165;&#x65CB;&#x94AE;&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x9608;&#x503C;&#x65CB;&#x94AE;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8FDB;&#x5165; 1176 &#x7684;&#x4FE1;&#x53F7;&#x91CF;&#x8D8A;&#x5927;&#xFF0C;&#x9608;&#x503C;&#x4E5F;&#x5C31;&#x8D8A;&#x5C0F;&#x3002;</p>
+<p>&#x8F93;&#x51FA;&#x65CB;&#x94AE;&#x63A7;&#x5236; 1176 &#x7684;&#x603B;&#x4F53;&#x8F93;&#x51FA;&#x7535;&#x5E73;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x5176;&#x4ED6;&#x538B;&#x7F29;&#x5668;&#x4E2D;&#x7684;&#x300C;Makeup&#x300D;&#x7535;&#x5E73;&#x589E;&#x76CA;&#x53C2;&#x6570;&#x3002;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x538B;&#x7F29;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5148;&#x8C03;&#x6574;&#x8F93;&#x51FA;&#x91CF;&#xFF0C;&#x76F4;&#x5230;&#x538B;&#x7F29;&#x540E;&#x7535;&#x5E73;&#x4E0E;&#x672A;&#x538B;&#x7F29;&#x7535;&#x5E73;&#x4E00;&#x81F4;&#x3002;&#x53CD;&#x590D;&#x5207;&#x6362; Bypass&#xFF08;&#x76F4;&#x901A;&#xFF09;&#x5F00;&#x5173;&#x5C31;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x5BF9;&#x6BD4;&#x51FA;&#x6765;&#x3002;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x538B;&#x7F29;&#x6548;&#x679C;&#x521A;&#x597D;&#x80FD;&#x88AB;&#x542C;&#x89C1;&#xFF0C;&#x53C8;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x97F3;&#x91CF;&#x3002;</p>
+<p>Attack &#x63A7;&#x5236; 1176 &#x7684;&#x538B;&#x7F29;&#x9700;&#x8981;&#x591A;&#x957F;&#x65F6;&#x95F4;&#x624D;&#x5BF9;&#x8F93;&#x5165;&#x4FE1;&#x53F7;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x6700;&#x5FEB; 20 &#x5FAE;&#x79D2;&#xFF0C;&#x6700;&#x6162; 800 &#x5FAE;&#x79D2;&#x3002;&#x5728; 1176AE &#x7248;&#x4E2D;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x8D85;&#x7EA7;&#x300C;&#x6162;&#x300D;&#x7684;&#x9009;&#x9879;&#xFF0C;10 &#x6BEB;&#x79D2;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x7559;&#x66F4;&#x591A;&#x77AC;&#x6001;&#x4FE1;&#x53F7;&#xFF0C;&#x4F7F;&#x5F97;&#x97F3;&#x8272;&#x7684;&#x51B2;&#x51FB;&#x529B;&#x66F4;&#x5F3A;&#x3002;</p>
+<p>Release &#x5219;&#x63A7;&#x5236; 1176 &#x5C06;&#x7535;&#x5E73;&#x6062;&#x590D;&#x5230;&#x539F;&#x59CB;&#x503C;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x53EF;&#x4EE5;&#x4ECE; 50 &#x5FAE;&#x79D2;&#x8D77;&#xFF0C;&#x5230;&#x6700;&#x6162;&#x7684; 1.1 &#x79D2;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;1176 &#x7684; Attack &#x548C; Release <strong>&#x8C03;&#x8282;&#x65B9;&#x5411;&#x548C;&#x591A;&#x6570;&#x538B;&#x7F29;&#x5668;&#x662F;&#x76F8;&#x53CD;&#x7684;</strong>&#xFF0C;&#x8C03;&#x8282;&#x5230;&#x66F4;&#x5927;&#x503C;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A; Attack &#x548C; Release &#x65F6;&#x95F4;&#x4F1A;&#x66F4;&#x77ED;&#x3002;</p>
+<h5 id="&#x6309;&#x94AE;"><a href="#&#x6309;&#x94AE;" class="headerlink" title="&#x6309;&#x94AE;"></a>&#x6309;&#x94AE;</h5><p>&#x5728;&#x7535;&#x5E73;&#x8868;&#x4E24;&#x904D;&#x5206;&#x5E03;&#x7740; 8 &#x4E2A;&#x6309;&#x94AE;&#x3002;&#x5DE6;&#x8FB9;&#x7684;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x538B;&#x7F29;&#x6BD4;&#xFF0C;&#x4F4E;&#x6BD4;&#x7387;&#x7528;&#x6765;&#x538B;&#x7F29;&#xFF08;4:1&#xFF0C;8:1&#xFF09;&#xFF0C;&#x9AD8;&#x6BD4;&#x7387;&#x7528;&#x6765;&#x9650;&#x5236;&#xFF08;12:1&#xFF0C; 20:1&#xFF09;&#x3002;&#x800C; 1176AE &#x4E2D;&#xFF0C;&#x8FD8;&#x4E13;&#x95E8;&#x6709;&#x4E00;&#x4E2A; 2:1 &#x7684;&#x6781;&#x4F4E;&#x6BD4;&#x7387;&#xFF0C;&#x8FD9;&#x662F;&#x6700;&#x5E73;&#x6ED1;&#x3001;knee &#x503C;&#x6700;&#x8F6F;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x975E;&#x5E38;&#x9002;&#x5408;&#x5904;&#x7406;&#x4EBA;&#x58F0;&#x3002;</p>
+<p>&#x53F3;&#x8FB9;&#x7684;&#x6309;&#x94AE;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x7535;&#x5E73;&#x76D1;&#x89C6;&#x65B9;&#x5F0F;&#x3002;GR &#x8868;&#x793A;&#x300C;Gain Reduction&#xFF08;&#x589E;&#x76CA;&#x8870;&#x51CF;&#xFF09;&#x300D;&#xFF0C;&#x5B83;&#x4F1A;&#x663E;&#x793A;&#x51FA; 1176&#x300C;&#x538B;&#x300D;&#x6389;&#x4E86;&#x591A;&#x5C11;&#x4FE1;&#x53F7;&#x3002;&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A; +8 &#x6216; +4 &#x65F6;&#xFF0C;&#x7535;&#x5E73;&#x8868;&#x5C06;&#x6307;&#x793A;&#x8F93;&#x51FA;&#x4FE1;&#x53F7;&#x91CF;&#x3002;&#x4F8B;&#x5982; +4 &#x65F6;&#xFF0C;&#x7535;&#x5E73;&#x8868;&#x4E0A;&#x7684; 0 &#x503C;&#x70B9;&#x4EE3;&#x8868;&#x8F93;&#x51FA;&#x7535;&#x5E73;&#x4E3A; +4dB&#x3002;&#x6309;&#x4E0B; Off &#x540E;&#xFF0C;1176 &#x5C06;&#x505C;&#x6B62;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h5 id="&#x5168;&#x6309;&#x94AE;&#x6A21;&#x5F0F;&#xFF1A;&#x300C;British-&#x6A21;&#x5F0F;&#x300D;"><a href="#&#x5168;&#x6309;&#x94AE;&#x6A21;&#x5F0F;&#xFF1A;&#x300C;British-&#x6A21;&#x5F0F;&#x300D;" class="headerlink" title="&#x5168;&#x6309;&#x94AE;&#x6A21;&#x5F0F;&#xFF1A;&#x300C;British &#x6A21;&#x5F0F;&#x300D;"></a>&#x5168;&#x6309;&#x94AE;&#x6A21;&#x5F0F;&#xFF1A;&#x300C;British &#x6A21;&#x5F0F;&#x300D;</h5><p>&#x5DE5;&#x7A0B;&#x5E08;&#x7ECF;&#x5E38;&#x559C;&#x6B22;&#x5728;&#x9F13;&#x7EC4;&#x6216;&#x73AF;&#x5883;&#x97F3;&#x8F68;&#x4E0A;&#x4F7F;&#x7528;&#x300C;&#x5168;&#x6309;&#x94AE;&#x300D;&#x6A21;&#x5F0F;&#xFF0C;&#x4E5F;&#x662F;&#x5E38;&#x8BF4;&#x7684;&#x300C;British&#x300D;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x6837;&#x8FD8;&#x4F1A;&#x8BA9;&#x8D1D;&#x53F8;&#x58F0;&#x66F4;&#x300C;&#x810F;&#x300D;&#xFF0C;&#x6216;&#x8005;&#x5C06;&#x4EBA;&#x58F0;&#x76F4;&#x63A5;&#x300C;&#x6253;&#x300D;&#x5230;&#x4F60;&#x7684;&#x8138;&#x4E0A;&#x3002;&#x6309;&#x4E0B;&#x56DB;&#x4E2A;&#x538B;&#x7F29;&#x6BD4;&#x7387;&#x6309;&#x94AE;&#x540E;&#xFF0C;&#x538B;&#x7F29;&#x7684;&#x5931;&#x771F;&#x91CF;&#x5C31;&#x4F1A;&#x5927;&#x5E45;&#x589E;&#x52A0;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4EFB;&#x610F;&#x6309;&#x94AE;&#x7EC4;&#x5408;&#xFF0C;&#x6BCF;&#x4E00;&#x79CD;&#x90FD;&#x6709;&#x4E00;&#x4E9B;&#x72EC;&#x7279;&#x7684;&#x5473;&#x9053;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x6309;&#x94AE;&#x4E4B;&#x95F4;&#x6709;&#x95F4;&#x9694;&#xFF0C;&#x63D2;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;&#x6309;&#x4E0B;&#x4E2D;&#x95F4;&#x7684;&#x6309;&#x94AE;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5305;&#x62EC;&#x5168;&#x6309;&#x94AE;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x7528;&#x7684;&#x7EC4;&#x5408;&#x4E00;&#x5171;&#x516D;&#x79CD;&#x3002;</p>
+<h4 id="&#x786C;&#x4EF6;&#x548C;&#x8F6F;&#x4EF6;&#x7248;&#x7684;-1176"><a href="#&#x786C;&#x4EF6;&#x548C;&#x8F6F;&#x4EF6;&#x7248;&#x7684;-1176" class="headerlink" title="&#x786C;&#x4EF6;&#x548C;&#x8F6F;&#x4EF6;&#x7248;&#x7684; 1176"></a>&#x786C;&#x4EF6;&#x548C;&#x8F6F;&#x4EF6;&#x7248;&#x7684; 1176</h4><h5 id="1176-&#x786C;&#x4EF6;&#x7CFB;&#x5217;"><a href="#1176-&#x786C;&#x4EF6;&#x7CFB;&#x5217;" class="headerlink" title="1176 &#x786C;&#x4EF6;&#x7CFB;&#x5217;"></a>1176 &#x786C;&#x4EF6;&#x7CFB;&#x5217;</h5><ul>
+<li><p>Revision A&#xFF08;&#x84DD;&#x5E26;&#x7248;&#xFF0C;&#x56FD;&#x5185;&#x6216;&#x53EB;&#x300C;&#x84DD;&#x8138;&#x300D;&#xFF09;&#xFF1A;1967 &#x5E74; 6 &#x6708; 20 &#x65E5;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 101-125</p>
+</li>
+<li><p>Revision AB&#xFF08;&#x84DD;&#x5E26;&#x7248;&#xFF09;&#xFF1A;1967 &#x5E74; 11 &#x6708; 20 &#x65E5;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 125-216</p>
+</li>
+<li><p>Revision B&#xFF08;&#x84DD;&#x5E26;&#x7248;&#xFF09;&#xFF1A;&#x8BBE;&#x8BA1;&#x65E5;&#x671F;&#x672A;&#x77E5;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 217-1078</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/Bluestripe_1176.jpg" alt></p>
+</li>
+<li><p>Revision C&#xFF08;1176 LN&#xFF09;&#xFF08;&#x84DD;&#x5E26;&#x7248;&#xFF09;&#xFF1A;1970 &#x5E74; 1 &#x6708; 9 &#x65E5;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 1079-1238</p>
+</li>
+<li><p>Revision D&#xFF08;&#x9ED1;&#x8138;&#xFF09;&#xFF1A;&#x8BBE;&#x8BA1;&#x65E5;&#x671F;&#x672A;&#x77E5;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 1239-2331</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/UAGolden1176.jpg" alt></p>
+</li>
+<li><p>Revision E&#xFF08;&#x9ED1;&#x8138;&#xFF09;&#xFF1A;&#x8BBE;&#x8BA1;&#x65E5;&#x671F;&#x672A;&#x77E5;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 2332-2611</p>
+</li>
+<li><p>Revision F&#xFF08;&#x9ED1;&#x8138;&#xFF09;&#xFF1A;1973 &#x5E74; 3 &#x6708; 15 &#x65E5;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 2611-7052</p>
+</li>
+<li><p>Revision G&#xFF08;&#x9ED1;&#x8138;&#xFF09;&#xFF1A;&#x8BBE;&#x8BA1;&#x65E5;&#x671F;&#x672A;&#x77E5;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 7053-7651</p>
+</li>
+<li><p>Revision H&#xFF08;&#x94F6;&#x8138;&#xFF09;&#xFF1A;&#x8BBE;&#x8BA1;&#x65E5;&#x671F;&#x672A;&#x77E5;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 7652-8000+</p>
+</li>
+<li><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/revH1176.jpg" alt></p>
+</li>
+<li><p>Universal Audio Reissue 1176LN&#xFF1A;2000 &#x5E74; 4 &#x6708; 1 &#x65E5;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E8F;&#x5217;&#x53F7;&#xFF1A;101-1959&#x3001;1960-2946&#x3001;2947-present</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/1176ln_front.jpg" alt></p>
+</li>
+<li><p>Revision AE&#xFF08;Anniversary Edition &#x5468;&#x5E74;&#x7248;&#xFF09;&#xFF1A;2008 &#x5E74; 6 &#x6708; 4 &#x65E5;&#x8BBE;&#x8BA1;&#xFF0C;&#x5E8F;&#x5217;&#x53F7; 001-500</p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/1176AE_front.jpg" alt></p>
+</li>
+<li><p>&#x5176;&#x4ED6;&#x7248;&#x672C;&#xFF1A;1178 &#x7ACB;&#x4F53;&#x58F0;&#x7248;</p>
+</li>
+</ul>
+<h5 id="&#x8F6F;&#x4EF6;&#x7CFB;&#x5217;"><a href="#&#x8F6F;&#x4EF6;&#x7CFB;&#x5217;" class="headerlink" title="&#x8F6F;&#x4EF6;&#x7CFB;&#x5217;"></a>&#x8F6F;&#x4EF6;&#x7CFB;&#x5217;</h5><ul>
+<li><a href="/external_links/8514b88f8446392790db16ddf7141584.html" target="blank" rel="noopener">Universal Audio &#x5B98;&#x65B9;&#x7248; 1176 &#x63D2;&#x4EF6;</a>&#xFF08;$299&#xFF09;</li>
+<li><a href="/external_links/5b5e829d73bc07f9b972c09f6675fb68.html" target="blank" rel="noopener">Waves CLA-76 &#x63D2;&#x4EF6;</a>&#xFF08;$249&#xFF09;</li>
+<li><a href="/external_links/e3268bdad05e82522c0c9b7b2e2600f3.html" target="blank" rel="noopener">Softube FET Compressor</a>&#xFF08;$219&#xFF09;</li>
+<li><a href="/external_links/848e300cb05dce0ee1fb6fc494213a7e.html" target="blank" rel="noopener">Native Instrument VC 76</a>&#xFF08;$199&#xFF09;</li>
+<li><a href="/external_links/15485501f5ad11c53a60c13112b07e32.html" target="blank" rel="noopener">The Seventh Sign</a>&#xFF08;&#x514D;&#x8D39;&#xFF0C;&#x56FD;&#x5185;&#x6216;&#x8BB8;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x5B98;&#x7F51;&#xFF09;</li>
+</ul>
+<p>&#x672C;&#x6587;&#x8F6C;&#x81EA;: <a href="/external_links/e945740d6c65111d4ead0e68e8133759.html" target="blank" rel="noopener">https://soundmono.com/vintage-compressor-1176-and-its-software-versions.html</a> </p>
+<p><strong>&#x672C;&#x5E16;&#x9644;&#x4EF6;</strong></p>
+<p><a href="/external_links/b7ad5839a6cf231e44b242081d178a15.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;</a></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../32.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../32.html" itemprop="url">音频实时导出解答</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T15:51:56+08:00">
+                2019-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>  &#x53EA;&#x662F;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#x800C;&#x5DF2;&#xFF0C;&#x5BBF;&#x4E3B;&#x8F6F;&#x4EF6;&#x5927;&#x90E8;&#x5206;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#xFF01;</p>
+<p>&#x5BFC;&#x51FA;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF1A;</p>
+<p>1&#x3001;&#x975E;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#xFF1A;&#x6267;&#x884C;&#x5BBF;&#x4E3B;&#x8F6F;&#x4EF6;&#x7684;&#x5BFC;&#x51FA;&#x547D;&#x4EE4;&#x540E;&#xFF0C;CPU/&#x5185;&#x5B58;&#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#x6548;&#x679C;&#xFF0C;&#x76F4;&#x5230;&#x5BFC;&#x51FA;&#x6210;&#x54C1;&#x7ED3;&#x675F;&#x3002;<br>      &#x4F18;&#x70B9;&#xFF1A;&#x5BFC;&#x51FA;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x8282;&#x7701;&#x65F6;&#x95F4;<br>      &#x7F3A;&#x70B9;&#xFF1A;&#x5BFC;&#x51FA;&#x7684;&#x97F3;&#x9891;&#x4E0E;&#x5DE5;&#x7A0B;&#x4E2D;&#x64AD;&#x653E;&#xFF0C;&#x4E0D;&#x76F8;&#x540C;</p>
+<p>2&#x3001;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#xFF1A;&#x8F6F;&#x4EF6;&#x6216;&#x8005;&#x8F68;&#x9053;&#x5F55;&#x97F3;&#x673A;&#x5B9E;&#x65F6;&#x64AD;&#x653E;&#xFF0C;&#x5B9E;&#x65F6;&#x8BB0;&#x5F55;&#x97F3;&#x9891;&#x4E0E;&#x6548;&#x679C;&#xFF0C;&#x76F4;&#x5230;&#x7ED3;&#x675F;&#x3002;<br>      &#x4F18;&#x70B9;&#xFF1A;&#x5BFC;&#x51FA;&#x7684;&#x97F3;&#x8D28;&#x4E0E;&#x5DE5;&#x7A0B;&#x4E2D;&#x64AD;&#x653E;&#x76F8;&#x540C;<br>      &#x7F3A;&#x70B9;&#xFF1A;&#x8981;&#x64AD;&#x653E;&#x4E00;&#x6B21;&#xFF0C;&#x8017;&#x8D39;&#x65F6;&#x95F4;</p>
+<p>&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#x53C8;&#x5206;&#x4E09;&#x79CD;&#xFF1A;</p>
+<p>1&#x3001;&#x4F7F;&#x7528;&#x5BBF;&#x4E3B;&#x8F6F;&#x4EF6;&#x81EA;&#x5E26;&#x7684;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#x529F;&#x80FD;&#x3002;<br>2&#x3001;&#x5982;&#x679C;&#x5BBF;&#x4E3B;&#x8F6F;&#x4EF6;&#x4E0D;&#x652F;&#x6301;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;&#x6765;&#x5BFC;&#x51FA;&#xFF08;&#x8F68;&#x9053;&#x5F55;&#x97F3;&#x673A;&#x5C5E;&#x4E8E;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#xFF09;<br>3&#x3001;&#x58F0;&#x5361;&#x65E0;&#x635F;&#x8DF3;&#x7EBF;&#x5185;&#x5F55;&#xFF0C;&#x8FD9;&#x4E0D;&#x7B97;&#x662F;&#x5BFC;&#x51FA;&#xFF0C;&#x800C;&#x662F;&#x65E0;&#x635F;&#x7684;&#x79FB;&#x690D;&#x5230;&#x522B;&#x7684;&#x8F6F;&#x4EF6;&#x4E2D;&#x3002;&#xFF08;ESI&#x3001;RME&#x7B49;&#x54C1;&#x724C;&#x652F;&#x6301;&#x6B64;&#x529F;&#x80FD;&#xFF09;</p>
+<p>&#x4E09;&#x79CD;&#x529F;&#x80FD;&#x4E2D;&#xFF0C;&#x524D;&#x4E24;&#x8005;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x5B57;&#x97F3;&#x9891;&#x662F;&#x7531;&#x7535;&#x8111;&#x6765;&#x8BA1;&#x7B97;&#x7684;&#xFF0C;&#x4E0D;&#x4F1A;&#x7ECF;&#x8FC7;&#x58F0;&#x5361;&#x7684;ADDA&#x8F6C;&#x6362;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x65F6;&#x4E0D;&#x5B58;&#x5728;&#x6A21;&#x62DF;&#x4FE1;&#x53F7;&#xFF0C;&#x6A21;&#x62DF;&#x4FE1;&#x53F7;&#x4E5F;&#x662F;&#x4E0D;&#x80FD;&#x88AB;&#x7535;&#x8111;&#x8BC6;&#x522B;&#x548C;&#x5236;&#x4F5C;&#x7684;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5373;&#x4F7F;&#x62D4;&#x6389;&#x58F0;&#x5361;&#x4E5F;&#x53EF;&#x4EE5;&#x5BFC;&#x51FA;&#x3002;&#x6700;&#x540E;&#x4E00;&#x79CD;&#x65E0;&#x635F;&#x8DF3;&#x7EBF;&#x5185;&#x5F55;&#xFF0C;&#x4F1A;&#x7ECF;&#x8FC7;&#x58F0;&#x5361;&#xFF0C;&#x5B83;&#x6BD4;&#x8F83;&#x9002;&#x5408;&#x628A;&#x5206;&#x8F68;&#x79FB;&#x690D;&#x5230;&#x5176;&#x4ED6;&#x5BBF;&#x4E3B;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x628A;&#x6210;&#x54C1;&#x79FB;&#x690D;&#x5230;&#x5176;&#x4ED6;&#x6BCD;&#x5E26;&#x5BBF;&#x4E3B;&#x4E2D;&#x505A;&#x6574;&#x4F53;&#x6BCD;&#x5E26;&#x5904;&#x7406;&#xFF01;</p>
+<p>&#x8865;&#x5145;&#xFF1A;</p>
+<p>&#x4E5F;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x6307;&#x6807;&#x4E0D;&#x6307;&#x6807;&#x7684;&#xFF0C;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#x8FD8;&#x662F;&#x5FEB;&#x901F;&#x5BFC;&#x51FA;&#x7531;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;&#x548C;&#x5176;&#x4ED6;&#x76EE;&#x7684;&#x6765;&#x51B3;&#x5B9A;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x5BA2;&#x6237;&#x7ED9;&#x7684;&#x94B1;&#x5F88;&#x5C11;&#xFF0C;&#x4F60;&#x4E5F;&#x4E0D;&#x613F;&#x610F;&#x6D6A;&#x8D39;&#x65F6;&#x95F4;&#x505A;&#x4ED6;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5DEE;&#x4E0D;&#x591A;&#x5C31;&#x884C;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5FEB;&#x901F;&#x5BFC;&#x51FA;&#x3002;&#x518D;&#x4F8B;&#x5982;&#xFF1A;&#x505A;&#x4E00;&#x90E8;&#x7535;&#x89C6;&#x5267;&#x7684;&#x58F0;&#x97F3;&#x90E8;&#x5206;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x90E8;&#x7535;&#x89C6;&#x5267;&#x53EF;&#x80FD;&#x8FBE;&#x5230;20-30&#x96C6;&#xFF0C;&#x6BCF;&#x4E00;&#x96C6;&#x8FBE;&#x5230;40&#x591A;&#x5206;&#x949F;&#xFF0C;&#x4E3A;&#x4E86;&#x4E0D;&#x8017;&#x8D39;&#x65F6;&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5FEB;&#x901F;&#x5BFC;&#x51FA;&#x3002;&#x5982;&#x679C;&#x8981;&#x6C42;&#x4F5C;&#x54C1;&#x8D28;&#x91CF;&#xFF0C;&#x90A3;&#x5C31;&#x9009;&#x62E9;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#xFF01;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x5236;&#x4F5C;&#x7684;&#x6700;&#x7EC8;&#x6210;&#x54C1;&#x672C;&#x8EAB;&#x5C31;&#x5F88;&#x5DEE;&#x3002;&#x90A3;&#x7528;&#x4EC0;&#x4E48;&#x5BFC;&#x51FA;&#x90FD;&#x610F;&#x4E49;&#x4E0D;&#x5927;&#xFF0C;&#x5EFA;&#x8BAE;&#x5404;&#x4F4D;&#x628A;&#x7CBE;&#x529B;&#x653E;&#x5728;&#x6280;&#x672F;&#x4E0A;&#x3002;</p>
+<p>&#x6280;&#x672F;&#x95EE;&#x9898;&#x8865;&#x5145;&#xFF1A;</p>
+<p>&#x5982;&#x679C;&#x62C5;&#x5FC3;&#x5B9E;&#x65F6;&#x5BFC;&#x51FA;&#x540E;&#x7684;&#x6210;&#x54C1;&#x8FD8;&#x662F;&#x4E0E;&#x5DE5;&#x7A0B;&#x4E2D;&#x64AD;&#x653E;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x8BF7;&#x628A;&#x6BCD;&#x5E26;&#x6548;&#x679C;&#x5668;&#x653E;&#x5728;&#x63A8;&#x5B50;&#x540E;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x610F;&#x4E49;&#x662F;&#xFF0C;&#x603B;&#x7EBF;&#x63A8;&#x5B50;&#x540E;&#x7684;&#x6548;&#x679C;&#x5668;&#x4E0D;&#x4F1A;&#x53D7;&#x5230;&#x5BBF;&#x4E3B;&#x603B;&#x7EBF;&#x63A8;&#x5B50;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x8F93;&#x51FA;&#x97F3;&#x91CF;&#xFF0C;&#x662F;&#x7531;&#x63A8;&#x5B50;&#x540E;&#x7684;&#x6BCD;&#x5E26;&#x6548;&#x679C;&#x5668;&#x6765;&#x51B3;&#x5B9A;&#x7684;&#x3002;  </p>
+<p><strong>&#x672C;&#x5E16;&#x9644;&#x4EF6;</strong></p>
+<p><a href="/external_links/b7ad5839a6cf231e44b242081d178a15.html" target="blank" rel="noopener">&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;</a></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../21.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../21.html" itemprop="url">什么时候才需要MS处理呢？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T15:50:00+08:00">
+                2019-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> &#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x624D;&#x9700;&#x8981;MS&#x5904;&#x7406;&#x5462;&#xFF1F;</p>
+<p>1&#x3001;&#x5F53;M&#x4E2D;&#x7F6E;/S&#x5916;&#x56F4;&#x4FE1;&#x53F7;&#x6709;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x97F3;&#x91CF;&#x4E0D;&#x5339;&#x914D;</p>
+<p>2&#x3001;&#x5F53;&#x9700;&#x8981;&#x66F4;&#x597D;&#x7684;&#x5BBD;&#x5EA6;&#x65F6;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;S&#x4FE1;&#x53F7;&#x8F83;&#x591A;&#xFF0C;M&#x4FE1;&#x53F7;&#x8F83;&#x5C11;&#xFF0C;&#x81EA;&#x7136;&#x7ACB;&#x4F53;&#x58F0;&#x5BBD;&#x5EA6;&#x4F1A;&#x66F4;&#x5BBD;&#x5E7F;</p>
+<p>3&#x3001;&#x6821;&#x6B63;MS&#x4FE1;&#x53F7;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;S&#x4FE1;&#x53F7;&#x7684;&#x51B2;&#x51FB;&#x529B;&#x8F83;&#x5F3A;&#xFF0C;M&#x8F83;&#x5F31;&#xFF0C;&#x5BFC;&#x81F4;&#x4E2D;&#x7F6E;&#x7684;&#x4E50;&#x5668;&#x548C;&#x4EBA;&#x58F0;&#x4E0D;&#x591F;&#x7A81;&#x51FA;</p>
+<p>&#x6CE8;&#xFF1A;&#x5BBD;&#x5E7F;&#x7684;&#x7ACB;&#x4F53;&#x58F0;&#x4E0D;&#x662F;&#x7531;&#x7ACB;&#x4F53;&#x58F0;&#x6269;&#x5C55;&#x6548;&#x679C;&#x5668;&#x5F97;&#x6765;&#xFF0C;&#x800C;&#x662F;S&#x4FE1;&#x53F7;&#x7684;&#x4E50;&#x5668;&#x6BD4;&#x8F83;&#x591A;&#x3001;&#x6BD4;&#x8F83;&#x4E30;&#x6EE1;&#x3001;&#x56E0;&#x6B64;&#x58F0;&#x573A;&#x4F1A;&#x66F4;&#x5BBD;&#x5E7F;&#x3002;&#x4EBA;&#x58F0;&#x7684;&#x5BBD;&#x5EA6;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5BF9;&#x4EBA;&#x58F0;&#x9002;&#x5F53;&#x53D1;&#x9001;&#x5DE6;&#x53F3;&#x5EF6;&#x8FDF;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5DE6;&#x53F3;&#x5EF6;&#x8FDF;&#x901A;&#x5E38;&#x5728;S&#x4FE1;&#x53F7;&#x5F53;&#x4E2D;&#xFF0C;&#x9002;&#x5F53;&#x53D1;&#x9001;&#x5EF6;&#x8FDF;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x52A0;&#x5BBD;&#x4EBA;&#x58F0;&#x7684;&#x5BBD;&#x5EA6;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x5728;&#x6DF7;&#x97F3;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x4F55;&#x8C03;&#x6574;MS&#x4FE1;&#x53F7;&#x7684;&#x91CF;&#x5462;&#xFF1F;</p>
+<p>1&#x3001;&#x5F53;&#x67D0;&#x4E00;&#x4E2A;&#x6216;&#x67D0;&#x51E0;&#x4E2A;&#x4E50;&#x5668;&#x9700;&#x8981;&#x66F4;&#x591A;S&#x4FE1;&#x53F7;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5219;&#x58F0;&#x50CF;&#x4F4D;&#x7F6E;&#x8D8A;&#x6781;&#x5DE6;&#x6781;&#x53F3;&#xFF0C;S&#x4FE1;&#x53F7;&#x8D8A;&#x591A;&#xFF0C;M&#x8D8A;&#x5C11;&#x3002;&#x5F53;&#x6781;&#x5DE6;&#x6216;&#x6781;&#x53F3;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E50;&#x5668;&#x5C31;&#x53EA;&#x5360;&#x636E;S&#x4FE1;&#x53F7;&#xFF0C;M&#x662F;&#x7A7A;&#x7684;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x628A;&#x4F4D;&#x7F6E;&#x8BA9;&#x7ED9;M&#x91CC;&#x7684;Bass&#xFF0C;&#x9F13;&#x70B9;&#xFF0C;&#x4EE5;&#x53CA;&#x4EBA;&#x58F0;&#x3002;&#x4F46;&#x8FC7;&#x4E8E;&#x5C42;&#x6B21;&#x5206;&#x660E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x7F3A;&#x5C11;&#x878D;&#x5408;&#x5EA6;&#x3002;</p>
+<p>2&#x3001;&#x5F53;&#x8981;&#x628A;&#x67D0;&#x4E2A;&#x4E50;&#x5668;&#x653E;&#x5728;M&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5219;&#x58F0;&#x50CF;&#x5E94;&#x8BE5;&#x5728;&#x4E2D;&#x95F4;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x4EBA;&#x58F0;&#x4E3B;&#x5531;&#xFF0C;Bass&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x3002;M&#x4FE1;&#x53F7;&#x901A;&#x5E38;&#x7ED9;&#x8981;&#x7A81;&#x51FA;&#x7684;&#x58F0;&#x97F3;&#xFF01;&#x5B8C;&#x5168;M&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x58F0;&#x97F3;&#x4F1A;&#x5F88;&#x7A84;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;M&#x4E2D;&#x7684;&#x4EBA;&#x58F0;&#x901A;&#x5E38;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x6DF7;&#x54CD;&#x548C;&#x5EF6;&#x8FDF;&#xFF0C;&#x9002;&#x5F53;&#x589E;&#x52A0;S&#x4FE1;&#x53F7;&#x6765;&#x52A0;&#x5BBD;&#x58F0;&#x97F3;&#xFF01;</p>
+<p>3&#x3001;&#x8BF4;&#x5230;&#x4EBA;&#x58F0;&#xFF0C;&#x4EBA;&#x58F0;&#x4E3B;&#x5531;&#x5360;&#x636E;M&#x4FE1;&#x53F7;&#x540E;&#xFF0C;&#x914D;&#x5531;&#xFF08;&#x4EBA;&#x58F0;&#x7684;&#x548C;&#x58F0;&#xFF09;&#x5EFA;&#x8BAE;&#x591A;&#x5360;&#x636E;S&#x4FE1;&#x53F7;&#xFF0C;&#x8FD9;&#x6837;&#x66F4;&#x6709;&#x5C42;&#x6B21;&#x3002;&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x8C03;&#x6574;&#x58F0;&#x50CF;&#xFF0C;&#x8D8A;&#x6781;&#x5DE6;&#x6781;&#x53F3;&#xFF0C;S&#x4FE1;&#x53F7;&#x5C31;&#x8D8A;&#x591A;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x53D1;&#x9001;&#x6DF7;&#x54CD;&#x548C;&#x5EF6;&#x8FDF;&#x6765;&#x8C03;&#x6574;&#x58F0;&#x97F3;&#x7684;&#x8FDC;&#x8FD1;&#x3002;</p>
+<p>&#x53C8;&#x8BF4;&#x5230;&#x8FDC;&#x8FD1;&#x4E86;&#xFF0C;&#x8D8A;&#x626F;&#x8D8A;&#x8FDC;&#x3002;&#x8FDC;&#x8FD1;&#x603B;&#x7ED3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>1&#x3001;&#x97F3;&#x91CF;&#xFF0C;&#x97F3;&#x91CF;&#x5C0F;&#xFF0C;&#x58F0;&#x97F3;&#x8FDC;&#xFF1B;&#x97F3;&#x91CF;&#x5927;&#xFF0C;&#x58F0;&#x97F3;&#x8FD1;&#xFF0C;&#x8FD9;&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#xFF01;&#xFF08;&#x501F;&#x52A9;&#x97F3;&#x91CF;&#x63A8;&#x5B50;&#xFF09;<br>2&#x3001;&#x7A7A;&#x95F4;&#xFF0C;&#x6DF7;&#x54CD;&#x7A7A;&#x95F4;&#x5927;&#xFF0C;&#x6DF7;&#x54CD;&#x91CF;&#x5927;&#xFF0C;&#x58F0;&#x97F3;&#x8FDC;&#xFF1B;&#x76F8;&#x53CD;&#x58F0;&#x97F3;&#x8FD1;&#xFF01;&#xFF08;&#x501F;&#x52A9;&#x6DF7;&#x54CD;&#x548C;&#x5EF6;&#x8FDF;&#x6548;&#x679C;&#x5668;&#xFF09;<br>3&#x3001;&#x52A8;&#x6001;&#xFF0C;&#x58F0;&#x97F3;&#x8D77;&#x4F0F;&#x611F;&#x8D8A;&#x5927;&#xFF0C;&#x58F0;&#x97F3;&#x8D8A;&#x8FDC;&#xFF1B;&#x58F0;&#x97F3;&#x8D77;&#x4F0F;&#x8D8A;&#x5C0F;&#x201C;&#x50CF;&#x8BF4;&#x6084;&#x6084;&#x8BDD;&#x4E00;&#x6837;&#x7684;&#x52A8;&#x6001;&#x201D;&#xFF0C;&#x58F0;&#x97F3;&#x8FD1;&#xFF01;&#xFF08;&#x501F;&#x52A9;&#x538B;&#x7F29;/&#x538B;&#x9650;&#x6548;&#x679C;&#x5668;&#xFF09;<br>4&#x3001;&#x9891;&#x7387;&#xFF0C;&#x4F4E;&#x9891;&#x591A;&#xFF0C;&#x9AD8;&#x9891;&#x5C11;&#xFF0C;&#x58F0;&#x97F3;&#x8FDC;&#xFF1B;&#x4F4E;&#x9891;&#x5C11;&#xFF0C;&#x9AD8;&#x9891;&#x591A;&#xFF0C;&#x58F0;&#x97F3;&#x8FD1;&#x3002;&#x56E0;&#x4E3A;&#x9AD8;&#x9891;&#x7684;&#x4F20;&#x8F93;&#x80FD;&#x91CF;&#x6BD4;&#x4F4E;&#x9891;&#x5F31;&#xFF08;&#x501F;&#x52A9;EQ&#x5747;&#x8861;&#x6548;&#x679C;&#x5668;&#xFF09;  </p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../22.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1275,452 +1719,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../10.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../10.html" itemprop="url">给USB接口的MIDI控制器增加标准5芯MIDI接口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-29T14:03:58+08:00">
-                2019-08-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>&#x5E02;&#x573A;&#x4E0A;&#x4F4E;&#x4EF7;&#x7684;MIDI&#x63A7;&#x5236;&#x5668;&#x53EA;&#x80FD;&#x4F7F;&#x7528;USB&#x63A5;&#x53E3;&#x8FDE;&#x63A5;&#x7535;&#x8111;&#xFF0C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x6807;&#x51C6;&#x7684;5&#x82AF;MIDI&#x63A5;&#x53E3;&#xFF0C;USB MIDI&#x63A5;&#x53E3;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x5FC5;&#x987B;&#x5148;&#x8FDE;&#x63A5;USB&#x8BBE;&#x5907;&#x518D;&#x6253;&#x5F00;&#x5BBF;&#x4E3B;&#x8F6F;&#x4EF6;&#x624D;&#x80FD;&#x63A5;&#x53D7;MIDI&#x4FE1;&#x606F;&#x3002;</strong><br><strong>&#x4F8B;&#x5982;ICON&#x7684;icontrols&#x63A7;&#x5236;&#x5668;</strong></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zphf3my3j20p00jdgnt-1567059830949.jpg" alt></p>
-<p><strong>&#x4E0B;&#x9762;&#x8981;&#x7ED9;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x589E;&#x52A0;&#x6807;&#x51C6;5&#x82AF;MIDI&#x63A5;&#x53E3;&#xFF0C;&#x4F7F;&#x5B83;&#x4E00;&#x901A;&#x7535;&#x5C31;&#x53EF;&#x4EE5;&#x53D1;&#x9001;MIDI&#x4FE1;&#x53F7;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x3002;</strong><br><strong>&#x62C6;&#x5F00;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B83;&#x4F7F;&#x7528;&#x4E86;STC 12C5A16AD&#x5355;&#x7247;&#x673A;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpi0xux2j21kw16ogun.jpg" alt><br><strong>&#x641C;&#x7D22;&#x8FD9;&#x4E2A;&#x5355;&#x7247;&#x673A;&#x7684;&#x5F15;&#x811A;&#x8D44;&#x6599;&#xFF0C;&#x53D1;&#x73B0;&#x5B83;&#x662F;&#x5C5E;&#x4E8E;STC12C5A60&#x7CFB;&#x5217;&#x7684;&#xFF0C;&#x5B83;&#x7684;&#x7B2C;7&#x811A;&#x5C31;&#x662F;MIDI&#x8F93;&#x51FA;&#x53E3;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpj2tmfgj20iv0mdgo2-1567059811650.jpg" alt><br><strong>&#x5728;&#x53C2;&#x8003;&#x4E86;&#x7528;&#x5355;&#x7247;&#x673A;&#x5236;&#x4F5C;MIDI&#x952E;&#x76D8;&#x7B49;&#x8D44;&#x6599;&#x540E;&#xFF0C;&#x4E86;&#x89E3;&#x5230;&#x5355;&#x7247;&#x673A;&#x7684;TXD&#x8F93;&#x51FA;&#x53E3;&#x5C31;&#x662F;MIDI&#x8F93;&#x51FA;&#x53E3;&#xFF0C;RXD&#x662F;MIDI&#x8F93;&#x5165;&#x53E3;&#xFF0C;&#x53EA;&#x662F;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x8D44;&#x6599;&#x8BF4;&#x7684;&#x662F;15&#x9488;&#x7684;&#x6E38;&#x620F;MIDI&#x63A5;&#x53E3;&#xFF0C;&#x5728;&#x4E00;&#x4E9B;&#x8D44;&#x6599;&#x91CC;&#x4E5F;&#x6709;&#x8BF4;&#x6E38;&#x620F;&#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5F04;&#x6210;&#x6807;&#x51C6;5&#x82AF;MIDI&#x63A5;&#x53E3;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x7535;&#x5E73;&#x8F6C;&#x6362;&#x7535;&#x8DEF;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpp8213rj20m30sdtak.jpg" alt><br><strong>&#x672C;&#x6765;icontrols&#x53E6;&#x5916;&#x4E00;&#x4E2A;USB&#x63A5;&#x53E3;&#x662F;&#x7ED9;&#x4E0B;&#x4E00;&#x7EA7;&#x8BBE;&#x5907;&#xFF0C;&#x5982;ikey&#x7B49;&#x8BBE;&#x5907;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x4F46;&#x6211;&#x60CA;&#x8BB6;&#x7684;&#x53D1;&#x73B0;&#x5355;&#x7247;&#x673A;&#x4E2D;&#x7684;TXD&#x53E3;&#x7ADF;&#x7136;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x5230;&#x8FDE;&#x63A5;&#x4E0B;&#x7EA7;&#x8BBE;&#x5907;&#x7684;USB&#x53E3;&#xFF0C;&#x8FD9;&#x5C31;&#x5F88;&#x65B9;&#x4FBF;&#x6539;&#x9020;&#x4E86;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zppk18ngj21kw23udp1-1567059830972.jpg" alt><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpppad88j20rf0dr76q.jpg" alt><br><strong>&#x597D;&#x4E86;&#xFF0C;&#x5F00;&#x59CB;&#x52A8;&#x624B;&#xFF0C;&#x6211;&#x7528;&#x4E86;&#x4E00;&#x6839;&#x5E9F;&#x7684;USB&#x7EBF;&#xFF0C;&#x7531;&#x4E8E;MIDI&#x4F20;&#x8F93;&#x4EC5;&#x7528;&#x5230;+5V&#x548C;TXD&#x4E24;&#x6839;&#x7EBF;&#x5C31;&#x53EF;&#x4EE5;&#x4F20;&#x8F93;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5BF9;&#x5E94;USB&#x7684;&#x7EA2;&#x7EBF;&#x548C;&#x7EFF;&#x7EBF;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zppx288oj21kw23udpi.jpg" alt><br><strong>&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x5728;&#x4E0A;&#x7535;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5224;&#x65AD;USB&#x7684;&#x6570;&#x636E;&#x7EBF;&#x662F;&#x5426;&#x63A5;&#x5165;&#x7535;&#x8111;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x63D2;&#x5165;&#x7535;&#x8111;&#xFF0C;&#x5B83;&#x7684;&#x7EBF;&#x8DEF;&#x5C31;&#x4F20;&#x8F93;&#x81F3;&#x7535;&#x8111;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4EC5;&#x63D0;&#x4F9B;&#x7535;&#x6E90;&#xFF0C;&#x7EE7;&#x7535;&#x5668;&#x624D;&#x628A;&#x4FE1;&#x53F7;&#x4F20;&#x7ED9;&#x8FDE;&#x63A5;&#x4E0B;&#x7EA7;&#x8BBE;&#x5907;&#x7684;USB&#xFF0C;&#x6240;&#x4EE5;&#x4F9B;&#x7535;&#x7684;&#x65F6;&#x5019;&#x8981;&#x628A;&#x4F9B;&#x7535;&#x7528;&#x7684;USB&#x7684;D+&#x548C;D-&#x65AD;&#x5F00;&#x3002;&#x56E0;&#x6B64;&#x8FD8;&#x9700;&#x8981;&#x4E13;&#x95E8;&#x5236;&#x4F5C;&#x4E00;&#x6839;&#x7EBF;&#xFF0C;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x662F;USB&#x5EF6;&#x957F;&#x7EBF;&#xFF0C;&#x6311;&#x65AD;D+&#x548C;D-&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x5355;&#x7EAF;&#x4F9B;&#x7535;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpq3mliyj21kw23u7bi.jpg" alt></p>
-<p><strong>&#x8FD9;&#x5C31;&#x662F;&#x5236;&#x4F5C;&#x597D;&#x7684;MIDI&#x8F6C;&#x63A5;&#x7EBF;</strong></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpqbwmb5j21kw23utlt.jpg" alt></p>
-<p><strong>&#x6700;&#x540E;&#x6539;&#x9020;&#x5B8C;&#x6210;&#x901A;&#x7535;&#x8BD5;&#x673A;</strong><br><strong>&#x7528;&#x624B;&#x673A;&#x7684;&#x9002;&#x914D;&#x5668;&#x4F9B;&#x7535;</strong></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpqkpnqyj21kw23utny.jpg" alt></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpvlh5u8j21kw23u15b.jpg" alt></p>
-<p><strong>MIDI&#x7EBF;&#x63A5;&#x5165;&#x58F0;&#x5361;</strong></p>
-<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpvxqpa9j21kw23uapt.jpg" alt></p>
-<p><strong>&#x6700;&#x540E;&#x603B;&#x7ED3;&#xFF1A;</strong><br>&#x6211;&#x8BA4;&#x4E3A;&#x6240;&#x6709;&#x901A;&#x8FC7;&#x5355;&#x7247;&#x673A;&#x751F;&#x4EA7;&#x7684;USB MIDI&#x63A7;&#x5236;&#x5668;&#x90FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;&#x5355;&#x7247;&#x673A;&#x7684;TXD&#x811A;&#x3001;RXD&#x811A;&#x76F4;&#x63A5;&#x5F15;&#x51FA;MIDI&#x8F93;&#x51FA;&#x3001;&#x8F93;&#x5165;&#x63A5;&#x53E3;&#x3002;&#x6700;&#x540E;&#x6211;&#x6CA1;&#x6709;&#x7ECF;&#x8FC7;&#x7535;&#x8111;&#x5C31;&#x8F93;&#x51FA;&#x4E86;MIDI&#x4FE1;&#x53F7;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x64CD;&#x4F5C;DAW&#x8F6F;&#x4EF6;&#x65F6;&#x771F;&#x6B63;&#x5B9E;&#x73B0;&#x4E86;&#x5373;&#x63D2;&#x5373;&#x7528;&#x3002;&#x867D;&#x7136;&#x5E02;&#x573A;&#x4E0A;&#x53EF;&#x4EE5;&#x4E70;&#x5230;&#x76F4;&#x63A5;&#x5E26;&#x6807;&#x51C6;5&#x82AF;&#x7684;MIDI&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x4F46;&#x4EF7;&#x683C;&#x76F8;&#x5F53;&#x6602;&#x8D35;&#xFF0C;&#x800C;&#x73B0;&#x5728;&#x4EC5;&#x9700;&#x8981;&#x51E0;&#x5757;&#x94B1;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x529F;&#x80FD;&#x3002;</p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../26.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../26.html" itemprop="url">我的第一篇博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T14:35:09+08:00">
-                2019-08-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>&#x5927;&#x718A;: &#x5C0F;&#x7B28; &#x4ECA;&#x5929;&#x6211;&#x6765;&#x6559;&#x4F60;&#x642D;&#x5EFA;&#x514D;&#x8D39;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2; </p>
-<p>&#x5C0F;&#x7B28;: &#x6211;&#x5DF2;&#x7ECF;&#x6709;&#x65B0;&#x6D6A; &#x641C;&#x72D0; &#x7F51;&#x6613; &#x817E;&#x8BAF; &#x767E;&#x5EA6;&#x5404;&#x79CD;&#x514D;&#x8D39;&#x535A;&#x5BA2;&#x4E86;&#x5440;? </p>
-<p>&#x5927;&#x718A;: &#x989D;&#x2026; &#x8FD9;&#x4E2A;&#x662F;&#x514D;&#x8D39;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9; </p>
-<p>&#x5C0F;&#x7B28;:&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;?</p>
-<p>&#x5927;&#x718A;:&#x533A;&#x522B;&#x4E0D;&#x5927;</p>
-<p>&#x5C0F;&#x7B28;:&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;..</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../161.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../161.html" itemprop="url">原创歌曲《祝福你》</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T10:15:53+08:00">
-                2019-01-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x521B;&#x4F5C;&#x7075;&#x611F;"><a href="#&#x521B;&#x4F5C;&#x7075;&#x611F;" class="headerlink" title="&#x521B;&#x4F5C;&#x7075;&#x611F;"></a>&#x521B;&#x4F5C;&#x7075;&#x611F;</h2><p>&#x59D0;&#x59D0;&#x65B0;&#x5A5A;</p>
-<p>&#x7279;&#x5730;&#x7ED9;&#x5979;&#x5199;&#x7684;&#x4E00;&#x9996;&#x6B4C;</p>
-<p>&#x795D;&#x798F;&#x5979;</p>
-<p>&#x65F6;&#x5149;&#x603B;&#x662F;&#x7559;&#x4E0D;&#x4F4F;</p>
-<p>&#x4EB2;&#x60C5;&#x662F;&#x6700;&#x9700;&#x8981;&#x53BB;&#x73CD;&#x60DC;&#x7684;</p>
-<p>&#x591A;&#x591A;&#x5475;&#x62A4;&#x5BB6;&#x4EBA;</p>
-<p>&#x5475;&#x62A4;&#x5DF2;&#x7ECF;&#x62E5;&#x6709;&#x7684;&#x4E00;&#x5207;</p>
-<p>&#x5C3D;&#x53EF;&#x80FD;&#x5730;</p>
-<p>&#x8BB0;&#x5F55;&#x597D;&#x6BCF;&#x4E2A;&#x9636;&#x6BB5;&#x751F;&#x6D3B;&#x7684;&#x70B9;&#x6EF4;</p>
-<p>&#x4EE5;&#x4F9B;&#x6765;&#x65F6;&#x56DE;&#x5FC6;</p>
-<p>&#x4EE5;&#x540E;&#x7684;&#x4E8B;&#x8C01;&#x90FD;&#x96BE;&#x9884;&#x6599; </p>
-<p>&#x6D3B;&#x597D;&#x5F53;&#x4E0B; </p>
-<p>&#x591A;&#x591A;&#x4ED8;&#x51FA;</p>
-<h2 id="&#x7F16;&#x66F2;&#x76F8;&#x5173;"><a href="#&#x7F16;&#x66F2;&#x76F8;&#x5173;" class="headerlink" title="&#x7F16;&#x66F2;&#x76F8;&#x5173;"></a>&#x7F16;&#x66F2;&#x76F8;&#x5173;</h2><p>&#x6CA1;&#x6709;&#x592A;&#x590D;&#x6742;&#x7684;&#x7F16;&#x66F2;</p>
-<p>&#x6839;&#x636E;&#x9700;&#x8981;&#x6DFB;&#x52A0;</p>
-<p>&#x53EA;&#x8981;&#x80FD;&#x8868;&#x8FBE;&#x51FA;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#x60C5;&#x7EEA;</p>
-<p>&#x5C31;&#x5DF2;&#x8DB3;&#x591F;</p>
-<h2 id="&#x6B4C;&#x8BCD;"><a href="#&#x6B4C;&#x8BCD;" class="headerlink" title="&#x6B4C;&#x8BCD;"></a>&#x6B4C;&#x8BCD;</h2><p>&#x6700;&#x771F;&#x631A;&#x7684; </p>
-<p>&#x4E0D;&#x79BB;&#x4E0D;&#x5F03;</p>
-<p>&#x8FD1;&#x8DDD;&#x79BB;&#x627F;&#x8BFA;</p>
-<p>&#x7F18;&#x81EA;&#x5F53;&#x521D;&#x76F8;&#x9047;</p>
-<p>&#x6CA1;&#x6709;&#x4E89;&#x5435;  </p>
-<p>&#x4E00;&#x8D77;&#x8FCE;&#x7740;&#x98CE;</p>
-<p>&#x76F8;&#x5B88;&#x7684;&#x610F;&#x4E49;</p>
-<p>&#x6700;&#x771F;&#x5B9E;&#x7684; </p>
-<p>&#x4E00;&#x70B9;&#x4E00;&#x6EF4;</p>
-<p>&#x513F;&#x65F6;&#x7684;&#x8BB0;&#x5FC6;</p>
-<p>&#x5168;&#x90FD;&#x53D8;&#x6210;&#x56DE;&#x5FC6;</p>
-<p>&#x90FD;&#x662F;  &#x4E89;&#x5435;  </p>
-<p>&#x4E00;&#x8D77;&#x6253;&#x95F9;</p>
-<p>&#x5C31;&#x662F;&#x5C31;&#x662F;&#x795D;&#x798F;&#x4F60;</p>
-<p>&#x7528;&#x6700;&#x597D;&#x7684;&#x8BDD;&#x9001;&#x7ED9;&#x6700;&#x7F8E;&#x7684;&#x90A3;&#x65B0;&#x5A18;&#x5C31;&#x662F;&#x4F60;</p>
-<p>&#x4E00;&#x751F;&#x4E00;&#x4E16; &#x6C38;&#x6C38;&#x8FDC;&#x8FDC;&#x4E0D;&#x5206;&#x79BB; </p>
-<p>&#x771F;&#x5FC3;&#x4E0D;&#x53D8;</p>
-<p>&#x4EB2;&#x60C5;&#x4E0D;&#x53D8;</p>
-<p>&#x552F;&#x4E00;&#x795D;&#x798F;&#x4F60;</p>
-<p>&#x7528;&#x6700;&#x597D;&#x7684;&#x8BDD;&#x9001;&#x7ED9;&#x6700;&#x7F8E;&#x7684;&#x90A3;&#x65B0;&#x5A18;&#x5C31;&#x662F;&#x4F60;</p>
-<p>&#x4E00;&#x751F;&#x4E00;&#x4E16; &#x6C38;&#x6C38;&#x8FDC;&#x8FDC;&#x4E0D;&#x5206;&#x79BB; </p>
-<p>&#x7231;&#x60C5;</p>
-<p>&#x5A5A;&#x793C;</p>
-<p>&#x6211;&#x4EEC;&#x5144;&#x5F1F;&#x59D0;&#x59B9;&#x90FD;  &#x795D;&#x798F;&#x4F60;</p>
-<p>&#x68A6;&#x968F;&#x5230;</p>
-<p>&#x7D27;&#x7D27;&#x7684;&#x4F9D;&#x9760;</p>
-<p>&#x5954;&#x8DD1;&#x7684;&#x5927;&#x8C61;&#x5C31;&#x4E0D;&#x662F;&#x5047;&#x8C61;</p>
-<p>&#x8981;&#x5F00;&#x5FC3;&#x7684;&#x7B11;</p>
-<p>&#x8981;&#x5F00;&#x5FC3;&#x7684;&#x8017;</p>
-<p>&#x9633;&#x5149;&#x660E;&#x5A9A; &#x6625;&#x5149;&#x707F;&#x70C2; &#x90FD;&#x77E5;&#x9053;</p>
-<p>&#x662F;&#x4ECA;&#x5929;</p>
-<p>&#x4E24;&#x624B;&#x76F8;&#x7275;</p>
-<p>&#x4EC0;&#x4E48;&#x8A93;&#x8A00;</p>
-<p>&#x5E78;&#x798F;&#x7684;&#x65F6;&#x95F4;</p>
-<p>&#x6CA1;&#x6709;&#x4E86;&#x9884;&#x5146;</p>
-<p>&#x5E78;&#x798F;&#x7684;&#x9884;&#x5146;</p>
-<p>&#x5404;&#x4F4D;&#x89C2;&#x4F17;</p>
-<p>&#x542C;&#x6211;&#x795D;&#x798F;&#x9001;&#x5230;</p>
-<h2 id="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"><a href="#&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;" class="headerlink" title="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"></a>&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;</h2><p><a href="https://audio.newban.cn/161.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x795D;&#x798F;&#x4F60;&#x300B;</a></p>
-<p> <a href="https://audio.newban.cn/164.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x7761;&#x5427;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/163.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E0D;&#x8BB8;&#x52A8;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/169.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/165.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x5FEB;&#x8DDF;&#x4E0A;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/167.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x6F2B;&#x6E38;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/168.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x65E0;&#x7720;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/160.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x6E38;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/166.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x9633;&#x5149;&#x6B63;&#x597D;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/162.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x906E;&#x6708;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/158.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x8FFD;&#x98CE;&#x300B;</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="../18/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../18/">18</a><span class="page-number current">19</span><a class="page-number" href="../20/">20</a><a class="page-number" href="../21/">21</a><a class="extend next" rel="next" href="../20/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="../18/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../18/">18</a><span class="page-number current">19</span><a class="page-number" href="../20/">20</a><span class="space">&hellip;</span><a class="page-number" href="../22/">22</a><a class="extend next" rel="next" href="../20/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1766,7 +1769,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">208</span>
+                  <span class="site-state-item-count">211</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

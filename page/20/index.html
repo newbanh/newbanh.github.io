@@ -273,6 +273,447 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../10.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../10.html" itemprop="url">给USB接口的MIDI控制器增加标准5芯MIDI接口</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-29T14:03:58+08:00">
+                2019-08-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>&#x5E02;&#x573A;&#x4E0A;&#x4F4E;&#x4EF7;&#x7684;MIDI&#x63A7;&#x5236;&#x5668;&#x53EA;&#x80FD;&#x4F7F;&#x7528;USB&#x63A5;&#x53E3;&#x8FDE;&#x63A5;&#x7535;&#x8111;&#xFF0C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x6807;&#x51C6;&#x7684;5&#x82AF;MIDI&#x63A5;&#x53E3;&#xFF0C;USB MIDI&#x63A5;&#x53E3;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x5FC5;&#x987B;&#x5148;&#x8FDE;&#x63A5;USB&#x8BBE;&#x5907;&#x518D;&#x6253;&#x5F00;&#x5BBF;&#x4E3B;&#x8F6F;&#x4EF6;&#x624D;&#x80FD;&#x63A5;&#x53D7;MIDI&#x4FE1;&#x606F;&#x3002;</strong><br><strong>&#x4F8B;&#x5982;ICON&#x7684;icontrols&#x63A7;&#x5236;&#x5668;</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zphf3my3j20p00jdgnt-1567059830949.jpg" alt></p>
+<p><strong>&#x4E0B;&#x9762;&#x8981;&#x7ED9;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x589E;&#x52A0;&#x6807;&#x51C6;5&#x82AF;MIDI&#x63A5;&#x53E3;&#xFF0C;&#x4F7F;&#x5B83;&#x4E00;&#x901A;&#x7535;&#x5C31;&#x53EF;&#x4EE5;&#x53D1;&#x9001;MIDI&#x4FE1;&#x53F7;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x3002;</strong><br><strong>&#x62C6;&#x5F00;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B83;&#x4F7F;&#x7528;&#x4E86;STC 12C5A16AD&#x5355;&#x7247;&#x673A;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpi0xux2j21kw16ogun.jpg" alt><br><strong>&#x641C;&#x7D22;&#x8FD9;&#x4E2A;&#x5355;&#x7247;&#x673A;&#x7684;&#x5F15;&#x811A;&#x8D44;&#x6599;&#xFF0C;&#x53D1;&#x73B0;&#x5B83;&#x662F;&#x5C5E;&#x4E8E;STC12C5A60&#x7CFB;&#x5217;&#x7684;&#xFF0C;&#x5B83;&#x7684;&#x7B2C;7&#x811A;&#x5C31;&#x662F;MIDI&#x8F93;&#x51FA;&#x53E3;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpj2tmfgj20iv0mdgo2-1567059811650.jpg" alt><br><strong>&#x5728;&#x53C2;&#x8003;&#x4E86;&#x7528;&#x5355;&#x7247;&#x673A;&#x5236;&#x4F5C;MIDI&#x952E;&#x76D8;&#x7B49;&#x8D44;&#x6599;&#x540E;&#xFF0C;&#x4E86;&#x89E3;&#x5230;&#x5355;&#x7247;&#x673A;&#x7684;TXD&#x8F93;&#x51FA;&#x53E3;&#x5C31;&#x662F;MIDI&#x8F93;&#x51FA;&#x53E3;&#xFF0C;RXD&#x662F;MIDI&#x8F93;&#x5165;&#x53E3;&#xFF0C;&#x53EA;&#x662F;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x8D44;&#x6599;&#x8BF4;&#x7684;&#x662F;15&#x9488;&#x7684;&#x6E38;&#x620F;MIDI&#x63A5;&#x53E3;&#xFF0C;&#x5728;&#x4E00;&#x4E9B;&#x8D44;&#x6599;&#x91CC;&#x4E5F;&#x6709;&#x8BF4;&#x6E38;&#x620F;&#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5F04;&#x6210;&#x6807;&#x51C6;5&#x82AF;MIDI&#x63A5;&#x53E3;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x7535;&#x5E73;&#x8F6C;&#x6362;&#x7535;&#x8DEF;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpp8213rj20m30sdtak.jpg" alt><br><strong>&#x672C;&#x6765;icontrols&#x53E6;&#x5916;&#x4E00;&#x4E2A;USB&#x63A5;&#x53E3;&#x662F;&#x7ED9;&#x4E0B;&#x4E00;&#x7EA7;&#x8BBE;&#x5907;&#xFF0C;&#x5982;ikey&#x7B49;&#x8BBE;&#x5907;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x4F46;&#x6211;&#x60CA;&#x8BB6;&#x7684;&#x53D1;&#x73B0;&#x5355;&#x7247;&#x673A;&#x4E2D;&#x7684;TXD&#x53E3;&#x7ADF;&#x7136;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x5230;&#x8FDE;&#x63A5;&#x4E0B;&#x7EA7;&#x8BBE;&#x5907;&#x7684;USB&#x53E3;&#xFF0C;&#x8FD9;&#x5C31;&#x5F88;&#x65B9;&#x4FBF;&#x6539;&#x9020;&#x4E86;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zppk18ngj21kw23udp1-1567059830972.jpg" alt><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpppad88j20rf0dr76q.jpg" alt><br><strong>&#x597D;&#x4E86;&#xFF0C;&#x5F00;&#x59CB;&#x52A8;&#x624B;&#xFF0C;&#x6211;&#x7528;&#x4E86;&#x4E00;&#x6839;&#x5E9F;&#x7684;USB&#x7EBF;&#xFF0C;&#x7531;&#x4E8E;MIDI&#x4F20;&#x8F93;&#x4EC5;&#x7528;&#x5230;+5V&#x548C;TXD&#x4E24;&#x6839;&#x7EBF;&#x5C31;&#x53EF;&#x4EE5;&#x4F20;&#x8F93;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5BF9;&#x5E94;USB&#x7684;&#x7EA2;&#x7EBF;&#x548C;&#x7EFF;&#x7EBF;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zppx288oj21kw23udpi.jpg" alt><br><strong>&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x5728;&#x4E0A;&#x7535;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5224;&#x65AD;USB&#x7684;&#x6570;&#x636E;&#x7EBF;&#x662F;&#x5426;&#x63A5;&#x5165;&#x7535;&#x8111;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x63D2;&#x5165;&#x7535;&#x8111;&#xFF0C;&#x5B83;&#x7684;&#x7EBF;&#x8DEF;&#x5C31;&#x4F20;&#x8F93;&#x81F3;&#x7535;&#x8111;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4EC5;&#x63D0;&#x4F9B;&#x7535;&#x6E90;&#xFF0C;&#x7EE7;&#x7535;&#x5668;&#x624D;&#x628A;&#x4FE1;&#x53F7;&#x4F20;&#x7ED9;&#x8FDE;&#x63A5;&#x4E0B;&#x7EA7;&#x8BBE;&#x5907;&#x7684;USB&#xFF0C;&#x6240;&#x4EE5;&#x4F9B;&#x7535;&#x7684;&#x65F6;&#x5019;&#x8981;&#x628A;&#x4F9B;&#x7535;&#x7528;&#x7684;USB&#x7684;D+&#x548C;D-&#x65AD;&#x5F00;&#x3002;&#x56E0;&#x6B64;&#x8FD8;&#x9700;&#x8981;&#x4E13;&#x95E8;&#x5236;&#x4F5C;&#x4E00;&#x6839;&#x7EBF;&#xFF0C;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x662F;USB&#x5EF6;&#x957F;&#x7EBF;&#xFF0C;&#x6311;&#x65AD;D+&#x548C;D-&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x5355;&#x7EAF;&#x4F9B;&#x7535;&#x3002;</strong><br><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpq3mliyj21kw23u7bi.jpg" alt></p>
+<p><strong>&#x8FD9;&#x5C31;&#x662F;&#x5236;&#x4F5C;&#x597D;&#x7684;MIDI&#x8F6C;&#x63A5;&#x7EBF;</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpqbwmb5j21kw23utlt.jpg" alt></p>
+<p><strong>&#x6700;&#x540E;&#x6539;&#x9020;&#x5B8C;&#x6210;&#x901A;&#x7535;&#x8BD5;&#x673A;</strong><br><strong>&#x7528;&#x624B;&#x673A;&#x7684;&#x9002;&#x914D;&#x5668;&#x4F9B;&#x7535;</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpqkpnqyj21kw23utny.jpg" alt></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpvlh5u8j21kw23u15b.jpg" alt></p>
+<p><strong>MIDI&#x7EBF;&#x63A5;&#x5165;&#x58F0;&#x5361;</strong></p>
+<p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/628113b5gw1e9zpvxqpa9j21kw23uapt.jpg" alt></p>
+<p><strong>&#x6700;&#x540E;&#x603B;&#x7ED3;&#xFF1A;</strong><br>&#x6211;&#x8BA4;&#x4E3A;&#x6240;&#x6709;&#x901A;&#x8FC7;&#x5355;&#x7247;&#x673A;&#x751F;&#x4EA7;&#x7684;USB MIDI&#x63A7;&#x5236;&#x5668;&#x90FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;&#x5355;&#x7247;&#x673A;&#x7684;TXD&#x811A;&#x3001;RXD&#x811A;&#x76F4;&#x63A5;&#x5F15;&#x51FA;MIDI&#x8F93;&#x51FA;&#x3001;&#x8F93;&#x5165;&#x63A5;&#x53E3;&#x3002;&#x6700;&#x540E;&#x6211;&#x6CA1;&#x6709;&#x7ECF;&#x8FC7;&#x7535;&#x8111;&#x5C31;&#x8F93;&#x51FA;&#x4E86;MIDI&#x4FE1;&#x53F7;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x64CD;&#x4F5C;DAW&#x8F6F;&#x4EF6;&#x65F6;&#x771F;&#x6B63;&#x5B9E;&#x73B0;&#x4E86;&#x5373;&#x63D2;&#x5373;&#x7528;&#x3002;&#x867D;&#x7136;&#x5E02;&#x573A;&#x4E0A;&#x53EF;&#x4EE5;&#x4E70;&#x5230;&#x76F4;&#x63A5;&#x5E26;&#x6807;&#x51C6;5&#x82AF;&#x7684;MIDI&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x4F46;&#x4EF7;&#x683C;&#x76F8;&#x5F53;&#x6602;&#x8D35;&#xFF0C;&#x800C;&#x73B0;&#x5728;&#x4EC5;&#x9700;&#x8981;&#x51E0;&#x5757;&#x94B1;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x529F;&#x80FD;&#x3002;</p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../26.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../26.html" itemprop="url">我的第一篇博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T14:35:09+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&#x5927;&#x718A;: &#x5C0F;&#x7B28; &#x4ECA;&#x5929;&#x6211;&#x6765;&#x6559;&#x4F60;&#x642D;&#x5EFA;&#x514D;&#x8D39;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2; </p>
+<p>&#x5C0F;&#x7B28;: &#x6211;&#x5DF2;&#x7ECF;&#x6709;&#x65B0;&#x6D6A; &#x641C;&#x72D0; &#x7F51;&#x6613; &#x817E;&#x8BAF; &#x767E;&#x5EA6;&#x5404;&#x79CD;&#x514D;&#x8D39;&#x535A;&#x5BA2;&#x4E86;&#x5440;? </p>
+<p>&#x5927;&#x718A;: &#x989D;&#x2026; &#x8FD9;&#x4E2A;&#x662F;&#x514D;&#x8D39;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9; </p>
+<p>&#x5C0F;&#x7B28;:&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;?</p>
+<p>&#x5927;&#x718A;:&#x533A;&#x522B;&#x4E0D;&#x5927;</p>
+<p>&#x5C0F;&#x7B28;:&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;..</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../161.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="../../161.html" itemprop="url">原创歌曲《祝福你》</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T10:15:53+08:00">
+                2019-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="&#x521B;&#x4F5C;&#x7075;&#x611F;"><a href="#&#x521B;&#x4F5C;&#x7075;&#x611F;" class="headerlink" title="&#x521B;&#x4F5C;&#x7075;&#x611F;"></a>&#x521B;&#x4F5C;&#x7075;&#x611F;</h2><p>&#x59D0;&#x59D0;&#x65B0;&#x5A5A;</p>
+<p>&#x7279;&#x5730;&#x7ED9;&#x5979;&#x5199;&#x7684;&#x4E00;&#x9996;&#x6B4C;</p>
+<p>&#x795D;&#x798F;&#x5979;</p>
+<p>&#x65F6;&#x5149;&#x603B;&#x662F;&#x7559;&#x4E0D;&#x4F4F;</p>
+<p>&#x4EB2;&#x60C5;&#x662F;&#x6700;&#x9700;&#x8981;&#x53BB;&#x73CD;&#x60DC;&#x7684;</p>
+<p>&#x591A;&#x591A;&#x5475;&#x62A4;&#x5BB6;&#x4EBA;</p>
+<p>&#x5475;&#x62A4;&#x5DF2;&#x7ECF;&#x62E5;&#x6709;&#x7684;&#x4E00;&#x5207;</p>
+<p>&#x5C3D;&#x53EF;&#x80FD;&#x5730;</p>
+<p>&#x8BB0;&#x5F55;&#x597D;&#x6BCF;&#x4E2A;&#x9636;&#x6BB5;&#x751F;&#x6D3B;&#x7684;&#x70B9;&#x6EF4;</p>
+<p>&#x4EE5;&#x4F9B;&#x6765;&#x65F6;&#x56DE;&#x5FC6;</p>
+<p>&#x4EE5;&#x540E;&#x7684;&#x4E8B;&#x8C01;&#x90FD;&#x96BE;&#x9884;&#x6599; </p>
+<p>&#x6D3B;&#x597D;&#x5F53;&#x4E0B; </p>
+<p>&#x591A;&#x591A;&#x4ED8;&#x51FA;</p>
+<h2 id="&#x7F16;&#x66F2;&#x76F8;&#x5173;"><a href="#&#x7F16;&#x66F2;&#x76F8;&#x5173;" class="headerlink" title="&#x7F16;&#x66F2;&#x76F8;&#x5173;"></a>&#x7F16;&#x66F2;&#x76F8;&#x5173;</h2><p>&#x6CA1;&#x6709;&#x592A;&#x590D;&#x6742;&#x7684;&#x7F16;&#x66F2;</p>
+<p>&#x6839;&#x636E;&#x9700;&#x8981;&#x6DFB;&#x52A0;</p>
+<p>&#x53EA;&#x8981;&#x80FD;&#x8868;&#x8FBE;&#x51FA;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#x60C5;&#x7EEA;</p>
+<p>&#x5C31;&#x5DF2;&#x8DB3;&#x591F;</p>
+<h2 id="&#x6B4C;&#x8BCD;"><a href="#&#x6B4C;&#x8BCD;" class="headerlink" title="&#x6B4C;&#x8BCD;"></a>&#x6B4C;&#x8BCD;</h2><p>&#x6700;&#x771F;&#x631A;&#x7684; </p>
+<p>&#x4E0D;&#x79BB;&#x4E0D;&#x5F03;</p>
+<p>&#x8FD1;&#x8DDD;&#x79BB;&#x627F;&#x8BFA;</p>
+<p>&#x7F18;&#x81EA;&#x5F53;&#x521D;&#x76F8;&#x9047;</p>
+<p>&#x6CA1;&#x6709;&#x4E89;&#x5435;  </p>
+<p>&#x4E00;&#x8D77;&#x8FCE;&#x7740;&#x98CE;</p>
+<p>&#x76F8;&#x5B88;&#x7684;&#x610F;&#x4E49;</p>
+<p>&#x6700;&#x771F;&#x5B9E;&#x7684; </p>
+<p>&#x4E00;&#x70B9;&#x4E00;&#x6EF4;</p>
+<p>&#x513F;&#x65F6;&#x7684;&#x8BB0;&#x5FC6;</p>
+<p>&#x5168;&#x90FD;&#x53D8;&#x6210;&#x56DE;&#x5FC6;</p>
+<p>&#x90FD;&#x662F;  &#x4E89;&#x5435;  </p>
+<p>&#x4E00;&#x8D77;&#x6253;&#x95F9;</p>
+<p>&#x5C31;&#x662F;&#x5C31;&#x662F;&#x795D;&#x798F;&#x4F60;</p>
+<p>&#x7528;&#x6700;&#x597D;&#x7684;&#x8BDD;&#x9001;&#x7ED9;&#x6700;&#x7F8E;&#x7684;&#x90A3;&#x65B0;&#x5A18;&#x5C31;&#x662F;&#x4F60;</p>
+<p>&#x4E00;&#x751F;&#x4E00;&#x4E16; &#x6C38;&#x6C38;&#x8FDC;&#x8FDC;&#x4E0D;&#x5206;&#x79BB; </p>
+<p>&#x771F;&#x5FC3;&#x4E0D;&#x53D8;</p>
+<p>&#x4EB2;&#x60C5;&#x4E0D;&#x53D8;</p>
+<p>&#x552F;&#x4E00;&#x795D;&#x798F;&#x4F60;</p>
+<p>&#x7528;&#x6700;&#x597D;&#x7684;&#x8BDD;&#x9001;&#x7ED9;&#x6700;&#x7F8E;&#x7684;&#x90A3;&#x65B0;&#x5A18;&#x5C31;&#x662F;&#x4F60;</p>
+<p>&#x4E00;&#x751F;&#x4E00;&#x4E16; &#x6C38;&#x6C38;&#x8FDC;&#x8FDC;&#x4E0D;&#x5206;&#x79BB; </p>
+<p>&#x7231;&#x60C5;</p>
+<p>&#x5A5A;&#x793C;</p>
+<p>&#x6211;&#x4EEC;&#x5144;&#x5F1F;&#x59D0;&#x59B9;&#x90FD;  &#x795D;&#x798F;&#x4F60;</p>
+<p>&#x68A6;&#x968F;&#x5230;</p>
+<p>&#x7D27;&#x7D27;&#x7684;&#x4F9D;&#x9760;</p>
+<p>&#x5954;&#x8DD1;&#x7684;&#x5927;&#x8C61;&#x5C31;&#x4E0D;&#x662F;&#x5047;&#x8C61;</p>
+<p>&#x8981;&#x5F00;&#x5FC3;&#x7684;&#x7B11;</p>
+<p>&#x8981;&#x5F00;&#x5FC3;&#x7684;&#x8017;</p>
+<p>&#x9633;&#x5149;&#x660E;&#x5A9A; &#x6625;&#x5149;&#x707F;&#x70C2; &#x90FD;&#x77E5;&#x9053;</p>
+<p>&#x662F;&#x4ECA;&#x5929;</p>
+<p>&#x4E24;&#x624B;&#x76F8;&#x7275;</p>
+<p>&#x4EC0;&#x4E48;&#x8A93;&#x8A00;</p>
+<p>&#x5E78;&#x798F;&#x7684;&#x65F6;&#x95F4;</p>
+<p>&#x6CA1;&#x6709;&#x4E86;&#x9884;&#x5146;</p>
+<p>&#x5E78;&#x798F;&#x7684;&#x9884;&#x5146;</p>
+<p>&#x5404;&#x4F4D;&#x89C2;&#x4F17;</p>
+<p>&#x542C;&#x6211;&#x795D;&#x798F;&#x9001;&#x5230;</p>
+<h2 id="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"><a href="#&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;" class="headerlink" title="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"></a>&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;</h2><p><a href="https://audio.newban.cn/161.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x795D;&#x798F;&#x4F60;&#x300B;</a></p>
+<p> <a href="https://audio.newban.cn/164.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x7761;&#x5427;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/163.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E0D;&#x8BB8;&#x52A8;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/169.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/165.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x5FEB;&#x8DDF;&#x4E0A;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/167.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x6F2B;&#x6E38;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/168.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x65E0;&#x7720;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/160.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x6E38;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/166.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x9633;&#x5149;&#x6B63;&#x597D;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/162.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x906E;&#x6708;&#x300B;</a></p>
+<p><a href="https://audio.newban.cn/158.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x8FFD;&#x98CE;&#x300B;</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../160.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1438,505 +1879,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../167.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../167.html" itemprop="url">原创歌曲《漫游》</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T10:15:53+08:00">
-                2019-01-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x521B;&#x4F5C;&#x7075;&#x611F;"><a href="#&#x521B;&#x4F5C;&#x7075;&#x611F;" class="headerlink" title="&#x521B;&#x4F5C;&#x7075;&#x611F;"></a>&#x521B;&#x4F5C;&#x7075;&#x611F;</h2><p>&#x5BF9;&#x4E8E;&#x97F3;&#x4E50;&#x6765;&#x8BB2;</p>
-<p>&#x60C5;&#x7EEA;&#x5C31;&#x662F;&#x6700;&#x597D;&#x7684;&#x7075;&#x611F;</p>
-<p>&#x8DEF;</p>
-<p>&#x4E0D;&#x53EF;&#x80FD;&#x4E00;&#x5E06;&#x98CE;&#x987A;</p>
-<p>&#x6709;&#x65F6;&#x5019;</p>
-<p>&#x601D;&#x7EEA;&#x5C31;&#x5982;&#x4E00;&#x6735;&#x4E91;</p>
-<p>&#x6F2B;&#x65E0;&#x76EE;&#x7684;&#x5730;&#x98D8;&#x8361;&#x7740;</p>
-<p>&#x611F;&#x89C9;</p>
-<p>&#x62D6;&#x7740;&#x6C89;&#x91CD;&#x7684;&#x8EAF;&#x4F53; </p>
-<p>&#x4E00;&#x526F;&#x751F;&#x65E0;&#x53EF;&#x604B;&#x7684;&#x8868;&#x60C5;</p>
-<p> &#x5446;&#x6EDE;&#x7684;&#x773C;&#x795E;</p>
-<p>&#x5374;&#x4E0D;&#x77E5;&#x671B;&#x5411;&#x4F55;&#x5904;</p>
-<p>&#x4F46;&#x53C8;</p>
-<p>&#x4E0D;&#x9700;&#x8981;&#x6B47;&#x65AF;&#x5E95;&#x91CC;&#x7684;&#x5450;&#x558A;</p>
-<p>&#x56E0;&#x4E3A;</p>
-<p>&#x65E9;&#x5DF2;&#x6CA1;&#x4E86;&#x52A8;&#x5F39;&#x7684;&#x529B;&#x6C14;</p>
-<h2 id="&#x7F16;&#x66F2;&#x76F8;&#x5173;"><a href="#&#x7F16;&#x66F2;&#x76F8;&#x5173;" class="headerlink" title="&#x7F16;&#x66F2;&#x76F8;&#x5173;"></a>&#x7F16;&#x66F2;&#x76F8;&#x5173;</h2><p>&#x6CA1;&#x6709;&#x592A;&#x590D;&#x6742;&#x7684;&#x7F16;&#x66F2;</p>
-<p>&#x6839;&#x636E;&#x9700;&#x8981;&#x6DFB;&#x52A0;</p>
-<p>&#x53EA;&#x8981;&#x80FD;&#x8868;&#x8FBE;&#x51FA;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#x60C5;&#x7EEA;</p>
-<p>&#x5C31;&#x5DF2;&#x8DB3;&#x591F;</p>
-<h2 id="&#x6B4C;&#x8BCD;"><a href="#&#x6B4C;&#x8BCD;" class="headerlink" title="&#x6B4C;&#x8BCD;"></a>&#x6B4C;&#x8BCD;</h2><p>&#x662F;&#x5F88;&#x5728;&#x4E4E;</p>
-<p>&#x8FD9;&#x4E00;&#x7EB8;&#x4E00;&#x53E5;&#x4E00;&#x7B14;</p>
-<p>&#x8FD9;&#x591C;&#x6DF1;&#x5230;&#x4E86;&#x5F52;&#x9014;</p>
-<p>&#x5728;&#x9065;&#x671B;&#x773C;&#x524D;&#x8DDD;&#x79BB;</p>
-<p>&#x5176;&#x5B9E;&#x60A0;&#x60A0;&#x7B49;&#x4F60;</p>
-<p>&#x5728;&#x8FF7;&#x5931;&#x7684;&#x547D;&#x91CC;</p>
-<p>&#x8BE0;&#x91CA;&#x7740; &#x591C;&#x6DF1;&#x4EBA;&#x9759;</p>
-<p>&#x671F;&#x5F85;&#x7740;&#x5B8C;&#x7F8E;</p>
-<p>&#x662F;&#x5F88;&#x5728;&#x4E4E; </p>
-<p>&#x8FD9;&#x4E00;&#x7EB8;&#x4E00;&#x53E5;&#x4E00;&#x7B14;</p>
-<p>&#x8FD9;&#x591C;&#x6DF1;&#x5230;&#x4E86;&#x5F52;&#x9014;</p>
-<p>&#x5728;&#x9065;&#x671B;&#x773C;&#x524D;&#x8DDD;&#x79BB;</p>
-<p>&#x5176;&#x5B9E;&#x60A0;&#x60A0;&#x7B49;&#x4F60;</p>
-<p>&#x5728;&#x9057;&#x5931;&#x7684;&#x591C;&#x91CC;</p>
-<p>&#x96E8;&#x4E0B;&#x7740; &#x98CE;&#x4E71;&#x4EBA;&#x5FC3;</p>
-<p>&#x8C01;&#x53C8;&#x80FD; &#x5B8C;&#x7F8E;</p>
-<p>&#x6211;&#x7684;&#x6CEA;&#x5DF2;&#x6CDB;&#x6EE5; </p>
-<p>&#x6D41;&#x4E0D;&#x505C;</p>
-<p>&#x89C1;&#x8BC1;&#x8C01;&#x7684;&#x5947;&#x8FF9;</p>
-<p>&#x6211;&#x7684;&#x5FC3;&#x662F;&#x50CF;&#x5728;&#x7535;&#x5F71;&#x91CC;</p>
-<p>&#x770B;&#x7740;&#x8C01;&#x7684;&#x547D;&#x8FD0;</p>
-<p>&#x6211;&#x7684;&#x5FC3;&#x6F2B;&#x6E38;&#x5728;&#x5F71;&#x5B50;&#x91CC;</p>
-<p>&#x770B;&#x89C1;&#x4F60;  &#x8036;</p>
-<p>&#x6CA1;&#x5B8C;&#x6CA1;&#x4E86; </p>
-<p>&#x4F24;&#x4EBA;&#x7684;&#x7ED3;&#x5C40; </p>
-<p>&#x8C01;&#x6765;&#x89E3;&#x5F00;&#x8FD9;&#x96BE;&#x4E86;&#x7684;&#x7ED3;</p>
-<p>&#x8C01;&#x80FD;&#x4E86;&#x89E3;</p>
-<h2 id="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"><a href="#&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;" class="headerlink" title="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"></a>&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;</h2><p><a href="https://audio.newban.cn/161.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x795D;&#x798F;&#x4F60;&#x300B;</a></p>
-<p> <a href="https://audio.newban.cn/164.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x7761;&#x5427;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/163.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E0D;&#x8BB8;&#x52A8;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/169.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/165.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x5FEB;&#x8DDF;&#x4E0A;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/167.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x6F2B;&#x6E38;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/168.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x65E0;&#x7720;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/160.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x6E38;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/166.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x9633;&#x5149;&#x6B63;&#x597D;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/162.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x906E;&#x6708;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/158.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x8FFD;&#x98CE;&#x300B;</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../169.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../169.html" itemprop="url">原创歌曲《搞什么事情》</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T10:15:53+08:00">
-                2019-01-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x521B;&#x4F5C;&#x7075;&#x611F;"><a href="#&#x521B;&#x4F5C;&#x7075;&#x611F;" class="headerlink" title="&#x521B;&#x4F5C;&#x7075;&#x611F;"></a>&#x521B;&#x4F5C;&#x7075;&#x611F;</h2><p>&#x8FD9;&#x9996;&#x6B4C;&#x66F2;&#x662F;&#x867E;&#x7C73;beats&#x521B;&#x4F5C;&#x5927;&#x8D5B;&#x53C2;&#x8D5B;&#x4F5C;&#x54C1;</p>
-<p>&#x53C2;&#x52A0;&#x8FD9;&#x6B21;&#x6BD4;&#x8D5B;</p>
-<p>&#x6700;&#x4E3B;&#x8981;&#x7684;&#x76EE;&#x7684;</p>
-<p>&#x5176;&#x5B9E;&#x662F;&#x4E3A;&#x4E86;&#x63A8;&#x5E7F;&#x6211;&#x7684;&#x4E13;&#x8F91;</p>
-<p>&#x8FD9;&#x9996;beats&#x7D20;&#x6750;&#x662F;&#x7531;&#x867E;&#x7C73;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;</p>
-<p> &#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x9053;&#x547D;&#x9898;&#x4F5C;&#x6587;</p>
-<p>&#x66F2;&#x98CE;&#x5DF2;&#x7ECF;&#x88AB;&#x9650;&#x5B9A; </p>
-<p>&#x5F53;&#x6211;&#x62FF;&#x5230;&#x8FD9;&#x4E2A;&#x7D20;&#x6750;&#x7684;&#x90A3;&#x4E00;&#x523B; </p>
-<p>&#x8111;&#x888B;&#x91CC;&#x7ACB;&#x9A6C;&#x5C31;&#x6D6E;&#x73B0;&#x51FA;&#x4E86;&#x4E00;&#x5E45;</p>
-<p>&#x6840;&#x9A9C;&#x4E0D;&#x9A6F;&#x7684;&#x753B;&#x9762;</p>
-<p>&#x548C;&#x9752;&#x6625;&#x671F;&#x7684;&#x53DB;&#x9006;&#x4E0E;&#x50B2;&#x5A07; </p>
-<p>&#x5F20;&#x626C;&#x7684;&#x4F5C;&#x98CE;&#x4E0E;&#x4E3B;&#x6D41;&#x683C;&#x683C;&#x4E0D;&#x5165; </p>
-<p>&#x8FD9;&#x662F;&#x6211;&#x5BF9;&#x8FD9;&#x4E2A;&#x7D20;&#x6750;&#x6700;&#x5F00;&#x59CB;&#x7684;&#x7406;&#x89E3;</p>
-<p> &#x97F3;&#x4E50;&#x7684;&#x827A;&#x672F;&#x5176;&#x5B9E;&#x4E5F;&#x662F;&#x5BA1;&#x7F8E;&#x7684;&#x827A;&#x672F;</p>
-<p>&#x540C;&#x6837;&#x7684;&#x4E00;&#x4E2A;beats</p>
-<p>&#x6BCF;&#x4E2A;&#x4EBA;&#x521B;&#x4F5C;&#x51FA;&#x6765;&#x7684;&#x65CB;&#x5F8B;&#x98CE;&#x683C;&#x81EA;&#x7136;&#x4E5F;&#x662F;&#x4E0D;&#x4E00;&#x6837; </p>
-<p>&#x6CA1;&#x6709;&#x597D;&#x4E0E;&#x574F; </p>
-<p>&#x7B26;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x5BA1;&#x7F8E;&#x5C31;&#x591F;&#x4E86;</p>
-<h2 id="&#x7F16;&#x66F2;&#x76F8;&#x5173;"><a href="#&#x7F16;&#x66F2;&#x76F8;&#x5173;" class="headerlink" title="&#x7F16;&#x66F2;&#x76F8;&#x5173;"></a>&#x7F16;&#x66F2;&#x76F8;&#x5173;</h2><p>&#x867E;&#x7C73;&#x63D0;&#x4F9B;&#x7684;beats</p>
-<p>&#x65E0;&#x9700;&#x4E8C;&#x6B21;&#x7F16;&#x66F2;</p>
-<h2 id="&#x6B4C;&#x8BCD;"><a href="#&#x6B4C;&#x8BCD;" class="headerlink" title="&#x6B4C;&#x8BCD;"></a>&#x6B4C;&#x8BCD;</h2><p>&#x4EC0;&#x4E48;&#x5E72;&#x7CFB; &#x6765;&#x5934;</p>
-<p>&#x6211;&#x6CA1;&#x5173;&#x7CFB; Double</p>
-<p>&#x8BF6;&#x5C31;&#x4E0D;&#x8D76;&#x7D27; &#x4E0D;&#x8FBE;</p>
-<p>&#x54E6; no no no no &#x5F04;&#x5F04;&#x5F04;</p>
-<p>&#x4E3A;  to  get  open</p>
-<p>&#x662F;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5; </p>
-<p>&#x8FDB;&#x6765;&#x5427;</p>
-<p>&#x53C8;&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5; </p>
-<p>&#x522B;&#x8D70;&#x5F00;</p>
-<p>&#x5BB3;&#x6015;&#x4E8B;&#x60C5;</p>
-<p>&#x6536;&#x4E0B; go go</p>
-<p>&#x200B;    &#x53C8;&#x6765;&#x5566;     </p>
-<p>&#x662F;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;</p>
-<p>&#x8FDB;&#x6765;&#x5427;</p>
-<p>&#x53C8;&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;</p>
-<p>&#x522B;&#x8D70;&#x5F00;</p>
-<p>go go get</p>
-<p>&#x522B;&#x7A7F;&#x62D6;&#x978B;</p>
-<p>&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5; &#x6309;&#x95E8;&#x94C3;</p>
-<p>&#x522B;&#x5BB3;&#x6015;&#x4E8B;&#x60C5; &#x53C8;&#x4E0D;&#x542C;</p>
-<p>get get</p>
-<p>do do </p>
-<p>get get </p>
-<p>to go go</p>
-<p>&#x522B;&#x8F6C;&#x8EAB;&#x4F60;&#x4E0D;&#x542C; </p>
-<p>&#x522B;&#x8F6C;&#x8EAB;&#x4F60;&#x4E0D;&#x660E;</p>
-<p>&#x522B;&#x8F6C;&#x8EAB;&#x5C31;&#x8D70;</p>
-<p>&#x522B;&#x8F6C;&#x8EAB;&#x4E24;&#x5934;&#x6CA1;&#x6709;</p>
-<p>(&#x542C;&#x4E0D;&#x6E05;)</p>
-<p>&#x55D6; &#x8863;&#x670D;&#x5212;&#x7834;</p>
-<p>&#x5F04; &#x522B;&#x4F4E;&#x7740;&#x5934;</p>
-<p>&#x8DEF;&#x5C31;&#x5728;&#x8EAB;&#x540E;</p>
-<p>&#x51FA;&#x6765; &#x51FA; &#x51FA;</p>
-<p>&#x55D6; &#x8863;&#x670D;&#x5212;&#x7834;</p>
-<p>&#x5F04; &#x522B;&#x4F4E;&#x7740;&#x5934;</p>
-<p>&#x770B;&#x8DEF;&#x5C31;&#x5728;&#x8EAB;&#x540E;</p>
-<p>&#x5C31;&#x91CD;&#x6765; &#x8BE5;&#x8BE5; boom</p>
-<p>&#x6765;&#x6765;&#x6765;&#x2026;&#x2026;.&#x6765;&#x641E;&#x4E8B;&#x60C5;..go go go </p>
-<p>&#x6765;&#x6765;&#x6765;&#x2026;&#x2026;.&#x6765;&#x641E; &#x641E;&#x4E8B;&#x60C5;..go go go  </p>
-<p>&#x6765;&#x6765;&#x6765;&#x2026;&#x2026;.&#x522B;&#x7D27;&#x5F20;&#x90FD; &#x522B;&#x7D27;&#x5F20; &#x6765;&#x641E;&#x4E8B;&#x60C5;..no no no </p>
-<p>&#x522B;&#x7D27;&#x5F20; &#x522B;&#x5BB3;&#x6015; &#x6765;&#x641E;&#x4E8B;&#x60C5;..go go</p>
-<p>  &#x522B;&#x8F6C;&#x8EAB; &#x522B;&#x518D;&#x56DE;&#x5934;     </p>
-<p>&#x522B;&#x8F6C;&#x8EAB; &#x522B;&#x518D;&#x56DE;&#x5934;   </p>
-<h2 id="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"><a href="#&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;" class="headerlink" title="&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;"></a>&#x7B2C;&#x4E8C;&#x5F20;&#x539F;&#x521B;&#x4E13;&#x8F91;&#x300A;&#x8F6C;&#x6298;&#x70B9;&#x300B;&#x4E2D;&#x5176;&#x4ED6;&#x6B4C;&#x66F2;</h2><p><a href="https://audio.newban.cn/161.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x795D;&#x798F;&#x4F60;&#x300B;</a></p>
-<p> <a href="https://audio.newban.cn/164.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x7761;&#x5427;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/163.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E0D;&#x8BB8;&#x52A8;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/169.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x641E;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/165.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x5FEB;&#x8DDF;&#x4E0A;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/167.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x6F2B;&#x6E38;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/168.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x65E0;&#x7720;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/160.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x6E38;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/166.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x9633;&#x5149;&#x6B63;&#x597D;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/162.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x4E91;&#x906E;&#x6708;&#x300B;</a></p>
-<p><a href="https://audio.newban.cn/158.html">&#x539F;&#x521B;&#x6B4C;&#x66F2;&#x300A;&#x8FFD;&#x98CE;&#x300B;</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn../../170.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="../../170.html" itemprop="url">音乐合作</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-15T10:15:53+08:00">
-                2019-01-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x97F3;&#x4E50;&#x5408;&#x4F5C;"><a href="#&#x97F3;&#x4E50;&#x5408;&#x4F5C;" class="headerlink" title="&#x97F3;&#x4E50;&#x5408;&#x4F5C;"></a>&#x97F3;&#x4E50;&#x5408;&#x4F5C;</h2><p>&#x5FAE;&#x4FE1;&#x53F7;:infree9</p>
-<h2 id="&#x5546;&#x4E1A;&#x5408;&#x4F5C;"><a href="#&#x5546;&#x4E1A;&#x5408;&#x4F5C;" class="headerlink" title="&#x5546;&#x4E1A;&#x5408;&#x4F5C;"></a>&#x5546;&#x4E1A;&#x5408;&#x4F5C;</h2><p>&#x82E5;&#x60A8;&#x6709;&#x97F3;&#x4E50;&#x76F8;&#x5173;&#x7684;&#x63A8;&#x5E7F;&#x6E20;&#x9053;</p>
-<p>&#x53EF;&#x4EE5;&#x8054;&#x7CFB;&#x6211;&#x54E6;</p>
-<p>&#x5FAE;&#x4FE1;&#x53F7;:infree9</p>
-<p>&#x6216;&#x8005;&#x5176;&#x4ED6;&#x5546;&#x4E1A;&#x5408;&#x4F5C;</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="../19/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../19/">19</a><span class="page-number current">20</span><a class="page-number" href="../21/">21</a><a class="extend next" rel="next" href="../21/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="../19/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../19/">19</a><span class="page-number current">20</span><a class="page-number" href="../21/">21</a><a class="page-number" href="../22/">22</a><a class="extend next" rel="next" href="../21/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1982,7 +1929,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">208</span>
+                  <span class="site-state-item-count">211</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
