@@ -3631,6 +3631,12 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </li>
 <li><p>将音频垂直移动到上一个/下一个轨道上</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NumPad 8/NumPad 2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>轨道静音切换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alt+M</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果器A/B对比切换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Ctrl+B</span><br></pre></td></tr></table></figure>
 
 
 
@@ -12321,7 +12327,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>关于快歌慢歌延迟时间适用性参考</title>
     <url>/216.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在混音中，给人声添加延迟效果是塑造空间感、增加情绪张力的关键手段, 通常和混响搭配使用</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在混音中，给人声添加延迟效果是塑造深度和节奏感、增加情绪张力的关键手段, 通常和混响搭配使用</p>
 <h2 id="延迟的四大核心价值"><a href="#延迟的四大核心价值" class="headerlink" title="延迟的四大核心价值"></a>延迟的四大核心价值</h2><p>混响是给声音穿衣服，而延迟是给声音注入灵魂。它有几个混响无法替代的关键作用：</p>
 <h4 id="1-强化节奏而不拖泥带水"><a href="#1-强化节奏而不拖泥带水" class="headerlink" title="1. 强化节奏而不拖泥带水"></a>1. 强化节奏而不拖泥带水</h4><p>这是延迟最不可替代的价值。混响的尾巴会覆盖节奏，而延迟的重复是<strong>精准卡拍</strong>的。</p>
 <ul>
@@ -12473,6 +12479,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><strong>禁全频延迟</strong>：不做EQ高低切的延迟，是混音变脏的元凶之一。</li>
 <li><strong>禁滥用长延迟</strong>：1/4D、1/2等长延迟是特效香料，仅用于特定段落点缀，滥用会破坏歌曲结构。</li>
 </ul>
+<p>你可能会有疑问, 很多混音大师会给人声发送1/4乒乓延迟, 怎么到了这就禁止了? 你可以将本文的内容理解为这是一份及格的答卷, 为新手提供安全护栏, 先走后飞, 一步步来</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>延迟是混音中的<strong>隐形骨架</strong>。你不用它，歌也能听，但用了它，人声会从干瘪变得丰满，从平淡变得有律动。它是现代流行音乐混音中，提升人声质感和情绪张力的性价比最高的工具。</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -12704,6 +12711,67 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 ]]></content>
       <tags>
         <tag>混音档案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>流行音乐编曲四大组件解析</title>
+    <url>/217.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这里说的编曲四大组件不是指的流行编曲钢琴+吉他+贝斯+鼓四大件, 而是指的四种角色类乐器:</p>
+<ul>
+<li><strong>节奏乐器</strong>: 鼓组、贝斯、节奏钢琴、节奏吉他等</li>
+<li><strong>主奏乐器</strong>: 人声、主奏吉他、主奏钢琴等</li>
+<li><strong>氛围乐器</strong>: 人声、Pad、背景钢琴、背景吉他等</li>
+<li><strong>过渡点缀乐器</strong>: 雷声、风铃、钢琴点缀、fill等</li>
+</ul>
+<p>这算是一个大类模板, 几乎可以涵盖所有的编曲风格</p>
+<h2 id="少即是多"><a href="#少即是多" class="headerlink" title="少即是多"></a>少即是多</h2><p>一首完整的歌曲, 不一定非得要四种以上不同的乐器参与, 只要角色到位了, 哪怕只有一台钢琴也完全足够, 比如一台钢琴既充当节奏乐器由充当主奏氛围乐器, 这是完全没有问题的</p>
+<p>所谓少即是多, 编曲需要做减法, 有句话怎么说来着, <strong>大师编曲，是用最少的乐器骗过你的耳朵；新手编曲，是用最多的乐器掩盖他的心虚</strong></p>
+<p> 如果单纯钢琴+贝斯+鼓组+人声, 听起来不够丰满, 情绪不到位, 那大概率是编曲技术没到位, 而不是乐器数量不够, 如果钢琴都给不了你丰满的情绪, 那多加几个乐器照样也是平淡如水</p>
+<h2 id="打破规则"><a href="#打破规则" class="headerlink" title="打破规则"></a>打破规则</h2><p>上面的四大角色模板针对的是流行音乐, 如果你需要配乐或者编舞曲等, 完全可以只用其中一类角色,甚至只用一件乐器</p>
+<p>很多经典作品恰恰是因为“缺”了某类乐器，才形成了独特的风格：</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>配置方案</strong></th>
+<th align="left"><strong>代表作品/风格</strong></th>
+<th align="left"><strong>听感特征</strong></th>
+<th align="left"><strong>适用场景</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>纯节奏类</strong> （鼓+贝斯+Loop）</td>
+<td align="left">电子舞曲（EDM） Hip-Hop Beat</td>
+<td align="left">机械感、律动强 缺乏旋律叙事</td>
+<td align="left">纯音乐、前卫实验</td>
+</tr>
+<tr>
+<td align="left"><strong>纯氛围类</strong> （Pad/弦乐/长音）</td>
+<td align="left">环境音乐（Ambient） 电影空镜配乐</td>
+<td align="left">空间感、静态 无明确节奏</td>
+<td align="left">冥想、氛围铺垫</td>
+</tr>
+<tr>
+<td align="left"><strong>纯主音类</strong> （钢琴/吉他独奏）</td>
+<td align="left">钢琴Ballad （如《梦中的婚礼》）</td>
+<td align="left">旋律突出、私密感 无节奏推进</td>
+<td align="left">独奏、抒情叙事</td>
+</tr>
+</tbody></table>
+<p>如果你只想表达一种单一的情绪（如纯粹的律动、纯粹的空间感、纯粹的故事），<strong>单类乐器不仅可行，甚至可能是最佳选择</strong>。</p>
+<p>而结构完整的流行音乐, 在流行框架下，这四类乐器对应了人类听感的四个基本需求：</p>
+<ol>
+<li><strong>节奏类（鼓/贝斯）</strong>：满足生理需求（想动、想跟着点头）。</li>
+<li><strong>主音类（人声/钢琴）</strong>：满足情感需求（听故事、被感动）。</li>
+<li><strong>氛围类（铺底）</strong>：满足空间需求（不觉得干、不觉得挤）。</li>
+<li><strong>过渡点缀类 (音效)</strong>: 满足心理需求(不突兀, 不冷场, 情绪催化)</li>
+</ol>
+<p><strong>流行歌的公式：</strong>节奏（骨架）+ 主音（血肉）+ 氛围（皮肤） + 过渡点缀（关节润滑）= 完整的听觉体验。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>音乐也是一门心理学, 我希望能将复杂的编曲尽可能地简单化, 通俗化</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>编曲宝典</tag>
       </tags>
   </entry>
 </search>

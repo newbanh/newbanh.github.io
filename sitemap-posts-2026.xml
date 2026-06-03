@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://audio.newban.cn/216.html</loc>
-    <lastmod>2026-06-02T01:19:40.327Z</lastmod>
+    <lastmod>2026-06-02T08:39:32.960Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://audio.newban.cn/215.html</loc>
     <lastmod>2026-06-02T01:03:59.270Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://audio.newban.cn/217.html</loc>
+    <lastmod>2026-06-03T06:41:37.393Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
