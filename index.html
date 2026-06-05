@@ -273,6 +273,340 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn218.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="有瓣音频">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="218.html" itemprop="url">reaper侧链压缩实战应用参数设置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2026-06-04T12:43:28+08:00">
+                2026-06-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x5173;&#x4E8E;<code>reaper</code>&#x4E2D;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4FA7;&#x94FE;, &#x53EF;&#x4EE5;&#x56DE;&#x987E;&#x4E4B;&#x524D;&#x6587;&#x7AE0;&#x300A;<a href="https://audio.newban.cn/135">REAPER&#x5BBF;&#x4E3B;&#x5E38;&#x7528;&#x6280;&#x5DE7;&#x6C47;&#x603B;</a>&#x300B;</p>
+<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251115224612107.png" alt="image-20251115224612107"></p>
+<h2 id="&#x5E38;&#x89C1;&#x4FA7;&#x94FE;"><a href="#&#x5E38;&#x89C1;&#x4FA7;&#x94FE;" class="headerlink" title="&#x5E38;&#x89C1;&#x4FA7;&#x94FE;"></a>&#x5E38;&#x89C1;&#x4FA7;&#x94FE;</h2><p>&#x4EE5;&#x4E0B;&#x53C2;&#x6570;&#x4EC5;&#x4F5C;&#x4E3A;&#x53C2;&#x8003;:</p>
+<ol>
+<li><p>&#x5E95;&#x9F13;&#x538B;&#x8D1D;&#x65AF;</p>
+<ul>
+<li>Attack: 0ms, &#x5E95;&#x9F13;&#x51FA;&#x73B0;&#x7684;&#x65F6;&#x5019;&#x8981;&#x7ACB;&#x9A6C;&#x538B;&#x5236;&#x8D1D;&#x65AF;, &#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4FDD;&#x7559;&#x5E95;&#x9F13;&#x97F3;&#x5934;</li>
+<li>Release: 100ms&#x5DE6;&#x53F3;, BPM&#xFF1C;90&#x7684;&#x6162;&#x6B4C;&#x53EF;&#x4EE5;&#x548C;&#x8D1D;&#x65AF;&#x538B;&#x7F29;&#x91CA;&#x653E;&#x65F6;&#x95F4;&#x4FDD;&#x6301;&#x4E00;&#x81F4;, BPM&#xFF1E;90&#x7684;&#x5FEB;&#x6B4C;&#x8981;&#x5C0F;&#x4E8E;&#x538B;&#x7F29;&#x91CA;&#x653E;&#x65F6;&#x95F4;</li>
+<li>Mini volume: &#x6839;&#x636E;&#x4F60;&#x7684;&#x4FE1;&#x53F7;&#x6E90;&#x800C;&#x5B9A;, &#x6570;&#x503C;&#x4E0D;&#x7528;&#x592A;&#x4F4E;, &#x5E95;&#x9F13;&#x80FD;&#x5B8C;&#x6574;&#x9732;&#x5934;&#x5C31;&#x884C;</li>
+<li>Max volume: &#x65E0;&#x9700;&#x5F00;&#x542F;&#x9650;&#x5E45;&#x4FA7;&#x94FE;, &#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E3A;&#x6700;&#x5927;&#x503C;</li>
+<li>Strength: 20%, &#x76F8;&#x5F53;&#x4E8E;2:1&#x7684;&#x538B;&#x7F29;&#x6BD4;&#x4F8B;</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>&#x4EBA;&#x58F0;&#x538B;&#x80CC;&#x666F;&#x94A2;&#x7434;/&#x5409;&#x4ED6;</p>
+<ul>
+<li>Attack: 10ms, &#x4E0D;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A;0ms, &#x907F;&#x514D;&#x51FA;&#x73B0;&#x80CC;&#x666F;&#x97F3;&#x4E50;&#x65AD;&#x5D16;&#x5F0F;&#x8870;&#x51CF;, &#x4E0A;&#x9762;&#x5E95;&#x9F13;&#x538B;&#x8D1D;&#x65AF;&#x53EF;&#x4EE5;0ms, &#x90A3;&#x662F;&#x56E0;&#x4E3A;&#x4F4E;&#x9891;&#x54CD;&#x5E94;&#x901F;&#x5EA6;&#x8F83;&#x6162;,&#x542C;&#x611F;&#x4E0D;&#x4F1A;&#x6709;&#x660E;&#x663E;&#x5F71;&#x54CD;</li>
+<li>Release: 210ms&#x5DE6;&#x53F3;, &#x53EF;&#x4EE5;&#x548C;&#x80CC;&#x666F;&#x94A2;&#x7434;/&#x5409;&#x4ED6;&#x538B;&#x7F29;&#x91CA;&#x653E;&#x65F6;&#x95F4;&#x4FDD;&#x6301;&#x4E00;&#x81F4;, BPM&#xFF1C;90&#x7684;&#x6162;&#x6B4C;&#x53EF;&#x4EE5;&#x548C;&#x8D1D;&#x65AF;&#x538B;&#x7F29;&#x91CA;&#x653E;&#x65F6;&#x95F4;&#x4FDD;&#x6301;&#x4E00;&#x81F4;, BPM&#xFF1E;90&#x7684;&#x5FEB;&#x6B4C;&#x8981;&#x5C0F;&#x4E8E;&#x538B;&#x7F29;&#x91CA;&#x653E;&#x65F6;&#x95F4;</li>
+<li>Mini volume: &#x6839;&#x636E;&#x4F60;&#x7684;&#x4FE1;&#x53F7;&#x6E90;&#x800C;&#x5B9A;</li>
+<li>Max volume: &#x65E0;&#x9700;&#x5F00;&#x542F;&#x9650;&#x5E45;&#x4FA7;&#x94FE;, &#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E3A;&#x6700;&#x5927;&#x503C;</li>
+<li>Strength: 40%, &#x76F8;&#x5F53;&#x4E8E;4:1&#x7684;&#x538B;&#x7F29;&#x6BD4;&#x4F8B;</li>
+</ul>
+</li>
+<li><p>&#x5E95;&#x9F13;&#x538B;&#x5168;&#x6DF7;&#x97F3;</p>
+<p>&#x5E95;&#x9F13;&#x4FA7;&#x94FE;&#x9664;&#x4E86;&#x81EA;&#x8EAB;&#x5916;&#x7684;&#x6240;&#x6709;&#x4E50;&#x5668;, &#x8FD9;&#x901A;&#x5E38;&#x51FA;&#x73B0;&#x5728;EDM&#x7535;&#x5B50;&#x97F3;&#x4E50;&#x4E2D;, &#x4E3A;&#x5236;&#x9020;&#x7279;&#x6B8A;&#x7684;&#x62BD;&#x5438;&#x5F8B;&#x52A8;&#x6548;&#x679C;</p>
+<ul>
+<li>Attack: 1-5ms</li>
+<li>Release: 50-200ms, &#x6839;&#x636E;&#x542C;&#x611F;&#x800C;&#x5B9A;</li>
+<li>Mini volume: &#x6839;&#x636E;&#x4F60;&#x7684;&#x4FE1;&#x53F7;&#x6E90;&#x800C;&#x5B9A;</li>
+<li>Max volume: &#x65E0;&#x9700;&#x5F00;&#x542F;&#x9650;&#x5E45;&#x4FA7;&#x94FE;, &#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E3A;&#x6700;&#x5927;&#x503C;</li>
+<li>Strength: &#x6839;&#x636E;&#x542C;&#x611F;&#x800C;&#x5B9A;</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x4FA7;&#x94FE;Release-&#x6838;&#x5FC3;&#x516C;&#x5F0F;"><a href="#&#x4FA7;&#x94FE;Release-&#x6838;&#x5FC3;&#x516C;&#x5F0F;" class="headerlink" title="&#x4FA7;&#x94FE;Release &#x6838;&#x5FC3;&#x516C;&#x5F0F;"></a>&#x4FA7;&#x94FE;Release &#x6838;&#x5FC3;&#x516C;&#x5F0F;</h2><ol>
+<li><p>&#x5FEB;&#x6B4C;(BPM&gt;90)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x4FA7;&#x94FE; Release &lt; &#x4E50;&#x5668;&#x81EA;&#x8EAB; Release &lt; &#x4E50;&#x5668;&#x81EA;&#x7136;&#x8870;&#x51CF;</span><br></pre></td></tr></table></figure>
+
+<p><strong>&#x516C;&#x5F0F;&#x89E3;&#x8BFB;:</strong></p>
+<ul>
+<li><strong>&#x4FA7;&#x94FE; Release&#xFF08;&#x6700;&#x5FEB;&#xFF09;</strong>&#xFF1A;&#x8D1F;&#x8D23;&#x201C;&#x8EB2;&#x201D;&#xFF0C;&#x52A8;&#x4F5C;&#x8981;&#x5E72;&#x51C0;&#x5229;&#x843D;&#xFF0C;&#x4E0D;&#x80FD;&#x62D6;&#x6CE5;&#x5E26;&#x6C34;&#x3002;</li>
+<li><strong>&#x81EA;&#x8EAB; Release&#xFF08;&#x4E2D;&#x7B49;&#xFF09;</strong>&#xFF1A;&#x8D1F;&#x8D23;&#x201C;&#x63A7;&#x201D;&#xFF0C;&#x4FDD;&#x8BC1;&#x97F3;&#x7B26;&#x4E0D;&#x7CCA;&#xFF0C;&#x4F46;&#x4E5F;&#x4E0D;&#x80FD;&#x592A;&#x77ED;&#x5BFC;&#x81F4;&#x58F0;&#x97F3;&#x88AB;&#x6390;&#x65AD;&#x3002;</li>
+<li><strong>&#x81EA;&#x7136;&#x8870;&#x51CF;&#xFF08;&#x6700;&#x6162;&#xFF09;</strong>&#xFF1A;&#x4E50;&#x5668;&#x672C;&#x8EAB;&#x7684;&#x7269;&#x7406;&#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x80FD;&#x88AB;&#x538B;&#x7F29;&#x7834;&#x574F;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x6162;&#x6B4C;(BPM&lt;90)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x4FA7;&#x94FE; Release &#x2248; &#x4E50;&#x5668;&#x81EA;&#x8EAB; Release &lt; &#x4E50;&#x5668;&#x81EA;&#x7136;&#x8870;&#x51CF;</span><br></pre></td></tr></table></figure>
+
+<p><strong>&#x516C;&#x5F0F;&#x89E3;&#x8BFB;</strong>&#xFF1A;</p>
+<ul>
+<li><strong>&#x4FA7;&#x94FE; &#x2248; &#x81EA;&#x8EAB;</strong>&#xFF1A;&#x8FD9;&#x662F;&#x6162;&#x6B4C;&#x7684;&#x7075;&#x9B42;&#x3002;&#x907F;&#x8BA9;&#x52A8;&#x4F5C;&#x4E0E;&#x4E50;&#x5668;&#x6062;&#x590D;&#x52A8;&#x4F5C;<strong>&#x540C;&#x9891;</strong>&#xFF0C;&#x5236;&#x9020;&#x7EDF;&#x4E00;&#x7684;&#x201C;&#x6F6E;&#x6C50;&#x611F;&#x201D;&#x3002;</li>
+<li><strong>&lt; &#x81EA;&#x7136;&#x8870;&#x51CF;</strong>&#xFF1A;&#x538B;&#x7F29;&#x52A8;&#x4F5C;&#x4E0D;&#x80FD;&#x7834;&#x574F;&#x4E50;&#x5668;&#x539F;&#x672C;&#x7684;&#x7269;&#x7406;&#x5C5E;&#x6027;&#xFF08;&#x5982;&#x94A2;&#x7434;&#x7684;&#x5EF6;&#x97F3;&#xFF09;&#x3002;</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x4FA7;&#x94FE;Attack-&#x548C;&#x4E50;&#x5668;&#x81EA;&#x8EAB;-Attack"><a href="#&#x4FA7;&#x94FE;Attack-&#x548C;&#x4E50;&#x5668;&#x81EA;&#x8EAB;-Attack" class="headerlink" title="&#x4FA7;&#x94FE;Attack &#x548C;&#x4E50;&#x5668;&#x81EA;&#x8EAB; Attack"></a>&#x4FA7;&#x94FE;Attack &#x548C;&#x4E50;&#x5668;&#x81EA;&#x8EAB; Attack</h2><p>&#x4E24;&#x8005;&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;, &#x53EF;&#x5343;&#x4E07;&#x522B;&#x641E;&#x6DF7;&#x4E86;</p>
+<h3 id="&#x4FA7;&#x94FE;Attack&#x8BBE;&#x5B9A;"><a href="#&#x4FA7;&#x94FE;Attack&#x8BBE;&#x5B9A;" class="headerlink" title="&#x4FA7;&#x94FE;Attack&#x8BBE;&#x5B9A;"></a>&#x4FA7;&#x94FE;Attack&#x8BBE;&#x5B9A;</h3><p>&#x4FA7;&#x94FE;&#x538B;&#x7F29;&#x7684; Attack &#x901A;&#x5E38;<strong>&#x6781;&#x5FEB;</strong>&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x662F;&#x7528;&#x6765;&#x201C;&#x5851;&#x5F62;&#x201D;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x7528;&#x6765;&#x201C;&#x53CD;&#x5E94;&#x201D;&#x7684;&#x3002;</p>
+<blockquote>
+<p><strong>&#x4FA7;&#x94FE; Attack &#x2248; 1-5 ms</strong></p>
+</blockquote>
+<ul>
+<li><strong>&#x903B;&#x8F91;</strong>&#xFF1A;&#x4EBA;&#x58F0;&#x4E00;&#x8FDB;&#x6765;&#xFF0C;&#x4FA7;&#x94FE;&#x5FC5;&#x987B;<strong>&#x7ACB;&#x523B;</strong>&#x8BA9;&#x80CC;&#x666F;&#x97F3;&#x4E50;&#x9000;&#x8BA9;&#x3002;&#x5982;&#x679C; <code>Attack</code> &#x592A;&#x6162;&#xFF08;&#x6BD4;&#x5982; 20ms&#xFF09;&#xFF0C;&#x4EBA;&#x58F0;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x5DF2;&#x7ECF;&#x88AB;&#x80CC;&#x666F;&#x97F3;&#x4E50;&#x6DF9;&#x6CA1;&#x4E86;</li>
+</ul>
+<p>&#x4FA7;&#x94FE;<code>Attack</code>&#x901A;&#x5E38;&#x9075;&#x5FAA;&#x4EE5;&#x4E0B;&#x903B;&#x8F91;:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x4FA7;&#x94FE; Attack (1-5ms) &lt; &#x4E50;&#x5668;&#x81EA;&#x8EAB; Attack (&#x7269;&#x7406;&#x51B3;&#x5B9A;) &lt; &#x4E50;&#x5668; Release (&#x6570;&#x5B66;&#x51B3;&#x5B9A;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="&#x4E50;&#x5668;&#x81EA;&#x8EAB;-Attack-&#x7684;&#x901A;&#x7528;&#x6CD5;&#x5219;&#xFF08;&#x4E0D;&#x5206;&#x5FEB;&#x6162;&#x6B4C;&#xFF09;"><a href="#&#x4E50;&#x5668;&#x81EA;&#x8EAB;-Attack-&#x7684;&#x901A;&#x7528;&#x6CD5;&#x5219;&#xFF08;&#x4E0D;&#x5206;&#x5FEB;&#x6162;&#x6B4C;&#xFF09;" class="headerlink" title="&#x4E50;&#x5668;&#x81EA;&#x8EAB; Attack &#x7684;&#x901A;&#x7528;&#x6CD5;&#x5219;&#xFF08;&#x4E0D;&#x5206;&#x5FEB;&#x6162;&#x6B4C;&#xFF09;"></a>&#x4E50;&#x5668;&#x81EA;&#x8EAB; Attack &#x7684;&#x901A;&#x7528;&#x6CD5;&#x5219;&#xFF08;&#x4E0D;&#x5206;&#x5FEB;&#x6162;&#x6B4C;&#xFF09;</h3><p>Attack &#x7684;&#x8BBE;&#x5B9A;&#x662F;<strong>&#x201C;&#x542C;&#x611F;&#x4F18;&#x5148;&#x201D;</strong>&#xFF0C;&#x800C;&#x975E;&#x50CF;<code>Release</code>&#x90A3;&#x6837;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;BPM&#x6570;&#x5B66;&#x8BA1;&#x7B97;&#x8FDB;&#x884C;&#x201C;&#x8282;&#x594F;&#x91CF;&#x5316;&#x201D;&#x3002;&#x5B83;&#x53EA;&#x9075;&#x5FAA;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x903B;&#x8F91;, &#x90A3;&#x5C31;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p><strong>Attack Time &gt; &#x77AC;&#x6001;&#x8D77;&#x97F3;&#x65F6;&#x95F4;</strong></p>
+</blockquote>
+<ul>
+<li><strong>&#x77AC;&#x6001;&#xFF08;Transient&#xFF09;</strong>&#xFF1A;&#x58F0;&#x97F3;&#x521A;&#x5F00;&#x59CB;&#x90A3;&#x6781;&#x77ED;&#x7684;&#x201C;&#x51B2;&#x51FB;&#x529B;&#x201D;&#xFF08;&#x5982;&#x94A2;&#x7434;&#x7684;&#x6994;&#x5934;&#x58F0;&#x3001;&#x9F13;&#x7684;&#x6572;&#x51FB;&#x58F0;&#xFF09;&#x3002;</li>
+<li><strong>&#x903B;&#x8F91;</strong>&#xFF1A;<code>Attack</code>&#x5FC5;&#x987B;&#x6BD4;&#x77AC;&#x6001;&#x957F;&#xFF0C;&#x5426;&#x5219;&#x538B;&#x7F29;&#x5668;&#x4F1A;&#x201C;&#x5403;&#x6389;&#x201D;&#x97F3;&#x5934;&#xFF0C;&#x58F0;&#x97F3;&#x53D8;&#x8F6F;&#x3002;</li>
+</ul>
+<p><strong>&#x5E38;&#x89C1;&#x4E50;&#x5668;<code>Attack</code>&#x53C2;&#x8003;&#x503C;&#x5982;&#x4E0B;:</strong> </p>
+<table>
+<thead>
+<tr>
+<th>&#x4E50;&#x5668;&#x7C7B;&#x578B;</th>
+<th>&#x5EFA;&#x8BAE; Attack</th>
+<th>&#x76EE;&#x7684;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>&#x9F13;&#x7C7B;&#xFF08;&#x5E95;&#x9F13;&#x3001;&#x519B;&#x9F13;&#xFF09;</strong></td>
+<td><strong>1-10 ms</strong>&#xFF08;&#x6781;&#x5FEB;&#xFF09;</td>
+<td>&#x4FDD;&#x7559;&#x201C;&#x6572;&#x51FB;&#x611F;&#x201D;&#xFF0C;&#x5FEB;&#x901F;&#x63A7;&#x5236;&#x5CF0;&#x503C;</td>
+</tr>
+<tr>
+<td><strong>&#x4EBA;&#x58F0;</strong></td>
+<td><strong>5-20 ms</strong></td>
+<td>&#x4FDD;&#x7559;&#x5B57;&#x5934;&#x7684;&#x201C;&#x5507;&#x9F7F;&#x611F;&#x201D;&#xFF0C;&#x9632;&#x6B62;&#x8FC7;&#x51B2;</td>
+</tr>
+<tr>
+<td><strong>&#x94A2;&#x7434;&#x3001;&#x5409;&#x4ED6;</strong></td>
+<td><strong>10-30 ms</strong></td>
+<td>&#x4FDD;&#x7559;&#x7434;&#x5F26;&#x632F;&#x52A8;&#x7684;&#x201C;&#x8D77;&#x97F3;&#x201D;</td>
+</tr>
+<tr>
+<td><strong>&#x8D1D;&#x65AF;</strong></td>
+<td><strong>20-50 ms</strong></td>
+<td>&#x8BA9;&#x4F4E;&#x9891;&#x5148;&#x7A33;&#x5B9A;&#x4E0B;&#x6765;&#xFF0C;&#x518D;&#x538B;&#x7F29;</td>
+</tr>
+<tr>
+<td><strong>&#x5F26;&#x4E50;/Pad</strong></td>
+<td><strong>30-100 ms</strong></td>
+<td>&#x6162;&#x542F;&#x52A8;&#xFF0C;&#x53EA;&#x538B;&#x7F29;&#x6301;&#x7EED;&#x97F3;&#xFF0C;&#x4E0D;&#x78B0;&#x5F00;&#x5934;</td>
+</tr>
+</tbody></table>
+<h3 id="&#x6162;&#x6B4C;-vs-&#x5FEB;&#x6B4C;&#x7684;-Attack-&#x5DEE;&#x5F02;"><a href="#&#x6162;&#x6B4C;-vs-&#x5FEB;&#x6B4C;&#x7684;-Attack-&#x5DEE;&#x5F02;" class="headerlink" title="&#x6162;&#x6B4C; vs &#x5FEB;&#x6B4C;&#x7684; Attack &#x5DEE;&#x5F02;"></a>&#x6162;&#x6B4C; vs &#x5FEB;&#x6B4C;&#x7684; Attack &#x5DEE;&#x5F02;</h3><p>Attack &#x53D7; BPM &#x5F71;&#x54CD;&#x8F83;&#x5C0F;&#xFF0C;&#x4E3B;&#x8981;&#x53D7;<strong>&#x4E50;&#x5668;&#x77AC;&#x6001;</strong>&#x5F71;&#x54CD;&#x3002;&#x4F46;&#x6709;&#x4E00;&#x4E2A;&#x5FAE;&#x5999;&#x7684;<strong>&#x5FC3;&#x7406;&#x65F6;&#x95F4;</strong>&#x5DEE;&#x5F02;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x573A;&#x666F;</th>
+<th>&#x4EBA;&#x58F0;&#x81EA;&#x8EAB; Attack</th>
+<th>&#x4FA7;&#x94FE; Attack</th>
+<th>&#x903B;&#x8F91;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>&#x6162;&#x6B4C; (BPM 63)</strong></td>
+<td><strong>10-20 ms</strong></td>
+<td><strong>1-5 ms</strong></td>
+<td>&#x6162;&#x6B4C;&#x5B57;&#x5934;&#x66F4;&#x6E05;&#x6670;&#xFF0C;Attack &#x53EF;&#x7A0D;&#x6162;&#x4EE5;&#x4FDD;&#x7559;&#x60C5;&#x7EEA;</td>
+</tr>
+<tr>
+<td><strong>&#x5FEB;&#x6B4C; (BPM 120)</strong></td>
+<td><strong>5-15 ms</strong></td>
+<td><strong>1-5 ms</strong></td>
+<td>&#x5FEB;&#x6B4C;&#x5B57;&#x5934;&#x5BC6;&#x96C6;&#xFF0C;Attack &#x8981;&#x5FEB;&#xFF0C;&#x9632;&#x6B62;&#x5B57;&#x5B57;&#x8FC7;&#x51B2;</td>
+</tr>
+</tbody></table>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4FA7;&#x94FE; Attack &#x5728;&#x5FEB;&#x6162;&#x6B4C;&#x4E2D;<strong>&#x51E0;&#x4E4E;&#x4E0D;&#x53D8;</strong>&#xFF0C;&#x6C38;&#x8FDC;&#x662F;&#x201C;&#x7ACB;&#x523B;&#x53CD;&#x5E94;&#x201D;&#x3002;</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="&#x56DB;&#x5927;&#x7C7B;&#x4E50;&#x5668;&#x81EA;&#x8EAB;Release-&#x53C2;&#x6570;&#x8868;"><a href="#&#x56DB;&#x5927;&#x7C7B;&#x4E50;&#x5668;&#x81EA;&#x8EAB;Release-&#x53C2;&#x6570;&#x8868;" class="headerlink" title="&#x56DB;&#x5927;&#x7C7B;&#x4E50;&#x5668;&#x81EA;&#x8EAB;Release &#x53C2;&#x6570;&#x8868;"></a>&#x56DB;&#x5927;&#x7C7B;&#x4E50;&#x5668;&#x81EA;&#x8EAB;Release &#x53C2;&#x6570;&#x8868;</h2><p>&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x4EC5;&#x505A;&#x53C2;&#x8003;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C42;&#x7EA7;</th>
+<th>&#x4E50;&#x5668;</th>
+<th>&#x63A8;&#x8350; Release</th>
+<th>&#x5185;&#x90E8;&#x903B;&#x8F91;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>&#x8282;&#x594F;&#x7EC4;</strong>(&#x77AC;&#x6001;&#x4FDD;&#x62A4;)</td>
+<td><strong>&#x5E95;&#x9F13; (Kick)</strong></td>
+<td><strong>30 &#x2013; 60</strong></td>
+<td>&#x6700;&#x5FEB;&#x6062;&#x590D;&#xFF0C;&#x4FDD;&#x8BC1;&#x6BCF;&#x4E00;&#x6B21;&#x51FB;&#x6253;&#x7684;&#x6E05;&#x6670;&#x5EA6;&#xFF0C;&#x6B7B;&#x6B7B;&#x9501;&#x4F4F;&#x4F4E;&#x9891;&#x91CD;&#x5FC3;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x519B;&#x9F13; (Snare)</strong></td>
+<td><strong>50 &#x2013; 80</strong></td>
+<td>&#x6BD4;&#x5E95;&#x9F13;&#x7A0D;&#x6162;&#xFF0C;&#x4FDD;&#x7559;&#x4E00;&#x70B9;&#x201C;&#x54CD;&#x5F26;&#x201D;&#x6216;&#x9572;&#x7247;&#x7684;&#x5C3E;&#x97F3;&#xFF0C;&#x7EF4;&#x6301;&#x6253;&#x51FB;&#x611F;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x8D1D;&#x65AF; (Bass)</strong></td>
+<td><strong>80 &#x2013; 100</strong></td>
+<td>&#x6700;&#x6162;&#xFF0C;&#x9700;&#x517C;&#x987E;&#x97F3;&#x7B26;&#x7684;&#x5EF6;&#x97F3;&#xFF0C;&#x9632;&#x6B62;&#x201C;&#x65AD;&#x97F3;&#x201D;&#xFF0C;&#x4E0E;&#x5E95;&#x9F13;&#x5F62;&#x6210;&#x7D27;&#x5BC6;&#x54AC;&#x5408;&#x3002;</td>
+</tr>
+<tr>
+<td><strong>&#x4E3B;&#x594F;&#x7EC4;</strong>(&#x7EBF;&#x6761;&#x8FDE;&#x8D2F;)</td>
+<td><strong>&#x4EBA;&#x58F0; (Vocal)</strong></td>
+<td><strong>150</strong></td>
+<td>&#x57FA;&#x51C6;&#x503C;&#xFF0C;&#x517C;&#x987E;&#x5B57;&#x5934;&#x6E05;&#x6670;&#x4E0E;&#x8BED;&#x53E5;&#x8FDE;&#x8D2F;&#xFF0C;&#x4E0D;&#x80FD;&#x538B;&#x6B7B;&#x60C5;&#x7EEA;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x4E3B;&#x594F;&#x5409;&#x4ED6;</strong></td>
+<td><strong>150</strong></td>
+<td>&#x4E0E;&#x4EBA;&#x58F0;&#x540C;&#x503C;&#xFF0C;&#x4FDD;&#x8BC1;&#x65CB;&#x5F8B;&#x7EBF;&#x6761;&#x7684;&#x6D41;&#x7545;&#x6027;&#xFF0C;&#x4E0D;&#x5207;&#x65AD;&#x4E50;&#x53E5;&#x547C;&#x5438;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x4E3B;&#x594F;&#x94A2;&#x7434;</strong></td>
+<td><strong>150</strong></td>
+<td>&#x4E0E;&#x4EBA;&#x58F0;&#x540C;&#x503C;&#xFF0C;&#x4F5C;&#x4E3A;&#x6B4C;&#x66F2;&#x9AA8;&#x67B6;&#x65F6;&#xFF0C;&#x907F;&#x514D;&#x97F3;&#x7B26;&#x88AB;&#x5207;&#x65AD;&#x3002;</td>
+</tr>
+<tr>
+<td><strong>&#x6C1B;&#x56F4;&#x7EC4;</strong>(&#x7A7A;&#x95F4;&#x7EB5;&#x6DF1;)</td>
+<td><strong>&#x80CC;&#x666F;&#x94A2;&#x7434;</strong></td>
+<td><strong>180 &#x2013; 220</strong></td>
+<td>&#x4E2D;&#x666F;&#xFF0C;&#x6BD4;&#x4E3B;&#x594F;&#x7A0D;&#x8FDC;&#xFF0C;&#x4F46;&#x4FDD;&#x7559;&#x97F3;&#x7B26;&#x9897;&#x7C92;&#x611F;&#xFF0C;&#x589E;&#x52A0;&#x539A;&#x5EA6;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x5F26;&#x4E50; / Pad</strong></td>
+<td><strong>280 &#x2013; 350</strong></td>
+<td>&#x8FDC;&#x666F;&#xFF0C;&#x6781;&#x6162;&#x6062;&#x590D;&#xFF0C;&#x5236;&#x9020;&#x6A21;&#x7CCA;&#x7684;&#x7A7A;&#x95F4;&#x94FA;&#x5E95;&#xFF0C;&#x4E0D;&#x62A2;&#x593A;&#x524D;&#x666F;&#x6CE8;&#x610F;&#x529B;&#x3002;</td>
+</tr>
+<tr>
+<td><strong>&#x8FC7;&#x6E21;/&#x70B9;&#x7F00;&#x7EC4;</strong>(&#x60C5;&#x7EEA;&#x63A8;&#x52A8;&#x4E0E;&#x8FDE;&#x63A5;)</td>
+<td><strong>&#x6253;&#x51FB;&#x4E50;&#x7279;&#x6548;*</strong>(Ride, &#x98CE;&#x94C3;, &#x725B;&#x94C3;)*</td>
+<td><strong>80 &#x2013; 120</strong></td>
+<td><strong>&#x9002;&#x4E2D;&#x504F;&#x5FEB;</strong>&#x3002;&#x65E2;&#x4FDD;&#x7559;&#x4E00;&#x70B9;&#x6E05;&#x8106;&#x5C3E;&#x97F3;&#xFF0C;&#x53C8;&#x4E0D;&#x80FD;&#x5728;&#x8FC7;&#x6E21;&#x6BB5;&#x843D;&#x9020;&#x6210;&#x6742;&#x4E71;&#x62D6;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x4E0A;&#x5347;/&#x4E0B;&#x964D;&#x97F3;&#x6548;*</strong>(Riser, Sweeps)*</td>
+<td><strong>40 &#x2013; 70</strong></td>
+<td><strong>&#x6781;&#x5FEB;</strong>&#x3002;&#x8FD9;&#x7C7B;&#x97F3;&#x8272;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x8854;&#x63A5;&#xFF0C;&#x5FEB;&#x901F;&#x6062;&#x590D;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x4E0B;&#x4E00;&#x4E2A;&#x97F3;&#x8272;&#x80FD;&#x7ACB;&#x523B;&#x8FDB;&#x6765;&#x3002;</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>&#x70B9;&#x7F00;&#x6027;&#x5408;&#x6210;&#x5668;/&#x91C7;&#x6837;*</strong>(Glitch, Stutter)*</td>
+<td><strong>60 &#x2013; 90</strong></td>
+<td><strong>&#x5FEB;&#x901F;&#x4E14;&#x7CBE;&#x51C6;</strong>&#x3002;&#x4F5C;&#x7528;&#x662F;&#x5F3A;&#x8C03;&#x8282;&#x594F;&#x70B9;&#xFF0C;Release &#x5FC5;&#x987B;&#x77ED;&#x4E8E;&#x5176;&#x672C;&#x8EAB;&#x8870;&#x51CF;&#xFF0C;&#x4FDD;&#x8BC1;&#x5207;&#x5206;&#x611F;&#x3002;</td>
+</tr>
+</tbody></table>
+<h2 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h2><p><strong>Attack &#x89C4;&#x5219;</strong>&#xFF1A;<code>&#x5904;&#x7406; Attack &#x2265; &#x97F3;&#x6E90;&#x7269;&#x7406;&#x8D77;&#x632F;&#x65F6;&#x95F4;</code> <strong>&#x76EE;&#x7684;</strong>&#xFF1A;&#x4FDD;&#x62A4;&#x97F3;&#x5934;&#x7684;&#x201C;&#x77AC;&#x6001;&#x201D;&#xFF08;Transient&#xFF09;&#xFF0C;&#x907F;&#x514D;&#x628A;&#x58F0;&#x97F3;&#x538B;&#x201C;&#x762A;&#x201D;&#x3002;</p>
+<p><strong>Release &#x89C4;&#x5219;</strong>&#xFF1A;<code>&#x5904;&#x7406; Release &#x2264; &#x97F3;&#x6E90;&#x81EA;&#x7136;&#x8870;&#x51CF;&#x65F6;&#x95F4;</code> <strong>&#x76EE;&#x7684;</strong>&#xFF1A;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x97F3;&#x7B26;&#x5230;&#x6765;&#x524D;&#x6062;&#x590D;&#xFF0C;&#x907F;&#x514D;&#x538B;&#x7F29;&#x5668;&#x201C;&#x5598;&#x6C14;&#x201D;&#x6216;&#x201C;&#x7C98;&#x8FDE;&#x201D;&#x3002;</p>
+<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
+<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://audio.newban.cn217.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -352,7 +686,7 @@
 <li><strong>&#x8FC7;&#x6E21;&#x70B9;&#x7F00;&#x4E50;&#x5668;</strong>: &#x96F7;&#x58F0;&#x3001;&#x98CE;&#x94C3;&#x3001;&#x94A2;&#x7434;&#x70B9;&#x7F00;&#x3001;fill&#x7B49;</li>
 </ul>
 <p>&#x8FD9;&#x7B97;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x7C7B;&#x6A21;&#x677F;, &#x51E0;&#x4E4E;&#x53EF;&#x4EE5;&#x6DB5;&#x76D6;&#x6240;&#x6709;&#x7684;&#x7F16;&#x66F2;&#x98CE;&#x683C;</p>
-<h2 id="&#x5C11;&#x5373;&#x662F;&#x591A;"><a href="#&#x5C11;&#x5373;&#x662F;&#x591A;" class="headerlink" title="&#x5C11;&#x5373;&#x662F;&#x591A;"></a>&#x5C11;&#x5373;&#x662F;&#x591A;</h2><p>&#x4E00;&#x9996;&#x5B8C;&#x6574;&#x7684;&#x6B4C;&#x66F2;, &#x4E0D;&#x4E00;&#x5B9A;&#x975E;&#x5F97;&#x8981;&#x56DB;&#x79CD;&#x4EE5;&#x4E0A;&#x4E0D;&#x540C;&#x7684;&#x4E50;&#x5668;&#x53C2;&#x4E0E;, &#x53EA;&#x8981;&#x89D2;&#x8272;&#x5230;&#x4F4D;&#x4E86;, &#x54EA;&#x6015;&#x53EA;&#x6709;&#x4E00;&#x53F0;&#x94A2;&#x7434;&#x4E5F;&#x5B8C;&#x5168;&#x8DB3;&#x591F;, &#x6BD4;&#x5982;&#x4E00;&#x53F0;&#x94A2;&#x7434;&#x65E2;&#x5145;&#x5F53;&#x8282;&#x594F;&#x4E50;&#x5668;&#x7531;&#x5145;&#x5F53;&#x4E3B;&#x594F;&#x6C1B;&#x56F4;&#x4E50;&#x5668;, &#x8FD9;&#x662F;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x7684;</p>
+<h2 id="&#x5C11;&#x5373;&#x662F;&#x591A;"><a href="#&#x5C11;&#x5373;&#x662F;&#x591A;" class="headerlink" title="&#x5C11;&#x5373;&#x662F;&#x591A;"></a>&#x5C11;&#x5373;&#x662F;&#x591A;</h2><p>&#x4E00;&#x9996;&#x5B8C;&#x6574;&#x7684;&#x6B4C;&#x66F2;, &#x4E0D;&#x4E00;&#x5B9A;&#x975E;&#x5F97;&#x8981;&#x56DB;&#x79CD;&#x4EE5;&#x4E0A;&#x4E0D;&#x540C;&#x7684;&#x4E50;&#x5668;&#x53C2;&#x4E0E;, &#x53EA;&#x8981;&#x89D2;&#x8272;&#x5230;&#x4F4D;&#x4E86;, &#x54EA;&#x6015;&#x53EA;&#x6709;&#x4E00;&#x53F0;&#x94A2;&#x7434;&#x4E5F;&#x5B8C;&#x5168;&#x8DB3;&#x591F;, &#x6BD4;&#x5982;&#x4E00;&#x53F0;&#x94A2;&#x7434;&#x65E2;&#x5145;&#x5F53;&#x8282;&#x594F;&#x4E50;&#x5668;&#x53C8;&#x5145;&#x5F53;&#x4E3B;&#x594F;&#x6C1B;&#x56F4;&#x4E50;&#x5668;, &#x8FD9;&#x662F;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x7684;</p>
 <p>&#x6240;&#x8C13;&#x5C11;&#x5373;&#x662F;&#x591A;, &#x7F16;&#x66F2;&#x9700;&#x8981;&#x505A;&#x51CF;&#x6CD5;, &#x6709;&#x53E5;&#x8BDD;&#x600E;&#x4E48;&#x8BF4;&#x6765;&#x7740;, <strong>&#x5927;&#x5E08;&#x7F16;&#x66F2;&#xFF0C;&#x662F;&#x7528;&#x6700;&#x5C11;&#x7684;&#x4E50;&#x5668;&#x9A97;&#x8FC7;&#x4F60;&#x7684;&#x8033;&#x6735;&#xFF1B;&#x65B0;&#x624B;&#x7F16;&#x66F2;&#xFF0C;&#x662F;&#x7528;&#x6700;&#x591A;&#x7684;&#x4E50;&#x5668;&#x63A9;&#x76D6;&#x4ED6;&#x7684;&#x5FC3;&#x865A;</strong></p>
 <p> &#x5982;&#x679C;&#x5355;&#x7EAF;&#x94A2;&#x7434;+&#x8D1D;&#x65AF;+&#x9F13;&#x7EC4;+&#x4EBA;&#x58F0;, &#x542C;&#x8D77;&#x6765;&#x4E0D;&#x591F;&#x4E30;&#x6EE1;, &#x60C5;&#x7EEA;&#x4E0D;&#x5230;&#x4F4D;, &#x90A3;&#x5927;&#x6982;&#x7387;&#x662F;&#x7F16;&#x66F2;&#x6280;&#x672F;&#x6CA1;&#x5230;&#x4F4D;, &#x800C;&#x4E0D;&#x662F;&#x4E50;&#x5668;&#x6570;&#x91CF;&#x4E0D;&#x591F;, &#x5982;&#x679C;&#x94A2;&#x7434;&#x90FD;&#x7ED9;&#x4E0D;&#x4E86;&#x4F60;&#x4E30;&#x6EE1;&#x7684;&#x60C5;&#x7EEA;, &#x90A3;&#x591A;&#x52A0;&#x51E0;&#x4E2A;&#x4E50;&#x5668;&#x7167;&#x6837;&#x4E5F;&#x662F;&#x5E73;&#x6DE1;&#x5982;&#x6C34;</p>
 <h2 id="&#x6253;&#x7834;&#x89C4;&#x5219;"><a href="#&#x6253;&#x7834;&#x89C4;&#x5219;" class="headerlink" title="&#x6253;&#x7834;&#x89C4;&#x5219;"></a>&#x6253;&#x7834;&#x89C4;&#x5219;</h2><p>&#x4E0A;&#x9762;&#x7684;&#x56DB;&#x5927;&#x89D2;&#x8272;&#x6A21;&#x677F;&#x9488;&#x5BF9;&#x7684;&#x662F;&#x6D41;&#x884C;&#x97F3;&#x4E50;, &#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x914D;&#x4E50;&#x6216;&#x8005;&#x7F16;&#x821E;&#x66F2;&#x7B49;, &#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x53EA;&#x7528;&#x5176;&#x4E2D;&#x4E00;&#x7C7B;&#x89D2;&#x8272;,&#x751A;&#x81F3;&#x53EA;&#x7528;&#x4E00;&#x4EF6;&#x4E50;&#x5668;</p>
@@ -2431,186 +2765,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://audio.newban.cn208.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="有瓣音频">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="有瓣音频 – 分享编曲混音技术">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="208.html" itemprop="url">Reaper中创建歌词轨道的几种方式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2025-10-31T13:31:28+08:00">
-                2025-10-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x4E0D;&#x77E5;&#x9053;&#x5927;&#x5BB6;&#x662F;&#x5426;&#x6709;&#x8FC7;&#x56E0;&#x4E3A;&#x6B4C;&#x66F2;&#x7684;&#x5185;&#x5BB9;&#x4FEE;&#x6539;, &#x5BFC;&#x81F4;&#x6BCF;&#x6B21;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5236;&#x4F5C;LRC&#x6B4C;&#x8BCD;&#x7684;&#x7ECF;&#x5386;, &#x867D;&#x7136;&#x5236;&#x4F5C;LRC&#x662F;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x4EF6;&#x4E8B;, &#x4F46;&#x662F;&#x672C;&#x7740;&#x80FD;&#x5077;&#x61D2;&#x5219;&#x5077;&#x61D2;&#x7684;&#x539F;&#x5219;, &#x4E0D;&#x59A8;&#x5C1D;&#x8BD5;&#x4E00;&#x4E0B;&#x7A0B;&#x5E8F;&#x5316;&#x751F;&#x6210;LRC&#x6B4C;&#x8BCD;&#x7684;&#x6377;&#x5F84;</p>
-<h2 id="&#x5728;Reaper&#x4E2D;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;"><a href="#&#x5728;Reaper&#x4E2D;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;" class="headerlink" title="&#x5728;Reaper&#x4E2D;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;"></a>&#x5728;Reaper&#x4E2D;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;</h2><p>&#x6709;&#x51E0;&#x79CD;&#x7075;&#x6D3B;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#xFF0C;&#x4ECE;&#x5FEB;&#x901F;&#x751F;&#x6210;&#x6807;&#x51C6;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#x5230;&#x76F4;&#x89C2;&#x7684;&#x5DE5;&#x7A0B;&#x5185;&#x53EF;&#x89C6;&#x5316;&#x7F16;&#x8F91;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6700;&#x7EC8;&#x7528;&#x9014;&#x6765;&#x9009;&#x62E9;</p>
-<table>
-<thead>
-<tr>
-<th align="left">&#x65B9;&#x6CD5;&#x540D;&#x79F0;</th>
-<th align="left">&#x6838;&#x5FC3;&#x64CD;&#x4F5C;</th>
-<th align="left">&#x4E3B;&#x8981;&#x7279;&#x70B9; / &#x9002;&#x7528;&#x573A;&#x666F;</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>&#x57FA;&#x4E8E;MIDI&#x6807;&#x8BB0;&#x7684;LRC&#x6B4C;&#x8BCD;</strong></td>
-<td align="left">1. &#x521B;&#x5EFA;&#x4E13;&#x7528;&#x8F68;&#x9053; 2. &#x5728;&#x6B4C;&#x8BCD;&#x8D77;&#x59CB;&#x70B9;&#x63D2;&#x5165;MIDI&#x9879; 3. &#x5C06;&#x6B4C;&#x8BCD;&#x6587;&#x672C;&#x5199;&#x5165;MIDI&#x9879;&#x540D;&#x79F0; 4. &#x8FD0;&#x884C;&#x811A;&#x672C;&#x5BFC;&#x51FA;LRC&#x6587;&#x4EF6;</td>
-<td align="left"><strong>&#x4F18;&#x70B9;</strong>&#xFF1A;&#x53EF;&#x5BFC;&#x51FA;&#x6807;&#x51C6;LRC&#x6587;&#x4EF6;&#xFF0C;&#x517C;&#x5BB9;&#x6027;&#x5F3A;&#xFF0C;&#x6B4C;&#x8BCD;&#x4E0E;&#x97F3;&#x4E50;&#x8282;&#x594F;&#x7CBE;&#x51C6;&#x7ED1;&#x5B9A;&#x3002; <strong>&#x7F3A;&#x70B9;</strong>&#xFF1A;&#x9700;&#x501F;&#x52A9;&#x5916;&#x90E8;&#x811A;&#x672C;&#xFF0C;&#x5DE5;&#x7A0B;&#x5185;&#x53EF;&#x89C6;&#x5316;&#x7A0B;&#x5EA6;&#x4F4E;&#x3002;&#x9002;&#x5408;&#x9700;&#x8981;&#x751F;&#x6210;&#x5916;&#x90E8;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#x7684;&#x573A;&#x666F;1&#x3002;</td>
-</tr>
-<tr>
-<td align="left"><strong>&#x57FA;&#x4E8E;&#x6587;&#x672C;&#x9879;&#x7684;&#x5DE5;&#x7A0B;&#x5185;&#x6B4C;&#x8BCD;</strong></td>
-<td align="left">1. &#x521B;&#x5EFA;&#x4E13;&#x7528;&#x8F68;&#x9053; 2. &#x5728;&#x65F6;&#x95F4;&#x7EBF;&#x4E0A;&#x63D2;&#x5165;&#x7A7A;&#x5A92;&#x4F53;&#x9879;&#xFF08;Empty Item&#xFF09; 3. &#x76F4;&#x63A5;&#x5728;&#x9879;&#x5185;&#x8F93;&#x5165;&#x6B4C;&#x8BCD;&#x6587;&#x672C;</td>
-<td align="left"><strong>&#x4F18;&#x70B9;</strong>&#xFF1A;&#x6B4C;&#x8BCD;&#x76F4;&#x63A5;&#x5728;&#x5DE5;&#x7A0B;&#x65F6;&#x95F4;&#x7EBF;&#x4E0A;&#x53EF;&#x89C6;&#x5316;&#x663E;&#x793A;&#xFF0C;&#x7F16;&#x8F91;&#x76F4;&#x89C2;&#x65B9;&#x4FBF;&#x3002; <strong>&#x7F3A;&#x70B9;</strong>&#xFF1A;&#x6B4C;&#x8BCD;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x5BFC;&#x51FA;&#x4E3A;&#x6807;&#x51C6;&#x6587;&#x4EF6;&#x3002;&#x9002;&#x5408;&#x5728;Reaper&#x5DE5;&#x7A0B;&#x5185;&#x90E8;&#x8FDB;&#x884C;&#x6B4C;&#x8BCD;&#x6392;&#x7248;&#x3001;&#x5BF9;&#x8F68;&#x548C;&#x9884;&#x89C8;2&#x3002;</td>
-</tr>
-<tr>
-<td align="left"><strong>&#x4F7F;&#x7528;&#x6807;&#x8BB0;&#xFF08;Markers&#xFF09;</strong></td>
-<td align="left">&#x5728;&#x65F6;&#x95F4;&#x6807;&#x5C3A;&#x4E0A;&#x53F3;&#x952E;&#x6DFB;&#x52A0;&#x6807;&#x8BB0;&#xFF0C;&#x5E76;&#x5728;&#x6807;&#x8BB0;&#x540D;&#x79F0;&#x4E2D;&#x5199;&#x5165;&#x6B4C;&#x8BCD;&#x3002;</td>
-<td align="left">&#x65B9;&#x5F0F;&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#xFF0C;&#x9002;&#x5408;&#x5FEB;&#x901F;&#x6807;&#x6CE8;&#x6B4C;&#x8BCD;&#x7684;&#x5927;&#x81F4;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F46;&#x7BA1;&#x7406;&#x548C;&#x67E5;&#x770B;&#x7684;&#x96C6;&#x4E2D;&#x6027;&#x4E0D;&#x5982;&#x524D;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</td>
-</tr>
-</tbody></table>
-<h3 id="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x521B;&#x5EFA;&#x53EF;&#x5BFC;&#x51FA;LRC&#x7684;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x5236;&#x4F5C;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#xFF09;"><a href="#&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x521B;&#x5EFA;&#x53EF;&#x5BFC;&#x51FA;LRC&#x7684;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x5236;&#x4F5C;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#xFF09;" class="headerlink" title="&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x521B;&#x5EFA;&#x53EF;&#x5BFC;&#x51FA;LRC&#x7684;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x5236;&#x4F5C;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#xFF09;"></a>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x521B;&#x5EFA;&#x53EF;&#x5BFC;&#x51FA;LRC&#x7684;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x5236;&#x4F5C;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#xFF09;</h3><p>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x751F;&#x6210;&#x80FD;&#x5728;&#x5404;&#x7C7B;&#x64AD;&#x653E;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6807;&#x51C6;LRC&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x9AD8;&#x6548;, &#x64CD;&#x4F5C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;:</p>
-<ol>
-<li><p><strong>&#x521B;&#x5EFA;&#x8F68;&#x9053;&#x5E76;&#x63D2;&#x5165;MIDI item</strong>&#xFF1A;&#x9996;&#x5148;&#xFF0C;&#x5728;Reaper&#x4E2D;<strong>&#x65B0;&#x5EFA;&#x4E00;&#x6761;&#x8F68;&#x9053;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x547D;&#x540D;&#x4E3A;&#x201D;Lyrics&#x201D;&#x4EE5;&#x4FBF;&#x8BC6;&#x522B;&#x3002;</p>
-<p>&#x7136;&#x540E;&#xFF0C;&#x5728;&#x6B4C;&#x8BCD;&#x5F00;&#x59CB;&#x7684;&#x6BCF;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#xFF08;&#x4F8B;&#x5982;&#x6BCF;&#x53E5;&#x6B4C;&#x8BCD;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#xFF09;&#xFF0C;<strong>&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;MIDI item</strong>&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x952E; <code>Ctrl+&#x62D6;&#x52A8;&#x9F20;&#x6807;&#x5DE6;&#x952E;</code>&#x5728;&#x65F6;&#x95F4;&#x7EBF;&#x4E0A;&#x5FEB;&#x901F;&#x7ED8;&#x5236;<code>MIDI item</code></p>
-</li>
-<li><p><strong>&#x91CD;&#x547D;&#x540D;MIDI item</strong>&#xFF1A;&#x53F3;&#x952E;&#x9009;&#x4E2D;&#x7684;<code>MIDI Item</code>, &#x8FDB;&#x5165;<code>Item properties</code>&#x5C5E;&#x6027;&#x7A97;&#x53E3;, &#x4FEE;&#x6539;<code>Take name</code></p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031121723523.png" alt="image-20251031121723523"></p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031121825582.png" alt="image-20251031121825582"></p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031121903925.png" alt="image-20251031121903925"></p>
-</li>
-<li><p><strong>&#x4F7F;&#x7528;&#x811A;&#x672C;&#x5BFC;&#x51FA;LRC</strong>&#xFF1A;&#x5B8C;&#x6210;&#x6240;&#x6709;&#x6B4C;&#x8BCD;&#x70B9;&#x7684;&#x6807;&#x6CE8;&#x540E;&#xFF0C;<strong>&#x786E;&#x4FDD;&#x9009;&#x4E2D;&#x8FD9;&#x6761;&#x6B4C;&#x8BCD;&#x8F68;</strong>&#xFF0C;&#x7136;&#x540E;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x4E13;&#x7528;&#x7684;LRC&#x751F;&#x6210;&#x811A;&#x672C;&#xFF08;&#x4F8B;&#x5982; <code>RCJacH_Generate LRC Lyrics and Export to Clipboard.lua</code>&#xFF09;&#x3002;&#x8BE5;&#x811A;&#x672C;&#x4F1A;&#x81EA;&#x52A8;&#x8BFB;&#x53D6;&#x6240;&#x6709;MIDI&#x9879;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x540D;&#x79F0;&#xFF0C;&#x751F;&#x6210;&#x5E26;&#x65F6;&#x95F4;&#x6233;&#x7684;LRC&#x683C;&#x5F0F;&#x6587;&#x672C;&#x5E76;&#x590D;&#x5236;&#x5230;&#x526A;&#x8D34;&#x677F;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x5C06;&#x5176;&#x7C98;&#x8D34;&#x4FDD;&#x5B58;&#x4E3A; <code>.lrc</code>&#x6587;&#x4EF6;&#x5373;&#x53EF;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031122753083.png" alt="image-20251031122753083"></p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031122816309.png" alt="image-20251031122816309"></p>
-</li>
-</ol>
-<h3 id="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x521B;&#x5EFA;&#x5DE5;&#x7A0B;&#x5185;&#x53EF;&#x89C6;&#x5316;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x7F16;&#x66F2;&#x5BF9;&#x8F68;&#xFF09;"><a href="#&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x521B;&#x5EFA;&#x5DE5;&#x7A0B;&#x5185;&#x53EF;&#x89C6;&#x5316;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x7F16;&#x66F2;&#x5BF9;&#x8F68;&#xFF09;" class="headerlink" title="&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x521B;&#x5EFA;&#x5DE5;&#x7A0B;&#x5185;&#x53EF;&#x89C6;&#x5316;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x7F16;&#x66F2;&#x5BF9;&#x8F68;&#xFF09;"></a>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x521B;&#x5EFA;&#x5DE5;&#x7A0B;&#x5185;&#x53EF;&#x89C6;&#x5316;&#x6B4C;&#x8BCD;&#x8F68;&#x9053;&#xFF08;&#x63A8;&#x8350;&#x7528;&#x4E8E;&#x7F16;&#x66F2;&#x5BF9;&#x8F68;&#xFF09;</h3><p>&#x5982;&#x679C;&#x4F60;&#x4E3B;&#x8981;&#x662F;&#x5728;<code>Reaper</code>&#x5185;&#x90E8;&#x5DE5;&#x4F5C;&#x65F6;&#x9700;&#x8981;&#x76F4;&#x89C2;&#x5730;&#x5BF9;&#x7167;&#x6B4C;&#x8BCD;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x66F4;&#x76F4;&#x63A5;&#x3002;</p>
-<ol>
-<li><p><strong>&#x521B;&#x5EFA;&#x8F68;&#x9053;&#x5E76;&#x63D2;&#x5165;&#x7A7A;&#x5A92;&#x4F53;&#x9879;</strong>&#xFF1A;&#x540C;&#x6837;&#xFF0C;&#x5148;<strong>&#x65B0;&#x5EFA;&#x4E00;&#x6761;&#x8F68;&#x9053;</strong>&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5728;&#x83DC;&#x5355;&#x680F;&#x9009;&#x62E9; <strong>Insert -&gt; Empty item</strong>&#xFF0C;&#x5728;&#x6B4C;&#x8BCD;&#x5F00;&#x59CB;&#x7684;&#x6BCF;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x7A7A;&#x5A92;&#x4F53;&#x9879;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x62D6;&#x52A8;&#x7A7A;&#x5A92;&#x4F53;&#x9879;&#x7684;&#x53F3;&#x8FB9;&#x7F18;&#x6765;&#x63A7;&#x5236;&#x5176;&#x663E;&#x793A;&#x7684;&#x957F;&#x5EA6;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031121415181.png" alt="image-20251031121415181"></p>
-</li>
-<li><p><strong>&#x76F4;&#x63A5;&#x8F93;&#x5165;&#x6B4C;&#x8BCD;&#x6587;&#x672C;</strong>&#xFF1A;<strong>&#x53CC;&#x51FB;&#x7A7A;&#x5A92;&#x4F53;&#x9879;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x9879;&#x5185;&#x8F93;&#x5165;&#x6B4C;&#x8BCD;&#x6587;&#x672C;</strong>&#x3002;&#x4E3A;&#x4E86;&#x663E;&#x793A;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x53F3;&#x952E;&#x7A7A;&#x5A92;&#x4F53;&#x9879;&#xFF0C;&#x52FE;&#x9009; <strong>&#x201C;Stretch to fit item&#x201D;</strong> &#x9009;&#x9879;&#xFF0C;&#x8BA9;&#x6587;&#x672C;&#x81EA;&#x52A8;&#x6491;&#x6EE1;&#x9879;&#x7684;&#x6574;&#x4E2A;&#x663E;&#x793A;&#x533A;&#x57DF;</p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031121505767.png" alt="image-20251031121505767"></p>
-<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251031121648116.png" alt="image-20251031121648116"></p>
-</li>
-</ol>
-<h3 id="&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4E0E;&#x8FDB;&#x9636;&#x6280;&#x5DE7;"><a href="#&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4E0E;&#x8FDB;&#x9636;&#x6280;&#x5DE7;" class="headerlink" title="&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4E0E;&#x8FDB;&#x9636;&#x6280;&#x5DE7;"></a>&#x5982;&#x4F55;&#x9009;&#x62E9;&#x4E0E;&#x8FDB;&#x9636;&#x6280;&#x5DE7;</h3><ul>
-<li><p><strong>&#x6839;&#x636E;&#x7528;&#x9014;&#x9009;&#x62E9;</strong>&#xFF1A;&#x82E5;<strong>&#x9700;&#x8981;&#x5BFC;&#x51FA;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;</strong>&#x7ED9;&#x64AD;&#x653E;&#x5668;&#x4F7F;&#x7528;&#xFF0C;&#x9009;<strong>&#x65B9;&#x6CD5;&#x4E00;</strong>&#x3002;&#x82E5;&#x4EC5;&#x5728;<strong>Reaper&#x5DE5;&#x7A0B;&#x5185;&#x53C2;&#x8003;&#x548C;&#x5BF9;&#x8F68;</strong>&#xFF0C;&#x9009;<strong>&#x65B9;&#x6CD5;&#x4E8C;</strong>&#x66F4;&#x76F4;&#x89C2;&#x3002;</p>
-<p><strong>&#x8F68;&#x9053;&#x67D3;&#x8272;&#x4E0E;&#x6574;&#x7406;</strong>&#xFF1A;&#x4E3A;&#x4E86;&#x5728;&#x590D;&#x6742;&#x7684;&#x5DE5;&#x7A0B;&#x4E2D;&#x5FEB;&#x901F;&#x5B9A;&#x4F4D;&#x6B4C;&#x8BCD;&#x8F68;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528;Reaper&#x7684;&#x8F68;&#x9053;&#x989C;&#x8272;&#x529F;&#x80FD;&#x3002;&#x901A;&#x8FC7; <strong>Extensions -&gt; SWS Options -&gt; Enable automatic track coloring</strong> &#x4E3A;&#x6B4C;&#x8BCD;&#x8F68;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x9192;&#x76EE;&#x7684;&#x989C;&#x8272;</p>
-</li>
-<li><p><strong>&#x5229;&#x7528;&#x6587;&#x4EF6;&#x5939;&#x8F68;</strong>&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5DE5;&#x7A0B;&#x5305;&#x542B;&#x591A;&#x8F68;&#x4EBA;&#x58F0;&#xFF08;&#x5982;&#x4E3B;&#x5531;&#x3001;&#x548C;&#x58F0;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x6240;&#x6709;&#x6B4C;&#x8BCD;&#x8F68;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<strong>&#x6587;&#x4EF6;&#x5939;&#x8F68;&#x9053;&#xFF08;Folder Track&#xFF09;</strong>&#x8FDB;&#x884C;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#xFF0C;&#x65B9;&#x4FBF;&#x6574;&#x4F53;&#x6298;&#x53E0;&#x6216;&#x5C55;&#x5F00;</p>
-</li>
-</ul>
-<h2 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h2><p>&#x5982;&#x4ECA;AI&#x53D1;&#x8FBE;, &#x6839;&#x636E;&#x97F3;&#x4E50;&#x548C;&#x6B4C;&#x8BCD;&#x6587;&#x672C;&#x81EA;&#x52A8;&#x751F;&#x6210;LRC&#x6587;&#x4EF6;&#x7684;&#x6280;&#x672F;&#x5DF2;&#x7ECF;&#x975E;&#x5E38;&#x6210;&#x719F;&#x4E86;, &#x8FD9;&#x79CD;&#x8F68;&#x9053;&#x5316;&#x7684;&#x6B4C;&#x8BCD;&#x751F;&#x6210;&#x624B;&#x6BB5;, &#x4E5F;&#x663E;&#x5F97;&#x6709;&#x4E9B;&#x9E21;&#x808B;, &#x552F;&#x4E00;&#x7684;&#x7528;&#x5904;&#x53EF;&#x80FD;&#x5C31;&#x5728;&#x4E8E;&#x597D;&#x770B;&#x4EE5;&#x53CA;&#x65B9;&#x4FBF;&#x586B;&#x8BCD;&#x4E86;&#x1F62C;</p>
-<p><strong>&#x672C;&#x6587;&#x4E3A;&#x4F5C;&#x8005;&#x539F;&#x521B; &#x8F6C;&#x8F7D;&#x65F6;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#x8C22;&#x8C22;</strong></p>
-<p><em><a href="https://audio.newban.cn/">&#x6709;&#x74E3;&#x97F3;&#x9891; &#x2013; &#x6709;&#x4F34;&#x4F60;&#x6211;,&#x66F4;&#x591A;&#x7F16;&#x66F2;&#x6DF7;&#x97F3;&#x6280;&#x672F;&#x5C3D;&#x5728;&#x6709;&#x74E3;&#x97F3;&#x9891;</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2661,7 +2815,7 @@
               
                 <a href="https://audio.newban.cn/archives/">
               
-                  <span class="site-state-item-count">217</span>
+                  <span class="site-state-item-count">218</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

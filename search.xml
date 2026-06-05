@@ -3,12 +3,12 @@
   <entry>
     <title>如何快速给一首歌或者旋律划分小节</title>
     <url>/1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>有时候我们听到一首歌或者旋律想要为其划分小节, 或者当我们在创作的时候, 想要旋律记录在谱, 那么小节的线位置该如何摆放</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有时候我们听到一首歌或者旋律想要为其划分小节, 或者当我们在创作的时候, 想要旋律记录在谱, 那么小节的线位置该如何摆放</p>
 <p>这个问题 对于音乐初学者来说必定会遇到</p>
 <p>要想准确的划分小节, 首先我们必须明白音乐的强弱关系</p>
 <p>音乐之所以能称为音乐而不是噪音, 最关键的就是声音的<strong>轻重高低起伏</strong> 这种连续的强弱变化给人以优美舒适的感觉</p>
 <p>要想掌握划分的技巧, 除了要有一定的乐感之外, 还需要一定的乐理基础, 乐感这东西多听音乐自然就会有, 至于乐理, 这个需要花点时间学习一下</p>
-<h3 id="拍子"><a href="#拍子" class="headerlink" title="拍子"></a>拍子</h3><p>常见的拍子有四拍子 三拍子 和二拍子</p>
+<h2 id="拍子"><a href="#拍子" class="headerlink" title="拍子"></a>拍子</h2><p>常见的拍子有四拍子 三拍子 和二拍子</p>
 <ul>
 <li><strong>四拍子典型代表4/4</strong>: 表示以4分音符为一拍, 每小节有4拍</li>
 <li><strong>三拍子典型代表3/4</strong>: 表示以4分音符为一拍, 每小节有3拍</li>
@@ -21,10 +21,10 @@
 <li><strong>二拍子</strong>: 强 弱 </li>
 </ul>
 <p>强表示重音 我们发现, 不管是哪种拍子, 强音都在小节开头, 那么我们只要找到旋律的重音位置, 也就明确了小节线的位置了, 小节线画在重音前头就行</p>
-<h3 id="开始实战"><a href="#开始实战" class="headerlink" title="开始实战"></a>开始实战</h3><p>接下来就是考验耳朵和乐感的时候了, 闭上眼睛感受旋律重音的位置, 一旦找准了, 旋律的律动感就出来了,</p>
+<h2 id="开始实战"><a href="#开始实战" class="headerlink" title="开始实战"></a>开始实战</h2><p>接下来就是考验耳朵和乐感的时候了, 闭上眼睛感受旋律重音的位置, 一旦找准了, 旋律的律动感就出来了,</p>
 <p>这个时候看一下强音间隔的拍子数量, 如果间隔3个拍子重复出现强音, 那么这首歌即为四拍子的歌, 如间隔2个拍子即为三拍子, 如果间隔一个拍子, 即为二拍子的歌</p>
 <p>确认无误后, 画上小节线, 那么小节划分的工做就做好了</p>
-<h3 id="拍子知识补充"><a href="#拍子知识补充" class="headerlink" title="拍子知识补充"></a>拍子知识补充</h3><blockquote>
+<h2 id="拍子知识补充"><a href="#拍子知识补充" class="headerlink" title="拍子知识补充"></a>拍子知识补充</h2><blockquote>
 <p>拍号中分子为每小节的拍子数量 分母为以几分音符为单位拍,</p>
 <p>读法是先读分母，再读分子，比如2/4叫四二拍，3/4叫四三拍，6/8叫八六拍</p>
 </blockquote>
@@ -49,7 +49,7 @@
 </ul>
 <p>以6/8为例, 从谱子上看的确是以八分音符为一拍, 每小节有6拍, 但是在唱奏的时候却是两个三连音, 也就是只唱了两拍, 只不过每拍的音符变多了</p>
 <p>所以 我们可以简单理解为, 复拍子就是单拍子内部的重复, 而且是重复三次, 也就是一个大拍子里面有三个小拍</p>
-<h3 id="复拍子记忆"><a href="#复拍子记忆" class="headerlink" title="复拍子记忆"></a>复拍子记忆</h3><p>这里给大家介绍宋大叔的记忆方式:</p>
+<h2 id="复拍子记忆"><a href="#复拍子记忆" class="headerlink" title="复拍子记忆"></a>复拍子记忆</h2><p>这里给大家介绍宋大叔的记忆方式:</p>
 <ol>
 <li><p><strong>什么是复拍子</strong></p>
 <p>一个大拍子包含三个小拍子。（即，三个三分之一拍，合为一个完整拍。）</p>
@@ -80,12 +80,12 @@
   <entry>
     <title>以大调为基础推导其它中古调式和弦</title>
     <url>/100.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面给大家介绍过《<a href="https://audio.newban.cn/63.html">关于歌曲的调性</a>》和《<a href="https://audio.newban.cn/64.html">使用五度圈进行中古调式的相互推导</a>》</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面给大家介绍过《<a href="https://audio.newban.cn/63.html">关于歌曲的调性</a>》和《<a href="https://audio.newban.cn/64.html">使用五度圈进行中古调式的相互推导</a>》</p>
 <p>今天我们来讨论一下 由<strong>大调(Ionian调式)</strong> 推导其它中古调式的方式</p>
 <p>我们在学习乐理的时候, 基本上是从大小调开始起步, 对这两个调式比较熟悉, 其他诸如 Dorian调式啊 Phygian调式等等可能较为陌生</p>
 <p>乐理是每一位音乐人不得不过的一道鸿沟</p>
 <p>So.  需要好好了解明确掌握各种调式</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>我们先来看一下大调的各级和弦排列, 这里以C大调为例:</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>我们先来看一下大调的各级和弦排列, 这里以C大调为例:</p>
 <table>
 <thead>
 <tr>
@@ -118,14 +118,14 @@
 <p>……</p>
 <p>是不是有点顿悟?  你弹Dm和弦的时候 弹的是C大调的二级和弦 同时也是D Dorian调一级和弦, D Dorian调式是什么色彩感觉, 从Dm和弦上就可知一二</p>
 <p>那么, 通过这种滚动推导法, 我们可以快速找到某个中古调式的主和弦, 而我们只需要对大调式熟悉即可</p>
-<h3 id="万调皆可滚"><a href="#万调皆可滚" class="headerlink" title="万调皆可滚"></a>万调皆可滚</h3><p>哈哈  既然C大调和弦序列可以前后滚动, 那么其它调式自然也是一个道理, 比如上面的D Dorian:</p>
+<h2 id="万调皆可滚"><a href="#万调皆可滚" class="headerlink" title="万调皆可滚"></a>万调皆可滚</h2><p>哈哈  既然C大调和弦序列可以前后滚动, 那么其它调式自然也是一个道理, 比如上面的D Dorian:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Dm Em F G Am Bdim C</span><br></pre></td></tr></table></figure>
 
 <p>往后滚一个, 变成了E Phygian调:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Em F G Am Bdim C Dm</span><br></pre></td></tr></table></figure>
 
 <p>滚动变化的是调式, 而具体是什么调 直接看主音是什么即可</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>为了方便理解, 列举表格如下:</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>为了方便理解, 列举表格如下:</p>
 <table>
 <thead>
 <tr>
@@ -173,15 +173,15 @@
   <entry>
     <title>掌握所有调和弦的秘诀</title>
     <url>/102.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面给大家介绍了和弦的具体种类, 详见《<a href="https://audio.newban.cn/80.html">和弦的解析</a>》</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面给大家介绍了和弦的具体种类, 详见《<a href="https://audio.newban.cn/80.html">和弦的解析</a>》</p>
 <p>光里面列举的种类多达35种, 音乐中一共有12个音, 总共有35x12=420个</p>
 <p>也就是说在我们的音乐生涯中 需要记住不下420个和弦, 是不是有点懵, 建议打消想一口气记住的念头, 日积月累才是硬道理</p>
 <p>事实上, 我们真正在使用的时候, 同时用到的和弦并不多, 如果所有和弦你能都记住自然最好不过, 记不住也没有关系, 音乐都是有规律的, 了解其中的规律就是本章我们需要讨论的内容</p>
-<h3 id="和弦结构"><a href="#和弦结构" class="headerlink" title="和弦结构"></a>和弦结构</h3><p>我们知道<strong>不同种类的和弦有着不同的音程结构</strong>, 比如大三和弦时大三度叠小三度, 小三和弦时小三度叠大三度</p>
+<h2 id="和弦结构"><a href="#和弦结构" class="headerlink" title="和弦结构"></a>和弦结构</h2><p>我们知道<strong>不同种类的和弦有着不同的音程结构</strong>, 比如大三和弦时大三度叠小三度, 小三和弦时小三度叠大三度</p>
 <p>而<strong>相同种类的和弦的音程结构是固定的</strong>, 和根音是谁没有任何关系, 比如C大三和弦 与E大三和弦 他们的音程结构是一样的, 我们只需要将C大三和弦所有的组成音<strong>整体同时</strong>往上移动大三度的距离, 那么就得到了E大三和弦, 这在钢琴卷帘窗中非常直观:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211026150156202.png" alt="image-20211026150156202"></p>
 <p>其他种类和弦是同样的道理</p>
-<h3 id="和弦推导"><a href="#和弦推导" class="headerlink" title="和弦推导"></a>和弦推导</h3><p>那么 如果我们想立马知道<code>F#m7</code>和弦的组成音, 根据这个规律可以很快推导出, 很多初学者看到升降号就有点头大, 今天我们一次性解决掉它</p>
+<h2 id="和弦推导"><a href="#和弦推导" class="headerlink" title="和弦推导"></a>和弦推导</h2><p>那么 如果我们想立马知道<code>F#m7</code>和弦的组成音, 根据这个规律可以很快推导出, 很多初学者看到升降号就有点头大, 今天我们一次性解决掉它</p>
 <p>我们先将升降号过滤屏蔽掉, 将它看成是<code>Fm7</code>和弦,<code>Fm7</code>和弦的组成音是:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4 6b 1 3b</span><br></pre></td></tr></table></figure>
 
@@ -199,9 +199,9 @@
 <p>到这 有的小伙伴可能就会说, 直接记住和弦的结构不就可以了, 需要时用纸笔一推就完事了, 干嘛记这么多</p>
 <p>而我想说的是 无论是学什么, <strong>掌握的数量越多 反应就越快</strong>, 于音乐, 我们对其理解的就越深, 方便我们在音乐探索道路上清扫障碍 更进一步, 反之, 反应速度越慢, 花太多时间在推导上并不是件有利的事, 咱也不能一直依赖纸笔</p>
 <p>这几十个和弦, 我们也不用着急短期内一次性完全记下, 一边使用一边掌握是最有效的方法, 配合乐器食用更佳</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>所谓的秘诀, 其实就是利用和弦组成音的结构固定来进行上下平移推导</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>所谓的秘诀, 其实就是利用和弦组成音的结构固定来进行上下平移推导</p>
 <p>一个大七和弦, 无论上移 下移 左移 右移 它都还是大七和弦, 本质不会变, 变得只是根音罢了</p>
-<h3 id="拓展练习"><a href="#拓展练习" class="headerlink" title="拓展练习"></a>拓展练习</h3><p>如果我们需要知道<code>G Phlygian调</code>的五级和弦是什么, 该如何快速推导</p>
+<h2 id="拓展练习"><a href="#拓展练习" class="headerlink" title="拓展练习"></a>拓展练习</h2><p>如果我们需要知道<code>G Phlygian调</code>的五级和弦是什么, 该如何快速推导</p>
 <p>步骤如下:</p>
 <ol>
 <li><p>首先我们需要知道<code>Phlygian</code>调式和弦序列是什么个结构, 我们也许不熟悉<code>G Phlygian调</code>, 但是<code>E Phlygian调</code>我们肯定熟悉, 它和C大调使用相同的音</p>
@@ -240,11 +240,11 @@
   <entry>
     <title>钢琴键盘弹奏时和弦转换小技巧</title>
     <url>/106.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>学和声乐器第一个阶段就是弹和弦, 一旦和弦转换自如了, 就可以开始弹唱了</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学和声乐器第一个阶段就是弹和弦, 一旦和弦转换自如了, 就可以开始弹唱了</p>
 <p>像练指法啥的这种, 个人认为可以往后放, 先把兴趣搞起来才是关键, 而弹唱基本是大多数器乐爱好者学习乐器最初的动力</p>
 <p>一边弹一边唱, 唱的是旋律, 而弹的自然就是和弦, 无论钢琴或者吉他 亦是如此</p>
 <p>本章主要给大家介绍一下钢琴(键盘)上和弦转换的小技巧, 方便初学者快速掌握和弦的转换</p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>比如 我们要弹奏一个和弦进行1-6-4-5</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>比如 我们要弹奏一个和弦进行1-6-4-5</p>
 <p>大部分人刚开始需要一边看琴键找音一边弹, 效率极低, 同时声响效果也不平稳</p>
 <p>这里总结了一个小规律:</p>
 <p>假设我们右手弹奏和弦, 以C大调C原位和弦为例, 大拇指按根音, 中指按三音, 小指按五音, 那么:</p>
@@ -276,7 +276,7 @@
   <entry>
     <title>为什么在使用模拟混响时总是多种类型混响搭配使用</title>
     <url>/105.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们在给人声添加混响的时候, 如果使用插件, 通常不会只用一种混响, 大部分情况下板式 房间 厅堂三种混响搭配着使用, 有时还会再加上延迟</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们在给人声添加混响的时候, 如果使用插件, 通常不会只用一种混响, 大部分情况下板式 房间 厅堂三种混响搭配着使用, 有时还会再加上延迟</p>
 <p>为什么不只用其中一个混响?</p>
 <p>这就得说到软件混响和硬件混响的区别了, 一般情况下硬件可以正常将混响声音扩散到远处, 而软件模拟混响则总是在近处飘</p>
 <p>这就导致软件混响的深度不够, 声音容易往外冒, 有兴趣的可以网上找相应的对比音频听一下, 或者自己实践一下</p>
@@ -288,17 +288,17 @@
 <li>混响密度</li>
 <li>混响量</li>
 </ul>
-<h3 id="混响宽度"><a href="#混响宽度" class="headerlink" title="混响宽度"></a>混响宽度</h3><p>正常情况下混响声音随着扩散其宽度会越来越大</p>
+<h2 id="混响宽度"><a href="#混响宽度" class="headerlink" title="混响宽度"></a>混响宽度</h2><p>正常情况下混响声音随着扩散其宽度会越来越大</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211027154515373.png" alt="image-20211027154515373"></p>
 <p>我们使用三种混响来搭建完整的混响空间, 实现宽度的渐变, 比如房间混响负责近场空间, 板式混响负责中场空间, 厅堂混响负责远场空间, 最后还可以使用乒乓延迟负责更远的空间, 实现更宽的效果</p>
-<h3 id="混响深度"><a href="#混响深度" class="headerlink" title="混响深度"></a>混响深度</h3><p>混响的扩散持续时间是影响混响深度的重要指标, 持续的时间越长, 意味着扩散得越远, 远即深</p>
+<h2 id="混响深度"><a href="#混响深度" class="headerlink" title="混响深度"></a>混响深度</h2><p>混响的扩散持续时间是影响混响深度的重要指标, 持续的时间越长, 意味着扩散得越远, 远即深</p>
 <p>如果用在人声上, 可以将人声包裹住, 提升融合度</p>
 <p>软件模拟混响扩散时间我们可以简单用混响时间来代替</p>
 <p>比如房间混响用短的混响时间, 板式混响稍长, 厅堂混响最长, 最后延迟再添一笔, 使得混响深度加强</p>
-<h3 id="混响密度"><a href="#混响密度" class="headerlink" title="混响密度"></a>混响密度</h3><p>我们知道混响其实就是延迟的加强版, 若干个延迟声音叠加在一起就变成了混响</p>
+<h2 id="混响密度"><a href="#混响密度" class="headerlink" title="混响密度"></a>混响密度</h2><p>我们知道混响其实就是延迟的加强版, 若干个延迟声音叠加在一起就变成了混响</p>
 <p>而混响密度指的就是反射声或说延迟声音的密集程度, 反射声越密集混响声音越模糊, 板式混响密度最高, 而延迟密度最低, 往往我们比较容易听清延迟的声音</p>
 <p>我们可以在延迟效果器上可以添加调制效果器来模糊延迟声, 使得延迟和混响更加融合</p>
-<h3 id="混响量"><a href="#混响量" class="headerlink" title="混响量"></a>混响量</h3><p>混响量随着时间不断减少, 直至消失, 这个不必多说</p>
+<h2 id="混响量"><a href="#混响量" class="headerlink" title="混响量"></a>混响量</h2><p>混响量随着时间不断减少, 直至消失, 这个不必多说</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211027160915027.png" alt="image-20211027160915027"></p>
 <p>那么多个混响搭配使用的时候, 就需要考虑好它们之间发送量的比例关系, 合适的比例才能出来合适的声音</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -311,12 +311,12 @@
   <entry>
     <title>抒情歌曲编曲 每个乐器都有自己的情绪</title>
     <url>/101.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>抒情歌曲 表达的就是情绪</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>抒情歌曲 表达的就是情绪</p>
 <p>其实每个乐器都有情绪, 即便是没有音高的鼓, 不同的节奏变化, 推动不同的情绪表达</p>
 <p>把握好演奏呼吸节奏,  就如同赋予了它们生命, 娓娓道来 向你诉说那些不为人知的故事</p>
 <p>市面上大部分抒情歌曲都没有太复杂的编曲, 基本上都是四大件外加弦乐, 有的甚至只有钢琴或者吉他</p>
 <p>而作为编曲人, 我们要做的就是用有限的乐器发挥出歌曲应有的情感</p>
-<h3 id="情歌"><a href="#情歌" class="headerlink" title="情歌"></a>情歌</h3><p>比如某个人失恋了, 向天空呐喊为什么, 想象一下这种画面, 该如何用歌曲来表达, 或者编曲该如何设计</p>
+<h2 id="情歌"><a href="#情歌" class="headerlink" title="情歌"></a>情歌</h2><p>比如某个人失恋了, 向天空呐喊为什么, 想象一下这种画面, 该如何用歌曲来表达, 或者编曲该如何设计</p>
 <p>我们可以参考市面上的商业案例, 典型的就是林俊杰作品 他的情歌表达非常到位, 酣畅淋漓, 听完整首歌后感觉将所有的情绪都发泄了出来</p>
 <p>这里举例几首, 由于版权问题, 无法外链 需要的自行搜索</p>
 <p>《可惜没如果》</p>
@@ -426,7 +426,7 @@
   <entry>
     <title>关于写歌撞曲问题的思考</title>
     <url>/112.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>偶尔会在新闻上看到某某音乐人歌曲抄袭谁谁, 其中就连周杰伦, 王力宏都逃脱不了被戴上抄袭的帽子</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>偶尔会在新闻上看到某某音乐人歌曲抄袭谁谁, 其中就连周杰伦, 王力宏都逃脱不了被戴上抄袭的帽子</p>
 <p>实际上对于创作者而言, 写首歌太容易了, 犯不着要去抄谁的歌, 当然有特殊癖好的咱先不说</p>
 <p>那么基本上就是在写歌的时候不小心撞了曲, 说到撞曲, 当今古风圈可谓是重灾区</p>
 <p>网友A: 怎么这些个古风歌曲听来都一个味儿?</p>
@@ -434,13 +434,13 @@
 <p>网友C: 啥味儿?</p>
 <p>网友D: 就这个味啊 音乐听起来不都是音乐味儿嘛</p>
 <p>网友A: ……</p>
-<h3 id="为何会撞曲"><a href="#为何会撞曲" class="headerlink" title="为何会撞曲"></a>为何会撞曲</h3><p>这里总结了以下三点原因:</p>
+<h2 id="为何会撞曲"><a href="#为何会撞曲" class="headerlink" title="为何会撞曲"></a>为何会撞曲</h2><p>这里总结了以下三点原因:</p>
 <ol>
 <li>写歌方式有瑕疵</li>
 <li>乐理太薄弱 能扩展的音乐范围有限</li>
 <li>进入舒适圈 过度追求听感</li>
 </ol>
-<h4 id="写歌方式有瑕疵"><a href="#写歌方式有瑕疵" class="headerlink" title="写歌方式有瑕疵"></a>写歌方式有瑕疵</h4><p>每个人写歌的方式可能不太一样, 就如有的人先词后曲 有的人先曲后词</p>
+<h3 id="写歌方式有瑕疵"><a href="#写歌方式有瑕疵" class="headerlink" title="写歌方式有瑕疵"></a>写歌方式有瑕疵</h3><p>每个人写歌的方式可能不太一样, 就如有的人先词后曲 有的人先曲后词</p>
 <p>在进行旋律创作的时候, 也有很多种方式, 有的仅凭一个旋律动机无和弦约束, 随意延展, 有的按照和弦进行进行动机发展, 等等, 有兴趣可参考之前文章《<a href="https://audio.newban.cn/88.html">音乐创作的几种引导方式</a>》</p>
 <p>很多人习惯将脑海中产生的旋律用<code>midi</code>记录下来, 然后凭着乐感进行发展, 那么这种方式大概率会撞曲</p>
 <p>缘何?  这就得分析下我们大脑的运作原理了</p>
@@ -459,19 +459,19 @@
 <p>为了验证不同写歌方式存在的弊端,  我尝试了这种创作方式, 我的第三张专辑《茶余饭后》中有一部分歌都是采用类似这种创作方式, 写出来的歌和我之前的歌曲有很大不同, 总感觉有些熟悉, 但是自己却说不上来哪里不对</p>
 <p>在这之前写的歌我自己都嫌弃, 不太愿意听, 反到是这张专辑几首歌我觉得还不错</p>
 <p>那很有可能是撞曲, 具体撞了谁, 只能靠网友听辨了, <strong>创作者本身其实是听不太出来的, 要是自己能知道那就不会往这个方向写了</strong></p>
-<h4 id="乐理太薄弱-能扩展的音乐范围有限"><a href="#乐理太薄弱-能扩展的音乐范围有限" class="headerlink" title="乐理太薄弱 能扩展的音乐范围有限"></a>乐理太薄弱 能扩展的音乐范围有限</h4><p>为了好听, 写歌时大量使用烂大街的经典和声走向, 比如1-6-4-5</p>
+<h3 id="乐理太薄弱-能扩展的音乐范围有限"><a href="#乐理太薄弱-能扩展的音乐范围有限" class="headerlink" title="乐理太薄弱 能扩展的音乐范围有限"></a>乐理太薄弱 能扩展的音乐范围有限</h3><p>为了好听, 写歌时大量使用烂大街的经典和声走向, 比如1-6-4-5</p>
 <p>经典的和声, 经典的味道, 大众易接受, 但是也极易撞曲</p>
 <p>音乐虽然总共只有12个音, 但音乐可玩的地方那多了去了, 单说有调性音乐, 光调式就不下十来种, 且不说无调式音乐了, 花一辈子也不一定能穷尽</p>
 <p>关于调性, 有兴趣可查阅《<a href="https://audio.newban.cn/63.html">关于歌曲的调性</a>》 </p>
 <p><strong>音乐, 说简单也简单, 说复杂也复杂</strong></p>
 <p>简单, 简单到人人都能创作, 复杂, 复杂到头晕目眩, <strong>任何一门技能, 想要吃透, 都不容易, 下功夫是必须的, 如果想要一直走下去的话</strong> </p>
 <p>回到主题, 如果只会大调, 只用经典套路, 难保不会撞曲</p>
-<h4 id="进入舒适圈-过度追求听感"><a href="#进入舒适圈-过度追求听感" class="headerlink" title="进入舒适圈 过度追求听感"></a>进入舒适圈 过度追求听感</h4><p>新鲜的东西总是刺激的, 对于商业音乐而言, 新鲜的东西意味着风险, 如果创作时要考虑大众的接受度 传唱度和旋律的顺耳度</p>
+<h3 id="进入舒适圈-过度追求听感"><a href="#进入舒适圈-过度追求听感" class="headerlink" title="进入舒适圈 过度追求听感"></a>进入舒适圈 过度追求听感</h3><p>新鲜的东西总是刺激的, 对于商业音乐而言, 新鲜的东西意味着风险, 如果创作时要考虑大众的接受度 传唱度和旋律的顺耳度</p>
 <p>那么这种命题作文 就很容易被迫撞曲</p>
 <p>因为这样写, 相对好听, 大众喜欢, 有流量, 能卖钱</p>
 <p>而那些费劲心思创作出来的不那么顺耳的歌, 反倒无人问津</p>
 <p>这种天差地别, 一下子就腐蚀了创作者的心, 不自主地认为这种方式是正确的, 粉丝喜欢, 自己也开心, 何乐而不为呢</p>
-<h3 id="如何避免撞曲"><a href="#如何避免撞曲" class="headerlink" title="如何避免撞曲"></a>如何避免撞曲</h3><p>于创作者而言, 肯定是极力避免撞曲的, 不然被听众误认为是抄袭, 放谁身上都不会太爽</p>
+<h2 id="如何避免撞曲"><a href="#如何避免撞曲" class="headerlink" title="如何避免撞曲"></a>如何避免撞曲</h2><p>于创作者而言, 肯定是极力避免撞曲的, 不然被听众误认为是抄袭, 放谁身上都不会太爽</p>
 <p>想要避免撞曲, 方法也很简单, 换个调式写就完事了</p>
 <p>什么? 你只会大调?  </p>
 <p>好吧, 那就换个新鲜点的和弦进行吧</p>
@@ -483,7 +483,7 @@
 <li><strong>尝试不同调式, 不同风格的创作, 记住 音乐没有好不好听, 只有喜不喜欢  基础乐理要掌握</strong></li>
 <li><strong>尝试摆脱听众的束缚, 做回自己, 不忘初衷, 方得终始</strong></li>
 </ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>玩音乐, 就是为的开心和舒服, 你若真爱, 便无所顾忌</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>玩音乐, 就是为的开心和舒服, 你若真爱, 便无所顾忌</p>
 <p>我可能比较懒, 很多实验性的歌曲兴许也撞了曲, 但是无所谓了, 依然发表, 留个纪念</p>
 <p>抄袭 这辈子是不可能抄袭的, 语音便签里还有一大堆歌没编完呢 还有好些调式都还没玩透呢 哪有时间和精力去抄袭啊</p>
 <p>如果有 那也是我抄我自己</p>
@@ -518,11 +518,11 @@
   <entry>
     <title>一款非常实用的空间处理器插件DrMS</title>
     <url>/103.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>说到空间处理, 我们立马能联想到立体声扩展插件, 比如经典的<code>Waves</code>公司出品的 <code>S1 image</code>插件</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>说到空间处理, 我们立马能联想到立体声扩展插件, 比如经典的<code>Waves</code>公司出品的 <code>S1 image</code>插件</p>
 <p>往往这种立体声扩展的量只能少量添加, 否则容易导致声音失真</p>
 <p>今天我们介绍的这个空间插件名为<code>DrMS</code> , 由<code>Mathewlane</code>出品, 其官网如下:</p>
 <p><a href="https://www.mathewlane.com/plugins/drms/" target="_blank" rel="noopener">点击进入官网</a></p>
-<h3 id="插件介绍"><a href="#插件介绍" class="headerlink" title="插件介绍"></a>插件介绍</h3><p><code>DrMS</code>这款插件的不仅仅可以立体声扩展, 还可以进行纵向深度的加强, 除了能把声音分散 还能将分散的声音集中, 总之很强大, 插件长这样:</p>
+<h2 id="插件介绍"><a href="#插件介绍" class="headerlink" title="插件介绍"></a>插件介绍</h2><p><code>DrMS</code>这款插件的不仅仅可以立体声扩展, 还可以进行纵向深度的加强, 除了能把声音分散 还能将分散的声音集中, 总之很强大, 插件长这样:</p>
 <p><img src="https://www.mathewlane.com/mlmosssite/wp-content/uploads/edd/2021/04/Mathew_Lane_DrMS_Screenshot_GLOW.png" alt="img"></p>
 <p>原官网YouTube插件使用教程视频我已经搬运至B站,方便大家观看:</p>
 <iframe src="//player.bilibili.com/player.html?aid=293753258&bvid=BV1LF411e7F2&cid=431291016&page=1&autoplay=no" width="1020" height="660" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
@@ -538,19 +538,19 @@
   <entry>
     <title>周期越长对创作越不利</title>
     <url>/108.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这里的周期 指的是创作周期 </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这里的周期 指的是创作周期 </p>
 <p>周期越长 对创作越不利</p>
 <p>一段旋律反反复复修改, 修改的次数越多 就越容易变味  最后导致难产</p>
 <p>很多人都是如此</p>
-<h3 id="好的作品留给下一首"><a href="#好的作品留给下一首" class="headerlink" title="好的作品留给下一首"></a>好的作品留给下一首</h3><p>我的创作理念是 <strong>永远把好的作品留给下一首</strong></p>
+<h2 id="好的作品留给下一首"><a href="#好的作品留给下一首" class="headerlink" title="好的作品留给下一首"></a>好的作品留给下一首</h2><p>我的创作理念是 <strong>永远把好的作品留给下一首</strong></p>
 <p>这样 <strong>不仅保证了创作的流畅度 同时能保持创作的激情</strong></p>
 <p>一上来就想做到完美, 起点太高, 反而飞不起来</p>
-<h3 id="一气呵成"><a href="#一气呵成" class="headerlink" title="一气呵成"></a>一气呵成</h3><p>我的创作过程基本上是一气呵成</p>
+<h2 id="一气呵成"><a href="#一气呵成" class="headerlink" title="一气呵成"></a>一气呵成</h2><p>我的创作过程基本上是一气呵成</p>
 <p>别跟我说  写的歌很烂 不好听 或者没深度编曲不够屌等等</p>
 <p>音乐本来就是一个见仁见智 非常主观的东西 没有好与不好 只有喜欢与不喜欢</p>
 <p>从商业的角度 能卖个好价钱 被大众所接受喜欢就是好作品</p>
 <p>从个人角度 能抒发自身情感 传达想法 让自己舒服开心 那就是好作品</p>
-<h3 id="束缚自己的永远不会是别人"><a href="#束缚自己的永远不会是别人" class="headerlink" title="束缚自己的永远不会是别人"></a>束缚自己的永远不会是别人</h3><p>不只是音乐人, 对于所有创作者而言 束缚自己的永远是自身的想法, 而不是别人的眼光</p>
+<h2 id="束缚自己的永远不会是别人"><a href="#束缚自己的永远不会是别人" class="headerlink" title="束缚自己的永远不会是别人"></a>束缚自己的永远不会是别人</h2><p>不只是音乐人, 对于所有创作者而言 束缚自己的永远是自身的想法, 而不是别人的眼光</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -619,19 +619,19 @@
   <entry>
     <title>混音中各音轨共同的元素越多融合度越高</title>
     <url>/109.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>数字混音中, 不可避免地会遇到声音融合度的问题, 我们混音的目标之一就是让所有个音轨声音融为一体, 相互联动 而不是各响各的</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>数字混音中, 不可避免地会遇到声音融合度的问题, 我们混音的目标之一就是让所有个音轨声音融为一体, 相互联动 而不是各响各的</p>
 <p>当我们对各个声音进行EQ分层后 声音的干净和清晰度得到提升, 但是声音融合度却下降了</p>
 <p>大部分人第一反应就是下拉音量推子, 使声音陷进其他声音里, 但这种方式可能会出现声音被埋没</p>
 <p>另一部分人, 会尝试增加声音的低频, 低频越多, 声音变得温暖, 融合度也提升了, 但这种方式可能会使得声音浑浊</p>
 <p>剩下一部分人通常的做法就是添加各种效果器, 其中效果最为明显的是混响, 混响可以很大程度地提升声音的融合度, 原因是因为各个音轨的频率被放大拓宽, 音轨间重合交叉的频率增多 </p>
 <p>但混响不能加太多, 否则声音变得混乱, 那之前的EQ分层就白做了</p>
 <p>我们不禁思考, 融合度的本质是什么, 上面混响的例子其实是一个很好的启发</p>
-<h3 id="共同元素"><a href="#共同元素" class="headerlink" title="共同元素"></a>共同元素</h3><p>也就是说, <strong>音轨之间共同的元素越多, 融合度越高, 这个所谓的元素, 可以使频率, 可以是某种染色, 甚至是噪音</strong></p>
+<h2 id="共同元素"><a href="#共同元素" class="headerlink" title="共同元素"></a>共同元素</h2><p>也就是说, <strong>音轨之间共同的元素越多, 融合度越高, 这个所谓的元素, 可以使频率, 可以是某种染色, 甚至是噪音</strong></p>
 <p>如果不信, 你可以将所有的音轨发送到一个<code>fx</code>轨道, 然后在这个轨道中添加压缩效果器, 或者磁带饱和, 嫩色效果器等等, 也就是所谓的并联效果, 这部分效果的量可以调得非常低, 我一般加<code>-35db</code>左右, 看看是否整体更加融合了</p>
 <p>轻微的量, 效果却很明显, 这并不是什么新颖技巧, 我们混音一直都在用, 典型的就是混响效果器, 如果所有的音色都添加了相同的混响, 唯独人声不添加, 那么听起来, 感觉人声格格不入</p>
 <p>而只要稍微给人声加上混响, 哪怕只是一丁点, 那么这种分离感立马就会下降不少</p>
-<h3 id="总线处理"><a href="#总线处理" class="headerlink" title="总线处理"></a>总线处理</h3><p>为什么总线处理能提升融合度  我想已经不用再过多解释了, 道理相似</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>提升融合度的技巧很简单, 就是共同的元素, 以下列出我个人的常用手法, 不是标准, 仅做交流参考, 比如:</p>
+<h2 id="总线处理"><a href="#总线处理" class="headerlink" title="总线处理"></a>总线处理</h2><p>为什么总线处理能提升融合度  我想已经不用再过多解释了, 道理相似</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>提升融合度的技巧很简单, 就是共同的元素, 以下列出我个人的常用手法, 不是标准, 仅做交流参考, 比如:</p>
 <ul>
 <li><strong>所有音轨使用相同类型的EQ 压缩器</strong></li>
 <li><strong>所有音轨压缩器的释放时间跟随歌曲的bpm 保持整体律动一致</strong></li>
@@ -639,10 +639,10 @@
 <li><strong>所有音轨并联效果处理</strong></li>
 <li><strong>总线处理, 比如鼓组总线压缩, 合唱总线等等</strong></li>
 </ul>
-<h3 id="混音初学者"><a href="#混音初学者" class="headerlink" title="混音初学者"></a>混音初学者</h3><p>大部分刚开始接触混音的同学, 总是听不出来融合度的变化, 很正常</p>
+<h2 id="混音初学者"><a href="#混音初学者" class="headerlink" title="混音初学者"></a>混音初学者</h2><p>大部分刚开始接触混音的同学, 总是听不出来融合度的变化, 很正常</p>
 <p>没有经过混音处理的声音,胶着在一起, 即便声音浊, 但是融合度足够, 自然感觉也挺好</p>
 <p>但我们的目标是为了让声音干净清晰有力, 先解决这个问题, 再考虑增加融合度, 而不能为了融合度任凭声音打架而不理会</p>
-<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p>最近在B站看到某位老师使用开盘机给每个音轨过带, 融合度瞬间提升, 其中的原理, 我猜测和我给大家介绍的共同元素理论 也许有相通之处  , 参考视频如下:</p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>最近在B站看到某位老师使用开盘机给每个音轨过带, 融合度瞬间提升, 其中的原理, 我猜测和我给大家介绍的共同元素理论 也许有相通之处  , 参考视频如下:</p>
 <iframe src="//player.bilibili.com/player.html?aid=589230233&bvid=BV1fB4y1N7xb&cid=371547037&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" framespacing="0" width="1020" height="660" allowfullscreen="true"> </iframe>
 
 <p>另外格莱美大师<code>Andrew Scheps</code>, 也曾提到他在混音中会大量使用多音轨并联压缩, 确保整体声音相互联动 一旦某个声音过大, 那么分离感会非常明显, 视频如下:</p>
@@ -659,11 +659,11 @@
   <entry>
     <title>串联和并联处理 让声音更加丰富</title>
     <url>/114.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>首先我们需要明白为什么进行串联和并联处理, 合格的混音往往并不需要太过复杂的操作, 但很多人搞得很复杂,一大堆效果器, 一大堆发送, 大师们这么干通常只是做个实验找点乐子, 而大部分人都是在跟风, 误以为效果器挂满才是常规操作, 生生把混音的门槛拉高了一个档次</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先我们需要明白为什么进行串联和并联处理, 合格的混音往往并不需要太过复杂的操作, 但很多人搞得很复杂,一大堆效果器, 一大堆发送, 大师们这么干通常只是做个实验找点乐子, 而大部分人都是在跟风, 误以为效果器挂满才是常规操作, 生生把混音的门槛拉高了一个档次</p>
 <p>整的很多初学者望而却步, 迷茫不已</p>
 <p>有兴趣的同学可以去网上找<code>Waves</code>官方出品的几个混音经典案例工程</p>
 <p>分析他们的工程, 你就会发现, 什么叫做<strong>大道至简</strong></p>
-<h3 id="串联"><a href="#串联" class="headerlink" title="串联"></a>串联</h3><ol>
+<h2 id="串联"><a href="#串联" class="headerlink" title="串联"></a>串联</h2><ol>
 <li><p><strong>串联EQ</strong></p>
 <p>我们会经常看到一些混音师在做EQ时衰减和提升用两个不同EQ效果器处理</p>
 <p>很多初学者不免有疑问, 能用一个效果器解决的为什么要用两个, 甚至多个</p>
@@ -684,7 +684,7 @@
 <p>还是那句话, 如果听不出来, 就没必要画蛇添足, 老老实实用好一个效果器即可</p>
 </li>
 </ol>
-<h3 id="并联"><a href="#并联" class="headerlink" title="并联"></a>并联</h3><ol>
+<h2 id="并联"><a href="#并联" class="headerlink" title="并联"></a>并联</h2><ol>
 <li><p><strong>并联EQ</strong></p>
 <p>我们想让声音变得更亮, 但有不想用提升的方式, 这个时候有一种方法就是使用并联EQ, 将并联的部分中低频都切掉, 相当于是变相提升了</p>
 </li>
@@ -711,7 +711,7 @@
   <entry>
     <title>是音量平衡没做好还是混音没到位</title>
     <url>/110.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们常常会听到有人说, 你的音量平衡没做好, 人声太突出了, 底鼓太突出了等等</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们常常会听到有人说, 你的音量平衡没做好, 人声太突出了, 底鼓太突出了等等</p>
 <p>真的是音量平衡的问题吗, 还是说是因为混音没处理到位, 声音太过分离了?</p>
 <p>我偶尔会听到一些国外的音乐, 他们的人声非常响, 几乎是站在了最前面, 但是整体融合度却做得非常好, 不会让人感觉很突兀</p>
 <p>声音的摆位本来就是各有所爱, 有人喜欢突出人声, 有人喜欢突出鼓组, 甚至有人直接将人声当做伴奏乐器用, 用其他某个音色代替主旋律位置</p>
@@ -721,11 +721,11 @@
 <p>经验本就是束缚创新的枷锁, 就好比情歌编曲就应该像港台歌曲那样式来, 这是前人经验, 我们模仿者来这是很好的学习过程, 我们不按照这个套路来, 这也没有错</p>
 <p>一代新人替旧人, 随着时间的更迭, 你那在前辈眼中所谓的不伦不类, 也许就成为了后辈眼中的主流</p>
 <p>无数的历史已经验证了这个道理</p>
-<h3 id="音量和融合度"><a href="#音量和融合度" class="headerlink" title="音量和融合度"></a>音量和融合度</h3><p>回到混音  某个声音音量大一些 已经不那么重要了, 我们只需要确保每个音轨声音都能被听清, 同时保持足够的融合度, 其实就可以了</p>
+<h2 id="音量和融合度"><a href="#音量和融合度" class="headerlink" title="音量和融合度"></a>音量和融合度</h2><p>回到混音  某个声音音量大一些 已经不那么重要了, 我们只需要确保每个音轨声音都能被听清, 同时保持足够的融合度, 其实就可以了</p>
 <p>我个人认为, <strong>音量平衡是混音的结果, 而不是过程</strong>, 也就是说 混音到位了, 平衡自然也就到位了, 并不是音量平衡好了才得到一个好的混音 </p>
 <p><strong>混音的目标就是清晰度和融合度</strong> 冲着这个目标去就就不会有问题</p>
 <p>比如 如果某个音轨音量过大, 大到把其他乐器都掩盖住了, 为了让其他乐器声音清晰听见 你自然会把音量降下来</p>
-<h3 id="混音第一步先做音量平衡"><a href="#混音第一步先做音量平衡" class="headerlink" title="混音第一步先做音量平衡??"></a>混音第一步先做音量平衡??</h3><p>网上很多教程提到说 混音第一步 先把音量平衡做好, 音量搞定了混音就完成了50%</p>
+<h2 id="混音第一步先做音量平衡"><a href="#混音第一步先做音量平衡" class="headerlink" title="混音第一步先做音量平衡??"></a>混音第一步先做音量平衡??</h2><p>网上很多教程提到说 混音第一步 先把音量平衡做好, 音量搞定了混音就完成了50%</p>
 <p>我以前也尝试过这种按部就班的方法, 如果说不加效果器 光音量推子做混音的话, 效果很好</p>
 <p>但是混音不可能不加效果器, 一旦我把EQ分层 那么原来的音量平衡就已经开始失效了, 然后还得重新回过头来调整音量平衡, 等总线压缩一挂上, 你有会发现先还不如不调整音量</p>
 <p>平衡个寂寞</p>
@@ -740,10 +740,10 @@
   <entry>
     <title>关于如何保持持续创作力的浅显思考</title>
     <url>/111.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>有太多的人已经停止了创作, 开始步入安逸生活</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有太多的人已经停止了创作, 开始步入安逸生活</p>
 <p>不是能力衰退, 而是动力不足</p>
 <p>下班回家的路上偶然思考到这个问题, 在这里分享一下我个人的粗浅想法</p>
-<h3 id="保持创作力的方法"><a href="#保持创作力的方法" class="headerlink" title="保持创作力的方法"></a>保持创作力的方法</h3><p>我认为 保持持续创作力<strong>最好的办法就是不满足 不成熟</strong> </p>
+<h2 id="保持创作力的方法"><a href="#保持创作力的方法" class="headerlink" title="保持创作力的方法"></a>保持创作力的方法</h2><p>我认为 保持持续创作力<strong>最好的办法就是不满足 不成熟</strong> </p>
 <p>这样才能不停有新鲜的东西出来 所谓新鲜是相对而言 对于别人来说也许已经玩腻了  </p>
 <p>如果腻了怎么可能继续创作  所以一定不能腻 </p>
 <p>任何技能发展的过程都是由青涩再到成熟, 音乐学习也不例外, 许许多多音乐人伴随着我们成长, 同时我们也见证着他们的进步</p>
@@ -751,7 +751,7 @@
 <p> ‌除此之外还有许嵩早期的作品 不仅有很多模仿的痕迹  而且也有许多奇思妙想</p>
 <p>‌<strong>在创作领域 不会和不够 并不是劣势  反倒是啥都会了 也就没啥意思了 丧失了激情和动力</strong></p>
 <p>‌人总是需要刺激才弄保持活力 无论是好奇心 新鲜感 还是精神乃至身体欲望</p>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>‌感谢自己啥都不懂 啥也不会 </p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>‌感谢自己啥都不懂 啥也不会 </p>
 <p>在音乐领域 我还是新手 我还能创作!</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -763,11 +763,11 @@
   <entry>
     <title>压缩之前进行EQ平衡能让声音更加好听</title>
     <url>/113.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>之前闲聊过关于先EQ还是先压缩的问题, 详情参见《<a href="https://audio.newban.cn/79.html">先EQ还是先压缩</a>》</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前闲聊过关于先EQ还是先压缩的问题, 详情参见《<a href="https://audio.newban.cn/79.html">先EQ还是先压缩</a>》</p>
 <p>今天咱们继续, 本文所说的<strong>EQ平衡指的是对声音特色频率进行衰减 从而缩小高低频率差距, 实现声音平衡</strong></p>
 <p>而本文所说的好听, 严格来说应该称之为平滑和舒服</p>
 <p>话不多说, 我们直接来做一个实验</p>
-<h3 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h3><ol>
+<h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><ol>
 <li><p>选取一段十来秒的音频进行循环播放, 挂上<code>FabFilter Q2</code>进行频率监测, 这里使用的是一段人声干声, 原始频率如下:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211119105141727.png" alt="image-20211119105141727"></p>
 <p>我们能清晰地看到不少冒尖的特色评率凸起</p>
@@ -786,7 +786,7 @@
 </li>
 </ol>
 <p><strong>EQ平衡–&gt;压缩–&gt;EQ平衡</strong>, 这一系列流程下来, 我个人感觉, 声音更加的舒服和圆润</p>
-<h3 id="实验思考"><a href="#实验思考" class="headerlink" title="实验思考"></a>实验思考</h3><ol>
+<h2 id="实验思考"><a href="#实验思考" class="headerlink" title="实验思考"></a>实验思考</h2><ol>
 <li><p>为什么截取十几秒音频循环播放?</p>
 <p>人耳的听感是建立在持续声音基础之上 分析某一瞬间的声音频率没有任何意义  必须结合一定时间进行判断  七八秒到十几二十秒我认为是不错的选择</p>
 </li>
@@ -797,11 +797,11 @@
 </ol>
 <p><strong>压缩 除了控制音量动态之外, 还可以实现特色频率的缓冲</strong>  两个都是缩小了高低差距, 但却是不同的两个概念,  前者主要围绕音量, 后者主要在于频率, 当然后者的实现源自于前者</p>
 <p>有点绕 慢慢消化 哈哈 </p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>通过上面的实验, 我们大致可以得出一个相对科学的结论, 那就是压缩前进行EQ平衡可以让声音更好</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过上面的实验, 我们大致可以得出一个相对科学的结论, 那就是压缩前进行EQ平衡可以让声音更好</p>
 <p>至于有多好, 那就因人而异了</p>
 <p>混音没有固定套路, 你也可以不做EQ平衡, 看个人喜好</p>
 <p>我个人一般在EQ压缩之后的再EQ平衡环节, 会优先使用动态EQ进行处理, 毕竟 衰减过多也未必是件好事</p>
-<h3 id="关于动态EQ先后顺序"><a href="#关于动态EQ先后顺序" class="headerlink" title="关于动态EQ先后顺序"></a>关于动态EQ先后顺序</h3><p>说到动态EQ这里再补充一下, 建议放在动态控制好之后使用, 因为动态不稳的情况下使用动态EQ, 音量小的地方就处理不到, 等到压缩一挂上 没处理到的地方就一下冒了出来, 这就真的成了动态冒尖了,  结果你还得用动态EQ再处理一遍, 何苦呢</p>
+<h2 id="关于动态EQ先后顺序"><a href="#关于动态EQ先后顺序" class="headerlink" title="关于动态EQ先后顺序"></a>关于动态EQ先后顺序</h2><p>说到动态EQ这里再补充一下, 建议放在动态控制好之后使用, 因为动态不稳的情况下使用动态EQ, 音量小的地方就处理不到, 等到压缩一挂上 没处理到的地方就一下冒了出来, 这就真的成了动态冒尖了,  结果你还得用动态EQ再处理一遍, 何苦呢</p>
 <p>当然 个人建议 仅供参考</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -849,11 +849,11 @@
   <entry>
     <title>Studio one中开启虚拟键盘的方式</title>
     <url>/117.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>出门在外, 没有携带<code>midi</code>键盘, 手上只有一个键盘和鼠标,  习惯了键盘的小伙伴, 可以尝试使用虚拟键盘, 也就是利用我们的电脑键盘来充当<code>MIDI</code>键盘</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>出门在外, 没有携带<code>midi</code>键盘, 手上只有一个键盘和鼠标,  习惯了键盘的小伙伴, 可以尝试使用虚拟键盘, 也就是利用我们的电脑键盘来充当<code>MIDI</code>键盘</p>
 <p>像<code>Cubase</code>的话直接快捷键<code>Alt+K</code>就能快速调出虚拟键盘</p>
 <p>而<code>Logic</code>和库乐队则使用<code>cmd+k</code>非常方便</p>
 <p>然而<code>Studio one</code>会稍微复杂一些, 具体如下:</p>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ol>
+<h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><ol>
 <li><p><strong>使用快捷键<code>ctrl+,</code>,调出设置面板</strong></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211220115235013.png" alt="image-20211220115235013"></p>
 </li>
@@ -867,7 +867,7 @@
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211220115732022.png" alt="image-20211220115732022"></p>
 </li>
 </ol>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>设备一旦添加, 下次使用无需重复创建设备, 直接在调音台调出即可使用</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>设备一旦添加, 下次使用无需重复创建设备, 直接在调音台调出即可使用</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -878,21 +878,21 @@
   <entry>
     <title>B站里面一些音乐制作相关的干货视频推荐</title>
     <url>/118.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>平常没事经常会逛一逛B站, 里面有很多学习视频, 音乐制作相关的视频也有不少</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>平常没事经常会逛一逛B站, 里面有很多学习视频, 音乐制作相关的视频也有不少</p>
 <p>时常感叹 现在的学习环境实在比以前好太多,  想当年网上关于音乐制作的资料少之又少, 大多数是误人子弟的废话</p>
 <p>倘若当初如现在, 我想也不至于走那么多的弯路, 白白浪费了不少时间</p>
 <p>不过有利有弊, 现在资料虽多, 但多即复杂, 原本很简单的一门技术容易被一些人搞的很复杂很高深, 让很多新手望而却步</p>
 <p>就拿混音来说, 本质无非就那么几个步骤, 可网上视频充斥着各种宿主和插件讲解 各种复杂混音流程等等, 整得新手晕头转向</p>
 <p>原本简单的事情被复杂化了, 是利益驱使还是装X, 这咱们就不去揣测了</p>
 <p>那这样一想, 我也算幸运了, 大道至简, 我们开始吧</p>
-<h3 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h3><ol>
+<h2 id="编曲相关"><a href="#编曲相关" class="headerlink" title="编曲相关"></a>编曲相关</h2><ol>
 <li><p><strong>如何叠音色</strong></p>
 <iframe src="//player.bilibili.com/player.html?aid=807030439&bvid=BV1734y1R7xp&cid=452464285&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" allow="false" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
 
 <p>不同音色演奏相同的旋律, 或者高八度低八度演奏, 重合在一起, 使得编曲更加丰满</p>
 </li>
 </ol>
-<h3 id="混音相关"><a href="#混音相关" class="headerlink" title="混音相关"></a>混音相关</h3><ol>
+<h2 id="混音相关"><a href="#混音相关" class="headerlink" title="混音相关"></a>混音相关</h2><ol>
 <li><p><strong>Waves人声七步混音法</strong></p>
 <iframe src="//player.bilibili.com/player.html?aid=464843103&bvid=BV1oL411L7sj&cid=460026900&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
 
@@ -913,7 +913,7 @@
 <p><strong>重点</strong>: 使用饱和失真可以提升音频的响度</p>
 </li>
 </ol>
-<h3 id="宿主相关"><a href="#宿主相关" class="headerlink" title="宿主相关"></a>宿主相关</h3><ol>
+<h2 id="宿主相关"><a href="#宿主相关" class="headerlink" title="宿主相关"></a>宿主相关</h2><ol>
 <li><p><strong>Studio one编曲器的妙用</strong></p>
 <iframe src="//player.bilibili.com/player.html?aid=252309441&bvid=BV1MY411W7W1&cid=459982809&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
 
@@ -921,7 +921,7 @@
 
 </li>
 </ol>
-<h3 id="编曲作品欣赏"><a href="#编曲作品欣赏" class="headerlink" title="编曲作品欣赏"></a>编曲作品欣赏</h3><ol>
+<h2 id="编曲作品欣赏"><a href="#编曲作品欣赏" class="headerlink" title="编曲作品欣赏"></a>编曲作品欣赏</h2><ol>
 <li><p><strong>弦乐编的很棒</strong></p>
 <iframe src="//player.bilibili.com/player.html?aid=549270056&bvid=BV1Sq4y1u7Vf&cid=446892953&page=1&autoplay=no" scrolling="no" border="0" frameborder="no" width="1020" height="660" framespacing="0" allowfullscreen="true"> </iframe>
 </li>
@@ -942,10 +942,10 @@
   <entry>
     <title>歌曲fly编曲分析</title>
     <url>/121.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>《FLY》一首非常不错的藏语流行歌 地铁上耳机回听, 一时兴起, 对该歌的编曲进行简单分析, 供日后编曲参考借鉴</p>
-<h3 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=479422828&auto=0&height=66"></iframe>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>《FLY》一首非常不错的藏语流行歌 地铁上耳机回听, 一时兴起, 对该歌的编曲进行简单分析, 供日后编曲参考借鉴</p>
+<h2 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=479422828&auto=0&height=66"></iframe>
 
-<h3 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h3><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
+<h2 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h2><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
 <p>以下只介绍编排手法:</p>
 <ul>
 <li><strong>鼓组贝斯</strong>: 先是每拍底鼓 然后追加踩镲  紧接着二四拍换成军鼓 两个军鼓前后采用不同音色处理</li>
@@ -954,7 +954,7 @@
 <li><strong>氛围乐器</strong>: 放置于左右两边扩大声场 副歌开始出现 营造氛围 </li>
 <li><strong>间奏乐器</strong>: 间奏部分充当主奏乐器演奏旋律, 间奏过后声场往后移变成持续律动乐器, 演奏的依然是间奏旋律 </li>
 </ul>
-<h3 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h3><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
+<h2 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h2><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
 
 
 <pre class="mermaid">graph LR;
@@ -997,8 +997,8 @@ B4(最后重复一遍主歌和副歌:)
 style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 
 
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己尝试一下</p>
-<h3 id="编曲模仿"><a href="#编曲模仿" class="headerlink" title="编曲模仿"></a>编曲模仿</h3><p>参照上面分析出来的框架, 我顺手编了一个小<code>demo</code>玩玩:</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己尝试一下</p>
+<h2 id="编曲模仿"><a href="#编曲模仿" class="headerlink" title="编曲模仿"></a>编曲模仿</h2><p>参照上面分析出来的框架, 我顺手编了一个小<code>demo</code>玩玩:</p>
 <p>歌曲属性:</p>
 <ul>
 <li><strong>BPM</strong> :102</li>
@@ -1122,15 +1122,15 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
   <entry>
     <title>混响和延迟的最大区别</title>
     <url>/119.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们知道 混响是由无数延迟构成, 利用延迟效果器我们可以做出大概接近混响的效果 但是混响效果器却不能替代延迟效果器</p>
-<h3 id="两者区别"><a href="#两者区别" class="headerlink" title="两者区别"></a>两者区别</h3><p>它们两种效果最大的区别在于, <strong>延迟声的清晰度</strong></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们知道 混响是由无数延迟构成, 利用延迟效果器我们可以做出大概接近混响的效果 但是混响效果器却不能替代延迟效果器</p>
+<h2 id="两者区别"><a href="#两者区别" class="headerlink" title="两者区别"></a>两者区别</h2><p>它们两种效果最大的区别在于, <strong>延迟声的清晰度</strong></p>
 <ul>
 <li><p><strong>延迟</strong>: 声音很清晰 人耳能分辩</p>
 </li>
 <li><p><strong>混响</strong>: 听不清具体的声音 只能听到一团模糊的声音  这种由无数延迟声混合而成的声音构成了空间听感</p>
 </li>
 </ul>
-<h3 id="混响和延迟效果相同原理的参数"><a href="#混响和延迟效果相同原理的参数" class="headerlink" title="混响和延迟效果相同原理的参数"></a>混响和延迟效果相同原理的参数</h3><table>
+<h2 id="混响和延迟效果相同原理的参数"><a href="#混响和延迟效果相同原理的参数" class="headerlink" title="混响和延迟效果相同原理的参数"></a>混响和延迟效果相同原理的参数</h2><table>
 <thead>
 <tr>
 <th>混响效果器</th>
@@ -1157,7 +1157,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p>混响来自于延迟, 所以很多参数意义是一样的</p>
 <p>我们使用延迟效果器可以大致模拟出低密度的混响声音, 但是空间体积感依然不够  达不到真正混响的效果 主要还是因为叠加延迟数量太少 声音太过清晰</p>
 <p>因此 <strong>两者不能互相取代</strong>, 配合使用反而能得到更好的声音效果</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>混响和延迟最大的区别是 清晰度的差异</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>混响和延迟最大的区别是 清晰度的差异</p>
 <p>一般来说 我们利用混响做空间  延迟做声场和宽度</p>
 <p>混响负责头部 延迟负责尾部 一前一后 黄金搭档</p>
 <p>至于加的量多少合适 目标在于把歌曲的情绪感情做出来 能感动听众最好不过</p>
@@ -1171,10 +1171,10 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
   <entry>
     <title>录制和音频相关的小视频</title>
     <url>/120.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>无论是文字还是语音视频的记录, 初衷都是为了备忘, 毕竟 随着年纪的增长 很多知识容易遗忘</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>无论是文字还是语音视频的记录, 初衷都是为了备忘, 毕竟 随着年纪的增长 很多知识容易遗忘</p>
 <p>如果它们有帮助到你</p>
 <p>那我深感荣幸</p>
-<h3 id="视频列表"><a href="#视频列表" class="headerlink" title="视频列表"></a>视频列表</h3><p>《EQ曲线复制神器 Waves Q-clone插件的使用》</p>
+<h2 id="视频列表"><a href="#视频列表" class="headerlink" title="视频列表"></a>视频列表</h2><p>《EQ曲线复制神器 Waves Q-clone插件的使用》</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -1240,8 +1240,8 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
   <entry>
     <title>Kontakt快速入库工具 Mac版</title>
     <url>/124.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>手动一个一个添加<code>Kontakt</code>音色库太慢?  别怕 <code>Kontakt</code>快速入库小工具帮你搞定</p>
-<h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><p>工具包含一键添加和一键移除音色库, 我们使用<code>Add Library.command</code>脚本来批量添加音色</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>手动一个一个添加<code>Kontakt</code>音色库太慢?  别怕 <code>Kontakt</code>快速入库小工具帮你搞定</p>
+<h2 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h2><p>工具包含一键添加和一键移除音色库, 我们使用<code>Add Library.command</code>脚本来批量添加音色</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826111324904.png" alt="image-20220826111324904"></p>
 <p>双击后弹出音色目录选择窗口:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826111836532.png" alt="image-20220826111836532"></p>
@@ -1251,14 +1251,14 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826100930008.png" alt="image-20220826100930008"></p>
 <p>此时 重启<code>Kontakt</code>, 则所有的音色都添加进来了:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826112147482.png" alt="image-20220826112147482"></p>
-<h3 id="非标准音色库"><a href="#非标准音色库" class="headerlink" title="非标准音色库"></a>非标准音色库</h3><p>音色库中需要有<code>nicnt</code>文件才能入库到<code>Kontakt</code>, 如果没有的话需要手动添加一个, 只需从其他地方拷贝一份进行修改就行, 修改以下三个地方即可:</p>
+<h2 id="非标准音色库"><a href="#非标准音色库" class="headerlink" title="非标准音色库"></a>非标准音色库</h2><p>音色库中需要有<code>nicnt</code>文件才能入库到<code>Kontakt</code>, 如果没有的话需要手动添加一个, 只需从其他地方拷贝一份进行修改就行, 修改以下三个地方即可:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826112634078.png" alt="image-20220826112634078"></p>
 <p><strong><code>SNPID</code>属性 填写四位任意的十六进制值</strong> </p>
 <p>保存修改后 重新添加即可</p>
-<h3 id="音色库图片添加"><a href="#音色库图片添加" class="headerlink" title="音色库图片添加"></a>音色库图片添加</h3><p>这个简单 我们只需要制作一张<code>200x90</code>的图片 然后取名为<code>Wallpaper.png</code>, 放到音色根目录下即可:</p>
+<h2 id="音色库图片添加"><a href="#音色库图片添加" class="headerlink" title="音色库图片添加"></a>音色库图片添加</h2><p>这个简单 我们只需要制作一张<code>200x90</code>的图片 然后取名为<code>Wallpaper.png</code>, 放到音色根目录下即可:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20220826113335681.png" alt="image-20220826113335681"></p>
 <p>当然这个图片尺寸不一定非得<code>200x90</code>, 其他比例也可 反正都能识别</p>
-<h3 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h3><p>里面包含了入库工具和<code>nicnt</code>模板文件</p>
+<h2 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h2><p>里面包含了入库工具和<code>nicnt</code>模板文件</p>
 <p><a href="https://url97.ctfile.com/d/21042697-50863430-5202ad?p=312306" target="_blank" rel="noopener">点击下载</a>  (访问密码: 312306)</p>
 <h2 id="Kontakt入库相关问题"><a href="#Kontakt入库相关问题" class="headerlink" title="Kontakt入库相关问题"></a>Kontakt入库相关问题</h2><ol>
 <li><p>加载乐器时报错提示:<code>This instrument belongs to a library that is currently not installed.</code></p>
@@ -1387,21 +1387,21 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
   <entry>
     <title>编曲中和弦的编配</title>
     <url>/123.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面给大家介绍过如何给旋律编配和弦, 详情参见《<a href="https://audio.newban.cn/93.html">给旋律配和弦的几种方式</a>》</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面给大家介绍过如何给旋律编配和弦, 详情参见《<a href="https://audio.newban.cn/93.html">给旋律配和弦的几种方式</a>》</p>
 <p>也就是先有旋律 后有和弦</p>
 <p>那如果没有旋律呢 比如我们需要写一段配乐  烘托某个场景的氛围  这种情况 我们通常会采用和弦先行的做法, 也就是先编配一串符合情绪的和弦</p>
 <p>我们知道 不同的和弦连接 营造的情绪氛围是不一样的, 前面的文章也有提到过这一块 详见《<a href="https://audio.newban.cn/81.html">和弦走向影响歌曲的感情色彩 节奏决定了歌曲的律动</a>》</p>
 <p>我们在编曲的时候 假如我们第一件事要做的是和弦连接的选择, 那就需要我们用耳朵去听 用心去感受  体会其中蕴含的情绪</p>
 <p>那么具体该如何操作呢, 在这里 给大家介绍下我自己的工作流程, 仅供参考:</p>
-<h3 id="低音试探"><a href="#低音试探" class="headerlink" title="低音试探"></a>低音试探</h3><p>我首先会先用低音旋律来试探情绪走向, 从大体听感上来讲, 和弦进行其实相当于是一段旋律  那么 我们可以将低音旋律理解为简化版的和弦进行</p>
+<h2 id="低音试探"><a href="#低音试探" class="headerlink" title="低音试探"></a>低音试探</h2><p>我首先会先用低音旋律来试探情绪走向, 从大体听感上来讲, 和弦进行其实相当于是一段旋律  那么 我们可以将低音旋律理解为简化版的和弦进行</p>
 <p>借此 我们可以大体勾勒出和弦的走向 这部分线条我很有可能直接就给贝斯演奏了</p>
-<h3 id="构建和弦"><a href="#构建和弦" class="headerlink" title="构建和弦"></a>构建和弦</h3><p>有了低音后 我们以此为根音 构建和弦</p>
+<h2 id="构建和弦"><a href="#构建和弦" class="headerlink" title="构建和弦"></a>构建和弦</h2><p>有了低音后 我们以此为根音 构建和弦</p>
 <p>和弦大体分为六种, <strong>大小增减属中</strong>, 具体参见《<a href="https://audio.newban.cn/80.html">和弦的解析</a>》</p>
 <p>这一步需要我们进行不同种类的尝试   我们只需要使其听感还原或者接近低音旋律的效果即可</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上这种方法算不上有多效率, 只能算是众多方法中的笨方法, 此法可以巩固我们对于和弦的理解和掌握, 另外还可以摆脱常用和弦套路的影响, 让声音回归到耳朵上, 这也算是它的优点了</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上这种方法算不上有多效率, 只能算是众多方法中的笨方法, 此法可以巩固我们对于和弦的理解和掌握, 另外还可以摆脱常用和弦套路的影响, 让声音回归到耳朵上, 这也算是它的优点了</p>
 <p>我平常闲来无事时 就会用这种方法来写写自己的当下的情绪  然后 觉得还不错~</p>
 <p>关于和弦编配 实际上自由度很大, 你想让歌曲按照怎样的情绪走 那就怎样编配 规矩是一方面 突破规矩也许能迎来新的世界</p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>我们在写歌的时候 可能会借助乐器  比如吉他或者钢琴 一边弹和弦一边哼唱</p>
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>我们在写歌的时候 可能会借助乐器  比如吉他或者钢琴 一边弹和弦一边哼唱</p>
 <p>在这种情况下 和弦的挑选就显得尤为关键了 哼唱的旋律 很大程度是取决于和弦的</p>
 <p>和弦在前 旋律在后 也就是和弦声音先出来 然后哼唱紧随 </p>
 <p>这一特性 我们可以运用到编曲中, 比如和弦演奏加花 使得接下来出现的旋律更加自然和顺畅连贯</p>
@@ -1473,10 +1473,10 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
   <entry>
     <title>歌曲 心跳 编曲分析</title>
     <url>/122.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>情深所至, 今天分析一下王力宏的《心跳》</p>
-<h3 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33497050&auto=0&height=66"></iframe>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>情深所至, 今天分析一下王力宏的《心跳》</p>
+<h2 id="歌曲试听"><a href="#歌曲试听" class="headerlink" title="歌曲试听"></a>歌曲试听</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33497050&auto=0&height=66"></iframe>
 
-<h3 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h3><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
+<h2 id="乐器架构"><a href="#乐器架构" class="headerlink" title="乐器架构"></a>乐器架构</h2><p>该歌曲用到的乐器主要有以下几类, 仅仅是类别, 并不指代具体某个乐器, 比如铺底乐器你可以使用电钢或者合成音色, 取决于自己</p>
 <ul>
 <li><strong>鼓组贝斯</strong>: 常规编排 小间奏在重拍演奏后立马停止 使情绪冷却下来</li>
 <li><strong>铺底乐器</strong>: 钢琴音色  柱式和弦演奏 头部每小节弹一次 尾部跟随底鼓强化情绪  </li>
@@ -1484,7 +1484,7 @@ style B4 fill:#f9f,stroke:#333,stroke-width:4px</pre>
 <li><strong>氛围乐器</strong>: 弦乐 副歌部分开始断断续续出现</li>
 <li><strong>主奏乐器</strong>: 包含前奏乐器和间奏乐器 前奏采用钢琴音色  间奏电吉他 </li>
 </ul>
-<h3 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h3><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
+<h2 id="编排流程图"><a href="#编排流程图" class="headerlink" title="编排流程图"></a>编排流程图</h2><p><strong>圆形代表两小节 四边形代表四小节, 六边形代表六小节 梯形代表八小节</strong></p>
 
 
 <pre class="mermaid">graph LR;
@@ -1529,7 +1529,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 
 
 
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己编曲模仿一下</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上仅是个人大体框架 分析  并不精细  有兴趣的小伙伴可以自己编曲模仿一下</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -3212,6 +3212,37 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>这样一来过滤出来的音频信号只会流向3/4通道, 而不会影响原始音频</p>
 <p>接下来, 将3/4通道发送给<code>Bass</code>轨即可:</p>
 <p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251123101535335.png" alt="image-20251123101535335"></p>
+<h3 id="侧链参数详解"><a href="#侧链参数详解" class="headerlink" title="侧链参数详解"></a>侧链参数详解</h3><p>以<code>Negative</code>向下侧链为例:</p>
+<ul>
+<li><strong>Attack</strong>: 侧链启动时间</li>
+<li><strong>Release</strong>: 侧链释放时间</li>
+<li><strong>Mini volume</strong>: 侧链阈值, 类似于压缩器的阈值, 过低会导致侧链一直释放不了,延长<code>Release</code>时间</li>
+<li><strong>Max volume</strong>: 限幅阈值, 当信号音量低于该值时, 插件会按照我们设置的启动释放时间进行侧链, 当信号高于该阈值时, 会绕过启动时间, 立马将目标信号向下压到已设置的最大侧链强度 , 也就是进入硬限幅状态, 它相当于是一个正常侧链与限幅侧链的开关值</li>
+<li><strong>Strength</strong>: 侧链强度, 类似于压缩器的压缩比</li>
+</ul>
+<h2 id="关于侧链替代自动化"><a href="#关于侧链替代自动化" class="headerlink" title="关于侧链替代自动化"></a>关于侧链替代自动化</h2><p>场景需求:</p>
+<ul>
+<li><p>比如我希望底鼓出现的时候, 贝斯低切50hz, 当底鼓安静只有贝斯时则换成低切30hz</p>
+</li>
+<li><p>当贝斯出现时, 背景钢琴由30hz的低切变味150hz, </p>
+</li>
+</ul>
+<p>正常做法是使用自动化来实现, 不过我比较喜欢偷懒, 一般会考虑使用侧链来替代, 这样不容易忘记, 而且复用模板的时候也省去手动重复画包络的繁琐工作</p>
+<p>具体操作也很简单, 首先给目标信号轨道添加一个EQ效果器, 设置好低切频率值后给低切开关添加侧链,:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20260605115954598.png" alt="image-20260605115954598"></p>
+<p>侧链参数按照如下图示设置即可:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20260605115354117.png" alt="image-20260605115354117"></p>
+<ul>
+<li>Attack: 调至最小</li>
+<li>Release: 调至最大</li>
+<li>Min volume和Max volume: 调至最小</li>
+<li>Strength: 调至最大</li>
+<li>Direction: 选择Centered或者Postive模式</li>
+</ul>
+<p>这样一来就实现了频率避让自动化, 相当于智能检测音符</p>
+<h2 id="多轨共用音源和效果器"><a href="#多轨共用音源和效果器" class="headerlink" title="多轨共用音源和效果器"></a>多轨共用音源和效果器</h2><p>在reaper中想要实现多个共用音源和效果器, 可以直接使用编组轨道, 只需要在编组轨道中插入音源和效果器, 那么子轨道的MIDI会自动出发编组轨道中的音源发声</p>
+<p>那如果不使用编组呢, 比如两个是同级轨道, 此时我们可以使用发送的形式来实现, 只需要发送MIDI信号即可, 如图:</p>
+<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20260605125947268.png" alt="image-20260605125947268"></p>
 <h2 id="MIDI人性化"><a href="#MIDI人性化" class="headerlink" title="MIDI人性化"></a>MIDI人性化</h2><p>在钢琴卷帘窗中选中需要进行人性化的<code>MIDI</code>, 然后按键盘<code>H</code>, 会弹出<code>Humanize Notes</code>窗口</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230712160321056.png" alt="image-20230712160321056"></p>
 <p>可以对音符的尾巴, 长度和力度进行随机化</p>
@@ -5950,8 +5981,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>Cubase Artist 10 for Mac 和谐版下载安装</title>
     <url>/2.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="宿主下载"><a href="#宿主下载" class="headerlink" title="宿主下载"></a>宿主下载</h3><p><a href="https://url97.ctfile.com/f/21042697-511473504-0ddff7" target="_blank" rel="noopener">点击下载</a>（访问密码：312306）</p>
-<h3 id="宿主安装和PJ流程"><a href="#宿主安装和PJ流程" class="headerlink" title="宿主安装和PJ流程"></a>宿主安装和PJ流程</h3><h5 id="首先是正常安装"><a href="#首先是正常安装" class="headerlink" title="首先是正常安装"></a>首先是正常安装</h5><p>下载完成后打开如图：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="宿主下载"><a href="#宿主下载" class="headerlink" title="宿主下载"></a>宿主下载</h2><p><a href="https://url97.ctfile.com/f/21042697-511473504-0ddff7" target="_blank" rel="noopener">点击下载</a>（访问密码：312306）</p>
+<h2 id="宿主安装和PJ流程"><a href="#宿主安装和PJ流程" class="headerlink" title="宿主安装和PJ流程"></a>宿主安装和PJ流程</h2><h4 id="首先是正常安装"><a href="#首先是正常安装" class="headerlink" title="首先是正常安装"></a>首先是正常安装</h4><p>下载完成后打开如图：</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451320.png" alt="img"></p>
 <p>点击【继续】:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451321.png" alt="img"></p>
@@ -5961,7 +5992,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451325.png" alt="img"></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451326.png" alt="img"></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451427.png" alt="img"></p>
-<h5 id="接下来安装PJ补丁"><a href="#接下来安装PJ补丁" class="headerlink" title="接下来安装PJ补丁"></a>接下来安装PJ补丁</h5><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451428.png" alt="img"></p>
+<h4 id="接下来安装PJ补丁"><a href="#接下来安装PJ补丁" class="headerlink" title="接下来安装PJ补丁"></a>接下来安装PJ补丁</h4><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451428.png" alt="img"></p>
 <p>将左侧【Cubase10】拖到右侧【MacOS】文件夹内安装，如图：</p>
 <p>将左侧【mediaservice】拖到右侧【MacOS】文件夹内安装，如图：</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/2019080715451429.png" alt="img"></p>
@@ -7104,7 +7135,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>节奏与节拍的区别</title>
     <url>/4.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="什么是节奏"><a href="#什么是节奏" class="headerlink" title="什么是节奏"></a>什么是节奏</h3><p>指各音符之间持续发声时长的<strong>比例关系</strong> </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="什么是节奏"><a href="#什么是节奏" class="headerlink" title="什么是节奏"></a>什么是节奏</h2><p>指各音符之间持续发声时长的<strong>比例关系</strong> </p>
 <p>比如第一个音符占一个拍子 第二个音符时长是第一个的一半 也就是半拍  这种固定的<strong>相对结构</strong> 就是节奏</p>
 <p><strong>常见的基本节奏有</strong>:</p>
 <ul>
@@ -7117,7 +7148,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </ul>
 <p>其实就是<strong>不同时值比例的排列组合</strong>, 你想怎么排就怎么排</p>
 <p>它和音符的音高没有任何关系, 旋律虽然由音高和节奏组成 但节奏可以脱离旋律单独存在, 比如打击乐</p>
-<h3 id="什么是节拍"><a href="#什么是节拍" class="headerlink" title="什么是节拍"></a>什么是节拍</h3><p>指拍子之间<strong>强弱关系按照小节为单位有规律地重复</strong>出现  这种规律形态我们称之为节拍 </p>
+<h2 id="什么是节拍"><a href="#什么是节拍" class="headerlink" title="什么是节拍"></a>什么是节拍</h2><p>指拍子之间<strong>强弱关系按照小节为单位有规律地重复</strong>出现  这种规律形态我们称之为节拍 </p>
 <p>重点在于:</p>
 <ul>
 <li><strong>以小节为单位</strong></li>
@@ -7126,8 +7157,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>节拍和音符的音高及时值没有关系  </p>
 <p><strong>其中拍号是节拍的具体表现形式</strong> 用不同的拍号来表示不同的强弱关系 比如 拍号是4/4表示:</p>
 <p>单位小节内是拍子强弱是以<strong>强弱次强弱</strong>的关系进行排列 然后<strong>有规律地重复该小节</strong></p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>节奏和节拍是两个完全不同的概念  节奏重点在音符时值比例  而节拍重点在拍子之间的强弱关系</p>
-<h3 id="关于拍号补充"><a href="#关于拍号补充" class="headerlink" title="关于拍号补充"></a>关于拍号补充</h3><p>我们需要明白拍号只是一个昵称, 拍子间的强弱关系并不属于拍号, 而属于节拍, 比如有人问你, 2/4这个是什么, 你回答: </p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>节奏和节拍是两个完全不同的概念  节奏重点在音符时值比例  而节拍重点在拍子之间的强弱关系</p>
+<h2 id="关于拍号补充"><a href="#关于拍号补充" class="headerlink" title="关于拍号补充"></a>关于拍号补充</h2><p>我们需要明白拍号只是一个昵称, 拍子间的强弱关系并不属于拍号, 而属于节拍, 比如有人问你, 2/4这个是什么, 你回答: </p>
 <p>这一坨叫拍号,  它用于告诉我们歌曲是节拍是四二拍, 具体一点就是以四分音符为一拍, 每小节有两拍, 其强弱关系为 <strong>强弱</strong></p>
 <p>我们再来看以下三个概念:</p>
 <ul>
@@ -7436,8 +7467,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>BPM真的可以表示歌曲的速度么</title>
     <url>/3.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><strong>BPM</strong>: Beat Per Minute的简称, 表示每分钟的拍子数量 也就是每分钟能打多少拍</p>
-<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>一首歌的实际速度并不能单纯通过<code>bpm</code>来表示</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>BPM</strong>: Beat Per Minute的简称, 表示每分钟的拍子数量 也就是每分钟能打多少拍</p>
+<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>一首歌的实际速度并不能单纯通过<code>bpm</code>来表示</p>
 <p> 比如我用<code>4/4</code>的节拍配上100的<code>bpm</code> 和用<code>2/4</code>节拍配上50的<code>bpm</code></p>
 <p>只要将后者音符时值缩短一倍  两者给人的<strong>速度听感</strong>是一样的 比如:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/v2-9a303629f180170b2205828bccbd4987_720w.jpg" alt="img"></p>
@@ -8127,14 +8158,14 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>音乐的本质</title>
     <url>/5.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="构成音乐的基本要素"><a href="#构成音乐的基本要素" class="headerlink" title="构成音乐的基本要素"></a>构成音乐的基本要素</h3><p>构成音乐最基本的元素就是<strong>音高</strong>和<strong>音长</strong>两部分 </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="构成音乐的基本要素"><a href="#构成音乐的基本要素" class="headerlink" title="构成音乐的基本要素"></a>构成音乐的基本要素</h2><p>构成音乐最基本的元素就是<strong>音高</strong>和<strong>音长</strong>两部分 </p>
 <ul>
 <li><strong>音高</strong>: 也就是声音震动频率</li>
 <li><strong>音长</strong>: 该频率声音震动的持续时间</li>
 </ul>
 <p>明白了这一点 就已经掌握了音乐的本质</p>
 <p>从这两大元素, 我们可以延伸出许许多多的概念</p>
-<h3 id="音名和唱名"><a href="#音名和唱名" class="headerlink" title="音名和唱名"></a>音名和唱名</h3><p>为了方面人们记忆 音乐家门给不同频率的声音取了各种别名, 如下表:</p>
+<h2 id="音名和唱名"><a href="#音名和唱名" class="headerlink" title="音名和唱名"></a>音名和唱名</h2><p>为了方面人们记忆 音乐家门给不同频率的声音取了各种别名, 如下表:</p>
 <table>
 <thead>
 <tr>
@@ -8569,7 +8600,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </tbody></table>
 <p>简谱中用的就是数字这一套, 至于哪个好, 它们仅仅是音高的昵称罢了, 用于音乐的记录和传播, 无所谓好坏</p>
 <p>没有人会说你采用简谱就很low , 学习五线谱也只是为了方便学习西洋的经典, 因为西洋音乐都是用五线谱记录的, 不学的话根本看不懂, 仅此而已</p>
-<h3 id="音长的表示"><a href="#音长的表示" class="headerlink" title="音长的表示"></a>音长的表示</h3><p>前面说到, 音高可以用音名和唱名来表示, 那么声音的持续震动时长 也就是音长 用什么来表示呢</p>
+<h2 id="音长的表示"><a href="#音长的表示" class="headerlink" title="音长的表示"></a>音长的表示</h2><p>前面说到, 音高可以用音名和唱名来表示, 那么声音的持续震动时长 也就是音长 用什么来表示呢</p>
 <p>如果我们给每一个音设置一个固定时长, 比如第一个音符几秒, 第二个音符几秒, 那肯定不行, 这种绝对时长压根唱不准, 音符一多会死人的</p>
 <p>那咋办, 既然绝对时长我们很难把控, 那相对时长呢, 假设第一个音符是1秒 第二个音符是前一个音符的两倍 </p>
 <p>感觉要比绝对时长容易一些, 但是还是困难</p>
@@ -8577,22 +8608,22 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>不管你打一拍花费多长时间, 只要第一个音符打了一拍, 那第二个音符就打两拍, 如果第一个打两拍, 第二个就打四拍, 依次类推</p>
 <p>刚开始的时候, 打两拍的时长不一定是打一拍的两倍, 会出现严重误差, 这很正常, 所以初学者一般需要借助节拍器, 让身体适应这种相对时间的感觉, 久而久之误差会越来越小, 甚至融入肌肉记忆, 形成神经反射</p>
 <p><strong>所以学音乐的第一步 就要学会唱音阶和打拍子</strong></p>
-<h3 id="节奏"><a href="#节奏" class="headerlink" title="节奏"></a>节奏</h3><p>由于不同的人打拍子的快慢不一样 导致在哼唱同一首歌时也有快又慢    </p>
+<h2 id="节奏"><a href="#节奏" class="headerlink" title="节奏"></a>节奏</h2><p>由于不同的人打拍子的快慢不一样 导致在哼唱同一首歌时也有快又慢    </p>
 <p>但不管有多快 你依然能辨认出这首歌  这就是相对时间的魅力 它使得整首歌结构非常稳定 不被速度影响所影响</p>
 <p>那么 <strong>这些个由相对时间所构成的固定比例结构</strong> 在音乐中我们成为<strong>节奏</strong></p>
 <p><strong>节奏是一首歌的骨架</strong>, 我想这也不难理解了</p>
-<h3 id="好听的音乐"><a href="#好听的音乐" class="headerlink" title="好听的音乐"></a>好听的音乐</h3><p>世界上没有难听的音乐, 只有难记的音乐</p>
+<h2 id="好听的音乐"><a href="#好听的音乐" class="headerlink" title="好听的音乐"></a>好听的音乐</h2><p>世界上没有难听的音乐, 只有难记的音乐</p>
 <p>一首歌, 如果每个音符时值比例随心所欲 没有任何规律可言, 那么这首歌 你压根就记不住 或者很难记住</p>
 <p>所谓顺耳即好听, 听多了便顺耳, 想要让听众在短时间内实现<strong>听多</strong>的效果, 那么就需要重复</p>
 <p>对于创作者来说, 最基本的就是歌曲的节奏保持一定规律性延续</p>
 <p>我们可以去分析一下市面上的歌曲, 基本上整首歌的节奏, 都和第一小节大同小异, 如果不同, 那就在第二段再重复一遍, 我们俗称为洗脑</p>
 <p>我们不要觉得歌曲low, 能让人记住的音乐, 本身就是合格的音乐, 别忘了音乐诞生的初衷本来就是为了让人愉悦开心, 而不是为了比高深, 只要能让人舒服, 就OK了</p>
-<h3 id="歌曲的速度"><a href="#歌曲的速度" class="headerlink" title="歌曲的速度"></a>歌曲的速度</h3><p>这里的速度 指的是一首歌演奏的快慢  并非指的是BPM, 一首歌的速度由三个部分组成, 分别是<strong>BPM, 节拍和音符时值</strong></p>
+<h2 id="歌曲的速度"><a href="#歌曲的速度" class="headerlink" title="歌曲的速度"></a>歌曲的速度</h2><p>这里的速度 指的是一首歌演奏的快慢  并非指的是BPM, 一首歌的速度由三个部分组成, 分别是<strong>BPM, 节拍和音符时值</strong></p>
 <p>详情参见: 《<a href="https://audio.newban.cn/3.html">BPM真的可以表示歌曲的速度么</a>》</p>
 <p>BPM指每分钟的拍子数, 它可以计算出的单位拍子占用的具体时间, 这是绝对时间 精确到秒 毫秒</p>
 <p><strong>不同的速度, 可以表达不同的情绪</strong></p>
 <p>另外 音高 节奏 速度,这三者的明确标示 可以保持一首歌曲的原汁原味 充分传达创作者的意图和感情</p>
-<h3 id="歌曲的节拍"><a href="#歌曲的节拍" class="headerlink" title="歌曲的节拍"></a>歌曲的节拍</h3><p>节拍是提现演奏速度组成部分, 同时也是标记歌曲强弱情绪的方式</p>
+<h2 id="歌曲的节拍"><a href="#歌曲的节拍" class="headerlink" title="歌曲的节拍"></a>歌曲的节拍</h2><p>节拍是提现演奏速度组成部分, 同时也是标记歌曲强弱情绪的方式</p>
 <p>详情参见:《<a href="https://audio.newban.cn/4.html">节奏与节拍的区别</a>》</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -8664,19 +8695,19 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>Web在线音乐制作 解放你的电脑</title>
     <url>/44.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>平常我们如果要制作音乐, 必须使用宿主软件, 但是软件大小动辄几十个G, 对电脑配置也有一定的要求</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>平常我们如果要制作音乐, 必须使用宿主软件, 但是软件大小动辄几十个G, 对电脑配置也有一定的要求</p>
 <p>一旦出差离开了装有宿主软件的电脑, 则无法进行制作, 如果你是iphone用户, 内置的库乐队也可能无法满足需求</p>
 <p>那有没有办法可以不用安装宿主, 直接网站在线进行音乐制作呢</p>
 <p>当然, 美国有一帮人已经开发出了一套在线音乐制作系统, 目前找到两个</p>
 <p>除此之外 国内网易云也出了一个</p>
-<h3 id="第一个-Soundation"><a href="#第一个-Soundation" class="headerlink" title="第一个 Soundation"></a>第一个 Soundation</h3><p>长成这样:</p>
+<h2 id="第一个-Soundation"><a href="#第一个-Soundation" class="headerlink" title="第一个 Soundation"></a>第一个 Soundation</h2><p>长成这样:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210907175031213.png" alt="image-20210907175031213"></p>
 <p><a href="https://soundation.com/projects/4e82a0cb-3e35-4e92-89a5-a54abaa866b9" target="_blank" rel="noopener">点击进入官网</a></p>
-<h3 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h3><p>我试了一下, 感觉还不错, 支持在线录音和本地音频文件导入 , 内置许多<code>loop</code>, 直接拖拽使用, 更强焊的是可以给音频添加各种常用的效果器, 方便我们进行实时混音, 对于需要练习混音的小伙伴简直就是一个利器</p>
+<h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><p>我试了一下, 感觉还不错, 支持在线录音和本地音频文件导入 , 内置许多<code>loop</code>, 直接拖拽使用, 更强焊的是可以给音频添加各种常用的效果器, 方便我们进行实时混音, 对于需要练习混音的小伙伴简直就是一个利器</p>
 <p>还具备虚拟键盘,节拍器,MIDI编辑 音频剪辑 总线轨和轨道发送功能上还是挺完善的:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210907175823686.png" alt="image-20210907175823686"></p>
 <p>当然 它是收费的, 不过没关系, 我们可以使用免费版, 日常练习足够了</p>
-<h3 id="第二个-Bandlab"><a href="#第二个-Bandlab" class="headerlink" title="第二个 Bandlab"></a>第二个 Bandlab</h3><p>界面长这样:</p>
+<h2 id="第二个-Bandlab"><a href="#第二个-Bandlab" class="headerlink" title="第二个 Bandlab"></a>第二个 Bandlab</h2><p>界面长这样:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915151342624.png" alt="image-20210915151342624"></p>
 <p><a href="https://www.bandlab.com/" target="_blank" rel="noopener">点击进入官网</a></p>
 <p>功能和使用流畅度和<code>Soundation</code>差不多, 支持多人协作, 导入MIDI文件  一键发布到社区, 最最关键的是它是<strong>完全免费的</strong> 而且还有<strong>Android和IOS版本</strong>,<strong>支持版本回退</strong> 真的做到了随时随地音乐制作</p>
@@ -8685,7 +8716,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><strong>但是轨道数上限为16个, 没有总线轨道和发送轨</strong></p>
 <p>当然了 在线宿主只是Bandlab众多音乐产品中的一个, 其他产品还有:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915163139972.png" alt="image-20210915163139972"></p>
-<h3 id="第三个-网易云-amped"><a href="#第三个-网易云-amped" class="headerlink" title="第三个 网易云 amped"></a>第三个 网易云 amped</h3><p>长这样:</p>
+<h2 id="第三个-网易云-amped"><a href="#第三个-网易云-amped" class="headerlink" title="第三个 网易云 amped"></a>第三个 网易云 amped</h2><p>长这样:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211019143029992.png" alt="image-20211019143029992"></p>
 <p><a href="https://app-amped.music.163.com/" target="_blank" rel="noopener">点击进入官网</a></p>
 <p>用起来感觉和 <code>Soundation</code>差不多, 免费版本功能有限, 以下是免费和收费会员的功能区别:</p>
@@ -8790,7 +8821,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>压缩器各个参数的深入理解</title>
     <url>/67.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>关于压缩器参数的介绍, 网上的资料一大堆, 都是按照压缩器的工作原理进行分析, 比如:</p>
 <ul>
 <li><strong>阈值</strong>: 表示触发压缩器工作的音平值, 当输入音平高于阈值, 压缩器开始工作, 输入音平低于阈值时, 压缩器停止工作</li>
 <li><strong>压缩比</strong>: 压缩器开始工作后, 对高出阈值部分的音平按照多少比例进行压缩</li>
@@ -8798,7 +8829,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><strong>释放时间</strong>: 输入音平低于阈值, 此时压缩器准备停止工作, 压缩器花多长时间完全停止工作, 压缩比相当于为0</li>
 </ul>
 <p>压缩器最主要就是上面这四个参数, 但是, 即便你将这几个参数的概念熟记于心, 甚至将压缩器的工作原理了解的非常透彻,  你也未必能用好它, 混音和物理完全是两码事</p>
-<h3 id="压缩器参数形象理解"><a href="#压缩器参数形象理解" class="headerlink" title="压缩器参数形象理解"></a>压缩器参数形象理解</h3><p>想要用好压缩器, 让其使我们的音频更加好听, 那么我们需要从另一个角度去理解压缩器, 抛开压缩器的工作原理, 忘记这些参数的概念, 我们来重新认识这几个参数</p>
+<h2 id="压缩器参数形象理解"><a href="#压缩器参数形象理解" class="headerlink" title="压缩器参数形象理解"></a>压缩器参数形象理解</h2><p>想要用好压缩器, 让其使我们的音频更加好听, 那么我们需要从另一个角度去理解压缩器, 抛开压缩器的工作原理, 忘记这些参数的概念, 我们来重新认识这几个参数</p>
 <ul>
 <li><p><strong>阈值</strong>: 被压缩器覆盖的音符数量范围, 也就是对部分还是全部音符添加压缩效果</p>
 </li>
@@ -8834,7 +8865,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>上面这一套,我称之为临界值理论, 我们需要练习的就是如何准确找到这些个临界点, 练习的多了, 那么找寻的速度也就快了, 耳朵自然就灵敏了</p>
 <p>至此, 压缩器的使用方法已经介绍完毕</p>
 <p>如果你还想在技术层面进一步了解压缩器, 我们可以接着来聊聊</p>
-<h3 id="压缩器模型理解"><a href="#压缩器模型理解" class="headerlink" title="压缩器模型理解"></a>压缩器模型理解</h3><p>首先我们来看一下启动时间和释放时间对音频波形造成的变化:</p>
+<h2 id="压缩器模型理解"><a href="#压缩器模型理解" class="headerlink" title="压缩器模型理解"></a>压缩器模型理解</h2><p>首先我们来看一下启动时间和释放时间对音频波形造成的变化:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909120047851.png" alt="image-20210909120047851"></p>
 <p>启动时间和释放时间相当于是两把雕刻刀, 对波形进行雕刻, 启动时间雕刻出尖角, 释放时间雕刻出钝角, 形状大小不一样的尖角和钝角, 对声音造成的效果也不一样</p>
 <p>我们知道, 同一款压缩器, 相同的启动释放时间, 雕刻出来的角形状是一样的, 而一样形状的角给声音带来的效果理论上应该也是一样, 那么我们是否可以得出一个结论:</p>
@@ -8848,7 +8879,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>由上面的一大堆, 我们可以引出一个概念,那就是<strong>压缩模型</strong>, 压缩器的启动释放时间结合在一块就是一套模型, 两者参数排列组合, 可以结合出无数的模型, 每个模型模出各自不同的声音效果, 其中启动时间对模型的影响最大</p>
 <p>这就好比是月饼模子一样, 压缩模型可以对声音进行塑形, 尤其对于节奏规律性比较强的乐器塑形效果最为明显, 比如底鼓, 军鼓, 踩镲等打击乐器</p>
 <p>我们经常看到有人使用诸如B-box和撬瓶盖, 打箱子皮, 敲脸盆的方式来生成类似于底鼓军鼓的声音, 在混音的时候, 为了使得这些个声音听起来更像打击乐, 必须经过压缩塑形才行, 这时候就可以采用一些压缩模型来快速实现了, 比如30ms的启动时间放在底鼓上感觉还不错</p>
-<h5 id="关于压缩效果量"><a href="#关于压缩效果量" class="headerlink" title="关于压缩效果量"></a>关于压缩效果量</h5><p>我们知道压缩器的<strong>压缩量是右启动、释放、 压缩比 、阈值四个参数联合控制</strong>的, 没有人规定压缩比一定就是<code>-6db</code> ,如果有, 那也只是别人的经验, 不一定适合你</p>
+<h4 id="关于压缩效果量"><a href="#关于压缩效果量" class="headerlink" title="关于压缩效果量"></a>关于压缩效果量</h4><p>我们知道压缩器的<strong>压缩量是右启动、释放、 压缩比 、阈值四个参数联合控制</strong>的, 没有人规定压缩比一定就是<code>-6db</code> ,如果有, 那也只是别人的经验, 不一定适合你</p>
 <p>但这里说的压缩效果量和压缩量是两个概念, 平常我们说的压缩量指的是被压缩的电平大小</p>
 <p>而今天我们要说的<strong>压缩效果量指的是压缩模型的作用量</strong>, 换句话说, 就是模子的深度, 作用量越大, 模的越像, 这个压缩效果量对应的压缩器参数就是压缩比</p>
 <p>当我们将启动和释放时间设置好后, 相当于是已经设置好了一个压缩模型, 然后通过设置压缩比来调节该模型的作用量, 而阈值则相当于是模型的作用范围广度</p>
@@ -8856,7 +8887,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>至此 很多人就开始懵了, 这个压缩模型理论岂不是和之前的临界值理论相冲突了吗</p>
 <p>其实模型理论范畴远大于临界值理论, 临界值理论只是其中的一种模型, 两者并不冲突, 模型理论侧重于塑形, 至于塑什么样的, 因人而异, 每个人的审美也不一样</p>
 <p>当然了, 理论仅仅是理论, 这是次要的, 最主要还是多多练习实践</p>
-<h3 id="疑问解答"><a href="#疑问解答" class="headerlink" title="疑问解答"></a>疑问解答</h3><p>有的小伙伴在使用压缩器的时候, 感觉到了声音的明亮度改变, 认为压缩器可以改变声音的频率, 具有EQ的效果, 这里给大家指正一下:</p>
+<h2 id="疑问解答"><a href="#疑问解答" class="headerlink" title="疑问解答"></a>疑问解答</h2><p>有的小伙伴在使用压缩器的时候, 感觉到了声音的明亮度改变, 认为压缩器可以改变声音的频率, 具有EQ的效果, 这里给大家指正一下:</p>
 <p>首先 <strong>压缩器只能控制音量的，不能改变声音的频率</strong>,而我们感觉到的类似频率变化的效果, 实际上是<strong>音频相邻时间之间整体频段音量比例的变化</strong>造成的, 什么意思呢, 举个例子:</p>
 <p>比如在第一毫秒时,  压缩器还没开始工作, 此刻音频的频率曲线是这样:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210909112909519.png" alt="image-20210909112909519"></p>
@@ -8867,7 +8898,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/%E5%8E%8B%E7%BC%A9%E5%99%A8%E5%8E%9F%E7%90%86%E5%9B%BE.001.jpeg" alt="压缩器原理图.001"></p>
 <p>那么这个过程下来, 我们来分析一下, 声音频率是否发生了改变, 完全没有, 改变只是<strong>相对时间音频之间的音量比例</strong></p>
 <p>这种音符之间音量比例的变化, 有可能会把高音音符群音量拉高, 声音变得尖锐明亮,也有可能会把低音音音符群音量拉高, 声音变得厚实温暖,导致我们听感上有EQ效果的感觉</p>
-<h3 id="从听感角度分析启动和释放时间对声音的影响"><a href="#从听感角度分析启动和释放时间对声音的影响" class="headerlink" title="从听感角度分析启动和释放时间对声音的影响"></a>从听感角度分析启动和释放时间对声音的影响</h3><p>抛开理论不谈, 单单从听感分析, 我们可能会发现以下结论:</p>
+<h2 id="从听感角度分析启动和释放时间对声音的影响"><a href="#从听感角度分析启动和释放时间对声音的影响" class="headerlink" title="从听感角度分析启动和释放时间对声音的影响"></a>从听感角度分析启动和释放时间对声音的影响</h2><p>抛开理论不谈, 单单从听感分析, 我们可能会发现以下结论:</p>
 <p><strong>较短的启动时间:</strong></p>
 <ul>
 <li>声音更加平稳不突兀, 突发音减少了</li>
@@ -8878,7 +8909,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li>声音听起来更软</li>
 <li>律动更加沉稳</li>
 </ul>
-<h3 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h3><p>以下图片来自网络, 仅供参考</p>
+<h2 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h2><p>以下图片来自网络, 仅供参考</p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230720162049267.png" alt="image-20230720162049267"> </p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/20230720162317.png" alt></p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/20230720162412.png" alt></p>
@@ -8932,15 +8963,15 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>关于歌曲的调性</title>
     <url>/63.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面我们说过, 音乐主要有音高和音长两大元素构成</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面我们说过, 音乐主要有音高和音长两大元素构成</p>
 <p>从音长方面, 我们可以延伸出<strong>节奏 节拍和演奏速度</strong>等相关概念</p>
 <p>而从音高方面, 我们可以延伸出调性概念</p>
-<h3 id="什么是调性"><a href="#什么是调性" class="headerlink" title="什么是调性"></a>什么是调性</h3><p>调性主要包含<strong>调和调式</strong>两个概念, 我们在分析一首歌的调性时, 也是从这两个方面入手:</p>
+<h2 id="什么是调性"><a href="#什么是调性" class="headerlink" title="什么是调性"></a>什么是调性</h2><p>调性主要包含<strong>调和调式</strong>两个概念, 我们在分析一首歌的调性时, 也是从这两个方面入手:</p>
 <ul>
 <li><strong>调</strong>: 一首歌的主音, 比如C调 A调分别是以C和A为主音</li>
 <li><strong>调式</strong>: 若干个音按照一定的音程关系排列所构成的一种<strong>结构</strong></li>
 </ul>
-<h5 id="调式结构"><a href="#调式结构" class="headerlink" title="调式结构"></a>调式结构</h5><p>比如Ionian调式, 也就是我们平常说的大调式, 它的调式结构为:</p>
+<h4 id="调式结构"><a href="#调式结构" class="headerlink" title="调式结构"></a>调式结构</h4><p>比如Ionian调式, 也就是我们平常说的大调式, 它的调式结构为:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全全半全全全半</span><br></pre></td></tr></table></figure>
 
 <p>Aolian调式的调式结构为:</p>
@@ -9128,7 +9159,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </tbody></table>
 <p><strong>注</strong>: 上表中的三表示小三度 全表示全音 半表示半音</p>
 <p>上表中的常见调式, <strong>凡是调式结构以全全开头的, 皆为大调式范畴,  否则属于小调式范畴</strong>, 区分根据主要看三度音是大三度还是小三度, 大三度属大调 小三度属小调</p>
-<h3 id="不同的调式蕴含不同的感觉"><a href="#不同的调式蕴含不同的感觉" class="headerlink" title="不同的调式蕴含不同的感觉"></a>不同的调式蕴含不同的感觉</h3><p>由于不同调式音高的限制排列, 导致每一种调式出来的音乐给人的感觉也不一样:</p>
+<h2 id="不同的调式蕴含不同的感觉"><a href="#不同的调式蕴含不同的感觉" class="headerlink" title="不同的调式蕴含不同的感觉"></a>不同的调式蕴含不同的感觉</h2><p>由于不同调式音高的限制排列, 导致每一种调式出来的音乐给人的感觉也不一样:</p>
 <table>
 <thead>
 <tr>
@@ -9187,7 +9218,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </tbody></table>
 <p>其中前七中调式如果按照明亮度排列, 从上到下由亮到暗:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210907171812982.png" alt="image-20210907171812982"></p>
-<h3 id="调式间的半音变化关系"><a href="#调式间的半音变化关系" class="headerlink" title="调式间的半音变化关系"></a>调式间的半音变化关系</h3><p>既然已经知道了调式的调式结构, 那我们从十二个音中随便选取一个主音, 来对比分析不同调式间的半音变化关系</p>
+<h2 id="调式间的半音变化关系"><a href="#调式间的半音变化关系" class="headerlink" title="调式间的半音变化关系"></a>调式间的半音变化关系</h2><p>既然已经知道了调式的调式结构, 那我们从十二个音中随便选取一个主音, 来对比分析不同调式间的半音变化关系</p>
 <p>我们以C主音为例:</p>
 <table>
 <thead>
@@ -9304,7 +9335,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <td>升二三五音</td>
 </tr>
 </tbody></table>
-<h3 id="各调式间的互相推导"><a href="#各调式间的互相推导" class="headerlink" title="各调式间的互相推导"></a>各调式间的互相推导</h3><p>根据调式间的音阶半音变化关系, 我们可以将任意一个调推到出其对应的大调, 比如我们知道A Locrian的音阶排列为:</p>
+<h2 id="各调式间的互相推导"><a href="#各调式间的互相推导" class="headerlink" title="各调式间的互相推导"></a>各调式间的互相推导</h2><p>根据调式间的音阶半音变化关系, 我们可以将任意一个调推到出其对应的大调, 比如我们知道A Locrian的音阶排列为:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">6 7b 1 2 3b 4 5</span><br></pre></td></tr></table></figure>
 
 <p>我们可以立马推导出A Ionian的音阶排列, 只需将A Locrian的音阶逆向升二三五六七音即可, 也就是:</p>
@@ -9391,7 +9422,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>通过这种方法, 当我们需要找具有相同音的调时, 可以快速推导出</p>
 <p>那么我们可以借此, 将其他的调式统统转成Ionian调式, 比如F Dorian调 由于Ionian调和Dorian调主音距离为全音程, 那么F Dorian调对应Ionian调的主音为Eb 也就是Eb Ionian调(Eb大调)</p>
 <p>以上是调式推导的方法之一, 除此之外, 我们还可以借助五度圈进行快速推导, 详情参见《<a href="https://audio.newban.cn/64.html">使用五度圈进行中古调式的相互推导</a>》</p>
-<h3 id="调式体系"><a href="#调式体系" class="headerlink" title="调式体系"></a>调式体系</h3><p>我们知道了调式是若干个音按照一定音程关系排列组成的一种结构, 在中古调式体系中, 7个音由全音和半音组合排列, 如果按照数学排列组合计算, 那么一共有44种排列模式:</p>
+<h2 id="调式体系"><a href="#调式体系" class="headerlink" title="调式体系"></a>调式体系</h2><p>我们知道了调式是若干个音按照一定音程关系排列组成的一种结构, 在中古调式体系中, 7个音由全音和半音组合排列, 如果按照数学排列组合计算, 那么一共有44种排列模式:</p>
 <table>
 <thead>
 <tr>
@@ -9584,7 +9615,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </ul>
 <p>比如中古调式体系, 采用的是全音和半音的组合排列模式, 然后选择其中<code>全全半全全全半</code>组合进行音阶轮动, 因为是7个音, 所以该调式体系一共轮动出了7个调式, 分别为 Ionian调式 Dorian调式……Locrian调式</p>
 <p>再举例如五声民族调式, 采用的是全音和小三度音的组合排列模式, 然后选择其中<code>全全三全三</code>组合进行音阶轮动, 因为是5个音, 所以该调式体系一共轮动出了5个调式, 分别为宫商角徵羽调式</p>
-<h3 id="调式体系构建"><a href="#调式体系构建" class="headerlink" title="调式体系构建"></a>调式体系构建</h3><p>根据这上面三个条件, 我们可以构建出若干个调式体系</p>
+<h2 id="调式体系构建"><a href="#调式体系构建" class="headerlink" title="调式体系构建"></a>调式体系构建</h2><p>根据这上面三个条件, 我们可以构建出若干个调式体系</p>
 <p>比如以7个音结合全音半音的组合可以排列出三大类, 分别是:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">全全全全全半半</span><br><span class="line">全半全全全全半</span><br><span class="line">全全半全全全半</span><br></pre></td></tr></table></figure>
 
@@ -9606,12 +9637,12 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>如何快速判断一首歌的调性</title>
     <url>/65.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>想要快速判断一首歌曲是什么调性, 首先得明白调性是什么</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>想要快速判断一首歌曲是什么调性, 首先得明白调性是什么</p>
 <p>调性有两大组成部分, <strong>一个是调 也就是主音, 另个是调式</strong>, 关于调性的具体介绍可参考《<a href="https://audio.newban.cn/63.html">关于歌曲的调性</a>》</p>
 <p>那么第一步, 我们需要找出歌曲的主音, 然后再判断歌曲的调式结构</p>
 <p>比如一首歌的主音是C, 那么这首歌有可能是C Ionian调(C大调)  也有可能是C Aolian调(C小调), 还有可能是C 宫调, 或者是其他</p>
 <p>所以 我们需要结合主音和调式两者进行判断</p>
-<h4 id="如何确定主音"><a href="#如何确定主音" class="headerlink" title="如何确定主音"></a>如何确定主音</h4><p>在音乐中, <strong>主音具有强烈的稳定和终止感</strong>, 我们需要找出有<strong>歌曲结束感的那个音,那这个音就是主音</strong>,大部分音乐会出现在歌曲的结尾处, 只能说大部分, 还有一些音乐故意不完全终止, 为的是个听众一种意犹未尽的感觉</p>
+<h3 id="如何确定主音"><a href="#如何确定主音" class="headerlink" title="如何确定主音"></a>如何确定主音</h3><p>在音乐中, <strong>主音具有强烈的稳定和终止感</strong>, 我们需要找出有<strong>歌曲结束感的那个音,那这个音就是主音</strong>,大部分音乐会出现在歌曲的结尾处, 只能说大部分, 还有一些音乐故意不完全终止, 为的是个听众一种意犹未尽的感觉</p>
 <p>所以要准确找到歌曲的主音, 需要有一定的乐感, 只要我们平常喜欢听歌, 那基本上没有什么问题, 其实大部分人的乐感都不错, 只是自己不知道罢了</p>
 <p>当你准确听出主音位置之后, 我们还需要将主音具体的音名找出来</p>
 <p>很简单 使用钢琴或者虚拟键盘将这个音弹出来就明确了</p>
@@ -9622,7 +9653,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><strong>Riffstation</strong>被称作为扒谱神器, 只要将音频导入软件, 即可自动识别歌曲和弦和调性, 非常强大</p>
 <p>不过, 准确率并非百分百, 尤其是对于多轨乐器歌曲, 就有些力不从心了</p>
 <p>所以建议大家还是多培养乐感吧, 软件只是辅助</p>
-<h4 id="如何确定调式"><a href="#如何确定调式" class="headerlink" title="如何确定调式"></a>如何确定调式</h4><p><strong>确定调式有两种方法</strong>:</p>
+<h3 id="如何确定调式"><a href="#如何确定调式" class="headerlink" title="如何确定调式"></a>如何确定调式</h3><p><strong>确定调式有两种方法</strong>:</p>
 <p><strong>第一种是用耳朵听整首歌的色彩, 根据色彩判断歌曲</strong>调式, 因为不同的调式给人不同的感觉, 比如Ionian调式给人以阳光积极向上的感觉, 而Aolian调式给人以幽暗诡异悬疑的感觉:</p>
 <p>Ionian调式版小星星片段:</p>
 <p><audio class src="https://audio.newban.cn/audio/Ionian_demo.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
@@ -9641,8 +9672,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>假如你事先已经明确了这首歌要么是Ionian调式 要么是Aolian调式, 两者选其一, 那么有一种更快的方法 :</p>
 <p>那就是找出这两个调式的区别, 比如Ionian调式中主音到三音的距离是大三度, 而Aolian调式中主音到三音的距离是小三度, 那我们只要找出三音即可判断调式, 无需把所有的音都找出来</p>
 <p>一般来说, 流行歌曲大多采用Ionian调式或者Aolian调式, 通过三音快速判断调式的方法日后我们会经常用上</p>
-<h5 id="关于修音软件"><a href="#关于修音软件" class="headerlink" title="关于修音软件"></a>关于修音软件</h5><p>我们在使用修音软件自动修音时, 需要填入歌曲的具体调性参数, 由于不同的调性组成音相同, 比如C大调和A小调组成音都是<code>1234567</code>, 那么在修音软件上你填这两个中任意一个都能实现正确的修音效果</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>判断歌曲调性, 是每一位音乐人必须要掌握的技能, 不断练习和学习, 会越来越简单</p>
+<h4 id="关于修音软件"><a href="#关于修音软件" class="headerlink" title="关于修音软件"></a>关于修音软件</h4><p>我们在使用修音软件自动修音时, 需要填入歌曲的具体调性参数, 由于不同的调性组成音相同, 比如C大调和A小调组成音都是<code>1234567</code>, 那么在修音软件上你填这两个中任意一个都能实现正确的修音效果</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>判断歌曲调性, 是每一位音乐人必须要掌握的技能, 不断练习和学习, 会越来越简单</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -9653,7 +9684,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>使用五度圈进行中古调式的相互推导</title>
     <url>/64.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面我们介绍过利用调式主音<code>全全半全全全半</code>的音程关系进行中古调式相互推导的方法:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面我们介绍过利用调式主音<code>全全半全全全半</code>的音程关系进行中古调式相互推导的方法:</p>
 <ul>
 <li><p>Ionian调式主音距离Dorian调式主音为一个全音程</p>
 </li>
@@ -9673,7 +9704,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>详情可查看《<a href="https://audio.newban.cn/63.html">关于歌曲的调性</a>》</p>
 <p>这种是通过音程逻辑计算的的方式来进行推导, 使用起来没什么问题, 但是涉及到计算, 对于初学者来说,稍微有些费劲</p>
 <p>那么接下来给大家介绍五度圈推导法, 只要将五度圈的图形记下脑海里, 即可快速推导, 比音程计算要轻松快得多</p>
-<h3 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h3><p>五度圈图形如下:</p>
+<h2 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h2><p>五度圈图形如下:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210907165545552.png" alt="image-20210907165545552"></p>
 <p>首先 我们需要将内圈十二个格子记下, 它相当于是一个时钟, 12点的位置为C 三点的位置为A ……</p>
 <p>外圈的部分则是用于中古调式的推导, Lydian调式在Ionian调式左一格, Dorian调式在Ionian调式右两格, </p>
@@ -9748,12 +9779,12 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>音乐创作利器 AI自动作曲</title>
     <url>/66.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>所谓灵感, 只不过是心心念念的结果罢了</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>所谓灵感, 只不过是心心念念的结果罢了</p>
 <p>那么 如果你懒得思考, 可以借助第三方工具, 助你打开灵感之海, 那就是AI作曲</p>
 <p> 比如<a href="https://www.ampermusic.com/" target="_blank" rel="noopener">Amper Music</a>这个网站, 直接上传一段音频, 然后自动创作出与你上传音频相类似的音乐, 演奏的乐器可以自己挑选, 各种各样的音色, 挺丰富, 界面如下:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210908120319274.png" alt="image-20210908120319274"></p>
-<h4 id="AI作曲的原理"><a href="#AI作曲的原理" class="headerlink" title="AI作曲的原理"></a>AI作曲的原理</h4><p>你可以简单理解为是大数据统计分析匹配, 采取一个样本, 然后在海量的数据中进行模型匹配, 然后组合成一个类似的音乐片段</p>
-<h3 id="AI作曲的方向"><a href="#AI作曲的方向" class="headerlink" title="AI作曲的方向"></a>AI作曲的方向</h3><p>它只是一个没有感情的机器, 创作出来的音乐让人流泪估计不太现实</p>
+<h3 id="AI作曲的原理"><a href="#AI作曲的原理" class="headerlink" title="AI作曲的原理"></a>AI作曲的原理</h3><p>你可以简单理解为是大数据统计分析匹配, 采取一个样本, 然后在海量的数据中进行模型匹配, 然后组合成一个类似的音乐片段</p>
+<h2 id="AI作曲的方向"><a href="#AI作曲的方向" class="headerlink" title="AI作曲的方向"></a>AI作曲的方向</h2><p>它只是一个没有感情的机器, 创作出来的音乐让人流泪估计不太现实</p>
 <p>但是</p>
 <p>用它来参考和学习再好不过了, 比如你想创作一首类似于双节棍的歌, 那么你可以将原曲上传, 然后自动生成相同bpm、时长和类似节奏的的demo, 这个demo可以用来激发我们的创作灵感,  <a href="https://www.ampermusic.com/" target="_blank" rel="noopener">Amper Music</a>的目的也正是如此</p>
 <p>或者你想为一段视频快速配乐, 那么直接用它生成的demo感觉也不错</p>
@@ -9768,7 +9799,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>用压缩器调出大动态有弹性的底鼓</title>
     <url>/70.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我个人比较喜欢大弹性的底鼓的声音, 我们直接来听听两者的对比</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我个人比较喜欢大弹性的底鼓的声音, 我们直接来听听两者的对比</p>
 <p>原始底鼓音频:</p>
 <p><audio class src="https://audio.newban.cn/audio/kick_origin.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>加了压缩后:</p>
@@ -9784,7 +9815,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>然后设置压缩比小一些为2.8:1 让声音软一些 整体声场变宽, 就好比有一个巨大的气球砸在你身上,</p>
 <p>最后采用了<code>225ms</code>的释放时间, 让声音更加稳定, 就好比原先皮球自己在地面上弹跳, 此时你用手拍打对皮球进行压制使其弹跳稳定, 具体的参数如下图:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915104212647.png" alt="image-20210915104212647"></p>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
 <li><strong>启动时间</strong>: 决定了声音的块头大小 值越大Punch感和空间感越强, 反之Sharp感越强</li>
 <li><strong>压缩比</strong>: 比例越大声音越硬, 动态越小 同时声场越窄, 反之越声音软 声场大 </li>
 <li><strong>释放时间</strong>: 决定了声音的稳定性, 值过小声音跳脱,让人心跳加快, 值过大声音拖沓泥泞感觉有阻力 让人喘不过气</li>
@@ -9799,7 +9830,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </li>
 </ul>
 <p>我们需要找到刚刚好的<strong>临界值</strong></p>
-<h3 id="加EQ"><a href="#加EQ" class="headerlink" title="加EQ"></a>加EQ</h3><p>单单使用压缩, 有时候无法达到满意的效果, 为了使得底鼓听起来更加有弹性, 我给其加了一个EQ, 在70HZ位置进行了提升:</p>
+<h2 id="加EQ"><a href="#加EQ" class="headerlink" title="加EQ"></a>加EQ</h2><p>单单使用压缩, 有时候无法达到满意的效果, 为了使得底鼓听起来更加有弹性, 我给其加了一个EQ, 在70HZ位置进行了提升:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210914120835348.png" alt="image-20210914120835348"></p>
 <p>我们来听一下连着加了EQ的效果:<br><audio class src="https://audio.newban.cn/audio/kick_compressor_eq.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -9916,7 +9947,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>压缩器使用秘诀 启动时间不能太长 释放时间不能太短</title>
     <url>/72.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们知道压缩器中决定声音能量的最重要的三个参数是<strong>启动时间、释放时间和压缩比</strong></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们知道压缩器中决定声音能量的最重要的三个参数是<strong>启动时间、释放时间和压缩比</strong></p>
 <p>其中 <strong>启动时间越短 释放时间越长 压缩比越大 压缩器工作的力度就越狠</strong></p>
 <ul>
 <li><strong>启动时间由长变短 声音则由松散变紧实</strong></li>
@@ -9924,7 +9955,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><strong>压缩比越大 声音越清晰硬朗, 不会忽明忽暗 躲躲闪闪</strong></li>
 </ul>
 <p>那么问题来了, 上面所说的长和短, 到底多长算长, 多短算短呢?</p>
-<h3 id="启动时间"><a href="#启动时间" class="headerlink" title="启动时间"></a>启动时间</h3><p>一般来说 启动时间避免超过30ms, 否则声音会松散不够紧实, 这个理论适用于任何乐器乃至人声, 那么具体启动时间是多少毫秒, 还需根据乐器音色而定</p>
+<h2 id="启动时间"><a href="#启动时间" class="headerlink" title="启动时间"></a>启动时间</h2><p>一般来说 启动时间避免超过30ms, 否则声音会松散不够紧实, 这个理论适用于任何乐器乃至人声, 那么具体启动时间是多少毫秒, 还需根据乐器音色而定</p>
 <p>比如, 底鼓使用30ms的启动时间, 可以获得比较好的紧致饱满效果, 如果你想让你的底鼓听起来像一个点, 那时间还可以更小比如3ms或者其他</p>
 <p>为什么偏偏是30ms呢</p>
 <p><strong>理论根据1:</strong></p>
@@ -9941,7 +9972,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><audio class src="https://audio.newban.cn/audio/compressor_kick_with_small_attack.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>注意听音头位置, 较小的启动时间音头更加干净</p>
 <p>哈斯效应同样适用于混响和延迟效果器, 比如我们常常使用小于30ms的预延迟时间于房间混响, 起到加厚声音的效果</p>
-<h3 id="释放时间"><a href="#释放时间" class="headerlink" title="释放时间"></a>释放时间</h3><p>一般来说 释放时间高于100ms, 在不破坏声音律动的前提下, 释放时间尽可能越大越好, 但不要超过1200ms</p>
+<h2 id="释放时间"><a href="#释放时间" class="headerlink" title="释放时间"></a>释放时间</h2><p>一般来说 释放时间高于100ms, 在不破坏声音律动的前提下, 释放时间尽可能越大越好, 但不要超过1200ms</p>
 <p>为什么释放时间要尽可能大</p>
 <p>因为<strong>声音的稳定性 能量 压缩音染和高端感大部分来源于释放时间</strong></p>
 <p>被压缩过的声音就好比是披上了一层华丽的外衣的美少女, 可望不可即</p>
@@ -9955,12 +9986,12 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>长短释放时间对波形造成的影响, 夸张一点如下图:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210916120249390.png" alt="image-20210916120249390"></p>
 <p>一般来说类似鼓这种高瞬态的声音使用使用长释放时间, 而类似Bass这种适合使用低释放时间, 从而获得饱满的延音</p>
-<h3 id="压缩比"><a href="#压缩比" class="headerlink" title="压缩比"></a>压缩比</h3><p>压缩比越大 声音动态越小, 听的越清晰, 尤其是在众多音轨中, 如果不想声音躲躲闪闪被其他音轨埋没, 那么可以将压缩比调大</p>
+<h2 id="压缩比"><a href="#压缩比" class="headerlink" title="压缩比"></a>压缩比</h2><p>压缩比越大 声音动态越小, 听的越清晰, 尤其是在众多音轨中, 如果不想声音躲躲闪闪被其他音轨埋没, 那么可以将压缩比调大</p>
 <p> 比如军鼓可以调8:1 甚至10:1</p>
 <p>压缩比的范围选择保持在2:1到10:1之间</p>
-<h3 id="多轨混音"><a href="#多轨混音" class="headerlink" title="多轨混音"></a>多轨混音</h3><p>在进行多轨混音时, 为了使得各音轨声音保持融合性, 大部分音轨在压缩时, 释放时间和压缩比尽量保持一致, 这里说的是大部分, 特殊音轨特殊对待, </p>
+<h2 id="多轨混音"><a href="#多轨混音" class="headerlink" title="多轨混音"></a>多轨混音</h2><p>在进行多轨混音时, 为了使得各音轨声音保持融合性, 大部分音轨在压缩时, 释放时间和压缩比尽量保持一致, 这里说的是大部分, 特殊音轨特殊对待, </p>
 <p>如果使用不同的释放和压缩比, 那么整体声音律动和色彩有可能会杂乱不堪</p>
-<h3 id="总线压缩"><a href="#总线压缩" class="headerlink" title="总线压缩"></a>总线压缩</h3><p>在总线压缩中, 我们需要更多的融合度, 所以不追求太长的释放时间, 一般的套路是使用:</p>
+<h2 id="总线压缩"><a href="#总线压缩" class="headerlink" title="总线压缩"></a>总线压缩</h2><p>在总线压缩中, 我们需要更多的融合度, 所以不追求太长的释放时间, 一般的套路是使用:</p>
 <ul>
 <li><strong>30ms的启动时间</strong> </li>
 <li><strong>100ms的释放时间</strong></li>
@@ -9977,17 +10008,17 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>用多段压缩或者动态EQ替代静态EQ</title>
     <url>/75.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们在声音做均衡处理的时候, 是否会经常遇到, 某个不舒服的<strong>频段并不是恒定出现 而是忽闪忽闪地突出</strong>, 或者你对<strong>某个频率衰减后声音的明暗色彩发生了改变</strong></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们在声音做均衡处理的时候, 是否会经常遇到, 某个不舒服的<strong>频段并不是恒定出现 而是忽闪忽闪地突出</strong>, 或者你对<strong>某个频率衰减后声音的明暗色彩发生了改变</strong></p>
 <p>对于这种情况, 似乎有些棘手, 如果使用常用的静态EQ进行处理的话, 无法达到满意的效果</p>
 <p>面对这种情况, 我们就需要用上动态EQ或者多段压缩, 两者任选其一</p>
-<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p>针对某个频率或者频段进行处理, 当声音往外冒超过设定阈值时, 对该频段进行衰减, 低于阈值时, 不做处理</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p>针对某个频率或者频段进行处理, 当声音往外冒超过设定阈值时, 对该频段进行衰减, 低于阈值时, 不做处理</p>
 <p>这样 我们既能对不舒服的频段进行衰减, 同时对整体声音的色彩不会造成太大的影响, 尤其对于躲躲闪闪的脏频段 简直是手到擒来</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915140147658.png" alt="image-20210915140147658"></p>
 <p>对于恒定的频段, 如果使用多段压缩, 还可以发挥<strong>压缩器相对时间音量此消彼长缩短差距的特性</strong>, 突出的时候压制, 不突出的时候提升,使得频段声音更加平稳</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/4122_1562944793.jpg" alt="img"></p>
 <p>总之 多段压缩和动态EQ 更倾向于<strong>控制</strong>, 而不是单纯的增或减</p>
-<h3 id="多段压缩和动态EQ的区别"><a href="#多段压缩和动态EQ的区别" class="headerlink" title="多段压缩和动态EQ的区别"></a>多段压缩和动态EQ的区别</h3><p>两者原理都是一样, 只不过多段压缩侧重于压缩,可调节的频段数量有限,  而动态EQ更倾向于频段控制,频段精细化调节优于多段压缩 </p>
-<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>它们常常应用于<strong>频率衰减</strong>的场景, 可弥补静态EQ的不足, 如果想要对<strong>频段进行提升</strong>或者<strong>改变声音明暗色彩</strong>, 那么建议使用静态EQ</p>
+<h2 id="多段压缩和动态EQ的区别"><a href="#多段压缩和动态EQ的区别" class="headerlink" title="多段压缩和动态EQ的区别"></a>多段压缩和动态EQ的区别</h2><p>两者原理都是一样, 只不过多段压缩侧重于压缩,可调节的频段数量有限,  而动态EQ更倾向于频段控制,频段精细化调节优于多段压缩 </p>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>它们常常应用于<strong>频率衰减</strong>的场景, 可弥补静态EQ的不足, 如果想要对<strong>频段进行提升</strong>或者<strong>改变声音明暗色彩</strong>, 那么建议使用静态EQ</p>
 <p>当然 多段压缩应用远不止此, 关于多段压缩的强大功能和具体使用, 可参考:</p>
 <p>《<a href="https://www.midifan.com/modulearticle-detailview-6544.htm" target="_blank" rel="noopener">什么是多段压缩以及为什么他很有用</a>》</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -10000,15 +10031,15 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>EQ的使用核心技巧 衰减特色频率</title>
     <url>/74.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>怎样使用EQ可以使声音更好听, 更舒服</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>怎样使用EQ可以使声音更好听, 更舒服</p>
 <p>好不好听因人而异不好判断, 但舒不舒服却是有一套准则, 那就是减少特色频率的存在</p>
-<h3 id="特色频率"><a href="#特色频率" class="headerlink" title="特色频率"></a>特色频率</h3><p>什么是特色频率, 你可以形象理解为冒尖频率:</p>
+<h2 id="特色频率"><a href="#特色频率" class="headerlink" title="特色频率"></a>特色频率</h2><p>什么是特色频率, 你可以形象理解为冒尖频率:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915122048505.png" alt="image-20210915122048505"></p>
 <p>如果特色频率太过突出, 容易掩盖其他频段 使得声音不均衡, 比如特色频率集中在低频区域声音则浑浊不堪, 集中在高频区域则尖锐刺耳</p>
 <p>那么 将这些特色频率进行衰减, 其他频段声音相当于被动得到提升, 声音整体更加均衡, 那么人耳听起来就会更加<strong>舒服</strong></p>
-<h4 id="扫频查找"><a href="#扫频查找" class="headerlink" title="扫频查找"></a>扫频查找</h4><p>查找特色频率最快的方法就是通过窄Q值扫频, 可以提升的方式扫, 也可衰减的方式, 看个人习惯</p>
+<h3 id="扫频查找"><a href="#扫频查找" class="headerlink" title="扫频查找"></a>扫频查找</h3><p>查找特色频率最快的方法就是通过窄Q值扫频, 可以提升的方式扫, 也可衰减的方式, 看个人习惯</p>
 <p>如果是提升的方式, 那么我们只需要找出突出的频率即可, 这里的<strong>突出指的是贴耳, 如果某个频率点突然让你感觉声音更靠近了, 那么这个频率就是对的</strong> </p>
-<h3 id="增益衰减"><a href="#增益衰减" class="headerlink" title="增益衰减"></a>增益衰减</h3><p>当我们对特色频率进行衰减后, 通过提升输出音量的方式, 可以将非特色频段提升, 这样下来, 声音各频段得到了有效的均衡</p>
+<h2 id="增益衰减"><a href="#增益衰减" class="headerlink" title="增益衰减"></a>增益衰减</h2><p>当我们对特色频率进行衰减后, 通过提升输出音量的方式, 可以将非特色频段提升, 这样下来, 声音各频段得到了有效的均衡</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
 ]]></content>
@@ -10019,13 +10050,13 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>支持Linux平台的DAW</title>
     <url>/77.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>大部分宿主只支持Windows和Mac平台, 但是也有少部分人存在用Linux平台制作音乐的需求</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大部分宿主只支持Windows和Mac平台, 但是也有少部分人存在用Linux平台制作音乐的需求</p>
 <p>以下几款宿主支持Windows、MAC和Linux三大平台, 并且是完全免费的</p>
-<h3 id="Audacity"><a href="#Audacity" class="headerlink" title="Audacity"></a>Audacity</h3><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/01_fig_1_free_daws.jpg" alt="img"></p>
+<h2 id="Audacity"><a href="#Audacity" class="headerlink" title="Audacity"></a>Audacity</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/01_fig_1_free_daws.jpg" alt="img"></p>
 <p>I’ll start off with Audacity, a free open-source audio editor. Audacity has been around for many years and is very popular, with a loyal base of users. It’s primarily an audio editor, providing audio recording, editing and processing, including a number of advanced processing tools like audio repair and time/pitch shift. However, Audacity is different than most of the DAWs in this survey in two major ways. First off, there’s no MIDI to speak of—while you can have MIDI Note tracks, there are no virtual instruments or any of the usual MIDI capabilities like quantization. And the second difference is that all editing and processing in Audacity is destructive—tweaks made to the audio permanently change the original files.</p>
 <p>This can make for a very different workflow for basic audio editing than with other DAWs, and the lack of realtime plug-ins and instruments makes Audacity very limited for music and mixing applications. Still, it’s an excellent tool for recording and editing voice and dialog, like for podcasts; simple musical projects, like singer-songwriter demos, and mastering finished mixes. There’s an active online community, and the program is stable and easy to work in, as long as you’re comfortable with its limits.</p>
 <p><strong>Name:</strong> Audacity<br><strong>Maker:</strong> Audacity Team<br><strong>Platform(s):</strong> Mac, Windows, Linux<br><strong>Features:</strong> Audio recording/editing/processing<br><strong>Pros:</strong> Excellent audio editing; advanced processing<br><strong>Cons:</strong> No MIDI; only destructive editing/processing<br><strong>URL:</strong> <a href="https://www.audacityteam.org/" target="_blank" rel="noopener">https://www.audacityteam.org</a></p>
-<h3 id="Tracktion-T7"><a href="#Tracktion-T7" class="headerlink" title="Tracktion T7"></a>Tracktion T7</h3><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/02_fig_2_free_daws.jpg" alt="img"></p>
+<h2 id="Tracktion-T7"><a href="#Tracktion-T7" class="headerlink" title="Tracktion T7"></a>Tracktion T7</h2><p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/02_fig_2_free_daws.jpg" alt="img"></p>
 <p>For a while Tracktion was distributed by Mackie, but currently it’s in the hands of its original developer. Tracktion T7 is the current version of this audio/MIDI production DAW. It offers a single-window design, with full recording and editing capabilities for audio and MIDI, and included plug-ins as well as compatibility with AU and VST plug-in formats. Advanced features include time-shifting and Clip effects—the latter is an option to apply effects to individual audio Clips, as an alternative to track-based mix processing (similar to Pro Tools’ AudioSuite processing). While it may not be as well-known as some of the other entries in this survey, Tracktion is a worthy inclusion to any free-DAW list.</p>
 <p><strong>Name:</strong> Tracktion T7<br><strong>Maker:</strong> Tracktion<br><strong>Platform(s):</strong> Mac, Windows, Linux<br><strong>Features:</strong> Audio &amp; MIDI recording/editing/processing/mixing<br><strong>Pros:</strong> Full-featured audio &amp; MIDI rec/editing; Clip Effects<br><strong>Cons:</strong> Horizontal mixer display not as clear as typcial layouts<br><strong>URL:</strong> <a href="https://www.tracktion.com/products/t7-daw" target="_blank" rel="noopener">https://www.tracktion.com/products/t7-daw</a></p>
 <p>更多免费宿主, 可参考《<a href="https://ask.audio/articles/the-best-free-daws-in-2019" target="_blank" rel="noopener">The Best Free DAWs in 2019</a>》</p>
@@ -10039,9 +10070,9 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>在手机上进行编曲和混音</title>
     <url>/76.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>想在手机上进行编曲, 软件有不少, 比如安卓平台的<strong>随身乐队</strong>, IOS平台的<strong>库乐队</strong>, 都很好用, 但是想要兼顾混音除了库乐队外 能用得上的却不多 尤其是安卓平台</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>想在手机上进行编曲, 软件有不少, 比如安卓平台的<strong>随身乐队</strong>, IOS平台的<strong>库乐队</strong>, 都很好用, 但是想要兼顾混音除了库乐队外 能用得上的却不多 尤其是安卓平台</p>
 <p>那么今天就给大家介绍几款可以方便我们兼顾混音的音乐制作软件</p>
-<h3 id="BandLab"><a href="#BandLab" class="headerlink" title="BandLab"></a>BandLab</h3><p>软件完全免费 支持IOS和安卓</p>
+<h2 id="BandLab"><a href="#BandLab" class="headerlink" title="BandLab"></a>BandLab</h2><p>软件完全免费 支持IOS和安卓</p>
 <p><a href="https://play.google.com/store/apps/details?id=com.bandlab.bandlab&referrer=utm_source%3Dwww.bandlab.com%26utm_medium%3Dbanner%26utm_content%3Don%2520the%2520go" target="_blank" rel="noopener">谷歌安卓版下载通道</a></p>
 <p><a href="https://itunes.apple.com/app/apple-store/id968585775?pt=117214159&ct=landing_banner&mt=8" target="_blank" rel="noopener">IOS版下载</a></p>
 <p><a href="https://trickym.lanzoui.com/b0e23rgqj" target="_blank" rel="noopener">国内安卓下载通道</a>   访问密码:bbcd</p>
@@ -10070,7 +10101,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><p><strong>Remix Tracks</strong> – Need inspiration to start a track? ‘Fork’ a public track that any creator has shared to make your own beat and remix</p>
 </li>
 </ul>
-<h3 id="FL-Studio-Mobile"><a href="#FL-Studio-Mobile" class="headerlink" title="FL Studio Mobile"></a>FL Studio Mobile</h3><p>此软件收费 支持IOS、安卓和WindowsApp</p>
+<h2 id="FL-Studio-Mobile"><a href="#FL-Studio-Mobile" class="headerlink" title="FL Studio Mobile"></a>FL Studio Mobile</h2><p>此软件收费 支持IOS、安卓和WindowsApp</p>
 <p><a href="https://support.image-line.com/redirect/flmobile_buyandroid?_ga=2.140158000.208136675.1631691675-56122757.1631691675" target="_blank" rel="noopener">安卓版下载</a></p>
 <p><a href="https://apps.apple.com/us/app/fl-studio-mobile/id432850619" target="_blank" rel="noopener">IOS版下载</a></p>
 <p><a href="https://support.image-line.com/redirect/flmobile_buywindows?_ga=2.204122131.208136675.1631691675-56122757.1631691675" target="_blank" rel="noopener">WindowsApp下载</a></p>
@@ -10105,8 +10136,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>多轨混音素材下载网站大合集</title>
     <url>/69.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>学习混音的同学们, 是否苦于找不到免费的多轨混音素材, 那么这里给大家介绍几个网站, 以备不时之需</p>
-<h3 id="网站列表"><a href="#网站列表" class="headerlink" title="网站列表"></a>网站列表</h3><ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>学习混音的同学们, 是否苦于找不到免费的多轨混音素材, 那么这里给大家介绍几个网站, 以备不时之需</p>
+<h2 id="网站列表"><a href="#网站列表" class="headerlink" title="网站列表"></a>网站列表</h2><ol>
 <li><p><a href="http://www.cambridge-mt.com/ms/mtk/" target="_blank" rel="noopener">cambridge</a></p>
 <p>这是 <em>Mixing Secrets For The Small Studio</em> 这本书的作者 <code>Mike Senior</code> 支持的一个项目，很多乐队或制作人把自己的作品分轨放到这个网站上，供学习者下载来练习混音制作。</p>
 <p>这里面各种各样的音乐风格都有，素材的质量也是千差万别，有的甚至需要你来修正演奏的节奏或人声的音高。这绝对是很好的训练素材。不仅如此，它还有在线论坛供大家切磋、讨论，可以多多与创作者交流</p>
@@ -10150,29 +10181,29 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>在线免费母带处理网站推荐</title>
     <url>/78.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>想个混好的歌曲快速进行母带处理?</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>想个混好的歌曲快速进行母带处理?</p>
 <p>推荐几个免费的在线母带处理工具</p>
-<h3 id="BandLab"><a href="#BandLab" class="headerlink" title="BandLab"></a>BandLab</h3><p>官网地址: <a href="https://www.bandlab.com/mastering" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="BandLab"><a href="#BandLab" class="headerlink" title="BandLab"></a>BandLab</h2><p>官网地址: <a href="https://www.bandlab.com/mastering" target="_blank" rel="noopener">点击进入</a></p>
 <p>直接上传音频, 有四种母带效果可选:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915170404502.png" alt></p>
-<h3 id="Masteringbox"><a href="#Masteringbox" class="headerlink" title="Masteringbox"></a>Masteringbox</h3><p><code>mp3</code>和<code>m4a</code>格式免费</p>
+<h2 id="Masteringbox"><a href="#Masteringbox" class="headerlink" title="Masteringbox"></a>Masteringbox</h2><p><code>mp3</code>和<code>m4a</code>格式免费</p>
 <p>官网地址: <a href="https://www.masteringbox.com/" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915171802601.png" alt="image-20210915171802601"></p>
-<h3 id="finalizer"><a href="#finalizer" class="headerlink" title="finalizer"></a>finalizer</h3><p>支持在线母带分析</p>
+<h2 id="finalizer"><a href="#finalizer" class="headerlink" title="finalizer"></a>finalizer</h2><p>支持在线母带分析</p>
 <p>官网:<a href="https://finalizer.com/" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915172118341.png" alt="image-20210915172118341"></p>
-<h3 id="musicgateway"><a href="#musicgateway" class="headerlink" title="musicgateway"></a>musicgateway</h3><p>官网 : <a href="https://www.musicgateway.com/free-online-mastering" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="musicgateway"><a href="#musicgateway" class="headerlink" title="musicgateway"></a>musicgateway</h2><p>官网 : <a href="https://www.musicgateway.com/free-online-mastering" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403154443469.png" alt="image-20230403154443469"></p>
-<h3 id="emastered"><a href="#emastered" class="headerlink" title="emastered"></a>emastered</h3><p>官网: <a href="https://emastered.com" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="emastered"><a href="#emastered" class="headerlink" title="emastered"></a>emastered</h2><p>官网: <a href="https://emastered.com" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403154748147.png" alt="image-20230403154748147"></p>
 <p>当然 还有一些收费的,比如下面这几个:</p>
-<h3 id="landr"><a href="#landr" class="headerlink" title="landr"></a>landr</h3><p>官网: <a href="https://app.landr.com/" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="landr"><a href="#landr" class="headerlink" title="landr"></a>landr</h2><p>官网: <a href="https://app.landr.com/" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210915171452765.png" alt="image-20210915171452765"></p>
-<h3 id="majordecibel"><a href="#majordecibel" class="headerlink" title="majordecibel"></a>majordecibel</h3><p>官网: <a href="https://majordecibel.com/" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="majordecibel"><a href="#majordecibel" class="headerlink" title="majordecibel"></a>majordecibel</h2><p>官网: <a href="https://majordecibel.com/" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403154930397.png" alt="image-20230403154930397"></p>
-<h3 id="cloudbounce"><a href="#cloudbounce" class="headerlink" title="cloudbounce"></a>cloudbounce</h3><p>官网: <a href="https://www.cloudbounce.com/" target="_blank" rel="noopener">点击进入</a></p>
+<h2 id="cloudbounce"><a href="#cloudbounce" class="headerlink" title="cloudbounce"></a>cloudbounce</h2><p>官网: <a href="https://www.cloudbounce.com/" target="_blank" rel="noopener">点击进入</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403155119097.png" alt="image-20230403155119097"></p>
-<h3 id="onlinemasteringstudio"><a href="#onlinemasteringstudio" class="headerlink" title="onlinemasteringstudio"></a>onlinemasteringstudio</h3><p>官网: <a href="https://www.onlinemasteringstudio.eu/" target="_blank" rel="noopener">点击下载</a></p>
+<h2 id="onlinemasteringstudio"><a href="#onlinemasteringstudio" class="headerlink" title="onlinemasteringstudio"></a>onlinemasteringstudio</h2><p>官网: <a href="https://www.onlinemasteringstudio.eu/" target="_blank" rel="noopener">点击下载</a></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20230403155503502.png" alt="image-20230403155503502"></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -10184,11 +10215,11 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>和弦的解析</title>
     <url>/80.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前面我们说过, 音乐主要有音高和音长两大元素构成</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面我们说过, 音乐主要有音高和音长两大元素构成</p>
 <p>从音长方面, 我们可以延伸出<strong>节奏 节拍和演奏速度</strong>等相关概念 被称为时间的艺术</p>
 <p>而从音高方面, 我们除了可以延伸出调性概念, 还可以延伸出和弦</p>
-<h3 id="什么是和弦"><a href="#什么是和弦" class="headerlink" title="什么是和弦"></a>什么是和弦</h3><p>将三个或以上的音，按照三度或非三度的叠置关系进行结合, 这种多个音同时发声的形态 即为和弦</p>
-<h3 id="和弦的种类"><a href="#和弦的种类" class="headerlink" title="和弦的种类"></a>和弦的种类</h3><p>和弦总共分为以下几种:</p>
+<h2 id="什么是和弦"><a href="#什么是和弦" class="headerlink" title="什么是和弦"></a>什么是和弦</h2><p>将三个或以上的音，按照三度或非三度的叠置关系进行结合, 这种多个音同时发声的形态 即为和弦</p>
+<h2 id="和弦的种类"><a href="#和弦的种类" class="headerlink" title="和弦的种类"></a>和弦的种类</h2><p>和弦总共分为以下几种:</p>
 <ul>
 <li><strong>大和弦</strong></li>
 <li><strong>小和弦</strong></li>
@@ -10197,7 +10228,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><strong>增和弦</strong></li>
 <li><strong>中性和弦</strong></li>
 </ul>
-<h4 id="大和弦"><a href="#大和弦" class="headerlink" title="大和弦"></a>大和弦</h4><p>包括<strong>大三和弦</strong> 以及 <strong>以大三和弦为基础, 衍生出来的七、九、十一、十三等高级和弦</strong></p>
+<h3 id="大和弦"><a href="#大和弦" class="headerlink" title="大和弦"></a>大和弦</h3><p>包括<strong>大三和弦</strong> 以及 <strong>以大三和弦为基础, 衍生出来的七、九、十一、十三等高级和弦</strong></p>
 <p>以根音C为例, 具体常用大和弦种类如下:</p>
 <table>
 <thead>
@@ -10264,7 +10295,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>大三和弦: 大三度叠小三度</p>
 <p>大七和弦: 大三和弦叠根音大七度</p>
 </blockquote>
-<h4 id="小和弦"><a href="#小和弦" class="headerlink" title="小和弦"></a>小和弦</h4><p>包括<strong>小三和弦</strong> 以及 <strong>以小三和弦为基础, 衍生出来的七、九、十一、十三等高级和弦</strong></p>
+<h3 id="小和弦"><a href="#小和弦" class="headerlink" title="小和弦"></a>小和弦</h3><p>包括<strong>小三和弦</strong> 以及 <strong>以小三和弦为基础, 衍生出来的七、九、十一、十三等高级和弦</strong></p>
 <p>以根音C为例, 具体常用小和弦种类如下:</p>
 <table>
 <thead>
@@ -10331,7 +10362,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>小三和弦: 小三度叠大三度</p>
 <p>小七和弦: 小三和弦叠根音小七度</p>
 </blockquote>
-<h4 id="属和弦"><a href="#属和弦" class="headerlink" title="属和弦"></a>属和弦</h4><p>表示建立在属七和弦基础上的和弦, 包括属七和弦本身</p>
+<h3 id="属和弦"><a href="#属和弦" class="headerlink" title="属和弦"></a>属和弦</h3><p>表示建立在属七和弦基础上的和弦, 包括属七和弦本身</p>
 <p>以根音C为例, 具体常用属和弦种类如下:</p>
 <table>
 <thead>
@@ -10368,7 +10399,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <blockquote>
 <p>属七和弦: 大三和弦叠根音小七度</p>
 </blockquote>
-<h4 id="减和弦"><a href="#减和弦" class="headerlink" title="减和弦"></a>减和弦</h4><p>表示建立在减三和弦基础上的和弦, 包括减三和弦本身</p>
+<h3 id="减和弦"><a href="#减和弦" class="headerlink" title="减和弦"></a>减和弦</h3><p>表示建立在减三和弦基础上的和弦, 包括减三和弦本身</p>
 <p>以根音C为例, 具体常用减和弦种类如下:</p>
 <table>
 <thead>
@@ -10395,7 +10426,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>减七和弦: 减三和弦叠根音减七度</p>
 <p>小七减五和弦: 减三和弦叠根音小七度</p>
 </blockquote>
-<h4 id="增和弦"><a href="#增和弦" class="headerlink" title="增和弦"></a>增和弦</h4><p>表示建立在增三和弦基础上的和弦, 包括增三和弦本身</p>
+<h3 id="增和弦"><a href="#增和弦" class="headerlink" title="增和弦"></a>增和弦</h3><p>表示建立在增三和弦基础上的和弦, 包括增三和弦本身</p>
 <p>以根音C为例, 具体常用增和弦种类如下:</p>
 <table>
 <thead>
@@ -10412,7 +10443,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <blockquote>
 <p>增三和弦: 大三度叠大三度</p>
 </blockquote>
-<h4 id="中性和弦"><a href="#中性和弦" class="headerlink" title="中性和弦"></a>中性和弦</h4><p>表示没有明确大小调属性的和弦, 主要是挂留和弦和一五强力和弦</p>
+<h3 id="中性和弦"><a href="#中性和弦" class="headerlink" title="中性和弦"></a>中性和弦</h3><p>表示没有明确大小调属性的和弦, 主要是挂留和弦和一五强力和弦</p>
 <p>以根音C为例, 具体常用中性和弦种类如下:</p>
 <table>
 <thead>
@@ -10440,7 +10471,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </ul>
 <p>键盘演奏小技巧:</p>
 <p>我们在键盘演奏和弦转换的时候, 比如将三和弦转换挂留和弦, 我们可以以根音和五音为参照进行手指上下移动, 纯四度的音刚好距离五音是一个全音的距离, 所以我们直接将中指直接移到五音下两格的位置即可</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
 <li><p>无论是大和弦 小和弦还是属和弦, 其中的九音 、 十一音、  十三音 默认分别都是大九度(大二度)、 纯十一度(纯四度) 、 大十三度(大六度):</p>
 <ul>
 <li><p><strong>九音–&gt; 大九度  (大二度)</strong></p>
@@ -10489,8 +10520,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>先EQ还是先压缩</title>
     <url>/79.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这个问题估计大部分混音初学者都思考过, 今天咱们从效果器原理的角度来剖析一下, 看看谁先谁后</p>
-<h3 id="压缩器"><a href="#压缩器" class="headerlink" title="压缩器"></a>压缩器</h3><p>我们知道, 压缩器实际上是对音量的调控, 而且是针对整个频段, 当整个频段中某一个频率点超出阈值时, 所有频段的音量都会往下压:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这个问题估计大部分混音初学者都思考过, 今天咱们从效果器原理的角度来剖析一下, 看看谁先谁后</p>
+<h2 id="压缩器"><a href="#压缩器" class="headerlink" title="压缩器"></a>压缩器</h2><p>我们知道, 压缩器实际上是对音量的调控, 而且是针对整个频段, 当整个频段中某一个频率点超出阈值时, 所有频段的音量都会往下压:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20210916104906609.png" alt="image-20210916104906609"></p>
 <p>由于特色频率太突出, 导致压缩触发频繁, 其他音量偏低的频段也遭到无情碾压, 伤及无辜</p>
 <p>不仅如此, 时间线内的声音也受到波及, 哪怕他们不存在特色频率:</p>
@@ -10500,7 +10531,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>到这, 相比大家心中已经有了答案</p>
 <p><strong>针对特色频率我们应该尽可能地在压缩之前将它处理掉, 而不是放在压缩之后, 有条件的话最好使用动态EQ进行精细化修剪</strong></p>
 <p>倘若是使用EQ对声音进行明暗色彩调整, 那么可前可后</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>我个人的做法通常是<strong>先处理频率问题, 再做动态处理, 这样可以获得更好的响度</strong></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我个人的做法通常是<strong>先处理频率问题, 再做动态处理, 这样可以获得更好的响度</strong></p>
 <p>如果你还是不知道如何下手,可以:</p>
 <p><strong>立马解决当下音轨的问题,不要将其遗留到下一步</strong>, 只要遵循此原则, 一般来说 不会有太大问题</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -10513,7 +10544,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>使用平行压缩让人声更加清晰饱满</title>
     <url>/83.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>一般情况下我们为了把人声做大做圆润, 在使用压缩器的时候会使用较小的压缩比 </p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一般情况下我们为了把人声做大做圆润, 在使用压缩器的时候会使用较小的压缩比 </p>
 <p>这样一来 声音确实的柔和了, 但同样容易被其他乐器掩盖</p>
 <p>我们希望听清歌曲每个词, 这个时候怎么办?</p>
 <ul>
@@ -10521,13 +10552,13 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><input disabled type="checkbox"> <strong>使用串联压缩?</strong> 不行 压缩过度 声音会变形</li>
 <li><input checked disabled type="checkbox"> <strong>使用并行压缩</strong> 奥利给!!</li>
 </ul>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>并行压缩前的效果:</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>并行压缩前的效果:</p>
 <p><audio class src="https://audio.newban.cn/audio/vocal_with_no_parall.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>并行压缩后的效果:</p>
 <p><audio class src="https://audio.newban.cn/audio/vocal_with_parall.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>我们会发现, 使用并行压缩后, 声音不但保持了柔和, 同时清晰度和饱满度也提升了不少</p>
 <p>这样听众在听人声的时候就不会那么费劲了</p>
-<h3 id="压缩参数参考"><a href="#压缩参数参考" class="headerlink" title="压缩参数参考"></a>压缩参数参考</h3><p>原人声轨压缩参数:</p>
+<h2 id="压缩参数参考"><a href="#压缩参数参考" class="headerlink" title="压缩参数参考"></a>压缩参数参考</h2><p>原人声轨压缩参数:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211008153841830.png" alt="image-20211008153841830"></p>
 <p>并行轨压缩参数:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211008153917258.png" alt="image-20211008153917258"></p>
@@ -10631,7 +10662,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>声音空间设计之纵深感控制</title>
     <url>/85.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>合格的混音必然是三维的, <strong>左右 上下和前后</strong></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>合格的混音必然是三维的, <strong>左右 上下和前后</strong></p>
 <ul>
 <li><p><strong>左右</strong>: 我们通过声像调节</p>
 </li>
@@ -10640,25 +10671,25 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><p><strong>前后</strong>: 主要通过音量推子调节</p>
 </li>
 </ul>
-<h3 id="纵深详解"><a href="#纵深详解" class="headerlink" title="纵深详解"></a>纵深详解</h3><p>有人可能会说, EQ也能调节纵深, 没错, 高频靠前, 低频靠后, 但是只是小范围的前后波动, 我们在设置大范围纵深时, 只能通过干声音量推子处理</p>
+<h2 id="纵深详解"><a href="#纵深详解" class="headerlink" title="纵深详解"></a>纵深详解</h2><p>有人可能会说, EQ也能调节纵深, 没错, 高频靠前, 低频靠后, 但是只是小范围的前后波动, 我们在设置大范围纵深时, 只能通过干声音量推子处理</p>
 <p><strong>音量越大, 声音越靠前, 音量越小, 声音越靠后</strong></p>
 <p>通常情况下, 我们为了<strong>确保声音即便很小也能被清晰听到, 需要配合混响处理,</strong> 混响可以使得远处渺小的声音体积变大, 不被靠前的乐器声音掩盖</p>
 <p><strong>干声音量越小的声音, 所需的混响量则越大, 反之混响量越小</strong></p>
 <p>只有这样, 声音无论靠前或靠后, 都是干净清晰的</p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>大混响小干声:</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>大混响小干声:</p>
 <p><audio class src="https://audio.newban.cn/audio/big_reverb_small_dry.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>大干声小混响:</p>
 <p><audio class src="https://audio.newban.cn/audio/big_dry_small_reverb.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>注意听人声部分的纵深变化</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>声音的纵深需要干声音量结合混响使用, 简而言之就是<strong>干湿比例</strong>的控制</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>声音的纵深需要干声音量结合混响使用, 简而言之就是<strong>干湿比例</strong>的控制</p>
 <p><strong>干湿比越大, 声音越靠前, 反之, 越靠后</strong></p>
-<h3 id="宿主小技巧"><a href="#宿主小技巧" class="headerlink" title="宿主小技巧"></a>宿主小技巧</h3><p>像宿主<code>Fl Studio</code>中有一个工具名叫<code>Fruity X-Y-Z</code>, 可以利用它链接干声和湿声的音量 以及<code>pan</code>的值, 从而快速控制声音的上下左右空间, 该工具介绍如下:</p>
+<h2 id="宿主小技巧"><a href="#宿主小技巧" class="headerlink" title="宿主小技巧"></a>宿主小技巧</h2><p>像宿主<code>Fl Studio</code>中有一个工具名叫<code>Fruity X-Y-Z</code>, 可以利用它链接干声和湿声的音量 以及<code>pan</code>的值, 从而快速控制声音的上下左右空间, 该工具介绍如下:</p>
 <iframe src="//player.bilibili.com/player.html?aid=42517996&bvid=BV1mb41167yk&cid=74604782&page=2&autoplay=no" scrolling="no" border="0" frameborder="no" framespacing="0" width="1020" height="660" allowfullscreen="true"> </iframe>
 
 <p>如果你用其他宿主可能没这么方便, 但是只要明白其中的原理, 无论什么宿主都是一样</p>
 <p>无论干湿比例怎么变, 两者总电平之和在调整前后应该是保持一致的, 在其他宿主中比如<code>Cubase</code>, 默认是推子后发送, 一旦我们加大了发送量, 那么我们就应该将干声音量推子往下拉一部分, 确保前后电平不会相差太多, 这样才能达到我们想要的纵深效果</p>
 <p>如果不下拉干声推子, 纯粹是加大发送量的话, 声音体积过大会将其他乐器声音掩盖, 这肯定不是我们想要的结果</p>
-<h3 id="空间设计参考示例图"><a href="#空间设计参考示例图" class="headerlink" title="空间设计参考示例图"></a>空间设计参考示例图</h3><p>以下图片摘自: <a href="https://www.masteringthemix.com/blogs/learn/best-reference-track-for-all-genres" target="_blank" rel="noopener">masteringthemix</a></p>
+<h2 id="空间设计参考示例图"><a href="#空间设计参考示例图" class="headerlink" title="空间设计参考示例图"></a>空间设计参考示例图</h2><p>以下图片摘自: <a href="https://www.masteringthemix.com/blogs/learn/best-reference-track-for-all-genres" target="_blank" rel="noopener">masteringthemix</a></p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230714170622035.png" alt="image-20230714170622035"></p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230714170724523.png" alt="image-20230714170724523"></p>
 <p><img src="https://gitee.com/songjianzaina/site_img/raw/master/img/image-20230714170751775.png" alt="image-20230714170751775"></p>
@@ -10679,7 +10710,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>常用三大类型混响的介绍和使用</title>
     <url>/86.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在混音中, 我们常用到的混响类型主要有以下三种:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在混音中, 我们常用到的混响类型主要有以下三种:</p>
 <ul>
 <li>板式混响</li>
 <li>房间混响</li>
@@ -10697,7 +10728,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><p><strong>房间空间</strong>: 也就是卧室房间, 其特性介于板式和厅堂两者之间</p>
 </li>
 </ul>
-<h3 id="特性总结"><a href="#特性总结" class="headerlink" title="特性总结"></a>特性总结</h3><ul>
+<h2 id="特性总结"><a href="#特性总结" class="headerlink" title="特性总结"></a>特性总结</h2><ul>
 <li><strong>板式混响</strong>: 预延迟和混响时间短, 高频衰减少, 反射声中高频居多, 声音宽度和深度不大 , <strong>主要用于声音润色 提升质感</strong></li>
 </ul>
 <ul>
@@ -10706,14 +10737,14 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <ul>
 <li><strong>房间混响</strong>: 预延迟和混响时间适中, 高频衰减适中 反射声中频居多, 声音宽度和深度适中, 对声音的色彩改变较少, 主<strong>要用于增加声音厚度, 以及空间纵深设计(不用厅堂是因为体积太大, 容易糊)</strong></li>
 </ul>
-<h3 id="人声实战"><a href="#人声实战" class="headerlink" title="人声实战"></a>人声实战</h3><p>给人声加混响时, 常规操作是添加一个板式混响让声音更加华丽, 然后再添加一个厅堂混响, 增添延音使得声音更加优美动听</p>
+<h2 id="人声实战"><a href="#人声实战" class="headerlink" title="人声实战"></a>人声实战</h2><p>给人声加混响时, 常规操作是添加一个板式混响让声音更加华丽, 然后再添加一个厅堂混响, 增添延音使得声音更加优美动听</p>
 <p>学过钢琴的朋友都知道, 钢琴音色一旦添加延音后, 立马就变得不一样了, 这个厅堂混响就好比是一个延音踏板</p>
 <p>我们来听一下:</p>
 <p>人声不加混响版本:</p>
 <p><audio class src="https://audio.newban.cn/audio/demo_no_plate_hall_reverb.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>人声加板式和厅堂混响版本:</p>
 <p><audio class src="https://audio.newban.cn/audio/demo_plate_hall_reverb.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<h3 id="混响模拟"><a href="#混响模拟" class="headerlink" title="混响模拟"></a>混响模拟</h3><p>根据这三种类型混响的特性, 我们可以通过相应的参数组合来模拟不同类型混响:</p>
+<h2 id="混响模拟"><a href="#混响模拟" class="headerlink" title="混响模拟"></a>混响模拟</h2><p>根据这三种类型混响的特性, 我们可以通过相应的参数组合来模拟不同类型混响:</p>
 <p><strong>板式混响:</strong></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011114735141.png" alt="image-20211011114735141"></p>
 <p>如果是鼓组, EQ切除600HZ以下, 2000HZ以上</p>
@@ -10731,7 +10762,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011124106405.png" alt="image-20211011124106405"></p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211011115617052.png" alt="image-20211011115617052"></p>
 <p>上面<code>Reverb</code>效果器中, <code>Size</code>表示混响时间(有的用Decay Time表示), <code>Damp</code>表示高频衰减率, <code>Width</code>表示混响宽度</p>
-<h3 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h3><p>我个人的混响做法是, 用板式和厅堂混响给单轨做音色, 比如人声 钢琴 吉他等</p>
+<h2 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h2><p>我个人的混响做法是, 用板式和厅堂混响给单轨做音色, 比如人声 钢琴 吉他等</p>
 <p>在总线上 使用房间混响, 给所有乐器添加一个少量空间, 使整体声音更加融合</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -10743,10 +10774,10 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>和弦走向影响歌曲的感情色彩 节奏决定了歌曲的律动</title>
     <url>/81.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>不同的和弦体现不同的色彩, 那么整首歌的和弦连接走向, 就好比是一条故事线, 起因经过结果 从悲欢到离合, 有开心也有难过, 用声音的形式向听众展现</p>
-<h3 id="和弦走向"><a href="#和弦走向" class="headerlink" title="和弦走向"></a>和弦走向</h3><p>很多人在进行歌曲创作的时候, 会先挑选一条和弦进行 在和弦走向的约束下进行旋律的编写</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>不同的和弦体现不同的色彩, 那么整首歌的和弦连接走向, 就好比是一条故事线, 起因经过结果 从悲欢到离合, 有开心也有难过, 用声音的形式向听众展现</p>
+<h2 id="和弦走向"><a href="#和弦走向" class="headerlink" title="和弦走向"></a>和弦走向</h2><p>很多人在进行歌曲创作的时候, 会先挑选一条和弦进行 在和弦走向的约束下进行旋律的编写</p>
 <p>比如 我想讲一个失恋的故事, 可以选用一个忧郁悲伤到足以让人落泪的和弦进行, 当然要找到一个符合感情的走向并不容易, 这需要我们反复尝试 </p>
-<h3 id="节奏"><a href="#节奏" class="headerlink" title="节奏"></a>节奏</h3><p>节奏决定了歌曲的律动, 说到节奏, 我不由自主地联想到了<strong>词牌名</strong></p>
+<h2 id="节奏"><a href="#节奏" class="headerlink" title="节奏"></a>节奏</h2><p>节奏决定了歌曲的律动, 说到节奏, 我不由自主地联想到了<strong>词牌名</strong></p>
 <p>古人在写词的时候, 会套用词牌, 比如苏轼的《<strong>念奴娇-赤壁怀古</strong>》李清照的《<strong>念奴娇*·萧条庭院</strong>》等, 这<strong>念奴娇</strong> 即为词牌名</p>
 <p>其中 使用同一词牌名 最基本的要求就是字数和断句要保持一致</p>
 <p><strong>音乐中的节奏和这词牌名有着异曲同工之妙</strong></p>
@@ -10818,10 +10849,10 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>使用串联压限进行音量最大化避免失真问题</title>
     <url>/87.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在我们进行音量最大化处理时, 有时候会碰到压限失真问题, 这种情况一般是前期混音动态没有处理好导致</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在我们进行音量最大化处理时, 有时候会碰到压限失真问题, 这种情况一般是前期混音动态没有处理好导致</p>
 <p>如果在母带环节进行修复, 有条件的话可以在压限之前插入多段动态压缩器,对各个频段的动态进行重新调整</p>
 <p>如果没有多段压缩插件, 那么只能采用另一个方法, 那就是串联压限</p>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>连续插入2到3个限制效果器, 将压限量分散到各个限制器中, 具体比例可以自行调整, 直到达到响度要求即可</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>连续插入2到3个限制效果器, 将压限量分散到各个限制器中, 具体比例可以自行调整, 直到达到响度要求即可</p>
 <p>经过尝试发现, 通过串联压限的方式, 在相同响度指标的前提下, 声音听起来要比单个限制器更响</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -10833,14 +10864,14 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>混音实战记录之 You Know Better</title>
     <url>/84.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>歌曲名为《You Know Better》</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>歌曲名为《You Know Better》</p>
 <p><a href="https://cambridge-mt.com/ms/mtk/#HannesKeseberg" target="_blank" rel="noopener">多轨素材下载地址</a></p>
-<h3 id="成品试听"><a href="#成品试听" class="headerlink" title="成品试听"></a>成品试听</h3><p>混音试听(未母带):</p>
+<h2 id="成品试听"><a href="#成品试听" class="headerlink" title="成品试听"></a>成品试听</h2><p>混音试听(未母带):</p>
 <p><audio class src="https://audio.newban.cn/audio/demo_no_master.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
 <p>混音试听(总线添加了一个限制器提升响度):</p>
 <p><audio class src="https://audio.newban.cn/audio/demo_with_limit.mp3" type="audio/mpeg" preload="none" controls="controls"> </audio></p>
-<h3 id="混音记录"><a href="#混音记录" class="headerlink" title="混音记录"></a>混音记录</h3><p>主要用到<strong>EQ、压缩器、混响、延迟、失真</strong>这五大类效果器</p>
-<h4 id="首先是EQ部分"><a href="#首先是EQ部分" class="headerlink" title="首先是EQ部分"></a>首先是EQ部分</h4><ul>
+<h2 id="混音记录"><a href="#混音记录" class="headerlink" title="混音记录"></a>混音记录</h2><p>主要用到<strong>EQ、压缩器、混响、延迟、失真</strong>这五大类效果器</p>
+<h3 id="首先是EQ部分"><a href="#首先是EQ部分" class="headerlink" title="首先是EQ部分"></a>首先是EQ部分</h3><ul>
 <li><strong>底鼓</strong>: <ol>
 <li>切除30HZ以下和5500HZ以上的频率 </li>
 <li>窄Q值2衰减110HZ两个分贝避让贝斯</li>
@@ -10861,20 +10892,20 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 </ul>
 <p>EQ这一步处理完后, 整体清晰了很多, 融合度也得到提升, 混音中<strong>低频的处理是至关重要的一点</strong>, 除此之外就是人声, <strong>用EQ让人声更加立体具有空间感</strong></p>
 <p><strong>所谓空间感, 就是即便不加混响延迟, 通过EQ的手段, 让听众感觉加了混响, 类似于一种可望不可即的感觉</strong></p>
-<h4 id="压缩部分"><a href="#压缩部分" class="headerlink" title="压缩部分"></a>压缩部分</h4><p>所有音轨皆采用相同的压缩比<code>4.6:1</code>使得整体色彩保持一致, 增加融合度, 大部分乐器压缩量为<code>6db</code></p>
+<h3 id="压缩部分"><a href="#压缩部分" class="headerlink" title="压缩部分"></a>压缩部分</h3><p>所有音轨皆采用相同的压缩比<code>4.6:1</code>使得整体色彩保持一致, 增加融合度, 大部分乐器压缩量为<code>6db</code></p>
 <p>至于启动和释放时间, 每个乐器各不相同, 找到最清晰的那个点即可</p>
 <p>总线压缩使用常规的压缩设置<code>2:1</code>压缩比 30ms启动时间 100ms释放时间 2分贝的压缩量</p>
 <p><strong>同样的 压缩这一步也可以塑造声音的空间感</strong>, 其诀窍在于阈值的控制, 由小到大 对比试听, 找到那个临界点</p>
-<h4 id="混响部分"><a href="#混响部分" class="headerlink" title="混响部分"></a>混响部分</h4><p>单轨上只给人声发送了5%的混响, 混响<code>size</code>为40%, 仅仅给人声润个色, 听不出任何空间感</p>
+<h3 id="混响部分"><a href="#混响部分" class="headerlink" title="混响部分"></a>混响部分</h3><p>单轨上只给人声发送了5%的混响, 混响<code>size</code>为40%, 仅仅给人声润个色, 听不出任何空间感</p>
 <p>另外<code>master</code>总线同样添加一个5%的混响, 混响<code>size</code>为80%,让所有乐器处在同一个空间里, 增加整体融合度</p>
 <p>另外再混响效果器前头插入了一个EQ效果器, 过滤掉600HZ以下浑浊和10000HZ以上蜂鸣的频率, 同时在2000HZ位置宽Q值1衰减了2个db, 让混响更加靠后</p>
 <p><strong>补充</strong>: 如果要给鼓组加入混响, 那么前头EQ设置为滤除600HZ以下和2000HZ以上的频率 </p>
 <p>本示例中并未单独给底鼓添加混响</p>
-<h4 id="延迟部分"><a href="#延迟部分" class="headerlink" title="延迟部分"></a>延迟部分</h4><p>给人声发送了1%的乒乓混响, 和之前的混响搭配, 人声润色明显</p>
-<h4 id="失真部分"><a href="#失真部分" class="headerlink" title="失真部分"></a>失真部分</h4><p>只用在了贝斯音轨  压缩之前添加了少量的失真, 增加贝斯的下潜深度</p>
-<h4 id="人声并行压缩"><a href="#人声并行压缩" class="headerlink" title="人声并行压缩"></a>人声并行压缩</h4><p>为了使人声柔和的同时不被其他乐器掩盖, 添加了一个并行压缩, 使得人声更加清晰</p>
+<h3 id="延迟部分"><a href="#延迟部分" class="headerlink" title="延迟部分"></a>延迟部分</h3><p>给人声发送了1%的乒乓混响, 和之前的混响搭配, 人声润色明显</p>
+<h3 id="失真部分"><a href="#失真部分" class="headerlink" title="失真部分"></a>失真部分</h3><p>只用在了贝斯音轨  压缩之前添加了少量的失真, 增加贝斯的下潜深度</p>
+<h3 id="人声并行压缩"><a href="#人声并行压缩" class="headerlink" title="人声并行压缩"></a>人声并行压缩</h3><p>为了使人声柔和的同时不被其他乐器掩盖, 添加了一个并行压缩, 使得人声更加清晰</p>
 <p>具体参数可参考: 《<a href="https://audio.newban.cn/83.html">使用平行压缩让人声更加清晰饱满</a>》</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上效果器皆使用<a href="https://chrome.soundation.com/" target="_blank" rel="noopener">Soundation</a>自带效果器</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上效果器皆使用<a href="https://chrome.soundation.com/" target="_blank" rel="noopener">Soundation</a>自带效果器</p>
 <p>人声的空间感大部分来自于EQ和压缩, 而非混响和延迟</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -10944,14 +10975,14 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>混音基本要点之一是声音不能冒</title>
     <url>/90.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>所谓声音冒, 指的是单轨声音和整体融合度不够, 比如人声外冒, 人声和伴奏脱轨, 听起来似乎是混响不够的感觉</p>
-<h3 id="处理方式"><a href="#处理方式" class="headerlink" title="处理方式"></a>处理方式</h3><p>一般这种情况要解决的话, 有两种方式:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>所谓声音冒, 指的是单轨声音和整体融合度不够, 比如人声外冒, 人声和伴奏脱轨, 听起来似乎是混响不够的感觉</p>
+<h2 id="处理方式"><a href="#处理方式" class="headerlink" title="处理方式"></a>处理方式</h2><p>一般这种情况要解决的话, 有两种方式:</p>
 <p>一种是加大混响 来增加声音融合度, 不过如果不是大混响的歌, 这种方式不太建议</p>
 <p> 另一种是, 使用EQ进行处理 对频率进行修剪 使其更加贴合其他乐器</p>
-<h3 id="EQ技巧"><a href="#EQ技巧" class="headerlink" title="EQ技巧"></a>EQ技巧</h3><p>通过扫频找出声音最突出外冒的那个点 然后衰减, 衰减后声音可能会变得闷, 我们可以通过提升其他频率来补充亮度</p>
+<h2 id="EQ技巧"><a href="#EQ技巧" class="headerlink" title="EQ技巧"></a>EQ技巧</h2><p>通过扫频找出声音最突出外冒的那个点 然后衰减, 衰减后声音可能会变得闷, 我们可以通过提升其他频率来补充亮度</p>
 <p>另外一种扫频方式是, 找出融合度最贴的那个频率点, 然后衰减该点附近的频率</p>
 <p>目的都是一样的, 只不过操作手法不一样</p>
-<h3 id="音量匹配"><a href="#音量匹配" class="headerlink" title="音量匹配"></a>音量匹配</h3><p>除了使用EQ之外, 我们还可以通过音量平衡的手段来实现音轨间的融合度,</p>
+<h2 id="音量匹配"><a href="#音量匹配" class="headerlink" title="音量匹配"></a>音量匹配</h2><p>除了使用EQ之外, 我们还可以通过音量平衡的手段来实现音轨间的融合度,</p>
 <p>实际上 这音量平衡是贯穿整个混音的, 音量是声音的命脉, 无论是EQ还是压缩, 其本质还是围绕的音量处理的,</p>
 <p>EQ是控制某个频段的音量, 让高频低频之间更加平衡, 而压缩控制的是不同时间段的音量, 让前一秒和后一秒之间的音量更加平衡</p>
 <p>这里所说的平衡, 可以理解为<strong>差距</strong>, 差距缩小了, 声音自然融合</p>
@@ -10978,11 +11009,11 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>编曲技巧之重复手法</title>
     <url>/92.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>重复</strong>, 无论是作曲还是编曲, 都是非常常用的手法</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>重复</strong>, 无论是作曲还是编曲, 都是非常常用的手法</p>
 <p>你若不重复, 听众怎能记得住😜</p>
 <p>重复 可以加深一段旋律在听众心中的印象, 适度使用 有利于歌曲传唱</p>
 <p>下面介绍一下我在编曲中 常用到重复的几个地方</p>
-<h3 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h3><ol>
+<h2 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h2><ol>
 <li><p><strong>旋律在不同音区中重复</strong></p>
 <p>一段相同的旋律 在不同音域上进行重复, 相比无脑重复要更有新鲜感</p>
 </li>
@@ -11000,7 +11031,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>比如 相同的一个和弦分解或者旋律, 我们可以尝试使用多个乐器同时演奏, 比如钢琴 木吉他 电吉他等等, 然后进行不同的声像摆位, 这种技巧适当使用, 可以让音乐更加丰满</p>
 </li>
 </ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>编曲就是需要不断地尝试, 尝试才能创新</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>编曲就是需要不断地尝试, 尝试才能创新</p>
 <p>当你没有思路的时候, 不妨将各种乐器和弦分解往上怼, 有合适的有不合适的, 有好听的也有不那么好听的, 在这个过程中, 有时候灵感自然就来了, 偶尔还会带点小惊喜</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -11030,7 +11061,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>我给歌曲填词的方式</title>
     <url>/94.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我的大部分歌曲都是先曲后词</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我的大部分歌曲都是先曲后词</p>
 <p>填词是一项对综合素养要求比较高的一项工作, 不仅需要一定的文字功底, 还需要把握音乐的情感, 在音乐色彩的基础之上构建相应的画面</p>
 <p>每一首词 都是一个故事, 既然是故事, 自然就有画面感</p>
 <p>词优美 但不贴合曲 唱起来别扭不行</p>
@@ -11038,7 +11069,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>当然了 歌是给自己写的, 所以 好不好都不用太上心, 自己舒服开心就好</p>
 <p>随着个人审美的提升, 各方面的质量都会进步, 所以无论是谁 都不要妄自菲薄</p>
 <p>那么接下来 , 介绍一下我平常用的填词方式吧</p>
-<h3 id="填词步骤"><a href="#填词步骤" class="headerlink" title="填词步骤"></a>填词步骤</h3><ol>
+<h2 id="填词步骤"><a href="#填词步骤" class="headerlink" title="填词步骤"></a>填词步骤</h2><ol>
 <li><p>首先听几遍曲子, 在纸上写出贴合曲子的词语, 我大多情况下最先蹦出来的是押韵词, 先不要关用不用得上, 全部写下来</p>
 </li>
 <li><p>然后自己哼几遍曲子, 继续找贴合曲子的词句</p>
@@ -11051,10 +11082,10 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><p>最后 没啥问题就可以给词取个名字使用啦</p>
 </li>
 </ol>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>切忌想太多, 否则不知从何下手, 不要想着自己的词一定要多高大上, 只要贴合曲子 表达故事和情感就行</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>切忌想太多, 否则不知从何下手, 不要想着自己的词一定要多高大上, 只要贴合曲子 表达故事和情感就行</p>
 <p>告诉自己 这是给自己写的歌 不是给别人 不用在意别人怎么看 </p>
 <p>周杰伦的胸肌 哈哈  </p>
-<h3 id="个人审美"><a href="#个人审美" class="headerlink" title="个人审美"></a>个人审美</h3><p>我个人不太喜欢那种华而不实, 云里雾里的词, 看起来似乎很高深, 可看完之后也不知道讲了个啥, 也许是我文化水平有限</p>
+<h2 id="个人审美"><a href="#个人审美" class="headerlink" title="个人审美"></a>个人审美</h2><p>我个人不太喜欢那种华而不实, 云里雾里的词, 看起来似乎很高深, 可看完之后也不知道讲了个啥, 也许是我文化水平有限</p>
 <p>我算是务实派吧  平常购物也讲究经济实用高性价比, 贴近生活接地气的词似乎更适合我 哈哈 </p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -11107,13 +11138,13 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>整理了一些音乐制作相关的书籍分享给大家</title>
     <url>/96.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>事实上 这是某个网友整理的, 多年前我无意中看到并下载, 现在上传分享非大家</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>事实上 这是某个网友整理的, 多年前我无意中看到并下载, 现在上传分享非大家</p>
 <p>内容截图如下:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211022151251520.png" alt="image-20211022151251520"></p>
 <p>器乐学习子目录:</p>
 <p><img src="https://gitee.com/songjianzaina/lunanzb_img/raw/master/img/image-20211022151342754.png" alt="image-20211022151342754"></p>
 <p>里面大部分为PDF格式书籍, 有需要的小伙伴直接下载吧</p>
-<h3 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h3><p><a href="https://url97.ctfile.com/d/21042697-45370064-0f2df3" target="_blank" rel="noopener">点击下载</a></p>
+<h2 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h2><p><a href="https://url97.ctfile.com/d/21042697-45370064-0f2df3" target="_blank" rel="noopener">点击下载</a></p>
 <p>（访问密码：312306）</p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -11177,8 +11208,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>个人混音时的一些小经验</title>
     <url>/95.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>以下只是当下个人经验, 随着不断学习和进步  有可能会有所变动</p>
-<h3 id="压缩器相关"><a href="#压缩器相关" class="headerlink" title="压缩器相关"></a>压缩器相关</h3><ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以下只是当下个人经验, 随着不断学习和进步  有可能会有所变动</p>
+<h2 id="压缩器相关"><a href="#压缩器相关" class="headerlink" title="压缩器相关"></a>压缩器相关</h2><ol>
 <li><p>乐器的释放时间应该跟随歌曲BPM, 尤其是节奏性乐器和人声, 否则会听起来不协调</p>
 <p>如果是贴唱 那么需要依靠耳朵听 找到融合度高且不拖沓的那个点</p>
 <blockquote>
@@ -11189,13 +11220,13 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>而线状声音 比如pad 人声等 启动时间要小, 把音头抹掉, 只保留尾部线条, 从小到大调整旋钮</p>
 </li>
 </ol>
-<h3 id="EQ相关"><a href="#EQ相关" class="headerlink" title="EQ相关"></a>EQ相关</h3><ol>
+<h2 id="EQ相关"><a href="#EQ相关" class="headerlink" title="EQ相关"></a>EQ相关</h2><ol>
 <li>全频段非独奏乐器应该考虑削薄低频, 避让底鼓和贝斯</li>
 </ol>
-<h3 id="空间设计相关"><a href="#空间设计相关" class="headerlink" title="空间设计相关"></a>空间设计相关</h3><ol>
+<h2 id="空间设计相关"><a href="#空间设计相关" class="headerlink" title="空间设计相关"></a>空间设计相关</h2><ol>
 <li>除了底鼓 军鼓 Bass和人声居中外, 其他乐器声场可以往两边走</li>
 </ol>
-<h3 id="人声处理"><a href="#人声处理" class="headerlink" title="人声处理"></a>人声处理</h3><ol>
+<h2 id="人声处理"><a href="#人声处理" class="headerlink" title="人声处理"></a>人声处理</h2><ol>
 <li>应先解决人声外冒问题 再考虑质感的处理</li>
 </ol>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
@@ -11208,8 +11239,8 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>鼓组编写的小套路</title>
     <url>/99.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>流行歌曲编曲中 鼓组必不可少, 一些常用小套路如下</p>
-<h3 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h3><p>常用小套路如下:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>流行歌曲编曲中 鼓组必不可少, 一些常用小套路如下</p>
+<h2 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h2><p>常用小套路如下:</p>
 <ol>
 <li><p>‌军鼓位置一般固定在二四拍的位置  而低鼓除了第一拍必须有一个之外 其他地方都可以出现</p>
 </li>
@@ -11230,7 +11261,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
   <entry>
     <title>吉他学习的几个阶段</title>
     <url>/98.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>主要分为以下的几个阶段:</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>主要分为以下的几个阶段:</p>
 <ol>
 <li><p><strong>弹唱阶段</strong></p>
 </li>
@@ -11241,7 +11272,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><p><strong>吉他即兴演奏</strong></p>
 </li>
 </ol>
-<h3 id="弹唱阶段"><a href="#弹唱阶段" class="headerlink" title="弹唱阶段"></a>弹唱阶段</h3><p><strong>目标:</strong> </p>
+<h2 id="弹唱阶段"><a href="#弹唱阶段" class="headerlink" title="弹唱阶段"></a>弹唱阶段</h2><p><strong>目标:</strong> </p>
 <ul>
 <li><strong>左手学会调内七个和弦外加两个挂留和弦的一共九个和弦的指型按法</strong> </li>
 <li><strong>右手学会常见的几个分解和扫弦节奏</strong> </li>
@@ -11250,16 +11281,16 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <p>左手和弦 右手节奏   左手基本是固定的 而右手节奏千变万化  不可一下贪多 需要慢慢积累 前期先掌握几个常用的即可</p>
 <p>剩下的就是不断地重复练习形成条件反射 一心二用便能一边弹一边唱</p>
 <p>至此 配合变调夹食用 几乎可以弹唱市面上所有的歌曲 甚至可以开始进行歌曲的创作</p>
-<h3 id="指弹阶段"><a href="#指弹阶段" class="headerlink" title="指弹阶段"></a>指弹阶段</h3><p>前面的弹唱 我们弹的是和弦伴奏 而这个阶段我们弹的是单音solo 没有唱 吉他就是主角</p>
+<h2 id="指弹阶段"><a href="#指弹阶段" class="headerlink" title="指弹阶段"></a>指弹阶段</h2><p>前面的弹唱 我们弹的是和弦伴奏 而这个阶段我们弹的是单音solo 没有唱 吉他就是主角</p>
 <p>这个阶段需要我们对吉他的指板非常熟悉 明确知道哪个音具体在哪个位置 </p>
-<h3 id="脱离变调夹"><a href="#脱离变调夹" class="headerlink" title="脱离变调夹"></a>脱离变调夹</h3><p>前两个阶段都是配合变调夹 实现左手用相同的指型达到演奏不同调和弦的目的  但是一旦没有了变调夹  不同调的和弦按法完全不一样</p>
+<h2 id="脱离变调夹"><a href="#脱离变调夹" class="headerlink" title="脱离变调夹"></a>脱离变调夹</h2><p>前两个阶段都是配合变调夹 实现左手用相同的指型达到演奏不同调和弦的目的  但是一旦没有了变调夹  不同调的和弦按法完全不一样</p>
 <p>这个阶段一方面需要我们拓展更多的左手指型 另一方面最重要的是我们需要开始加强乐理的学习</p>
 <p>尤其是和声学的部分  我们必须得知道某个调里面都包含哪几个和弦 同时每个和弦的组成音都有哪些   </p>
 <p>至此 我们才算真正入了音乐的大门  乐理是音乐的基石 光会弹奏算不得什么 我们必须明白为什么要这样弹</p>
-<h3 id="吉他即兴演奏"><a href="#吉他即兴演奏" class="headerlink" title="吉他即兴演奏"></a>吉他即兴演奏</h3><p>这个阶段对我们乐理知识掌握要求更高  我们需要掌握各种调性的结构 而不单单是平常的大小调 还有其他的调式 诸如剩余的教会调式  五声调式等等  </p>
+<h2 id="吉他即兴演奏"><a href="#吉他即兴演奏" class="headerlink" title="吉他即兴演奏"></a>吉他即兴演奏</h2><p>这个阶段对我们乐理知识掌握要求更高  我们需要掌握各种调性的结构 而不单单是平常的大小调 还有其他的调式 诸如剩余的教会调式  五声调式等等  </p>
 <p>同时我们对于和弦的种类还需要更进一步 以前我们都是弹三和弦  现在还需要熟悉 七和弦 九个和弦 十一 十三和弦等等 </p>
 <p> 同时和弦的种类也增多 以前只是弹大和弦小和弦还有挂留和弦 现在还需要掌握 增和弦 减和弦 和属和弦</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>日常喜欢唱歌的朋友 只要达成第一个阶段即可 无论是装✘还是日常才艺展示都没有问题</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>日常喜欢唱歌的朋友 只要达成第一个阶段即可 无论是装✘还是日常才艺展示都没有问题</p>
 <p>如果打算当乐手或者音乐制作的话 那么就要不断地往上走 <strong>学无止境 信手拈来</strong></p>
 <p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
 <p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
@@ -12724,7 +12755,7 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 <li><strong>过渡点缀乐器</strong>: 雷声、风铃、钢琴点缀、fill等</li>
 </ul>
 <p>这算是一个大类模板, 几乎可以涵盖所有的编曲风格</p>
-<h2 id="少即是多"><a href="#少即是多" class="headerlink" title="少即是多"></a>少即是多</h2><p>一首完整的歌曲, 不一定非得要四种以上不同的乐器参与, 只要角色到位了, 哪怕只有一台钢琴也完全足够, 比如一台钢琴既充当节奏乐器由充当主奏氛围乐器, 这是完全没有问题的</p>
+<h2 id="少即是多"><a href="#少即是多" class="headerlink" title="少即是多"></a>少即是多</h2><p>一首完整的歌曲, 不一定非得要四种以上不同的乐器参与, 只要角色到位了, 哪怕只有一台钢琴也完全足够, 比如一台钢琴既充当节奏乐器又充当主奏氛围乐器, 这是完全没有问题的</p>
 <p>所谓少即是多, 编曲需要做减法, 有句话怎么说来着, <strong>大师编曲，是用最少的乐器骗过你的耳朵；新手编曲，是用最多的乐器掩盖他的心虚</strong></p>
 <p> 如果单纯钢琴+贝斯+鼓组+人声, 听起来不够丰满, 情绪不到位, 那大概率是编曲技术没到位, 而不是乐器数量不够, 如果钢琴都给不了你丰满的情绪, 那多加几个乐器照样也是平淡如水</p>
 <h2 id="打破规则"><a href="#打破规则" class="headerlink" title="打破规则"></a>打破规则</h2><p>上面的四大角色模板针对的是流行音乐, 如果你需要配乐或者编舞曲等, 完全可以只用其中一类角色,甚至只用一件乐器</p>
@@ -12772,6 +12803,229 @@ e2[/铺底+鼓组+贝斯+氛围+配唱+间奏乐器\];</pre>
 ]]></content>
       <tags>
         <tag>编曲宝典</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>reaper侧链压缩实战应用参数设置</title>
+    <url>/218.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>关于<code>reaper</code>中如何实现侧链, 可以回顾之前文章《<a href="https://audio.newban.cn/135">REAPER宿主常用技巧汇总</a>》</p>
+<p><img src="https://gitee.com/songjianzaina/site_img1/raw/master/img/image-20251115224612107.png" alt="image-20251115224612107"></p>
+<h2 id="常见侧链"><a href="#常见侧链" class="headerlink" title="常见侧链"></a>常见侧链</h2><p>以下参数仅作为参考:</p>
+<ol>
+<li><p>底鼓压贝斯</p>
+<ul>
+<li>Attack: 0ms, 底鼓出现的时候要立马压制贝斯, 这样可以保留底鼓音头</li>
+<li>Release: 100ms左右, BPM＜90的慢歌可以和贝斯压缩释放时间保持一致, BPM＞90的快歌要小于压缩释放时间</li>
+<li>Mini volume: 根据你的信号源而定, 数值不用太低, 底鼓能完整露头就行</li>
+<li>Max volume: 无需开启限幅侧链, 直接设置为最大值</li>
+<li>Strength: 20%, 相当于2:1的压缩比例</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>人声压背景钢琴/吉他</p>
+<ul>
+<li>Attack: 10ms, 不要设置为0ms, 避免出现背景音乐断崖式衰减, 上面底鼓压贝斯可以0ms, 那是因为低频响应速度较慢,听感不会有明显影响</li>
+<li>Release: 210ms左右, 可以和背景钢琴/吉他压缩释放时间保持一致, BPM＜90的慢歌可以和贝斯压缩释放时间保持一致, BPM＞90的快歌要小于压缩释放时间</li>
+<li>Mini volume: 根据你的信号源而定</li>
+<li>Max volume: 无需开启限幅侧链, 直接设置为最大值</li>
+<li>Strength: 40%, 相当于4:1的压缩比例</li>
+</ul>
+</li>
+<li><p>底鼓压全混音</p>
+<p>底鼓侧链除了自身外的所有乐器, 这通常出现在EDM电子音乐中, 为制造特殊的抽吸律动效果</p>
+<ul>
+<li>Attack: 1-5ms</li>
+<li>Release: 50-200ms, 根据听感而定</li>
+<li>Mini volume: 根据你的信号源而定</li>
+<li>Max volume: 无需开启限幅侧链, 直接设置为最大值</li>
+<li>Strength: 根据听感而定</li>
+</ul>
+</li>
+</ol>
+<h2 id="侧链Release-核心公式"><a href="#侧链Release-核心公式" class="headerlink" title="侧链Release 核心公式"></a>侧链Release 核心公式</h2><ol>
+<li><p>快歌(BPM&gt;90)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">侧链 Release &lt; 乐器自身 Release &lt; 乐器自然衰减</span><br></pre></td></tr></table></figure>
+
+<p><strong>公式解读:</strong></p>
+<ul>
+<li><strong>侧链 Release（最快）</strong>：负责“躲”，动作要干净利落，不能拖泥带水。</li>
+<li><strong>自身 Release（中等）</strong>：负责“控”，保证音符不糊，但也不能太短导致声音被掐断。</li>
+<li><strong>自然衰减（最慢）</strong>：乐器本身的物理属性，不能被压缩破坏。</li>
+</ul>
+</li>
+<li><p>慢歌(BPM&lt;90)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">侧链 Release ≈ 乐器自身 Release &lt; 乐器自然衰减</span><br></pre></td></tr></table></figure>
+
+<p><strong>公式解读</strong>：</p>
+<ul>
+<li><strong>侧链 ≈ 自身</strong>：这是慢歌的灵魂。避让动作与乐器恢复动作<strong>同频</strong>，制造统一的“潮汐感”。</li>
+<li><strong>&lt; 自然衰减</strong>：压缩动作不能破坏乐器原本的物理属性（如钢琴的延音）。</li>
+</ul>
+</li>
+</ol>
+<h2 id="侧链Attack-和乐器自身-Attack"><a href="#侧链Attack-和乐器自身-Attack" class="headerlink" title="侧链Attack 和乐器自身 Attack"></a>侧链Attack 和乐器自身 Attack</h2><p>两者是完全不同的两个概念, 可千万别搞混了</p>
+<h3 id="侧链Attack设定"><a href="#侧链Attack设定" class="headerlink" title="侧链Attack设定"></a>侧链Attack设定</h3><p>侧链压缩的 Attack 通常<strong>极快</strong>，因为它不是用来“塑形”的，而是用来“反应”的。</p>
+<blockquote>
+<p><strong>侧链 Attack ≈ 1-5 ms</strong></p>
+</blockquote>
+<ul>
+<li><strong>逻辑</strong>：人声一进来，侧链必须<strong>立刻</strong>让背景音乐退让。如果 <code>Attack</code> 太慢（比如 20ms），人声的第一个字已经被背景音乐淹没了</li>
+</ul>
+<p>侧链<code>Attack</code>通常遵循以下逻辑:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">侧链 Attack (1-5ms) &lt; 乐器自身 Attack (物理决定) &lt; 乐器 Release (数学决定)</span><br></pre></td></tr></table></figure>
+
+<h3 id="乐器自身-Attack-的通用法则（不分快慢歌）"><a href="#乐器自身-Attack-的通用法则（不分快慢歌）" class="headerlink" title="乐器自身 Attack 的通用法则（不分快慢歌）"></a>乐器自身 Attack 的通用法则（不分快慢歌）</h3><p>Attack 的设定是<strong>“听感优先”</strong>，而非像<code>Release</code>那样可以通过BPM数学计算进行“节奏量化”。它只遵循一个物理逻辑, 那就是：</p>
+<blockquote>
+<p><strong>Attack Time &gt; 瞬态起音时间</strong></p>
+</blockquote>
+<ul>
+<li><strong>瞬态（Transient）</strong>：声音刚开始那极短的“冲击力”（如钢琴的榔头声、鼓的敲击声）。</li>
+<li><strong>逻辑</strong>：<code>Attack</code>必须比瞬态长，否则压缩器会“吃掉”音头，声音变软。</li>
+</ul>
+<p><strong>常见乐器<code>Attack</code>参考值如下:</strong> </p>
+<table>
+<thead>
+<tr>
+<th>乐器类型</th>
+<th>建议 Attack</th>
+<th>目的</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>鼓类（底鼓、军鼓）</strong></td>
+<td><strong>1-10 ms</strong>（极快）</td>
+<td>保留“敲击感”，快速控制峰值</td>
+</tr>
+<tr>
+<td><strong>人声</strong></td>
+<td><strong>5-20 ms</strong></td>
+<td>保留字头的“唇齿感”，防止过冲</td>
+</tr>
+<tr>
+<td><strong>钢琴、吉他</strong></td>
+<td><strong>10-30 ms</strong></td>
+<td>保留琴弦振动的“起音”</td>
+</tr>
+<tr>
+<td><strong>贝斯</strong></td>
+<td><strong>20-50 ms</strong></td>
+<td>让低频先稳定下来，再压缩</td>
+</tr>
+<tr>
+<td><strong>弦乐/Pad</strong></td>
+<td><strong>30-100 ms</strong></td>
+<td>慢启动，只压缩持续音，不碰开头</td>
+</tr>
+</tbody></table>
+<h3 id="慢歌-vs-快歌的-Attack-差异"><a href="#慢歌-vs-快歌的-Attack-差异" class="headerlink" title="慢歌 vs 快歌的 Attack 差异"></a>慢歌 vs 快歌的 Attack 差异</h3><p>Attack 受 BPM 影响较小，主要受<strong>乐器瞬态</strong>影响。但有一个微妙的<strong>心理时间</strong>差异：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>人声自身 Attack</th>
+<th>侧链 Attack</th>
+<th>逻辑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>慢歌 (BPM 63)</strong></td>
+<td><strong>10-20 ms</strong></td>
+<td><strong>1-5 ms</strong></td>
+<td>慢歌字头更清晰，Attack 可稍慢以保留情绪</td>
+</tr>
+<tr>
+<td><strong>快歌 (BPM 120)</strong></td>
+<td><strong>5-15 ms</strong></td>
+<td><strong>1-5 ms</strong></td>
+<td>快歌字头密集，Attack 要快，防止字字过冲</td>
+</tr>
+</tbody></table>
+<p><strong>注意</strong>：侧链 Attack 在快慢歌中<strong>几乎不变</strong>，永远是“立刻反应”。</p>
+<h2 id><a href="#" class="headerlink" title></a></h2><h2 id="四大类乐器自身Release-参数表"><a href="#四大类乐器自身Release-参数表" class="headerlink" title="四大类乐器自身Release 参数表"></a>四大类乐器自身Release 参数表</h2><p>以下内容仅做参考:</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>乐器</th>
+<th>推荐 Release</th>
+<th>内部逻辑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>节奏组</strong>(瞬态保护)</td>
+<td><strong>底鼓 (Kick)</strong></td>
+<td><strong>30 – 60</strong></td>
+<td>最快恢复，保证每一次击打的清晰度，死死锁住低频重心。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>军鼓 (Snare)</strong></td>
+<td><strong>50 – 80</strong></td>
+<td>比底鼓稍慢，保留一点“响弦”或镲片的尾音，维持打击感。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>贝斯 (Bass)</strong></td>
+<td><strong>80 – 100</strong></td>
+<td>最慢，需兼顾音符的延音，防止“断音”，与底鼓形成紧密咬合。</td>
+</tr>
+<tr>
+<td><strong>主奏组</strong>(线条连贯)</td>
+<td><strong>人声 (Vocal)</strong></td>
+<td><strong>150</strong></td>
+<td>基准值，兼顾字头清晰与语句连贯，不能压死情绪。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>主奏吉他</strong></td>
+<td><strong>150</strong></td>
+<td>与人声同值，保证旋律线条的流畅性，不切断乐句呼吸。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>主奏钢琴</strong></td>
+<td><strong>150</strong></td>
+<td>与人声同值，作为歌曲骨架时，避免音符被切断。</td>
+</tr>
+<tr>
+<td><strong>氛围组</strong>(空间纵深)</td>
+<td><strong>背景钢琴</strong></td>
+<td><strong>180 – 220</strong></td>
+<td>中景，比主奏稍远，但保留音符颗粒感，增加厚度。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>弦乐 / Pad</strong></td>
+<td><strong>280 – 350</strong></td>
+<td>远景，极慢恢复，制造模糊的空间铺底，不抢夺前景注意力。</td>
+</tr>
+<tr>
+<td><strong>过渡/点缀组</strong>(情绪推动与连接)</td>
+<td><strong>打击乐特效*</strong>(Ride, 风铃, 牛铃)*</td>
+<td><strong>80 – 120</strong></td>
+<td><strong>适中偏快</strong>。既保留一点清脆尾音，又不能在过渡段落造成杂乱拖尾。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>上升/下降音效*</strong>(Riser, Sweeps)*</td>
+<td><strong>40 – 70</strong></td>
+<td><strong>极快</strong>。这类音色通常用于衔接，快速恢复是为了让下一个音色能立刻进来。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>点缀性合成器/采样*</strong>(Glitch, Stutter)*</td>
+<td><strong>60 – 90</strong></td>
+<td><strong>快速且精准</strong>。作用是强调节奏点，Release 必须短于其本身衰减，保证切分感。</td>
+</tr>
+</tbody></table>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><strong>Attack 规则</strong>：<code>处理 Attack ≥ 音源物理起振时间</code> <strong>目的</strong>：保护音头的“瞬态”（Transient），避免把声音压“瘪”。</p>
+<p><strong>Release 规则</strong>：<code>处理 Release ≤ 音源自然衰减时间</code> <strong>目的</strong>：在下一个音符到来前恢复，避免压缩器“喘气”或“粘连”。</p>
+<p><strong>本文为作者原创 转载时请注明出处 谢谢</strong></p>
+<p><em><a href="https://audio.newban.cn/">有瓣音频 – 有伴你我,更多编曲混音技术尽在有瓣音频</a></em></p>
+]]></content>
+      <tags>
+        <tag>混音档案</tag>
       </tags>
   </entry>
 </search>
